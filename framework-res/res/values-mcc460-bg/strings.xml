@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">преглед на WLAN състоянието</string>
+    <string name="permdesc_accessWifiState">Разрешава на приложението да следи информацията за състоянието на WLAN връзката.</string>
+    <string name="permlab_changeWifiState">промяна на WLAN състоянието</string>
+    <string name="permdesc_changeWifiState">Разрешава на приложението да свързва и да прекъсва връзката на WLAN точки за достъп, както и да променя конфигурацията на WLAN мрежи.</string>
+    <string name="permlab_changeWifiMulticastState">разрешаване на приемането на WLAN мултикаст</string>
+    <string name="tethered_notification_title">Споделяне на връзката или активна точка за достъп</string>
+</resources>

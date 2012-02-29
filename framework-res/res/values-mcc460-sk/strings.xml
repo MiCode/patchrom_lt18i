@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">zobraziť stav siete WLAN</string>
+    <string name="permdesc_accessWifiState">Povoľuje aplikácii zobrazovať informácie o stave siete WLAN.</string>
+    <string name="permlab_changeWifiState">zmeniť stav siete WLAN</string>
+    <string name="permdesc_changeWifiState">Povoľuje aplikácii pripojiť sa k prístupovým bodom siete WLAN, odpojiť sa od nich a vykonávať zmeny v konfiguráciách sietí WLAN.</string>
+    <string name="permlab_changeWifiMulticastState">povoliť príjem viacsmerového vysielania siete WLAN</string>
+    <string name="tethered_notification_title">Zdieľanie internetového pripojenia alebo prístupový bod aktívne</string>
+</resources>

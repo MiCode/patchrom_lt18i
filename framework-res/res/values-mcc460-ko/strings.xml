@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">WLAN 상태 보기</string>
+    <string name="permdesc_accessWifiState">애플리케이션이 WLAN의 상태에 대한 정보를 볼 수 있도록 합니다.</string>
+    <string name="permlab_changeWifiState">WLAN 상태 변경</string>
+    <string name="permdesc_changeWifiState">애플리케이션이 WLAN 액세스포인트에 연결하거나 연결을 끊고, 구성된 WLAN 네트워크를 변경할 수 있도록 합니다.</string>
+    <string name="permlab_changeWifiMulticastState">WLAN 멀티캐스트 수신 허용</string>
+    <string name="tethered_notification_title">테더링 또는 핫스팟 사용</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">"afficher l'état du WLAN"</string>
+    <string name="permdesc_accessWifiState">"Autorise l'application à voir les informations relatives à l'état du WLAN."</string>
+    <string name="permlab_changeWifiState">"modifier l'état du WLAN"</string>
+    <string name="permdesc_changeWifiState">"Autorise une application à se connecter à et déconnecter de points d'accès WLAN, et à modifier les réseaux WLAN configurés."</string>
+    <string name="permlab_changeWifiMulticastState">autoriser la réception WLAN multidiffusion</string>
+    <string name="tethered_notification_title">"Fonction modem ou point d'accès sans fil WLAN actif"</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">pregled stanja bežične mreže</string>
+    <string name="permdesc_accessWifiState">Omogućuje aplikaciji prikaz informacija o bežičnoj mreži.</string>
+    <string name="permlab_changeWifiState">promjena stanja bežične mreže</string>
+    <string name="permdesc_changeWifiState">Omogućuje aplikaciji povezivanje i prekid veze s bežičnim pristupnim točkama te izvršavanje promjena u konfiguraciji bežičnih mreža.</string>
+    <string name="permlab_changeWifiMulticastState">omogućivanje višesmjernog, bežičnog prijema</string>
+    <string name="tethered_notification_title">Aktivno ograničavanje ili pristupna točka</string>
+</resources>

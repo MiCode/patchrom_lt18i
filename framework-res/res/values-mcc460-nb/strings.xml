@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">se tilstand for trådløse nettverk</string>
+    <string name="permdesc_accessWifiState">Lar applikasjonen få se informasjon om tilstanden til de trådløse nettene.</string>
+    <string name="permlab_changeWifiState">endre tilstand for trådløse nettverk</string>
+    <string name="permdesc_changeWifiState">Lar applikasjonen koble til og fra trådløse aksesspunkt, og å gjøre endringer i konfigurerte trådløse nettverk.</string>
+    <string name="permlab_changeWifiMulticastState">tillat multicast for trådløse nettverk</string>
+    <string name="tethered_notification_title">Tilknytning eller trådløs sone er aktiv</string>
+</resources>

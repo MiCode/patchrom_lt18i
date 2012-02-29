@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">visa WLAN-status</string>
+    <string name="permdesc_accessWifiState">Tillåter att ett program visar information om statusen för WLAN.</string>
+    <string name="permlab_changeWifiState">byta WLAN-status</string>
+    <string name="permdesc_changeWifiState">Tillåter att ett program ansluter till och kopplar från WLAN-åtkomstpunkter och gör ändringar i konfigurerade WLAN-nätverk.</string>
+    <string name="permlab_changeWifiMulticastState">tillåt WLAN multicast-mottagning</string>
+    <string name="tethered_notification_title">Internetdelning eller surfpunkt aktiverad</string>
+</resources>

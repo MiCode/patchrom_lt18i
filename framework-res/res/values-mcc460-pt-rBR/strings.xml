@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">visualizar estado da rede WLAN</string>
+    <string name="permdesc_accessWifiState">Permite que um aplicativo veja as informações sobre o estado de WLAN.</string>
+    <string name="permlab_changeWifiState">alterar o estado de WLAN</string>
+    <string name="permdesc_changeWifiState">Permite que um aplicativo se conecte e desconecte dos pontos de acesso WLAN e faça alterações nas redes WLAN configuradas.</string>
+    <string name="permlab_changeWifiMulticastState">permitir recebimento de multicast WLAN</string>
+    <string name="tethered_notification_title">Vínculo ou ponto de acesso ativo</string>
+</resources>

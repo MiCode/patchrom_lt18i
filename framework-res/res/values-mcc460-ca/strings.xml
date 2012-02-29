@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">"visualització de l'estat WLAN"</string>
+    <string name="permdesc_accessWifiState">"Permet que una aplicació vegi
+ la informació de l'estat de WLAN."</string>
+    <string name="permlab_changeWifiState">"canviar l'estat del WLAN"</string>
+    <string name="permdesc_changeWifiState">"Permet que una aplicació es connecti a punts d'accés WLAN i s'hi desconnecti i fer canvis a xarxes WLAN configurades."</string>
+    <string name="permlab_changeWifiMulticastState">"permetre la recepció de multidifusió
+ WLAN"</string>
+    <string name="tethered_notification_title">"Punt d'accés o punt de connexió actiu"</string>
+</resources>

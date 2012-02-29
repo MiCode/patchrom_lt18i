@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">Kablosuz durumunu görüntüle</string>
+    <string name="permdesc_accessWifiState">Uygulamaların, kablosuz bağlantının durumu ile ilgili bilgileri görüntülemesine izin verir.</string>
+    <string name="permlab_changeWifiState">Kablosuz durumunu değiştir</string>
+    <string name="permdesc_changeWifiState">Uygulamaların kablosuz erişim noktalarına bağlanıp bunlarla bağlantısını kesmesine ve yapılandırılmış kablosuz ağlarda değişiklikler yapmasına izin verir.</string>
+    <string name="permlab_changeWifiMulticastState">Kablosuz Çoklu Yayın alımına izin ver</string>
+    <string name="tethered_notification_title">Doğrudan bağlantı veya ortak erişim noktası etkin</string>
+</resources>

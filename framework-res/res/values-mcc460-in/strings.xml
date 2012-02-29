@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">lihat status WLAN</string>
+    <string name="permdesc_accessWifiState">Izinkan aplikasi untuk melihat informasi tentang status WLAN.</string>
+    <string name="permlab_changeWifiState">ubah status WLAN</string>
+    <string name="permdesc_changeWifiState">Izinkan aplikasi untuk menyambung dan memutus sambungan dengan jalur akses WLAN, dan untuk membuat perubahan terhadap jaringan WLAN yang dikonfigurasi.</string>
+    <string name="permlab_changeWifiMulticastState">"izinkan penerimaan Multicast
+ WLAN"</string>
+    <string name="tethered_notification_title">Tethering atau hotspot aktif</string>
+</resources>

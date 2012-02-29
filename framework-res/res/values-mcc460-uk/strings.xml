@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">перегляд стану WLAN</string>
+    <string name="permdesc_accessWifiState">Дозволяє програмі переглядати інформацію про стан WLAN.</string>
+    <string name="permlab_changeWifiState">змінювати стан WLAN</string>
+    <string name="permdesc_changeWifiState">Дозволяє програмі підключатися й відключатися від точок доступу WLAN, а також вносити зміни в конфігуровані мережі WLAN.</string>
+    <string name="permlab_changeWifiMulticastState">дозволяти отримання багатоадресної передачі WLAN</string>
+    <string name="tethered_notification_title">"З'єднання або портативна точка доступу активні"</string>
+</resources>

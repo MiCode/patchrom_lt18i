@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">عرض حالة WLAN</string>
+    <string name="permdesc_accessWifiState">للسماح لتطبيق بعرض معلومات حول حالة WLAN.</string>
+    <string name="permlab_changeWifiState">تغيير حالة WLAN</string>
+    <string name="permdesc_changeWifiState">للسماح لتطبيق بالاتصال بنقاط وصول WLAN وقطع الاتصال عنها، ولإجراء تغييرات على شبكات WLAN التي تم تكوينها.</string>
+    <string name="permlab_changeWifiMulticastState">السماح بتلقي بث WLAN المتعدد</string>
+    <string name="tethered_notification_title">الربط أو نقطة الاتصال النشطة</string>
+</resources>

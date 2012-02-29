@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:directionality="none"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/black_white_gradient" android:layout_width="@dimen/black_white_gradient_width" android:layout_height="@dimen/time_picker_height" />
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <PickerList android:gravity="center" android:id="@id/hour" android:layout_width="@dimen/time_picker_hour_width" android:layout_height="@dimen/time_picker_height" />
+        <View android:background="@drawable/dialog_gradient" android:layout_width="@dimen/time_picker_hour_width" android:layout_height="@dimen/time_picker_height" />
+    </FrameLayout>
+    <View android:background="@drawable/black_white_gradient" android:layout_width="@dimen/black_white_gradient_width" android:layout_height="@dimen/time_picker_height" android:layout_marginRight="@dimen/time_picker_margin" />
+    <View android:background="@drawable/black_white_gradient" android:layout_width="@dimen/black_white_gradient_width" android:layout_height="@dimen/time_picker_height" />
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <PickerList android:gravity="center" android:id="@id/minute" android:layout_width="@dimen/time_picker_minute_width" android:layout_height="@dimen/time_picker_height" />
+        <View android:background="@drawable/dialog_gradient" android:layout_width="@dimen/time_picker_minute_width" android:layout_height="@dimen/time_picker_height" />
+    </FrameLayout>
+    <View android:background="@drawable/black_white_gradient" android:layout_width="@dimen/black_white_gradient_width" android:layout_height="@dimen/time_picker_height" />
+    <Button android:textAppearance="?textAppearanceLarge" android:textSize="@dimen/time_picker_am_pm_button_textsize" android:textColor="@color/white" android:gravity="center" android:id="@id/amPm" android:paddingLeft="@dimen/time_picker_am_pm_button_padding_left" android:paddingRight="@dimen/time_picker_am_pm_button_padding_right" android:layout_width="@dimen/time_picker_am_pm_button_layout_width" android:layout_height="@dimen/time_picker_am_pm_button_layout_height" android:layout_marginLeft="@dimen/time_picker_am_pm_button_margin_left" android:layout_marginTop="@dimen/time_picker_am_pm_button_margin_top" android:layout_marginRight="@dimen/time_picker_am_pm_button_margin_right" android:shadowColor="@color/picker_shadow" android:shadowDx="0.0" android:shadowDy="-1.0" android:shadowRadius="0.5" style="?android:attr/textAppearanceLargeInverse" />
+</LinearLayout>

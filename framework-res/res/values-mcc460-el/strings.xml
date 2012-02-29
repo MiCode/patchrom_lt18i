@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">προβολή κατάστασης WLAN</string>
+    <string name="permdesc_accessWifiState">Επιτρέπει σε μια εφαρμογή την προβολή των πληροφοριών σχετικά με την κατάσταση του WLAN.</string>
+    <string name="permlab_changeWifiState">αλλαγή κατάστασης WLAN</string>
+    <string name="permdesc_changeWifiState">Επιτρέπει σε μια εφαρμογή τη σύνδεση σε σημεία πρόσβασης WLAN και την αποσύνδεση από αυτά, καθώς και την πραγματοποίηση αλλαγών σε διαμορφωμένα δίκτυα WLAN.</string>
+    <string name="permlab_changeWifiMulticastState">να επιτρέπεται η λήψη πολλαπλής διανομής WLAN</string>
+    <string name="tethered_notification_title">Σύνδεση μέσω κινητής συσκευής ή σημείου πρόσβασης ενεργή</string>
+</resources>

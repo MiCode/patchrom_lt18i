@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">deleng status WLAN</string>
+    <string name="permdesc_accessWifiState">Ijini aplikasi ndeleng informasi babagan status WLAN.</string>
+    <string name="permlab_changeWifiState">ganti status WLAN</string>
+    <string name="permdesc_changeWifiState">Ijini aplikasi nyambung menyang lan medhot sambungan saka jalur akses WLAN, lan kanggo ngganti jaringan WLAN sing wis dikonfigurasi.</string>
+    <string name="permlab_changeWifiMulticastState">ijini panariman WLAN Multicast</string>
+    <string name="tethered_notification_title">Nyambungake utawa hotspot aktif</string>
+</resources>

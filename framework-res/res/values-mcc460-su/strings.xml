@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">tingali kaayaan WLAN</string>
+    <string name="permdesc_accessWifiState">Ngidinan aplikasi ningalian inpo kaayaan WLAN.</string>
+    <string name="permlab_changeWifiState">robih kaayaan WLAN</string>
+    <string name="permdesc_changeWifiState">Ngidinan sahiji aplikasi nyambungkeun atawa megatkeun tina saluran WLAN, teras ngadamel parobihan ka setelan jaringan WLAN.</string>
+    <string name="permlab_changeWifiMulticastState">idinan panampian WLAN Multicat</string>
+    <string name="tethered_notification_title">Nga-tether atawa hotspot aktip</string>
+</resources>

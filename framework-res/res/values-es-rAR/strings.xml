@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lockscreen_strings_howtounlock_txt">Oprima %icon para desbl.</string>
+    <string name="lockscreen_strings_timeout_dialog_header_txt">Patrón incorrecto</string>
+    <string name="lockscreen_strings_timeout_dialog_message_txt">Toque Siguiente para desbloquear con la pregunta de seguridad o inténtelo de nuevo en 30 segundos</string>
+    <string name="lockscreen_strings_timeout_dialog_try_again_label_txt">Int. nuev.</string>
+    <string name="lockscreen_strings_timeout_dialog_next_label_txt">Siguiente</string>
+    <string name="lockscreen_strings_timeout_dialog_near_lockout_message_txt">Le quedan 5 intentos</string>
+    <string name="lockscreen_strings_locked_out_header_txt">Patrón incorrecto</string>
+    <string name="lockscreen_strings_locked_out_message_txt">Realizó el patrón de manera incorrecta 20 veces. Haga el desbloqueo con la pregunta de seguridad.</string>
+    <string name="lockscreen_strings_backup_question_header_txt">Pregunta de seguridad</string>
+    <string name="lockscreen_strings_backup_question_1_txt">¿Cuál es el nombre de soltera de su madre?</string>
+    <string name="lockscreen_strings_backup_question_2_txt">¿Cuál es su lugar de nacimiento?</string>
+    <string name="lockscreen_strings_backup_question_3_txt">¿Cuál es su lugar favorito?</string>
+    <string name="lockscreen_strings_backup_question_4_txt">¿Cuál es su película favorita?</string>
+    <string name="lockscreen_strings_backup_question_unlock_button_txt">Desbloquear</string>
+    <string name="lockscreen_strings_backup_question_emergency_button_txt">Llamada de emergencia</string>
+    <string name="lockscreen_strings_backup_question_answer_hint_txt">Respuesta</string>
+    <string name="lockscreen_strings_sim_puk_attempts_remaining_txt">Intentos que le quedan:</string>
+    <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Introducir PUK</string>
+    <string name="lockscreen_strings_sim_locked_out_header_txt">Tarjeta SIM bloqueada</string>
+    <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Comuníquese con su operador</string>
+    <string name="lockscreen_strings_sim_puk_locked_header_txt">Tarjeta SIM bloqueada</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Ingrese el código PUK suministrado por su operador.</string>
+    <string name="lockscreen_strings_sim_puk_wrong_nbr_digits_header_txt">El PUK debe tener 8 dígitos</string>
+    <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Ingrese el nuevo PIN</string>
+    <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Repita el nuevo PIN</string>
+    <string name="dialer_keyboard_hint_txt">Usar teclado para marcar</string>
+    <string name="general_dialpad_label_0_txt">+</string>
+    <string name="general_dialpad_voicemail_txt">Buzón de voz</string>
+    <string name="gui_cancel_txt">Cancel.</string>
+    <string name="gui_ok_txt">Acept.</string>
+    <string name="lockscreen_strings_locked_out_wrong_answer_txt">Respuesta incorrecta</string>
+    <string name="seport_strings_accessory_not_supported_txt">Accesorio no compatible</string>
+</resources>

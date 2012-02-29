@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">WLAN stāvokļa skatīšana</string>
+    <string name="permdesc_accessWifiState">Atļauj programmai skatīt informāciju par WLAN stāvokli.</string>
+    <string name="permlab_changeWifiState">WLAN stāvokļa maiņa</string>
+    <string name="permdesc_changeWifiState">Atļauj programmai savienoties ar WLAN piekļuves punktiem un atvienoties no tiem, kā arī veikt izmaiņas konfigurētajos WLAN tīklos.</string>
+    <string name="permlab_changeWifiMulticastState">"WLAN multiraides
+ uztveršanas ļaušana"</string>
+    <string name="tethered_notification_title">Piesaistīšana vai karstvieta aktīva</string>
+</resources>

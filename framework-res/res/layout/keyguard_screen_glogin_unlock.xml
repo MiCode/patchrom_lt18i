@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#70000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" android:layout_above="@id/footerUnlockButton">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?textAppearanceSmall" android:gravity="center_vertical" android:id="@id/topHeader" android:background="@drawable/semc_title_bar" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lockscreen_glogin_forgot_pattern" android:layout_alignParentTop="true" />
+            <TextView android:textAppearance="?textAppearanceSmall" android:textSize="19.0dip" android:id="@id/instructions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="8.0dip" android:text="@string/lockscreen_glogin_instructions" android:layout_below="@id/topHeader" />
+            <EditText android:id="@id/login" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="7.0dip" android:hint="@string/lockscreen_glogin_username_hint" android:layout_below="@id/instructions" android:inputType="textEmailAddress" />
+            <EditText android:id="@id/password" android:nextFocusRight="@id/ok" android:nextFocusDown="@id/ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="7.0dip" android:hint="@string/lockscreen_glogin_password_hint" android:layout_below="@id/login" android:inputType="textPassword" />
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/footerUnlockButton" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:ellipsize="marquee" android:id="@id/emergencyCall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="4.0dip" android:text="@string/lockscreen_strings_backup_question_emergency_button_txt" android:singleLine="true" android:drawableLeft="@drawable/ic_emergency" android:layout_weight="1.0" style="@style/SEMCWidget.Button" />
+        <Button android:ellipsize="marquee" android:id="@id/ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:text="@string/lockscreen_strings_backup_question_unlock_button_txt" android:singleLine="true" android:layout_weight="1.0" style="@style/SEMCWidget.Button" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">xem trạng thái WLAN</string>
+    <string name="permdesc_accessWifiState">Cho phép ứng dụng xem thông tin về trạng thái của WLAN.</string>
+    <string name="permlab_changeWifiState">thay đổi tình trạng WLAN</string>
+    <string name="permdesc_changeWifiState">Cho phép ứng dụng kết nối và ngắt kết nối khỏi các điểm truy cập WLAN và để thực hiện thay đổi cho mạng WLAN đã cấu hình.</string>
+    <string name="permlab_changeWifiMulticastState">cho phép nhận WLAN Phát đa phương</string>
+    <string name="tethered_notification_title">Tính năng điểm truy cập Internet hoặc điểm phát sóng đang hoạt động</string>
+</resources>

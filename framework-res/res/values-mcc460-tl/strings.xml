@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">tingnan ang estado ng WLAN</string>
+    <string name="permdesc_accessWifiState">Pinapayagan ang application na tingnan ang impormasyon tungkol sa estado ng WLAN.</string>
+    <string name="permlab_changeWifiState">baguhin ang WLAN state</string>
+    <string name="permdesc_changeWifiState">Pinapayagan ang application na kumonekta sa at alisin ang koneksyon mula sa mga access point ng WLAN, at upang magsagawa ng mga pagbabago sa naisaayos na mga network ng WLAN.</string>
+    <string name="permlab_changeWifiMulticastState">payagan ang WLAN Multicast reception</string>
+    <string name="tethered_notification_title">Tethering o aktibong hotspot</string>
+</resources>

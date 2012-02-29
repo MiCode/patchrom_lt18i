@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:directionality="none"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/dayData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/date_picker_margin" android:layout_marginRight="@dimen/date_picker_margin">
+        <View android:background="@drawable/black_white_gradient" android:layout_width="@dimen/black_white_gradient_width" android:layout_height="@dimen/date_picker_height" />
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <PickerList android:gravity="center" android:id="@id/day" android:layout_width="@dimen/date_picker_day_width" android:layout_height="@dimen/date_picker_height" />
+            <View android:background="@drawable/dialog_gradient" android:layout_width="@dimen/date_picker_day_width" android:layout_height="@dimen/date_picker_height" />
+        </FrameLayout>
+        <View android:background="@drawable/black_white_gradient" android:layout_width="@dimen/black_white_gradient_width" android:layout_height="@dimen/date_picker_height" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/monthData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/date_picker_margin" android:layout_marginRight="@dimen/date_picker_margin">
+        <View android:background="@drawable/black_white_gradient" android:layout_width="@dimen/black_white_gradient_width" android:layout_height="@dimen/date_picker_height" />
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <PickerList android:gravity="center" android:id="@id/month" android:layout_width="@dimen/date_picker_month_width" android:layout_height="@dimen/date_picker_height" />
+            <View android:background="@drawable/dialog_gradient" android:layout_width="@dimen/date_picker_month_width" android:layout_height="@dimen/date_picker_height" />
+        </FrameLayout>
+        <View android:background="@drawable/black_white_gradient" android:layout_width="@dimen/black_white_gradient_width" android:layout_height="@dimen/date_picker_height" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/yearData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/date_picker_margin" android:layout_marginRight="@dimen/date_picker_margin">
+        <View android:background="@drawable/black_white_gradient" android:layout_width="@dimen/black_white_gradient_width" android:layout_height="@dimen/date_picker_height" />
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <PickerList android:gravity="center" android:id="@id/year" android:layout_width="@dimen/date_picker_year_width" android:layout_height="@dimen/date_picker_height" />
+            <View android:background="@drawable/dialog_gradient" android:layout_width="@dimen/date_picker_year_width" android:layout_height="@dimen/date_picker_height" />
+        </FrameLayout>
+        <View android:background="@drawable/black_white_gradient" android:layout_width="@dimen/black_white_gradient_width" android:layout_height="@dimen/date_picker_height" />
+    </LinearLayout>
+</LinearLayout>

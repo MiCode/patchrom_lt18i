@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">прикажи WLAN состојба</string>
+    <string name="permdesc_accessWifiState">Овозможува апликацијата да ги види информациите за состојбата на WLAN.</string>
+    <string name="permlab_changeWifiState">промени WLAN состојба</string>
+    <string name="permdesc_changeWifiState">Овозможува апликацијата да се поврзе и да се дисконектира од WLAN пристапни точки и да прави промени во конфигурирани WLAN мрежи.</string>
+    <string name="permlab_changeWifiMulticastState">"овозможи WLAN групен
+ прием"</string>
+    <string name="tethered_notification_title">Врзувањето или „жешкото“ место се активни</string>
+</resources>

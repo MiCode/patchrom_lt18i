@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">zobrazení stavu WLAN</string>
+    <string name="permdesc_accessWifiState">Umožňuje aplikaci zobrazit informace o stavu připojení WLAN.</string>
+    <string name="permlab_changeWifiState">změna stavu WLAN</string>
+    <string name="permdesc_changeWifiState">Umožňuje aplikaci připojit se k přístupovým bodům WLAN či se od nich odpojit a provádět změny nakonfigurovaných sítí WLAN.</string>
+    <string name="permlab_changeWifiMulticastState">povolení příjmu WLAN Multicast</string>
+    <string name="tethered_notification_title">Je aktivní tethering nebo hotspot</string>
+</resources>

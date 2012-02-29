@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/root" android:background="#70000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tabunlock="http://schemas.android.com/apk/res/com.android.tabunlock">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="-85.0dip" android:layout_weight="1.0" android:layout_alignRight="@id/tab_selector">
+        <LinearLayout android:orientation="horizontal" android:id="@id/statusbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <TextView android:textAppearance="?textAppearanceLarge" android:textColor="#c0ffffff" android:id="@id/status2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:drawablePadding="6.0dip" />
+            <TextView android:textAppearance="?textAppearanceLarge" android:textColor="#c0ffffff" android:id="@id/status1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:drawablePadding="6.0dip" />
+        </LinearLayout>
+        <com.android.internal.widget.SemcDigitalClock android:orientation="vertical" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:layout_centerHorizontal="true">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/TimeRelativeLayout24h" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="105.0dip" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/timeDisplay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="21.0dip" android:textColor="#c0ffffff" android:id="@id/am_pm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34.0dip" android:layout_alignRight="@id/timeDisplay" />
+            </RelativeLayout>
+            <TextView android:textSize="22.0dip" android:textColor="#ffc8c8c8" android:layout_gravity="center_horizontal" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-27.0dip" />
+        </com.android.internal.widget.SemcDigitalClock>
+        <TextView android:textAppearance="?textAppearanceLarge" android:id="@id/screenLocked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="27.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <Button android:id="@id/emergencyCallButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_emergency" android:drawablePadding="8.0dip" android:layout_above="@id/screenLocked" android:layout_centerHorizontal="true" style="@style/SEMCWidget.Button" />
+    </RelativeLayout>
+    <com.android.internal.widget.SlidingTabSemc android:orientation="vertical" android:id="@id/tab_selector" android:tag="Landscape" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="0.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/marginBottom" android:background="#a6000000" android:layout_width="5.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</LinearLayout>

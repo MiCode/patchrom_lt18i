@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">WLAN অবস্থা প্রদর্শন</string>
+    <string name="permdesc_accessWifiState">WLAN অবস্থা সংক্রান্ত তথ্য দেখার জন্য অ্যাপলিকেশনকে অনুমতি প্রদান করে।</string>
+    <string name="permlab_changeWifiState">WLAN অবস্থা পরিবর্তন</string>
+    <string name="permdesc_changeWifiState">WLAN অ্যাকসেস পয়েন্টে সংযোগ স্থাপন এবং সংযোগ বিচ্ছিন্ন করার জন্য অ্যাপ্লিকেশনকে সাহায্য করে এবং কনফিগার করা WLAN নেটওয়ার্ককে পরিবর্তন করার জন্য অনুমতি প্রদান করে।</string>
+    <string name="permlab_changeWifiMulticastState">WLAN মাল্টিকাস্ট রিসেপশন অনুমতি প্রদান</string>
+    <string name="tethered_notification_title">টিথারিং বা হটস্পট সক্রিয়</string>
+</resources>

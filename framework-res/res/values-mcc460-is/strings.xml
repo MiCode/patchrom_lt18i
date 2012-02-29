@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">skoða WLAN-stöðu</string>
+    <string name="permdesc_accessWifiState">Leyfir forriti að birta upplýsingar um stöðu WLAN.</string>
+    <string name="permlab_changeWifiState">breyta WLAN-stöðu</string>
+    <string name="permdesc_changeWifiState">Leyfir forriti að tengjast við og slíta tengingu við WLAN-aðgangsstað og breyta uppsettum WLAN-netum.</string>
+    <string name="permlab_changeWifiMulticastState">"leyfa móttöku á WLAN
+ margvarpi"</string>
+    <string name="tethered_notification_title">Tjóðrun eða heitur reitur virkur</string>
+</resources>

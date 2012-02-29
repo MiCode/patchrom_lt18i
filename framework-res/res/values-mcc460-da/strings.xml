@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">vis WLAN-tilstand</string>
+    <string name="permdesc_accessWifiState">Tillader, at et program viser oplysninger om WLAN-tilstanden.</string>
+    <string name="permlab_changeWifiState">skift WLAN-tilstand</string>
+    <string name="permdesc_changeWifiState">Tillader, at et program opretter og afbryder forbindelsen fra WLAN-adgangspunkter og foretager ændringer i konfigurerede WLAN-netværk.</string>
+    <string name="permlab_changeWifiMulticastState">tillad WLAN-multicastmodtagelse</string>
+    <string name="tethered_notification_title">Tethering eller hotspot er aktivt</string>
+</resources>

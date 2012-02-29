@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">ดูสถานะ WLAN</string>
+    <string name="permdesc_accessWifiState">"อนุญาตให้แอปพลิเคชันนี้เรียกดูข้อมูล
+เกี่ยวกับสถานะของ WLAN"</string>
+    <string name="permlab_changeWifiState">เปลี่ยนสถานะ WLAN</string>
+    <string name="permdesc_changeWifiState">"อนุญาตให้แอปพลิเคชันเชื่อมต่อกับและ
+เลิกเชื่อมต่อจากจุดเชื่อมต่อ WLAN และทำการเปลี่ยนแปลงเครือข่าย WLAN ที่กำหนดค่าไว้"</string>
+    <string name="permlab_changeWifiMulticastState">อนุญาตให้รับ WLAN แบบหลายผู้รับ</string>
+    <string name="tethered_notification_title">Tethering หรือ Hotspot ทำงานอยู่</string>
+</resources>

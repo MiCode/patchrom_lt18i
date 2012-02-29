@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">WLAN状態の表示</string>
+    <string name="permdesc_accessWifiState">WLAN状態に関する情報の表示をアプリケーションに許可します。</string>
+    <string name="permlab_changeWifiState">WLAN状態の変更</string>
+    <string name="permdesc_changeWifiState">WLANアクセスポイントへの接続や接続の切断、設定されたWLANネットワークの変更をアプリケーションに許可します。</string>
+    <string name="permlab_changeWifiMulticastState">WLANマルチキャストの受信を許可する</string>
+    <string name="tethered_notification_title">テザリングまたはアクセスポイントが有効です</string>
+</resources>

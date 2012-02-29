@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">WLAN-status bekijken</string>
+    <string name="permdesc_accessWifiState">Hiermee kan een toepassing informatie over de WLAN-status bekijken.</string>
+    <string name="permlab_changeWifiState">WLAN-status wijzigen</string>
+    <string name="permdesc_changeWifiState">Hiermee kan een toepassing zich koppelen aan en loskoppelen van WLAN toegangspunten en wijzigingen aanbrengen in geconfigureerde WLAN-netwerken.</string>
+    <string name="permlab_changeWifiMulticastState">WLAN Multicast-ontvangst toestaan</string>
+    <string name="tethered_notification_title">Tethering of hotspot actief</string>
+</resources>

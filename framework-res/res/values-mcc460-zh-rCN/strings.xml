@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">查看 WLAN 状态</string>
+    <string name="permdesc_accessWifiState">允许应用程序查看有关 WLAN 状态的信息。</string>
+    <string name="permlab_changeWifiState">更改 WLAN 状态</string>
+    <string name="permdesc_changeWifiState">允许应用程序连接到 WLAN 接入点以及与 WLAN 接入点断开连接，并对配置的 WLAN 网络进行更改。</string>
+    <string name="permlab_changeWifiMulticastState">允许接收 WLAN 多播</string>
+    <string name="tethered_notification_title">USB 绑定或热点已启用</string>
+</resources>

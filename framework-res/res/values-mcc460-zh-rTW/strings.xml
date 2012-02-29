@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">檢視 WLAN 狀態</string>
+    <string name="permdesc_accessWifiState">允許應用程式檢視 WLAN 狀態資訊。</string>
+    <string name="permlab_changeWifiState">變更 WLAN 狀態</string>
+    <string name="permdesc_changeWifiState">允許應用程式與 WLAN 存取點連線或中斷連線，並可變更 WLAN 網路設定。</string>
+    <string name="permlab_changeWifiMulticastState">允許接收 WLAN 多點傳播封包</string>
+    <string name="tethered_notification_title">數據連線或無線基地台已啟用</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#70000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" android:layout_above="@id/emergencyCall">
+        <TextView android:textAppearance="?textAppearanceSmall" android:gravity="center_vertical" android:id="@id/headerText" android:background="@drawable/semc_title_bar" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lockscreen_strings_backup_selection_header_txt" android:layout_alignParentTop="true" />
+        <ListView android:id="@id/lockscreen_backup_selection_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:drawSelectorOnTop="false" android:divider="@drawable/semc_list_divider_small" android:dividerHeight="2.0px" android:choiceMode="singleChoice" android:layout_below="@id/headerText" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/footer_button_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:ellipsize="marquee" android:id="@id/emergencyCall" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="4.0dip" android:text="@string/lockscreen_emergency_call" android:singleLine="true" android:drawableLeft="@drawable/ic_emergency" android:layout_weight="1.0" style="@style/SEMCWidget.Button" />
+        <Button android:ellipsize="marquee" android:id="@id/lockscreen_backup_selection_next_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:text="@string/lockscreen_strings_backup_selection_next_txt" android:singleLine="true" android:layout_weight="1.0" style="@style/SEMCWidget.Button" />
+    </LinearLayout>
+</LinearLayout>

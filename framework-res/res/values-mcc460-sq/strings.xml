@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">shiko gjendjen WLAN</string>
+    <string name="permdesc_accessWifiState">Lejon një aplikacion të shohë informacionin rreth gjendjes së WLAN.</string>
+    <string name="permlab_changeWifiState">ndrysho gjendjen WLAN</string>
+    <string name="permdesc_changeWifiState">Lejon një aplikacion të lidhet dhe të shkëputet nga pikëhyrjet WLAN, dhe të bëjë ndryshime në rrjetet WLAN të konfiguruara.</string>
+    <string name="permlab_changeWifiMulticastState">"lejo marrjen e transmetimit WLAN
+ në disa drejtime"</string>
+    <string name="tethered_notification_title">Ndërlidhja ose pika aktive është aktive</string>
+</resources>

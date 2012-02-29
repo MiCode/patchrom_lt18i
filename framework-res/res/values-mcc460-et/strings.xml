@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">vaadata WLAN olekut</string>
+    <string name="permdesc_accessWifiState">Rakendusel on lubatud vaadata teavet WLAN oleku kohta.</string>
+    <string name="permlab_changeWifiState">muuta WLAN olekut</string>
+    <string name="permdesc_changeWifiState">Rakendusel on lubatud luua ja katkestada ühendus WLAN pöörduspunktidega ning muuta konfigureeritud WLAN-võrke.</string>
+    <string name="permlab_changeWifiMulticastState">lubada WLAN multisaate-vastuvõttu</string>
+    <string name="tethered_notification_title">Edasijagamine või pääsupunkt on aktiivsed</string>
+</resources>

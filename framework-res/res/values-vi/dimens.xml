@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="date_picker_day_width">60.0dip</dimen>
+    <dimen name="date_picker_month_width">100.0dip</dimen>
+    <dimen name="date_picker_year_width">95.0dip</dimen>
+</resources>

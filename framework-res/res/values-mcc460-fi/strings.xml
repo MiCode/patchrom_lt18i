@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">WLAN-tilan tarkastelu</string>
+    <string name="permdesc_accessWifiState">Sallii sovelluksen tarkastella WLAN-tilan tietoja.</string>
+    <string name="permlab_changeWifiState">WLAN-tilan muuttaminen</string>
+    <string name="permdesc_changeWifiState">Sallii sovelluksen muodostaa yhteyden WLAN-yhteyspisteisiin ja katkaista yhteyden niihin ja tehdä muutoksia määritettyihin WLAN-verkkoihin.</string>
+    <string name="permlab_changeWifiMulticastState">WLAN Multicast -vastaanoton salliminen</string>
+    <string name="tethered_notification_title">Sitominen tai tukiasema aktiivinen</string>
+</resources>

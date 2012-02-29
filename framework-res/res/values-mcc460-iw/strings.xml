@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">הצג מצב WLAN</string>
+    <string name="permdesc_accessWifiState">מאפשר ליישום להציג את המידע על המצב של WLAN.</string>
+    <string name="permlab_changeWifiState">שנה מצב WLAN</string>
+    <string name="permdesc_changeWifiState">מאפשר ליישום להתחבר ולהתנתק מנקודות גישה של WLAN, ולבצע שינויים ברשתות WLAN מוגדרות.</string>
+    <string name="permlab_changeWifiMulticastState">אפשר קבלת שידור לקבוצה של WLAN</string>
+    <string name="tethered_notification_title">Tethering או נקודה חמה פעילה</string>
+</resources>

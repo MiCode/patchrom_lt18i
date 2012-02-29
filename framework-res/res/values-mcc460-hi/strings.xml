@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">WLAN स्थिति देखें</string>
+    <string name="permdesc_accessWifiState">किसी अनुप्रयोग को WLAN की स्थिति के बारे में जानकारी देखने की अनुमति देता है।</string>
+    <string name="permlab_changeWifiState">WLAN स्थिति बदलें</string>
+    <string name="permdesc_changeWifiState">किसी अनुप्रयोग को WLAN एक्सेस बिंदु से जोड़ने और अलग करने और कॉन्फ़िगर किए गए WLAN नेटवर्क में बदलाव करने की अनुमति देता है।</string>
+    <string name="permlab_changeWifiMulticastState">WLAN मल्टीकास्ट रिसेप्शन की अनुमति दें</string>
+    <string name="tethered_notification_title">टिथरिंग या हॉटस्पॉट सक्रिय</string>
+</resources>

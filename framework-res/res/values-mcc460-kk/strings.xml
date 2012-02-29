@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_accessWifiState">WLAN күйін көру</string>
+    <string name="permdesc_accessWifiState">Бағдарламаның WLAN функциясының күйі туралы ақпараты көруіне мүмкіндік береді.</string>
+    <string name="permlab_changeWifiState">WLAN күйін өзгерту</string>
+    <string name="permdesc_changeWifiState">Бағдарламаға WLAN қатынас нүктелеріне қосылуға және ажыратуға және конфигурацияланған WLAN желілеріне өзгертулер енгізуге мүмкіндік береді.</string>
+    <string name="permlab_changeWifiMulticastState">WLAN топтық қабылдауды қосу</string>
+    <string name="tethered_notification_title">Шектеу немесе хотспот белсенді</string>
+</resources>

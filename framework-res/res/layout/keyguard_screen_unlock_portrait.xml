@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient android:gravity="center" android:orientation="vertical" android:background="#70000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true">
+            <TextView android:textAppearance="?textAppearanceMedium" android:textSize="18.0sp" android:id="@id/status1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="4.0dip" />
+            <TextView android:textAppearance="?textAppearanceMedium" android:textSize="18.0sp" android:id="@id/statusSep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <TextView android:textAppearance="?textAppearanceMedium" android:textSize="18.0sp" android:id="@id/status2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="4.0dip" android:layout_alignParentTop="true" />
+        </LinearLayout>
+        <com.android.internal.widget.LockPatternView android:id="@id/lockPattern" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_centerInParent="true" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:gravity="bottom|center" android:id="@id/footerNormal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:id="@id/emergencyCallAlone" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="@string/lockscreen_strings_backup_question_emergency_button_txt" android:drawableLeft="@drawable/ic_emergency" style="@style/SEMCWidget.Button" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:id="@id/footerForgotPattern" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:id="@id/emergencyCallTogether" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lockscreen_emergency_call" android:drawableLeft="@drawable/ic_emergency" android:layout_weight="1.0" style="@style/SEMCWidget.Button" />
+                <Button android:id="@id/forgotPattern" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/SEMCWidget.Button" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient>
