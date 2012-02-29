@@ -409,7 +409,7 @@
 
     .line 103
     .local v6, stretch:I
-    const v4, 0x10100800
+    const v4, 0x10100900
 
     .line 108
     .local v4, flags:I
@@ -443,12 +443,12 @@
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->softInputMode:I
 
     .line 115
-    const v1, 0x103006f
+    const v1, 0x103006e
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
 
     .line 116
-    const/4 v1, 0x5
+    const/4 v1, 0x1
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->screenOrientation:I
 
@@ -492,7 +492,7 @@
     .line 126
     iget-object v1, p0, Lcom/android/internal/policy/impl/KeyguardViewManager;->mKeyguardView:Lcom/android/internal/policy/impl/KeyguardViewBase;
 
-    const v2, 0x102017a
+    const v2, 0x1020177
 
     invoke-virtual {v1, v2}, Lcom/android/internal/policy/impl/KeyguardViewBase;->setId(I)V
 

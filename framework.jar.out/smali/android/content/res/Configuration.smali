@@ -130,6 +130,8 @@
 
 
 # instance fields
+.field public extraConfig:Lmiui/content/res/ExtraConfiguration;
+
 .field public fontScale:F
 
 .field public hardKeyboardHidden:I
@@ -192,13 +194,18 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
     .prologue
     .line 235
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 236
+    new-instance v0, Lmiui/content/res/ExtraConfiguration;
+
+    invoke-direct {v0}, Lmiui/content/res/ExtraConfiguration;-><init>()V
+
+    iput-object v0, p0, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
     invoke-virtual {p0}, Landroid/content/res/Configuration;->setToDefaults()V
 
     .line 237
@@ -206,7 +213,7 @@
 .end method
 
 .method public constructor <init>(Landroid/content/res/Configuration;)V
-    .locals 0
+    .locals 1
     .parameter "o"
 
     .prologue
@@ -214,6 +221,11 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 243
+    new-instance v0, Lmiui/content/res/ExtraConfiguration;
+
+    invoke-direct {v0}, Lmiui/content/res/ExtraConfiguration;-><init>()V
+
+    iput-object v0, p0, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
     invoke-virtual {p0}, Landroid/content/res/Configuration;->setToDefaults()V
 
     .line 244
@@ -224,7 +236,7 @@
 .end method
 
 .method private constructor <init>(Landroid/os/Parcel;)V
-    .locals 0
+    .locals 1
     .parameter "source"
 
     .prologue
@@ -232,6 +244,11 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 650
+    new-instance v0, Lmiui/content/res/ExtraConfiguration;
+
+    invoke-direct {v0}, Lmiui/content/res/ExtraConfiguration;-><init>()V
+
+    iput-object v0, p0, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
     invoke-virtual {p0, p1}, Landroid/content/res/Configuration;->readFromParcel(Landroid/os/Parcel;)V
 
     .line 651
@@ -585,6 +602,20 @@
 
     .line 693
     :cond_11
+    iget-object v3, p0, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
+
+    iget-object v4, p1, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
+
+    invoke-virtual {v3, v4}, Lmiui/content/res/ExtraConfiguration;->compareTo(Lmiui/content/res/ExtraConfiguration;)I
+
+    move-result v2
+
+    if-eqz v2, :cond_20
+    move v3, v2
+
+    goto/16 :goto_0
+
+    :cond_20
     iget-object v3, p0, Landroid/content/res/Configuration;->themeComponent:Landroid/content/ComponentName;
 
     if-nez v3, :cond_12
@@ -909,6 +940,15 @@
 
     .line 515
     :cond_10
+    iget-object v1, p0, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
+
+    iget-object v2, p1, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
+
+    invoke-virtual {v1, v2}, Lmiui/content/res/ExtraConfiguration;->diff(Lmiui/content/res/ExtraConfiguration;)I
+
+    move-result v1
+
+    or-int/2addr v0, v1
     return v0
 .end method
 
@@ -1054,6 +1094,9 @@
 
     add-int/2addr v0, v1
 
+    iget-object v1, p0, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
+
+    invoke-virtual {v1}, Lmiui/content/res/ExtraConfiguration;->hashCode()I
     iget-object v1, p0, Landroid/content/res/Configuration;->themeComponent:Landroid/content/ComponentName;
 
     if-eqz v1, :cond_1
@@ -1320,6 +1363,9 @@
     iput v1, p0, Landroid/content/res/Configuration;->seq:I
 
     .line 633
+    iget-object v1, p0, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
+
+    invoke-virtual {v1, p1}, Lmiui/content/res/ExtraConfiguration;->readFromParcel(Landroid/os/Parcel;)V
     return-void
 
     .line 614
@@ -1476,6 +1522,11 @@
     iput v0, p0, Landroid/content/res/Configuration;->seq:I
 
     .line 269
+    iget-object v0, p0, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
+
+    iget-object v1, p1, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
+
+    invoke-virtual {v0, v1}, Lmiui/content/res/ExtraConfiguration;->setTo(Lmiui/content/res/ExtraConfiguration;)V
     return-void
 
     .line 265
@@ -1545,6 +1596,9 @@
     iput v1, p0, Landroid/content/res/Configuration;->seq:I
 
     .line 328
+    iget-object v0, p0, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
+
+    invoke-virtual {v0}, Lmiui/content/res/ExtraConfiguration;->setToDefaults()V
     return-void
 .end method
 
@@ -1719,6 +1773,14 @@
 
     .line 305
     :cond_0
+    iget-object v1, p0, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
+
+    invoke-virtual {v1}, Lmiui/content/res/ExtraConfiguration;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     const/16 v1, 0x7d
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
@@ -2150,6 +2212,15 @@
 
     .line 430
     :cond_14
+    iget-object v1, p0, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
+
+    iget-object v2, p1, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
+
+    invoke-virtual {v1, v2}, Lmiui/content/res/ExtraConfiguration;->updateFrom(Lmiui/content/res/ExtraConfiguration;)I
+
+    move-result v1
+
+    or-int/2addr v0, v1
     return v0
 
     :cond_15
@@ -2270,6 +2341,10 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 604
+    iget-object v0, p0, Landroid/content/res/Configuration;->extraConfig:Lmiui/content/res/ExtraConfiguration;
+
+    invoke-virtual {v0, p1, p2}, Lmiui/content/res/ExtraConfiguration;->writeToParcel(Landroid/os/Parcel;I)V
+
     return-void
 
     .line 576

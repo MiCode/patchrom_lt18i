@@ -3712,6 +3712,29 @@
     return v0
 .end method
 
+.method protected handleCameraKeyEvent(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;IZLandroid/view/Window$Callback;I)Z
+    .locals 1
+    .parameter "decor"
+    .parameter "keyCode"
+    .parameter "isDown"
+    .parameter "cb"
+    .parameter "featureId"
+
+    .prologue
+    .line 2601
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method protected handleCustomizedCameraKey()V
+    .locals 0
+
+    .prologue
+    .line 2601
+    return-void
+.end method
+
 .method protected initializePanelContent(Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;)Z
     .locals 6
     .parameter "st"
@@ -4410,6 +4433,9 @@
 
     invoke-virtual {v5, v4, v9}, Landroid/content/Context;->sendOrderedBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
 
+    .line 1225
+    invoke-virtual {v2, p0}, Landroid/view/KeyEvent$DispatcherState;->reset(Ljava/lang/Object;)V
+
     goto :goto_4
 
     .line 1230
@@ -5036,11 +5062,14 @@
 
     if-nez v4, :cond_6
 
+    .line 1400
+    invoke-virtual {p0}, Lcom/android/internal/policy/impl/PhoneWindow;->handleCustomizedCameraKey()V
+
     :cond_6
     move v4, v6
 
     .line 1402
-    goto :goto_1
+    goto/16 :goto_1
 
     .line 1406
     :sswitch_5

@@ -665,100 +665,133 @@
 .end method
 
 .method public loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
-    .locals 6
+    .locals 7
     .parameter "pm"
 
     .prologue
     .line 167
-    iget-object v3, p0, Landroid/content/pm/ResolveInfo;->resolvePackageName:Ljava/lang/String;
+    iget-object v0, p0, Landroid/content/pm/ResolveInfo;->resolvePackageName:Ljava/lang/String;
 
-    if-eqz v3, :cond_0
+    if-eqz v0, :cond_1
 
-    iget v3, p0, Landroid/content/pm/ResolveInfo;->icon:I
+    iget v0, p0, Landroid/content/pm/ResolveInfo;->icon:I
 
-    if-eqz v3, :cond_0
+    if-eqz v0, :cond_1
 
     .line 168
-    iget-object v3, p0, Landroid/content/pm/ResolveInfo;->resolvePackageName:Ljava/lang/String;
+    iget-object v1, p0, Landroid/content/pm/ResolveInfo;->resolvePackageName:Ljava/lang/String;
 
-    iget v4, p0, Landroid/content/pm/ResolveInfo;->icon:I
+    iget v2, p0, Landroid/content/pm/ResolveInfo;->icon:I
 
-    const/4 v5, 0x0
+    const/4 v3, 0x0
 
-    invoke-virtual {p1, v3, v4, v5}, Landroid/content/pm/PackageManager;->getDrawable(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    move-result-object v2
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
+    move-object v4, v0
+
+    :goto_0
+    iget-object v0, p0, Landroid/content/pm/ResolveInfo;->filter:Landroid/content/IntentFilter;
+
+    invoke-static {v0}, Landroid/app/MiuiThemeHelper;->isCustomizedIcon(Landroid/content/IntentFilter;)Z
+
+    move-result v5
+
+    move-object v0, p1
+
+    invoke-static/range {v0 .. v5}, Landroid/app/MiuiThemeHelper;->getDrawable(Landroid/content/pm/PackageManager;Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;Landroid/content/pm/PackageItemInfo;Z)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v6
 
     .line 169
-    .local v2, dr:Landroid/graphics/drawable/Drawable;
-    if-eqz v2, :cond_0
+    .local v6, dr:Landroid/graphics/drawable/Drawable;
+    if-eqz v6, :cond_1
 
-    move-object v3, v2
+    move-object v0, v6
 
     .line 181
-    .end local v2           #dr:Landroid/graphics/drawable/Drawable;
-    :goto_0
-    return-object v3
+    .end local v6           #dr:Landroid/graphics/drawable/Drawable;
+    :goto_1
+    return-object v0
+
+    .line 168
+    :cond_0
+    iget-object v0, p0, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
+
+    move-object v4, v0
+
+    goto :goto_0
 
     .line 173
-    :cond_0
-    iget-object v3, p0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+    :cond_1
+    iget-object v0, p0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    if-eqz v3, :cond_1
+    if-eqz v0, :cond_2
 
-    iget-object v3, p0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+    iget-object v0, p0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    move-object v1, v3
+    move-object v4, v0
 
     .line 174
-    .local v1, ci:Landroid/content/pm/ComponentInfo;
-    :goto_1
-    iget-object v0, v1, Landroid/content/pm/ComponentInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    .local v4, ci:Landroid/content/pm/ComponentInfo;
+    :goto_2
+    iget-object v3, v4, Landroid/content/pm/ComponentInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     .line 175
-    .local v0, ai:Landroid/content/pm/ApplicationInfo;
-    iget v3, p0, Landroid/content/pm/ResolveInfo;->icon:I
+    .local v3, ai:Landroid/content/pm/ApplicationInfo;
+    iget v0, p0, Landroid/content/pm/ResolveInfo;->icon:I
 
-    if-eqz v3, :cond_2
+    if-eqz v0, :cond_3
 
     .line 176
-    iget-object v3, v1, Landroid/content/pm/ComponentInfo;->packageName:Ljava/lang/String;
+    iget-object v1, v4, Landroid/content/pm/ComponentInfo;->packageName:Ljava/lang/String;
 
-    iget v4, p0, Landroid/content/pm/ResolveInfo;->icon:I
+    iget v2, p0, Landroid/content/pm/ResolveInfo;->icon:I
 
-    invoke-virtual {p1, v3, v4, v0}, Landroid/content/pm/PackageManager;->getDrawable(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroid/content/pm/ResolveInfo;->filter:Landroid/content/IntentFilter;
 
-    move-result-object v2
+    invoke-static {v0}, Landroid/app/MiuiThemeHelper;->isCustomizedIcon(Landroid/content/IntentFilter;)Z
+
+    move-result v5
+
+    move-object v0, p1
+
+    invoke-static/range {v0 .. v5}, Landroid/app/MiuiThemeHelper;->getDrawable(Landroid/content/pm/PackageManager;Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;Landroid/content/pm/PackageItemInfo;Z)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v6
 
     .line 177
-    .restart local v2       #dr:Landroid/graphics/drawable/Drawable;
-    if-eqz v2, :cond_2
+    .restart local v6       #dr:Landroid/graphics/drawable/Drawable;
+    if-eqz v6, :cond_3
 
-    move-object v3, v2
+    move-object v0, v6
 
     .line 178
-    goto :goto_0
-
-    .line 173
-    .end local v0           #ai:Landroid/content/pm/ApplicationInfo;
-    .end local v1           #ci:Landroid/content/pm/ComponentInfo;
-    .end local v2           #dr:Landroid/graphics/drawable/Drawable;
-    :cond_1
-    iget-object v3, p0, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
-
-    move-object v1, v3
-
     goto :goto_1
 
-    .line 181
-    .restart local v0       #ai:Landroid/content/pm/ApplicationInfo;
-    .restart local v1       #ci:Landroid/content/pm/ComponentInfo;
+    .line 173
+    .end local v3           #ai:Landroid/content/pm/ApplicationInfo;
+    .end local v4           #ci:Landroid/content/pm/ComponentInfo;
+    .end local v6           #dr:Landroid/graphics/drawable/Drawable;
     :cond_2
-    invoke-virtual {v1, p1}, Landroid/content/pm/ComponentInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
 
-    move-result-object v3
+    move-object v4, v0
 
-    goto :goto_0
+    goto :goto_2
+
+    .line 181
+    .restart local v3       #ai:Landroid/content/pm/ApplicationInfo;
+    .restart local v4       #ci:Landroid/content/pm/ComponentInfo;
+    :cond_3
+    invoke-virtual {v4, p1}, Landroid/content/pm/ComponentInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    goto :goto_1
 .end method
 
 .method public loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;

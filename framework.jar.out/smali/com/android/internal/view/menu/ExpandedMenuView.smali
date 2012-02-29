@@ -64,7 +64,7 @@
 .end method
 
 .method public initialize(Lcom/android/internal/view/menu/MenuBuilder;I)V
-    .locals 1
+    .locals 2
     .parameter "menu"
     .parameter "menuType"
 
@@ -73,11 +73,15 @@
     iput-object p1, p0, Lcom/android/internal/view/menu/ExpandedMenuView;->mMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
     .line 59
-    new-instance v0, Lcom/android/internal/view/menu/MenuBuilder$MenuAdapter;
+    new-instance v0, Lmiui/widget/RoundCornerListAdapter;
+
+    new-instance v1, Lcom/android/internal/view/menu/MenuBuilder$MenuAdapter;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-direct {v0, p1, p2}, Lcom/android/internal/view/menu/MenuBuilder$MenuAdapter;-><init>(Lcom/android/internal/view/menu/MenuBuilder;I)V
+    invoke-direct {v1, p1, p2}, Lcom/android/internal/view/menu/MenuBuilder$MenuAdapter;-><init>(Lcom/android/internal/view/menu/MenuBuilder;I)V
+
+    invoke-direct {v0, v1}, Lmiui/widget/RoundCornerListAdapter;-><init>(Landroid/widget/ListAdapter;)V
 
     invoke-virtual {p0, v0}, Lcom/android/internal/view/menu/ExpandedMenuView;->setAdapter(Landroid/widget/ListAdapter;)V
 

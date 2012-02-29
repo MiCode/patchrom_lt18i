@@ -102,7 +102,7 @@
     iget-object v3, p0, Landroid/preference/PreferenceScreen;->mListView:Landroid/widget/ListView;
 
     invoke-virtual {v1, v3}, Landroid/app/Dialog;->setContentView(Landroid/view/View;)V
-
+    invoke-static {v1, v3}, Lmiui/preference/PreferenceActivityListener;->onShowDialog(Landroid/app/Dialog;Landroid/widget/ListView;)V
     .line 166
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -248,9 +248,9 @@
 
     .prologue
     .line 126
-    new-instance v0, Landroid/preference/PreferenceGroupAdapter;
+    invoke-static {p0}, Landroid/preference/MiuiClassFactory;->newPreferenceGroupAdapter(Landroid/preference/PreferenceGroup;)Landroid/preference/PreferenceGroupAdapter;
 
-    invoke-direct {v0, p0}, Landroid/preference/PreferenceGroupAdapter;-><init>(Landroid/preference/PreferenceGroup;)V
+    move-result-object v0
 
     return-object v0
 .end method

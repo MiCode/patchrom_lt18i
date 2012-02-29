@@ -7835,6 +7835,18 @@
 
     if-nez v4, :cond_2
 
+    const-string v4, "miui"
+
+    move-object v0, v4
+
+    move-object/from16 v1, v25
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_2
+
     .line 778
     const/4 v4, 0x0
 
@@ -9083,7 +9095,7 @@
     .end local v35           #targetVers:I
     .end local v37           #val:Landroid/util/TypedValue;
     :cond_20
-    const-string v4, "supports-screens"
+    const-string/jumbo v4, "supports-screens"
 
     move-object/from16 v0, v33
 
@@ -10455,6 +10467,14 @@
 
     if-nez v6, :cond_7
 
+    const-string v6, "miui"
+
+    invoke-virtual {v6, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-nez v6, :cond_7
+
     .line 716
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -10540,7 +10560,7 @@
 
     invoke-direct {v6, v7, v2}, Landroid/content/pm/PackageParser$PackageLite;-><init>(Ljava/lang/String;I)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
     .line 721
     .restart local v0       #attr:Ljava/lang/String;
@@ -10668,6 +10688,14 @@
     if-eqz v0, :cond_7
 
     const-string v3, "android"
+
+    invoke-virtual {v3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_7
+
+    const-string v3, "miui"
 
     invoke-virtual {v3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -14828,20 +14856,18 @@
 
     .line 420
     .local v10, errorException:Ljava/lang/Exception;
-    :try_start_3
-    new-instance v14, Landroid/content/res/Resources;
-
     const/4 v15, 0x0
 
-    move-object v0, v14
+    :try_start_3
+    move-object v0, v6
 
-    move-object v1, v6
+    move-object/from16 v1, p3
 
-    move-object/from16 v2, p3
+    move-object v2, v15
 
-    move-object v3, v15
+    invoke-static {v0, v1, v2}, Landroid/content/res/MiuiClassFactory;->newResources(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)Landroid/content/res/Resources;
 
-    invoke-direct {v0, v1, v2, v3}, Landroid/content/res/Resources;-><init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)V
+    move-result-object v14
 
     .line 421
     .local v14, res:Landroid/content/res/Resources;

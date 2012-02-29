@@ -7,41 +7,28 @@
 
 
 # instance fields
-.field private final mBackupQuestionUtils:Lcom/android/internal/widget/BackupQuestionUtils;
-
-.field private mIsEmergencyMasterReset:Z
-
 .field private final mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
 .field private final mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/internal/widget/LockPatternUtils;Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;Lcom/android/internal/widget/BackupQuestionUtils;)V
-    .locals 1
+.method public constructor <init>(Lcom/android/internal/widget/LockPatternUtils;Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;)V
+    .locals 0
     .parameter "lockPatternUtils"
     .parameter "updateMonitor"
-    .parameter "backupQuestionUtils"
 
     .prologue
-    .line 51
+    .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 40
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mIsEmergencyMasterReset:Z
-
-    .line 52
+    .line 41
     iput-object p1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
-    .line 53
+    .line 42
     iput-object p2, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
-    .line 54
-    iput-object p3, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mBackupQuestionUtils:Lcom/android/internal/widget/BackupQuestionUtils;
-
-    .line 55
+    .line 43
     return-void
 .end method
 
@@ -49,14 +36,14 @@
     .locals 2
 
     .prologue
-    .line 73
+    .line 57
     iget-object v1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
     invoke-virtual {v1}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->getSimState()Lcom/android/internal/telephony/IccCard$State;
 
     move-result-object v0
 
-    .line 74
+    .line 58
     .local v0, simState:Lcom/android/internal/telephony/IccCard$State;
     sget-object v1, Lcom/android/internal/telephony/IccCard$State;->PIN_REQUIRED:Lcom/android/internal/telephony/IccCard$State;
 
@@ -85,28 +72,18 @@
 
 # virtual methods
 .method public createKeyguardView(Landroid/content/Context;Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;Lcom/android/internal/policy/impl/KeyguardWindowController;)Lcom/android/internal/policy/impl/KeyguardViewBase;
-    .locals 7
+    .locals 1
     .parameter "context"
     .parameter "updateMonitor"
     .parameter "controller"
 
     .prologue
-    .line 60
-    new-instance v0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;
+    .line 48
+    iget-object v0, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
-    iget-object v3, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    invoke-static {p1, p2, v0, p3}, Lcom/android/internal/policy/impl/MiuiClassFactory;->createKeyguardView(Landroid/content/Context;Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;Lcom/android/internal/widget/LockPatternUtils;Lcom/android/internal/policy/impl/KeyguardWindowController;)Lcom/android/internal/policy/impl/KeyguardViewBase;
 
-    iget-object v5, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mBackupQuestionUtils:Lcom/android/internal/widget/BackupQuestionUtils;
-
-    iget-boolean v6, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mIsEmergencyMasterReset:Z
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-object v4, p3
-
-    invoke-direct/range {v0 .. v6}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;-><init>(Landroid/content/Context;Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;Lcom/android/internal/widget/LockPatternUtils;Lcom/android/internal/policy/impl/KeyguardWindowController;Lcom/android/internal/widget/BackupQuestionUtils;Z)V
+    move-result-object v0
 
     return-object v0
 .end method
@@ -115,7 +92,7 @@
     .locals 1
 
     .prologue
-    .line 65
+    .line 53
     iget-object v0, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v0}, Lcom/android/internal/widget/LockPatternUtils;->isSecure()Z
@@ -140,16 +117,4 @@
     const/4 v0, 0x0
 
     goto :goto_0
-.end method
-
-.method public setEmergencyMasterReset(Z)V
-    .locals 0
-    .parameter "isEmergencyMasterReset"
-
-    .prologue
-    .line 69
-    iput-boolean p1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mIsEmergencyMasterReset:Z
-
-    .line 70
-    return-void
 .end method

@@ -163,6 +163,9 @@
 
     .line 161
     .local v1, pd:Landroid/app/ProgressDialog;
+    sget-boolean v2, Lcom/android/internal/app/ShutdownThread;->mReboot:Z
+
+    if-nez v2, :cond_31
     const v2, 0x1040151
 
     invoke-virtual {p0, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
@@ -179,6 +182,24 @@
     move-result-object v2
 
     invoke-virtual {v1, v2}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
+
+    :cond_31
+    const v2, 0x10402f1
+
+    invoke-virtual {p0, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/app/ProgressDialog;->setTitle(Ljava/lang/CharSequence;)V
+
+    const v2, 0x609001a
+
+    invoke-virtual {p0, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
+
 
     .line 163
     invoke-virtual {v1, v5}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V

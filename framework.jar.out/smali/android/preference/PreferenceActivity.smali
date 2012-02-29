@@ -293,6 +293,8 @@
     .prologue
     .line 165
     invoke-super {p0}, Landroid/app/ListActivity;->onContentChanged()V
+    invoke-static {p0}, Lmiui/preference/PreferenceActivityListener;->onContentChanged(Landroid/preference/PreferenceActivity;)V
+
 
     .line 166
     invoke-direct {p0}, Landroid/preference/PreferenceActivity;->postBindPreferences()V
@@ -308,6 +310,8 @@
     .prologue
     .line 105
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-static {p0}, Lmiui/preference/PreferenceActivityListener;->onCreate(Landroid/preference/PreferenceActivity;)V
+
 
     .line 107
     const v0, 0x1090052

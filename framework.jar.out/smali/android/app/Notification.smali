@@ -569,7 +569,7 @@
 .end method
 
 .method public setLatestEventInfo(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V
-    .locals 5
+    .locals 3
     .parameter "context"
     .parameter "contentTitle"
     .parameter "contentText"
@@ -620,25 +620,6 @@
 
     .line 506
     :cond_2
-    iget-wide v1, p0, Landroid/app/Notification;->when:J
-
-    const-wide/16 v3, 0x0
-
-    cmp-long v1, v1, v3
-
-    if-eqz v1, :cond_3
-
-    .line 507
-    const v1, 0x102005b
-
-    const-string v2, "setTime"
-
-    iget-wide v3, p0, Landroid/app/Notification;->when:J
-
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/widget/RemoteViews;->setLong(ILjava/lang/String;J)V
-
-    .line 510
-    :cond_3
     iput-object v0, p0, Landroid/app/Notification;->contentView:Landroid/widget/RemoteViews;
 
     .line 511

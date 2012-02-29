@@ -37,7 +37,7 @@
     .parameter
 
     .prologue
-    .line 280
+    .line 288
     iput-object p1, p0, Lcom/android/internal/policy/impl/AccountUnlockScreen$2;->this$0:Lcom/android/internal/policy/impl/AccountUnlockScreen;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -61,7 +61,7 @@
     .end annotation
 
     .prologue
-    .line 283
+    .line 291
     .local p1, future:Landroid/accounts/AccountManagerFuture;,"Landroid/accounts/AccountManagerFuture<Landroid/os/Bundle;>;"
     :try_start_0
     iget-object v3, p0, Lcom/android/internal/policy/impl/AccountUnlockScreen$2;->this$0:Lcom/android/internal/policy/impl/AccountUnlockScreen;
@@ -75,14 +75,14 @@
 
     invoke-interface {v3, v4}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->pokeWakelock(I)V
 
-    .line 284
+    .line 292
     invoke-interface {p1}, Landroid/accounts/AccountManagerFuture;->getResult()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/os/Bundle;
 
-    .line 285
+    .line 293
     .local v1, result:Landroid/os/Bundle;
     const-string v3, "booleanResult"
 
@@ -90,7 +90,7 @@
 
     move-result v2
 
-    .line 286
+    .line 294
     .local v2, verified:Z
     iget-object v3, p0, Lcom/android/internal/policy/impl/AccountUnlockScreen$2;->this$0:Lcom/android/internal/policy/impl/AccountUnlockScreen;
 
@@ -102,7 +102,7 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Landroid/accounts/AuthenticatorException; {:try_start_0 .. :try_end_0} :catch_2
 
-    .line 294
+    .line 302
     iget-object v3, p0, Lcom/android/internal/policy/impl/AccountUnlockScreen$2;->this$0:Lcom/android/internal/policy/impl/AccountUnlockScreen;
 
     #getter for: Lcom/android/internal/policy/impl/AccountUnlockScreen;->mLogin:Landroid/widget/EditText;
@@ -114,21 +114,21 @@
 
     invoke-direct {v4, p0}, Lcom/android/internal/policy/impl/AccountUnlockScreen$2$1;-><init>(Lcom/android/internal/policy/impl/AccountUnlockScreen$2;)V
 
-    invoke-virtual {v3, v4}, Landroid/widget/EditText;->post(Ljava/lang/Runnable;)Z
-
-    .line 300
     .end local v1           #result:Landroid/os/Bundle;
     .end local v2           #verified:Z
     :goto_0
+    invoke-virtual {v3, v4}, Landroid/widget/EditText;->post(Ljava/lang/Runnable;)Z
+
+    .line 308
     return-void
 
-    .line 287
+    .line 295
     :catch_0
     move-exception v3
 
     move-object v0, v3
 
-    .line 288
+    .line 296
     .local v0, e:Landroid/accounts/OperationCanceledException;
     :try_start_1
     iget-object v3, p0, Lcom/android/internal/policy/impl/AccountUnlockScreen$2;->this$0:Lcom/android/internal/policy/impl/AccountUnlockScreen;
@@ -140,7 +140,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 294
+    .line 302
     iget-object v3, p0, Lcom/android/internal/policy/impl/AccountUnlockScreen$2;->this$0:Lcom/android/internal/policy/impl/AccountUnlockScreen;
 
     #getter for: Lcom/android/internal/policy/impl/AccountUnlockScreen;->mLogin:Landroid/widget/EditText;
@@ -152,18 +152,16 @@
 
     invoke-direct {v4, p0}, Lcom/android/internal/policy/impl/AccountUnlockScreen$2$1;-><init>(Lcom/android/internal/policy/impl/AccountUnlockScreen$2;)V
 
-    invoke-virtual {v3, v4}, Landroid/widget/EditText;->post(Ljava/lang/Runnable;)Z
-
     goto :goto_0
 
-    .line 289
+    .line 297
     .end local v0           #e:Landroid/accounts/OperationCanceledException;
     :catch_1
     move-exception v3
 
     move-object v0, v3
 
-    .line 290
+    .line 298
     .local v0, e:Ljava/io/IOException;
     :try_start_2
     iget-object v3, p0, Lcom/android/internal/policy/impl/AccountUnlockScreen$2;->this$0:Lcom/android/internal/policy/impl/AccountUnlockScreen;
@@ -175,7 +173,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 294
+    .line 302
     iget-object v3, p0, Lcom/android/internal/policy/impl/AccountUnlockScreen$2;->this$0:Lcom/android/internal/policy/impl/AccountUnlockScreen;
 
     #getter for: Lcom/android/internal/policy/impl/AccountUnlockScreen;->mLogin:Landroid/widget/EditText;
@@ -187,18 +185,16 @@
 
     invoke-direct {v4, p0}, Lcom/android/internal/policy/impl/AccountUnlockScreen$2$1;-><init>(Lcom/android/internal/policy/impl/AccountUnlockScreen$2;)V
 
-    invoke-virtual {v3, v4}, Landroid/widget/EditText;->post(Ljava/lang/Runnable;)Z
-
     goto :goto_0
 
-    .line 291
+    .line 299
     .end local v0           #e:Ljava/io/IOException;
     :catch_2
     move-exception v3
 
     move-object v0, v3
 
-    .line 292
+    .line 300
     .local v0, e:Landroid/accounts/AuthenticatorException;
     :try_start_3
     iget-object v3, p0, Lcom/android/internal/policy/impl/AccountUnlockScreen$2;->this$0:Lcom/android/internal/policy/impl/AccountUnlockScreen;
@@ -210,7 +206,7 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 294
+    .line 302
     iget-object v3, p0, Lcom/android/internal/policy/impl/AccountUnlockScreen$2;->this$0:Lcom/android/internal/policy/impl/AccountUnlockScreen;
 
     #getter for: Lcom/android/internal/policy/impl/AccountUnlockScreen;->mLogin:Landroid/widget/EditText;
@@ -221,8 +217,6 @@
     new-instance v4, Lcom/android/internal/policy/impl/AccountUnlockScreen$2$1;
 
     invoke-direct {v4, p0}, Lcom/android/internal/policy/impl/AccountUnlockScreen$2$1;-><init>(Lcom/android/internal/policy/impl/AccountUnlockScreen$2;)V
-
-    invoke-virtual {v3, v4}, Landroid/widget/EditText;->post(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 

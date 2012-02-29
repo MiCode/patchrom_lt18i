@@ -9193,6 +9193,8 @@
 
     .line 2986
     .local v0, changes:I
+    invoke-static {v0}, Landroid/app/MiuiThemeHelper;->handleExtraConfigurationChanges(I)V
+
     invoke-virtual {p0, v7}, Landroid/app/ActivityThread;->getDisplayMetricsLocked(Z)Landroid/util/DisplayMetrics;
 
     move-result-object v1
@@ -10546,17 +10548,17 @@
 
     .line 1214
     .local v3, metrics:Landroid/util/DisplayMetrics;
-    new-instance v4, Landroid/content/res/Resources;
 
-    .end local v4           #r:Landroid/content/res/Resources;
     invoke-virtual {p0}, Landroid/app/ActivityThread;->getConfiguration()Landroid/content/res/Configuration;
 
     move-result-object v6
 
-    invoke-direct {v4, v0, v3, v6, p2}, Landroid/content/res/Resources;-><init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;)V
-
     .line 1221
-    .restart local v4       #r:Landroid/content/res/Resources;
+
+    invoke-static {v0, v3, v6, p2}, Landroid/content/res/MiuiClassFactory;->newResources(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;)Landroid/content/res/Resources;
+
+    move-result-object v4
+
     iget-object v7, p0, Landroid/app/ActivityThread;->mPackages:Ljava/util/HashMap;
 
     monitor-enter v7
