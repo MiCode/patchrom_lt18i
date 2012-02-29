@@ -1,7 +1,9 @@
-Official version infomation of lt18i:
+1. Official version infomation of lt18i:
+    基带版本 : 8x55A-AAABQOAZM-203028D-56
+    版本号   : 4.0.2.A.0.42
 
-基带版本
-8x55A-AAABQOAZM-203028D-56
+2. recoveryARC.img, an image to enter recovery mode
+    fastboot boot recoveryARC.img
 
-版本号
-4.0.2.A.0.42
+3. RootXperia_zhw325.zip, a rom package to root lt18i
+    put it in SD card, and apply it to lt18i under recovery mode
