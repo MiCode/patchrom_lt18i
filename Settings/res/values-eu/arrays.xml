@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Europa</item>
+        <item>Afrika</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Ozeano Barea</item>
+        <item>Guztiak</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Animaziorik ez</item>
+        <item>Animazio batzuk</item>
+        <item>Animazio guztiak</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Ez da leiho-animaziorik erakusten</item>
+        <item>Leiho-animazio batzuk erakusten dira</item>
+        <item>Leiho-animazio guztiak erakusten dira</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 segundo</item>
+        <item>30 segundo</item>
+        <item>1 minutu</item>
+        <item>2 minutu</item>
+        <item>10 minutu</item>
+        <item>30 minutu</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Oso motela</item>
+        <item>Motela</item>
+        <item>Normala</item>
+        <item>Azkarra</item>
+        <item>Oso azkarra</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Ameriketako ingelesa</item>
+        <item>EBko ingelesa</item>
+        <item>Frantsesa</item>
+        <item>Alemana</item>
+        <item>Italiera</item>
+        <item>Gaztelania</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Bilatzen...</item>
+        <item>Konektatzen...</item>
+        <item>Autentifikatzen...</item>
+        <item>IP helbidea eskuratzen...</item>
+        <item>Konektatuta</item>
+        <item>Etenda</item>
+        <item>Deskonektatzen...</item>
+        <item>Deskonektatuta</item>
+        <item>Ez da behar bezala osatu</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Bilatzen...</item>
+        <item>%1$s sarera konektatzen…</item>
+        <item>%1$s bidez autentifikatzen…</item>
+        <item>%1$s sarearen IP helbidea eskuratzen…</item>
+        <item>%1$s sarera konektatuta</item>
+        <item>Etenda</item>
+        <item>%1$s saretik deskonektatzen…</item>
+        <item>Deskonektatuta</item>
+        <item>Ez da behar bezala osatu</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Ireki</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI hamaseitarra</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Ahula</item>
+        <item>Eskasa</item>
+        <item>Ona</item>
+        <item>Bikaina</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Pantaila itzaltzen denean</item>
+        <item>Inoiz ez konektatutakoan</item>
+        <item>Inoiz ez</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Erabilera denbora</item>
+        <item>Abiarazte kopurua</item>
+        <item>Aplikazioaren izena</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Bat ere ez</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Desaktibatuta</item>
+        <item>Alerta</item>
+        <item>Egin dardara</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Bat ere ez</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP edo CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Gailuaren barne-biltegia</item>
+        <item>SD txartel aldagarria</item>
+        <item>Utzi sistemari erabakitzen</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Beti</item>
+        <item>Inoiz ez</item>
+        <item>Isilik moduan soilik</item>
+        <item>Isilik ez dagoenean soilik</item>
+    </string-array>
+</resources>

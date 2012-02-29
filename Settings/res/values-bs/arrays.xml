@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Evropa</item>
+        <item>Afrika</item>
+        <item>Azija</item>
+        <item>Australija</item>
+        <item>Pacifik</item>
+        <item>Svi</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Bez animacija</item>
+        <item>Neke animacije</item>
+        <item>Sve animacije</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Animacije prozora se ne prikazuju</item>
+        <item>Neke animacije prozora se prikazuju</item>
+        <item>Sve animacije prozora se prikazuju</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekundi</item>
+        <item>30 sekundi</item>
+        <item>1 minuta</item>
+        <item>2 minute</item>
+        <item>10 minuta</item>
+        <item>30 minuta</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Jako sporo</item>
+        <item>Sporo</item>
+        <item>Normalno</item>
+        <item>Brzo</item>
+        <item>Jako brzo</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Američki engleski</item>
+        <item>Britanski engleski</item>
+        <item>Francuski</item>
+        <item>Njemački</item>
+        <item>Italijanski</item>
+        <item>Španski</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Pretraživanje u toku...</item>
+        <item>Povezivanje u toku...</item>
+        <item>Provjera autentičnosti u toku...</item>
+        <item>Pribavljanje IP adrese u toku...</item>
+        <item>Povezano</item>
+        <item>Suspendovana</item>
+        <item>Prekidanje veze u toku...</item>
+        <item>Veza prekinuta</item>
+        <item>Neuspješno</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Pretraživanje u toku...</item>
+        <item>Povezivanje na %1$s u toku…</item>
+        <item>Provjera autentičnosti sa %1$s u toku…</item>
+        <item>Pribavljanje IP adrese od %1$s u toku…</item>
+        <item>Povezani ste na %1$s</item>
+        <item>Suspendovana</item>
+        <item>Prekidanje veze sa %1$s u toku…</item>
+        <item>Veza prekinuta</item>
+        <item>Neuspješno</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Otvoriti</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI heksadecimalni</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Slab</item>
+        <item>Dosta dobar</item>
+        <item>Dobar</item>
+        <item>Odličan</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Kada se ekran isključi</item>
+        <item>Nikad kad je prik. na punj.</item>
+        <item>Nikad</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Vrijeme korištenja</item>
+        <item>Pokretanje brojača</item>
+        <item>Ime aplikacije</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Nikakva</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Isključeno</item>
+        <item>Upozoriti</item>
+        <item>Vibriranje</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Nikakva</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP ili CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Interna pohrana uređaja</item>
+        <item>Uklonjiva SD kartica</item>
+        <item>Neka sistem odluči</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Uvijek</item>
+        <item>Nikada</item>
+        <item>Kad je zvuk isključen</item>
+        <item>Kad je zvuk uključen</item>
+    </string-array>
+</resources>

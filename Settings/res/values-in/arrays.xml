@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Eropa</item>
+        <item>Afrika</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Pasifik</item>
+        <item>Semua</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Tidak ada animasi</item>
+        <item>Beberapa animasi</item>
+        <item>Semua animasi</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Tidak ada animasi jendela yang ditunjukkan</item>
+        <item>Beberapa animasi jendela ditampilkan</item>
+        <item>Semua animasi jendela ditampilkan</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 detik</item>
+        <item>30 detik</item>
+        <item>1 menit</item>
+        <item>2 menit</item>
+        <item>10 menit</item>
+        <item>30 menit</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Sangat lambat</item>
+        <item>Lambat</item>
+        <item>Normal</item>
+        <item>Cepat</item>
+        <item>Sangat cepat</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Inggris Amerika</item>
+        <item>Inggris Inggris</item>
+        <item>Prancis</item>
+        <item>Jerman</item>
+        <item>Italia</item>
+        <item>Spanyol</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Memindai...</item>
+        <item>Menyambung…</item>
+        <item>Mengotentikasi…</item>
+        <item>Mendapatkan alamat IP…</item>
+        <item>Disambungkan</item>
+        <item>Ditangguhkan</item>
+        <item>Memutus sambungan...</item>
+        <item>Sambungan diputus</item>
+        <item>Gagal</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Memindai...</item>
+        <item>Menyambung ke %1$s…</item>
+        <item>Mengotentikasi dengan %1$s…</item>
+        <item>Mendapatkan alamat IP dari %1$s…</item>
+        <item>Disambungkan ke %1$s</item>
+        <item>Ditangguhkan</item>
+        <item>Memutus sambungan dari %1$s…</item>
+        <item>Sambungan diputus</item>
+        <item>Gagal</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>Buka</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Terbuka</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI hexadecimal</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Lemah</item>
+        <item>Sedang</item>
+        <item>Bagus</item>
+        <item>Sempurna</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Saat layar mati</item>
+        <item>Tidak saat dicolokkan</item>
+        <item>Tidak pernah</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Waktu Penggunaan</item>
+        <item>Luncurkan Hitung</item>
+        <item>Nama Aplikasi</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Tidak ada</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Mati</item>
+        <item>Pemberitahuan</item>
+        <item>Getar</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Tidak satu pun</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP atau CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Simpanan prgkt internal</item>
+        <item>Kartu SD yg dapat dicabut</item>
+        <item>Biarkan sistem memilih</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Selalu</item>
+        <item>Tidak pernah</item>
+        <item>Apabila suara mati</item>
+        <item>Apabila suara aktif</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Sangat rendah</item>
+        <item>Rendah</item>
+        <item>Normal</item>
+        <item>Tinggi</item>
+        <item>Sangat tinggi</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tether_help_url" formatted="false">file:///android_asset/html/mcc440-mnc00-%y%z/tethering_%xhelp.html</string>
+    <string name="tether_help_url_mtp" formatted="false">file:///android_asset/html/mcc440-mnc00-%y%z/tethering_%xmtp_help.html</string>
+    <string name="tether_help_path" formatted="false">html/mcc440-mnc00-%y%z/tethering_help.html</string>
+    <string name="tether_help_path_mtp" formatted="false">html/mcc440-mnc00-%y%z/tethering_mtp_help.html</string>
+    <string name="wifi_tether_checkbox_text">Pocket WiFi</string>
+    <string name="wifi_tether_enabled_subtext">%1$sが有効です</string>
+    <string name="wifi_tether_settings_text">Pocket WiFi設定</string>
+    <string name="wifi_tether_settings_subtext">Pocket WiFiのセットアップと管理</string>
+    <string name="wifi_tether_settings_title">Pocket WiFi設定</string>
+    <string name="wifi_tether_configure_ap_text">Pocket WiFiのセキュリティ設定</string>
+    <string name="wifi_tether_configure_subtext">Pocket WiFiのSSIDやセキュリティ方式の設定</string>
+    <string name="tether_settings_title_wifi">Pocket WiFi</string>
+    <string name="tether_settings_title_both">テザリングとPocket WiFi</string>
+    <string name="tether_settings_summary_wifi">携帯のデータ通信を Pocket WiFiアクセスポイントとして共有する</string>
+    <string name="tether_settings_summary_both">携帯のデータ通信をUSB経由で、またはPocket WiFiとして共有する</string>
+    <string name="wifi_tether_failed_subtext">Pocket WiFiアクセスポイントエラー</string>
+</resources>

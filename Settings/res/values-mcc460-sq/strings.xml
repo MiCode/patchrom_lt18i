@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Instalo certifikatat e WLAN-t</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Ndiz WLAN</string>
+    <string name="wifi_settings">Cilësimet e WLAN</string>
+    <string name="wifi_settings_category">Cilësimet e WLAN</string>
+    <string name="wifi_starting">Duke u ndezur...</string>
+    <string name="wifi_add_network">Shto rrjetin WLAN</string>
+    <string name="wifi_access_points">Rrjetet WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">Rreg. e pushimit të WLAN</string>
+    <string name="wifi_setting_sleep_policy_summary">Specifikon se kur duhet të kalohet nga WLAN në të dhënat celulare</string>
+    <string name="wifi_tether_checkbox_text">Pika aktive portat. WLAN</string>
+    <string name="wifi_tether_enabled_subtext">Pika aktive portative %1$s aktive</string>
+    <string name="wifi_tether_settings_text">Cilës. pik. aktive port. WLAN</string>
+    <string name="wifi_tether_settings_subtext">Konfiguro dhe menaxho pikën aktive portative WLAN</string>
+    <string name="wifi_tether_settings_title">Cilësimet e pikës aktive portative WLAN</string>
+    <string name="wifi_tether_configure_ap_text">Konfiguro pikën aktive WLAN</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s pika aktive portative WLAN</string>
+    <string name="status_wifi_mac_address">Adresa MAC e WLAN</string>
+    <string name="tether_settings_title_wifi">Pika aktive portative</string>
+    <string name="tether_settings_title_both">Ndërlidh. e pika aktive port.</string>
+    <string name="tether_settings_summary_wifi">Përndani lidhjen e të dhënave celulare të telefonit tuaj si një pikë aktive portative WLAN</string>
+    <string name="tether_settings_summary_both">Përndani lidhjen e të dhënave celulare të telefonit tuaj nëpërmjet USB-së ose si një pikë aktive portative WLAN</string>
+    <string name="location_network_based">Përdor rrjetet pa tel</string>
+    <string name="location_networks_disabled">Shik. vendndodhjen tek aplik. (si Hartat) duke përdorur rrjetet pa tel</string>
+    <string name="location_neighborhood_level">Vendndodhja e përcaktuar nga rrjetet celulare dhe/ose WLAN</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN duke u ekzek.</string>
+    <string name="battery_desc_wifi">Bateria e përdorur nga WLAN</string>
+    <string name="battery_sugg_wifi">Fikni WLAN kur nuk e përdorni ose ku nuk është i disponueshëm</string>
+    <string name="backup_data_summary">Rezervon të dhënat e aplik., fjalëkalimet e WLAN dhe cilës. e tjera në server. e Google</string>
+    <string name="backup_erase_dialog_message">Jeni i sigurt se dëshironi të ndaloni bërjen e kopjeve rezervë të fjalëkalimeve të WLAN, të faqeshenjuesve si dhe të cilësimeve të tjera e të dhënave të aplikacioneve dhe të fshini të gjitha kopjet në serverët e Google?</string>
+    <string name="radio_controls_summary">Menaxhon WLAN, Bluetooth, modalitetin Në avion, rrjetet celulare dhe VPN-të</string>
+    <string name="wifi_tether_failed_subtext">Gabim i pikës aktive portative WLAN</string>
+    <string name="wifi_on_time">WLAN në kohë</string>
+    <string name="bluetooth_on_time">WLAN në kohë</string>
+    <string name="battery_action_wifi">Cilësimet e WLAN</string>
+    <string name="gadget_toggle_wifi">Pëditësimi i cilësimit të WLAN</string>
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>أمريكا</item>
+        <item>أوروبا</item>
+        <item>أفريقيا</item>
+        <item>آسيا</item>
+        <item>أستراليا</item>
+        <item>المحيط الهادئ</item>
+        <item>الكل</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>بلا رسوم متحركة</item>
+        <item>بعض الرسوم المتحركة</item>
+        <item>كل الرسوم المتحركة</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>بدون عرض أية رسوم متحركة للإطار</item>
+        <item>يتم عرض بعض الرسوم المتحركة للإطار</item>
+        <item>يتم عرض كل الرسوم المتحركة للإطار</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 ثانية</item>
+        <item>30 ثانية</item>
+        <item>دقيقة واحدة</item>
+        <item>دقيقتان</item>
+        <item>10 دقائق</item>
+        <item>30 دقيقة</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>بطيء جدًا</item>
+        <item>بطيء</item>
+        <item>عادي</item>
+        <item>سريع</item>
+        <item>سريع جدًا</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>الإنجليزية الأمريكية</item>
+        <item>الإنجليزية البريطانية</item>
+        <item>الفرنسية</item>
+        <item>الألمانية</item>
+        <item>الإيطالية</item>
+        <item>الأسبانية</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>جارٍ المسح...</item>
+        <item>جارٍ الاتصال...</item>
+        <item>جارٍ المصادقة...</item>
+        <item>جارٍ الحصول على عنوان IP...</item>
+        <item>متصل</item>
+        <item>متوقف مرحليا</item>
+        <item>جارٍ قطع الاتصال...</item>
+        <item>تم قطع الاتصال</item>
+        <item>غير ناجح</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>جارٍ المسح...</item>
+        <item>جارٍ الاتصال بـ %1$s…</item>
+        <item>جارٍ المصادقة مع %1$s…</item>
+        <item>جارٍ جلب عنوان IP من %1$s…</item>
+        <item>تم الاتصال بـ %1$s</item>
+        <item>متوقف مرحليا</item>
+        <item>جارٍ قطع الاتصال عن %1$s…</item>
+        <item>تم قطع الاتصال</item>
+        <item>غير ناجح</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>فتح</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>فتح</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI سداسي عشري</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>طبقة النقل الآمنة</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>رديئة</item>
+        <item>مناسبة</item>
+        <item>جيدة</item>
+        <item>ممتازة</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>عند إيقاف تشغيل الشاشة</item>
+        <item>ليس عند التوصيل مطلقا</item>
+        <item>مطلقا</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>وقت الاستخدام</item>
+        <item>عدد مرات بدء التشغيل</item>
+        <item>اسم التطبيق</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>بلا</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>إيقاف تشغيل</item>
+        <item>تنبيه</item>
+        <item>اهتزاز</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>بلا</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP أو CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>تخزين الجهاز الداخلي</item>
+        <item>بطاقة SD القابلة للإزالة</item>
+        <item>اترك النظام يقرر</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>دائما</item>
+        <item>مطلقا</item>
+        <item>عند إيقاف الصوت</item>
+        <item>عند تشغيل الصوت</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>منخفضة جدًا</item>
+        <item>منخفضة</item>
+        <item>عادي</item>
+        <item>مرتفعة</item>
+        <item>عالية جدًا</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>طبقة النقل الآمنة</item>
+        <item>TTLS</item>
+    </string-array>
+</resources>

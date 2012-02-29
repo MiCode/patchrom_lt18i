@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Instalar certificados WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Activar a conectividade WLAN</string>
+    <string name="wifi_settings">Configuración WLAN</string>
+    <string name="wifi_settings_category">Configuración da conectividade WLAN</string>
+    <string name="wifi_starting">Activando…</string>
+    <string name="wifi_add_network">Engadir rede WLAN</string>
+    <string name="wifi_access_points">Redes WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">Política suspen. de WLAN</string>
+    <string name="wifi_setting_sleep_policy_summary">Especificar cando se debe cambiar de WLAN a datos da rede móbil</string>
+    <string name="wifi_tether_checkbox_text">Lug. conex. WLAN port.</string>
+    <string name="wifi_tether_enabled_subtext">Lugar de conexión portátil %1$s activo</string>
+    <string name="wifi_tether_settings_text">Axust. lug. con. WLAN port.</string>
+    <string name="wifi_tether_settings_subtext">Configurar e xestionar hotspot WLAN portátil</string>
+    <string name="wifi_tether_settings_title">Axustes de lugar de conexión WLAN portátil</string>
+    <string name="wifi_tether_configure_ap_text">Config. lug. conex. WLAN</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s hotspot WLAN portátil</string>
+    <string name="status_wifi_mac_address">Enderezo MAC WLAN</string>
+    <string name="tether_settings_title_wifi">Lugar de conexión portátil</string>
+    <string name="tether_settings_title_both">Ancoraxe e hotspot portátil</string>
+    <string name="tether_settings_summary_wifi">Compartir a conexión de datos móbiles do teléfono coma un hotspot WLAN portátil</string>
+    <string name="tether_settings_summary_both">Compartir a conexión de datos móbiles do teléfono a través de USB ou coma un hotspot WLAN portátil</string>
+    <string name="location_network_based">Usar redes sen fíos</string>
+    <string name="location_networks_disabled">Ver a localización nas aplicac. (como Mapas) mediante redes sen fíos</string>
+    <string name="location_neighborhood_level">Localización determinada por WLAN e/ou redes de telefonía móbil</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">Execución de WLAN</string>
+    <string name="battery_desc_wifi">Batería que usa a conexión WLAN</string>
+    <string name="battery_sugg_wifi">Desactive a conexión WLAN cando non a use ou onde non estea dispoñible</string>
+    <string name="backup_data_summary">Efectúe cop. seg. de dat. de aplic., contras. WLAN e outros ax. nos serv. Google</string>
+    <string name="backup_erase_dialog_message">Está seguro de que quere deixar de facer copias de seguridade dos contrasinais do WLAN, marcadores e outros axustes e datos da aplicación e borrar todas as copias dos servidores de Google?</string>
+    <string name="radio_controls_summary">Xestionar a conectividade WLAN, Bluetooth, o modo avión, as redes móbiles e VPN</string>
+    <string name="wifi_tether_failed_subtext">Erro de lugar de conexión WLAN portátil</string>
+    <string name="wifi_on_time">Tempo de conexión WLAN</string>
+    <string name="bluetooth_on_time">Tempo de conexión WLAN:</string>
+    <string name="battery_action_wifi">Configuración de WLAN</string>
+    <string name="gadget_toggle_wifi">Actualizando axuste de WLAN</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tether_help_url" formatted="false">file:///android_asset/html/mcc440-mnc00-%y%z/tethering_%xhelp.html</string>
+    <string name="tether_help_url_mtp" formatted="false">file:///android_asset/html/mcc440-mnc00-%y%z/tethering_%xmtp_help.html</string>
+    <string name="tether_help_path" formatted="false">html/mcc440-mnc00-%y%z/tethering_help.html</string>
+    <string name="tether_help_path_mtp" formatted="false">html/mcc440-mnc00-%y%z/tethering_mtp_help.html</string>
+    <string name="wifi_tether_checkbox_text">Pocket WiFi</string>
+    <string name="wifi_tether_enabled_subtext">%1$s active</string>
+    <string name="wifi_tether_settings_text">Pocket WiFi settings</string>
+    <string name="wifi_tether_settings_subtext">Set up &amp; manage Pocket WiFi</string>
+    <string name="wifi_tether_settings_title">Pocket WiFi settings</string>
+    <string name="wifi_tether_configure_ap_text">Configure Pocket WiFi</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s Pocket WiFi</string>
+    <string name="tether_settings_title_wifi">Pocket WiFi</string>
+    <string name="tether_settings_title_both">Tethering &amp; Pocket WiFi</string>
+    <string name="tether_settings_summary_wifi">"Share your phone's mobile connection as Pocket WiFi"</string>
+    <string name="tether_settings_summary_both">"Share your phone's mobile data connection via USB or as a Pocket WiFi"</string>
+    <string name="wifi_tether_failed_subtext">Pocket WiFi error</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Instalatu WLAN ziurtagiriak</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Aktibatu WLAN sarea</string>
+    <string name="wifi_settings">WLAN ezarpenak</string>
+    <string name="wifi_settings_category">WLAN ezarpenak</string>
+    <string name="wifi_starting">Aktibatzen...</string>
+    <string name="wifi_add_network">Gehitu WLAN sarea</string>
+    <string name="wifi_access_points">WLAN sareak</string>
+    <string name="wifi_setting_sleep_policy_title">WLAN lokartze gidalerroak</string>
+    <string name="wifi_setting_sleep_policy_summary">Zehaztu noiz aldatu behar den WLAN saretik mugikorreko datuetara</string>
+    <string name="wifi_tether_checkbox_text">WLAN eramangarria</string>
+    <string name="wifi_tether_enabled_subtext">%1$s gune eramangarria aktibo</string>
+    <string name="wifi_tether_settings_text">WLAN eramangarri ezarp.</string>
+    <string name="wifi_tether_settings_subtext">Konfiguratu eta kudeatu WLAN gune eramangarria</string>
+    <string name="wifi_tether_settings_title">WLAN gune eramangarriaren ezarpenak</string>
+    <string name="wifi_tether_configure_ap_text">Konfiguratu WLAN gunea</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s WLAN gune eramangarria</string>
+    <string name="status_wifi_mac_address">WLAN MAC helbidea</string>
+    <string name="tether_settings_title_wifi">Sare eramangarria</string>
+    <string name="tether_settings_title_both">Lotura eta sare eramang.</string>
+    <string name="tether_settings_summary_wifi">Partekatu telefonoaren sare mugikorreko datu-konexioa WLAN gune gisa</string>
+    <string name="tether_settings_summary_both">Partekatu telefonoaren sare mugikorreko datu-konexioa USB bidez edo WLAN gune gisa</string>
+    <string name="location_network_based">Erab. hari gabeko sareak</string>
+    <string name="location_networks_disabled">Ikusi kokapen-aplikazioak (hala nola, Maps) hari gabeko sareak erabiliz</string>
+    <string name="location_neighborhood_level">WLAN edo sare mugikorren bidez zehaztutako kokapena</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN exekutatzen</string>
+    <string name="battery_desc_wifi">WLAN sareak erabiltzen duen bateria</string>
+    <string name="battery_sugg_wifi">Desaktibatu WLAN sarea erabiltzen ez duzunean edo erabilgarri ez dagoenean</string>
+    <string name="backup_data_summary">Egin datuen, pasahitzen, eta ezarpenen babeskopiak Google zerbitzarietan</string>
+    <string name="backup_erase_dialog_message">Ziur zure WLAN pasahitzen, lasterbideen eta bestelako ezarpenen eta aplikazioen datuen babeskopiak egiteari utzi nahi diozula eta Google-ren zerbitzarietako kopia guztiak ezabatu nahi dituzula?</string>
+    <string name="radio_controls_summary">Kudeatu WLAN, Bluetooth, eta mugikorreko sareak, hegaldi modua eta VPN konexioak</string>
+    <string name="wifi_tether_failed_subtext">WLAN gune eramangarriaren errorea</string>
+    <string name="wifi_on_time">WLAN unean</string>
+    <string name="bluetooth_on_time">WLAN unean</string>
+    <string name="battery_action_wifi">WLAN ezarpenak</string>
+    <string name="gadget_toggle_wifi">WLAN ezarpena eguneratzen</string>
+</resources>

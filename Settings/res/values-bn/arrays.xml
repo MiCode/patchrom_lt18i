@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>আমেরিকা</item>
+        <item>ইউরোপ</item>
+        <item>আফ্রিকা</item>
+        <item>এশিয়া</item>
+        <item>অস্ট্রেলিয়া</item>
+        <item>প্যাসিফিক</item>
+        <item>সব</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>কোনো অ্যানিমেশন নেই</item>
+        <item>কিছু অ্যানিমেশন</item>
+        <item>সব অ্যনিমেশন</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>কোনো উইন্ডো অ্যানিমেশন দেখানো হয়নি</item>
+        <item>কিছু অ্যানিমেশন দেখানো হয়েছে</item>
+        <item>সব উইন্ডো অ্যানিমেশন দেখানো হয়েছে</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 সেকেন্ড</item>
+        <item>30 সেকেন্ড</item>
+        <item>1 মিনিট</item>
+        <item>2 মিনিট</item>
+        <item>10 মিনিট</item>
+        <item>30 মিনিট</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>খুব ধীরে</item>
+        <item>ধীরে</item>
+        <item>সাধারণ</item>
+        <item>দ্রুত</item>
+        <item>খুব দ্রুত</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>আমেরিকার ইংরাজী</item>
+        <item>ব্রিটিশ ইংরাজী</item>
+        <item>ফরাসী</item>
+        <item>জার্মান</item>
+        <item>ইটালীয়ান</item>
+        <item>স্পেনীয়</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>স্ক্যান হচ্ছে...</item>
+        <item>সংযোগ হচ্ছে...</item>
+        <item>প্রমাণীকরণ হচ্ছে...</item>
+        <item>IP ঠিকানা গ্রহণ হচ্ছে…</item>
+        <item>সংযুক্ত</item>
+        <item>সাসপেন্ড হয়েছে</item>
+        <item>সংযোগ বিচ্ছিন্ন হচ্ছে...</item>
+        <item>সংযোগ বিচ্ছিন্ন</item>
+        <item>ব্যর্থ</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>স্ক্যান হচ্ছে...</item>
+        <item>%1$sতে সংযুক্ত হচ্ছে...</item>
+        <item>%1$sদিয়ে প্রমাণীকরণ হচ্ছে...</item>
+        <item>%1$s থেকে IP ঠিকানা গৃহীত হচ্ছে...</item>
+        <item>সংযুক্ত হয়েছে %1$s</item>
+        <item>সাসপেন্ড হয়েছে</item>
+        <item>%1$s থেকে সংযোগ বিচ্ছিন্ন হচ্ছে...</item>
+        <item>সংযোগ বিচ্ছিন্ন হয়েছে</item>
+        <item>বিফল</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>খোলা</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI হেক্সাডেসিম্যাল</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>খারাপ</item>
+        <item>মোটামুটি</item>
+        <item>ভাল</item>
+        <item>দুর্দান্ত</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>স্ক্রীন বন্ধ থাকলে</item>
+        <item>প্লাগ করা অবস্থায় একেবারেই না</item>
+        <item>কখনো না</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>ব্যবহারের সময়</item>
+        <item>লঞ্চ গণনা</item>
+        <item>অ্যাপ্লিকেশনের নাম</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>কোনটিই না</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>বন্ধ</item>
+        <item>সতর্ক</item>
+        <item>কম্পন</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>কেউ নয়</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP অথবা CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>অভ্যন্তরীণ ডিভাইস সঞ্চয়স্থান</item>
+        <item>অপসারণযোগ্য SD কার্ড</item>
+        <item>সিস্টেমটিকে স্থির করতে দিন</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>সর্বদা</item>
+        <item>কখনই না</item>
+        <item>যখন নীরব মোডে থাকে</item>
+        <item>যখন নীরব মোডে থাকেনা</item>
+    </string-array>
+</resources>

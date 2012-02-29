@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">התקן אישורי WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">הפעל WLAN</string>
+    <string name="wifi_settings">הגדרות WLAN</string>
+    <string name="wifi_settings_category">הגדרות WLAN</string>
+    <string name="wifi_starting">מפעיל...</string>
+    <string name="wifi_add_network">הוסף רשת WLAN</string>
+    <string name="wifi_access_points">רשתות WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">מדיניות שינה של WLAN</string>
+    <string name="wifi_setting_sleep_policy_summary">ציין מתי לעבור מ-WLAN לנתונים ניידים</string>
+    <string name="wifi_tether_checkbox_text">"נק' חמה ניידת של WLAN"</string>
+    <string name="wifi_tether_enabled_subtext">נקודה חמה ניידת %1$s פעילה</string>
+    <string name="wifi_tether_settings_text">"הגד' נק' חמה ניידת של WLAN"</string>
+    <string name="wifi_tether_settings_subtext">הגדר ונהל נקודה חמה ניידת של WLAN</string>
+    <string name="wifi_tether_settings_title">הגדרות נקודה חמה ניידת של WLAN</string>
+    <string name="wifi_tether_configure_ap_text">הגדר נקודה חמה של WLAN</string>
+    <string name="wifi_tether_configure_subtext">‏%1$s %2$s נקודה חמה ניידת של WLAN</string>
+    <string name="status_wifi_mac_address">כתובת MAC של WLAN</string>
+    <string name="tether_settings_title_wifi">נקודה חמה ניידת</string>
+    <string name="tether_settings_title_both">Tethering ונקודה חמה ניידת</string>
+    <string name="tether_settings_summary_wifi">שתף את החיבור הנייד של הטלפון שלך כנקודה חמה ניידת של WLAN</string>
+    <string name="tether_settings_summary_both">שתף את חיבור הנתונים הנייד של הטלפון שלך באמצעות USB או כנקודה חמה ניידת של WLAN</string>
+    <string name="location_network_based">"הש' ברשתות אלחט'"</string>
+    <string name="location_networks_disabled">ראה מיקום ביישומים (כגון מפות) באמצעות רשתות אלחוטיות.</string>
+    <string name="location_neighborhood_level">המיקום נקבע על-ידי WLAN ו/או רשתות ניידות</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">פועל WLAN</string>
+    <string name="battery_desc_wifi">סוללה נמצאת בשימוש על-ידי WLAN</string>
+    <string name="battery_sugg_wifi">כבה את WLAN כאשר אינך משתמש בו או כאשר אינו זמין</string>
+    <string name="backup_data_summary">גבה את נתוני היישום, סיסמאות WLAN והגדרות אחרות בשרתי Google</string>
+    <string name="backup_erase_dialog_message">האם אתה בטוח שברצונך להפסיק לגבות סיסמאות WLAN, סימניות וכן הגדרות אחרות ונתוני יישומים אחרים, ולמחוק את כל העותקים מהשרתים של Google?</string>
+    <string name="radio_controls_summary">נהל את הגדרות WLAN, Bluetooth, מצב טיסה, רשתות ניידות ורשתות VPN</string>
+    <string name="wifi_tether_failed_subtext">שגיאת נקודה חמה ניידת של WLAN</string>
+    <string name="wifi_on_time">זמן פעולה של WLAN</string>
+    <string name="bluetooth_on_time">זמן פעולה של WLAN</string>
+    <string name="battery_action_wifi">הגדרות WLAN</string>
+    <string name="gadget_toggle_wifi">מעדכן הגדרת WLAN</string>
+</resources>

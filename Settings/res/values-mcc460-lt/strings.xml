@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Įdiegti WLAN sertifikatus</string>
+    <string name="wifi_quick_toggle_title">„WLAN“</string>
+    <string name="wifi_quick_toggle_summary">Įjungti „WLAN“</string>
+    <string name="wifi_settings">„WLAN“ nustatymai</string>
+    <string name="wifi_settings_category">„WLAN“ nustatymai</string>
+    <string name="wifi_starting">Įjungiama...</string>
+    <string name="wifi_add_network">Pridėti „WLAN“ tinklą</string>
+    <string name="wifi_access_points">„WLAN“ tinklai</string>
+    <string name="wifi_setting_sleep_policy_title">„WLAN“ užmigimo strateg.</string>
+    <string name="wifi_setting_sleep_policy_summary">Nurodykite, kada „WLAN“ perjungti į mobiliuosius duomenis</string>
+    <string name="wifi_tether_checkbox_text">Perkel. „WLAN“ prieig. t.</string>
+    <string name="wifi_tether_enabled_subtext">Perkeliamasis prieigos taškas „%1$s“ aktyvus</string>
+    <string name="wifi_tether_settings_text">Perkel. „WLAN“ prieig. t. nus.</string>
+    <string name="wifi_tether_settings_subtext">Nustatyti ir tvarkyti perkeliamąjį „WLAN“ prieigos tašką</string>
+    <string name="wifi_tether_settings_title">Perkeliamojo „WLAN“ prieigos taško nustatym.</string>
+    <string name="wifi_tether_configure_ap_text">Konfig. „WLAN“ prieigos tašk.</string>
+    <string name="wifi_tether_configure_subtext">„%1$s %2$s“ perkeliamasis „WLAN“ prieigos taškas</string>
+    <string name="status_wifi_mac_address">„WLAN“ MAC adresas</string>
+    <string name="tether_settings_title_wifi">Perkeliamasis prieigos taškas</string>
+    <string name="tether_settings_title_both">Susiej. ir perkel. prieig. tšk.</string>
+    <string name="tether_settings_summary_wifi">Dalinkitės savo telefono mobiliuoju ryšiu kaip perkeliamuoju „WLAN“ prieigos tašku</string>
+    <string name="tether_settings_summary_both">Dalinkitės savo telefono mobiliųjų duomenų ryšiu naudodami USB arba nustatę kaip perkeliamąjį „WLAN“ prieigos tašką</string>
+    <string name="location_network_based">Naudoti belaidžius tinkl.</string>
+    <string name="location_networks_disabled">Peržiūrėti programų (pvz., „Maps“) rodomą vietą per belaidžius tinklus</string>
+    <string name="location_neighborhood_level">Vieta, kurią nustato „WLAN“ ir (arba) mobilieji tinklai</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">„WLAN“</string>
+    <string name="usage_type_wifi_running">„WLAN“ vykdymas</string>
+    <string name="battery_desc_wifi">Kiek akumuliatoriaus energijos naudoja „WLAN“</string>
+    <string name="battery_sugg_wifi">Išjunkite „WLAN“, kai jo nenaudojate arba jis nepasiekiamas</string>
+    <string name="backup_data_summary">Sukurti progr. duom., „WLAN“ slaptažodžių ir kitų nust. atsar. kopiją „Google“ server.</string>
+    <string name="backup_erase_dialog_message">Ar tikrai norite sustabdyti „WLAN“ slaptažodžių, žymių ir kitų nustatymų bei programų duomenų atsarginių kopijų kūrimą ir ištrinti visas kopijas „Google“ serveriuose?</string>
+    <string name="radio_controls_summary">Tvarkykite „WLAN“, „Bluetooth“, skrydžio režimą, mobiliuosius tinklus ir VPN</string>
+    <string name="wifi_tether_failed_subtext">Perkeliamojo „WLAN“ prieigos taško klaida</string>
+    <string name="wifi_on_time">„WLAN“ įjungimo laikas</string>
+    <string name="bluetooth_on_time">„WLAN“ įjungimo laikas</string>
+    <string name="battery_action_wifi">„WLAN“ nustatymai</string>
+    <string name="gadget_toggle_wifi">Naujinami „WLAN“ nustatymai</string>
+</resources>

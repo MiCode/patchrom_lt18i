@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amèrica</item>
+        <item>Europa</item>
+        <item>Àfrica</item>
+        <item>Àsia</item>
+        <item>Austràlia</item>
+        <item>Pacífic</item>
+        <item>Tot</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Sense animacions</item>
+        <item>Unes quantes animacions</item>
+        <item>Totes les animacions</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>No es mostra cap animació de finestra</item>
+        <item>Es mostren unes quantes animacions de finestra</item>
+        <item>Es mostren totes les animacions de finestra</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 segons</item>
+        <item>30 segons</item>
+        <item>1 minut</item>
+        <item>2 minuts</item>
+        <item>10 minuts</item>
+        <item>30 minuts</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Molt lent</item>
+        <item>Lent</item>
+        <item>Normal</item>
+        <item>Ràpid</item>
+        <item>Molt ràpid</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Anglès americà</item>
+        <item>Anglès britànic</item>
+        <item>Francès</item>
+        <item>Alemany</item>
+        <item>Italià</item>
+        <item>Espanyol</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>"S'està explorant..."</item>
+        <item>"S'està connectant..."</item>
+        <item>"S'està autenticant…"</item>
+        <item>"S'està obtenint l'adreça IP..."</item>
+        <item>Connectada</item>
+        <item>Suspesa</item>
+        <item>"S'està desconnectant..."</item>
+        <item>Desconnectada</item>
+        <item>Incorrecta</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>"S'està explorant..."</item>
+        <item>"S'està connectant a %1$s…"</item>
+        <item>"S'està autenticant amb %1$s…"</item>
+        <item>"S'està obtenint l'adreça IP de %1$s…"</item>
+        <item>Connectada a %1$s</item>
+        <item>Suspesa</item>
+        <item>"S'està desconnectant de %1$s…"</item>
+        <item>Desconnectada</item>
+        <item>Incorrecta</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>Obre</item>
+        <item>WEP</item>
+        <item>PSK WPA/WPA2</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Oberta</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI hexadecimal</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Fluix</item>
+        <item>Correcte</item>
+        <item>Bo</item>
+        <item>Excel·lent</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Quan es desactiva pant.</item>
+        <item>Mai quan està endollat</item>
+        <item>Mai</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>"Temps d'ús"</item>
+        <item>Inicia el recompte</item>
+        <item>"Nom de l'aplicació"</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Cap</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Desactivat</item>
+        <item>Alerta</item>
+        <item>Vibració</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Cap</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP o CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Emmag. intern disp.</item>
+        <item>Targeta SD extraïble</item>
+        <item>Deixa que decid. el sist.</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Sempre</item>
+        <item>Mai</item>
+        <item>Quan en mode silenciós</item>
+        <item>Quan no en mode silenc.</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Molt baix</item>
+        <item>Baixa</item>
+        <item>Normal</item>
+        <item>Alta</item>
+        <item>Molt alt</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+</resources>

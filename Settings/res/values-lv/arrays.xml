@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Eiropa</item>
+        <item>Āfrika</item>
+        <item>Āzija</item>
+        <item>Austrālija</item>
+        <item>Klusā okeāna reģions</item>
+        <item>Visas</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Bez animācijām</item>
+        <item>Dažas animācijas</item>
+        <item>Visas animācijas</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Logu animācijas netiek rādītas</item>
+        <item>Tiek rādītas dažas logu animācijas</item>
+        <item>Tiek rādītas visas logu animācijas</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekundes</item>
+        <item>30 sekundes</item>
+        <item>1 minūte</item>
+        <item>2 minūtes</item>
+        <item>10 minūtes</item>
+        <item>30 minūtes</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Ļoti lēna</item>
+        <item>Lēna</item>
+        <item>Parasta</item>
+        <item>Ātra</item>
+        <item>Ļoti ātra</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Angļu (ASV)</item>
+        <item>Angļu (Lielbritānija)</item>
+        <item>Franču</item>
+        <item>Vācu</item>
+        <item>Itāļu</item>
+        <item>Spāņu</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Meklē…</item>
+        <item>Savienojas…</item>
+        <item>Autentifikācija…</item>
+        <item>Iegūst IP adresi…</item>
+        <item>Savienots</item>
+        <item>Atlikts</item>
+        <item>Atvienojas…</item>
+        <item>Atvienots</item>
+        <item>Nesekmīgi</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Meklē…</item>
+        <item>Savienojas ar %1$s…</item>
+        <item>Autentifikācija ar %1$s…</item>
+        <item>Iegūst IP adresi no %1$s…</item>
+        <item>Izveidots savienojums ar %1$s</item>
+        <item>Atlikts</item>
+        <item>Atvienojas no %1$s…</item>
+        <item>Atvienots</item>
+        <item>Nesekmīgi</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>Atvērt</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Atvērt</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI heksadecimāla</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Vājš</item>
+        <item>Vidējs</item>
+        <item>Labs</item>
+        <item>Teicams</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Kad ekrāns tiek izslēgts</item>
+        <item>Nekad, ja piev. lādētājs</item>
+        <item>Nekad</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Izmantošanas laiks</item>
+        <item>Palaišanas reižu skaits</item>
+        <item>Programmas nosaukums</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Nav</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Izslēgts</item>
+        <item>Brīdinājums</item>
+        <item>Vibrozvans</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Nav</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP vai CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Ierīces iekšējā atmiņa</item>
+        <item>Izņemama SD karte</item>
+        <item>Ļaut sistēmai izlemt</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Vienmēr</item>
+        <item>Nekad</item>
+        <item>Kad skaņa ir izslēgta</item>
+        <item>Kad skaņa ir ieslēgta</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Ļoti zems</item>
+        <item>Zema</item>
+        <item>Normāls</item>
+        <item>Augsta</item>
+        <item>Ļoti augsts</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+</resources>

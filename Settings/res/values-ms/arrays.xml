@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Eropah</item>
+        <item>Afrika</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Pasifik</item>
+        <item>Semua</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Tiada animasi</item>
+        <item>Sedikit animasi</item>
+        <item>Semua animasi</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Tiada tetingkap animasi ditunjukkan</item>
+        <item>Sedikit tetingkap animasi ditunjukkan</item>
+        <item>Semua tetingkap animasi ditunjukkan</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 saat</item>
+        <item>30 saat</item>
+        <item>1 minit</item>
+        <item>2 minit</item>
+        <item>10 minit</item>
+        <item>30 minit</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Amat perlahan</item>
+        <item>Perlahan</item>
+        <item>Normal</item>
+        <item>Laju</item>
+        <item>Sangat laju</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Inggeris Amerika</item>
+        <item>Inggeris British</item>
+        <item>Perancis</item>
+        <item>Jerman</item>
+        <item>Itali</item>
+        <item>Sepanyol</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Mengimbas…</item>
+        <item>Menyambung…</item>
+        <item>Mengesahkan…</item>
+        <item>Mendapatkan alamat IP…</item>
+        <item>Disambungkan</item>
+        <item>Digantung</item>
+        <item>Memutuskan sambungan…</item>
+        <item>Putus sambungan</item>
+        <item>Tidak berjaya</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Mengimbas…</item>
+        <item>Menyambung ke %1$s…</item>
+        <item>Mengesahkan dengan %1$s…</item>
+        <item>Mendapatkan alamat IP daripada %1$s…</item>
+        <item>Bersambung ke %1$s</item>
+        <item>Digantung</item>
+        <item>Memutuskan sambungan daripada %1$s…</item>
+        <item>Putus sambungan</item>
+        <item>Tidak berjaya</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Tiada</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI perenambelasan</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Lemah</item>
+        <item>Sederhana</item>
+        <item>Baik</item>
+        <item>Sangat baik</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Apabila skrin dipdmkn</item>
+        <item>Tdk semasa plm dipsgkn</item>
+        <item>Tidak sekali-kali</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Waktu Penggunaan</item>
+        <item>Bilangan Pelancaran</item>
+        <item>Nama Aplikasi</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Tiada</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Mati</item>
+        <item>Isyarat</item>
+        <item>Getar</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Tiada</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP atau CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Storan peranti dalaman</item>
+        <item>Kad SD boleh tanggal</item>
+        <item>Biarkan sistem tentukan</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Sentiasa</item>
+        <item>Jangan sekali-kali</item>
+        <item>Apabila bunyi dimatikan</item>
+        <item>Apabila bunyi dihidupkan</item>
+    </string-array>
+</resources>

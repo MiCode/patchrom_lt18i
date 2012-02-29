@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="master_clear_desc_cn">"Todos los datos de tu teléfono serán eliminados, incluidos:
+"<li>tu cuenta</li>"
+"<li>la configuración y los datos de la aplicación y el sistema</li>"
+"<li>las aplicaciones descargadas</li>"
+No se eliminarán:
+"<li>el software del sistema actual y las aplicaciones en lote</li>"
+"<li>archivos de tarjeta SD, como por ejemplo, música o fotos</li></string>
+</resources>

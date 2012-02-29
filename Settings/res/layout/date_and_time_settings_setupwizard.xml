@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="left" android:id="@id/done_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0px" android:layout_marginTop="7.0px" android:layout_marginRight="6.0px" android:layout_marginBottom="4.0px" android:minWidth="74.0dip" android:text="@string/done_label" />
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@android:id/list" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" />
+    </LinearLayout>
+</LinearLayout>

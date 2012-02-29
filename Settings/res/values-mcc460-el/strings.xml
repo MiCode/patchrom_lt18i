@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Εγκατάσταση πιστοπ. WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Ενεργοποίηση WLAN</string>
+    <string name="wifi_settings">Ρυθμίσεις WLAN</string>
+    <string name="wifi_settings_category">Ρυθμίσεις WLAN</string>
+    <string name="wifi_starting">Ενεργοποίηση...</string>
+    <string name="wifi_add_network">Προσθήκη δικτύου WLAN</string>
+    <string name="wifi_access_points">Δίκτυα WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">Πολ.κατάστ. αδράν. WLAN</string>
+    <string name="wifi_setting_sleep_policy_summary">Ορισμός εναλλαγής από δεδομένα WLAN σε δεδομένα κινητού</string>
+    <string name="wifi_tether_checkbox_text">Φορ.σημ.πρόσβ. WLAN</string>
+    <string name="wifi_tether_enabled_subtext">Το φορητό σημείο πρόσβασης %1$s είναι ενεργό</string>
+    <string name="wifi_tether_settings_text">Ρυθμ.φορ.σημ.πρόσβ.WLAN</string>
+    <string name="wifi_tether_settings_subtext">Ρύθμιση και διαχείριση φορητού σημείου πρόσβασης WLAN</string>
+    <string name="wifi_tether_settings_title">Ρυθμίσεις φορητού σημείου πρόσβασης WLAN</string>
+    <string name="wifi_tether_configure_ap_text">Διαμόρ.σημ.πρόσβ. WLAN</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s φορητό σημείο πρόσβασης WLAN</string>
+    <string name="status_wifi_mac_address">Διεύθυνση MAC WLAN</string>
+    <string name="tether_settings_title_wifi">Φορητό σημείο πρόσβασης</string>
+    <string name="tether_settings_title_both">Tethering &amp; φορητ. hotspot</string>
+    <string name="tether_settings_summary_wifi">Μοιραστείτε τη σύνδεση του κινητού σας τηλεφώνου ως φορητό σημείο πρόσβασης WLAN</string>
+    <string name="tether_settings_summary_both">Μοιραστείτε τη σύνδεση δεδομένων του κινητού σας τηλεφώνου μέσω USB ή ως φορητό σημείο πρόσβασης WLAN</string>
+    <string name="location_network_based">Χρήση ασύρμ. δικτύων</string>
+    <string name="location_networks_disabled">Προβ.τοποθ.σε εφαρμ.(όπως π.χ. στους Χάρτες) με χρήση ασύρ.δικτ.</string>
+    <string name="location_neighborhood_level">Η τοποθ.προσδ.από δίκτ.WLAN και/ή δίκτ.κινητ.τηλεφ.</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">Το WLAN ενεργοπ.</string>
+    <string name="battery_desc_wifi">Μπαταρία που χρησιμοποιείται από το WLAN</string>
+    <string name="battery_sugg_wifi">Απενεργοποίηση του WLAN όταν δεν χρησιμοποιείται ή όταν δεν είναι διαθέσιμο</string>
+    <string name="backup_data_summary">Δημιουργία αντ.ασφ.δεδ., κωδ. πρόσβ. WLAN και άλλων ρυθμ.στους διακομ.Google</string>
+    <string name="backup_erase_dialog_message">Είστε βέβαιοι ότι θέλετε να διακόψετε τη δημιουργία αντιγράφων ασφαλείας των κωδικών WLAN, των σελιδοδεικτών και άλλων ρυθμίσεων και των δεδομένων εφαρμογών και να διαγράψετε όλα τα αντίγραφα από τους διακομιστές της Google;</string>
+    <string name="radio_controls_summary">Διαχ.WLAN, Bluetooth, λειτουργίας πτήσης, δικτύων κινητής τηλεφωνίας και VPN</string>
+    <string name="wifi_tether_failed_subtext">Σφάλμα φορητού σημείου πρόσβασης WLAN</string>
+    <string name="wifi_on_time">WLAN στην ώρα του</string>
+    <string name="bluetooth_on_time">WLAN στην ώρα του</string>
+    <string name="battery_action_wifi">Ρυθμίσεις WLAN</string>
+    <string name="gadget_toggle_wifi">Ενημέρωση ρύθμισης WLAN</string>
+</resources>

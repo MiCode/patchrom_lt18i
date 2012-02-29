@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Instal·la els certificats WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Activa la WLAN</string>
+    <string name="wifi_settings">Paràmetres de WLAN</string>
+    <string name="wifi_settings_category">Paràmetres de WLAN</string>
+    <string name="wifi_starting">Activant…</string>
+    <string name="wifi_add_network">Afegeix una xarxa WLAN</string>
+    <string name="wifi_access_points">Xarxes WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">Norma de repòs de WLAN</string>
+    <string name="wifi_setting_sleep_policy_summary">Especifiqueu quan voleu que es canviï de WLAN a dades mòbils</string>
+    <string name="wifi_tether_checkbox_text">Punt connex. WLAN port.</string>
+    <string name="wifi_tether_enabled_subtext">Punt de connexió portàtil %1$s actiu</string>
+    <string name="wifi_tether_settings_text">Paràm. connexió WLAN port.</string>
+    <string name="wifi_tether_settings_subtext">Configureu i gestioneu el punt de connexió WLAN portàtil</string>
+    <string name="wifi_tether_settings_title">Paràmetres punt de connexió WLAN portàtil</string>
+    <string name="wifi_tether_configure_ap_text">Configura punt conn. WLAN</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s punt de connexió WLAN portàtil</string>
+    <string name="status_wifi_mac_address">Adreça MAC de WLAN</string>
+    <string name="tether_settings_title_wifi">Punt de connexió portàtil</string>
+    <string name="tether_settings_title_both">Punt conn. port. i lligament</string>
+    <string name="tether_settings_summary_wifi">Comparteix la connexió mòbil del telèfon com a punt de connexió WLAN portàtil</string>
+    <string name="tether_settings_summary_both">Comparteix la connexió de dades mòbils del telèfon mitjançant USB o com a punt de connexió WLAN</string>
+    <string name="location_network_based">Utilitza xarxes sense fil</string>
+    <string name="location_networks_disabled">Mostra ubicació en aplicacions (com ara Maps) mitjançant xarxes sense fil</string>
+    <string name="location_neighborhood_level">Ubicació determinada pel WLAN i/o les xarxes mòbils</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">Execució de WLAN</string>
+    <string name="battery_desc_wifi">Bateria utilitzada per la WLAN</string>
+    <string name="battery_sugg_wifi">"Desactiveu el WLAN quan no l'estigueu utilitzant o on no estigui disponible"</string>
+    <string name="backup_data_summary">"Fa còpia seg. al serv. Google de les dades d'aplic., les contrasenyes WLAN i altres par."</string>
+    <string name="backup_erase_dialog_message">"Esteu segur que voleu deixar de fer còpies de seguretat de les vostres contrasenyes WLAN, de les adreces d'interès i d'altres paràmetres i dades d'aplicacions, i esborrar totes les còpies que hi ha als servidors de Google?"</string>
+    <string name="radio_controls_summary">"Gestió de WLAN, Bluetooth, el mode d'avió, les xarxes mòbils i VPN"</string>
+    <string name="wifi_tether_failed_subtext">Error del punt de connexió WLAN portàtil</string>
+    <string name="wifi_on_time">WLAN puntual</string>
+    <string name="bluetooth_on_time">WLAN puntual</string>
+    <string name="battery_action_wifi">Paràmetres de WLAN</string>
+    <string name="gadget_toggle_wifi">"S'estan actualitzant els paràmetres del WLAN"</string>
+</resources>

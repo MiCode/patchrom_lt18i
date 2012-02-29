@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">WLAN-Zertifikate installieren</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">WLAN aktivieren</string>
+    <string name="wifi_settings">WLAN-Einstellungen</string>
+    <string name="wifi_settings_category">WLAN-Einstellungen</string>
+    <string name="wifi_starting">Aktivierung...</string>
+    <string name="wifi_add_network">WLAN-Netzwerk hinzufügen</string>
+    <string name="wifi_access_points">WLAN-Netzwerke</string>
+    <string name="wifi_setting_sleep_policy_title">WLAN Standby-Richtlinie</string>
+    <string name="wifi_setting_sleep_policy_summary">Zeitpunkt der Umschaltung von WLAN auf mobile Daten festlegen</string>
+    <string name="wifi_tether_checkbox_text">Mobiler WLAN-Hotspot</string>
+    <string name="wifi_tether_enabled_subtext">Mobiler Hotspot %1$s aktiv</string>
+    <string name="wifi_tether_settings_text">WLAN-Hotspot-Einstell.</string>
+    <string name="wifi_tether_settings_subtext">Mobilen WLAN-Hotspot einrichten &amp; verwalten</string>
+    <string name="wifi_tether_settings_title">WLAN-Hotspot-Einstellungen</string>
+    <string name="wifi_tether_configure_ap_text">WLAN-Hotspot konfig.</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s mobiler WLAN-Hotspot</string>
+    <string name="status_wifi_mac_address">WLAN-MAC-Adresse</string>
+    <string name="tether_settings_title_wifi">Mobiler Hotspot</string>
+    <string name="tether_settings_title_both">Tethering &amp; mobiler Hotspot</string>
+    <string name="tether_settings_summary_wifi">Mobile Verbindung Ihres Handys als mobilen WLAN-Hotspot freigeben</string>
+    <string name="tether_settings_summary_both">Mobile Datenverbindung Ihres Handys über USB oder als mobilen WLAN-Hotspot freigeben</string>
+    <string name="location_network_based">Drahtlosnetzwerke</string>
+    <string name="location_networks_disabled">Standort über Drahtlosnetzwerke bestimmen (z. B. in Google Maps)</string>
+    <string name="location_neighborhood_level">Standort über WLAN und/oder Mobilfunknetze bestimmen</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN aktiv</string>
+    <string name="battery_desc_wifi">Akkuverbrauch durch WLAN</string>
+    <string name="battery_sugg_wifi">WLAN bei Nichtverwendung oder Nichtverfügbarkeit deaktivieren</string>
+    <string name="backup_data_summary">Anwend.daten, WLAN-Passwört. und andere Einstell. auf Google-Serv. sichern</string>
+    <string name="backup_erase_dialog_message">Möchten Sie wirklich die Sicherung Ihrer WLAN-Passwörter, Lesezeichen und anderen Einstellungen und Anwendungsdaten beenden und alle Kopien auf den Google-Servern löschen?</string>
+    <string name="radio_controls_summary">WLAN, Bluetooth, Flugmodus, Mobilfunknetze und VPNs verwalten</string>
+    <string name="wifi_tether_failed_subtext">Fehler beim mobilen WLAN-Hotspot</string>
+    <string name="wifi_on_time">WLAN-Aktivzeit</string>
+    <string name="bluetooth_on_time">WLAN-Aktivzeit</string>
+    <string name="battery_action_wifi">WLAN-Einstellungen</string>
+    <string name="gadget_toggle_wifi">Aktualisieren der WLAN-Einstellung</string>
+</resources>

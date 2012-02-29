@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Inštalovať certifikáty WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Zapne sa WLAN</string>
+    <string name="wifi_settings">Nastavenia WLAN</string>
+    <string name="wifi_settings_category">Nastavenia WLAN</string>
+    <string name="wifi_starting">Zapínanie…</string>
+    <string name="wifi_add_network">Pridajte sieť WLAN</string>
+    <string name="wifi_access_points">Siete WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">Použ. WLAN v rež. spán.</string>
+    <string name="wifi_setting_sleep_policy_summary">Určiť, kedy prepnúť zo siete WLAN na mobilný prenos údajov</string>
+    <string name="wifi_tether_checkbox_text">Prenos. príst. bod WLAN</string>
+    <string name="wifi_tether_enabled_subtext">Prenosný prístupový bod k sieti %1$s aktívny</string>
+    <string name="wifi_tether_settings_text">Nast. pren. príst. bodu WLAN</string>
+    <string name="wifi_tether_settings_subtext">Nast. a sprav. prenosného prístupového bodu k sieti WLAN</string>
+    <string name="wifi_tether_settings_title">Nast. prenosného prístup. bodu k sieti WLAN</string>
+    <string name="wifi_tether_configure_ap_text">Konfig. prístup. bodu WLAN</string>
+    <string name="wifi_tether_configure_subtext">Prenosný príst. bod k WLAN %1$s so zabezpečením %2$s</string>
+    <string name="status_wifi_mac_address">Adresa MAC siete WLAN</string>
+    <string name="tether_settings_title_wifi">Prenosný prístupový bod</string>
+    <string name="tether_settings_title_both">Zd. Inter. a pren. príst. bod</string>
+    <string name="tether_settings_summary_wifi">Zdieľanie mobilného údajového pripojenia telefónu ako prenosného prístupového bodu k sieti WLAN</string>
+    <string name="tether_settings_summary_both">Zdieľanie mobilného údajového pripojenia telefónu prostredníctvom USB alebo ako prenosného prístupového bodu k sieti WLAN</string>
+    <string name="location_network_based">Použiť bezdrôtové siete</string>
+    <string name="location_networks_disabled">Zobr. polohu v aplik. (napríklad Mapy) pomocou bezdrôt. sietí</string>
+    <string name="location_neighborhood_level">Poloha určovaná pomocou siete WLAN a/alebo mobilných sietí</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">Spustenie WLAN</string>
+    <string name="battery_desc_wifi">Spotreba WLAN</string>
+    <string name="battery_sugg_wifi">Ak sieť WLAN nie je k dispozícii alebo ju nepoužívate, vypnite ju.</string>
+    <string name="backup_data_summary">Zálohovanie údajov aplik., hesiel pripojení WLAN a iných nast. na serveroch Google</string>
+    <string name="backup_erase_dialog_message">Naozaj chcete prestať zálohovať heslá siete WLAN, záložky a ďalšie nastavenia a údaje aplikácie a chcete vymazať všetky kópie na serveroch Google?</string>
+    <string name="radio_controls_summary">Správa WLAN, Bluetooth, režim V lietadle, mobilné siete alebo siete VPN</string>
+    <string name="wifi_tether_failed_subtext">Chyba prenosného prístupového bodu k sieti WLAN</string>
+    <string name="wifi_on_time">Čas so zapnutou sieťou WLAN</string>
+    <string name="bluetooth_on_time">Čas so zapnutou sieťou WLAN</string>
+    <string name="battery_action_wifi">Nastavenie WLAN</string>
+    <string name="gadget_toggle_wifi">Aktualizuje sa nastavenie WLAN</string>
+</resources>

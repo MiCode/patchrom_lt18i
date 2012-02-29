@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Châu Mỹ</item>
+        <item>Châu Âu</item>
+        <item>Châu Phi</item>
+        <item>Châu Á</item>
+        <item>Châu Úc</item>
+        <item>Thái Bình Dương</item>
+        <item>Tất cả</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Không có hoạt hình</item>
+        <item>Một số hoạt hình</item>
+        <item>Tất cả hoạt hình</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Không có hoạt hình của cửa sổ nào được hiển thị</item>
+        <item>Một số hoạt hình của cửa sổ được hiển thị</item>
+        <item>Tất cả hoạt hình của cửa sổ được hiển thị</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 giây</item>
+        <item>30 giây</item>
+        <item>1 phút</item>
+        <item>2 phút</item>
+        <item>10 phút</item>
+        <item>30 phút</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Rất chậm</item>
+        <item>Chậm</item>
+        <item>Bình thường</item>
+        <item>Nhanh</item>
+        <item>Rất nhanh</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Tiếng Anh Mỹ</item>
+        <item>Tiếng Anh Anh</item>
+        <item>Tiếng Pháp</item>
+        <item>Tiếng Đức</item>
+        <item>Tiếng Ý</item>
+        <item>Tiếng Tây Ban Nha</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Đang quét…</item>
+        <item>Đang kết nối…</item>
+        <item>Đang xác nhận…</item>
+        <item>Đang lấy địa chỉ IP…</item>
+        <item>Đã kết nối</item>
+        <item>Bị tạm ngưng</item>
+        <item>Đang ngắt kết nối…</item>
+        <item>Đã ngắt kết nối</item>
+        <item>Không thành công</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Đang quét…</item>
+        <item>Đang kết nối với %1$s…</item>
+        <item>Đang xác nhận với %1$s…</item>
+        <item>Đang lấy địa chỉ IP từ %1$s…</item>
+        <item>Đã kết nối với %1$s</item>
+        <item>Bị tạm ngưng</item>
+        <item>Đang ngắt kết nối khỏi %1$s…</item>
+        <item>Đã ngắt kết nối</item>
+        <item>Không thành công</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>Mở</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Mở</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>Khoá dạng thập lục phân của WAPI</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Yếu</item>
+        <item>Trung bình</item>
+        <item>Tốt</item>
+        <item>Tuyệt vời</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Khi màn hình tắt</item>
+        <item>Ko bao giờ khi cắm điện</item>
+        <item>Không bao giờ</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Thời gian Sử dụng</item>
+        <item>Bắt đầu Đếm</item>
+        <item>Tên Ứng dụng</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Không có</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Tắt</item>
+        <item>Âm báo</item>
+        <item>Rung</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Không có</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP hoặc CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Bộ nhớ trong của thiết bị</item>
+        <item>Thẻ SD có thể tháo được</item>
+        <item>Để hệ thống quyết định</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Luôn luôn</item>
+        <item>Không bao giờ</item>
+        <item>Khi đã tắt âm thanh</item>
+        <item>Khi đang bật âm thanh</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Rất thấp</item>
+        <item>Thấp</item>
+        <item>Thường</item>
+        <item>Cao</item>
+        <item>Rất cao</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+</resources>

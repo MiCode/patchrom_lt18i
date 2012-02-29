@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">WLAN серт-тарын орн-у</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">WLAN мүмкіндігін қосу</string>
+    <string name="wifi_settings">WLAN параметрлері</string>
+    <string name="wifi_settings_category">WLAN параметрлері</string>
+    <string name="wifi_starting">Қосылуда...</string>
+    <string name="wifi_add_network">WLAN желісін қосу</string>
+    <string name="wifi_access_points">WLAN желілері</string>
+    <string name="wifi_setting_sleep_policy_title">WLAN ұйқы саясаты</string>
+    <string name="wifi_setting_sleep_policy_summary">WLAN мүмкіндігінен ұялы деректерге ауысу уақытын көрсету</string>
+    <string name="wifi_tether_checkbox_text">Жылж. WLAN хот-споты</string>
+    <string name="wifi_tether_enabled_subtext">%1$s жылжымалы хотспоты белсенді</string>
+    <string name="wifi_tether_settings_text">Жылж WLAN хот-спот пар-і</string>
+    <string name="wifi_tether_settings_subtext">Жылжымалы WLAN хотспотын орнату және басқару</string>
+    <string name="wifi_tether_settings_title">Жылжымалы WLAN хотспотының парам-рі</string>
+    <string name="wifi_tether_configure_ap_text">WLAN хотспотын теңшеу</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s жылжымалы WLAN хотспоты</string>
+    <string name="status_wifi_mac_address">WLAN MAC мекенжайы</string>
+    <string name="tether_settings_title_wifi">Жылжымалы хотспот</string>
+    <string name="tether_settings_title_both">Шект-і ж/е жылж. хот-спот</string>
+    <string name="tether_settings_summary_wifi">"Телефонның мобильді қосылымын жылжымалы  WLAN хотспоты ретінде бөлісу"</string>
+    <string name="tether_settings_summary_both">"Телефонның мобильді деректер қосылымын  USB арқылы немесе жылжымалы  WLAN хотспоты ретінде бөлісу"</string>
+    <string name="location_network_based">Сымсыз желілерді пайд.</string>
+    <string name="location_networks_disabled">"Сымсыз желі-ң көмегімен орн-ды қолданб-да  (мысалы, Maps) көріңіз"</string>
+    <string name="location_neighborhood_level">Орын WLAN және/немесе ұяды желілер арқылы анықталады</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN орындалуда</string>
+    <string name="battery_desc_wifi">WLAN пайдаланатын батарея заряды</string>
+    <string name="battery_sugg_wifi">Пайдаланылмаған кезде немесе ол жоқ жерде WLAN мүмкіндігін өшіріңіз</string>
+    <string name="backup_data_summary">Google серв. қолд. дер-ң, WLAN кілтсөзд. және басқа пар. сақтық көш. жасау</string>
+    <string name="backup_erase_dialog_message">WLAN кілтсөздердің, бетбелгілердің және басқа параметрлеріңіздің және қолданба деректерінің сақтық көшірмесін жасауды тоқтатып, Google серверлеріндегі барлық көшірмелерді өшіресіз бе?</string>
+    <string name="radio_controls_summary">WLAN, Bluetooth, дербес режим, телефон желілері мен VPN желілерін басқару</string>
+    <string name="wifi_tether_failed_subtext">Жылжымалы WLAN хотспоты қатесі</string>
+    <string name="wifi_on_time">WLAN қосылу уақыты</string>
+    <string name="bluetooth_on_time">Уақытылы WLAN</string>
+    <string name="battery_action_wifi">WLAN параметрлері</string>
+    <string name="gadget_toggle_wifi">WLAN параметрін жаңарту</string>
+</resources>

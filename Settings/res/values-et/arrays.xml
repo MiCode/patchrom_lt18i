@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Ameerika Ühendriigid</item>
+        <item>Euroopa</item>
+        <item>Aafrika</item>
+        <item>Aasia</item>
+        <item>Austraalia</item>
+        <item>Vaikne Ookean</item>
+        <item>Kõik</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Animatsioonideta</item>
+        <item>Mõned animatsioonid</item>
+        <item>Kõik animatsioonid</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Akna animatsioone ei kuvata</item>
+        <item>Kuvatakse mõned akna animatsioonid</item>
+        <item>Kuvatakse kõik akna animatsioonid</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekundit</item>
+        <item>30 sekundit</item>
+        <item>1 minut</item>
+        <item>2 minutit</item>
+        <item>10 minutit</item>
+        <item>30 min</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Väga aeglane</item>
+        <item>Aeglane</item>
+        <item>Tavaline</item>
+        <item>Kiire</item>
+        <item>Väga kiire</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Ameerika inglise keel</item>
+        <item>Briti inglise keel</item>
+        <item>prantsuse</item>
+        <item>saksa</item>
+        <item>itaalia</item>
+        <item>hispaania</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Skannimine...</item>
+        <item>Ühendab...</item>
+        <item>Autentimine....</item>
+        <item>IP-aadressi hankimine...</item>
+        <item>Ühendatud</item>
+        <item>Peatatud</item>
+        <item>Ühenduse katkestamine...</item>
+        <item>Ühendus on katkestatud</item>
+        <item>Nurjus</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Skannimine...</item>
+        <item>Ühendamine võrguga %1$s…</item>
+        <item>Autentimine võrguga %1$s…</item>
+        <item>IP-aadressi hankimine võrgust %1$s…</item>
+        <item>Ühendatud võrku %1$s</item>
+        <item>Peatatud</item>
+        <item>Ühenduse katkestamine võrgust %1$s…</item>
+        <item>Ühendus on katkenud</item>
+        <item>Nurjus</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Avatud</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI (kuueteistkümnendsüsteemis)</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Halb</item>
+        <item>Rahuldav</item>
+        <item>Hea</item>
+        <item>Suurepärane</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Ekr. väljalülitumisel</item>
+        <item>Mitte kunagi, kui on ühen.</item>
+        <item>Mitte kunagi</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Kasutusaeg</item>
+        <item>Käivituste arv</item>
+        <item>Rakenduse nimi</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Pole</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Väljas</item>
+        <item>Hoiatus</item>
+        <item>Värinalarm</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Pole</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP või CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Seadme sisemälu</item>
+        <item>Eemaldatav SD-kaart</item>
+        <item>Las süsteem otsustab</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Alati</item>
+        <item>Mitte kunagi</item>
+        <item>Kui heli on väljas</item>
+        <item>Kui heli on sees</item>
+    </string-array>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Eropa</item>
+        <item>Afrika</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Pasifik</item>
+        <item>Kabeh</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Ora ana animasi</item>
+        <item>Sawetara animasi</item>
+        <item>Kabeh animasi</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Ora ana animasi jendhela sing dituduhake</item>
+        <item>Sawetara animasi jendhela dituduhake</item>
+        <item>Kabeh animasi jendhela dituduhake</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 detik</item>
+        <item>30 detik</item>
+        <item>1 menit</item>
+        <item>2 menit</item>
+        <item>10 menit</item>
+        <item>30 menit</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Alon banget</item>
+        <item>Alon</item>
+        <item>Normal</item>
+        <item>Cepet</item>
+        <item>Cepet banget</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Inggris Amerika</item>
+        <item>Inggris Raya</item>
+        <item>Perancis</item>
+        <item>Jerman</item>
+        <item>Italia</item>
+        <item>Spanyol</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Mindai...</item>
+        <item>Nyambungake...</item>
+        <item>Ngotentikasi...</item>
+        <item>Nggoleki alamat IP...</item>
+        <item>Disambungake</item>
+        <item>Ditundha</item>
+        <item>Medhot sambungan...</item>
+        <item>Sambungan dipedhot</item>
+        <item>Gagal</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Mindai...</item>
+        <item>Nyambung menyang %1$s…</item>
+        <item>Ngotentikasi karo %1$s…</item>
+        <item>Nggoleki alamat IP saka %1$s…</item>
+        <item>Disambungake menyang %1$s</item>
+        <item>Ditundha</item>
+        <item>Medhot sambungan saka %1$s…</item>
+        <item>Sambungan dipedhot</item>
+        <item>Gagal</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Bukak</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI heksadesimal</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Elek</item>
+        <item>Sedheng</item>
+        <item>Apik</item>
+        <item>Sampurna</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Yen layar mati</item>
+        <item>Ora tau yen dicolokake</item>
+        <item>Ora tau</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Wektu Panggunaan</item>
+        <item>Luncurke Jumlah</item>
+        <item>Jeneng Aplikasi</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Ora ana</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>OFF</item>
+        <item>Tandha</item>
+        <item>Kedher</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Ora ana</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP utawa CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Simpenan piranti internal</item>
+        <item>Kertu SD bisa dicopot</item>
+        <item>Gawe sistem mutusake</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Mesthi</item>
+        <item>Ora tau</item>
+        <item>Nalika swara mati</item>
+        <item>Nalika swara urip</item>
+    </string-array>
+</resources>

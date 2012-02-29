@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Install WLAN certificates</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">I-on ang WLAN</string>
+    <string name="wifi_settings">Mga setting ng WLAN</string>
+    <string name="wifi_settings_category">Mga setting ng WLAN</string>
+    <string name="wifi_starting">Ino-on...</string>
+    <string name="wifi_add_network">Magdagdag ng WLAN network</string>
+    <string name="wifi_access_points">Mga WLAN network</string>
+    <string name="wifi_setting_sleep_policy_title">Patakaran sleep ng WLAN</string>
+    <string name="wifi_setting_sleep_policy_summary">Tukuyin kung kailan lilipat mula sa WLAN papunta sa mobile data</string>
+    <string name="wifi_tether_checkbox_text">Portable WLAN hotspot</string>
+    <string name="wifi_tether_enabled_subtext">Portable hotspot %1$s aktibo</string>
+    <string name="wifi_tether_settings_text">Port. WLAN hotspot setting</string>
+    <string name="wifi_tether_settings_subtext">I-set up at pamahalaan ang portable na WLAN hotspot</string>
+    <string name="wifi_tether_settings_title">Mga setting ng portable na WLAN hotspot</string>
+    <string name="wifi_tether_configure_ap_text">"I-configure  WLAN hotspot"</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s portable na WLAN hotspot</string>
+    <string name="status_wifi_mac_address">MAC address ng WLAN</string>
+    <string name="tether_settings_title_wifi">Portable na hotspot</string>
+    <string name="tether_settings_title_both">Tethering at port. na hotspot</string>
+    <string name="tether_settings_summary_wifi">Ibahagi ng iyong koneksyon sa mobile ng telepono bilang portable na WLAN hotspot</string>
+    <string name="tether_settings_summary_both">Ibahagi ang iyong koneksyon sa mobile na data ng telepono sa pamamagitan ng USB o bilang portable na WLAN hotspot</string>
+    <string name="location_network_based">Gamit wireless network</string>
+    <string name="location_networks_disabled">Tingnan lokasyon application (gaya Maps) gumagamit wireless network</string>
+    <string name="location_neighborhood_level">Ang lokasyon na tinukoy ng WLAN at/o mga network ng mobile</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">Tumatakbo WLAN</string>
+    <string name="battery_desc_wifi">Bateryang ginagamit ng WLAN</string>
+    <string name="battery_sugg_wifi">I-off ang WLAN kapag hindi ito ginagamit o kung saan hindi ito magagamit</string>
+    <string name="backup_data_summary">I-back up data ng application, password sa WLAN, at ibang setting sa server ng Google</string>
+    <string name="backup_erase_dialog_message">Sigurado kang gusto mong huminto sa pag-back up ng iyong mga setting at burahin ang lahat ng mga kopya sa mga server ng Google?</string>
+    <string name="radio_controls_summary">Mamahala ng WLAN, Bluetooth, airplane mode, network ng mobile, at mga VPN</string>
+    <string name="wifi_tether_failed_subtext">Error sa portable na WLAN hotspot error</string>
+    <string name="wifi_on_time">WLAN sa oras</string>
+    <string name="bluetooth_on_time">WLAN sa oras</string>
+    <string name="battery_action_wifi">Mga setting ng WLAN</string>
+    <string name="gadget_toggle_wifi">Pag-update ng setting ng WLAN</string>
+</resources>

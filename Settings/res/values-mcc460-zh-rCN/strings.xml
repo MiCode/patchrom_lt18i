@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">安装WLAN证书</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">打开 WLAN</string>
+    <string name="wifi_settings">WLAN 设置</string>
+    <string name="wifi_settings_category">WLAN 设置</string>
+    <string name="wifi_starting">正在打开...</string>
+    <string name="wifi_add_network">添加 WLAN 网络</string>
+    <string name="wifi_access_points">WLAN 网络</string>
+    <string name="wifi_setting_sleep_policy_title">WLAN 休眠策略</string>
+    <string name="wifi_setting_sleep_policy_summary">指定何时要从 WLAN 切换到手机数据</string>
+    <string name="wifi_tether_checkbox_text">便携式 WLAN 热点</string>
+    <string name="wifi_tether_enabled_subtext">便携式热点 %1$s 已启用</string>
+    <string name="wifi_tether_settings_text">便携式WLAN热点设置</string>
+    <string name="wifi_tether_settings_subtext">设置与管理便携式 WLAN 热点</string>
+    <string name="wifi_tether_settings_title">便携式 WLAN 热点设置</string>
+    <string name="wifi_tether_configure_ap_text">配置 WLAN 热点</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s 便携式 WLAN 热点</string>
+    <string name="status_wifi_mac_address">WLAN MAC 地址</string>
+    <string name="tether_settings_title_wifi">便携式热点</string>
+    <string name="tether_settings_title_both">绑定与便携式热点</string>
+    <string name="tether_settings_summary_wifi">将您手机的移动连接作为便携式 WLAN 热点分享</string>
+    <string name="tether_settings_summary_both">将您手机的移动数据连接通过 USB 或作为便携式 WLAN 热点分享</string>
+    <string name="location_network_based">使用无线网络</string>
+    <string name="location_networks_disabled">使用无线网络在应用程序（例如地图）中查看位置</string>
+    <string name="location_neighborhood_level">通过 WLAN 和/或移动网络确定的位置</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN 正在运行</string>
+    <string name="battery_desc_wifi">WLAN 所耗的电量</string>
+    <string name="battery_sugg_wifi">不使用 WLAN 或其不可用时将其关闭</string>
+    <string name="backup_data_summary">将应用程序数据、WLAN 密码和其他设置备份至 Google 服务器</string>
+    <string name="backup_erase_dialog_message">确定要停止备份您的 WLAN 密码、书签以及其他设置和应用程序数据，并清除 Google 服务器上的所有副本吗？</string>
+    <string name="radio_controls_summary">管理 WLAN、蓝牙、关闭无线电、移动网络和虚拟专用网</string>
+    <string name="wifi_tether_failed_subtext">便携式 WLAN 热点错误</string>
+    <string name="wifi_on_time">WLAN 开启时间</string>
+    <string name="bluetooth_on_time">WLAN 开启时间</string>
+    <string name="battery_action_wifi">WLAN 设置</string>
+    <string name="gadget_toggle_wifi">正在更新 WLAN 设置</string>
+</resources>

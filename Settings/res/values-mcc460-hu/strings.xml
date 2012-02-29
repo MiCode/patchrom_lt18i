@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">WLAN tanúsítv. telepítése</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">WLAN bekapcsolása</string>
+    <string name="wifi_settings">WLAN beállításai</string>
+    <string name="wifi_settings_category">WLAN beállításai</string>
+    <string name="wifi_starting">Bekapcsolás…</string>
+    <string name="wifi_add_network">WLAN hálózat hozzáadása</string>
+    <string name="wifi_access_points">WLAN hálózatok</string>
+    <string name="wifi_setting_sleep_policy_title">WLAN alvó áll. házirendje</string>
+    <string name="wifi_setting_sleep_policy_summary">WLAN hálózatról mobiladatokra váltás idejének megadása</string>
+    <string name="wifi_tether_checkbox_text">Hord. WLAN csatl. pont</string>
+    <string name="wifi_tether_enabled_subtext">A(z) %1$s hordozható csatlakozási pont aktív</string>
+    <string name="wifi_tether_settings_text">Hord. WLAN csatl. pont beáll.</string>
+    <string name="wifi_tether_settings_subtext">Hordozható WLAN csatlakozási pont beállítása és kezelése</string>
+    <string name="wifi_tether_settings_title">Hordozható WLAN csatlakozási pont beállításai</string>
+    <string name="wifi_tether_configure_ap_text">WLAN csatl. pont konfigurál.</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s hordozható WLAN csatlakozási pont</string>
+    <string name="status_wifi_mac_address">WLAN MAC-cím</string>
+    <string name="tether_settings_title_wifi">Hordozható csatlakozási pont</string>
+    <string name="tether_settings_title_both">Int.megoszt./h. csatl. pont</string>
+    <string name="tether_settings_summary_wifi">A telefon mobilkapcsolatának megosztása hordozható WLAN csatlakozási pontként</string>
+    <string name="tether_settings_summary_both">A telefon mobil adatkapcsolatának megosztása USB-n keresztül vagy hordozható WLAN csatlakozási pontként</string>
+    <string name="location_network_based">Vez. nél. hálózatok hasz.</string>
+    <string name="location_networks_disabled">Helyek keresése alk.ban (pl. Térkép) vez. nél. hálózatok használatával</string>
+    <string name="location_neighborhood_level">WLAN és/vagy mobilhálózatok által meghatározott hely</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN fut</string>
+    <string name="battery_desc_wifi">WLAN akkumulátorhasználata</string>
+    <string name="battery_sugg_wifi">WLAN kikapcsolása, ha nincs használatban vagy nem érhető el</string>
+    <string name="backup_data_summary">Alk.adatok, WLAN jelszavak és más beállít. bizt. mentése Google-kiszolgálókra</string>
+    <string name="backup_erase_dialog_message">Biztosan leállítja a WLAN jelszavak, könyvjelzők, egyéb beállítások és alkalmazásadatok biztonsági mentését, és törli az összes másolatot a Google-kiszolgálókról?</string>
+    <string name="radio_controls_summary">WLAN, Bluetooth, Repülőgépes üzemmód, mobil hálózatok és VPN-ek kezelése</string>
+    <string name="wifi_tether_failed_subtext">Hordozható WLAN csatlakozási pont - hiba</string>
+    <string name="wifi_on_time">WLAN bekapcsolási ideje</string>
+    <string name="bluetooth_on_time">WLAN bekapcsolási ideje</string>
+    <string name="battery_action_wifi">WLAN beállításai</string>
+    <string name="gadget_toggle_wifi">WLAN-beállítás frissítése</string>
+</resources>

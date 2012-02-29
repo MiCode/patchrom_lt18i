@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>America</item>
+        <item>Europe</item>
+        <item>Africa</item>
+        <item>Asya</item>
+        <item>Australia</item>
+        <item>Pacific</item>
+        <item>Lahat</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Walang mga animation</item>
+        <item>Ilang mga animation</item>
+        <item>Lahat ng mga animation</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Walang mga animation sa window ang ipinapakita</item>
+        <item>Ilang mga animation sa window ang ipinapakita</item>
+        <item>Lahat mga animation sa window ang ipinapakita</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 segundo</item>
+        <item>30 segundo</item>
+        <item>1 minuto</item>
+        <item>2 minuto</item>
+        <item>10 minuto</item>
+        <item>30 minuto</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Napakabagal</item>
+        <item>Mabagal</item>
+        <item>Normal</item>
+        <item>Mabilis</item>
+        <item>Napakabilis</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>American English</item>
+        <item>British English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Italyano</item>
+        <item>Espanyol</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Ini-scan...</item>
+        <item>Kumukonekta...</item>
+        <item>Pinapatunayan...</item>
+        <item>Kinukuha ang IP address...</item>
+        <item>Konektado</item>
+        <item>Suspendido</item>
+        <item>Inaalis ang koneksyon...</item>
+        <item>Hindi na konektado</item>
+        <item>Hindi tagumpay</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Ini-scan…</item>
+        <item>Kumukonekta sa %1$s…</item>
+        <item>Pinapatunayan sa %1$s…</item>
+        <item>Kinukuha ang IP address mula sa %1$s…</item>
+        <item>Konektado sa %1$s</item>
+        <item>Sinuspinde</item>
+        <item>Inaalis ang koneksyon mula sa %1$s…</item>
+        <item>Naalis ang koneksyon</item>
+        <item>Hindi tagumpay</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>Buksan</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Buksan</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI hexadecimal</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Mahina</item>
+        <item>Katamtaman</item>
+        <item>Maayos</item>
+        <item>Malakas</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Kapag nag-off ang screen</item>
+        <item>Huwag kapag nakasaksak</item>
+        <item>Huwag</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Oras ng Paggamit</item>
+        <item>Launch Count</item>
+        <item>Pangalan ng Application</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Wala</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>I-off</item>
+        <item>Alerto</item>
+        <item>Vibrate</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Wala</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP o CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Panloob storage device</item>
+        <item>Naaalis na SD card</item>
+        <item>Hayaan pasya system</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Lagi</item>
+        <item>Hindi kailanman</item>
+        <item>Kapag naka-off ang tunog</item>
+        <item>Kapag naka-on ang tunog</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Napakababa</item>
+        <item>Mababa</item>
+        <item>Normal</item>
+        <item>Mataas</item>
+        <item>Napakataas</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+</resources>

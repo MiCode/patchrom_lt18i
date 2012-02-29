@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Zainstaluj certyfikaty WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Włącz WLAN</string>
+    <string name="wifi_settings">Ustawienia WLAN</string>
+    <string name="wifi_settings_category">Ustawienia WLAN</string>
+    <string name="wifi_starting">Włączanie...</string>
+    <string name="wifi_add_network">Dodaj sieć WLAN</string>
+    <string name="wifi_access_points">Sieci WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">Zasady usypiania WLAN</string>
+    <string name="wifi_setting_sleep_policy_summary">Określ, kiedy przełączyć WLAN na komórkowe połączenie danych</string>
+    <string name="wifi_tether_checkbox_text">Przenośny punkt WLAN</string>
+    <string name="wifi_tether_enabled_subtext">Przenośny punkt dostępu %1$s jest aktywny</string>
+    <string name="wifi_tether_settings_text">Ustawienia punktów WLAN</string>
+    <string name="wifi_tether_settings_subtext">Konfiguruj przenośne punkty dostępu WLAN</string>
+    <string name="wifi_tether_settings_title">Ustawienia punktów WLAN</string>
+    <string name="wifi_tether_configure_ap_text">Skonfiguruj punkt WLAN</string>
+    <string name="wifi_tether_configure_subtext">Przenośny punkt WLAN %1$s %2$s</string>
+    <string name="status_wifi_mac_address">Adres MAC karty WLAN</string>
+    <string name="tether_settings_title_wifi">Przenośny punkt dostępu</string>
+    <string name="tether_settings_title_both">Powiązanie i przen. hotspot</string>
+    <string name="tether_settings_summary_wifi">Udostępniaj połączenie swojego telefonu jako przenośny punkt dostępu WLAN</string>
+    <string name="tether_settings_summary_both">Udostępniaj połączenie transmisji danych swojego telefonu przez USB lub jako przenośny punkt dostępu WLAN</string>
+    <string name="location_network_based">Użyj sieci WLAN</string>
+    <string name="location_networks_disabled">Określ moją lokalizację w aplikacjach (np. Mapy) za pomocą sieci bezprz.</string>
+    <string name="location_neighborhood_level">Lokalizacja określana jest za pomocą WLAN i/lub sieci komórkowych</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">Działanie WLAN</string>
+    <string name="battery_desc_wifi">Użycie baterii przez WLAN</string>
+    <string name="battery_sugg_wifi">Wyłącz WLAN, gdy nie jest używane i w miejscach, gdzie nie jest dostępne</string>
+    <string name="backup_data_summary">Utwórz na serwerach Google kopię zap. danych apl., haseł WLAN i innych ustawień</string>
+    <string name="backup_erase_dialog_message">Czy na pewno chcesz zakończyć tworzenie kopii zapasowych haseł WLAN, zakładek oraz innych ustawień i danych aplikacji, a także usunąć wszystkie kopie z serwerów Google?</string>
+    <string name="radio_controls_summary">Zarządzaj poł. WLAN i Bluetooth, trybem samolotowym, sieciami komórk. i VPN.</string>
+    <string name="wifi_tether_failed_subtext">Błąd przenośnego punktu dostępu WLAN</string>
+    <string name="wifi_on_time">WLAN na czas</string>
+    <string name="bluetooth_on_time">WLAN na czas</string>
+    <string name="battery_action_wifi">Ustawienia WLAN</string>
+    <string name="gadget_toggle_wifi">Aktualizowanie ustawień WLAN</string>
+</resources>

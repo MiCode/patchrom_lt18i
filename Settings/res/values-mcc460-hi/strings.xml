@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">WLAN प्रमाणपत्र स्थापित करें</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">WLAN चालू करें</string>
+    <string name="wifi_settings">WLAN सेटिंग</string>
+    <string name="wifi_settings_category">WLAN सेटिंग</string>
+    <string name="wifi_starting">चालू हो रहा है…</string>
+    <string name="wifi_add_network">WLAN नेटवर्क जोड़ें</string>
+    <string name="wifi_access_points">WLAN नेटवर्क</string>
+    <string name="wifi_setting_sleep_policy_title">WLAN स्लीप नीति</string>
+    <string name="wifi_setting_sleep_policy_summary">निर्धारित करें कि कब WLAN से मोबाइल डेटा पर स्विच करना है</string>
+    <string name="wifi_tether_checkbox_text">पोर्टेबल WLAN हॉटस्पॉट</string>
+    <string name="wifi_tether_enabled_subtext">पोर्टेबल हॉटस्पॉट %1$s सक्रिय</string>
+    <string name="wifi_tether_settings_text">पोर्टेबल वाई-फाइ हॉटस्पॉट सेटिंग</string>
+    <string name="wifi_tether_settings_subtext">पोर्टेबल WLAN हॉटस्पॉट सेट अप करें और प्रबंधित करें</string>
+    <string name="wifi_tether_settings_title">पोर्टेबल WLAN हॉटस्पॉट सेटिंग</string>
+    <string name="wifi_tether_configure_ap_text">WLAN हॉटस्पॉट कॉन्फ़िगर करें</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s पोर्टेबल WLAN हॉटस्पॉट</string>
+    <string name="status_wifi_mac_address">WLAN MAC पता</string>
+    <string name="tether_settings_title_wifi">पोर्टेबल हॉटस्पॉट</string>
+    <string name="tether_settings_title_both">टिथरिंग और पोर्टेबल हॉटस्पॉट</string>
+    <string name="tether_settings_summary_wifi">अपने फ़ोन के मोबाइल कनेक्शन को पोर्टेबल WLAN हॉटस्पॉट के रूप में साझा करें</string>
+    <string name="tether_settings_summary_both">अपने फ़ोन के मोबाइल डेटा कनेक्शन को USB के माध्यम से या पोर्टेबल WLAN हॉटस्पॉट के रूप में साझा करें</string>
+    <string name="location_network_based">बेतार नेटवर्क उपयोग करें</string>
+    <string name="location_networks_disabled">बेतार नेटवर्क का उपयोग करते हुए अनुप्रयोग (जैसे कि मानचित्र) में स्थान देखें</string>
+    <string name="location_neighborhood_level">WLAN और/या मोबाइल नेटवर्क द्वारा स्थान निर्धारित</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN चल रहा है</string>
+    <string name="battery_desc_wifi">WLAN द्वारा उपयोग की गई बैटरी</string>
+    <string name="battery_sugg_wifi">आपके द्वारा WLAN का उपयोग न किए जाने या जहाँ यह उपलब्ध न हो, इसे बंद कर दें</string>
+    <string name="backup_data_summary">Google सर्वर पर अनुप्रयोग डेटा, WLAN पासवर्ड, और अन्य सेटिंग का बैक अप लें</string>
+    <string name="backup_erase_dialog_message">क्या आप वाकई अपने WLAN पासवर्ड, बुकमार्क, और अन्य सेटिंग और अनुप्रयोग डेटा का बैक अप लेना बंद करना चाहते हैं और Google सर्वर पर सभी प्रतिलिपियों को मिटाना चाहते हैं?</string>
+    <string name="radio_controls_summary">WLAN, Bluetooth, वायुयान मोड, मोबाइल नेटवर्क और VPN प्रबंधित करें</string>
+    <string name="wifi_tether_failed_subtext">पोर्टेबल WLAN हॉटस्पॉट त्रुटि</string>
+    <string name="wifi_on_time">WLAN चालू समय</string>
+    <string name="bluetooth_on_time">WLAN चालू समय</string>
+    <string name="battery_action_wifi">WLAN सेटिंग</string>
+    <string name="gadget_toggle_wifi">WLAN सेटिंग अद्यतित कर रहा है</string>
+</resources>

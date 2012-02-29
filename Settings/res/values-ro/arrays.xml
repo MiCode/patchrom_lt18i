@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>America</item>
+        <item>Europa</item>
+        <item>Africa</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Pacific</item>
+        <item>Toate</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Nicio animaţie</item>
+        <item>Unele animaţii</item>
+        <item>Toate animaţiile</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Nu se afişează nicio animaţie pentru ferestre</item>
+        <item>Se afişează unele animaţii pentru ferestre</item>
+        <item>Se afişează toate animaţiile pentru ferestre</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 secunde</item>
+        <item>30 de secunde</item>
+        <item>1 minut</item>
+        <item>2 minute</item>
+        <item>10 minute</item>
+        <item>30 de minute</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Foarte rar</item>
+        <item>Rar</item>
+        <item>Normal</item>
+        <item>Repede</item>
+        <item>Foarte repede</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Engleză americană</item>
+        <item>Engleză britanică</item>
+        <item>Franceză</item>
+        <item>Germană</item>
+        <item>Italiană</item>
+        <item>Spaniolă</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Se scanează…</item>
+        <item>Se conectează…</item>
+        <item>Se autentifică…</item>
+        <item>Se obţine adresa IP…</item>
+        <item>Conectată</item>
+        <item>Suspendată</item>
+        <item>Se deconectează…</item>
+        <item>Deconectată</item>
+        <item>Neconectată</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Se scanează…</item>
+        <item>Se stabileşte conexiunea la %1$s…</item>
+        <item>Se efectuează autentificarea cu %1$s…</item>
+        <item>Se obţine adresa IP de la %1$s…</item>
+        <item>Conectată la %1$s</item>
+        <item>Suspendată</item>
+        <item>Se deconectează de la %1$s…</item>
+        <item>Deconectată</item>
+        <item>Neconectată</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>Deschideţi</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Deschisă</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>Certificat WAPI hexazecimal</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Slab</item>
+        <item>Satisfăcător</item>
+        <item>Bun</item>
+        <item>Excelent</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>La dezactivarea ecranului</item>
+        <item>Niciodată la conectare</item>
+        <item>Niciodată</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Durată utilizare</item>
+        <item>Total lansări</item>
+        <item>Nume aplicaţie</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Niciuna</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Oprit</item>
+        <item>Alertă</item>
+        <item>Vibraţii</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Fără</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP sau CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Spaţiu stoc. intern disp.</item>
+        <item>Cartelă SD amovibilă</item>
+        <item>Decide sistemul</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Întotdeauna</item>
+        <item>Niciodată</item>
+        <item>Numai în modul silenţios</item>
+        <item>Cu excepţia mod. silenţ.</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Foarte scăzut</item>
+        <item>Redusă</item>
+        <item>Normală</item>
+        <item>Ridicată</item>
+        <item>Foarte ridicat</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+</resources>

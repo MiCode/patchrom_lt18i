@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Instalēt WLAN sertifikātus</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Ieslēgt WLAN</string>
+    <string name="wifi_settings">WLAN iestatījumi</string>
+    <string name="wifi_settings_category">WLAN iestatījumi</string>
+    <string name="wifi_starting">Ieslēdz…</string>
+    <string name="wifi_add_network">Pievienot WLAN tīklu</string>
+    <string name="wifi_access_points">WLAN tīkli</string>
+    <string name="wifi_setting_sleep_policy_title">WLAN miega politika</string>
+    <string name="wifi_setting_sleep_policy_summary">Norādiet, kad pārslēgties no WLAN uz mobilo datu pārraidi</string>
+    <string name="wifi_tether_checkbox_text">Portatīvais WLAN tīklājs</string>
+    <string name="wifi_tether_enabled_subtext">Portatīvā karstvieta %1$s aktīva</string>
+    <string name="wifi_tether_settings_text">Portatīvā WLAN tīklāja iestat.</string>
+    <string name="wifi_tether_settings_subtext">Iestatīt un pārvaldīt portatīvo WLAN karstvietu</string>
+    <string name="wifi_tether_settings_title">Portatīvās WLAN karstvietas iestatījumi</string>
+    <string name="wifi_tether_configure_ap_text">Konfigurēt WLAN karstvietu</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s portatīvā WLAN karstvieta</string>
+    <string name="status_wifi_mac_address">WLAN MAC adrese</string>
+    <string name="tether_settings_title_wifi">Portatīva karstvieta</string>
+    <string name="tether_settings_title_both">Piesaistīta un port. karstvieta</string>
+    <string name="tether_settings_summary_wifi">Kopīgot tālruņa mobilo datu savienojumu kā portatīvu WLAN karstvietu</string>
+    <string name="tether_settings_summary_both">Kopīgot tālruņa mobilo datu savienojumu, izmantojot USB, vai kā portatīvu WLAN karstvietu</string>
+    <string name="location_network_based">Izmantot bezvadu tīklus</string>
+    <string name="location_networks_disabled">Skatīt atr. vietu programmās (piem., Maps), izmantojot bezvadu tīklus</string>
+    <string name="location_neighborhood_level">Atrašanās vieta noteikta, izmantojot WLAN un/vai mobilos tīklus</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN darbojas</string>
+    <string name="battery_desc_wifi">Akumulatoru izmanto WLAN</string>
+    <string name="battery_sugg_wifi">Izslēdziet WLAN, kad to neizmantojat vai tas nav pieejams</string>
+    <string name="backup_data_summary">Dublēt programmu datus, WLAN paroles un citus iestatījumus Google serveros</string>
+    <string name="backup_erase_dialog_message">Vai tiešām vēlaties pārtraukt WLAN paroļu, grāmatzīmju un citu iestatījumu un programmu datu dublēšanu un izdzēst visas Google serveros esošās kopijas?</string>
+    <string name="radio_controls_summary">Pārvaldīt WLAN, Bluetooth, lidmašīnas režīmu, mobilos tīklus un VPN</string>
+    <string name="wifi_tether_failed_subtext">Portatīvās WLAN karstvietas kļūda</string>
+    <string name="wifi_on_time">WLAN ieslēgšanas laiks</string>
+    <string name="bluetooth_on_time">WLAN ieslēgšanas laiks</string>
+    <string name="battery_action_wifi">WLAN iestatījumi</string>
+    <string name="gadget_toggle_wifi">Atjaunina WLAN iestatījumus</string>
+</resources>

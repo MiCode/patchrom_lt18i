@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>アメリカ</item>
+        <item>ヨーロッパ</item>
+        <item>アフリカ</item>
+        <item>アジア</item>
+        <item>オーストラリア</item>
+        <item>太平洋</item>
+        <item>すべて</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>アニメーションなし</item>
+        <item>一部のアニメーション</item>
+        <item>すべてのアニメーション</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>ウィンドウアニメーションを表示しない</item>
+        <item>ウィンドウアニメーションを一部表示</item>
+        <item>すべてのウィンドウアニメーションを表示する</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分</item>
+        <item>2分</item>
+        <item>10分</item>
+        <item>30分</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>非常に遅い</item>
+        <item>遅い</item>
+        <item>標準</item>
+        <item>速い</item>
+        <item>非常に速い</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>英語（米国）</item>
+        <item>英語（英国）</item>
+        <item>フランス語</item>
+        <item>ドイツ語</item>
+        <item>イタリア語</item>
+        <item>スペイン語</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>スキャン中...</item>
+        <item>接続中...</item>
+        <item>認証中...</item>
+        <item>IPアドレスを取得中...</item>
+        <item>接続されました</item>
+        <item>保留中</item>
+        <item>切断中...</item>
+        <item>切断されました</item>
+        <item>失敗しました</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>スキャン中...</item>
+        <item>%1$sに接続中...</item>
+        <item>%1$sによる認証中...</item>
+        <item>IPアドレスを%1$sから取得中...</item>
+        <item>%1$sに接続しました</item>
+        <item>保留中</item>
+        <item>%1$sから切断中...</item>
+        <item>切断されました</item>
+        <item>失敗しました</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>なし</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>オープン</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI 16進数</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>弱</item>
+        <item>中</item>
+        <item>強</item>
+        <item>非常に強い</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>画面がOFFになったとき</item>
+        <item>電源接続時はスリープにしない</item>
+        <item>スリープにしない</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>使用時間</item>
+        <item>起動回数</item>
+        <item>アプリケーション名</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>なし</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>OFF</item>
+        <item>アラート</item>
+        <item>バイブレーション</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>なし</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAPまたはCHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>内部端末ストレージ</item>
+        <item>リムーバブルSDカード</item>
+        <item>システムで判断する</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>常に使用</item>
+        <item>なし</item>
+        <item>マナーモードがONの時のみ</item>
+        <item>マナーモードがOFFの時のみ</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>非常に低い</item>
+        <item>低い</item>
+        <item>標準</item>
+        <item>高い</item>
+        <item>非常に高い</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+</resources>

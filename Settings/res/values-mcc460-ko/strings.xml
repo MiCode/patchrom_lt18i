@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">WLAN인증서 설치</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">WLAN 켜기</string>
+    <string name="wifi_settings">WLAN 설정</string>
+    <string name="wifi_settings_category">WLAN 설정</string>
+    <string name="wifi_starting">켜는 중...</string>
+    <string name="wifi_add_network">WLAN 네트워크 추가</string>
+    <string name="wifi_access_points">WLAN 네트워크</string>
+    <string name="wifi_setting_sleep_policy_title">WLAN 절전 정책</string>
+    <string name="wifi_setting_sleep_policy_summary">WLAN에서 모바일 데이터로 전환될 때 표시</string>
+    <string name="wifi_tether_checkbox_text">휴대용 WLAN 핫스팟</string>
+    <string name="wifi_tether_enabled_subtext">휴대용 핫스팟 %1$s 사용</string>
+    <string name="wifi_tether_settings_text">휴대용WLAN핫스팟 설정</string>
+    <string name="wifi_tether_settings_subtext">휴대용 WLAN 핫스팟 설정 및 관리</string>
+    <string name="wifi_tether_settings_title">휴대용 WLAN 핫스팟 설정</string>
+    <string name="wifi_tether_configure_ap_text">WLAN 핫스팟 구성</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s 휴대용 WLAN 핫스팟</string>
+    <string name="status_wifi_mac_address">WLAN MAC 주소</string>
+    <string name="tether_settings_title_wifi">휴대용 핫스팟</string>
+    <string name="tether_settings_title_both">테더링 및 휴대용 핫스팟</string>
+    <string name="tether_settings_summary_wifi">휴대용 WLAN 핫스팟을 사용하여 휴대폰의 모바일 연결을 공유해 보세요.</string>
+    <string name="tether_settings_summary_both">USB나 휴대용 WLAN 핫스팟을 사용하여 휴대폰의 모바일 데이터 연결을 공유해 보세요.</string>
+    <string name="location_network_based">무선 네트워크 사용</string>
+    <string name="location_networks_disabled">무선 네트워크를 사용하는 애플리케이션(예: 지도)에서 위치 보기</string>
+    <string name="location_neighborhood_level">WLAN 및/또는 모바일 네트워크에서 측정된 위치</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN 실행 중</string>
+    <string name="battery_desc_wifi">WLAN에서 배터리 사용</string>
+    <string name="battery_sugg_wifi">사용 중이 아니거나 사용할 수 없을 때 WLAN 사용 안함</string>
+    <string name="backup_data_summary">애플리케이션 데이터, WLAN 비밀번호 및 기타 설정을 Google 서버에 백업</string>
+    <string name="backup_erase_dialog_message">WLAN 비밀번호, 북마크, 기타 설정 및 애플리케이션 데이터 백업을 중지하고 Google 서버에 있는 모든 사본을 지우시겠습니까?</string>
+    <string name="radio_controls_summary">WLAN, 블루투스, 비행 모드, 모바일 네트워크 및VPN관리</string>
+    <string name="wifi_tether_failed_subtext">휴대용 WLAN 핫스팟 오류</string>
+    <string name="wifi_on_time">WLAN 사용 시간</string>
+    <string name="bluetooth_on_time">WLAN 사용 시간</string>
+    <string name="battery_action_wifi">WLAN 설정</string>
+    <string name="gadget_toggle_wifi">WLAN 설정 업데이트</string>
+</resources>

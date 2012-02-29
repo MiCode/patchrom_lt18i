@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">安裝WLAN憑證</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">開啟 WLAN</string>
+    <string name="wifi_settings">WLAN 設定</string>
+    <string name="wifi_settings_category">WLAN 設定</string>
+    <string name="wifi_starting">開啟中...</string>
+    <string name="wifi_add_network">新增 WLAN 網路</string>
+    <string name="wifi_access_points">WLAN 網路</string>
+    <string name="wifi_setting_sleep_policy_title">WLAN 休眠設定</string>
+    <string name="wifi_setting_sleep_policy_summary">指定何時要從 WLAN 切換到行動數據</string>
+    <string name="wifi_tether_checkbox_text">可攜式 WLAN 無線基地台</string>
+    <string name="wifi_tether_enabled_subtext">可攜式無線基地台 %1$s 已啟用</string>
+    <string name="wifi_tether_settings_text">可攜式WLAN無線基地台設定</string>
+    <string name="wifi_tether_settings_subtext">設定與管理可攜式 WLAN 無線基地台</string>
+    <string name="wifi_tether_settings_title">可攜式 WLAN 無線基地台設定</string>
+    <string name="wifi_tether_configure_ap_text">設定 WLAN 無線基地台</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s 可攜式 WLAN 無線基地台</string>
+    <string name="status_wifi_mac_address">WLAN MAC 位址</string>
+    <string name="tether_settings_title_wifi">可攜式無線基地台</string>
+    <string name="tether_settings_title_both">數據連線與可攜式無線基地台</string>
+    <string name="tether_settings_summary_wifi">分享您的手機行動連線，讓手機成為可攜式 WLAN 無線基地台</string>
+    <string name="tether_settings_summary_both">透過 USB 或可攜式 WLAN 無線基地台方式，分享手機的行動數據連線</string>
+    <string name="location_network_based">使用無線網路</string>
+    <string name="location_networks_disabled">使用無線網路，在應用程式中查詢位置 (例如 Google 地圖)</string>
+    <string name="location_neighborhood_level">根據 WLAN 和/或行動網路判定位置</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN執行中</string>
+    <string name="battery_desc_wifi">WLAN 耗電量</string>
+    <string name="battery_sugg_wifi">未使用或無法使用 WLAN 時即關閉 WLAN</string>
+    <string name="backup_data_summary">將應用程式資料、WLAN 密碼，以及其他設定備份到 Google 伺服器</string>
+    <string name="backup_erase_dialog_message">您確定要停止備份您的 WLAN 密碼、書籤及他設定，以及應用程式資料，並清除 Google 伺服器上的所有相關資料嗎？</string>
+    <string name="radio_controls_summary">管理WLAN、藍牙、Flight mode(通訊關閉)、行動網路和VPN</string>
+    <string name="wifi_tether_failed_subtext">可攜式 WLAN 無線基地台發生錯誤</string>
+    <string name="wifi_on_time">開啟 WLAN 的時間</string>
+    <string name="bluetooth_on_time">開啟 WLAN 的時間</string>
+    <string name="battery_action_wifi">WLAN 設定</string>
+    <string name="gadget_toggle_wifi">正在更新 WLAN 設定</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Instala certificados de WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Activar WLAN</string>
+    <string name="wifi_settings">Configuración WLAN</string>
+    <string name="wifi_settings_category">Configuración WLAN</string>
+    <string name="wifi_starting">Activando...</string>
+    <string name="wifi_add_network">Agregar red de WLAN</string>
+    <string name="wifi_access_points">Redes de WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">Política suspensión WLAN</string>
+    <string name="wifi_setting_sleep_policy_summary">Especificar cuándo se debe cambiar de WLAN a datos de celular</string>
+    <string name="wifi_tether_checkbox_text">Zona act WLAN portátil</string>
+    <string name="wifi_tether_enabled_subtext">Zona activa portátil %1$s conectada</string>
+    <string name="wifi_tether_settings_text">Ajust conf zon act WLAN por</string>
+    <string name="wifi_tether_settings_subtext">Configurar y administrar la zona activa WLAN portátil</string>
+    <string name="wifi_tether_settings_title">Ajustes de zona activa WLAN portátil</string>
+    <string name="wifi_tether_configure_ap_text">Configurar zona activa WLAN</string>
+    <string name="wifi_tether_configure_subtext">Zona activa WLAN portátil %1$s %2$s</string>
+    <string name="status_wifi_mac_address">Dirección MAC de WLAN</string>
+    <string name="tether_settings_title_wifi">Zona activa portátil</string>
+    <string name="tether_settings_title_both">Vincul y zona activa portátil</string>
+    <string name="tether_settings_summary_wifi">Comparte la conexión para celulares de tu teléfono como una zona activa WLAN portátil</string>
+    <string name="tether_settings_summary_both">Comparte la conexión de datos para celulares de tu teléfono a través de USB o como zona activa WLAN portátil</string>
+    <string name="location_network_based">Utilizar redes inalám.</string>
+    <string name="location_networks_disabled">Ver ubic en aplic (p. ej., Google Maps) a través de redes móviles</string>
+    <string name="location_neighborhood_level">Ubicación determinada por WLAN o redes de celulares</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN en func</string>
+    <string name="battery_desc_wifi">La batería está siendo utilizada por WLAN</string>
+    <string name="battery_sugg_wifi">Desactivar WLAN cuando no se utiliza o cuando no está disponible</string>
+    <string name="backup_data_summary">Hacer copias seg datos aplic, contraseñas WLAN y otra config en servidores Google</string>
+    <string name="backup_erase_dialog_message">¿Estás seguro de que deseas dejar de hacer copias de seguridad de tus contraseñas de WLAN, favoritos y otros datos de configuración y aplicaciones, y borrar todas las copias de los servidores de Google?</string>
+    <string name="radio_controls_summary">Administrar WLAN, Bluetooth, modo de avión, redes, móviles, &amp; VPN</string>
+    <string name="wifi_tether_failed_subtext">Error en la zona activa WLAN portátil</string>
+    <string name="wifi_on_time">WLAN a tiempo</string>
+    <string name="bluetooth_on_time">WLAN a tiempo</string>
+    <string name="battery_action_wifi">Configuración WLAN</string>
+    <string name="gadget_toggle_wifi">Actualizando configuración de WLAN</string>
+</resources>

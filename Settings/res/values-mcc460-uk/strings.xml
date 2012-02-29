@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Установ. сертифік. WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Увімкнути WLAN</string>
+    <string name="wifi_settings">Установки WLAN</string>
+    <string name="wifi_settings_category">Установки WLAN</string>
+    <string name="wifi_starting">Увімкнення…</string>
+    <string name="wifi_add_network">Додати мережу WLAN</string>
+    <string name="wifi_access_points">Мережі WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">Політика реж. сну WLAN</string>
+    <string name="wifi_setting_sleep_policy_summary">Вказати, коли переходити від WLAN до рухомої мережі передачі даних</string>
+    <string name="wifi_tether_checkbox_text">Портат. точк.дост. WLAN</string>
+    <string name="wifi_tether_enabled_subtext">Портативна точка доступу %1$s активна</string>
+    <string name="wifi_tether_settings_text">Устан. порт.точк.дост.WLAN</string>
+    <string name="wifi_tether_settings_subtext">Налаштування й керування портативною точкою доступу WLAN</string>
+    <string name="wifi_tether_settings_title">Установки портативної точки доступу WLAN</string>
+    <string name="wifi_tether_configure_ap_text">Налаштув. точку дост.WLAN</string>
+    <string name="wifi_tether_configure_subtext">Портативна точка доступу WLAN: %1$s %2$s</string>
+    <string name="status_wifi_mac_address">MAC-адреса WLAN</string>
+    <string name="tether_settings_title_wifi">Портативна точка доступу</string>
+    <string name="tether_settings_title_both">Модем і портат.точка дост.</string>
+    <string name="tether_settings_summary_wifi">"Надати загальний доступ до мобільного з'єднання телефону як до портативної точки доступу WLAN"</string>
+    <string name="tether_settings_summary_both">Надати загальний доступ до з’єднання з мобільними даними телефону через USB або як до портативної точки доступу WLAN</string>
+    <string name="location_network_based">Викор. бездрот. мережі</string>
+    <string name="location_networks_disabled">Перегляд розташ. у прогр. (напр., «Maps») за допом. бездрот. мереж</string>
+    <string name="location_neighborhood_level">Розташув. визначається за допомогою WLAN і/або моб. мереж</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN запущено</string>
+    <string name="battery_desc_wifi">"Акумулятор використовується для з'єднання WLAN"</string>
+    <string name="battery_sugg_wifi">"Вимикайте з'єднання WLAN, коли не використовуєте його або коли воно недоступне"</string>
+    <string name="backup_data_summary">Резервне копіюв. прогр. даних, паролів WLAN та ін. установок на сервери Google</string>
+    <string name="backup_erase_dialog_message">Дійсно зупинити створення резервної копії паролів WLAN, закладок та інших установок і даних програм і видалити всі копії на серверах Google?</string>
+    <string name="radio_controls_summary">Керування WLAN, Bluetooth, режимом «У літаку», мобільними мережами, VPN</string>
+    <string name="wifi_tether_failed_subtext">Помилка портативної точки доступу WLAN</string>
+    <string name="wifi_on_time">Час WLAN</string>
+    <string name="bluetooth_on_time">Час WLAN</string>
+    <string name="battery_action_wifi">Установки WLAN</string>
+    <string name="gadget_toggle_wifi">Оновлення установки WLAN</string>
+</resources>

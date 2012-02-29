@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Installi WLAN-serdid</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Saate WLAN sisse lülitada</string>
+    <string name="wifi_settings">WLAN seaded</string>
+    <string name="wifi_settings_category">WLAN seaded</string>
+    <string name="wifi_starting">Sisselülitamine...</string>
+    <string name="wifi_add_network">Lisa WLAN-võrk</string>
+    <string name="wifi_access_points">WLAN-võrgud</string>
+    <string name="wifi_setting_sleep_policy_title">WLAN unerežiimipoliitika</string>
+    <string name="wifi_setting_sleep_policy_summary">Saate määrata WLAN-lt mobiiliandmetele ülemineku aja</string>
+    <string name="wifi_tether_checkbox_text">Teisaldat. WLAN-pääsup.</string>
+    <string name="wifi_tether_enabled_subtext">Teisaldatav pääsupunkt %1$s on aktiivne</string>
+    <string name="wifi_tether_settings_text">Teisal. WLAN-pääsup. seaded</string>
+    <string name="wifi_tether_settings_subtext">Seadista ja halda teisaldatavat WLAN-pääsupunkti</string>
+    <string name="wifi_tether_settings_title">Teisaldatava WLAN-pääsupunkti seaded</string>
+    <string name="wifi_tether_configure_ap_text">Konfigureeri WLAN-pääsup.</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s teisaldatav WLAN-pääsupunkt</string>
+    <string name="status_wifi_mac_address">WLAN MAC-aadress</string>
+    <string name="tether_settings_title_wifi">Teisaldatav pääsupunkt</string>
+    <string name="tether_settings_title_both">Vahendus ja teisal. pääsup.</string>
+    <string name="tether_settings_summary_wifi">Kasutage oma telefoni mobiilsideandmeühendust teisaldatava WLAN-pääsupunktina</string>
+    <string name="tether_settings_summary_both">Kasutage oma telefoni mobiilsideandmeühendust USB kaudu või teisaldatava WLAN-pääsupunktina</string>
+    <string name="location_network_based">Kasuta traadita s. võrke</string>
+    <string name="location_networks_disabled">"Tr-ta side võrgus saate asukohateabe  kuvada teat rakend. (nt Maps)"</string>
+    <string name="location_neighborhood_level">Asukoht tuvastatakse WLAN- ja/või mobiilsidevõrgu kaudu</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN töötab</string>
+    <string name="battery_desc_wifi">WLAN akukulu</string>
+    <string name="battery_sugg_wifi">Lülitage WLAN välja, kui te seda ei kasuta või kui see pole saadaval</string>
+    <string name="backup_data_summary">"Saate varund. rak. andmeid, WLAN paroole ja seadeid Google'i serverites"</string>
+    <string name="backup_erase_dialog_message">"Kas soovite kindlasti WLAN paroolide, järjehoidjate ja muude seadete ja rakenduste andmete varundamise peatada ja kõik koopiad Google'i serveritest kustutada?"</string>
+    <string name="radio_controls_summary">Saate hallata WLAN-t, Bluetoothi, lennukirežiimi, mobiilivõrke ja VPN-e</string>
+    <string name="wifi_tether_failed_subtext">Teisaldatava WLAN-pääsupunkti tõrge</string>
+    <string name="wifi_on_time">WLAN sisselülitatuna hoidmise aeg</string>
+    <string name="bluetooth_on_time">WLAN sisselülitatuna hoidmise aeg</string>
+    <string name="battery_action_wifi">WLAN seaded</string>
+    <string name="gadget_toggle_wifi">WLAN seade uuendamine</string>
+</resources>

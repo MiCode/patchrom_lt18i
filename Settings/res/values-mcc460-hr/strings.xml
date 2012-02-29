@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Instalacija WLAN certifikata</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Uključi WLAN</string>
+    <string name="wifi_settings">Postavke za WLAN</string>
+    <string name="wifi_settings_category">Postavke za WLAN</string>
+    <string name="wifi_starting">Uključivanje…</string>
+    <string name="wifi_add_network">Dodaj WLAN mrežu</string>
+    <string name="wifi_access_points">WLAN mreže</string>
+    <string name="wifi_setting_sleep_policy_title">Prav. mirovanja za WLAN</string>
+    <string name="wifi_setting_sleep_policy_summary">Navedite kada se prebaciti s WLAN mreže na mobilne podatke</string>
+    <string name="wifi_tether_checkbox_text">Prijenos. WLAN prist. toč.</string>
+    <string name="wifi_tether_enabled_subtext">Aktivna prenosiva pristupna točka %1$s active</string>
+    <string name="wifi_tether_settings_text">Post. prijen. WLAN prist.toč.</string>
+    <string name="wifi_tether_settings_subtext">Postavljanje prenosive WLAN pristupne točke i upravljanje njome</string>
+    <string name="wifi_tether_settings_title">Postavke prenosive WLAN pristupne točke</string>
+    <string name="wifi_tether_configure_ap_text">Konfig. WLAN pristupne toč.</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s prenosiva WLAN pristupna točka</string>
+    <string name="status_wifi_mac_address">MAC adresa za WLAN</string>
+    <string name="tether_settings_title_wifi">Prenosiva pristupna točka</string>
+    <string name="tether_settings_title_both">Con. mod. şi pct cald mob.</string>
+    <string name="tether_settings_summary_wifi">Podijelite mobilnu podatkovnu vezu telefona kao prenosivu WLAN pristupnu točku</string>
+    <string name="tether_settings_summary_both">Podijelite mobilnu podatkovnu vezu telefona putem USB veze ili kao prenosivu WLAN pristupnu točku</string>
+    <string name="location_network_based">Koristi bežične mreže</string>
+    <string name="location_networks_disabled">Pogledaj lokaciju u aplikacijama (kao što su Karte) putem bežičnih mreža</string>
+    <string name="location_neighborhood_level">Lokaciju određuju WLAN i/ili mobilne mreže</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN aktivan</string>
+    <string name="battery_desc_wifi">Korištenje baterije za WLAN mrežu</string>
+    <string name="battery_sugg_wifi">Isključite WLAN mrežu kada je ne koristite ili kada nije dostupna</string>
+    <string name="backup_data_summary">Sig. kopirajte progr. pod., WLAN zaporke i ostale post. na Googleovim poslužiteljima</string>
+    <string name="backup_erase_dialog_message">Jeste li sigurni da želite prekinuti izradu sigurnosnih kopija WLAN zaporki, favorita te ostalih postavki i programskih podataka i izbrisati sve kopije na Googleovim poslužiteljima?</string>
+    <string name="radio_controls_summary">Uprav. tehnol. WLAN i Bluetooth, izvanmr. radom, mob. mrežama i VPN-ovima</string>
+    <string name="wifi_tether_failed_subtext">Pogreška prenosive WLAN pristupne točke</string>
+    <string name="wifi_on_time">Vrijeme korištenja WLAN mreže</string>
+    <string name="bluetooth_on_time">Vrijeme korištenja WLAN mreže</string>
+    <string name="battery_action_wifi">Postavke WLAN mreže</string>
+    <string name="gadget_toggle_wifi">Ažuriranje postavke za WLAN</string>
+</resources>

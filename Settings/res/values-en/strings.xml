@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="location_warning_message">Data transmission charges may apply.</string>
+    <string name="master_reset_cancel">Master reset cancelled. Flight mode not on.</string>
+    <string name="master_clear_desc_cn">"This will erase all data from your phone, including:
+"<li>Your account</li>"
+"<li>System and application data and settings</li>"
+"<li>Downloaded applications</li>"
+It will not erase:
+"<li>Current system software and bundled applications</li>"
+"<li>SD card files, such as music or photos</li></string>
+    <string name="display_category_personalisation_title">Personalisation</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="battery_info_temperature_units">° C</string>
+    <string name="bluetooth_is_discoverable">Discoverable for %1$s seconds…</string>
+    <string name="bluetooth_disconnecting">Disconnecting…</string>
+    <string name="bluetooth_connecting">Connecting…</string>
+    <string name="bluetooth_pairing">Pairing…</string>
+    <string name="bluetooth_permission_request">Bluetooth permission request</string>
+    <string name="bluetooth_ask_enablement">An application on your phone is requesting permission to turn on Bluetooth. Do you want to do this?</string>
+    <string name="bluetooth_ask_enablement_and_discovery">An application on your phone is requesting permission to turn on Bluetooth and to make your phone discoverable by other devices for %1$d seconds. Do you want to do this?</string>
+    <string name="bluetooth_turning_on">Turning on Bluetooth…</string>
+    <string name="intent_sender_account_label">"Account: "</string>
+    <string name="band_mode_loading">Loading band list…</string>
+    <string name="airplane_mode_turning_on">Disabling wireless connections…</string>
+    <string name="airplane_mode_turning_off">Enabling wireless connections…</string>
+    <string name="unlock_set_unlock_launch_picker_summary">Lock screen with a pattern, PIN or password</string>
+    <string name="unlock_set_unlock_launch_picker_change_summary">Change or disable pattern, PIN or password security</string>
+    <string name="lockpassword_press_continue">Press Continue when finished</string>
+    <string name="bluetooth_enter_pin_msg">"
+Type PIN to pair with \"%1$s\". (Try 0000 or 1234.)"</string>
+    <string name="bluetooth_enter_passkey_msg">"
+Type passkey to pair with \"%1$s\"."</string>
+    <string name="bluetooth_confirm_passkey_msg">To pair with \"%1$s\", confirm that it is showing the passkey: %2$s.</string>
+    <string name="bluetooth_display_passkey_msg">Enter %2$s on \"%1$s\" to pair.</string>
+    <string name="bluetooth_pairing_decline">"Don't Pair"</string>
+    <string name="bluetooth_connect_specific_profiles_title">Connect to…</string>
+    <string name="wifi_starting">Turning on…</string>
+    <string name="wifi_stopping">Turning off…</string>
+    <string name="wifi_in_airplane_mode">In flight mode</string>
+    <string name="wifi_tether_configure_ssid_default">Android Hotspot</string>
+    <string name="dtmf_tone_enable_summary_on">Play tones when dialling a number</string>
+    <string name="dtmf_tone_enable_summary_off">Play tones when dialling a number</string>
+    <string name="master_clear_desc">"This will erase all data from your phone's "<b>internal storage</b>", including:
+
+"<li>Your Google account</li>"
+"<li>System and application data and settings</li>"
+"<li>Downloaded applications</li>"
+
+To also clear music, pictures and other user data, the "<b>SD card</b>" needs to be erased.
+
+"</string>
+    <string name="media_format_final_desc">Erase SD card, deleting all files stored there? This action cannot be reversed!</string>
+    <string name="settings_license_activity_loading">Loading…</string>
+    <string name="settings_safetylegal_activity_loading">Loading…</string>
+    <string name="lock_intro_message"><font size="17">"Protect your phone from unauthorized use by creating a personal screen unlock pattern. 
+"<font height="17">"
+"</font><b>1</b>"  On the next screen, watch while an example pattern is drawn. 
+"<font height="17">"
+"</font><b>2</b>"  When ready, draw your own personal unlock pattern. Experiment with different patterns but connect at least four dots. 
+"<font height="17">"
+"</font><b>3</b>"  Redraw your pattern to confirm. 
+"<font height="17">"
+"</font><b>Ready to start? Touch “Next”</b>". 
+"<font height="3">"
+"</font>To leave your phone unprotected, touch “Cancel”.</font></string>
+    <string name="install_all_warning">Your phone and personal data are more vulnerable to attack by applications from unknown sources. You agree that you are solely responsible for any damage to your phone or loss of data that may result from using these applications.</string>
+    <string name="recompute_size">Recomputing size…</string>
+    <string name="computing_size">Computing…</string>
+    <string name="force_stop_dlg_text">Force stopping an application can cause it to misbehave. Are you sure that you want continue?</string>
+    <string name="service_stop_description">This service was started by its application. Stopping it may cause the application to fail.</string>
+    <string name="heavy_weight_stop_description">This application cannot be stopped safely. Doing so may result in the loss of some of your current work.</string>
+    <string name="background_process_stop_description">This is an old application process that is being retained for better speed, just in case it is needed again. There is usually no reason to stop it.</string>
+    <string name="service_manage_description">%1$s: currently in use. Touch Settings to control it.</string>
+    <string name="process_service_in_use_description">Service %1$s is in use.</string>
+    <string name="process_provider_in_use_description">Provider %1$s is in use.</string>
+    <string name="runningservicedetails_stop_dlg_text">Are you sure you want to stop this system service? If you do, some features of your phone may stop working correctly until you turn it off and then on again.</string>
+    <string name="auto_punctuate_summary">Press Space key twice to insert \".\"</string>
+    <string name="ime_security_warning">This input method may be able to collect all the text you type, including personal data like passwords and credit card numbers. It comes from the application %1$s. Use this input method?</string>
+    <string name="battery_history_seconds">%1$d s</string>
+    <string name="accessibility_service_security_warning">This accessibility service may be able to collect all the text you type, including personal data credit card numbers except passwords. It may also log your user interface interactions. It comes from the application %1$s. Use this accessibility service?</string>
+    <string name="accessibility_service_no_apps_message">"You do not have any accessibility related applications installed.
+
+You can download a screen reader for your device from Android Market.
+
+ Click OK to install the screen reader."</string>
+    <string name="battery_sugg_apps_gps">Manually control GPS to prevent application from using it</string>
+    <string name="recognizer_title">Voice recogniser</string>
+    <string name="recognizer_settings_title">Voice recogniser settings</string>
+    <string name="tts_engine_security_warning">This speech synthesis engine may be able to collect all the text that will be spoken, including personal data such as passwords and credit card numbers. It comes from the %s engine. Enable the use of this speech synthesis engine?</string>
+    <string name="credentials_reset_warning_plural">Please enter the correct password. Number of attempts left before the credential storage is erased: %1$d</string>
+    <string name="credentials_password_too_short">Minimum of 8 characters long. Must include upper and lower case letters, numbers and symbols.</string>
+    <string name="backup_section_title">Back up and restore</string>
+    <string name="backup_data_summary">Back up application data, Wi-Fi passwords and other settings to Google servers</string>
+    <string name="backup_erase_dialog_message">Are you sure you want to stop backing up your Wi-Fi passwords, bookmarks and other settings and application data and erase all copies on Google servers?</string>
+    <string name="device_admin_warning">Activating this administrator will allow the application %1$s to perform the following operations:</string>
+    <string name="device_admin_status">This administrator is active and allows the application %1$s to perform the following operations:</string>
+</resources>

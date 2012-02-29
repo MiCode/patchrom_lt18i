@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Установить сертиф. WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Включить WLAN</string>
+    <string name="wifi_settings">Настройки WLAN</string>
+    <string name="wifi_settings_category">Настройки WLAN</string>
+    <string name="wifi_starting">Включение...</string>
+    <string name="wifi_add_network">Добавить сеть WLAN</string>
+    <string name="wifi_access_points">Сети WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">Спящий режим</string>
+    <string name="wifi_setting_sleep_policy_summary">При каких условиях переключаться с WLAN на сотовую сеть</string>
+    <string name="wifi_tether_checkbox_text">Точка доступа WLAN</string>
+    <string name="wifi_tether_enabled_subtext">Точка доступа %1$s активна</string>
+    <string name="wifi_tether_settings_text">Парам. передвижной зоны</string>
+    <string name="wifi_tether_settings_subtext">Настройка точки доступа WLAN</string>
+    <string name="wifi_tether_settings_title">Настройки точки доступа</string>
+    <string name="wifi_tether_configure_ap_text">Настр. зону доступа WLAN</string>
+    <string name="wifi_tether_configure_subtext">Точка доступа %1$s %2$s</string>
+    <string name="status_wifi_mac_address">MAC-адрес WLAN</string>
+    <string name="tether_settings_title_wifi">Точка доступа WLAN</string>
+    <string name="tether_settings_title_both">Режим модема</string>
+    <string name="tether_settings_summary_wifi">Открыть доступ к интернет-подключению телефона через WLAN</string>
+    <string name="tether_settings_summary_both">Открыть доступ к интернет-подключению телефона через USB или WLAN</string>
+    <string name="location_network_based">Беспроводные сети</string>
+    <string name="location_networks_disabled">Использовать WLAN и сотовые сети для определения местоположения</string>
+    <string name="location_neighborhood_level">Использовать WLAN и сотовые сети для определения местоположения</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">Использ-е WLAN</string>
+    <string name="battery_desc_wifi">Использование батареи модулем WLAN</string>
+    <string name="battery_sugg_wifi">Выключайте WLAN, когда эта сеть не используется.</string>
+    <string name="backup_data_summary">Созд. копии данных прилож., паролей WLAN и настроек на серверах Google</string>
+    <string name="backup_erase_dialog_message">Вы уверены, что хотите прекратить создавать резервные копии паролей WLAN, закладок, настроек и данных приложений и удалить все копии с серверов Google?</string>
+    <string name="radio_controls_summary">WLAN, Bluetooth, режим полета, мобильные сети и VPN</string>
+    <string name="wifi_tether_failed_subtext">Ошибка подключения</string>
+    <string name="wifi_on_time">Время работы WLAN</string>
+    <string name="bluetooth_on_time">Время работы WLAN</string>
+    <string name="battery_action_wifi">Настройки WLAN</string>
+    <string name="gadget_toggle_wifi">Обновление настроек WLAN</string>
+</resources>

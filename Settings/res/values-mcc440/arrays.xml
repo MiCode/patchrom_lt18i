@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="keyboard_priority">
+        <item>com.sonyericsson.textinput.uxp/.glue.InputMethodServiceGlue</item>
+        <item>com.sonyericsson.android.pobox/.jajp.POBoxTouch</item>
+        <item>com.cootek.touchpal.generic/.TouchPalIME</item>
+        <item>com.cootek.touchpal.sonyericsson.korean.qwerty/.TouchPalIME</item>
+        <item>com.android.inputmethod.latin/.LatinIME</item>
+    </string-array>
+</resources>

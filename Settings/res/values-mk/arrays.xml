@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Америка</item>
+        <item>Европа</item>
+        <item>Африка</item>
+        <item>Азија</item>
+        <item>Австралија</item>
+        <item>Пацифик</item>
+        <item>Сите</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Без анимации</item>
+        <item>Некои анимации</item>
+        <item>Сите анимации</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Не се покажани анимации на прозорец</item>
+        <item>Покажани се некои анимации на прозорец</item>
+        <item>Покажани се сите анимации на прозорец</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 секунди</item>
+        <item>30 секунди</item>
+        <item>1 минута</item>
+        <item>2 минути</item>
+        <item>10 минути</item>
+        <item>30 минути</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Многу бавно</item>
+        <item>Бавно</item>
+        <item>Нормално</item>
+        <item>Брзо</item>
+        <item>Многу брзо</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Американски англиски</item>
+        <item>Британски англиски</item>
+        <item>Француски</item>
+        <item>Германски</item>
+        <item>Италијански</item>
+        <item>Шпански</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Скенирање…</item>
+        <item>Поврзување…</item>
+        <item>Потврдување…</item>
+        <item>Добивање IP адреса…</item>
+        <item>Поврзан</item>
+        <item>Суспендиран</item>
+        <item>Дисконектирање…</item>
+        <item>Дисконектиран</item>
+        <item>Неуспешно</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Скенирање…</item>
+        <item>Поврзување со %1$s…</item>
+        <item>Потврдување со %1$s…</item>
+        <item>Добивање IP адреса од %1$s…</item>
+        <item>Поврзан со %1$s</item>
+        <item>Суспендиран</item>
+        <item>Дисконектирање од %1$s…</item>
+        <item>Дисконектиран</item>
+        <item>Неуспешно</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Отвори</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>Хексадецимален WAPI</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Лош</item>
+        <item>Просечен</item>
+        <item>Добар</item>
+        <item>Одличен</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Кога ќе се искл. екранот</item>
+        <item>Никогаш кога е прикл.</item>
+        <item>Никогаш</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Време на користење</item>
+        <item>Број на стартувања</item>
+        <item>Име на апликацијата</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Ниедна</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Исклучено</item>
+        <item>Предупредување</item>
+        <item>Вибрирање</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Ништо</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP или CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Внатр. мемор. на уредот</item>
+        <item>Отстранл. SD-картичка</item>
+        <item>Нека одлучи системот</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Секогаш</item>
+        <item>Никогаш</item>
+        <item>Кога звукот е исклучен</item>
+        <item>Кога звукот е вклучен</item>
+    </string-array>
+</resources>

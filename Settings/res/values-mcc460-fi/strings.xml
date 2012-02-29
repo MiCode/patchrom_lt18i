@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Asenna WLAN-varmenteet</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Ota WLAN käyttöön</string>
+    <string name="wifi_settings">WLAN-asetukset</string>
+    <string name="wifi_settings_category">WLAN-asetukset</string>
+    <string name="wifi_starting">Otetaan käyttöön…</string>
+    <string name="wifi_add_network">Lisää WLAN-verkko</string>
+    <string name="wifi_access_points">WLAN-verkot</string>
+    <string name="wifi_setting_sleep_policy_title">WLAN-virransäästökäyt.</string>
+    <string name="wifi_setting_sleep_policy_summary">Määritä, koska WLAN-yhteydestä siirrytään matkapuhelindatayht.</string>
+    <string name="wifi_tether_checkbox_text">Siirrett. WLAN-tukiasema</string>
+    <string name="wifi_tether_enabled_subtext">Siirrettävä tukiasema %1$s aktiivinen</string>
+    <string name="wifi_tether_settings_text">Siirr. WLAN-tukiaseman aset.</string>
+    <string name="wifi_tether_settings_subtext">Siirrettävän WLAN-tukiaseman asetusten määritys ja hallinta</string>
+    <string name="wifi_tether_settings_title">Siirrettävän WLAN-tukiaseman asetukset</string>
+    <string name="wifi_tether_configure_ap_text">Määritä WLAN-tukiasema</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s siirrettävä WLAN-tukiasema</string>
+    <string name="status_wifi_mac_address">WLAN-verkon MAC-osoite</string>
+    <string name="tether_settings_title_wifi">Siirrettävä tukiasema</string>
+    <string name="tether_settings_title_both">Sidonta ja siirr. WLAN-alue</string>
+    <string name="tether_settings_summary_wifi">Jaa puhelimen mobiilidatayhteys siirrettävänä WLAN-tukiasemana</string>
+    <string name="tether_settings_summary_both">Jaa puhelimen mobiilidatayhteys USB:n kautta tai siirrettävänä WLAN-tukiasemana</string>
+    <string name="location_network_based">Käytä langattomia verkk.</string>
+    <string name="location_networks_disabled">Selvitä sijainti sovelluksissa (kuten Maps) langattomilla verkoilla</string>
+    <string name="location_neighborhood_level">Sijainti määritetään WLANin ja/tai matkapuhelinverkkojen avulla</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN käynnissä</string>
+    <string name="battery_desc_wifi">WLAN-verkon käyttämä akkuvirta</string>
+    <string name="battery_sugg_wifi">Poista WLAN käytöstä, kun et käytä sitä tai kun se ei ole käytettävissä</string>
+    <string name="backup_data_summary">Varmuuskopioi sovellustiedot, WLAN-sala-sanat ja muut aset. Google-palvelimiin</string>
+    <string name="backup_erase_dialog_message">Haluatko varmasti lopettaa WLAN-salasanojen, kirjanmerkkien ja muiden asetusten sekä sovellustietojen varmuuskopioinnin ja poistaa kaikki kopiot Google-palvelimista?</string>
+    <string name="radio_controls_summary">WLAN-hallinta, Bluetooth, lentokonetila, mobiiliverkot ja VPN-verkot</string>
+    <string name="wifi_tether_failed_subtext">Siirrettävän WLAN-tukiaseman virhe</string>
+    <string name="wifi_on_time">WLAN pyynnöstä</string>
+    <string name="bluetooth_on_time">WLAN pyynnöstä</string>
+    <string name="battery_action_wifi">WLAN -asetukset</string>
+    <string name="gadget_toggle_wifi">Päivitetään WLAN-asetusta</string>
+</resources>

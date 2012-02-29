@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">نصب گواهینامه های WLAN</string>
+    <string name="wifi_quick_toggle_title">وای فای</string>
+    <string name="wifi_quick_toggle_summary">روشن کردن وای فای</string>
+    <string name="wifi_settings">تنظیمات وای فای</string>
+    <string name="wifi_settings_category">تنظیمات وای فای</string>
+    <string name="wifi_starting">درحال روشن شدن...</string>
+    <string name="wifi_add_network">افزودن شبکه وای فای</string>
+    <string name="wifi_access_points">شبکه های وای فای</string>
+    <string name="wifi_setting_sleep_policy_title">غیرفعال بودن وای فای</string>
+    <string name="wifi_setting_sleep_policy_summary">تعیین زمان تعویض از وای فای به داده موبایل</string>
+    <string name="wifi_tether_checkbox_text">وای فای قابل حمل</string>
+    <string name="wifi_tether_enabled_subtext">هات اسپات قابل حمل %1$s فعال</string>
+    <string name="wifi_tether_settings_text">تنظیمات وای فای قابل حمل</string>
+    <string name="wifi_tether_settings_subtext">تنظیم و مدیریت هات اسپات وای فای قابل حمل</string>
+    <string name="wifi_tether_settings_title">تنظیمات هات اسپات وای فای قابل حمل</string>
+    <string name="wifi_tether_configure_ap_text">پیکر. نقطه اتصال وای فای</string>
+    <string name="wifi_tether_configure_subtext">‏%1$s %2$s هات اسپات وای فای قابل حمل</string>
+    <string name="status_wifi_mac_address">آدرس MAC وای فای</string>
+    <string name="tether_settings_title_wifi">هات اسپات قابل حمل</string>
+    <string name="tether_settings_title_both">مهار و هات اسپات قابل حمل</string>
+    <string name="tether_settings_summary_wifi">اتصال تلفن همراه خود را به عنوان یک هات اسپات وای فای قابل حمل به اشتراک بگذارید</string>
+    <string name="tether_settings_summary_both">اتصال داده های تلفن همراه خود را با USB و به عنوان یک هات اسپات وای فای قابل حمل به اشتراک بگذارید</string>
+    <string name="location_network_based">استفاده از شبکه بی سیم</string>
+    <string name="location_networks_disabled">مشاهده مکان در برنامه ها (مانند Maps) با استفاده از شبکه های محلی</string>
+    <string name="location_neighborhood_level">تعیین مکان توسط شبکه های موبایل و/یا وای فای</string>
+    <string name="battery_stats_wifi_running_label">وای فای</string>
+    <string name="power_wifi">وای فای</string>
+    <string name="usage_type_wifi_running">WLAN در حال اجرا</string>
+    <string name="battery_desc_wifi">باتری استفاده شده توسط وای فای</string>
+    <string name="battery_sugg_wifi">وقتی وای فای در دسترس نیست یا از آن استفاده نمی کنید، آن را خاموش کنید</string>
+    <string name="backup_data_summary">تهیه پشتیبان از داده های برنامه، رمزهای عبور وای فای و سایر تنظیمات در سرورهای Google</string>
+    <string name="backup_erase_dialog_message">آیا مطمئنید می خواهید تهیه پشتیبان از رمزهای عبور وای فای، نشانه ها و سایر تنظیمات و داده های برنامه متوقف شود و کلیه نسخه ها از سرورهای Google حذف شوند؟</string>
+    <string name="radio_controls_summary">مدیریت وای فای، Bluetooth، حالت هواپیما، شبکه های موبایل، و VPN ها</string>
+    <string name="wifi_tether_failed_subtext">خطا در هات اسپات وای فای قابل حمل</string>
+    <string name="wifi_on_time">وای فای مدت دار</string>
+    <string name="bluetooth_on_time">زمان روشن بودن وای فای</string>
+    <string name="battery_action_wifi">تنظیمات وای فای</string>
+    <string name="gadget_toggle_wifi">به روزرسانی تنظیم وای فای</string>
+</resources>

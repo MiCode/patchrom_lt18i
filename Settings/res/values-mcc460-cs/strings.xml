@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Instalovat certifikáty WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Zapnout WLAN</string>
+    <string name="wifi_settings">Nastavení WLAN</string>
+    <string name="wifi_settings_category">Nastavení WLAN</string>
+    <string name="wifi_starting">Zapínání WLAN...</string>
+    <string name="wifi_add_network">Přidat síť WLAN</string>
+    <string name="wifi_access_points">Sítě WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">Zás. použ. WLAN ve spán.</string>
+    <string name="wifi_setting_sleep_policy_summary">Určit, kdy přepnout ze sítě WLAN na mobilní datový přenos</string>
+    <string name="wifi_tether_checkbox_text">Přenosný hotspot WLAN</string>
+    <string name="wifi_tether_enabled_subtext">Přenosný hotspot %1$s je aktivní</string>
+    <string name="wifi_tether_settings_text">Nast. přen. hotspotu WLAN</string>
+    <string name="wifi_tether_settings_subtext">Nastavení a správa přenosného hotspotu WLAN</string>
+    <string name="wifi_tether_settings_title">Nastavení přenosného hotspotu WLAN</string>
+    <string name="wifi_tether_configure_ap_text">Konfigurace hotspotu WLAN</string>
+    <string name="wifi_tether_configure_subtext">Přenosný hotspot WLAN %1$s %2$s</string>
+    <string name="status_wifi_mac_address">Adresa MAC sítě WLAN</string>
+    <string name="tether_settings_title_wifi">Přenosný hotspot</string>
+    <string name="tether_settings_title_both">Sdíl. Int. a přen. příst. bod</string>
+    <string name="tether_settings_summary_wifi">Sdílet mobilní připojení telefonu jako přenosný hotspot WLAN</string>
+    <string name="tether_settings_summary_both">Sdílet mobilní datové připojení telefonu prostřednictvím portu USB nebo jako přenosný hotspot WLAN</string>
+    <string name="location_network_based">Zaměření přes bezdr.sítě</string>
+    <string name="location_networks_disabled">Zobrazuje polohu v aplikacích (jako Mapy) pomocí bezdrátových sítí</string>
+    <string name="location_neighborhood_level">Poloha je zaměřena pomocí WLAN nebo mobilních sítí</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN aktivní</string>
+    <string name="battery_desc_wifi">Využití baterie sítí WLAN</string>
+    <string name="battery_sugg_wifi">Pokud síť WLAN nepoužíváte nebo na daném místě není k dispozici, vypněte přijímač WLAN.</string>
+    <string name="backup_data_summary">Zálohovat data aplikací, hesla sítí WLAN a další nastavení na serverech Google</string>
+    <string name="backup_erase_dialog_message">Opravdu chcete zrušit zálohování hesel sítí WLAN, záložek a dalších nastavení a dat aplikací a vymazat všechny kopie těchto dat na serverech Google?</string>
+    <string name="radio_controls_summary">Spravovat WLAN, Bluetooth, režim V letadle, mobilní sítě a sítě VPN</string>
+    <string name="wifi_tether_failed_subtext">Chyba přenosného hotspotu WLAN</string>
+    <string name="wifi_on_time">Doba provozu modulu WLAN</string>
+    <string name="bluetooth_on_time">Doba provozu sítě WLAN</string>
+    <string name="battery_action_wifi">Nastavení WLAN</string>
+    <string name="gadget_toggle_wifi">Probíhá aktualizace nastavení WLAN</string>
+</resources>

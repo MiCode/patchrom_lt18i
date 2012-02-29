@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Eropa</item>
+        <item>Afrika</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Pasipik</item>
+        <item>Sadayana</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Taya animasi</item>
+        <item>Sababaraha animasi</item>
+        <item>Sadaya animasi</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Taya animasi jandela nu ditingalikeun</item>
+        <item>Sababaraha animasi jandela ditingalikeun</item>
+        <item>Sadaya animasi jandela ditingalikeun</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 detik</item>
+        <item>30 detik</item>
+        <item>1 menit</item>
+        <item>2 menit</item>
+        <item>10 menit</item>
+        <item>30 menit</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Laun pisan</item>
+        <item>Laun</item>
+        <item>Normal</item>
+        <item>Gancang</item>
+        <item>Gancang pisan</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Inggris Amerika</item>
+        <item>Inggris</item>
+        <item>Perancis</item>
+        <item>Jerman</item>
+        <item>Italia</item>
+        <item>Spanyol</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Mariksa...</item>
+        <item>Nyambungkeun...</item>
+        <item>Ngotentikasi...</item>
+        <item>Nyokot alamat IP...</item>
+        <item>Nyambung</item>
+        <item>Ditunda</item>
+        <item>Megatkeun...</item>
+        <item>Dipegatkeun</item>
+        <item>Teu sukses</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Mariksa...</item>
+        <item>Nyambung ka %1$s…</item>
+        <item>Ngotentikasi jeung %1$s…</item>
+        <item>Nyokot alamat IP ti %1$s…</item>
+        <item>"Nyambung ka  %1$s"</item>
+        <item>Ditunda</item>
+        <item>Megatkeun ti %1$s…</item>
+        <item>Dipegatkeun</item>
+        <item>Teu sukses</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Kabuka</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>Heksadesimal WAPI</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Goreng</item>
+        <item>Biasa</item>
+        <item>Alus</item>
+        <item>Hade</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Lamun layar dipareuman</item>
+        <item>Tara mun dicolokkeun</item>
+        <item>Tara</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Waktos ngagunakeun</item>
+        <item>Itungan Ngaluncur</item>
+        <item>Ngaran Aplikasi</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Taya</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Pareum</item>
+        <item>Tanda</item>
+        <item>Oyag</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Taya</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP atanapi CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Panyimpenan alat intrnl</item>
+        <item>Kartu SD nu bisa dipindah</item>
+        <item>Sistem nu nangtukeun</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Unggal-unggal</item>
+        <item>Ulah</item>
+        <item>Lamun sora pareum</item>
+        <item>Lamun sora hurung</item>
+    </string-array>
+</resources>

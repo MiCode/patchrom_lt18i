@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Európa</item>
+        <item>Afrika</item>
+        <item>Ázsia</item>
+        <item>Ausztrália</item>
+        <item>Csendes-óceáni térség</item>
+        <item>Mind</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Nincs animáció</item>
+        <item>Néhány animáció</item>
+        <item>Minden animáció</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Nem jelenik meg ablakanimáció</item>
+        <item>Néhány ablakanimáció megjelenik</item>
+        <item>Minden ablakanimáció megjelenik</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 másodperc</item>
+        <item>30 másodperc</item>
+        <item>1 perc</item>
+        <item>2 perc</item>
+        <item>10 perc</item>
+        <item>30 perc</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Nagyon lassú</item>
+        <item>Lassú</item>
+        <item>Normál</item>
+        <item>Gyors</item>
+        <item>Nagyon gyors</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Amerikai angol</item>
+        <item>Brit angol</item>
+        <item>Francia</item>
+        <item>Német</item>
+        <item>Olasz</item>
+        <item>Spanyol</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Keresés...</item>
+        <item>Kapcsolódás...</item>
+        <item>Hitelesítés...</item>
+        <item>IP-cím beszerzése...</item>
+        <item>Kapcsolódva</item>
+        <item>Felfüggesztve</item>
+        <item>Kapcsolat bontása...</item>
+        <item>Kapcsolat bontva</item>
+        <item>Sikertelen</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Keresés...</item>
+        <item>Kapcsolódás a következőhöz: %1$s…</item>
+        <item>Hitelesítés a következővel: %1$s…</item>
+        <item>IP-cím beszerzése innen: %1$s…</item>
+        <item>Kapcsolódva a következőhöz: %1$s</item>
+        <item>Felfüggesztve</item>
+        <item>A következővel való kapcsolat bontva: %1$s…</item>
+        <item>Kapcsolat bontva</item>
+        <item>Sikertelen</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>Megnyitás</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Megnyitás</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI hexadecimális</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Gyenge</item>
+        <item>Megfelelő</item>
+        <item>Jó</item>
+        <item>Kiváló</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Ha a képernyő kikapcsol</item>
+        <item>Csatlakoztatáskor soha</item>
+        <item>Soha</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Használati idő</item>
+        <item>Indítások száma</item>
+        <item>Alkalmazás neve</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Nincs</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Kikapcsol</item>
+        <item>Riasztás</item>
+        <item>Rezgés</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Nincs</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP vagy CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Belső eszköztároló</item>
+        <item>Eltávolítható SD-kártya</item>
+        <item>A rendszer dönthet</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Mindig</item>
+        <item>Soha</item>
+        <item>Hang kikapcsolásakor</item>
+        <item>Hang bekapcsolásakor</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Nagyon alacsony</item>
+        <item>Alacsony</item>
+        <item>Normál</item>
+        <item>Magas</item>
+        <item>Nagyon magas</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+</resources>

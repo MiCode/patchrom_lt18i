@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">ติดตั้งใบรับรอง WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">เปิด WLAN</string>
+    <string name="wifi_settings">การตั้งค่า WLAN</string>
+    <string name="wifi_settings_category">การตั้งค่า WLAN</string>
+    <string name="wifi_starting">กำลังเปิด...</string>
+    <string name="wifi_add_network">เพิ่มเครือข่าย WLAN</string>
+    <string name="wifi_access_points">เครือข่าย WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">นโยบายการพัก WLAN</string>
+    <string name="wifi_setting_sleep_policy_summary">ระบุเมื่อจะสลับจาก WLAN เป็นข้อมูลแบบเคลื่อนที่</string>
+    <string name="wifi_tether_checkbox_text">Portable WLAN hotspot</string>
+    <string name="wifi_tether_enabled_subtext">Portable hotspot %1$s ใช้งานอยู่</string>
+    <string name="wifi_tether_settings_text">ตั้งค่า Port. WLAN hotspot</string>
+    <string name="wifi_tether_settings_subtext">ตั้งค่าและจัดการ portable WLAN hotspot</string>
+    <string name="wifi_tether_settings_title">การตั้งค่า Portable WLAN hotspot</string>
+    <string name="wifi_tether_configure_ap_text">Configure WLAN hotspot</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s portable WLAN hotspot</string>
+    <string name="status_wifi_mac_address">ที่อยู่ WLAN MAC</string>
+    <string name="tether_settings_title_wifi">Portable hotspot</string>
+    <string name="tether_settings_title_both">Tethering และ Port. hotspot</string>
+    <string name="tether_settings_summary_wifi">"แชร์การเชื่อมต่อโทรศัพท์มือถือของคุณเป็น
+portable WLAN hotspot"</string>
+    <string name="tether_settings_summary_both">แชร์การเชื่อมต่อข้อมูลโทรศัพท์มือถือของคุณผ่าน USB หรือเป็น portable WLAN hotspot</string>
+    <string name="location_network_based">ใช้เครือข่ายไร้สาย</string>
+    <string name="location_networks_disabled">ดูตำแหน่งที่ตั้งในแอปพลิเคชัน (เช่น แผ่นที่) โดยใช้เครือข่ายไร้สาย</string>
+    <string name="location_neighborhood_level">ตำแหน่งที่ได้มาด้วย WLAN และ/หรือเครือข่ายโทรศัพท์เคลื่อนที่</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN กำลังทำงาน</string>
+    <string name="battery_desc_wifi">แบตเตอรี่ที่ WLAN ใช้</string>
+    <string name="battery_sugg_wifi">"ปิด WLAN เมื่อไม่ได้ใช้งานหรืออยู่ในบริเวณ
+ที่ใช้งานไม่ได้"</string>
+    <string name="backup_data_summary">สำรองข้อมูลแอปพลิเคชัน รหัสผ่าน WLAN และการตั้งค่าอื่นๆ ในเซิร์ฟเวอร์ Google</string>
+    <string name="backup_erase_dialog_message">แน่ใจหรือไม่ว่าต้องการหยุดสำรองข้อมูลรหัสผ่าน WLAN บุ้คมาร์ก และการตั้งค่าอื่นๆ และข้อมูลแอปพลิเคชันและลบสำเนาทั้งหมดบนเซิร์ฟเวอร์ Google?</string>
+    <string name="radio_controls_summary">จัดการ WLAN, Bluetooth, โหมดใช้บนเครื่องบิน, เครือข่ายโทรเคลื่อนที่ และ VPN</string>
+    <string name="wifi_tether_failed_subtext">Portable WLAN hotspot มีข้อผิดพลาด</string>
+    <string name="wifi_on_time">WLAN ตรงเวลา</string>
+    <string name="bluetooth_on_time">WLAN ตรงเวลา</string>
+    <string name="battery_action_wifi">การตั้งค่า WLAN</string>
+    <string name="gadget_toggle_wifi">กำลังอัปเดตการตั้งค่า WLAN</string>
+</resources>

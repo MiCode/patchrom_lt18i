@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Installera WLAN-certifikat</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Aktivera WLAN</string>
+    <string name="wifi_settings">WLAN-inställningar</string>
+    <string name="wifi_settings_category">WLAN-inställningar</string>
+    <string name="wifi_starting">Aktiverar…</string>
+    <string name="wifi_add_network">Lägg till WLAN-nätverk</string>
+    <string name="wifi_access_points">WLAN-nätverk</string>
+    <string name="wifi_setting_sleep_policy_title">WLAN-policy</string>
+    <string name="wifi_setting_sleep_policy_summary">Ange när du vill växla från WLAN till mobildata</string>
+    <string name="wifi_tether_checkbox_text">Mobil WLAN-surfpunkt</string>
+    <string name="wifi_tether_enabled_subtext">Mobil surfpunkt %1$s aktiv</string>
+    <string name="wifi_tether_settings_text">Inst. mobil WLAN-surfpunkt</string>
+    <string name="wifi_tether_settings_subtext">Konfigurera och hantera mobil WLAN-surfpunkt</string>
+    <string name="wifi_tether_settings_title">Inställningar för mobil WLAN-surfpunkt</string>
+    <string name="wifi_tether_configure_ap_text">Konfigurera WLAN-surfpunkt</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s mobil WLAN-surfpunkt</string>
+    <string name="status_wifi_mac_address">WLAN Mac-adress</string>
+    <string name="tether_settings_title_wifi">Mobil surfpunkt</string>
+    <string name="tether_settings_title_both">Internetdeln.&amp;bärb. hotspot</string>
+    <string name="tether_settings_summary_wifi">Dela telefonens anslutning som en mobil WLAN-surfpunkt</string>
+    <string name="tether_settings_summary_both">Dela telefonens mobila dataanslutning via USB eller som en mobil WLAN-surfpunkt</string>
+    <string name="location_network_based">Använd trådlösa nätverk</string>
+    <string name="location_networks_disabled">Se plats i applikationer (t.ex. Maps) med hjälp av trådlösa nätverk</string>
+    <string name="location_neighborhood_level">Plats fastställs av WLAN och/eller mobila nätverk</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN körs</string>
+    <string name="battery_desc_wifi">Batteri som förbrukats av WLAN</string>
+    <string name="battery_sugg_wifi">Inaktivera WLAN när det inte används eller när det inte är tillgängligt</string>
+    <string name="backup_data_summary">Säkerhetskop. applik.data, WLAN-lösenord och andra inställn. på Googles servrar</string>
+    <string name="backup_erase_dialog_message">Vill du avbryta säkerhetskopieringen av dina WLAN-lösenord, bokmärken och andra inställningar och programdata och radera alla kopior på Googles servrar?</string>
+    <string name="radio_controls_summary">Hantera WLAN, Bluetooth, flygplansläge, mobila nätverk och VPN</string>
+    <string name="wifi_tether_failed_subtext">Fel på mobil WLAN-surfpunkt</string>
+    <string name="wifi_on_time">WLAN i tid</string>
+    <string name="bluetooth_on_time">WLAN i tid</string>
+    <string name="battery_action_wifi">WLAN-inställningar</string>
+    <string name="gadget_toggle_wifi">Uppdaterar WLAN-inställningar</string>
+</resources>

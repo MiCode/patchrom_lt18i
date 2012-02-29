@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">C.đặt các chứng nhận WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Bật WLAN</string>
+    <string name="wifi_settings">Cài đặt WLAN</string>
+    <string name="wifi_settings_category">Cài đặt WLAN</string>
+    <string name="wifi_starting">Đang bật...</string>
+    <string name="wifi_add_network">Thêm mạng WLAN</string>
+    <string name="wifi_access_points">Mạng WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">C.sách nghỉ cho WLAN</string>
+    <string name="wifi_setting_sleep_policy_summary">Chỉ định khi chuyển từ WLAN sang dữ liệu di động</string>
+    <string name="wifi_tether_checkbox_text">Điểm ph.sóng WLAN DĐ</string>
+    <string name="wifi_tether_enabled_subtext">Điểm phát sóng di động %1$s hoạt động</string>
+    <string name="wifi_tether_settings_text">C.đặt điểm p.sóng WLAN DĐ</string>
+    <string name="wifi_tether_settings_subtext">Thiết lập &amp; quản lý điểm phát sóng WLAN di động</string>
+    <string name="wifi_tether_settings_title">Cài đặt điểm phát sóng WLAN di động</string>
+    <string name="wifi_tether_configure_ap_text">Cấu hình điểm phát sóng</string>
+    <string name="wifi_tether_configure_subtext">Điểm phát sóng WLAN di động %1$s %2$s</string>
+    <string name="status_wifi_mac_address">Địa chỉ MAC WLAN</string>
+    <string name="tether_settings_title_wifi">Điểm phát sóng di động</string>
+    <string name="tether_settings_title_both">T.cập Internet &amp; p.sóng DĐ</string>
+    <string name="tether_settings_summary_wifi">Chia sẻ kết nối dữ liệu di động của điện thoại của bạn làm điểm phát sóng WLAN di động</string>
+    <string name="tether_settings_summary_both">Chia sẻ kết nối dữ liệu di động của điện thoại của bạn qua USB hoặc làm điểm phát sóng WLAN di động</string>
+    <string name="location_network_based">Sử dụng mạng không dây</string>
+    <string name="location_networks_disabled">Xem vị trí trong các ƯD (vd: Maps) bằng mạng không dây</string>
+    <string name="location_neighborhood_level">Vị trí được xác định bởi WLAN và/hoặc mạng di động</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN đang chạy</string>
+    <string name="battery_desc_wifi">WLAN sử dụng pin</string>
+    <string name="battery_sugg_wifi">Tắt WLAN khi không sử dụng hoặc khi WLAN không khả dụng</string>
+    <string name="backup_data_summary">Sao lưu dữ liệu ứng dụng, mật khẩu WLAN và các cài đặt khác sang máy chủ Google</string>
+    <string name="backup_erase_dialog_message">Bạn có chắc chắn muốn ngừng sao lưu mật khẩu WLAN của mình, địa chỉ và các cài đặt khác cũng như dữ liệu ứng dụng và xoá tất cả bản sao trên các máy chủ Google không?</string>
+    <string name="radio_controls_summary">Quản lý WLAN, Bluetooth, chế độ máy bay, mạng di động &amp; VPN</string>
+    <string name="wifi_tether_failed_subtext">Lỗi điểm phát sóng WLAN di động</string>
+    <string name="wifi_on_time">Thời gian bật WLAN</string>
+    <string name="bluetooth_on_time">Thời gian bật WLAN</string>
+    <string name="battery_action_wifi">Cài đặt WLAN</string>
+    <string name="gadget_toggle_wifi">Cập nhật cài đặt WLAN</string>
+</resources>

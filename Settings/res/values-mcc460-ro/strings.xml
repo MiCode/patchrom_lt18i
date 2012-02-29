@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Instalare certificate WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Pornire WLAN</string>
+    <string name="wifi_settings">Setări WLAN</string>
+    <string name="wifi_settings_category">Setări WLAN</string>
+    <string name="wifi_starting">Se porneşte...</string>
+    <string name="wifi_add_network">Adăugare reţea WLAN</string>
+    <string name="wifi_access_points">Reţele WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">Politică mod repaus WLAN</string>
+    <string name="wifi_setting_sleep_policy_summary">Specificaţi când se comută de la WLAN la date de mobil</string>
+    <string name="wifi_tether_checkbox_text">Hotspot WLAN portabil</string>
+    <string name="wifi_tether_enabled_subtext">Hotspotul portabil %1$s este activ</string>
+    <string name="wifi_tether_settings_text">Setări hotspot WLAN portabil</string>
+    <string name="wifi_tether_settings_subtext">Configurare şi gestionare hotspot WLAN portabil</string>
+    <string name="wifi_tether_settings_title">Setări hotspot WLAN portabil</string>
+    <string name="wifi_tether_configure_ap_text">Configurare hotspot WLAN</string>
+    <string name="wifi_tether_configure_subtext">Hotspot WLAN portabil %1$s %2$s</string>
+    <string name="status_wifi_mac_address">Adresă MAC WLAN</string>
+    <string name="tether_settings_title_wifi">Hotspot portabil</string>
+    <string name="tether_settings_title_both">Tethering şi hotspotul port.</string>
+    <string name="tether_settings_summary_wifi">Partajaţi conexiunea telefonului dvs. la date pentru mobile ca hotspot WLAN portabil</string>
+    <string name="tether_settings_summary_both">Partajaţi conexiunea telefonului dvs. la date pentru mobile prin USB sau ca hotspot WLAN portabil</string>
+    <string name="location_network_based">Utilizare reţele wireless</string>
+    <string name="location_networks_disabled">Vedeţi locaţia în aplicaţii (precum Hărţi) utilizând reţele wireless</string>
+    <string name="location_neighborhood_level">Locaţie stabilită de WLAN şi/sau reţele de mobile</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">Funcţionare WLAN</string>
+    <string name="battery_desc_wifi">Energie baterie utilizată de WLAN</string>
+    <string name="battery_sugg_wifi">Dezactivaţi caracteristica WLAN atunci când n-o utilizaţi sau în zone în care nu este disponibilă</string>
+    <string name="backup_data_summary">Creaţi pe servere Google copii de rezervă pt. date de aplic., parole WLAN şi alte setări</string>
+    <string name="backup_erase_dialog_message">Confirmaţi oprirea creării copiilor de rezervă ale parolelor pentru WLAN, ale marcajelor şi ale altor setări şi date de aplicaţii şi ştergerea tuturor copiilor de pe serverele Google?</string>
+    <string name="radio_controls_summary">Gestionaţi WLAN şi Bluetooth, modul pt. zbor, reţelele de mobile şi VPN-urile</string>
+    <string name="wifi_tether_failed_subtext">Eroare hotsport WLAN portabil</string>
+    <string name="wifi_on_time">Durată funcţionare WLAN</string>
+    <string name="bluetooth_on_time">Durată funcţionare WLAN</string>
+    <string name="battery_action_wifi">Setări WLAN</string>
+    <string name="gadget_toggle_wifi">Se actualizează setarea WLAN</string>
+</resources>

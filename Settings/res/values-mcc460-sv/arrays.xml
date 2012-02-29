@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wifi_security_with_wapi">
+        <item>Öppen</item>
+        <item>WEP</item>
+        <item>WPA/WPA 2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WLAN PSK</item>
+        <item>WLAN CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WLAN ASCII</item>
+        <item>WLAN-hexadecimal</item>
+    </string-array>
+</resources>

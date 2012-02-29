@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Инстал. на WLAN сертиф.</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Включване на WLAN</string>
+    <string name="wifi_settings">WLAN настройки</string>
+    <string name="wifi_settings_category">WLAN настройки</string>
+    <string name="wifi_starting">Включва се…</string>
+    <string name="wifi_add_network">Добавяне на WLAN мрежа</string>
+    <string name="wifi_access_points">WLAN мрежи</string>
+    <string name="wifi_setting_sleep_policy_title">Правил. спящ WLAN реж.</string>
+    <string name="wifi_setting_sleep_policy_summary">Посочете кога да се превкл. от WLAN режим в реж. с пренос на данни</string>
+    <string name="wifi_tether_checkbox_text">Прен. WLAN гор. точка</string>
+    <string name="wifi_tether_enabled_subtext">Преносимата точка за достъп %1$s е активна</string>
+    <string name="wifi_tether_settings_text">Наст. на пр. WLAN гор. точ.</string>
+    <string name="wifi_tether_settings_subtext">Настройка и управление на преносима WLAN точка за достъп</string>
+    <string name="wifi_tether_settings_title">Настр. на преносима WLAN точка за достъп</string>
+    <string name="wifi_tether_configure_ap_text">Конф. на WLAN гор. точка</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s на преносима WLAN точка за достъп</string>
+    <string name="status_wifi_mac_address">WLAN MAC адрес</string>
+    <string name="tether_settings_title_wifi">Преносима точка за достъп</string>
+    <string name="tether_settings_title_both">Спод. и пренос. гор. точка</string>
+    <string name="tether_settings_summary_wifi">Споделяне на мобилната връзка за данни на телефона като преносима WLAN точка за достъп</string>
+    <string name="tether_settings_summary_both">Споделяне на мобилната връзка за данни на телефона чрез USB или като преносима WLAN точка за достъп</string>
+    <string name="location_network_based">Изп. на безжич. мрежи</string>
+    <string name="location_networks_disabled">Вж. местопол. в прилож. (напр. Карти), изп. безжични мрежи</string>
+    <string name="location_neighborhood_level">Местоположение, определено от WLAN и/или безжични мрежи</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN работи</string>
+    <string name="battery_desc_wifi">Батерията се използва от WLAN</string>
+    <string name="battery_sugg_wifi">Изключване на WLAN, когато не се използва или не е достъпно</string>
+    <string name="backup_data_summary">Архив. на данни от прилож., пароли за WLAN и др. настр. на сървъри на Google</string>
+    <string name="backup_erase_dialog_message">Сигурни ли сте, че искате да спрете архивирането на паролите за WLAN, показалците и другите настройки и данни за приложения и да изтриете всички копия на сървърите на Google?</string>
+    <string name="radio_controls_summary">Упр. на WLAN, Bluetooth, самолет. реж., мобил. мрежи и вирт. частни мрежи</string>
+    <string name="wifi_tether_failed_subtext">Грешка в преносимата WLAN точка за достъп</string>
+    <string name="wifi_on_time">Време за вкл. на WLAN</string>
+    <string name="bluetooth_on_time">Време за вкл. на WLAN</string>
+    <string name="battery_action_wifi">WLAN настройки</string>
+    <string name="gadget_toggle_wifi">Актуализиране на WLAN настройката</string>
+</resources>

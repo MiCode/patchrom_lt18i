@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">WLAN-certificaten install.</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">WLAN inschakelen</string>
+    <string name="wifi_settings">WLAN-instellingen</string>
+    <string name="wifi_settings_category">WLAN-instellingen</string>
+    <string name="wifi_starting">Inschakelen...</string>
+    <string name="wifi_add_network">WLAN-netwerk toevoegen</string>
+    <string name="wifi_access_points">WLAN-netwerken</string>
+    <string name="wifi_setting_sleep_policy_title">WLAN-slaapbeleid</string>
+    <string name="wifi_setting_sleep_policy_summary">Overschakelen opgeven van WLAN naar mobiele gegevens</string>
+    <string name="wifi_tether_checkbox_text">Draagb. WLAN-hotspot</string>
+    <string name="wifi_tether_enabled_subtext">Draagbare hotspot %1$s actief</string>
+    <string name="wifi_tether_settings_text">Inst. draagb. WLAN-hotspot</string>
+    <string name="wifi_tether_settings_subtext">Draagbare WLAN-hotspot instellen en beheren</string>
+    <string name="wifi_tether_settings_title">Instellingen voor draagbare WLAN-hotspot</string>
+    <string name="wifi_tether_configure_ap_text">WLAN-hotspot configureren</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s draagbare WLAN-hotspot</string>
+    <string name="status_wifi_mac_address">WLAN MAC-adres</string>
+    <string name="tether_settings_title_wifi">Draagbare hotspot</string>
+    <string name="tether_settings_title_both">Tethering/mobiele hotspot</string>
+    <string name="tether_settings_summary_wifi">Deel de mobiele verbinding van uw telefoon als draagbare WLAN-hotspot</string>
+    <string name="tether_settings_summary_both">Deel de mobiele gegevensverbinding van uw telefoon via USB of als draagbare WLAN-hotspot</string>
+    <string name="location_network_based">Draadloze netwerken</string>
+    <string name="location_networks_disabled">Locatie in toepassingen (zoals Maps) bekijken via draadloze netwerken</string>
+    <string name="location_neighborhood_level">Locatie bepaald door WLAN en/of mobiele netwerken</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN actief</string>
+    <string name="battery_desc_wifi">Accu gebruikt door WLAN</string>
+    <string name="battery_sugg_wifi">Schakel WLAN uit wanneer u dit niet gebruikt of waar dit niet beschikbaar is</string>
+    <string name="backup_data_summary">Back-up van toep.geg., WLAN-wachtw. en andere inst. maken op de Google-servers</string>
+    <string name="backup_erase_dialog_message">Weet u zeker dat u het maken van back-ups van uw WLAN-wachtwoorden, bladwijzers en andere instellingen en toepassingsgegevens wilt stoppen en alle kopieën op Google-servers wilt wissen?</string>
+    <string name="radio_controls_summary">"WLAN, Bluetooth, vliegmodus, mobiele netwerken en VPN's beheren"</string>
+    <string name="wifi_tether_failed_subtext">Fout met draagbare WLAN-hotspot</string>
+    <string name="wifi_on_time">WLAN op tijd</string>
+    <string name="bluetooth_on_time">WLAN op tijd</string>
+    <string name="battery_action_wifi">WLAN-instellingen</string>
+    <string name="gadget_toggle_wifi">WLAN-instelling bijwerken</string>
+</resources>

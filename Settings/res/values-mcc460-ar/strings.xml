@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">تثبيت شهادات WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">تشغيل WLAN</string>
+    <string name="wifi_settings">إعدادات WLAN</string>
+    <string name="wifi_settings_category">إعدادات WLAN</string>
+    <string name="wifi_starting">جارٍ التشغيل...</string>
+    <string name="wifi_add_network">إضافة شبكة WLAN</string>
+    <string name="wifi_access_points">شبكات WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">نهج سكون WLAN</string>
+    <string name="wifi_setting_sleep_policy_summary">تحديد الوقت الذي يتم التبديل فيه من WLAN إلى البيانات المتنقلة</string>
+    <string name="wifi_tether_checkbox_text">نقطة اتصال WLAN محمولة</string>
+    <string name="wifi_tether_enabled_subtext">نقطة الاتصال بالشبكة المحمولة %1$s نشطة</string>
+    <string name="wifi_tether_settings_text">إع نقطة اتصال WLAN محمولة</string>
+    <string name="wifi_tether_settings_subtext">إعداد نقطة الاتصال بشبكة WLAN المحمولة وإدارتها</string>
+    <string name="wifi_tether_settings_title">إعدادات نقطة الاتصال بشبكة WLAN المحمولة</string>
+    <string name="wifi_tether_configure_ap_text">تهيئة نقطة اتصال WLAN</string>
+    <string name="wifi_tether_configure_subtext">‏%1$s %2$s نقطة الاتصال بشبكة WLAN المحمولة</string>
+    <string name="status_wifi_mac_address">عنوان MAC لـ WLAN</string>
+    <string name="tether_settings_title_wifi">نقطة اتصال محمولة</string>
+    <string name="tether_settings_title_both">التقييد ونقطة اتصال متنقلة</string>
+    <string name="tether_settings_summary_wifi">مشاركة اتصال النقال للهاتف كنقطة اتصال بشبكة WLAN محمولة</string>
+    <string name="tether_settings_summary_both">مشاركة اتصال البيانات البعيدة للهاتف عبر USB أو كنقطة اتصال بشبكة WLAN محمولة</string>
+    <string name="location_network_based">استخدام الشبكات اللاسلكية</string>
+    <string name="location_networks_disabled">مشاهدة الموقع في التطبيقات (مثل الخرائط) باستخدام الشبكات اللاسلكية</string>
+    <string name="location_neighborhood_level">تم تحديد الموقع بواسطة WLAN و/أو شبكات الهواتف المحمولة</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN قيد التشغيل</string>
+    <string name="battery_desc_wifi">تم استخدام البطارية بواسطة WLAN</string>
+    <string name="battery_sugg_wifi">قم بإيقاف تشغيل WLAN عند عدم استخدامها أو عندما لا تكون متاحة</string>
+    <string name="backup_data_summary">انسخ بيانات التطبيق وكلمات مرور WLAN والإعدادات الأخرى احتياطيا إلى خوادم Google</string>
+    <string name="backup_erase_dialog_message">هل تريد بالفعل إيقاف إجراء نسخة احتياطي لكلمات مرور WLAN والعلامات المرجعية والإعدادات الأخرى وبيانات التطبيق ومسح كل النسخ الموجودة على خوادم Google؟</string>
+    <string name="radio_controls_summary">إدارة WLAN وBluetooth ووضع الطائرة وشبكات هاتف نقال وVPN</string>
+    <string name="wifi_tether_failed_subtext">خطأ في نقطة الاتصال بشبكة WLAN المحمولة</string>
+    <string name="wifi_on_time">WLAN في الوقت المناسب</string>
+    <string name="bluetooth_on_time">وقت تشغيل WLAN</string>
+    <string name="battery_action_wifi">إعدادات WLAN</string>
+    <string name="gadget_toggle_wifi">تحديث إعداد WLAN</string>
+</resources>

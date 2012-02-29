@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Instal sertifikat WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Aktifake WLAN</string>
+    <string name="wifi_settings">Setelan WLAN</string>
+    <string name="wifi_settings_category">Setelan WLAN</string>
+    <string name="wifi_starting">Nguripake...</string>
+    <string name="wifi_add_network">Tambah jaringan WLAN</string>
+    <string name="wifi_access_points">Jaringan WLAN</string>
+    <string name="wifi_setting_sleep_policy_title">Kebijakan turu WLAN</string>
+    <string name="wifi_setting_sleep_policy_summary">Temtokake kapan ngalih saka WLAN menyang data mobile</string>
+    <string name="wifi_tether_checkbox_text">Hotspot WLAN portebel</string>
+    <string name="wifi_tether_enabled_subtext">Hotspot portebel %1$s aktif</string>
+    <string name="wifi_tether_settings_text">Setelan hotspot WLAN portbl</string>
+    <string name="wifi_tether_settings_subtext">Konfigurasi &amp; atur hotspot WLAN portebel</string>
+    <string name="wifi_tether_settings_title">Setelan hotspot WLAN portebel</string>
+    <string name="wifi_tether_configure_ap_text">Konfigurasi hotspot WLAN</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s hotspot WLAN portebel</string>
+    <string name="status_wifi_mac_address">Alamat WLAN MAC</string>
+    <string name="tether_settings_title_wifi">Hotspot portebel</string>
+    <string name="tether_settings_title_both">Nyambungake&amp;hotspot port.</string>
+    <string name="tether_settings_summary_wifi">Tuduhake sambungan seluler telpon minangka hotspot WLAN portebel</string>
+    <string name="tether_settings_summary_both">Tuduhake sambungan seluler telpon liwat USB utawa minangka hotspot WLAN portebel</string>
+    <string name="location_network_based">Gunakake jaring. nirkabel</string>
+    <string name="location_networks_disabled">Deleng lokasi ing aplikasi (kayata Peta) nggunakake jaringan nirkabel</string>
+    <string name="location_neighborhood_level">Lokasi sing ditemtokake dening WLAN lan utawa jaringan seluler</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN aktif</string>
+    <string name="battery_desc_wifi">Baterei sing digunakake WLAN</string>
+    <string name="battery_sugg_wifi">Pateni WLAN nalika ora digunakake utawa nalika ora kasedhiya</string>
+    <string name="backup_data_summary">Gawe serep data aplikasi, sandhi WLAN, lan setelan liyane menyang server Google</string>
+    <string name="backup_erase_dialog_message">Yakin pengin nyetop nggawe serep sandhi WLAN, tetenger, lan setelan liya lan data aplikasi liya banjur mbusak kabeh salinan ing server Google?</string>
+    <string name="radio_controls_summary">Atur WLAN, Bluetooth, mode pesawat, jaringan mobile, &amp; VPN</string>
+    <string name="wifi_tether_failed_subtext">Hotspot WLAN portebel salah</string>
+    <string name="wifi_on_time">Wektu WLAN ON</string>
+    <string name="bluetooth_on_time">Wektu WLAN ON</string>
+    <string name="battery_action_wifi">Setelan WLAN</string>
+    <string name="gadget_toggle_wifi">Nganyari setelan WLAN</string>
+</resources>

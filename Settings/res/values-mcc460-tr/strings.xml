@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">WLAN sertifikalarını yükle</string>
+    <string name="wifi_quick_toggle_title">Kablosuz</string>
+    <string name="wifi_quick_toggle_summary">Kablosuzu aç</string>
+    <string name="wifi_settings">Kablosuz ayarları</string>
+    <string name="wifi_settings_category">Kablosuz ayarları</string>
+    <string name="wifi_starting">Açılıyor…</string>
+    <string name="wifi_add_network">Kablosuz ağ ekle</string>
+    <string name="wifi_access_points">Kablosuz ağlar</string>
+    <string name="wifi_setting_sleep_policy_title">Kablosuz uyku politikası</string>
+    <string name="wifi_setting_sleep_policy_summary">Kablosuzdan mobil veriye geçme zamanını belirt</string>
+    <string name="wifi_tether_checkbox_text">Taşın. WLAN genel alanı</string>
+    <string name="wifi_tether_enabled_subtext">Taşınabilir ortak erişim noktası %1$s etkin</string>
+    <string name="wifi_tether_settings_text">Taş. WLAN genel alan. ayarlrı</string>
+    <string name="wifi_tether_settings_subtext">Taşınabilir Kablosuz ortak erişim noktası ayarla ve yönet</string>
+    <string name="wifi_tether_settings_title">Taşınabilir kablosuz ortak erişim noktası ayarl</string>
+    <string name="wifi_tether_configure_ap_text">WLAN genel alan. yapılandır</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s taşınabilir kablosuz ortak erişim noktası</string>
+    <string name="status_wifi_mac_address">Kablosuz MAC adresi</string>
+    <string name="tether_settings_title_wifi">Taşınabilir ortak erişim noktası</string>
+    <string name="tether_settings_title_both">Bğl. pylşm ve taşın. gnl alan</string>
+    <string name="tether_settings_summary_wifi">Telefonunuzun mobil bağlantısını taşınabilir kablosuz ortak erişim noktası olarak paylaşın</string>
+    <string name="tether_settings_summary_both">Telefonunuzun mobil veri bağlantısını USB üzerinden veya taşınabilir kablosuz ortak erişim noktası olarak paylaşın</string>
+    <string name="location_network_based">Kablosuz ağ kullan</string>
+    <string name="location_networks_disabled">Kablosuz ağları kullanarak uygulamalarda konumu gör</string>
+    <string name="location_neighborhood_level">Konum kablosuz ve/veya cep telefonu ağları tarafından belirlenir</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">Kablosuz</string>
+    <string name="usage_type_wifi_running">Kablosuz çalışıyor</string>
+    <string name="battery_desc_wifi">Kablosuz özellik tarafından kullanılan pil</string>
+    <string name="battery_sugg_wifi">Kullanmadığınız veya kullanılamadığı zaman Kablosuz özelliğini kapatın</string>
+    <string name="backup_data_summary">Uyg verilerini, kablsz kulnm şifre ve diğ ayarları Google sunuclrnda yedekleyin</string>
+    <string name="backup_erase_dialog_message">Kablsz şifrelernzn, yer işaretlerinzn ve diğ ayarlrnz ile uyg verilernzn yedeklnmsn durdurmak ve Google sunclrndki tüm kopylr silmek istdğn emin misiniz?</string>
+    <string name="radio_controls_summary">Kablosuz, Bluetooth, uçak modu, mobil ağ ve VPN özelliklerini yönet</string>
+    <string name="wifi_tether_failed_subtext">Taşınabilir kablosuz ortak erişim noktası hatası</string>
+    <string name="wifi_on_time">Zamnnd kablsz</string>
+    <string name="bluetooth_on_time">Zamnnd kablsz</string>
+    <string name="battery_action_wifi">WLAN ayarları</string>
+    <string name="gadget_toggle_wifi">Kablosuz ayarı güncelleniyor</string>
+</resources>

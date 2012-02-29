@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Europa</item>
+        <item>Afrika</item>
+        <item>Azija</item>
+        <item>Australija</item>
+        <item>Pacifik</item>
+        <item>Sve</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Bez animacija</item>
+        <item>Neke animacije</item>
+        <item>Sve animacije</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Ne prikazuje se nijedna animacija prozora</item>
+        <item>Prikazuju se neke animacije prozora</item>
+        <item>Prikazuju se sve animacije prozora</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekundi</item>
+        <item>30 sekundi</item>
+        <item>1 minuta</item>
+        <item>2 minute</item>
+        <item>10 minuta</item>
+        <item>30 minuta</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Vrlo sporo</item>
+        <item>Sporo</item>
+        <item>Uobičajeno</item>
+        <item>Brzo</item>
+        <item>Vrlo brzo</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Američki engleski</item>
+        <item>Britanski engleski</item>
+        <item>Francuski</item>
+        <item>Njemački</item>
+        <item>Talijanski</item>
+        <item>Španjolski</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Skeniranje...</item>
+        <item>Povezivanje...</item>
+        <item>Provjera autentičnosti...</item>
+        <item>Nabava IP adrese...</item>
+        <item>Povezan</item>
+        <item>Obustavljeno</item>
+        <item>Prekidanje veze...</item>
+        <item>Nije povezan</item>
+        <item>Neuspješno</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Skeniranje...</item>
+        <item>Povezivanje s mrežom %1$s…</item>
+        <item>Provjera autentičnosti s mrežom %1$s…</item>
+        <item>Nabava IP adrese iz mreže %1$s…</item>
+        <item>Povezan s mrežom %1$s</item>
+        <item>Obustavljeno</item>
+        <item>Prekidanje veze s mrežom %1$s…</item>
+        <item>Nije povezan</item>
+        <item>Neuspješno</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>Otvori</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Otvori</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI heksadecimalno</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Slaba</item>
+        <item>U redu</item>
+        <item>Dobro</item>
+        <item>Izvrsno</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Kada se zaslon isključi</item>
+        <item>Nikada kada je priključen</item>
+        <item>Nikada</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Vrijeme korištenja</item>
+        <item>Broj pokretanja</item>
+        <item>Naziv aplikacije</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Nema</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Isključeno</item>
+        <item>Upozorenje</item>
+        <item>Vibracija</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Bez</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP ili CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Unut. uređaj za pohranu</item>
+        <item>Uklonjiva SD kartica</item>
+        <item>Neka sustav odluči</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Uvijek</item>
+        <item>Nikada</item>
+        <item>Kada je zvuk isključen</item>
+        <item>Kada je zvuk uključen</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Jako nisko</item>
+        <item>Niski</item>
+        <item>Normalno</item>
+        <item>Visoki</item>
+        <item>Vrlo visoko</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+</resources>

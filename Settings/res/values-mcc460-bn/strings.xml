@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">WLAN সার্টিফিকেটস সংস্থা. করুন</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">WLAN চালু করুন</string>
+    <string name="wifi_settings">WLAN সেটিং</string>
+    <string name="wifi_settings_category">WLAN সেটিং</string>
+    <string name="wifi_starting">চালু করা…</string>
+    <string name="wifi_add_network">WLAN নেটওয়ার্ক যুক্ত করুন</string>
+    <string name="wifi_access_points">WLAN নেটওয়ার্ক</string>
+    <string name="wifi_setting_sleep_policy_title">WLANস্লিপ পলিসি</string>
+    <string name="wifi_setting_sleep_policy_summary">WLAN থেকে মোবাইল ডাটায় কখন পাল্টাতে হবে তা নির্দেশ করা</string>
+    <string name="wifi_tether_checkbox_text">বহনযোগ্য WLAN হটস্পট</string>
+    <string name="wifi_tether_enabled_subtext">বহনযোগ্য হটস্পট %1$s সক্রিয়</string>
+    <string name="wifi_tether_settings_text">বহনযোগ্য WLAN হটস্পট সেটিংস</string>
+    <string name="wifi_tether_settings_subtext">বহনযোগ্য WLAN হটস্পট সেটআপ ও পরিচালনা করুন</string>
+    <string name="wifi_tether_settings_title">বহনযোগ্য WLAN হটস্পট সেটিংস</string>
+    <string name="wifi_tether_configure_ap_text">WLAN হটস্পট কনফিগার করুন</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s বহনযোগ্য WLAN হটস্পট</string>
+    <string name="status_wifi_mac_address">WLAN MAC ঠিকানা</string>
+    <string name="tether_settings_title_wifi">বহনযোগ্য হটস্পট</string>
+    <string name="tether_settings_title_both">টিথারিং এবং বহনযোগ্য হটস্পট</string>
+    <string name="tether_settings_summary_wifi">বহনযোগ্য WLAN হটস্পট হয়ে আপনার ফোনের মোবাইল ডেটা সংযোগ অংশীদারি করুন</string>
+    <string name="tether_settings_summary_both">আপনার ফোনের মোবাইল ডেটা সংযোগটি USB হয়ে বা একটি বহনযোগ্য WLAN হটস্পট হিসাবে অংশীদারি করুন</string>
+    <string name="location_network_based">ওয়া. নেটওয়ার্ক ব্যবহার করুন</string>
+    <string name="location_networks_disabled">ওয়ারলেস নেটওয়ার্কের মাধ্যমে অ্যাপ্লিকেশনে অবস্থান দেখুন (যেমন ম্যাপ)</string>
+    <string name="location_neighborhood_level">অবস্থান WLAN এবং/অথবা মোবাইল নেটওয়ার্কের দ্বারা নির্ধারিত</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN চলছে</string>
+    <string name="battery_desc_wifi">WLAN দ্বারা ব্যয়িত ব্যাটারি</string>
+    <string name="battery_sugg_wifi">ব্যবহার না করলে অথবা লভ্য না হলে WLAN বন্ধ রাখুন</string>
+    <string name="backup_data_summary">অ্যাপ্লিকেশন ডেটা, WLAN পাসওয়ার্ড এবং অন্যান্য সেটিংস Google সার্ভারগুলিতে ব্যাকআপ নিন</string>
+    <string name="backup_erase_dialog_message">আপনি কি আপনার WLAN পাসওয়ার্ডগুলি, বুকমার্ক এবং অন্যান্য সেটিংস ও অ্যাপ্লিকেশন ডেটা ব্যাকআপ নেওয়া থামাতে ও Google সার্ভারগুলির সকল অনুলিপি নিশ্চিতভাবে মুছতে চান?</string>
+    <string name="radio_controls_summary">WLAN, Bluetooth, এয়ারপ্লেন মোড, মোবাইল নেটওয়ার্ক এবং VPN ব্যবস্থাপনা করুন</string>
+    <string name="wifi_tether_failed_subtext">বহনযোগ্য WLAN হটস্পট ত্রুটি</string>
+    <string name="wifi_on_time">WLAN অন টাইম</string>
+    <string name="bluetooth_on_time">WLAN অন টাইম</string>
+    <string name="battery_action_wifi">WLAN সেটিং</string>
+    <string name="gadget_toggle_wifi">WLAN সেটিং নবীকরণ হচ্ছে</string>
+</resources>

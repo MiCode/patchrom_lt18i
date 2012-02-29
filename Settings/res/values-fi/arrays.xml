@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerikka</item>
+        <item>Eurooppa</item>
+        <item>Afrikka</item>
+        <item>Aasia</item>
+        <item>Australia</item>
+        <item>Tyynenmeren alue</item>
+        <item>Kaikki</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Ei animaatioita</item>
+        <item>Osa animaatioista</item>
+        <item>Kaikki animaatiot</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Ikkuna-animaatioita ei näytetä</item>
+        <item>Oas ikkuna-animaatioista näytetään</item>
+        <item>Kaikki ikkuna-animaatiot näytetään</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekuntia</item>
+        <item>30 sekuntia</item>
+        <item>1 minuutti</item>
+        <item>2 minuuttia</item>
+        <item>10 minuuttia</item>
+        <item>30 minuuttia</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Erittäin hidas</item>
+        <item>Hidas</item>
+        <item>Normaali</item>
+        <item>Nopea</item>
+        <item>Erittäin nopea</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Amerikanenglanti</item>
+        <item>Brittienglanti</item>
+        <item>Ranska</item>
+        <item>Saksa</item>
+        <item>Italia</item>
+        <item>Espanja</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Etsitään…</item>
+        <item>Yhdistetään...</item>
+        <item>Todennetaan…</item>
+        <item>Hankitaan IP-osoitetta...</item>
+        <item>Yhdistetty</item>
+        <item>Keskeytetty</item>
+        <item>Katkaistaan…</item>
+        <item>Katkaistu</item>
+        <item>Epäonnistui</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Etsitään…</item>
+        <item>Yhdistetään verkkoon %1$s…</item>
+        <item>Todennetaan verkossa %1$s…</item>
+        <item>Hankitaan IP-osoitetta verkosta %1$s…</item>
+        <item>Yhdistetty verkkoon %1$s</item>
+        <item>Keskeytetty</item>
+        <item>Katkaistaan verkosta %1$s…</item>
+        <item>Katkaistu</item>
+        <item>Epäonnistui</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>Avaa</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Avaa</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI-heksadesimaali</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Heikko</item>
+        <item>Kohtalainen</item>
+        <item>Hyvä</item>
+        <item>Erinomainen</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Kun näyttö sammuu</item>
+        <item>Ei koskaan kytkettynä</item>
+        <item>Ei koskaan</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Käyttöaika</item>
+        <item>Käynnistysmäärä</item>
+        <item>Sovelluksen nimi</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Ei mitään</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Pois päältä</item>
+        <item>Hälytys</item>
+        <item>Tärinä</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Ei mitään</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP tai CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Laitteen sis. tallennustila</item>
+        <item>Siirrettävä SD-kortti</item>
+        <item>Anna järjest. päättää</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Aina</item>
+        <item>Ei koskaan</item>
+        <item>Äänettömässä tilassa</item>
+        <item>Kun ääni on päällä</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Hyvin matala</item>
+        <item>Matala</item>
+        <item>Normaali</item>
+        <item>Korkea</item>
+        <item>Hyvin korkea</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+</resources>

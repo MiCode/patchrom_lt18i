@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerikë</item>
+        <item>Europë</item>
+        <item>Afrikë</item>
+        <item>Azi</item>
+        <item>Australi</item>
+        <item>Paqësor</item>
+        <item>Të gjitha</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Pa figura të lëvizshme</item>
+        <item>Disa figura të lëvizshme</item>
+        <item>Të gjitha fig. e lëvizshme</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Nuk shfaqen figura të lëvizshme në dritare</item>
+        <item>Shfaqen disa figura të lëvizshme në dritare</item>
+        <item>Shfaqen të gjitha figurat e lëvizshme në dritare</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekonda</item>
+        <item>30 sekonda</item>
+        <item>1 minutë</item>
+        <item>2 minuta</item>
+        <item>10 minuta</item>
+        <item>30 minuta</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Shumë i ngadaltë</item>
+        <item>E ngadaltë</item>
+        <item>Normale</item>
+        <item>E shpejtë</item>
+        <item>Shumë e shpejtë</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Anglishte amerikane</item>
+        <item>Anglishte britanike</item>
+        <item>Frëngjisht</item>
+        <item>Gjermanisht</item>
+        <item>Italisht</item>
+        <item>Spanjisht</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Duke skanuar...</item>
+        <item>Duke u lidhur...</item>
+        <item>Duke autentifikuar...</item>
+        <item>Duke marrë adresën IP...</item>
+        <item>I lidhur</item>
+        <item>I pezulluar</item>
+        <item>Duke u shkëputur...</item>
+        <item>I shkëputur</item>
+        <item>I pasuksesshëm</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Duke skanuar...</item>
+        <item>Duke u lidhur me %1$s…</item>
+        <item>Duke u autentifikuar me %1$s…</item>
+        <item>Duke marrë adresën IP nga %1$s…</item>
+        <item>U lidh me %1$s</item>
+        <item>I pezulluar</item>
+        <item>Duke u shkëputur nga %1$s…</item>
+        <item>I shkëputur</item>
+        <item>I pasuksesshëm</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>I hapur</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI në hekzadecimal</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>E dobët</item>
+        <item>E mjaftueshme</item>
+        <item>E mirë</item>
+        <item>E shkëlqyer</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Kur të fiket ekrani</item>
+        <item>Kurrë duke u ngarkuar</item>
+        <item>Asnjëherë</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Koha e përdorimit</item>
+        <item>Numri i nisjeve</item>
+        <item>Emri i aplikacionit</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Asnjë</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Fikur</item>
+        <item>Njoftim</item>
+        <item>Me dridhje</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Asnjë</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP ose CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Arkivi i brendsh. i pajisjes</item>
+        <item>Karta SD e lëvizshme</item>
+        <item>Le të vendosë sistemi</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Gjithmonë</item>
+        <item>Asnjëherë</item>
+        <item>Kur tingulli është joaktiv</item>
+        <item>Kur tingulli është aktiv</item>
+    </string-array>
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>อเมริกา</item>
+        <item>ยุโรป</item>
+        <item>แอฟริกา</item>
+        <item>เอเชีย</item>
+        <item>ออสเตรเลีย</item>
+        <item>แปซิฟิก</item>
+        <item>ทั้งหมด</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>ไม่มีภาพเคลื่อนไหว</item>
+        <item>ภาพเคลื่อนไหวบางภาพ</item>
+        <item>ภาพเคลื่อนไหวทั้งหมด</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>ไม่แสดงภาพเคลื่อนไหวในหน้าต่าง</item>
+        <item>แสดงภาพเคลื่อนไหวในหน้าต่างบางภาพ</item>
+        <item>แสดงภาพเคลื่อนไหวในหน้าต่างทั้งหมด</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 วินาที</item>
+        <item>30 วินาที</item>
+        <item>1 นาที</item>
+        <item>2 นาที</item>
+        <item>10 นาที</item>
+        <item>30 นาที</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>ช้ามาก</item>
+        <item>ช้า</item>
+        <item>ปกติ</item>
+        <item>เร็ว</item>
+        <item>เร็วมาก</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>อังกฤษ-อเมริกัน</item>
+        <item>อังกฤษ-อังกฤษ</item>
+        <item>ฝรั่งเศส</item>
+        <item>เยอรมัน</item>
+        <item>อิตาลี</item>
+        <item>สเปน</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>กำลังค้นหา…</item>
+        <item>กำลังเชื่อมต่อ…</item>
+        <item>กำลังตรวจสอบความถูกต้อง…</item>
+        <item>กำลังรับ IP แอดเดรส…</item>
+        <item>เชื่อมต่อแล้ว</item>
+        <item>ระงับชั่วคราว</item>
+        <item>กำลังเลิกเชื่อมต่อ…</item>
+        <item>ไม่เชื่อมต่อ</item>
+        <item>ไม่สำเร็จ</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>กำลังค้นหา...</item>
+        <item>กำลังเชื่อมต่อกับ %1$s…</item>
+        <item>กำลังตรวจสอบความถูกต้องกับ %1$s…</item>
+        <item>กำลังรับ IP แอดเดรสจาก %1$s…</item>
+        <item>เชื่อมต่อกับ %1$s</item>
+        <item>ระงับชั่วคราว</item>
+        <item>กำลังเลิกเชื่อมต่อจาก %1$s…</item>
+        <item>ไม่เชื่อมต่อ</item>
+        <item>ไม่สำเร็จ</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>เปิด</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>เปิด</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>เลขฐานสิบหก WAPI</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>ไม่ดี</item>
+        <item>ปานกลาง</item>
+        <item>ดี</item>
+        <item>ยอดเยี่ยม</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>เมื่อปิดหน้าจอ</item>
+        <item>ไม่พักทำงานเมื่อเสียบปลั๊ก</item>
+        <item>ไม่ใช้</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>เวลาการใช้งาน</item>
+        <item>เริ่มใช้งานการนับ</item>
+        <item>ชื่อแอปพลิเคชัน</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>ไม่มี</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>ปิด</item>
+        <item>เตือน</item>
+        <item>สั่น</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>ไม่มี</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP หรือ CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>หน่วยความจำภายใน</item>
+        <item>การ์ด SD ที่ถอดออกได้</item>
+        <item>ให้ระบบตัดสินใจ</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>ทุกครั้ง</item>
+        <item>ไม่ใช้</item>
+        <item>เมื่อปิดเสียง</item>
+        <item>เมื่อเปิดเสียง</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>ต่ำมาก</item>
+        <item>ต่ำ</item>
+        <item>ปกติ</item>
+        <item>สูง</item>
+        <item>สูงมาก</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/settings_screen_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0px" android:layout_marginRight="6.0dip" android:layout_marginBottom="10.0px" android:text="@string/lockscreen_strings_backup_question_selector_title_txt" android:includeFontPadding="false" />
+    <View android:id="@id/settings_screen_top_divider" android:background="@drawable/general_head_divider" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginLeft="5.0px" android:layout_marginRight="5.0px" android:dividerHeight="2.0px" android:layout_below="@id/settings_screen_title" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@android:style/ButtonBar">
+        <Button android:ellipsize="marquee" android:id="@id/backupQuestionCancelButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/skip_button_label" android:singleLine="true" android:layout_weight="1.0" />
+        <Button android:ellipsize="marquee" android:id="@id/backupQuestionContinueButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/lockpattern_continue_button_text" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ListView android:id="@id/backupQuestionSelectorList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:divider="@drawable/general_list_divider_small" android:dividerHeight="2.0px" android:layout_above="@id/button_bar" android:layout_below="@id/settings_screen_top_divider" />
+</RelativeLayout>

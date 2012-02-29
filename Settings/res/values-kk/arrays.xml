@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Америка</item>
+        <item>Еуропа</item>
+        <item>Африка</item>
+        <item>Азия</item>
+        <item>Австралия</item>
+        <item>Тынық мұхиты</item>
+        <item>Барлық</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Ешқандай анимациялар</item>
+        <item>Кейбір анимациялар</item>
+        <item>Барлық анимациялар</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Ешқандай терезенің анимациялары көрсетілмеген</item>
+        <item>Кейбір терезенің анимациялары көрсетілген</item>
+        <item>Барлық терезенің анимациялары көрсетілген</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 секунд</item>
+        <item>30 секунд</item>
+        <item>1 минут</item>
+        <item>2 минут</item>
+        <item>10 минут</item>
+        <item>30 минут</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Өте ақырын</item>
+        <item>Ақырын</item>
+        <item>Қалыпты</item>
+        <item>Жылдам</item>
+        <item>Өте жылдам</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Америкалық ағылшын</item>
+        <item>Британиялық ағылшын</item>
+        <item>Француз</item>
+        <item>Неміс</item>
+        <item>Итальян</item>
+        <item>Испан</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Сканерлеу орындалуда...</item>
+        <item>Қосылуда...</item>
+        <item>Куәландыру...</item>
+        <item>IP мекенжай алынуда…</item>
+        <item>Қосылды</item>
+        <item>Уақытша тоқтатылған</item>
+        <item>Ажырату…</item>
+        <item>Ажыратылды</item>
+        <item>Сәтсіз</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Сканерлеу...</item>
+        <item>%1$s желісіне қосылу…</item>
+        <item>%1$s желісінде куәландыру…</item>
+        <item>%1$s желісінен IP мекенжайды алу…</item>
+        <item>%1$s желісіне қосылу орындалды</item>
+        <item>Уақытша тоқтатылған</item>
+        <item>%1$s желісінен ажырату…</item>
+        <item>Ажыратылды</item>
+        <item>Сәтсіз</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Ашу</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI он алтылық</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Нашар</item>
+        <item>Орташа</item>
+        <item>Жақсы</item>
+        <item>Тамаша</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Экран сөнгенде</item>
+        <item>Қуатқа қос-лы болғ. ешқ</item>
+        <item>Ешқашан</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Пайдалану уақыты</item>
+        <item>Бастау санағы</item>
+        <item>Бағдарлама аты</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Ешқайсысы</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Сөндіру</item>
+        <item>Дабыл</item>
+        <item>Діріл</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Ешқайсысы</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP немесе CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Ішкі құрылғы қоймасы</item>
+        <item>Алынбалы SD карта</item>
+        <item>Жүйе шешіміне қалд-ру</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Әрқашан</item>
+        <item>Ешқашан</item>
+        <item>Дыбыс өшірілгенде</item>
+        <item>Дыбыс өшірілмегенде</item>
+    </string-array>
+</resources>

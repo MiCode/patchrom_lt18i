@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Инстал. сертификати WLAN</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Вклучи WLAN</string>
+    <string name="wifi_settings">Поставки за WLAN</string>
+    <string name="wifi_settings_category">Поставки за WLAN</string>
+    <string name="wifi_starting">Вклучување…</string>
+    <string name="wifi_add_network">Додај WLAN мрежа</string>
+    <string name="wifi_access_points">WLAN мрежи</string>
+    <string name="wifi_setting_sleep_policy_title">WLAN полит. на исклуч.</string>
+    <string name="wifi_setting_sleep_policy_summary">Одредете кога да се префрли од WLAN на мобилни податоци</string>
+    <string name="wifi_tether_checkbox_text">Прен. WLAN „ж.“ место</string>
+    <string name="wifi_tether_enabled_subtext">Портабл „жешкото“ место %1$s е активно</string>
+    <string name="wifi_tether_settings_text">Пост. за прен. WLAN „ж.“ м.</string>
+    <string name="wifi_tether_settings_subtext">Постави и управувај со портабл WLAN „жешко“ место</string>
+    <string name="wifi_tether_settings_title">Поставки за портабл WLAN „жешко“ место</string>
+    <string name="wifi_tether_configure_ap_text">Конф. WLAN „жешко“ место</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s портабл WLAN „жешко“ место</string>
+    <string name="status_wifi_mac_address">WLAN MAC адреса</string>
+    <string name="tether_settings_title_wifi">Портабл „жешко“ место</string>
+    <string name="tether_settings_title_both">Врз. и порт.„жешко“ место</string>
+    <string name="tether_settings_summary_wifi">Споделете ја мобилната конекција на својот телефон како портабл WLAN „жешко“ место</string>
+    <string name="tether_settings_summary_both">Споделете ја мобилната податочна конекција на својот телефон преку USB или како портабл WLAN „жешко“ место</string>
+    <string name="location_network_based">Користи безж. мрежи</string>
+    <string name="location_networks_disabled">Видете ја локац. во аплик. (на пр. Мапи) користејќи безжични мрежи</string>
+    <string name="location_neighborhood_level">Локација одредена од WLAN и/или мобилни мрежи</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN работи</string>
+    <string name="battery_desc_wifi">Батерија користена од WLAN</string>
+    <string name="battery_sugg_wifi">Исклучете го WLAN кога не го користите или каде што не е достапен</string>
+    <string name="backup_data_summary">Рез. копија на аплик. подат., лозинк. за WLAN и друг. пост. на сервер. на Google</string>
+    <string name="backup_erase_dialog_message">Дали сте сигурни дека сакате да го прекинете правењето резервни копии на лозинките за WLAN, ознаките и другите поставки и апликациски податоци и да ги избришете сите копии на серверите на Google?</string>
+    <string name="radio_controls_summary">Управување со WLAN, Bluetooth, авионски режим, мобилни мрежи и VPN</string>
+    <string name="wifi_tether_failed_subtext">Грешка на портабл WLAN „жешко“ место</string>
+    <string name="wifi_on_time">Време на вклучен WLAN</string>
+    <string name="bluetooth_on_time">Време на вклучен WLAN</string>
+    <string name="battery_action_wifi">WLAN поставки</string>
+    <string name="gadget_toggle_wifi">Ажурирање на поставката на WLAN</string>
+</resources>

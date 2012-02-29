@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>अमेरिका</item>
+        <item>यूरोप</item>
+        <item>अफ्रिका</item>
+        <item>एशिया</item>
+        <item>ऑस्ट्रेलिया</item>
+        <item>पैसिफ़िक</item>
+        <item>सभी</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>कोई एनिमेशन नहीं</item>
+        <item>कुछ एनिमेशन</item>
+        <item>सभी एनिमेशन</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>कोई विंडो एनिमेशन दिखाए नहीं गए हैं</item>
+        <item>कुछ विंडो एनिमेशन दिखाए गए हैं</item>
+        <item>सभी विंडो एनिमेशन दिखाए गए हैं</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 सेकंड</item>
+        <item>30 सेकंड</item>
+        <item>1 मिनट</item>
+        <item>2 मिनट</item>
+        <item>10 मिनट</item>
+        <item>30 मिनट</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>बहुत धीमा</item>
+        <item>धीमा</item>
+        <item>सामान्य</item>
+        <item>तेज़</item>
+        <item>बहुत तेज़</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>अमेरिकी अंग्रेज़ी</item>
+        <item>ब्रिटिश अंग्रेज़ी</item>
+        <item>फ्रेंच</item>
+        <item>जर्मन</item>
+        <item>इतालवी</item>
+        <item>स्पैनिश</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>स्कैन कर रहा है...</item>
+        <item>कनेक्ट हो रहा है...</item>
+        <item>प्रमाणित कर रहा है...</item>
+        <item>IP पता प्राप्त कर रहा है…</item>
+        <item>कनेक्ट हो गया</item>
+        <item>निलंबित</item>
+        <item>डिस्कनेक्ट हो रहा है...</item>
+        <item>डिस्कनेक्ट हो गया</item>
+        <item>असफल</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>स्कैन कर रहा है...</item>
+        <item>%1$s से कनेक्ट हो रहा है…</item>
+        <item>%1$s के साथ प्रमाणित कर रहा है…</item>
+        <item>%1$s से IP पता प्राप्त कर रहा है…</item>
+        <item>%1$s से कनेक्ट हो गया</item>
+        <item>निलंबित</item>
+        <item>%1$s से अलग किया जा रहा है…</item>
+        <item>डिस्कनेक्ट हो गया</item>
+        <item>असफल</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>मुक्त</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI हेक्ज़ाडेसिमल</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>खराब</item>
+        <item>ठीक</item>
+        <item>अच्छी</item>
+        <item>उत्कृष्ट</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>स्क्रीन बंद होने पर</item>
+        <item>प्लग इन होने पर कभी नहीं</item>
+        <item>कभी नहीं</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>उपयोग समय</item>
+        <item>गणना लॉंन्च करें</item>
+        <item>अनुप्रयोग नाम</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>कोई नहीं</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>बंद</item>
+        <item>सावधान</item>
+        <item>वाइब्रेट करें</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>कुछ नहीं</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP या CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>आंतरिक डिवाइस संग्रहण</item>
+        <item>निकाले जाने योग्य SD कार्ड</item>
+        <item>सिस्टम को निर्णय लेने दें</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>हमेशा</item>
+        <item>कभी नहीं</item>
+        <item>ध्‍वनि के ऑफ होने पर</item>
+        <item>ध्‍वनि के ऑन होने पर</item>
+    </string-array>
+</resources>

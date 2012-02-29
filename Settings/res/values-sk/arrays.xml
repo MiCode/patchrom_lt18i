@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Európa</item>
+        <item>Afrika</item>
+        <item>Ázia</item>
+        <item>Austrália</item>
+        <item>Oblasť Tichého oceánu</item>
+        <item>Všetky oblasti</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Žiadne animácie</item>
+        <item>Niektoré animácie</item>
+        <item>Všetky animácie</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Nezobrazujú sa žiadne animácie v oknách</item>
+        <item>Zobrazujú sa niektoré animácie v oknách</item>
+        <item>Zobrazujú sa všetky animácie v oknách</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekúnd</item>
+        <item>30 sekúnd</item>
+        <item>1 minúta</item>
+        <item>2 minúty</item>
+        <item>10 minút</item>
+        <item>30 minút</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Veľmi pomalý</item>
+        <item>Pomalý</item>
+        <item>Normálny</item>
+        <item>Rýchly</item>
+        <item>Veľmi rýchly</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>americká angličtina</item>
+        <item>britská angličtina</item>
+        <item>francúzština</item>
+        <item>nemčina</item>
+        <item>taliančina</item>
+        <item>španielčina</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Vyhľadáva sa...</item>
+        <item>Pripája sa...</item>
+        <item>Overuje sa...</item>
+        <item>Získava sa adresa IP...</item>
+        <item>Pripojená</item>
+        <item>Odstavená</item>
+        <item>Odpája sa...</item>
+        <item>Odpojená</item>
+        <item>Zlyhanie</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Vyhľadáva sa...</item>
+        <item>Pripája sa k sieti %1$s…</item>
+        <item>Overuje sa sieť %1$s…</item>
+        <item>Získava sa adresa IP zo siete %1$s…</item>
+        <item>Pripojená k sieti %1$s</item>
+        <item>Odstavená</item>
+        <item>Odpája sa od siete %1$s…</item>
+        <item>Odpojená</item>
+        <item>Zlyhanie</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>Otvoriť</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_security_with_wapi">
+        <item>Otvorené</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+        <item>WAPI PSK</item>
+        <item>WAPI CERT</item>
+    </string-array>
+    <string-array name="wapi_psk_type">
+        <item>WAPI ASCII</item>
+        <item>WAPI: šestnástkový</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Slabá</item>
+        <item>Priemerná</item>
+        <item>Dobrá</item>
+        <item>Výborná</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Po vypnutí obrazovky</item>
+        <item>Nikdy pri pripojení</item>
+        <item>Nikdy</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Čas využívania</item>
+        <item>Počítadlo spustení</item>
+        <item>Názov aplikácie</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Žiadne</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Vypnuté</item>
+        <item>Upozornenie</item>
+        <item>Vibrácie</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Žiadne</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP alebo CHAP</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Inter. uklad. pries. zariad.</item>
+        <item>Vymeniteľná karta SD</item>
+        <item>Nechať rozhodnúť systém</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Vždy</item>
+        <item>Nikdy</item>
+        <item>Len v tichom režime</item>
+        <item>Len mimo tichého režimu</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Veľmi nízka</item>
+        <item>Nízka</item>
+        <item>Normálna</item>
+        <item>Vysoká</item>
+        <item>Veľmi vysoká</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+</resources>

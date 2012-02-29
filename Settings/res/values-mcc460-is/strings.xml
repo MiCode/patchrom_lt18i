@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install_wapi_certs">Setja upp WLAN-vottorð</string>
+    <string name="wifi_quick_toggle_title">WLAN</string>
+    <string name="wifi_quick_toggle_summary">Slökkva á WLAN</string>
+    <string name="wifi_settings">WLAN stillingar</string>
+    <string name="wifi_settings_category">WLAN stillingar</string>
+    <string name="wifi_starting">Ræsi...</string>
+    <string name="wifi_add_network">Bæta við WLAN neti</string>
+    <string name="wifi_access_points">WLAN-net</string>
+    <string name="wifi_setting_sleep_policy_title">WLAN biðstaða</string>
+    <string name="wifi_setting_sleep_policy_summary">Tilgreindu hvenær á að skipta úr WLAN yfir í farsímagögn</string>
+    <string name="wifi_tether_checkbox_text">WLAN heitur reitur</string>
+    <string name="wifi_tether_enabled_subtext">Færanlegur heitur reitur %1$s er virkur</string>
+    <string name="wifi_tether_settings_text">Stillingar f. WLAN heitan reit</string>
+    <string name="wifi_tether_settings_subtext">Setja upp og stjórna færanlegum þráðlausum heitum reit</string>
+    <string name="wifi_tether_settings_title">Stillingar fyrir færanlegan þráðl. heitan reit</string>
+    <string name="wifi_tether_configure_ap_text">Stilla þráðlausan heitan reit</string>
+    <string name="wifi_tether_configure_subtext">%1$s %2$s færanlegur þráðlaus heitur reitur</string>
+    <string name="status_wifi_mac_address">WLAN MAC-vistfang</string>
+    <string name="tether_settings_title_wifi">Færanlegur heitur reitur</string>
+    <string name="tether_settings_title_both">Tjóðrun og heitir reitir</string>
+    <string name="tether_settings_summary_wifi">Samnýta gagnatengingu símans sem færanlegan þráðlausan heitan reit</string>
+    <string name="tether_settings_summary_both">Samnýttu gagnatengingu farsímans þíns um USB eða sem færanlegan þráðlausan heitan reit</string>
+    <string name="location_network_based">Nota þráðlaus net</string>
+    <string name="location_networks_disabled">Skoða staðsetningar í forritum (t.d. Kortum) með þráðlausu neti</string>
+    <string name="location_neighborhood_level">Staðsetning er ákvörðuð af WLAN og/eða farsímakerfum</string>
+    <string name="battery_stats_wifi_running_label">WLAN</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="usage_type_wifi_running">WLAN í gangi</string>
+    <string name="battery_desc_wifi">Rafhlaða notuð af WLAN</string>
+    <string name="battery_sugg_wifi">Slökktu á WLAN þegar það er ekki í notkun eða ekki tiltækt</string>
+    <string name="backup_data_summary">Geymdu afrit af gögnum, WLAN lykilorðum og öðrum stillingum á Google-þjónum</string>
+    <string name="backup_erase_dialog_message">Ertu viss um að þú viljir stöðva öryggisafritun af WLAN lykilorðum, bókamerkjum og öðrum stillingum og forritagögnum og eyða öllum afritum af Google-þjónum?</string>
+    <string name="radio_controls_summary">Vinna með WLAN, Bluetooth, flugstillingu, farsímakerfi og VPN-tengingum</string>
+    <string name="wifi_tether_failed_subtext">Villa á færanlegum þráðlausum heitum reit</string>
+    <string name="wifi_on_time">WLAN á tíma</string>
+    <string name="bluetooth_on_time">WLAN á tíma</string>
+    <string name="battery_action_wifi">WLAN-stillingar</string>
+    <string name="gadget_toggle_wifi">Uppfæri WLAN stillingar</string>
+</resources>
