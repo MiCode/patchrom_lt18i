@@ -369,7 +369,7 @@ system/etc/firmware/leia_pfp_470.fw 0 0 644
 system/etc/firmware/leia_pm4_470.fw 0 0 644
 system/etc/firmware/ti-connectivity 0 0 755
 system/etc/firmware/ti-connectivity/wl1271-fw-multirole-roc.bin 0 0 644
-system/etc/firmware/ti-connectivity/wl1271-nvs.bin 2124304222 0 1752
+system/etc/firmware/ti-connectivity/wl1271-nvs.bin 0 0 600
 system/etc/firmware/TIInit_7.5.20.bts 0 0 644
 system/etc/firmware/TIInit_7.6.15.bts 0 0 644
 system/etc/firmware/touch_anzu_sharp_type1.hex 0 0 644
@@ -970,7 +970,7 @@ system/lib/soundfx/libbundlewrapper.so 0 0 644
 system/lib/soundfx/libreverbwrapper.so 0 0 644
 system/lib/soundfx/libvisualizer.so 0 0 644
 system/lib/soundfx/libxloudwrapper.so 0 0 644
-system/lost+found 0 0 755
+system/lost+found 0 0 700
 system/media 0 0 755
 system/media/audio 0 0 755
 system/media/audio/alarms 0 0 755
@@ -1162,6 +1162,8 @@ system/usr/xt9/SEMC_v623_SVusUN_xt9_2.ldb 0 0 644
 system/vendor 0 2000 755
 system/vendor/etc 0 2000 755
 system/vendor/etc/fallback_fonts.xml 0 0 644
+system/vendor/firmware 0 2000 755
+system/vendor/firmware/hdcp.keys 2126152454 0 1752
 system/xbin 0 2000 755
 system/xbin/dexdump 0 2000 755
 system/xbin/invoke-as 0 0 6755
