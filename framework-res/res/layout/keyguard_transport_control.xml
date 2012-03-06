@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.widget.TransportControlView android:id="@id/transport_controls"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/albumart" android:layout_width="fill_parent" android:layout_height="@dimen/keyguard_lockscreen_music_player_album_art_height" android:scaleType="centerInside" android:adjustViewBounds="false" />
+        <TextView android:textAppearance="?textAppearanceSmall" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:singleLine="true" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:layout_toLeftOf="@id/btn_middle" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:id="@id/btn_prev" android:padding="2.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/semc_btn_playview_previous" android:contentDescription="@string/lockscreen_transport_prev_description" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/btn_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="center" android:id="@id/btn_play" android:padding="2.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/semc_btn_playview_play" android:contentDescription="@string/lockscreen_transport_play_description" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_toRightOf="@id/btn_middle" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:id="@id/btn_next" android:padding="2.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/semc_btn_playview_next" android:contentDescription="@string/lockscreen_transport_next_description" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.android.internal.widget.TransportControlView>
