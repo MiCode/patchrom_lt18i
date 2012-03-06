@@ -55,7 +55,6 @@ system/bin/uptime|system/bin/toolbox
 system/bin/vmstat|system/bin/toolbox
 system/bin/watchprops|system/bin/toolbox
 system/bin/wipe|system/bin/toolbox
-system/etc/firmware/ti-connectivity/wl1271-nvs.bin|data/etc/wifi/wl1271-nvs.bin
 system/fonts/DroidSans-Bold.ttf|system/fonts/Roboto-Bold.ttf
 system/fonts/DroidSans.ttf|system/fonts/Roboto-Regular.ttf
 system/vendor/firmware/hdcp.keys|factory/hdcp.keys
