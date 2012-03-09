@@ -7350,6 +7350,12 @@
 
     .line 560
     :try_start_0
+    invoke-virtual {p0}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->isMmsDataEnabled()Z
+
+    move-result v4
+
+    if-nez v4, :cond_1
+
     iget-boolean v4, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mInternalDataEnabled:Z
 
     if-eqz v4, :cond_0
@@ -10089,6 +10095,26 @@
     .end local v12           #proxy:Landroid/net/ProxyProperties;
     :cond_4
     :goto_0
+    invoke-static {}, Lmiui/net/FirewallManager;->getInstance()Lmiui/net/FirewallManager;
+
+    move-result-object v13
+
+    const/4 v14, 0x0
+
+    invoke-static {v1}, Lmiui/net/FirewallManager;->encodeApnSetting(Lcom/android/internal/telephony/ApnSetting;)Ljava/lang/String;
+
+    move-result-object v15
+
+    invoke-virtual {v8}, Lcom/android/internal/telephony/DataConnectionAc;->getLinkPropertiesSync()Landroid/net/LinkProperties;
+
+    move-result-object v16
+
+    invoke-virtual/range {v16 .. v16}, Landroid/net/LinkProperties;->getInterfaceName()Ljava/lang/String;
+
+    move-result-object v16
+
+    invoke-virtual/range {v13 .. v16}, Lmiui/net/FirewallManager;->onDataConnected(ILjava/lang/String;Ljava/lang/String;)V
+
     invoke-virtual {v2}, Lcom/android/internal/telephony/ApnContext;->getApnType()Ljava/lang/String;
 
     move-result-object v14
@@ -10829,6 +10855,22 @@
     invoke-virtual {v0, v1}, Lcom/android/internal/telephony/ApnContext;->setState(Lcom/android/internal/telephony/DataConnectionTracker$State;)V
 
     .line 2039
+    invoke-static {}, Lmiui/net/FirewallManager;->getInstance()Lmiui/net/FirewallManager;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0}, Lcom/android/internal/telephony/ApnContext;->getApnSetting()Lcom/android/internal/telephony/ApnSetting;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lmiui/net/FirewallManager;->encodeApnSetting(Lcom/android/internal/telephony/ApnSetting;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v2, v3}, Lmiui/net/FirewallManager;->onDataDisconnected(ILjava/lang/String;)V
+
     iget-object v1, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mPhone:Lcom/android/internal/telephony/PhoneBase;
 
     invoke-virtual {v0}, Lcom/android/internal/telephony/ApnContext;->getReason()Ljava/lang/String;
@@ -10936,6 +10978,12 @@
     const/4 v1, 0x1
 
     .line 1796
+    invoke-virtual {p0, p1}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->apnIdToType(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->mRequestedApnType:Ljava/lang/String;
+
     iget-object v2, p0, Lcom/android/internal/telephony/DataConnectionTracker;->mApnContexts:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;->apnIdToType(I)Ljava/lang/String;
