@@ -877,9 +877,9 @@
 
     iput-object v0, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->mVmConfig:Lcom/android/internal/telephony/gsm/VoiceMailConstants;
 
-    new-instance v0, Lcom/android/internal/telephony/gsm/MiuiSpnOverride;
+    new-instance v0, Lcom/android/internal/telephony/gsm/MiuiSpnOverrideImpl;
 
-    invoke-direct {v0}, Lcom/android/internal/telephony/gsm/MiuiSpnOverride;-><init>()V
+    invoke-direct {v0}, Lcom/android/internal/telephony/gsm/MiuiSpnOverrideImpl;-><init>()V
 
     iput-object v0, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->mSpnOverride:Lcom/android/internal/telephony/gsm/SpnOverride;
 
@@ -2267,7 +2267,7 @@
 .end method
 
 .method private isOnMatchingPlmn(Ljava/lang/String;)Z
-    .locals 5
+    .locals 6
     .parameter "plmn"
 
     .prologue
@@ -2302,6 +2302,33 @@
 
     .line 1586
     :cond_2
+    iget-object v4, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->mSpnOverride:Lcom/android/internal/telephony/gsm/SpnOverride;
+
+    invoke-virtual {p0}, Lcom/android/internal/telephony/gsm/SIMRecords;->getOperatorNumeric()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Lcom/android/internal/telephony/gsm/SpnOverride;->getSpn(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    iget-object v5, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->mSpnOverride:Lcom/android/internal/telephony/gsm/SpnOverride;
+
+    invoke-virtual {v5, p1}, Lcom/android/internal/telephony/gsm/SpnOverride;->getSpn(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    move v2, v3
+
+    goto :goto_0
+
+    :cond_4
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->spdiNetworks:Ljava/util/ArrayList;
 
     if-eqz v4, :cond_0
