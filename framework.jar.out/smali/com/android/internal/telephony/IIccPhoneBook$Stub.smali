@@ -504,6 +504,8 @@
 
     invoke-virtual {p3, v7}, Landroid/os/Parcel;->writeInt(I)V
 
+    const/4 v0, 0x1
+
     goto/16 :goto_0
 
     .end local v7           #_result:I
@@ -520,6 +522,8 @@
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
     invoke-virtual {p3, v7}, Landroid/os/Parcel;->writeInt(I)V
+
+    const/4 v0, 0x1
 
     goto/16 :goto_0
 
