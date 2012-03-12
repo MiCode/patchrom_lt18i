@@ -11,16 +11,14 @@ local-zip-file     := lt18i_4.1.C.0.7.zip
 # All apps from original ZIP, but has smali files chanded
 local-modified-apps := #Settings
 
-local-miui-modified-apps := #Launcher2
-
 local-modified-jars := #HTCExtension
 
-# All apks from MIUI execept MIUISystemUI and framework-miui-res.apk
-local-miui-apps     := #Contacts ContactsProvider Mms TelephonyProvider ThemeManager \
-     DownloadProvider TelocationProvider Notes Torch DownloadProviderUi Updater
+local-miui-modified-apps := #ThemeManager Mms MiuiHome TelephonyProvider MiuiSystemUI
+
+local-miui-removed-apps  := Phone MediaProvider
 
 # All apps need to be removed from original ZIP file
-local-remove-apps   := #AdobeFlashPlayer Conversations datatrafficswitch DigitalClockWidget EventStream EventStreamPluginCallLog EventStreamPluginFacebook EventStreamPluginTelephony EventStreamPluginTwitter FBIAppShare FBMediaDiscovery FBSetupwizard FBCalendarSync FBMusicLike FBNotificationPublisher GenieWidget JapaneseIME letsgolf_ay livewaremanager MagicSmokeWallpapers Maps MediaWidget MusicWidget officesuite PhotoWidget playnowclientarvato POBoxSknPink POBoxSknWood PostViewer retaildemo SemcDeskClock SemcDlna SEMCFacebookProxy SemcVideoEdit StatusSwitch storefront SyncWizard Talk textinput-tng TimescapeRssPlugin TimescapeSpline TimescapeWidget trackid TtsService usersupport VisualizationWallpapers WallpaperPicker WeatherWidget widgetdigitalclock widgetfavouritepeople widgetonoff WikipediaPlugin wisepilot YouTube YouTubeKaraokePlugin YouTubePlugin facebook SemcTelephonyProvider SemcContactsProvider LocalContacts SimContacts FBIAppShare Phonebook
+local-remove-apps   := AdobeFlashPlayer Conversations datatrafficswitch DigitalClockWidget EventStream EventStreamPluginCallLog EventStreamPluginFacebook EventStreamPluginTelephony EventStreamPluginTwitter FBIAppShare FBMediaDiscovery FBSetupwizard FBCalendarSync FBMusicLike FBNotificationPublisher GenieWidget JapaneseIME letsgolf_ay livewaremanager MagicSmokeWallpapers Maps MediaWidget MusicWidget officesuite PhotoWidget playnowclientarvato POBoxSknPink POBoxSknWood PostViewer retaildemo SemcDeskClock SemcDlna SEMCFacebookProxy SemcVideoEdit StatusSwitch storefront SyncWizard Talk TimescapeRssPlugin TimescapeSpline TimescapeWidget trackid TtsService usersupport VisualizationWallpapers WallpaperPicker WeatherWidget widgetdigitalclock widgetfavouritepeople widgetonoff WikipediaPlugin wisepilot YouTube YouTubeKaraokePlugin YouTubePlugin facebook SemcTelephonyProvider SemcContactsProvider LocalContacts SimContacts Phonebook SemcMusic SemcCalendar SemcGallery3D UpdateCenter SEMCSetupWizard PhaseBeam OmaDatasyncService Home Galaxy4 NoiseField SemcCameraUI SystemUI InfiniteView ThemeManager
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
