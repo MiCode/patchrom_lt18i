@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lt18i_settings">"Factory"</string>
+    <string name="xloud_strings_xloud_txt">xLOUD™</string>
+    <string name="xloud_strings_xloud_desc_txt">Enhance the loudness of speaker</string>
+    <string name="swiqi_strings_swiqi_txt">Mobile BRAVIA Engine</string>
+    <string name="swiqi_strings_swiqi_desc_txt">Image quality enhancer for photos and videos</string>
+</resources>
+
