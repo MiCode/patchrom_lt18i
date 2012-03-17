@@ -9,11 +9,11 @@ local-zip-file     := lt18i_4.1.C.0.7.zip
 #local-out-zip-file := MIUI_lt18i.zip
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := #Settings
+local-modified-apps := SemcCamera3D
 
 local-modified-jars := #HTCExtension
 
-local-miui-modified-apps := #ThemeManager Mms MiuiHome TelephonyProvider MiuiSystemUI
+local-miui-modified-apps := MiuiHome #ThemeManager Mms TelephonyProvider MiuiSystemUI
 
 local-miui-removed-apps  := Phone MediaProvider
 
