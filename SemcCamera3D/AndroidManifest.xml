@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1" android:versionName="1.0.0" package="com.sonyericsson.android.camera3d"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="15" />
+    <uses-library android:name="com.sonyericsson.privateapis_1p" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.sonyericsson.permission.CAMERA_EXTENDED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="com.sonyericsson.android.permission.FACERECOGNITION_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.sonyericsson.permission.CONVERSATIONS_SETTINGS_PROVIDER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <application android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" android:label="@string/cam_3d_strings_camera_application_name_txt" android:icon="@drawable/cam_3d_application_3d_camera_icn" android:name=".CameraApplication" android:debuggable="false">
+        <activity android:theme="@style/CameraTheme" android:label="@string/cam_3d_strings_camera_application_name_txt" android:icon="@drawable/cam_3d_application_3d_camera_icn" android:name=".CameraActivity" android:taskAffinity=".CameraActivity" android:launchMode="singleTask" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/BootTheme" android:label="@string/cam_3d_strings_album_application_name_txt" android:icon="@drawable/cam_3d_application_3d_album_icn" android:name=".viewer.Browser" android:process=":Browser" android:taskAffinity=".viewer.Browser" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/BootTheme" android:label="@string/cam_3d_strings_album_application_name_txt" android:icon="@drawable/cam_3d_application_3d_album_icn" android:name=".viewer.Player" android:process=":Player" android:taskAffinity=".viewer.Player" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/mpo" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.sonyericsson.android.media.panorama3d.provider.mpo_3d_picture" />
+            </intent-filter>
+        </activity>
+        <provider android:label="Panorama3dProvider" android:name="com.sonyericsson.android.media.panorama3d.provider.Panorama3dProvider" android:process=":Provider" android:authorities="com.sonyericsson.android.media.panorama3d.provider">
+            <path-permission />
+        </provider>
+        <receiver android:name="com.sonyericsson.android.media.panorama3d.provider.MediaMpoScannerReceiver">
+            <intent-filter>
+                <action android:name="com.sonyericsson.android.media.panorama3d.provider.SCAN_MEDIA" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sonyericsson.android.media.panorama3d.provider.SCAN_FILE" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="MasterResetReceiver" android:permission="android.permission.MASTER_CLEAR">
+            <intent-filter>
+                <action android:name="com.sonyericsson.settings.MASTERRESET" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.sonyericsson.android.media.panorama3d.provider.MediaMpoScannerService" android:exported="true" android:process=":Scanner" />
+        <uses-library android:name="com.sonyericsson.privateapis_1p" />
+        <uses-library android:name="com.sonyericsson.privateapis_2" />
+    </application>
+</manifest>

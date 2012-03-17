@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sonyericsson.android.camera3d.viewer.view.ThumbnailView android:focusable="false" android:focusableInTouchMode="false" android:visibility="visible" android:clickable="false" android:layout_width="@dimen/album_thumbnail_frame_width" android:layout_height="@dimen/album_thumbnail_frame_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/item_container" android:background="@drawable/cam_3d_browser_thumbnail_icn" android:focusable="false" android:focusableInTouchMode="false" android:visibility="visible" android:clickable="false" android:layout_width="@dimen/album_thumbnail_frame_width" android:layout_height="@dimen/album_thumbnail_frame_height" android:layout_centerInParent="true">
+        <ImageView android:id="@id/image" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:clickable="false" android:layout_width="@dimen/album_thumbnail_image_width" android:layout_height="@dimen/album_thumbnail_image_height" android:scaleType="fitXY" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</com.sonyericsson.android.camera3d.viewer.view.ThumbnailView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="capturing_mode_selector_viewfinder_displaywidth_ratio">8</integer>
+    <integer name="capturing_mode_selector_viewfinder_width_ratio">7</integer>
+    <integer name="capturing_mode_selector_button_display_width_ratio">8</integer>
+    <integer name="capturing_mode_selector_button_parent_width_ratio">1</integer>
+    <integer name="capturing_mode_selector_dialog_grid_column_num">3</integer>
+    <integer name="capturing_mode_selector_dialog_grid_row_num">2</integer>
+    <integer name="viewfinder_rightside_component_width_ratio">8</integer>
+    <integer name="viewfinder_leftside_component_width_ratio">8</integer>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Scene recognition(camera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normal(camera)</string>
+    <string name="cam_strings_resolution_1mp_4x3_txt">"1 MP  4:3"</string>
+    <string name="cam_strings_resolution_1mp_16x9_txt">"1 MP  16:9"</string>
+    <string name="cam_strings_resolution_2mp_4x3_txt">"2 MP  4:3"</string>
+    <string name="cam_strings_resolution_2mp_16x9_txt">"2 MP  16:9"</string>
+    <string name="cam_strings_resolution_3mp_16x9_txt">"3 MP  16:9"</string>
+    <string name="cam_strings_resolution_5mp_4x3_txt">"5 MP  4:3"</string>
+    <string name="cam_strings_resolution_6mp_16x9_txt">"6 MP  16:9"</string>
+    <string name="cam_strings_resolution_8mp_4x3_txt">"8 MP  4:3"</string>
+    <string name="cam_strings_resolution_9mp_16x9_txt">"9 MP  16:9"</string>
+    <string name="cam_strings_resolution_12mp_4x3_txt">"12 MP  4:3"</string>
+    <string name="cam_strings_self_timer_2_txt">On (2 sec.)</string>
+    <string name="cam_strings_self_timer_10_txt">On (10 sec.)</string>
+    <string name="cam_strings_focus_mode_single_af_txt">Single autofocus</string>
+    <string name="cam_strings_focus_mode_multi_af_txt">Multi autofocus</string>
+    <string name="cam_strings_exposure_level_pm0_txt">EV ±0.0</string>
+    <string name="cam_strings_photometry_center_txt">Center</string>
+    <string name="cam_strings_image_stabilizer_txt">Image stabilizer</string>
+    <string name="cam_strings_show_popup_again_txt">To show this dialog, go to Settings > Applications > Manage applications.</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Not available when smile detection is active</string>
+    <string name="cam_3d_strings_dialog_delete_include_ma_txt">Multi Angle, too</string>
+    <string name="cam_3d_strings_dialog_delete_include_3d_txt">3D file, too</string>
+    <string name="cam_3d_strings_creating_but_too_quick_txt">Could not complete the capturing. Please pan more slowly.</string>
+    <string name="cam_3d_strings_creating_but_too_slow_txt">Could not complete the capturing. Please pan faster.</string>
+    <string name="cam_3d_strings_creating_but_incorrect_direction_txt">Could not complete the capturing. Please pan in the correct direction.</string>
+    <string name="cam_3d_strings_dialog_processing_include_black_area_txt">"Processing...
+This image contains a gray area"</string>
+    <string name="cam_3d_strings_dialog_multi_angle_processing_include_black_area_txt">"Creating the following files:
+- Multi Angle image
+- 3D image
+Note: These files contain a gray area."</string>
+    <string name="cam_3d_strings_shooting_guide_press_key_txt">Press camera key and then slowly pan the camera</string>
+    <string name="cam_3d_strings_shooting_guide_touch_cap_txt">Tap viewfinder and then slowly pan the camera</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Unplug the cable. You cannot take a photo in this mode with a cable connected.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Error</string>
+    <string name="cam_strings_error_memory_ims_read_only_txt">Memory write-protected. Could not edit files.</string>
+    <string name="cam_strings_fast_capturing_activated_txt">Quick Launch mode</string>
+    <string name="cam_strings_image_stabilizer_title_txt">Image stabilizer</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">To view a photo in 3D, connect your phone to a 3D TV by using a HDMI or tapping Play on device button.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">To view this photo in 3D, connect your phone to a 3D TV by tapping Play on device button.</string>
+</resources>

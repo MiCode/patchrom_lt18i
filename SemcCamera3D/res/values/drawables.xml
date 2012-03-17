@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="capturing_mode_selector_button_item_backgroundimage">@drawable/capturing_mode_selector_buttonitem_background</drawable>
+    <drawable name="capturing_mode_selector_dialog_item_backgroundimage">@drawable/capturing_mode_selector_dialogitem_background</drawable>
+</resources>

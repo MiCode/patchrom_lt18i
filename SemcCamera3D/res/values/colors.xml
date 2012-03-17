@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="capturing_mode_selector_dialog_textcolor">@color/capturing_mode_selector_textcolor</color>
+    <color name="cam_status_text_shadow_col">#ff000000</color>
+    <color name="photo_stack_menu_background_col">#99000000</color>
+    <color name="dialog_finder_cover_col">#99000000</color>
+    <color name="album_text_shadow_color">#ff000000</color>
+</resources>

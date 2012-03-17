@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/panorama3d" android:background="@android:color/black" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sonyericsson.android.camera3d.viewer.view.Panorama3dView android:id="@id/output3d" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/sidebyside_right_frame" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.sonyericsson.android.camera3d.viewer.view.ScalableImageView android:id="@id/sidebyside_right" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/sidebyside_left_frame" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.sonyericsson.android.camera3d.viewer.view.ScalableImageView android:id="@id/sidebyside_left" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </com.sonyericsson.android.camera3d.viewer.view.Panorama3dView>
+    <com.sonyericsson.android.camera3d.viewer.view.ScrollableImageView android:id="@id/autoscroll" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.sonyericsson.android.camera3d.viewer.view.Output3dView android:id="@id/corruptedicon" android:background="@android:color/black" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/cam_3d_player_image_corrupted_icn" android:scaleType="center" />
+    </com.sonyericsson.android.camera3d.viewer.view.Output3dView>
+    <com.sonyericsson.android.camera3d.viewer.view.Output3dView android:id="@id/switcherframe" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewSwitcher android:id="@id/switcher" android:background="@android:color/black" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+            <ImageView android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        </ViewSwitcher>
+    </com.sonyericsson.android.camera3d.viewer.view.Output3dView>
+    <include android:id="@id/reviewicon" layout="@layout/album_icons" />
+</RelativeLayout>

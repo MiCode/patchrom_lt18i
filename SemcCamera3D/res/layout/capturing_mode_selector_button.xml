@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/capturing_mode_selector_button_frame" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sonyericsson.android.camera.capturingmodeselector.CapturingModeSelectorButtonView android:id="@id/capturing_mode_selector_button" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="@dimen/capturing_mode_selector_button_item_width" android:layout_height="@dimen/capturing_mode_selector_button_item_height" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

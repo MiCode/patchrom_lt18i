@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="drawableTable" format="reference" />
+    <item type="attr" name="photostack_acceleration">1000</item>
+    <item type="attr" name="photostack_thumbnail_num">5</item>
+    <item type="attr" name="photostack_menu_item_count">3</item>
+    <item type="attr" name="cam_recent_shot_direct_right2left">false</item>
+    <item type="attr" name="cam_recent_shot_anim_duration_shutter">150</item>
+    <item type="attr" name="cam_recent_shot_anim_duration_put_up">150</item>
+    <item type="attr" name="cam_recent_shot_controller_fo_delay">3000</item>
+    <item type="attr" name="cam_recent_shot_controller_fo_duration">1000</item>
+    <item type="attr" name="cam_recent_shot_whole_max_num">5</item>
+    <item type="attr" name="cam_recent_shot_max_num_portrait">4</item>
+    <item type="attr" name="cam_recent_shot_max_num_landscape">5</item>
+    <item type="attr" name="textShadowDx">0.0</item>
+    <item type="attr" name="textShadowDy">0.0</item>
+    <item type="attr" name="textShadowRadious">4.0</item>
+    <item type="attr" name="scene_fade_out_delay">2000</item>
+    <item type="attr" name="scene_fade_out_duration">1000</item>
+    <item type="attr" name="sliding_drawer_acceleration">3000</item>
+    <item type="attr" name="settings_fade_out_delay">2000</item>
+    <item type="attr" name="settings_fade_out_duration">1000</item>
+    <item type="attr" name="player_slide_animation_duration">240</item>
+    <item type="attr" name="player_load_image_interval">360</item>
+</resources>

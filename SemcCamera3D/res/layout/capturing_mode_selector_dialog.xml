@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sonyericsson.android.camera.capturingmodeselector.CapturingModeSelectorDialogView android:id="@id/capturing_mode_selector_dialog" android:focusable="true" android:focusableInTouchMode="true" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dummy_viewfinder" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/dialog" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@id/dilaog_background" android:background="@drawable/cam_dialog_background_icn" android:paddingLeft="@dimen/capturing_mode_selector_dialog_side_padding_landscape" android:paddingRight="@dimen/capturing_mode_selector_dialog_side_padding_landscape" android:paddingBottom="@dimen/capturing_mode_selector_dialog_bottom_padding_landscape" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <com.sonyericsson.android.camera.capturingmodeselector.CapturingModeSelectorListView android:id="@id/dialog_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/capturing_mode_selector_dialog_top_padding_landscape" android:layout_alignParentTop="true" numColumns="@integer/capturing_mode_selector_dialog_grid_column_num" numRows="@integer/capturing_mode_selector_dialog_grid_row_num" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.sonyericsson.android.camera.capturingmodeselector.CapturingModeSelectorDialogView>

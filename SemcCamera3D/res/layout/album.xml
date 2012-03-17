@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sonyericsson.android.camera3d.viewer.view.TouchEventGuardView android:id="@id/album" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/browser" layout="@layout/album_browser" />
+    <include android:id="@id/panorama3d" layout="@layout/album_player_3d" />
+    <include android:id="@id/multiangle" layout="@layout/album_player_ma" />
+</com.sonyericsson.android.camera3d.viewer.view.TouchEventGuardView>

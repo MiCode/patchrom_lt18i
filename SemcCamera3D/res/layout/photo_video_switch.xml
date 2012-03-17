@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sonyericsson.android.camera3d.view.PhotoVideoSwitch android:id="@id/photo_video_switch" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/back_ground" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.sonyericsson.android.camera3d.view.PhotoVideoSwitchSliderContainer android:id="@id/slider_grip_container" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/back_ground" android:layout_alignTop="@id/back_ground" android:layout_alignRight="@id/back_ground" android:layout_alignBottom="@id/back_ground" android:layout_centerHorizontal="true" android:directionality="none">
+        <ImageView android:id="@id/slider_grip" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </com.sonyericsson.android.camera3d.view.PhotoVideoSwitchSliderContainer>
+</com.sonyericsson.android.camera3d.view.PhotoVideoSwitch>

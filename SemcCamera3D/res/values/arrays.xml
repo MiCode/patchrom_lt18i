@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="viewfinder_dialog_remain_image_table">
+        <item>@drawable/cam_vf_remain_number_0_icn</item>
+        <item>@drawable/cam_vf_remain_number_1_icn</item>
+        <item>@drawable/cam_vf_remain_number_2_icn</item>
+        <item>@drawable/cam_vf_remain_number_3_icn</item>
+        <item>@drawable/cam_vf_remain_number_4_icn</item>
+        <item>@drawable/cam_vf_remain_number_5_icn</item>
+        <item>@drawable/cam_vf_remain_number_6_icn</item>
+        <item>@drawable/cam_vf_remain_number_7_icn</item>
+        <item>@drawable/cam_vf_remain_number_8_icn</item>
+        <item>@drawable/cam_vf_remain_number_9_icn</item>
+        <item>@drawable/cam_vf_remain_number_no_number_icn</item>
+    </array>
+    <array name="overlap_position_x">
+        <item>@dimen/overlap_position_x_0</item>
+        <item>@dimen/overlap_position_x_1</item>
+        <item>@dimen/overlap_position_x_2</item>
+        <item>@dimen/overlap_position_x_3</item>
+        <item>@dimen/overlap_position_x_4</item>
+    </array>
+    <array name="overlap_position_y">
+        <item>@dimen/overlap_position_y_0</item>
+        <item>@dimen/overlap_position_y_1</item>
+        <item>@dimen/overlap_position_y_2</item>
+        <item>@dimen/overlap_position_y_3</item>
+        <item>@dimen/overlap_position_y_4</item>
+    </array>
+    <integer-array name="rotation_degree">
+        <item>-5</item>
+        <item>7</item>
+        <item>-13</item>
+        <item>10</item>
+        <item>0</item>
+    </integer-array>
+</resources>
