@@ -38,7 +38,7 @@ local-zip-misc:
 #	@echo Add google apks
 #	cp misc/apk/* $(ZIP_DIR)/system/app/
 #	@echo Replace build.prop
-#	cp misc/build.prop $(ZIP_DIR)/system/build.prop
+	cp other/build.prop $(ZIP_DIR)/system/build.prop
 	cp other/Lt18iSettings.apk $(ZIP_DIR)/system/app/Lt18iSettings.apk
 
 local-test:
