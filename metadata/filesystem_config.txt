@@ -1166,6 +1166,4 @@ system/vendor/firmware 0 2000 755
 system/vendor/firmware/hdcp.keys 2126152454 0 1752
 system/xbin 0 2000 755
 system/xbin/dexdump 0 2000 755
-system/xbin/invoke-as 0 0 6755
 system/xbin/busybox 0 0 755
-system/xbin/su 0 0 6755
