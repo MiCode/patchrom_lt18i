@@ -17,6 +17,8 @@ local-miui-modified-apps := MiuiHome Mms #ThemeManager Mms TelephonyProvider Miu
 
 local-miui-removed-apps  := Phone MediaProvider
 
+local-phone-apps = Maps
+
 # All apps need to be removed from original ZIP file
 local-remove-apps   := AdobeFlashPlayer Conversations datatrafficswitch DigitalClockWidget EventStream EventStreamPluginCallLog EventStreamPluginFacebook EventStreamPluginTelephony EventStreamPluginTwitter FBIAppShare FBMediaDiscovery FBSetupwizard FBCalendarSync FBMusicLike FBNotificationPublisher GenieWidget JapaneseIME letsgolf_ay livewaremanager MagicSmokeWallpapers MediaWidget MusicWidget officesuite PhotoWidget playnowclientarvato POBoxSknPink POBoxSknWood PostViewer retaildemo SemcDeskClock SemcDlna SEMCFacebookProxy SemcVideoEdit StatusSwitch storefront SyncWizard Talk TimescapeRssPlugin TimescapeSpline TimescapeWidget trackid TtsService usersupport VisualizationWallpapers WallpaperPicker WeatherWidget widgetdigitalclock widgetfavouritepeople widgetonoff WikipediaPlugin wisepilot YouTube YouTubeKaraokePlugin YouTubePlugin facebook SemcTelephonyProvider SemcContactsProvider LocalContacts SimContacts Phonebook SemcMusic SemcCalendar SemcGallery3D UpdateCenter SEMCSetupWizard PhaseBeam OmaDatasyncService Home Galaxy4 NoiseField SystemUI InfiniteView Gallery2 SemcSettings OemCryptoReceiver Videos textinput-tng
 
