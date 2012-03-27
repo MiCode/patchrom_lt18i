@@ -4333,7 +4333,7 @@
 
     move/from16 v1, v25
 
-    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindow;->clearFlags(I)V
+    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindow;->addFlags(I)V
 
     goto/16 :goto_6
 
