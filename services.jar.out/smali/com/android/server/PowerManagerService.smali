@@ -9274,26 +9274,23 @@
 
     throw v2
 
-    .line 2597
     :cond_1
+    invoke-direct {p0, p1}, Lcom/android/server/PowerManagerService;->checkRecovery(Ljava/lang/String;)V
+
     move-object v0, p1
 
-    .line 2598
     .local v0, finalReason:Ljava/lang/String;
     new-instance v1, Lcom/android/server/PowerManagerService$11;
 
     invoke-direct {v1, p0, v0}, Lcom/android/server/PowerManagerService$11;-><init>(Lcom/android/server/PowerManagerService;Ljava/lang/String;)V
 
-    .line 2607
     .local v1, runnable:Ljava/lang/Runnable;
     iget-object v2, p0, Lcom/android/server/PowerManagerService;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v2, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 2610
     monitor-enter v1
 
-    .line 2613
     :goto_0
     :try_start_0
     invoke-virtual {v1}, Ljava/lang/Object;->wait()V
@@ -10799,4 +10796,46 @@
 
     .line 2348
     return-void
+.end method
+
+.method private checkRecovery(Ljava/lang/String;)V
+    .locals 2
+    .parameter "reason"
+
+    .prologue
+    const-string v1, "recovery"
+
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    :goto_0
+    return-void
+
+    :cond_0
+    :try_start_0
+    new-instance v0, Ljava/io/FileWriter;
+
+    const-string v1, "/cache/recovery/boot"
+
+    invoke-direct {v0, v1}, Ljava/io/FileWriter;-><init>(Ljava/lang/String;)V
+
+    .local v0, writer:Ljava/io/FileWriter;
+    const-string v1, "true"
+
+    invoke-virtual {v0, v1}, Ljava/io/FileWriter;->write(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/io/FileWriter;->close()V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    .end local v0           #writer:Ljava/io/FileWriter;
+    :catch_0
+    move-exception v1
+
+    goto :goto_0
 .end method

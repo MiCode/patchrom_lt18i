@@ -457,11 +457,8 @@
     .end annotation
 .end field
 
-<<<<<<< HEAD
 .field mRoundedCorners:Lcom/android/server/wm/RoundedCornersSurface;
 
-=======
->>>>>>> new *.jar.out from  stockrom.zip
 .field mSafeMode:Z
 
 .field mScreenFrozenLock:Landroid/os/PowerManager$WakeLock;
@@ -7366,7 +7363,6 @@
 
     iget-object v8, v0, Lcom/android/server/wm/WindowManagerService;->mWindows:Ljava/util/ArrayList;
 
-<<<<<<< HEAD
     move-object/from16 v0, p0
 
     iget v10, v0, Lcom/android/server/wm/WindowManagerService;->mRotation:I
@@ -7379,9 +7375,6 @@
 
     invoke-static {}, Landroid/view/Surface;->closeTransaction()V
 
-=======
-    .line 8669
->>>>>>> new *.jar.out from  stockrom.zip
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/server/wm/WindowManagerService;->mWatermark:Lcom/android/server/wm/Watermark;
@@ -38667,7 +38660,6 @@
 
     return-object v0
 .end method
-<<<<<<< HEAD
 
 .method private createRoundCorners(II)V
     .locals 6
@@ -38712,5 +38704,3 @@
     return-void
 .end method
 
-=======
->>>>>>> new *.jar.out from  stockrom.zip
