@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Pangenalan sawangan</string>
-    <string name="cam_strings_shortcut_normal_txt">Normal</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Pangenal sawang(kamera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normal(kamera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Kamera ngarep</string>
     <string name="cam_strings_shortcut_video_camera_txt">Kamera video</string>
     <string name="cam_strings_shortcut_front_video_txt">Video ngarep</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Lokasi sing ditemokake nganggo GPS mesthi luwih diutamakake tinimbang jaringan nirkabel. Kanggo ngganti cara nggoleki lokasi, bukak Setelan > Lokasi.</string>
     <string name="cam_strings_do_not_show_again_txt">Aja tuduhake maneh</string>
     <string name="cam_strings_unavailable_in_scene_txt">Ora bisa diganti karo kombinasi setelan Sawangan saiki</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Ora kasedhiya yen Smile Shutter™ aktif</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Ora kasedhiya yen deteksi eseman aktif</string>
     <string name="cam_3d_strings_dialog_delete_txt">Busak file iki?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Uga Multi Sudhut</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Uga file 3D</string>
@@ -202,7 +202,7 @@ Cathetan: File kasebut ngemot area abu-abu."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Uga kasedhiya gambar 3D kanggo potret Multi Sudhut iki. Busak kabeh?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">OnlyM.Angle</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Mung 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Ora bisa nggunakake mode iki yen kabel HDMI disambungake. Jabut kabel luwih dhisik.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Jabut kabel. Ora bisa njupuk foto ing mode iki yen kabel disambungake.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Kanggo ndeleng file iki ing 3D, gunakake piranti sing ndhukung 3D.</string>
     <string name="cam_status_remained_min">%1$d mnt.</string>
     <string name="cam_strings_both_location_fail_txt">Ora bisa nemtokake lokasi</string>
@@ -216,7 +216,7 @@ Cathetan: File kasebut ngemot area abu-abu."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Cara nggoleki lokasi</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Busak</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Ora bisa motret</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI salah</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Salah</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Kasedhiya remot kontrol</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Busak</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Nyimpen gambar</string>
@@ -279,9 +279,9 @@ Cathetan: File kasebut ngemot area abu-abu."</string>
     <string name="cam_strings_cancel_txt">Wurung</string>
     <string name="cam_strings_zoom_help_txt">Gunakake tombol swara kanggo nggedhekake/nyilikake</string>
     <string name="cam_strings_zoom_not_supported_txt">Ora bisa zoom ing mode iki</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Kanggo ndeleng potret ing 3D, sambungake kamera menyang TV 3D nganggo HDMI utawa tutul tombol Puter ing.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Kanggo ndeleng foto ing 3D, sambungake telpon menyang TV 3D nganggo HDMI utawa tutul tombol Puter ing piranti.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Demek layar kanggo ngrekam video</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Kanggo ndeleng foto iki ing 3D, sambungake telpon menyang TV 3D kanthi nutul tombol Puter ing.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Kanggo ndeleng foto iki ing 3D, sambungake telpon menyang TV 3D kanthi nutul tombol Puter ing piranti.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Kertu SD ora kasedhiya. Lokasi panyimpenan gawan diganti dadi panyimpenan internal.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">Kertu SD kasedhiya. Lokasi panyimpenan gawan diganti dadi panyimpenan internal.</string>
 </resources>

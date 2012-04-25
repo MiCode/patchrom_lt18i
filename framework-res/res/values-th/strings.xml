@@ -229,7 +229,7 @@
     <string name="ClirMmi">ID ผู้โทรออก</string>
     <string name="CfMmi">การโอนสาย</string>
     <string name="CwMmi">สายเรียกซ้อน</string>
-    <string name="BaMmi">การจำกัดการโทร</string>
+    <string name="BaMmi">จำกัดการโทร</string>
     <string name="PwdMmi">การเปลี่ยนรหัสผ่าน</string>
     <string name="PinMmi">การเปลี่ยน PIN</string>
     <string name="CnipMmi">เบอร์โทรที่มีอยู่</string>
@@ -328,7 +328,7 @@
     <string name="global_actions_airplane_mode_on_status">เปิดโหมดใช้งานบนเครื่องบิน</string>
     <string name="global_actions_airplane_mode_off_status">ปิดโหมดใช้งานบนเครื่องบิน</string>
     <string name="safeMode">เซฟโหมด</string>
-    <string name="android_system_label">Android System</string>
+    <string name="android_system_label">ระบบของแอนดรอยด์</string>
     <string name="permgrouplab_costMoney">บริการที่คิดค่าบริการจากคุณ</string>
     <string name="permgroupdesc_costMoney">อนุญาตให้แอปพลิเคชันทำสิ่งต่างๆ ซึ่งเรียกเก็บเงินจากคุณ</string>
     <string name="permgrouplab_messages">ข้อความของคุณ</string>
@@ -649,16 +649,17 @@
     <string name="permdesc_mount_unmount_filesystems">อนุญาตให้แอปพลิเคชันนี้ต่อเชื่อมและยกเลิกต่อเชื่อมระบบไฟล์สำหรับหน่วยความจำแบบถอดออกได้</string>
     <string name="permlab_mount_format_filesystems">ฟอร์แมตหน่วยความจำภายนอก</string>
     <string name="permdesc_mount_format_filesystems">อนุญาตให้แอปพลิเคชันนี้ฟอร์แมตหน่วยความจำแบบถอดออกได้</string>
-    <string name="permlab_asec_access">รับข้อมูลเกี่ยวกับหน่วยความจำภายใน</string>
-    <string name="permdesc_asec_access">อนุญาตให้แอปพลิเคชันรับข้อมูลจากหน่วยความจำภายใน</string>
-    <string name="permlab_asec_create">สร้างหน่วยความจำภายใน</string>
-    <string name="permdesc_asec_create">อนุญาตให้แอปพลิเคชันสร้างหน่วยความจำภายใน</string>
-    <string name="permlab_asec_destroy">ลบหน่วยความจำภายใน</string>
-    <string name="permdesc_asec_destroy">อนุญาตให้แอปพลิเคชันลบหน่วยความจำภายใน</string>
-    <string name="permlab_asec_mount_unmount">ต่อเชื่อม / ยกเลิกต่อเชื่อมหน่วยความจำภายใน</string>
-    <string name="permdesc_asec_mount_unmount">อนุญาตให้แอปพลิเคชันต่อเชื่อม/ยกเลิกต่อเชื่อมหน่วยความจำภายใน</string>
-    <string name="permlab_asec_rename">เปลี่ยนชื่อหน่วยความจำภายใน</string>
-    <string name="permdesc_asec_rename">อนุญาตให้แอปพลิเคชันเปลี่ยนชื่อหน่วยความจำภายใน</string>
+    <string name="permlab_asec_access">รับข้อมูลเกี่ยวกับที่เก็บข้อมูลภายใน</string>
+    <string name="permdesc_asec_access">อนุญาตให้แอปพลิเคชันรับข้อมูลจากที่เก็บข้อมูลภายใน</string>
+    <string name="permlab_asec_create">สร้างที่เก็บข้อมูลภายใน</string>
+    <string name="permdesc_asec_create">อนุญาตให้แอปพลิเคชันสร้างที่เก็บข้อมูลภายใน</string>
+    <string name="permlab_asec_destroy">ลบที่เก็บข้อมูลภายใน</string>
+    <string name="permdesc_asec_destroy">อนุญาตให้แอปพลิเคชันลบที่เก็บข้อมูลภายใน</string>
+    <string name="permlab_asec_mount_unmount">ต่อเชื่อม / ยกเลิกต่อเชื่อมที่เก็บข้อมูลภายใน</string>
+    <string name="permdesc_asec_mount_unmount">อนุญาตให้แอปพลิเคชันต่อเชื่อม/ยกเลิกต่อเชื่อมที่เก็บข้อมูลภายใน</string>
+    <string name="permlab_asec_rename">เปลี่ยนชื่อที่เก็บข้อมูลภายใน</string>
+    <string name="permdesc_asec_rename">"อนุญาตให้แอปพลิเคชันเปลี่ยนชื่อที่เก็บข้อมูล
+ภายใน"</string>
     <string name="permlab_vibrate">ควบคุมระบบสั่น</string>
     <string name="permdesc_vibrate">อนุญาตให้แอปพลิเคชันควบคุมระบบสั่น</string>
     <string name="permlab_flashlight">ควบคุมแสงแฟลช</string>
@@ -947,7 +948,7 @@
     <string name="lockscreen_plugged_in">กำลังชาร์จ, %d%%</string>
     <string name="lockscreen_charged">เต็มแล้ว</string>
     <string name="lockscreen_battery_short">%d%%</string>
-    <string name="lockscreen_low_battery">ต่อเครื่องชาร์จ</string>
+    <string name="lockscreen_low_battery">เสียบสายชาร์จด่วน</string>
     <string name="lockscreen_missing_sim_message_short">ไม่มี SIM การ์ด</string>
     <string name="lockscreen_missing_sim_message">ไม่มี SIM การ์ดในโทรศัพท์</string>
     <string name="lockscreen_missing_sim_instructions">โปรดใส่ SIM การ์ด</string>
@@ -1035,12 +1036,12 @@
     <string name="autofill_parish">เขตการปกครองท้องถิ่น</string>
     <string name="autofill_area">พื้นที่</string>
     <string name="autofill_emirate">เอมิเรต</string>
-    <string name="permlab_readHistoryBookmarks">อ่านประวัติและบุ้คมาร์กของเบราเซอร์</string>
+    <string name="permlab_readHistoryBookmarks">อ่านประวัติและบุ๊คมาร์กของเบราเซอร์</string>
     <string name="permdesc_readHistoryBookmarks">"อนุญาตให้แอปพลิเคชันนี้อ่าน URL ทั้งหมดที่เบราเซอร์เคยเข้าชมและ
-บุ้คมาร์กของเบราเซอร์นี้ทั้งหมด"</string>
-    <string name="permlab_writeHistoryBookmarks">เขียนประวัติและบุ้คมาร์กของเบราเซอร์</string>
+บุ๊คมาร์กของเบราเซอร์นี้ทั้งหมด"</string>
+    <string name="permlab_writeHistoryBookmarks">เขียนประวัติและบุ๊คมาร์กของเบราเซอร์</string>
     <string name="permdesc_writeHistoryBookmarks">"อนุญาตให้แอปพลิเคชันปรับเปลี่ยนประวัติหรือ
-บุ้คมาร์กของเบราว์เซอร์ที่จัดเก็บไว้บนโทรศัพท์
+บุ๊คมาร์กของเบราว์เซอร์ที่จัดเก็บไว้บนโทรศัพท์
 ของคุณ แอปพลิเคชันที่เป็นอันตรายอาจใช้วิธีนี้
 ในการลบหรือปรับเปลี่ยนข้อมูลเบราว์เซอร์
 ของคุณได้"</string>
@@ -1109,11 +1110,11 @@
     <string name="low_internal_storage_view_title">พื้นที่เหลือน้อย</string>
     <string name="low_internal_storage_view_text">พื้นที่เก็บข้อมูลของโทรศัพท์เหลือน้อย</string>
     <string name="loading">กำลังโหลด...</string>
-    <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_on">เปิด</string>
+    <string name="capital_off">ปิด</string>
     <string name="whichApplication">ดำเนินการเสร็จโดยใช้</string>
     <string name="alwaysUse">ใช้เป็นค่าเริ่มต้นสำหรับการดำเนินการนี้</string>
-    <string name="clearDefaultHintMsg">ล้างข้อมูลค่าเริ่มต้นในการตั้งค่าหน้าแรก > แอปพลิเคชัน > จัดการแอปพลิเคชัน</string>
+    <string name="clearDefaultHintMsg">ลบค่าเริ่มต้นในการตั้งค่า > แอป</string>
     <string name="chooseActivity">เลือกการดำเนินการ</string>
     <string name="chooseUsbActivity">เลือกแอปพลิเคชันสำหรับอุปกรณ์ USB</string>
     <string name="noApplications">ไม่มีแอปพลิเคชันที่ดำเนินการงานนี้ได้</string>
@@ -1206,13 +1207,13 @@
     <string name="no_permissions">ไม่ต้องขออนุญาต</string>
     <string name="perms_hide"><b>ซ่อน</b></string>
     <string name="perms_show_all"><b>แสดงทั้งหมด</b></string>
-    <string name="usb_storage_activity_title">หน่วยความจำแบบ USB</string>
+    <string name="usb_storage_activity_title">ที่เก็บข้อมูลขนาดใหญ่แบบ USB</string>
     <string name="usb_storage_title">เชื่อมต่อ USB แล้ว</string>
     <string name="usb_storage_message">"คุณได้เชื่อมต่อกับคอมพิวเตอร์ของคุณแล้วผ่าน USB สัมผัสปุ่มข้างล่างหากคุณต้องการคัดลอก
 ไฟล์ระหว่างคอมพิวเตอร์ของคุณกับการ์ด SD สำหรับแอนดรอยด์ของคุณ"</string>
     <string name="usb_storage_button_mount">เปิดหน่วยความจำแบบ USB</string>
-    <string name="usb_storage_error_message">"มีปัญหาเกิดขึ้นกับการใช้การ์ด SD ของคุณ
-เป็นอุปกรณ์จัดเก็บข้อมูลแบบ USB"</string>
+    <string name="usb_storage_error_message">"มีปัญหาเกิดขึ้นในการใช้การ์ด SD ของคุณ
+เป็นที่เก็บข้อมูลขนาดใหญ่แบบ USB"</string>
     <string name="usb_storage_notification_title">เชื่อมต่อ USB แล้ว</string>
     <string name="usb_storage_notification_message">เลือกเพื่อคัดลอกไฟล์ไปยัง/มาจากคอมพิวเตอร์ของคุณ</string>
     <string name="usb_storage_stop_notification_title">ปิดหน่วยความจำแบบ USB</string>
@@ -1421,14 +1422,14 @@
     <string name="launchBrowserDefault">เรียกใช้เบราว์เซอร์?</string>
     <string name="SetupCallDefault">รับสาย?</string>
     <string name="dialer_keyboard_hint_txt">ใช้แป้นพิมพ์โทร</string>
-    <string name="general_dialpad_voicemail_txt">วอยซ์เมล</string>
+    <string name="general_dialpad_voicemail_txt">ข้อความเสียง</string>
     <string name="gui_cancel_txt">ยกเลิก</string>
     <string name="gui_ok_txt">ตกลง</string>
     <string name="lockscreen_strings_locked_out_wrong_answer_txt">คำตอบไม่ถูกต้อง</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM การ์ดถูกบล็อค</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">ป้อน PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM การ์ดถูกบล็อค</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">ป้อนรหัส PUK ที่ผู้ให้บริการของคุณจัดให้</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">ป้อนรหัส PUK ที่ได้รับจากผู้ให้บริการของคุณ</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">โปรดติดต่อผู้ให้บริการของคุณ</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">ป้อน PIN ใหม่</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">ป้อน PIN ใหม่ซ้ำ</string>

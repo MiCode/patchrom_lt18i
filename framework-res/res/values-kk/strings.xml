@@ -212,7 +212,7 @@
     <string name="passwordIncorrect">Кілтсөз дұрыс емес.</string>
     <string name="mmiComplete">MMI аяқталды.</string>
     <string name="badPin">Енгізілген ескі PIN коды дұрыс емес.</string>
-    <string name="badPuk">Енгізілген PUK коды дұрыс емес.</string>
+    <string name="badPuk">Терілген PUK коды дұрыс емес.</string>
     <string name="mismatchPin">Енгізілген PIN кодтары сәйкес келмейді.</string>
     <string name="invalidPin">4-8 саннан тұр. PIN код-н тер-з.</string>
     <string name="invalidPuk">8 немесе одан көп саннан тұратын PUK кодын теріңіз.</string>
@@ -745,7 +745,7 @@
     <string name="lockscreen_instructions_when_pattern_enabled">Құлпын ашу үшін \"Мәзір\" пернесін басыңыз не төтенше қызметке соғылған қоңырауды қойыңыз.</string>
     <string name="lockscreen_instructions_when_pattern_disabled">Құлпын ашу үшін \"Мәзір\" пернесін басыңыз.</string>
     <string name="lockscreen_pattern_instructions">Құлпын ашу үшін үлгіні салыңыз</string>
-    <string name="lockscreen_emergency_call">Төтенше қызметке қоңырау соғу</string>
+    <string name="lockscreen_emergency_call">Жедел қоңырау</string>
     <string name="lockscreen_return_to_call">Қоңырауға оралу</string>
     <string name="lockscreen_pattern_correct">Дұрыс!</string>
     <string name="lockscreen_pattern_wrong">Кешіріңіз, әрекетті қайталаңыз</string>
@@ -908,7 +908,7 @@
     <string name="capital_off">〇</string>
     <string name="whichApplication">Әрекетті аяқтау</string>
     <string name="alwaysUse">Әрекет үшін әдепкі мәні бой. пай.</string>
-    <string name="clearDefaultHintMsg">Басты параметрлер > Бағдарламалар > Бағдарламаларды басқару тармағында әдепкі мәнді өшіріңіз.</string>
+    <string name="clearDefaultHintMsg">Әдепкі Параметрлер > Қолданбаларды тазалау</string>
     <string name="chooseActivity">Әрекетті таңдаңыз</string>
     <string name="chooseUsbActivity">USB құрылғысы үшін бағдарлама таңдау</string>
     <string name="noApplications">Бұл әрекетті ешқандай бағдарлама орындай алмайды.</string>
@@ -1023,7 +1023,7 @@
     <string name="extmedia_format_message">SD картасын пішімдеу керек пе? Картадағы бүкіл деректер жойылады.</string>
     <string name="extmedia_format_button_format">Пішімі</string>
     <string name="adb_active_notification_title">USB арқылы жөндеу қосылған</string>
-    <string name="adb_active_notification_message">USB арқылы жөндеудің ажыратылуын таңд-з.</string>
+    <string name="adb_active_notification_message">USB арқылы жөндеудің ажыратылуын таңд.</string>
     <string name="select_input_method">Енгізу әдісін таңдау</string>
     <string name="configure_input_methods">Теру әдістерін конфигурациялау</string>
     <string name="fast_scroll_alphabet">" АӘБВГҒДЕЁЖЗИЙКҚЛМНҢОӨПРСТУҰҮФХҺЦЧШЩЪЫІЬЭЮЯABCDEFGHIJKLMNOPQRSTUVWXYZ"</string>
@@ -1213,7 +1213,7 @@
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM картасы бұғатталғ.</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">PUK кодын енгізіңіз</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM картасы құлыпталған</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Оператор берген PUK кодын енгізіңіз</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Желі операторы берген PUK кодын енгізіңіз</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Операторға хабарласыңыз</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Жаңа PIN кодын енгізіңіз</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Жаңа PIN кодын қайталаңыз</string>

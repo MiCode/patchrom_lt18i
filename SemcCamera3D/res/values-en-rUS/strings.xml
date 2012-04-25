@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Scene recognition(camera)</string>
-    <string name="cam_strings_shortcut_normal_txt">Normal(camera)</string>
     <string name="cam_strings_resolution_1mp_4x3_txt">"1 MP  4:3"</string>
     <string name="cam_strings_resolution_1mp_16x9_txt">"1 MP  16:9"</string>
     <string name="cam_strings_resolution_2mp_4x3_txt">"2 MP  4:3"</string>
@@ -20,7 +18,6 @@
     <string name="cam_strings_photometry_center_txt">Center</string>
     <string name="cam_strings_image_stabilizer_txt">Image stabilizer</string>
     <string name="cam_strings_show_popup_again_txt">To show this dialog, go to Settings > Applications > Manage applications.</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Not available when smile detection is active</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Multi Angle, too</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">3D file, too</string>
     <string name="cam_3d_strings_creating_but_too_quick_txt">Could not complete the capturing. Please pan more slowly.</string>
@@ -34,11 +31,7 @@ This image contains a gray area"</string>
 Note: These files contain a gray area."</string>
     <string name="cam_3d_strings_shooting_guide_press_key_txt">Press camera key and then slowly pan the camera</string>
     <string name="cam_3d_strings_shooting_guide_touch_cap_txt">Tap viewfinder and then slowly pan the camera</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Unplug the cable. You cannot take a photo in this mode with a cable connected.</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Error</string>
     <string name="cam_strings_error_memory_ims_read_only_txt">Memory write-protected. Could not edit files.</string>
     <string name="cam_strings_fast_capturing_activated_txt">Quick Launch mode</string>
     <string name="cam_strings_image_stabilizer_title_txt">Image stabilizer</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">To view a photo in 3D, connect your phone to a 3D TV by using a HDMI or tapping Play on device button.</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">To view this photo in 3D, connect your phone to a 3D TV by tapping Play on device button.</string>
 </resources>

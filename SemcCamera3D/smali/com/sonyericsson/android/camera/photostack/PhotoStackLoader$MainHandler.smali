@@ -30,7 +30,7 @@
     .parameter
 
     .prologue
-    .line 936
+    .line 941
     iput-object p1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$MainHandler;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -44,7 +44,7 @@
     .parameter "x1"
 
     .prologue
-    .line 936
+    .line 941
     invoke-direct {p0, p1}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$MainHandler;-><init>(Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;)V
 
     return-void
@@ -56,12 +56,12 @@
     .locals 2
 
     .prologue
-    .line 950
+    .line 955
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$MainHandler;->removeMessages(I)V
 
-    .line 951
+    .line 956
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$MainHandler;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
     #getter for: Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mReloadTask:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncReloadTask;
@@ -71,7 +71,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 952
+    .line 957
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$MainHandler;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
     #getter for: Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mReloadTask:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncReloadTask;
@@ -83,7 +83,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncReloadTask;->cancel(Z)Z
 
-    .line 954
+    .line 959
     :cond_0
     return-void
 .end method
@@ -93,14 +93,14 @@
     .parameter "msg"
 
     .prologue
-    .line 958
+    .line 963
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
-    .line 959
+    .line 964
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$MainHandler;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
     #calls: Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->isWaiting()Z
@@ -110,7 +110,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 960
+    .line 965
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$MainHandler;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
     new-instance v1, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncReloadTask;
@@ -124,7 +124,7 @@
     #setter for: Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mReloadTask:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncReloadTask;
     invoke-static {v0, v1}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->access$702(Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncReloadTask;)Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncReloadTask;
 
-    .line 961
+    .line 966
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$MainHandler;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
     #getter for: Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mReloadTask:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncReloadTask;
@@ -138,7 +138,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncReloadTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 964
+    .line 969
     :cond_0
     return-void
 .end method
@@ -147,7 +147,7 @@
     .locals 2
 
     .prologue
-    .line 941
+    .line 946
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$MainHandler;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
     sget-object v1, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$State;->Waiting:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$State;
@@ -155,12 +155,12 @@
     #setter for: Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mState:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$State;
     invoke-static {v0, v1}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->access$602(Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$State;)Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$State;
 
-    .line 942
+    .line 947
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$MainHandler;->sendEmptyMessage(I)Z
 
-    .line 943
+    .line 948
     return-void
 .end method
 
@@ -168,13 +168,13 @@
     .locals 3
 
     .prologue
-    .line 946
+    .line 951
     const/4 v0, 0x1
 
     const-wide/16 v1, 0x3e8
 
     invoke-virtual {p0, v0, v1, v2}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$MainHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 947
+    .line 952
     return-void
 .end method

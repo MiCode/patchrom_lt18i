@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 566
+    .line 562
     iput-object p1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$StoreCallback;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .parameter "x1"
 
     .prologue
-    .line 566
+    .line 562
     invoke-direct {p0, p1}, Lcom/sonyericsson/android/camera3d/SweepCameraController$StoreCallback;-><init>(Lcom/sonyericsson/android/camera3d/SweepCameraController;)V
 
     return-void
@@ -59,7 +59,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 577
+    .line 573
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$StoreCallback;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v1, v1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
@@ -68,14 +68,14 @@
 
     invoke-virtual {v1}, Lcom/sonyericsson/android/camera3d/CameraActivity;->enableAutoOffTimer()V
 
-    .line 578
+    .line 574
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$StoreCallback;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget v2, p1, Lcom/sonyericsson/android/camera3d/TakenStatus;->mRequestId:I
 
     invoke-virtual {v1, p2, v2}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->showStoreResult(II)V
 
-    .line 581
+    .line 577
     const/4 v1, 0x3
 
     new-array v0, v1, [Ljava/lang/Object;
@@ -94,7 +94,7 @@
 
     aput-object p4, v0, v1
 
-    .line 582
+    .line 578
     .local v0, results:[Ljava/lang/Object;
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$StoreCallback;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
@@ -104,7 +104,7 @@
 
     invoke-virtual {v1, v2, v3, v0}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendRapidEvent(IILjava/lang/Object;)V
 
-    .line 583
+    .line 579
     return-void
 .end method
 
@@ -116,7 +116,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 569
+    .line 565
     const/4 v1, 0x2
 
     new-array v0, v1, [Ljava/lang/Integer;
@@ -135,7 +135,7 @@
 
     aput-object v2, v0, v1
 
-    .line 570
+    .line 566
     .local v0, progress:[Ljava/lang/Integer;
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$StoreCallback;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
@@ -145,6 +145,6 @@
 
     invoke-virtual {v1, v2, v3, v0}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 571
+    .line 567
     return-void
 .end method

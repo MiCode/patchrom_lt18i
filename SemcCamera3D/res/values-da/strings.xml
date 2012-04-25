@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Motivgenkendelse</string>
-    <string name="cam_strings_shortcut_normal_txt">Normal</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Motivgenkend. (kamera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normal (kamera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Frontkamera</string>
     <string name="cam_strings_shortcut_video_camera_txt">Videokamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Forreste video</string>
     <string name="cam_strings_scenes_auto_recog_portrait_txt">Portræt</string>
     <string name="cam_strings_scenes_auto_recog_landscape_txt">Landskab</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_txt">Baggrundslys</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Baggrundslys, portræt</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_txt">Modlys</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Modlys, portræt</string>
     <string name="cam_strings_scenes_auto_recog_twilight_txt">Natscene</string>
     <string name="cam_strings_scenes_auto_recog_twilight_portrait_txt">Natportræt</string>
     <string name="cam_strings_scenes_auto_recog_text_txt">Dokument</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Placering opnået med GPS går altid forud for trådløse netværk. For at skifte metode for opnåelse af placering skal du gå til Indstillinger > Placering.</string>
     <string name="cam_strings_do_not_show_again_txt">Vis ikke igen</string>
     <string name="cam_strings_unavailable_in_scene_txt">Kan ikke ændres sammen med den aktuelle motivindstilling</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Ikke tilgængelig, når Smile Shutter™ er aktiv</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Ikke tilgængelig, når smileregistrering er aktiv</string>
     <string name="cam_3d_strings_dialog_delete_txt">Vil du slette denne fil?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Også multivinkelfil</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Også 3D-fil</string>
@@ -156,7 +156,7 @@
     <string name="cam_3d_strings_setting_shooting_direction_left_txt">Venstre</string>
     <string name="cam_3d_strings_setting_shooting_direction_up_txt">Opad</string>
     <string name="cam_3d_strings_setting_shooting_direction_down_txt">Nedad</string>
-    <string name="cam_3d_strings_album_multi_angle_view_guide_txt">Vip telefonen til højre eller venstre</string>
+    <string name="cam_3d_strings_album_multi_angle_view_guide_txt">Drej telefonen til højre eller venstre</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_txt">Opret forbindelse til et 3D-tv via et HDMI-kabel for at se 3D-billedet</string>
     <string name="cam_3d_strings_error_zoom_3d_sweep_panorama_txt">Zoom er ikke tilgængelig i 3D-panorering</string>
     <string name="cam_3d_strings_error_zoom_sweep_multi_angle_txt">Zoom er ikke tilgængelig i Multivinkelpanorering</string>
@@ -202,7 +202,7 @@ Bemærk: Disse filer indeholder et gråt område."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Der findes også et 3D-billede til dette multivinkelbillede. Slet begge?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Kun m.vink.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Kun 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Denne tilstand kan ikke bruges, når der er tilsluttet et HDMI-kabel. Tag kablet ud.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Tag kablet ud. Du kan ikke tage et foto i dene tilstand med et kabel tilsluttet.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Brug en 3D-understøttet enhed til at se denne fil i 3D.</string>
     <string name="cam_status_remained_min">%1$d min.</string>
     <string name="cam_strings_both_location_fail_txt">Kan ikke oprette placering</string>
@@ -216,7 +216,7 @@ Bemærk: Disse filer indeholder et gråt område."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Sådan opnås en placering</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Slet</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Kunne ikke optage</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI-fejl</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Fejl</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Fjernbetjening kan fås</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Slet</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Gemmer billede</string>
@@ -279,9 +279,9 @@ Bemærk: Disse filer indeholder et gråt område."</string>
     <string name="cam_strings_cancel_txt">Annuller</string>
     <string name="cam_strings_zoom_help_txt">Brug volumentast til at zoome ind/ud</string>
     <string name="cam_strings_zoom_not_supported_txt">Kan ikke zoome i denne tilstand</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Hvis du vil se et foto i 3D, skal du slutte dit kamera til et 3D-tv ved at bruge HDMI eller tappe på knappen Afspil.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Hvis du vil have vist et foto i 3D, skal du slutte telefonen til et 3D-tv ved at bruge HDMI eller tappe på knappen Afspil.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Berør skærmen for at optage en video</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Hvis du vil have vist dette foto i 3D, skal du slutte telefonen til eet 3D-tv ved at trykke på knappen Afspil.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Hvis du vil have vist dette foto i 3D, skal du slutte telefonen til et 3D-tv ved at tappe på knappen Afspil.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Intet SD-kort tilgængeligt. Standardlagringsplaceringen blev ændret til internt lager.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">SD-kort tilgængeligt. Standardlagringsplaceringen blev ændret til SD-kort.</string>
 </resources>

@@ -915,8 +915,8 @@
     <string name="capital_on">|</string>
     <string name="capital_off">〇</string>
     <string name="whichApplication">Что использовать?</string>
-    <string name="alwaysUse">По умолчанию для этого действия</string>
-    <string name="clearDefaultHintMsg">Удалить настройки по умолчанию: главный экран > \"Настройки\" > \"Приложения\" > \"Управление приложениями\".</string>
+    <string name="alwaysUse">Использовать по умолчанию.</string>
+    <string name="clearDefaultHintMsg">Удалить параметры по умолчанию в меню \"Параметры\" > \"Приложения\".</string>
     <string name="chooseActivity">Выберите действие</string>
     <string name="chooseUsbActivity">Выберите приложение для USB-устройства</string>
     <string name="noApplications">Это действие не может выполнять ни одно приложение.</string>
@@ -1226,7 +1226,7 @@
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM-карта блокирована</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Введите PUK-код</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM-карта блокирована</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Введите PUK-код, полученный от оператора</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Введите PUK, полученный от оператора</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Обратитесь к оператору</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Введите новый PIN-код</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Повторите новый PIN-код</string>

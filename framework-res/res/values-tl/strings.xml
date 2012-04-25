@@ -910,7 +910,7 @@ Bisitahin ang "<b>google.com/accounts/recovery</b></string>
     <string name="capital_off">〇</string>
     <string name="whichApplication">Kumpleto pagkilos gamit</string>
     <string name="alwaysUse">Gamitin na default pagkilos na ito.</string>
-    <string name="clearDefaultHintMsg">I-clear ang default sa Mga Setting ng Home > Mga Application > Pamahalaan ang mga application.</string>
+    <string name="clearDefaultHintMsg">I-clear ang default sa Mga Setting > Apps.</string>
     <string name="chooseActivity">Pumili ng pagkilos</string>
     <string name="chooseUsbActivity">Pumili ng application para sa aparatong USB</string>
     <string name="noApplications">Walang mga application ang maaaring magsagawa sa pagkilos na ito.</string>
@@ -1219,7 +1219,7 @@ para sa account na %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">Naka-block ang SIM card</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Ipasok ang PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">Naka-lock ang SIM card</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Ilagay ang PUK code mula sa iyong operator</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Ilagay PUK code mula service provider mo</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Mangyaring makipag-ugnay sa iyong operator</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Ipasok ang bagong PIN</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Ulitin ang bagong PIN</string>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Camera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Nhận diện cảnh</string>
-    <string name="cam_strings_shortcut_normal_txt">Bình thường</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Nhận diện cảnh (camera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Bình thường (camera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Camera đằng trước</string>
     <string name="cam_strings_shortcut_video_camera_txt">Máy quay phim</string>
     <string name="cam_strings_shortcut_front_video_txt">Video đằng trước</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Địa điểm tìm được bằng GPS luôn được ưu tiên hơn mạng không dây. Để thay đổi phương pháp tìm, đi tới Cài đặt > Địa điểm.</string>
     <string name="cam_strings_do_not_show_again_txt">Không hiển thị lại</string>
     <string name="cam_strings_unavailable_in_scene_txt">Không thay đổi được khi kết hợp với cài đặt Cảnh chụp hiện tại</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Không sử dụng được khi Smile Shutter™đang bật</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Không sử dụng được khi chức năng dò tìm nụ cười đang bật</string>
     <string name="cam_3d_strings_dialog_delete_txt">Xoá tập tin này?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Cả ảnh Nhiều Góc</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Cả t.tin 3D</string>
@@ -204,7 +204,7 @@ Lưu ý: Các tập tin này có chứa vùng xám.
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Cũng có hình ảnh 3D cho ảnh Nhiều Góc này. Xoá cả hai?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Ảnh Nh.góc</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Chỉ ảnh 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Không thể sử dụng chế độ này bằng kết nối cáp HDMI. Hãy rút cáp ra.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Hãy rút cáp ra. Bạn không thể chụp ảnh ở chế độ này với cáp được kết nối.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Để xem tập tin này ở chế độ 3D, sử dụng thiết bị được hỗ trợ 3D.</string>
     <string name="cam_status_remained_min">%1$d phút</string>
     <string name="cam_strings_both_location_fail_txt">Không thể thiết lập vị trí</string>
@@ -218,7 +218,7 @@ Lưu ý: Các tập tin này có chứa vùng xám.
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Cách tìm địa điểm</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Xoá</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Không thể chụp ảnh</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Lỗi HDMI</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Lỗi</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Hiện có điều khiển từ xa</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Xoá</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Đang lưu hình ảnh</string>
@@ -281,9 +281,9 @@ Lưu ý: Các tập tin này có chứa vùng xám.
     <string name="cam_strings_cancel_txt">Huỷ</string>
     <string name="cam_strings_zoom_help_txt">Sử dụng phím âm lượng để phóng to/thu nhỏ</string>
     <string name="cam_strings_zoom_not_supported_txt">Không thể thu phóng ở chế độ này</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Để xem ảnh ở chế độ 3D, kết nối camera với TV 3D bằng HDMI hoặc nhấn vào nút bật Phát.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Để xem ảnh ở chế độ 3D, hãy kết nối điện thoại với TV 3D bằng HDMI hoặc nhấn nút Phát trên thiết bị.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Chạm vào màn hình để quay video</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Để xem ảnh này ở chế độ 3D, hãy kết nối điện thoại với TV 3D bằng cách nhấn nút Phát trên.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Để xem ảnh này ở chế độ 3D, hãy kết nối điện thoại với TV 3D bằng cách nhấn nút Phát trên thiết bị.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Thẻ SD không sử dụng được. Đã thay đổi vị trí lưu mặc định thành bộ nhớ trong.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">Thẻ SD sử dụng được. Đã thay đổi vị trí lưu mặc định thành thẻ SD.</string>
 </resources>

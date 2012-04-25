@@ -914,7 +914,7 @@
     <string name="capital_off">〇</string>
     <string name="whichApplication">تکمیل فعالیت با استفاده از</string>
     <string name="alwaysUse">بطور پیش فرض برای این استفاده شود.</string>
-    <string name="clearDefaultHintMsg">پاک کردن موارد پیش فرض در تنظیمات صفحه اصلی > برنامه های کاربردی > مدیریت برنامه ها.</string>
+    <string name="clearDefaultHintMsg">پاک کردن موارد پیش فرض در تنظیمات > برنامه ها.</string>
     <string name="chooseActivity">انتخاب کار</string>
     <string name="chooseUsbActivity">انتخاب برنامه برای دستگاه USB</string>
     <string name="noApplications">هیچ برنامه ای نمی تواند این کار را انجام دهد.</string>

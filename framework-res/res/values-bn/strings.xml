@@ -898,11 +898,11 @@
     <string name="low_internal_storage_view_title">জায়গা কম</string>
     <string name="low_internal_storage_view_text">ফোনের সঞ্চয় স্থান কমে আসছে৷</string>
     <string name="loading">লোড হচ্ছে...</string>
-    <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_on">চালু</string>
+    <string name="capital_off">বন্ধ</string>
     <string name="whichApplication">সম্পূর্ণ কর্মপ্রক্রিয়া ব্যবহৃত হচ্ছে</string>
-    <string name="alwaysUse">এই কর্মপ্রক্রিয়ার জন্যে বাই ডিফল্ট ব্যবহার করুন।</string>
-    <string name="clearDefaultHintMsg">ডিফল্ট ক্লিয়ার করুন এখানে হোম সেটিং>অ্যাপলিকেশন>ম্যানেজ অ্যাপলিকেশন।</string>
+    <string name="alwaysUse">এই ক্রিয়ার জন্যে ডিফল্ট রূপে ব্যবহার করুন।</string>
+    <string name="clearDefaultHintMsg">সেটিংসে ডিফল্ট সাফাই করুন>অ্যাপ্লিকেশনস।</string>
     <string name="chooseActivity">একটি কার্যকলাপ নির্বাচন করুন</string>
     <string name="chooseUsbActivity">USB যন্ত্রটির জন্য একটি অ্যাপ্লিকেশন নির্বাচন করুন</string>
     <string name="noApplications">এই কাজটি কোনো অ্যাপলিকেশন করতে পারবে না।</string>
@@ -1202,7 +1202,7 @@
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM কার্ড ব্লক হয়ে গেছে</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">PUK প্রবিষ্ট করুন</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM কার্ড লক হয়ে গেছে</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">"আপনার অপারেটর দ্বারা প্রদত্ত PUK  কোড প্রবিষ্ট করুন"</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">আপনার অপারেটর দ্বারা প্রদত্ত PUK কোড প্রবিষ্ট করুন</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">অনুগ্রহ করে আপনার অপারেটরের সাথে যোগাযোগ করুন</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">নতুন PIN প্রবিষ্ট করুন</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">নতুন PIN পুনরায় এন্টার করুন</string>

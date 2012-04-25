@@ -18,7 +18,7 @@
 
 .field static HIDDEN_APP_MIN_ADJ:I = 0x0
 
-.field static final HOME_APP_ADJ:I = 0x6
+.field static final HOME_APP_ADJ:I = 0x4
 
 .field static final MAX_HIDDEN_APPS:I = 0xf
 

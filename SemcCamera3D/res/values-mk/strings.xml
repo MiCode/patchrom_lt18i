@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Камера</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Препознавање сцена</string>
-    <string name="cam_strings_shortcut_normal_txt">Нормално</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Препозн. сцена (камера)</string>
+    <string name="cam_strings_shortcut_normal_txt">Нормално (камера)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Предна камера</string>
     <string name="cam_strings_shortcut_video_camera_txt">Видео камера</string>
     <string name="cam_strings_shortcut_front_video_txt">Предно видео</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Локацијата стекната со GPS секогаш има предност над безжичните мрежи. За да го смените начинот на добивање локација, појдете на Поставки > Локација.</string>
     <string name="cam_strings_do_not_show_again_txt">Не покажувај повторно</string>
     <string name="cam_strings_unavailable_in_scene_txt">Непроменливо во комбинација со тековната поставка на сцената</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Недостапно кога е активен Smile Shutter™</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Недостапно кога е активно препознавање на насмевката</string>
     <string name="cam_3d_strings_dialog_delete_txt">Да се избрише оваа фотографија?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">И од повеќе агли</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">И 3Д датот.</string>
@@ -201,7 +201,7 @@
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Исто така постои и 3Д слика за оваа фотографија од повеќе агли. Избришете ги двете?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">СамоM.Angl.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Само 3Д</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Не може да се користи овој режим со поврзан кабел HDMI. Исклучете го кабелот.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Исклучете го кабелот. Не можете да фотографирате во овој режим со поврзан кабел.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">За прикаж. на оваа датотека во 3Д, користете уред што поддрж. 3Д.</string>
     <string name="cam_status_remained_min">%1$d мин.</string>
     <string name="cam_strings_both_location_fail_txt">Не може да се воспостави локација</string>
@@ -212,11 +212,11 @@
     <string name="cam_strings_save_error_dialog_title_txt">Не може да се зачува</string>
     <string name="cam_strings_error_dialog_title_txt">Грешка</string>
     <string name="cam_strings_advanced_setting_geo_tag_title_txt">Вклучи гео-означув.</string>
-    <string name="cam_strings_wireless_gps_explanatory_title_txt">Како да добиете локација</string>
+    <string name="cam_strings_wireless_gps_explanatory_title_txt">Како да добиете локац.</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Избриши</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Не може да слика</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Грешка на HDMI</string>
-    <string name="cam_3d_strings_dialog_3d_output_title_txt">Достап. е далеч. управув.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Грешка</string>
+    <string name="cam_3d_strings_dialog_3d_output_title_txt">Достап. е далеч. управ.</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Избриши</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Зачувување слика</string>
     <string name="cam_strings_error_message_during_voice_call_title_txt">Во текот на глас. пов.</string>
@@ -253,7 +253,7 @@
     <string name="cam_strings_button_to_allow_txt">Дозволи</string>
     <string name="cam_strings_button_to_deny_txt">Не дозволувај</string>
     <string name="cam_strings_fast_capturing_screen_locked_title_txt">Екранот е заклучен</string>
-    <string name="cam_strings_fast_capturing_allowance_title_txt">Постави брзо стартување</string>
+    <string name="cam_strings_fast_capturing_allowance_title_txt">Пост. брзо стартување</string>
     <string name="cam_strings_fast_capturing_finish_confirmation_title_txt">Режим Брзо стартување</string>
     <string name="cam_strings_scenes_title_txt">Сцени</string>
     <string name="cam_strings_resolution_title_txt">Резолуција</string>
@@ -279,9 +279,9 @@
     <string name="cam_strings_cancel_txt">Откажи</string>
     <string name="cam_strings_zoom_help_txt">Користете го копчето за јачина на звукот за да зголемите/намалите зумирање</string>
     <string name="cam_strings_zoom_not_supported_txt">Не може да се зумира во овој режим</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">За прикажување фотографија во 3Д, поврзете ја камерата со 3Д телевизор користејќи HDMI или допирајќи го копчето Репродуцирај.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">За прикаж. на фотогр. во 3Д, поврзете го својот телефон со телевизор 3Д со користење HDMI или со допирање на копчето Репродуцирај на уредот.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Допрете го екранот за да снимите видео</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">За да ја видите оваа фотографија во 3Д, поврзете го својот мобилен телефон со 3D телевизор со допирање на копчето Репродуцирај.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">За прикажување на оваа фотографија во 3Д, поврзете го својот телефон со телевизор 3Д со допирање на копчето Репродуцирај на уредот.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Нема достапна SD-картичка. Променета е стандардната локација за зачувување во внатрешната меморија.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">SD-картичката е достапна. Променета е стандардната локација за зачувување во SD-картичката.</string>
 </resources>

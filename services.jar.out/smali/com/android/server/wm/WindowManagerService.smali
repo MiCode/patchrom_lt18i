@@ -457,8 +457,11 @@
     .end annotation
 .end field
 
+<<<<<<< HEAD
 .field mRoundedCorners:Lcom/android/server/wm/RoundedCornersSurface;
 
+=======
+>>>>>>> new *.jar.out from  stockrom.zip
 .field mSafeMode:Z
 
 .field mScreenFrozenLock:Landroid/os/PowerManager$WakeLock;
@@ -5228,23 +5231,20 @@
 
     iput-object v5, v0, Lcom/android/server/wm/WindowManagerService;->mFxSession:Landroid/view/SurfaceSession;
 
+    .line 7562
     const/16 v41, 0x1
 
+    .line 7568
     :cond_4
     invoke-static {}, Landroid/view/Surface;->openTransaction()V
 
-    move-object/from16 v0, p0
-
-    move/from16 v1, v48
-
-    move/from16 v2, v44
-
-    invoke-direct {v0, v1, v2}, Lcom/android/server/wm/WindowManagerService;->createRoundCorners(II)V
-
+    .line 7570
     if-eqz v41, :cond_5
 
+    .line 7571
     invoke-virtual/range {p0 .. p0}, Lcom/android/server/wm/WindowManagerService;->createWatermark()V
 
+    .line 7573
     :cond_5
     move-object/from16 v0, p0
 
@@ -7354,6 +7354,7 @@
 
     invoke-static {v5, v8, v0}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
+    .line 8664
     .end local v49           #e:Ljava/lang/RuntimeException;
     :cond_49
     :goto_1e
@@ -7365,6 +7366,7 @@
 
     iget-object v8, v0, Lcom/android/server/wm/WindowManagerService;->mWindows:Ljava/util/ArrayList;
 
+<<<<<<< HEAD
     move-object/from16 v0, p0
 
     iget v10, v0, Lcom/android/server/wm/WindowManagerService;->mRotation:I
@@ -7377,33 +7379,41 @@
 
     invoke-static {}, Landroid/view/Surface;->closeTransaction()V
 
+=======
+    .line 8669
+>>>>>>> new *.jar.out from  stockrom.zip
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/server/wm/WindowManagerService;->mWatermark:Lcom/android/server/wm/Watermark;
 
     if-eqz v5, :cond_4a
 
+    .line 8670
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/server/wm/WindowManagerService;->mWatermark:Lcom/android/server/wm/Watermark;
 
     invoke-virtual {v5}, Lcom/android/server/wm/Watermark;->drawIfNeeded()V
 
+    .line 8676
     :cond_4a
     if-eqz v69, :cond_4c
 
+    .line 8677
     move-object/from16 v0, p0
 
     iget-boolean v5, v0, Lcom/android/server/wm/WindowManagerService;->mWindowsFreezingScreen:Z
 
     if-eqz v5, :cond_4b
 
+    .line 8678
     const/4 v5, 0x0
 
     move-object/from16 v0, p0
 
     iput-boolean v5, v0, Lcom/android/server/wm/WindowManagerService;->mWindowsFreezingScreen:Z
 
+    .line 8679
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/android/server/wm/WindowManagerService;->mH:Lcom/android/server/wm/WindowManagerService$H;
@@ -13450,10 +13460,6 @@
     iput v3, v2, Landroid/content/res/Configuration;->fontScale:F
 
     .line 3444
-    iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mTempConfiguration:Landroid/content/res/Configuration;
-
-    invoke-static {p1, v2}, Landroid/app/MiuiThemeHelper;->copyExtraConfigurations(Landroid/content/res/Configuration;Landroid/content/res/Configuration;)V
-
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mTempConfiguration:Landroid/content/res/Configuration;
 
     invoke-virtual {p0, v2}, Lcom/android/server/wm/WindowManagerService;->computeNewConfigurationLocked(Landroid/content/res/Configuration;)Z
@@ -38661,6 +38667,7 @@
 
     return-object v0
 .end method
+<<<<<<< HEAD
 
 .method private createRoundCorners(II)V
     .locals 6
@@ -38705,3 +38712,5 @@
     return-void
 .end method
 
+=======
+>>>>>>> new *.jar.out from  stockrom.zip

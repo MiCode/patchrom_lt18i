@@ -30,7 +30,7 @@
     .parameter
 
     .prologue
-    .line 624
+    .line 629
     iput-object p1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$2;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
     iput-object p2, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$2;->val$request:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailDecodeRequest;
@@ -46,7 +46,7 @@
     .locals 2
 
     .prologue
-    .line 626
+    .line 631
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$2;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
     iget-object v1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$2;->val$request:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailDecodeRequest;
@@ -54,12 +54,12 @@
     #calls: Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->decodeThumbnail(Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailDecodeRequest;)V
     invoke-static {v0, v1}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->access$500(Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailDecodeRequest;)V
 
-    .line 634
+    .line 639
     invoke-static {}, Lcom/sonyericsson/android/media/panorama3d/provider/Panorama3dMiniThumbFile;->reset()V
 
-    .line 635
+    .line 640
     invoke-static {}, Landroid/media/MiniThumbFile;->reset()V
 
-    .line 636
+    .line 641
     return-void
 .end method

@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 851
+    .line 847
     iput-object p1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Inactive;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     invoke-direct {p0}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;-><init>()V
@@ -38,7 +38,7 @@
     .parameter "x1"
 
     .prologue
-    .line 851
+    .line 847
     invoke-direct {p0, p1}, Lcom/sonyericsson/android/camera3d/SweepCameraController$Inactive;-><init>(Lcom/sonyericsson/android/camera3d/SweepCameraController;)V
 
     return-void

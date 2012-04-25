@@ -24,33 +24,33 @@
     .parameter
 
     .prologue
-    .line 1597
+    .line 1593
     iput-object p1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Store;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;-><init>(Lcom/sonyericsson/android/camera3d/SweepCameraController;Lcom/sonyericsson/android/camera3d/SweepCameraController$1;)V
 
-    .line 1598
+    .line 1594
     iget-object v0, p1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraWindow:Lcom/sonyericsson/android/camera3d/view/CameraWindow;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/view/CameraWindow;->hideAfIndicator()V
 
-    .line 1599
+    .line 1595
     iget-object v0, p1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
 
     check-cast v0, Lcom/sonyericsson/android/camera3d/CameraActivity;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/CameraActivity;->disableBackKey()V
 
-    .line 1600
+    .line 1596
     iget-object v0, p1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
 
     check-cast v0, Lcom/sonyericsson/android/camera3d/CameraActivity;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/CameraActivity;->disableAutoOffTimer()V
 
-    .line 1601
+    .line 1597
     return-void
 .end method
 
@@ -63,17 +63,17 @@
     .parameter "arg2"
 
     .prologue
-    .line 1614
+    .line 1610
     invoke-super {p0, p1, p2, p3}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;->handleStoreDone(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;ILjava/lang/Object;)V
 
-    .line 1615
+    .line 1611
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Store;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v0, v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraWindow:Lcom/sonyericsson/android/camera3d/view/CameraWindow;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/view/CameraWindow;->hideStoreProgress()V
 
-    .line 1617
+    .line 1613
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Store;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v0, v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
@@ -82,7 +82,7 @@
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/CameraActivity;->enableBackKey()V
 
-    .line 1618
+    .line 1614
     new-instance v0, Lcom/sonyericsson/android/camera3d/SweepCameraController$ViewFinder;
 
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Store;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
@@ -91,7 +91,7 @@
 
     invoke-virtual {p1, v0}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->setState(Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;)V
 
-    .line 1619
+    .line 1615
     return-void
 .end method
 
@@ -102,10 +102,10 @@
     .parameter "arg2"
 
     .prologue
-    .line 1606
+    .line 1602
     invoke-super {p0, p1, p2, p3}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;->handleStoreProgress(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;ILjava/lang/Object;)V
 
-    .line 1607
+    .line 1603
     check-cast p3, [Ljava/lang/Integer;
 
     .end local p3
@@ -113,7 +113,7 @@
 
     check-cast v0, [Ljava/lang/Integer;
 
-    .line 1608
+    .line 1604
     .local v0, progress:[Ljava/lang/Integer;
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Store;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
@@ -137,6 +137,6 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/sonyericsson/android/camera3d/view/CameraWindow;->updateStoreProgress(II)V
 
-    .line 1609
+    .line 1605
     return-void
 .end method

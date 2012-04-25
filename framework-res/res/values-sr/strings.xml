@@ -917,7 +917,7 @@ Kliknite na dugme „OK“ da biste nastavili ili na dugme „Otkaži“ da bist
     <string name="capital_off">〇</string>
     <string name="whichApplication">Dovršav. radnje pomoću</string>
     <string name="alwaysUse">Podrazumev. koristi za ovu radnju.</string>
-    <string name="clearDefaultHintMsg">Obrišite podrazumevane vrednosti iz stavki Početna podešavanja > Aplikacije > Upravljaj aplikacijama.</string>
+    <string name="clearDefaultHintMsg">Obrišite podrazumevanu vrednost u okviru Podešavanja > Aplikacije.</string>
     <string name="chooseActivity">Izbor radnje</string>
     <string name="chooseUsbActivity">Izaberite aplikaciju za USB uređaj</string>
     <string name="noApplications">Nijedna aplikacija ne može da izvrši ovu radnju.</string>
@@ -1034,7 +1034,7 @@ Da li želite da ga zatvorite?"</string>
     <string name="extmedia_format_message">Želite li zaista da formatirate SD karticu? Svi podaci sačuvani na njoj biće izbrisani.</string>
     <string name="extmedia_format_button_format">Formatiraj</string>
     <string name="adb_active_notification_title">USB otklanj. grešaka povezano</string>
-    <string name="adb_active_notification_message">Izaberite da onemogućite USB otklanjanj. grešaka.</string>
+    <string name="adb_active_notification_message">Izaberite da biste onemog. USB otklanj. grešaka.</string>
     <string name="select_input_method">Izbor metoda unosa</string>
     <string name="configure_input_methods">Konfiguriši metode unosa</string>
     <string name="fast_scroll_alphabet">" ABCČĆDDžĐEFGHIJKLMNOPQRSŠTUVWXYZŽ"</string>
@@ -1224,8 +1224,8 @@ Da li želite da ga zatvorite?"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM kartica je blokirana</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Unesite PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM kartica je zaključana</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Unesite PUK koji je obezbedio vaš operator</string>
-    <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Kontaktirajte operatora</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Unesite PUK od vašeg dobavljača usluge</string>
+    <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Kontaktirajte dobavljača usluge</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Unesite novi PIN</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Ponovo unesite novi PIN</string>
     <string name="lockscreen_strings_sim_puk_wrong_nbr_digits_header_txt">PUK mora da ima 8 cifara</string>

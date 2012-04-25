@@ -17,10 +17,8 @@
     value = {
         "Ljava/lang/ThreadLocal",
         "<",
-        "Ljava/util/ArrayList",
-        "<",
-        "Landroid/animation/ValueAnimator;",
-        ">;>;"
+        "Landroid/animation/ValueAnimator$AnimationHolder;",
+        ">;"
     }
 .end annotation
 
@@ -30,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 98
+    .line 108
     invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
 
     return-void
@@ -38,35 +36,28 @@
 
 
 # virtual methods
-.method protected bridge synthetic initialValue()Ljava/lang/Object;
-    .locals 1
+.method protected initialValue()Landroid/animation/ValueAnimator$AnimationHolder;
+    .locals 2
 
     .prologue
-    .line 98
-    invoke-virtual {p0}, Landroid/animation/ValueAnimator$1;->initialValue()Ljava/util/ArrayList;
+    .line 111
+    new-instance v0, Landroid/animation/ValueAnimator$AnimationHolder;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Landroid/animation/ValueAnimator$AnimationHolder;-><init>(Landroid/animation/ValueAnimator$1;)V
 
     return-object v0
 .end method
 
-.method protected initialValue()Ljava/util/ArrayList;
+.method protected bridge synthetic initialValue()Ljava/lang/Object;
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/ArrayList",
-            "<",
-            "Landroid/animation/ValueAnimator;",
-            ">;"
-        }
-    .end annotation
 
     .prologue
-    .line 101
-    new-instance v0, Ljava/util/ArrayList;
+    .line 108
+    invoke-virtual {p0}, Landroid/animation/ValueAnimator$1;->initialValue()Landroid/animation/ValueAnimator$AnimationHolder;
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    move-result-object v0
 
     return-object v0
 .end method

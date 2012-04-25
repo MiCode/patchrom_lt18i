@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Peizažo atpažinimas</string>
-    <string name="cam_strings_shortcut_normal_txt">Įprastas</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Peiz. atpaž. (fotoaparatas)</string>
+    <string name="cam_strings_shortcut_normal_txt">Įprastas (fotoaparatas)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Priekinė kamera</string>
     <string name="cam_strings_shortcut_video_camera_txt">Vaizdo kamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Priekinė vaizdo kamera</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">GPS nustatytai vietai visada teikiama pirmenybė, palyginti su nustatyta belaidžiais tinklais. Jei norite pakeisti padėties nustatymo metodą, eikite į „Nustatymai“ > „Vieta“.</string>
     <string name="cam_strings_do_not_show_again_txt">Daugiau neberodyti</string>
     <string name="cam_strings_unavailable_in_scene_txt">Negalima keisti nustačius dabartinį peizažą</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Negalima, kai aktyvi „Smile Shutter™“</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Negalima, kai aktyvi šypsenos aptikimo funkcija</string>
     <string name="cam_3d_strings_dialog_delete_txt">Ar trinti šį failą?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Ir įvairiakampis</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Ir 3D failas</string>
@@ -202,7 +202,7 @@ Pastaba: šiuose failuose yra pilkoji sritis."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Yra šios įvairiakampės nuotraukos 3D vaizdas. Ištrinti abu?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Tik įvairiak.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Tik 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Negalima naudoti šio režimo, kai prijungtas HDMI laidas. Atjunkite laidą.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Atjunkite laidą. Negalima naudoti šio režimo fotografuojant, kai prijungtas laidas.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Šį failą 3D formatu peržiūrėsite 3D palaikančiu prietaisu</string>
     <string name="cam_status_remained_min">%1$d min.</string>
     <string name="cam_strings_both_location_fail_txt">Negalima nustatyti vietos</string>
@@ -216,7 +216,7 @@ Pastaba: šiuose failuose yra pilkoji sritis."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Kaip gauti vietos informac.</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Trinti</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Nepavyko nufotograf.</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI klaida</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Klaida</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Galimas nuotol. valdymas</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Trinti</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Išsaugomas vaizdas</string>
@@ -254,7 +254,7 @@ Pastaba: šiuose failuose yra pilkoji sritis."</string>
     <string name="cam_strings_button_to_allow_txt">Leisti</string>
     <string name="cam_strings_button_to_deny_txt">Neleisti</string>
     <string name="cam_strings_fast_capturing_screen_locked_title_txt">Ekranas užrakintas</string>
-    <string name="cam_strings_fast_capturing_allowance_title_txt">Nustatyti sparčiąją paleistį</string>
+    <string name="cam_strings_fast_capturing_allowance_title_txt">Nustat. sparčiąją paleistį</string>
     <string name="cam_strings_fast_capturing_finish_confirmation_title_txt">Sparč. paleisties režimas</string>
     <string name="cam_strings_scenes_title_txt">Peizažai</string>
     <string name="cam_strings_resolution_title_txt">Skiriamoji geba</string>
@@ -280,9 +280,9 @@ Pastaba: šiuose failuose yra pilkoji sritis."</string>
     <string name="cam_strings_cancel_txt">Atšaukti</string>
     <string name="cam_strings_zoom_help_txt">Norėdami artinti ar tolinti naudokite garsumo klavišą</string>
     <string name="cam_strings_zoom_not_supported_txt">Šiuo režimu negalima artinti ir tolinti</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Jei nuotrauką norite peržiūrėti 3D formatu, prijunkite kamerą prie 3D televizoriaus naudodami HDMI arba bakstelėdami mygtuką „Leisti“.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">"Jei šią nuotrauką norite peržiūrėti 3D formatu, prijunkite telefoną prie 3D televizoriaus  naudodami HDMI arba bakstelėdami mygtuką „Leisti prietaise“."</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Palieskite ekraną, kad įrašytumėte vaizdo įrašą</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Jei šią nuotrauką norite peržiūrėti 3D formatu, prijunkite telefoną prie 3D televizoriaus bakstelėdami mygtuką „Leisti“.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Jei šią nuotrauką norite peržiūrėti 3D formatu, prijunkite telefoną prie 3D televizoriaus bakstelėdami mygtuką „Leisti prietaise“.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">SD kortelės nėra. Pakeiskite numatytąją išsaugojimo vietą į vidinę atmintį.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">SD kortelės nėra. Pakeiskite numatytąją saugojimo vietą į SD kortelę.</string>
 </resources>

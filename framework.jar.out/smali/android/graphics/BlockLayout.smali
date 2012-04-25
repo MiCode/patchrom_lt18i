@@ -69,73 +69,127 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 7
 
     .prologue
-    const/4 v1, -0x1
+    const/16 v6, 0x64
+
+    const/4 v5, -0x1
+
+    const/4 v4, 0x0
 
     .line 30
     invoke-static {}, Landroid/emoji/EmojiFactory;->newAvailableInstance()Landroid/emoji/EmojiFactory;
 
-    move-result-object v0
+    move-result-object v3
 
-    sput-object v0, Landroid/graphics/BlockLayout;->EMOJI_FACTORY:Landroid/emoji/EmojiFactory;
+    sput-object v3, Landroid/graphics/BlockLayout;->EMOJI_FACTORY:Landroid/emoji/EmojiFactory;
 
     .line 41
-    sget-object v0, Landroid/graphics/BlockLayout;->EMOJI_FACTORY:Landroid/emoji/EmojiFactory;
+    sget-object v3, Landroid/graphics/BlockLayout;->EMOJI_FACTORY:Landroid/emoji/EmojiFactory;
 
-    if-eqz v0, :cond_0
+    if-eqz v3, :cond_0
 
     .line 42
-    sget-object v0, Landroid/graphics/BlockLayout;->EMOJI_FACTORY:Landroid/emoji/EmojiFactory;
+    sget-object v3, Landroid/graphics/BlockLayout;->EMOJI_FACTORY:Landroid/emoji/EmojiFactory;
 
-    invoke-virtual {v0}, Landroid/emoji/EmojiFactory;->getMinimumAndroidPua()I
+    invoke-virtual {v3}, Landroid/emoji/EmojiFactory;->getMinimumAndroidPua()I
 
-    move-result v0
+    move-result v3
 
-    sput v0, Landroid/graphics/BlockLayout;->MIN_EMOJI:I
+    sput v3, Landroid/graphics/BlockLayout;->MIN_EMOJI:I
 
     .line 43
-    sget-object v0, Landroid/graphics/BlockLayout;->EMOJI_FACTORY:Landroid/emoji/EmojiFactory;
+    sget-object v3, Landroid/graphics/BlockLayout;->EMOJI_FACTORY:Landroid/emoji/EmojiFactory;
 
-    invoke-virtual {v0}, Landroid/emoji/EmojiFactory;->getMaximumAndroidPua()I
+    invoke-virtual {v3}, Landroid/emoji/EmojiFactory;->getMaximumAndroidPua()I
 
-    move-result v0
+    move-result v3
 
-    sput v0, Landroid/graphics/BlockLayout;->MAX_EMOJI:I
+    sput v3, Landroid/graphics/BlockLayout;->MAX_EMOJI:I
 
     .line 124
     :goto_0
-    const-string/jumbo v0, "textrendering"
+    const-string/jumbo v3, "textrendering"
 
-    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+    invoke-static {v3}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
-    .line 695
-    const/4 v0, 0x0
+    .line 126
+    new-instance v1, Landroid/graphics/Text;
 
-    sput v0, Landroid/graphics/BlockLayout;->sGarbageTop:I
+    const-string/jumbo v3, "pre-cache"
 
-    .line 697
-    const/4 v0, 0x6
+    invoke-direct {v1, v3}, Landroid/graphics/Text;-><init>(Ljava/lang/String;)V
 
-    new-array v0, v0, [I
+    .line 127
+    .local v1, text:Landroid/graphics/Text;
+    new-instance v2, Landroid/text/TextPaint;
 
-    fill-array-data v0, :array_0
+    invoke-direct {v2}, Landroid/text/TextPaint;-><init>()V
 
-    sput-object v0, Landroid/graphics/BlockLayout;->sGarbage:[I
+    .line 128
+    .local v2, textPaint:Landroid/text/TextPaint;
+    invoke-virtual {v1}, Landroid/graphics/Text;->getLength()I
+
+    move-result v3
+
+    invoke-virtual {v1, v4, v3, v2}, Landroid/graphics/Text;->setPaint(IILandroid/text/TextPaint;)V
+
+    .line 129
+    new-instance v0, Landroid/graphics/BlockLayout;
+
+    invoke-direct {v0, v1}, Landroid/graphics/BlockLayout;-><init>(Landroid/graphics/Text;)V
+
+    .line 130
+    .local v0, layout:Landroid/graphics/BlockLayout;
+    invoke-virtual {v0, v2, v6}, Landroid/graphics/BlockLayout;->doLayout(Landroid/graphics/Paint;I)I
+
+    .line 131
+    const-string/jumbo v3, "vendor"
+
+    invoke-static {v3, v4}, Landroid/graphics/Typeface;->create(Ljava/lang/String;I)Landroid/graphics/Typeface;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Landroid/text/TextPaint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
+
+    .line 132
+    invoke-virtual {v1}, Landroid/graphics/Text;->getLength()I
+
+    move-result v3
+
+    invoke-virtual {v1, v4, v3, v2}, Landroid/graphics/Text;->setPaint(IILandroid/text/TextPaint;)V
+
+    .line 133
+    invoke-virtual {v0, v2, v6}, Landroid/graphics/BlockLayout;->doLayout(Landroid/graphics/Paint;I)I
+
+    .line 708
+    sput v4, Landroid/graphics/BlockLayout;->sGarbageTop:I
+
+    .line 710
+    const/4 v3, 0x6
+
+    new-array v3, v3, [I
+
+    fill-array-data v3, :array_0
+
+    sput-object v3, Landroid/graphics/BlockLayout;->sGarbage:[I
 
     return-void
 
     .line 45
+    .end local v0           #layout:Landroid/graphics/BlockLayout;
+    .end local v1           #text:Landroid/graphics/Text;
+    .end local v2           #textPaint:Landroid/text/TextPaint;
     :cond_0
-    sput v1, Landroid/graphics/BlockLayout;->MIN_EMOJI:I
+    sput v5, Landroid/graphics/BlockLayout;->MIN_EMOJI:I
 
     .line 46
-    sput v1, Landroid/graphics/BlockLayout;->MAX_EMOJI:I
+    sput v5, Landroid/graphics/BlockLayout;->MAX_EMOJI:I
 
     goto :goto_0
 
-    .line 697
+    .line 710
     :array_0
     .array-data 0x4
         0x0t 0x0t 0x0t 0x0t
@@ -154,12 +208,12 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 133
+    .line 142
     const/4 v0, 0x3
 
     invoke-direct {p0, p1, v0, v1, v1}, Landroid/graphics/BlockLayout;-><init>(Landroid/graphics/Text;III)V
 
-    .line 134
+    .line 143
     return-void
 .end method
 
@@ -171,10 +225,10 @@
     .parameter "flags"
 
     .prologue
-    .line 136
+    .line 145
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 137
+    .line 146
     iget v0, p1, Landroid/graphics/Text;->mNativeText:I
 
     invoke-static {v0, p2, p3, p4}, Landroid/graphics/BlockLayout;->initBlockLayout(IIII)I
@@ -183,23 +237,23 @@
 
     iput v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
-    .line 140
+    .line 149
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     if-nez v0, :cond_0
 
-    .line 141
+    .line 150
     new-instance v0, Ljava/lang/IllegalStateException;
 
     invoke-direct {v0}, Ljava/lang/IllegalStateException;-><init>()V
 
     throw v0
 
-    .line 143
+    .line 152
     :cond_0
     iput-object p1, p0, Landroid/graphics/BlockLayout;->mText:Landroid/graphics/Text;
 
-    .line 145
+    .line 154
     return-void
 .end method
 
@@ -212,34 +266,34 @@
     .parameter "flags"
 
     .prologue
-    .line 148
+    .line 157
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 149
+    .line 158
     iget v0, p1, Landroid/graphics/Text;->mNativeText:I
 
     invoke-static {v0, p2, p3, p4, p5}, Landroid/graphics/BlockLayout;->reinitBlockLayout(IIIII)V
 
-    .line 151
+    .line 160
     iput p2, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
-    .line 153
+    .line 162
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     if-nez v0, :cond_0
 
-    .line 154
+    .line 163
     new-instance v0, Ljava/lang/IllegalStateException;
 
     invoke-direct {v0}, Ljava/lang/IllegalStateException;-><init>()V
 
     throw v0
 
-    .line 156
+    .line 165
     :cond_0
     iput-object p1, p0, Landroid/graphics/BlockLayout;->mText:Landroid/graphics/Text;
 
-    .line 158
+    .line 167
     return-void
 .end method
 
@@ -350,18 +404,18 @@
     .parameter "flags"
 
     .prologue
-    .line 161
+    .line 170
     sget-object v6, Landroid/graphics/BlockLayout;->sGarbage:[I
 
     monitor-enter v6
 
-    .line 162
+    .line 171
     :try_start_0
     sget v0, Landroid/graphics/BlockLayout;->sGarbageTop:I
 
     if-lez v0, :cond_0
 
-    .line 163
+    .line 172
     sget-object v0, Landroid/graphics/BlockLayout;->sGarbage:[I
 
     sget v1, Landroid/graphics/BlockLayout;->sGarbageTop:I
@@ -372,7 +426,7 @@
 
     aget v2, v0, v1
 
-    .line 166
+    .line 175
     .local v2, nativeBlockLayout:I
     new-instance v0, Landroid/graphics/BlockLayout;
 
@@ -388,25 +442,25 @@
 
     monitor-exit v6
 
-    .line 170
+    .line 179
     .end local v2           #nativeBlockLayout:I
     :goto_0
     return-object v0
 
-    .line 169
+    .line 178
     :cond_0
     monitor-exit v6
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 170
+    .line 179
     new-instance v0, Landroid/graphics/BlockLayout;
 
     invoke-direct {v0, p0, p1, p2, p3}, Landroid/graphics/BlockLayout;-><init>(Landroid/graphics/Text;III)V
 
     goto :goto_0
 
-    .line 169
+    .line 178
     :catchall_0
     move-exception v0
 
@@ -424,17 +478,17 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 174
+    .line 183
     iget v1, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     if-eqz v1, :cond_0
 
-    .line 175
+    .line 184
     sget-object v1, Landroid/graphics/BlockLayout;->sGarbage:[I
 
     monitor-enter v1
 
-    .line 176
+    .line 185
     :try_start_0
     sget v2, Landroid/graphics/BlockLayout;->sGarbageTop:I
 
@@ -444,7 +498,7 @@
 
     if-ge v2, v3, :cond_1
 
-    .line 177
+    .line 186
     sget-object v0, Landroid/graphics/BlockLayout;->sGarbage:[I
 
     sget v2, Landroid/graphics/BlockLayout;->sGarbageTop:I
@@ -457,22 +511,22 @@
 
     aput v3, v0, v2
 
-    .line 178
+    .line 187
     const/4 v0, 0x0
 
     iput v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
-    .line 179
+    .line 188
     const/4 v0, 0x1
 
     monitor-exit v1
 
-    .line 183
+    .line 192
     :cond_0
     :goto_0
     return v0
 
-    .line 181
+    .line 190
     :cond_1
     monitor-exit v1
 
@@ -491,6 +545,9 @@
 .method private static native reinitBlockLayout(IIIII)V
 .end method
 
+.method private static native setMaximumVisibleLineCount(II)V
+.end method
+
 .method private static native setTabStop(II)V
 .end method
 
@@ -500,26 +557,26 @@
     .locals 2
 
     .prologue
-    .line 190
+    .line 199
     invoke-direct {p0}, Landroid/graphics/BlockLayout;->recycle()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 191
+    .line 200
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
-    .line 192
+    .line 201
     .local v0, blockLayout:I
     const/4 v1, 0x0
 
     iput v1, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
-    .line 193
+    .line 202
     invoke-static {v0}, Landroid/graphics/BlockLayout;->finalizer(I)V
 
-    .line 195
+    .line 204
     .end local v0           #blockLayout:I
     :cond_0
     return-void
@@ -536,7 +593,7 @@
     .end annotation
 
     .prologue
-    .line 400
+    .line 409
     invoke-virtual {p0, p1, p2, p2}, Landroid/graphics/BlockLayout;->doLayout(Landroid/graphics/Paint;II)I
 
     move-result v0
@@ -556,7 +613,7 @@
     .end annotation
 
     .prologue
-    .line 409
+    .line 418
     iget v1, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     if-nez p1, :cond_0
@@ -592,7 +649,7 @@
     .end annotation
 
     .prologue
-    .line 445
+    .line 454
     const/4 v4, 0x0
 
     move-object/from16 v0, p0
@@ -605,25 +662,25 @@
 
     aput v5, p7, v4
 
-    .line 446
+    .line 455
     const/4 v4, 0x1
 
     const/4 v5, 0x0
 
     aput v5, p7, v4
 
-    .line 447
+    .line 456
     const/4 v4, 0x0
 
     aget v29, p7, v4
 
-    .line 448
+    .line 457
     .local v29, line:I
     invoke-virtual/range {p4 .. p4}, Landroid/text/TextPaint;->getFlags()I
 
     move-result v25
 
-    .line 452
+    .line 461
     .local v25, flags:I
     and-int/lit8 v4, v25, 0x18
 
@@ -650,12 +707,12 @@
     :cond_0
     const/16 v30, 0x1
 
-    .line 455
+    .line 464
     .local v30, lineBased:Z
     :goto_0
     move/from16 v7, p2
 
-    .line 457
+    .line 466
     .local v7, next:I
     :goto_1
     move/from16 v0, p2
@@ -664,10 +721,10 @@
 
     if-ge v0, v1, :cond_e
 
-    .line 458
+    .line 467
     if-eqz v30, :cond_6
 
-    .line 459
+    .line 468
     add-int/lit8 v4, v29, 0x1
 
     move-object/from16 v0, p0
@@ -696,7 +753,7 @@
 
     move-object/from16 v10, p4
 
-    .line 464
+    .line 473
     invoke-virtual/range {v4 .. v10}, Landroid/graphics/BlockLayout;->getGlyphRun([III[C[FLandroid/text/TextPaint;)I
 
     move-result v15
@@ -704,27 +761,27 @@
     .local v15, glyphCount:I
     if-lez v15, :cond_d
 
-    .line 465
+    .line 474
     ushr-int/lit8 v15, v15, 0x10
 
-    .line 467
+    .line 476
     if-eqz v15, :cond_1
 
-    .line 471
+    .line 480
     move-object/from16 v0, p4
 
     iget v4, v0, Landroid/text/TextPaint;->bgColor:I
 
     if-eqz v4, :cond_2
 
-    .line 472
+    .line 481
     const/4 v4, 0x2
 
     aget v4, p7, v4
 
     int-to-float v9, v4
 
-    .line 473
+    .line 482
     .local v9, x0:F
     const/4 v4, 0x3
 
@@ -732,19 +789,19 @@
 
     int-to-float v11, v4
 
-    .line 474
+    .line 483
     .local v11, x1:F
     invoke-virtual/range {p4 .. p4}, Landroid/text/TextPaint;->getColor()I
 
     move-result v32
 
-    .line 475
+    .line 484
     .local v32, previousColor:I
     invoke-virtual/range {p4 .. p4}, Landroid/text/TextPaint;->getStyle()Landroid/graphics/Paint$Style;
 
     move-result-object v33
 
-    .line 477
+    .line 486
     .local v33, previousStyle:Landroid/graphics/Paint$Style;
     move-object/from16 v0, p4
 
@@ -754,14 +811,14 @@
 
     invoke-virtual {v0, v4}, Landroid/text/TextPaint;->setColor(I)V
 
-    .line 478
+    .line 487
     sget-object v4, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     move-object/from16 v0, p4
 
     invoke-virtual {v0, v4}, Landroid/text/TextPaint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 479
+    .line 488
     move-object/from16 v0, p0
 
     move/from16 v1, v29
@@ -788,21 +845,21 @@
 
     invoke-virtual/range {v8 .. v13}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 481
+    .line 490
     move-object/from16 v0, p4
 
     move-object/from16 v1, v33
 
     invoke-virtual {v0, v1}, Landroid/text/TextPaint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 482
+    .line 491
     move-object/from16 v0, p4
 
     move/from16 v1, v32
 
     invoke-virtual {v0, v1}, Landroid/text/TextPaint;->setColor(I)V
 
-    .line 488
+    .line 497
     .end local v9           #x0:F
     .end local v11           #x1:F
     .end local v32           #previousColor:I
@@ -816,18 +873,18 @@
 
     if-lt v4, v5, :cond_7
 
-    .line 491
+    .line 500
     invoke-virtual/range {p4 .. p4}, Landroid/text/TextPaint;->getTextSize()F
 
     move-result v34
 
-    .line 492
+    .line 501
     .local v34, size:F
     const v4, 0x3e4ccccd
 
     mul-float v37, v34, v4
 
-    .line 493
+    .line 502
     .local v37, yOffset:F
     move-object/from16 v0, p0
 
@@ -835,7 +892,7 @@
 
     if-nez v4, :cond_3
 
-    .line 494
+    .line 503
     new-instance v4, Landroid/graphics/RectF;
 
     invoke-direct {v4}, Landroid/graphics/RectF;-><init>()V
@@ -844,7 +901,7 @@
 
     iput-object v4, v0, Landroid/graphics/BlockLayout;->mTempRect:Landroid/graphics/RectF;
 
-    .line 496
+    .line 505
     :cond_3
     move-object/from16 v0, p0
 
@@ -852,7 +909,7 @@
 
     move-object/from16 v24, v0
 
-    .line 497
+    .line 506
     .local v24, dst:Landroid/graphics/RectF;
     const/16 v27, 0x0
 
@@ -865,7 +922,7 @@
 
     if-ge v0, v15, :cond_8
 
-    .line 498
+    .line 507
     sget-object v4, Landroid/graphics/BlockLayout;->EMOJI_FACTORY:Landroid/emoji/EmojiFactory;
 
     aget-char v5, p5, v27
@@ -876,11 +933,11 @@
 
     move-result-object v23
 
-    .line 499
+    .line 508
     .local v23, bitmap:Landroid/graphics/Bitmap;
     if-eqz v23, :cond_4
 
-    .line 500
+    .line 509
     aget v36, p6, v28
 
     .local v36, x:F
@@ -890,7 +947,7 @@
 
     add-float v18, v4, v37
 
-    .line 501
+    .line 510
     .local v18, y:F
     sub-float v4, v18, v34
 
@@ -904,7 +961,7 @@
 
     invoke-virtual {v0, v1, v4, v5, v2}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 502
+    .line 511
     const/4 v4, 0x0
 
     move-object/from16 v0, p1
@@ -917,7 +974,7 @@
 
     invoke-virtual {v0, v1, v4, v2, v3}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
 
-    .line 497
+    .line 506
     .end local v18           #y:F
     .end local v36           #x:F
     :cond_4
@@ -927,7 +984,7 @@
 
     goto :goto_3
 
-    .line 452
+    .line 461
     .end local v7           #next:I
     .end local v15           #glyphCount:I
     .end local v23           #bitmap:Landroid/graphics/Bitmap;
@@ -942,7 +999,7 @@
 
     goto/16 :goto_0
 
-    .line 461
+    .line 470
     .restart local v7       #next:I
     .restart local v30       #lineBased:Z
     :cond_6
@@ -950,7 +1007,7 @@
 
     goto/16 :goto_2
 
-    .line 506
+    .line 515
     .restart local v15       #glyphCount:I
     :cond_7
     const/4 v14, 0x0
@@ -965,7 +1022,7 @@
 
     invoke-virtual/range {v12 .. v17}, Landroid/graphics/Canvas;->drawPosText([CII[FLandroid/graphics/Paint;)V
 
-    .line 509
+    .line 518
     :cond_8
     move-object/from16 v0, p4
 
@@ -973,7 +1030,7 @@
 
     if-eqz v4, :cond_9
 
-    .line 510
+    .line 519
     add-int/lit8 v4, v29, 0x1
 
     move-object/from16 v0, p0
@@ -996,7 +1053,7 @@
 
     move/from16 v22, v0
 
-    .line 511
+    .line 520
     .local v22, baseline:F
     const/4 v4, 0x2
 
@@ -1004,7 +1061,7 @@
 
     int-to-float v9, v4
 
-    .line 512
+    .line 521
     .restart local v9       #x0:F
     const/4 v4, 0x3
 
@@ -1012,7 +1069,7 @@
 
     int-to-float v11, v4
 
-    .line 515
+    .line 524
     .restart local v11       #x1:F
     const v4, 0x3de38e39
 
@@ -1024,25 +1081,25 @@
 
     add-float v10, v22, v4
 
-    .line 517
+    .line 526
     .local v10, underlineTop:F
     invoke-virtual/range {p4 .. p4}, Landroid/text/TextPaint;->getColor()I
 
     move-result v32
 
-    .line 518
+    .line 527
     .restart local v32       #previousColor:I
     invoke-virtual/range {p4 .. p4}, Landroid/text/TextPaint;->getStyle()Landroid/graphics/Paint$Style;
 
     move-result-object v33
 
-    .line 519
+    .line 528
     .restart local v33       #previousStyle:Landroid/graphics/Paint$Style;
     invoke-virtual/range {p4 .. p4}, Landroid/text/TextPaint;->isAntiAlias()Z
 
     move-result v31
 
-    .line 521
+    .line 530
     .local v31, previousAntiAlias:Z
     sget-object v4, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
@@ -1050,14 +1107,14 @@
 
     invoke-virtual {v0, v4}, Landroid/text/TextPaint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 522
+    .line 531
     const/4 v4, 0x1
 
     move-object/from16 v0, p4
 
     invoke-virtual {v0, v4}, Landroid/text/TextPaint;->setAntiAlias(Z)V
 
-    .line 524
+    .line 533
     move-object/from16 v0, p4
 
     iget v4, v0, Landroid/text/TextPaint;->underlineColor:I
@@ -1066,7 +1123,7 @@
 
     invoke-virtual {v0, v4}, Landroid/text/TextPaint;->setColor(I)V
 
-    .line 525
+    .line 534
     move-object/from16 v0, p4
 
     iget v4, v0, Landroid/text/TextPaint;->underlineThickness:F
@@ -1079,28 +1136,28 @@
 
     invoke-virtual/range {v8 .. v13}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 528
+    .line 537
     move-object/from16 v0, p4
 
     move-object/from16 v1, v33
 
     invoke-virtual {v0, v1}, Landroid/text/TextPaint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 529
+    .line 538
     move-object/from16 v0, p4
 
     move/from16 v1, v32
 
     invoke-virtual {v0, v1}, Landroid/text/TextPaint;->setColor(I)V
 
-    .line 530
+    .line 539
     move-object/from16 v0, p4
 
     move/from16 v1, v31
 
     invoke-virtual {v0, v1}, Landroid/text/TextPaint;->setAntiAlias(Z)V
 
-    .line 533
+    .line 542
     .end local v9           #x0:F
     .end local v10           #underlineTop:F
     .end local v11           #x1:F
@@ -1113,7 +1170,7 @@
 
     if-lez v4, :cond_c
 
-    .line 534
+    .line 543
     add-int/lit8 v4, v29, 0x1
 
     move-object/from16 v0, p0
@@ -1136,7 +1193,7 @@
 
     move/from16 v22, v0
 
-    .line 535
+    .line 544
     .restart local v22       #baseline:F
     const/4 v4, 0x2
 
@@ -1144,7 +1201,7 @@
 
     int-to-float v9, v4
 
-    .line 536
+    .line 545
     .restart local v9       #x0:F
     const/4 v4, 0x3
 
@@ -1152,19 +1209,19 @@
 
     int-to-float v11, v4
 
-    .line 537
+    .line 546
     .restart local v11       #x1:F
     invoke-virtual/range {p4 .. p4}, Landroid/text/TextPaint;->getTextSize()F
 
     move-result v35
 
-    .line 539
+    .line 548
     .local v35, textSize:F
     const v4, 0x3d638e39
 
     mul-float v26, v35, v4
 
-    .line 541
+    .line 550
     .local v26, height:F
     invoke-virtual/range {p4 .. p4}, Landroid/text/TextPaint;->getStyle()Landroid/graphics/Paint$Style;
 
@@ -1174,7 +1231,7 @@
 
     if-eq v4, v5, :cond_a
 
-    .line 542
+    .line 551
     invoke-virtual/range {p4 .. p4}, Landroid/text/TextPaint;->getStrokeWidth()F
 
     move-result v4
@@ -1185,20 +1242,20 @@
 
     invoke-virtual {v0, v4}, Landroid/text/TextPaint;->setStrokeWidth(F)V
 
-    .line 545
+    .line 554
     :cond_a
     and-int/lit8 v4, v25, 0x8
 
     if-lez v4, :cond_b
 
-    .line 546
+    .line 555
     const v4, 0x3de38e39
 
     mul-float v4, v4, v35
 
     add-float v18, v22, v4
 
-    .line 547
+    .line 556
     .restart local v18       #y:F
     add-float v20, v18, v26
 
@@ -1212,21 +1269,21 @@
 
     invoke-virtual/range {v16 .. v21}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 550
+    .line 559
     .end local v18           #y:F
     :cond_b
     and-int/lit8 v4, v25, 0x10
 
     if-lez v4, :cond_c
 
-    .line 551
+    .line 560
     const v4, -0x416db6db
 
     mul-float v4, v4, v35
 
     add-float v18, v22, v4
 
-    .line 552
+    .line 561
     .restart local v18       #y:F
     add-float v20, v18, v26
 
@@ -1240,7 +1297,7 @@
 
     invoke-virtual/range {v16 .. v21}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 556
+    .line 565
     .end local v9           #x0:F
     .end local v11           #x1:F
     .end local v18           #y:F
@@ -1254,18 +1311,18 @@
 
     goto/16 :goto_2
 
-    .line 559
+    .line 568
     :cond_d
     const/4 v4, 0x0
 
     aget v29, p7, v4
 
-    .line 457
+    .line 466
     move/from16 p2, v7
 
     goto/16 :goto_1
 
-    .line 561
+    .line 570
     .end local v15           #glyphCount:I
     :cond_e
     return-void
@@ -1280,7 +1337,7 @@
     .end annotation
 
     .prologue
-    .line 200
+    .line 209
     :try_start_0
     invoke-direct {p0}, Landroid/graphics/BlockLayout;->recycle()Z
 
@@ -1288,29 +1345,29 @@
 
     if-nez v1, :cond_0
 
-    .line 201
+    .line 210
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
-    .line 202
+    .line 211
     .local v0, blockLayout:I
     const/4 v1, 0x0
 
     iput v1, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
-    .line 203
+    .line 212
     invoke-static {v0}, Landroid/graphics/BlockLayout;->finalizer(I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 206
+    .line 215
     .end local v0           #blockLayout:I
     :cond_0
     invoke-super {p0}, Ljava/lang/Object;->finalize()V
 
-    .line 209
+    .line 218
     return-void
 
-    .line 206
+    .line 215
     :catchall_0
     move-exception v1
 
@@ -1323,7 +1380,7 @@
     .locals 1
 
     .prologue
-    .line 636
+    .line 649
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0}, Landroid/graphics/BlockLayout;->getBottomPadding(I)I
@@ -1339,12 +1396,12 @@
     .parameter "charSubstitution"
 
     .prologue
-    .line 611
+    .line 620
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1, p2}, Landroid/graphics/BlockLayout;->getCharSubstitutionPosition(IILandroid/graphics/Text$CharSubstitution;)V
 
-    .line 612
+    .line 621
     return-void
 .end method
 
@@ -1357,7 +1414,7 @@
     .parameter "cursorPosition"
 
     .prologue
-    .line 427
+    .line 436
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-virtual {p3}, Landroid/graphics/Path;->ni()I
@@ -1374,7 +1431,7 @@
 
     invoke-static/range {v0 .. v5}, Landroid/graphics/BlockLayout;->getCursorPath(IIIIII)V
 
-    .line 429
+    .line 438
     return-void
 .end method
 
@@ -1383,7 +1440,7 @@
     .parameter "line"
 
     .prologue
-    .line 216
+    .line 225
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getEllipsisCount(II)I
@@ -1398,7 +1455,7 @@
     .parameter "line"
 
     .prologue
-    .line 225
+    .line 234
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getEllipsisStart(II)I
@@ -1418,14 +1475,14 @@
     .parameter "paint"
 
     .prologue
-    .line 564
+    .line 573
     array-length v0, p1
 
     const/4 v1, 0x4
 
     if-ge v0, v1, :cond_0
 
-    .line 565
+    .line 574
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "array next is required to have at least a size of 4"
@@ -1434,7 +1491,7 @@
 
     throw v0
 
-    .line 567
+    .line 576
     :cond_0
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
@@ -1461,7 +1518,7 @@
     .locals 1
 
     .prologue
-    .line 351
+    .line 360
     invoke-virtual {p0}, Landroid/graphics/BlockLayout;->getLineCount()I
 
     move-result v0
@@ -1484,7 +1541,7 @@
     .end annotation
 
     .prologue
-    .line 281
+    .line 290
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     const/4 v1, 0x0
@@ -1508,7 +1565,7 @@
     .end annotation
 
     .prologue
-    .line 297
+    .line 306
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1, p2, p3}, Landroid/graphics/BlockLayout;->getHorizontal(IIZZ)F
@@ -1522,7 +1579,7 @@
     .locals 1
 
     .prologue
-    .line 417
+    .line 426
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0}, Landroid/graphics/BlockLayout;->getLineCount(I)I
@@ -1542,7 +1599,7 @@
     .end annotation
 
     .prologue
-    .line 358
+    .line 367
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getLineDescent(II)I
@@ -1562,7 +1619,7 @@
     .end annotation
 
     .prologue
-    .line 648
+    .line 661
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getLineDirections(II)[I
@@ -1582,7 +1639,7 @@
     .end annotation
 
     .prologue
-    .line 241
+    .line 250
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getLineForOffset(II)I
@@ -1597,7 +1654,7 @@
     .parameter "vertical"
 
     .prologue
-    .line 250
+    .line 259
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getLineForVertical(II)I
@@ -1617,7 +1674,7 @@
     .end annotation
 
     .prologue
-    .line 313
+    .line 322
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getLineLeft(II)F
@@ -1637,7 +1694,7 @@
     .end annotation
 
     .prologue
-    .line 374
+    .line 383
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getLineMax(II)F
@@ -1657,7 +1714,7 @@
     .end annotation
 
     .prologue
-    .line 305
+    .line 314
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getLineRight(II)F
@@ -1677,7 +1734,7 @@
     .end annotation
 
     .prologue
-    .line 259
+    .line 268
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getLineStart(II)I
@@ -1697,7 +1754,7 @@
     .end annotation
 
     .prologue
-    .line 337
+    .line 346
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getLineTop(II)I
@@ -1712,18 +1769,18 @@
     .parameter "line"
 
     .prologue
-    .line 382
+    .line 391
     iget-object v0, p0, Landroid/graphics/BlockLayout;->mCaretPosition:Landroid/graphics/BlockLayout$CaretPosition;
 
-    .line 383
+    .line 392
     .local v0, caretPosition:Landroid/graphics/BlockLayout$CaretPosition;
     const/4 v1, 0x0
 
-    .line 384
+    .line 393
     .local v1, offset:I
     if-nez v0, :cond_0
 
-    .line 385
+    .line 394
     new-instance v0, Landroid/graphics/BlockLayout$CaretPosition;
 
     .end local v0           #caretPosition:Landroid/graphics/BlockLayout$CaretPosition;
@@ -1731,7 +1788,7 @@
 
     iput-object v0, p0, Landroid/graphics/BlockLayout;->mCaretPosition:Landroid/graphics/BlockLayout$CaretPosition;
 
-    .line 387
+    .line 396
     .restart local v0       #caretPosition:Landroid/graphics/BlockLayout$CaretPosition;
     :cond_0
     iget v2, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
@@ -1750,12 +1807,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 389
+    .line 398
     invoke-virtual {v0}, Landroid/graphics/BlockLayout$CaretPosition;->getCharacterIndex()I
 
     move-result v1
 
-    .line 391
+    .line 400
     :cond_1
     return v1
 .end method
@@ -1770,7 +1827,7 @@
     .end annotation
 
     .prologue
-    .line 366
+    .line 375
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getLineWidth(II)F
@@ -1787,7 +1844,7 @@
     .parameter "caretPosition"
 
     .prologue
-    .line 575
+    .line 584
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1, p2, p3}, Landroid/graphics/BlockLayout;->getOffsetForHorizontal(IIILandroid/graphics/BlockLayout$CaretPosition;)Z
@@ -1808,20 +1865,20 @@
     .end annotation
 
     .prologue
-    .line 584
+    .line 593
     iget v0, p1, Landroid/graphics/BlockLayout$CaretPosition;->leadingIndex:I
 
-    .line 585
+    .line 594
     .local v0, leadingIndex:I
     iget v1, p1, Landroid/graphics/BlockLayout$CaretPosition;->trailingOffset:I
 
-    .line 586
+    .line 595
     .local v1, trailingOffset:I
     iget v2, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v2, v0, v1, p1}, Landroid/graphics/BlockLayout;->getOffsetToLeftOf(IIILandroid/graphics/BlockLayout$CaretPosition;)V
 
-    .line 587
+    .line 596
     iget v2, p1, Landroid/graphics/BlockLayout$CaretPosition;->leadingIndex:I
 
     if-ne v0, v2, :cond_0
@@ -1853,20 +1910,20 @@
     .end annotation
 
     .prologue
-    .line 596
+    .line 605
     iget v0, p1, Landroid/graphics/BlockLayout$CaretPosition;->leadingIndex:I
 
-    .line 597
+    .line 606
     .local v0, leadingIndex:I
     iget v1, p1, Landroid/graphics/BlockLayout$CaretPosition;->trailingOffset:I
 
-    .line 598
+    .line 607
     .local v1, trailingOffset:I
     iget v2, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v2, v0, v1, p1}, Landroid/graphics/BlockLayout;->getOffsetToRightOf(IIILandroid/graphics/BlockLayout$CaretPosition;)V
 
-    .line 599
+    .line 608
     iget v2, p1, Landroid/graphics/BlockLayout$CaretPosition;->leadingIndex:I
 
     if-ne v0, v2, :cond_0
@@ -1897,7 +1954,7 @@
     .end annotation
 
     .prologue
-    .line 232
+    .line 241
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getParagraphAlignment(II)I
@@ -1917,7 +1974,7 @@
     .end annotation
 
     .prologue
-    .line 267
+    .line 276
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getParagraphDirection(II)I
@@ -1937,7 +1994,7 @@
     .end annotation
 
     .prologue
-    .line 327
+    .line 336
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getParagraphLeft(II)I
@@ -1957,7 +2014,7 @@
     .end annotation
 
     .prologue
-    .line 320
+    .line 329
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->getParagraphRight(II)I
@@ -1979,7 +2036,7 @@
     .end annotation
 
     .prologue
-    .line 438
+    .line 447
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-virtual {p3}, Landroid/graphics/Path;->ni()I
@@ -1988,7 +2045,7 @@
 
     invoke-static {v0, p1, p2, v1}, Landroid/graphics/BlockLayout;->getSelectionPath(IIII)V
 
-    .line 439
+    .line 448
     return-void
 .end method
 
@@ -1996,7 +2053,7 @@
     .locals 1
 
     .prologue
-    .line 628
+    .line 641
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0}, Landroid/graphics/BlockLayout;->getTopPadding(I)I
@@ -2010,7 +2067,7 @@
     .locals 1
 
     .prologue
-    .line 344
+    .line 353
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0}, Landroid/graphics/BlockLayout;->getWidth(I)I
@@ -2020,17 +2077,31 @@
     return v0
 .end method
 
+.method public setMaximumVisibleLineCount(I)V
+    .locals 1
+    .parameter "maximumVisibleLineCount"
+
+    .prologue
+    .line 633
+    iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
+
+    invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->setMaximumVisibleLineCount(II)V
+
+    .line 634
+    return-void
+.end method
+
 .method public setTabStop(I)V
     .locals 1
     .parameter "tabStopPosition"
 
     .prologue
-    .line 620
+    .line 629
     iget v0, p0, Landroid/graphics/BlockLayout;->mNativeBlockLayout:I
 
     invoke-static {v0, p1}, Landroid/graphics/BlockLayout;->setTabStop(II)V
 
-    .line 621
+    .line 630
     return-void
 .end method
 
@@ -2040,25 +2111,25 @@
     .prologue
     const/16 v8, 0xa
 
-    .line 657
+    .line 670
     iget-object v7, p0, Landroid/graphics/BlockLayout;->mText:Landroid/graphics/Text;
 
     if-eqz v7, :cond_3
 
-    .line 658
+    .line 671
     iget-object v7, p0, Landroid/graphics/BlockLayout;->mText:Landroid/graphics/Text;
 
     invoke-virtual {v7}, Landroid/graphics/Text;->toString()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 659
+    .line 672
     .local v6, text:Ljava/lang/String;
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 661
+    .line 674
     .local v4, sb:Ljava/lang/StringBuilder;
     iget-object v7, p0, Landroid/graphics/BlockLayout;->mText:Landroid/graphics/Text;
 
@@ -2068,12 +2139,12 @@
 
     if-lez v7, :cond_1
 
-    .line 662
+    .line 675
     invoke-virtual {p0}, Landroid/graphics/BlockLayout;->getLineCount()I
 
     move-result v3
 
-    .line 663
+    .line 676
     .local v3, lineCount:I
     const/4 v2, 0x0
 
@@ -2081,12 +2152,12 @@
     :goto_0
     if-ge v2, v3, :cond_2
 
-    .line 664
+    .line 677
     invoke-virtual {p0, v2}, Landroid/graphics/BlockLayout;->getLineStart(I)I
 
     move-result v5
 
-    .line 665
+    .line 678
     .local v5, start:I
     add-int/lit8 v7, v2, 0x1
 
@@ -2094,17 +2165,17 @@
 
     move-result v0
 
-    .line 667
+    .line 680
     .local v0, end:I
     invoke-virtual {v6, v5, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 669
+    .line 682
     .local v1, l:Ljava/lang/String;
     invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 671
+    .line 684
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->length()I
 
     move-result v7
@@ -2117,16 +2188,16 @@
 
     if-eq v7, v8, :cond_0
 
-    .line 672
+    .line 685
     invoke-virtual {v4, v8}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 663
+    .line 676
     :cond_0
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 676
+    .line 689
     .end local v0           #end:I
     .end local v1           #l:Ljava/lang/String;
     .end local v2           #line:I
@@ -2135,13 +2206,13 @@
     :cond_1
     invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 679
+    .line 692
     :cond_2
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v7
 
-    .line 681
+    .line 694
     .end local v4           #sb:Ljava/lang/StringBuilder;
     .end local v6           #text:Ljava/lang/String;
     :goto_1

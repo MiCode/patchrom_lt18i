@@ -912,7 +912,7 @@ Jätkamiseks valige OK, praegusele lehele jäämiseks valige Tühista."</string>
     <string name="capital_off">〇</string>
     <string name="whichApplication">Kasuta toiminguks</string>
     <string name="alwaysUse">Kas. selle toimingu jaoks vaikimisi.</string>
-    <string name="clearDefaultHintMsg">Tühistage vaikeseade valikus Kodu seaded > Rakendused > Halda rakendusi.</string>
+    <string name="clearDefaultHintMsg">Vaikerakenduse tühistamiseks valige Seaded > Rakendused.</string>
     <string name="chooseActivity">Toimingu valimine</string>
     <string name="chooseUsbActivity">USB-seadme jaoks rakenduse valimine</string>
     <string name="noApplications">Selle toimingu jaoks pole rakendusi.</string>
@@ -1029,7 +1029,7 @@ Kas soovite selle sulgeda?"</string>
     <string name="extmedia_format_message">Kas soovite SD-kaarti kindlasti vormindada? Kõik kaardil olevad andmed lähevad kaotsi.</string>
     <string name="extmedia_format_button_format">Vorminda</string>
     <string name="adb_active_notification_title">USB-üh. kaudu silum. ühendatud</string>
-    <string name="adb_active_notification_message">Valige USB-ühenduse kaudu silumise keelamiseks.</string>
+    <string name="adb_active_notification_message">Valige USB-üh. kaudu silumise keelamiseks.</string>
     <string name="select_input_method">Sisestusrežiimi valimine</string>
     <string name="configure_input_methods">Sisestusviisi konfigureerimine</string>
     <string name="fast_scroll_alphabet">" ABCDEFGHIJKLMNOPQRSŠZŽTUVWÕÄÖÜXY"</string>

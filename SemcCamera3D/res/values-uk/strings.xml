@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Камера</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Розпізнавання сюжету</string>
-    <string name="cam_strings_shortcut_normal_txt">Звичайний</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Розпізн. сюжету (камера)</string>
+    <string name="cam_strings_shortcut_normal_txt">Звичайний (камера)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Фронтальна камера</string>
     <string name="cam_strings_shortcut_video_camera_txt">Відеокамера</string>
     <string name="cam_strings_shortcut_front_video_txt">Передня відеокамера</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Дані розташування, отримані з GPS (глобальної системи позиціонування), завжди мають перевагу над даними з бездротових мереж. Щоб змінити спосіб отримання цих даних, перейдіть до меню «Установки» > «Розташування».</string>
     <string name="cam_strings_do_not_show_again_txt">Більше не показувати</string>
     <string name="cam_strings_unavailable_in_scene_txt">Недоступно в поєднанні з поточними установками сюжету</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Недоступно, поки активна функція Smile Shutter™</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Недоступно, поки активна функція розпізнавання усмішки</string>
     <string name="cam_3d_strings_dialog_delete_txt">Видалити цей файл?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Файл Multi Angle теж</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">3D теж</string>
@@ -201,7 +201,7 @@
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Для цієї фотографії Multi Angle наявне також зображення 3D. Видалити обидва зображення?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">M.Angle</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Лише 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Цей режим не можна використовувати з приєднаним кабелем HDMI. Від’єднайте кабель.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Від’єднайте кабель. У цьому режимі не можна зняти фотографію з підключеним кабелем.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Для перегляду файлу в 3D потрібний пристрій із підтримкою 3D.</string>
     <string name="cam_status_remained_min">%1$d хв.</string>
     <string name="cam_strings_both_location_fail_txt">Не вдається встановити розташування</string>
@@ -215,8 +215,8 @@
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Дані розташування</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Видалити</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Помилка зйомки</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Помилка HDMI</string>
-    <string name="cam_3d_strings_dialog_3d_output_title_txt">Доступне дист.керування</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Помилка</string>
+    <string name="cam_3d_strings_dialog_3d_output_title_txt">Доступне дист. керуван.</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Видалити</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Збереження зображення</string>
     <string name="cam_strings_error_message_during_voice_call_title_txt">Під час голос. дзвінка</string>
@@ -279,9 +279,9 @@
     <string name="cam_strings_cancel_txt">Скасувати</string>
     <string name="cam_strings_zoom_help_txt">Для збільшення або зменшення використовуйте клавішу гучності</string>
     <string name="cam_strings_zoom_not_supported_txt">У цьому режимі не можна змінювати масштаб</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Щоб переглянути фотографію у 3D, підключіть камеру до 3D-телевізора кабелем HDMI або торкнувшись кнопки відтворення на пристрої.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Для перегляду фотографії в 3D підключіть телефон до 3D-телевізора кабелем HDMI або торкнувшись кнопки «Відтворення на пристрої».</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Доторкніться до екрана, щоб записати відео</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Щоб переглядати цю фотографію в 3D, підключіть телефон до 3D-телевізора, торкнувшись кнопки «Відтворення на пристрої».</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Для перегляду цієї фотографії в 3D підключіть телефон до 3D-телевізора, торкнувшись кнопки «Відтворення на пристрої».</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">SD-картка недоступна. Стандартне розташування збереження змінено на внутрішню пам’ять.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">SD-картка доступна. Стандартне розташування збереження змінено на SD-картку.</string>
 </resources>

@@ -29,7 +29,7 @@
     .parameter
 
     .prologue
-    .line 548
+    .line 544
     iput-object p1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$CaptureCallback;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .parameter "x1"
 
     .prologue
-    .line 548
+    .line 544
     invoke-direct {p0, p1}, Lcom/sonyericsson/android/camera3d/SweepCameraController$CaptureCallback;-><init>(Lcom/sonyericsson/android/camera3d/SweepCameraController;)V
 
     return-void
@@ -56,10 +56,10 @@
     .parameter "success"
 
     .prologue
-    .line 552
+    .line 548
     iget v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$CaptureCallback;->mLastStatus:I
 
-    .line 553
+    .line 549
     .local v0, status:I
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$CaptureCallback;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
@@ -73,7 +73,7 @@
 
     invoke-virtual {v1, v2, v0, v3}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 554
+    .line 550
     return-void
 .end method
 
@@ -83,13 +83,13 @@
     .parameter "progress"
 
     .prologue
-    .line 557
+    .line 553
     iput p1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$CaptureCallback;->mLastStatus:I
 
-    .line 558
+    .line 554
     if-nez p1, :cond_0
 
-    .line 559
+    .line 555
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$CaptureCallback;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v0, v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
@@ -102,11 +102,11 @@
 
     invoke-virtual {v0, v1, p1, v2}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 563
+    .line 559
     :goto_0
     return-void
 
-    .line 561
+    .line 557
     :cond_0
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$CaptureCallback;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 

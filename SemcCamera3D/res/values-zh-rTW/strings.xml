@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">相機</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">場景辨識</string>
-    <string name="cam_strings_shortcut_normal_txt">正常</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">場景辨識(相機)</string>
+    <string name="cam_strings_shortcut_normal_txt">正常(相機)</string>
     <string name="cam_strings_shortcut_front_camera_txt">正面相機</string>
     <string name="cam_strings_shortcut_video_camera_txt">視訊相機</string>
     <string name="cam_strings_shortcut_front_video_txt">前置視訊</string>
@@ -130,19 +130,19 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">使用GPS取得的位置永遠較使用無線網路優先。如要變更位置取得方式，請移至[設定] > [位置]。</string>
     <string name="cam_strings_do_not_show_again_txt">不再顯示</string>
     <string name="cam_strings_unavailable_in_scene_txt">無法搭配目前[場景]設定變更</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Smile Shutter™使用中時無法變更</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">使用微笑偵測時無法使用此設定</string>
     <string name="cam_3d_strings_dialog_delete_txt">刪除此檔案？</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">連同多角度影像</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">連同3D檔案</string>
     <string name="cam_3d_strings_dialog_delete_one_category_file_txt">僅此檔案</string>
     <string name="cam_3d_strings_shortcut_3d_sweep_panorama_txt">3D全景模式摄影</string>
-    <string name="cam_3d_strings_shortcut_sweep_multi_angle_txt">多角度掃描</string>
+    <string name="cam_3d_strings_shortcut_sweep_multi_angle_txt">多角度拍攝</string>
     <string name="cam_3d_strings_shortcut_sweep_panorama_txt">寬景模式掃描</string>
     <string name="cam_3d_strings_shortcut_album_txt">3D相簿</string>
     <string name="cam_3d_strings_shortcut_album_3d_sweep_panorama_txt">3D全景模式摄影</string>
-    <string name="cam_3d_strings_shortcut_album_sweep_multi_angle_txt">多角度掃描</string>
+    <string name="cam_3d_strings_shortcut_album_sweep_multi_angle_txt">多角度拍攝</string>
     <string name="cam_3d_strings_album_3d_panorama_txt">3D全景模式摄影</string>
-    <string name="cam_3d_strings_album_multi_angle_txt">多角度掃描</string>
+    <string name="cam_3d_strings_album_multi_angle_txt">多角度拍攝</string>
     <string name="cam_3d_strings_shooting_guide_left_to_right_txt">由左往右平移</string>
     <string name="cam_3d_strings_shooting_guide_right_to_left_txt">由右往左平移</string>
     <string name="cam_3d_strings_shooting_guide_down_to_up_txt">由下往上平移</string>
@@ -159,7 +159,7 @@
     <string name="cam_3d_strings_album_multi_angle_view_guide_txt">向左或向右傾斜電話</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_txt">若要檢視3D影像，請使用HDMI連接線與3D電視連接。</string>
     <string name="cam_3d_strings_error_zoom_3d_sweep_panorama_txt">3D全景攝影下縮放功能不可用</string>
-    <string name="cam_3d_strings_error_zoom_sweep_multi_angle_txt">多角度無法縮放</string>
+    <string name="cam_3d_strings_error_zoom_sweep_multi_angle_txt">多角度拍攝無法縮放</string>
     <string name="cam_3d_strings_error_zoom_sweep_panorama_txt">寬景模式掃描無法縮放</string>
     <string name="cam_3d_strings_error_too_quick_txt">無法照相。請降低平移速度。</string>
     <string name="cam_3d_strings_error_too_slow_txt">無法照相。請加速平移。</string>
@@ -172,16 +172,11 @@
     <string name="cam_3d_strings_dialog_processing_include_black_area_txt">"處理中...
 此影像包含灰色區域"</string>
     <string name="cam_3d_strings_dialog_multi_angle_processing_txt">"建立下列檔案：
-
--多角度影像
-
--3D影像"</string>
+- 多角度影像
+- 3D影像"</string>
     <string name="cam_3d_strings_dialog_multi_angle_processing_include_black_area_txt">"建立下列檔案：
-
--多角度影像
-
--3D影像
-
+- 多角度影像
+- 3D影像
 注意：這些檔案有灰色區域。"</string>
     <string name="cam_3d_strings_gallery_txt">圖片庫</string>
     <string name="cam_3d_strings_album_browser_no_data_txt">無項目</string>
@@ -203,12 +198,11 @@
     <string name="cam_3d_strings_shooting_direction_guide_txt">輕觸左側圖示以變更方向</string>
     <string name="cam_3d_strings_shooting_guide_touch_cap_txt">輕觸觀景窗，然後緩慢平移相機</string>
     <string name="cam_3d_strings_dialog_loading_txt">載入中</string>
-    <string name="cam_3d_strings_dialog_delete_3d_with_ma_txt">"
-此3D影像也有多角度相片。是否一併刪除？"</string>
-    <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">此3D影像也有多角度相片。是否一併刪除？</string>
+    <string name="cam_3d_strings_dialog_delete_3d_with_ma_txt">此3D影像也有多角度相片。是否一併刪除？</string>
+    <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">此多角度相片也有3D影像。是否一併刪除？</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">僅多角度</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">僅3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">此模式不支援連接HDMI連接線。請拔下連接線。</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">您無法在連接線已連線的情況下使用此模式拍照，請拔下連接線。</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">若要以3D方式檢視此檔案，請使用支援3D的裝置。</string>
     <string name="cam_status_remained_min">%1$d分</string>
     <string name="cam_strings_both_location_fail_txt">無法建立定位</string>
@@ -222,7 +216,7 @@
     <string name="cam_strings_wireless_gps_explanatory_title_txt">位置取得方式</string>
     <string name="cam_strings_file_delete_confirm_title_txt">刪除</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">無法拍攝</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI錯誤</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">發生錯誤</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">遙控裝置可用</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">刪除</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">正在儲存影像</string>
@@ -235,7 +229,7 @@
     <string name="cam_strings_capturing_mode_video_camera_short_txt">視訊相機</string>
     <string name="cam_strings_capturing_mode_front_video_short_txt">前置視訊</string>
     <string name="cam_3d_strings_3d_sweep_panorama_short_txt">3D全景攝影</string>
-    <string name="cam_3d_strings_sweep_multi_angle_short_txt">多角度掃描</string>
+    <string name="cam_3d_strings_sweep_multi_angle_short_txt">多角度拍攝</string>
     <string name="cam_3d_strings_sweep_panorama_short_txt">寬景模式掃描</string>
     <string name="cam_strings_capturing_method_txt">拍攝方式</string>
     <string name="cam_strings_error_memory_ims_access_error_txt">記憶卡錯誤</string>
@@ -286,9 +280,9 @@
     <string name="cam_strings_cancel_txt">取消</string>
     <string name="cam_strings_zoom_help_txt">使用音量鍵放大/縮小</string>
     <string name="cam_strings_zoom_not_supported_txt">此模式無法縮放</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">若要以3D模式檢視相片，請使用HDMI線將您的相機連線至3D電視或輕觸[播放位置]按鈕。</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">若要以3D模式檢視相片，請使用HDMI線或輕觸裝置的[播放]按鈕，將您的手機連線至3D電視。</string>
     <string name="cam_strings_touch_capture_gude_video_txt">碰觸螢幕可錄製影片</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">若要使用3D模式檢視相片，請將您的手機與3D電視連線並輕觸[播放]按鈕。</string>
-    <string name="cam_strings_error_storage_changing_to_internal_txt">沒有可用的SD卡。已將預設的儲存位置變更為內部大量儲存裝置。</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">若要使用3D模式檢視此相片，請輕觸裝置的[播放]按鈕，將您的手機與3D電視連線。</string>
+    <string name="cam_strings_error_storage_changing_to_internal_txt">沒有可用的SD卡。已將預設的儲存位置變更為內部儲存空間。</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">可使用SD卡。預設的儲存位置已變更為SD卡。</string>
 </resources>

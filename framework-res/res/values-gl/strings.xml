@@ -917,7 +917,7 @@ Seleccione Aceptar para continuar ou Cancelar para permanecer na páxina actual.
     <string name="capital_off">〇</string>
     <string name="whichApplication">Completar acción usando</string>
     <string name="alwaysUse">Predeterminado para esta acción.</string>
-    <string name="clearDefaultHintMsg">Borre os axustes predeterminados en Configuración da páxina principal > Aplicacións > Administrar aplicacións.</string>
+    <string name="clearDefaultHintMsg">Borre os axustes predeterminados en Configuración > Aplicacións.</string>
     <string name="chooseActivity">Seleccionar unha acción</string>
     <string name="chooseUsbActivity">Seleccione unha aplicación para o dispositivo USB</string>
     <string name="noApplications">Ningunha aplicación pode realizar esta acción.</string>
@@ -1224,7 +1224,7 @@ usando %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">Tarxeta SIM bloqueada</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Inserir PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">Tarxeta SIM bloqueada</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Insira o código PUK do seu operador</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Introduza o PUK do seu operador de rede</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Póñase en contacto co seu operador</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Insira o novo PIN</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Repita o novo PIN</string>

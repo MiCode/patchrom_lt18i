@@ -26,13 +26,13 @@
     .parameter "state"
 
     .prologue
-    .line 841
+    .line 837
     iput-object p1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCaptureContext;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
-    .line 842
+    .line 838
     invoke-direct {p0, p2, p3}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;-><init>(Landroid/app/Activity;Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;)V
 
-    .line 843
+    .line 839
     return-void
 .end method
 
@@ -43,9 +43,9 @@
     .parameter "state"
 
     .prologue
-    .line 847
+    .line 843
     invoke-super {p0, p1}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->setState(Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;)V
 
-    .line 848
+    .line 844
     return-void
 .end method

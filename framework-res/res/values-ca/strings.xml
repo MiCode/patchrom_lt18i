@@ -924,8 +924,8 @@ Seleccioneu D'acord per continuar, o Cancel·la per quedar-vos a la pàgina actu
     <string name="capital_on">|</string>
     <string name="capital_off">〇</string>
     <string name="whichApplication">"Completa l'acció utilitzant"</string>
-    <string name="alwaysUse">Usa per defecte per a aquesta acció.</string>
-    <string name="clearDefaultHintMsg">"Esborra el valor predeterminat a Configuració de la pantalla d'inici > Aplicacions > Gestiona les aplicacions."</string>
+    <string name="alwaysUse">"Utilitza per defecte per a l'acció."</string>
+    <string name="clearDefaultHintMsg">Esborra el valor predeterminat a Paràmetres > Aplicacions</string>
     <string name="chooseActivity">Seleccioneu una acció</string>
     <string name="chooseUsbActivity">Seleccionar una aplicació per al dispositiu USB</string>
     <string name="noApplications">Cap aplicació no pot executar aquesta acció.</string>
@@ -1235,7 +1235,7 @@ per al compte %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">Targeta SIM bloquejada</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Introduïu el PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">Targeta SIM bloquejada</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">"Introduïu el codi PUK de l'operador"</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">"Introduïu el codi PUK de l'operador de xarxa"</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">"Poseu-vos en contacte amb l'operador"</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Introduïu un PIN nou</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Repetiu el PIN nou</string>

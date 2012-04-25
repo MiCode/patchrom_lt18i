@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">מצלמה</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">זיהוי זירת צילום</string>
-    <string name="cam_strings_shortcut_normal_txt">רגיל</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">זיהוי זירת צילום (מצלמה)</string>
+    <string name="cam_strings_shortcut_normal_txt">רגיל (מצלמה)</string>
     <string name="cam_strings_shortcut_front_camera_txt">מצלמה קדמית</string>
     <string name="cam_strings_shortcut_video_camera_txt">מצלמת וידיאו</string>
     <string name="cam_strings_shortcut_front_video_txt">וידיאו קדמי</string>
@@ -41,7 +41,7 @@
     <string name="cam_strings_resolution_12mp_4x3_txt">12 מגה-פיקסל (4:3)</string>
     <string name="cam_strings_flash_txt">מבזק</string>
     <string name="cam_strings_flash_fill_flash_txt">מבזק מילוי</string>
-    <string name="cam_strings_flash_red_eye_reduc_txt">"הפחתת עיניים אדומ'"</string>
+    <string name="cam_strings_flash_red_eye_reduc_txt">הפחתת עיניים אדומות</string>
     <string name="cam_strings_light_txt">תאורת צילום</string>
     <string name="cam_strings_self_timer_txt">צילום עצמי</string>
     <string name="cam_strings_self_timer_2_txt">"מופעל (2 שנ')"</string>
@@ -78,11 +78,11 @@
     <string name="cam_strings_iso_800_txt">800</string>
     <string name="cam_strings_iso_1600_txt">1600</string>
     <string name="cam_strings_white_balance_txt">איזון לבן</string>
-    <string name="cam_strings_white_balance_auto_txt">אוטומטי</string>
-    <string name="cam_strings_white_balance_incandescent_txt">נורת ליבון</string>
-    <string name="cam_strings_white_balance_fluorescent_txt">פלואורסצנט</string>
-    <string name="cam_strings_white_balance_day_light_txt">אור יום</string>
-    <string name="cam_strings_white_balance_cloudy_txt">מעונן</string>
+    <string name="cam_strings_white_balance_auto_txt">Auto</string>
+    <string name="cam_strings_white_balance_incandescent_txt">Incandescent</string>
+    <string name="cam_strings_white_balance_fluorescent_txt">Fluorescent</string>
+    <string name="cam_strings_white_balance_day_light_txt">Daylight</string>
+    <string name="cam_strings_white_balance_cloudy_txt">Cloudy</string>
     <string name="cam_strings_photometry_txt">מדידה</string>
     <string name="cam_strings_photometry_center_txt">מרכז</string>
     <string name="cam_strings_photometry_average_txt">ממוצע</string>
@@ -103,7 +103,7 @@
     <string name="cam_strings_fast_capturing_txt">הפעלה מהירה</string>
     <string name="cam_strings_video_size_txt">גודל וידיאו</string>
     <string name="cam_strings_video_size_mms_txt">הודעת מולטימדיה</string>
-    <string name="cam_strings_video_size_fwvga_txt">VGA רחב מלא</string>
+    <string name="cam_strings_video_size_fwvga_txt">FWVGA</string>
     <string name="cam_strings_video_size_hd_720p_txt">HD 720p</string>
     <string name="cam_strings_video_size_full_hd_txt">HD 1080p</string>
     <string name="cam_strings_microphone_txt">מיקרופון</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">"מיקום שנדרש באמצעות GPS מקבל תמיד קדימות על-פני רשתות אלחוטיות. כדי לשנות את האופן שבו תשיג את המיקום שלך, עבור אל 'הגדרות > מיקום'."</string>
     <string name="cam_strings_do_not_show_again_txt">אל תציג שוב</string>
     <string name="cam_strings_unavailable_in_scene_txt">לא ניתן לשינוי בשילוב עם הגדרת זירת הצילום הנוכחית</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">לא זמין כאשר Smile Shutter™‎ פעיל</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">אפשרות זו לא זמינה כאשר זיהוי חיוכים פעיל</string>
     <string name="cam_3d_strings_dialog_delete_txt">למחוק קובץ זה?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">גם מרובה זוויות</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">"גם ק' ת. ממד"</string>
@@ -156,7 +156,7 @@
     <string name="cam_3d_strings_setting_shooting_direction_left_txt">שמאל</string>
     <string name="cam_3d_strings_setting_shooting_direction_up_txt">למעלה</string>
     <string name="cam_3d_strings_setting_shooting_direction_down_txt">למטה</string>
-    <string name="cam_3d_strings_album_multi_angle_view_guide_txt">"הטה את הטל' ימינה או שמאלה"</string>
+    <string name="cam_3d_strings_album_multi_angle_view_guide_txt">Tilt phone right or left</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_txt">"כדי לצפות בתמ' התלת-ממדית, התחבר לטלו' תלת-ממד' עם כבל HDMI"</string>
     <string name="cam_3d_strings_error_zoom_3d_sweep_panorama_txt">זום אינו זמין ברצף פנורמה בתלת מימד</string>
     <string name="cam_3d_strings_error_zoom_sweep_multi_angle_txt">זום אינו זמין ברצף ריבוי זוויות</string>
@@ -191,12 +191,12 @@
     <string name="cam_3d_strings_shooting_guide_press_key_txt">לחץ על מקש המצלמה ואז הזז את המצלמה בתנועת פנורמה איטית</string>
     <string name="cam_3d_strings_shooting_direction_guide_txt">שנה כיוון על-ידי הקשה על הסמל בצד שמאל</string>
     <string name="cam_3d_strings_shooting_guide_touch_cap_txt">הקש על מסך התצוגה המקדימה ואז הזז את המצלמה בתנועת פנורמה איטית</string>
-    <string name="cam_3d_strings_dialog_loading_txt">טוען</string>
+    <string name="cam_3d_strings_dialog_loading_txt">Loading</string>
     <string name="cam_3d_strings_dialog_delete_3d_with_ma_txt">קיים גם תצלום מרובה זווית עבור תמונה תלת-ממדית זו. למחוק את שניהם?</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">קיימת גם תמונה תלת-ממדית עבור תצלום מרובה זוויות זה. למחוק את שניהם?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">"רק ריבוי זו'"</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">רק תלת-ממד</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">לא ניתן להשתמש במצב זה כאשר מחובר כבל HDMI. נתק את הכבל.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">נתק את הכבל. לא ניתן לצלם תמונה במצב זה כשכבל מחובר.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">כדי לצפות בקובץ זה בתלת-ממד, השתמש בהתקן נתמך של תלת-ממד.</string>
     <string name="cam_status_remained_min">"%1$d דק'"</string>
     <string name="cam_strings_both_location_fail_txt">לא ניתן ליצור מיקום</string>
@@ -210,7 +210,7 @@
     <string name="cam_strings_wireless_gps_explanatory_title_txt">כיצד לקבל מיקום</string>
     <string name="cam_strings_file_delete_confirm_title_txt">מחק</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">לא ניתן לצלם</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">שגיאת HDMI</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">שגיאה</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">שלט רחוק זמין</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">מחק</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">שמירת תמונה</string>
@@ -274,9 +274,9 @@
     <string name="cam_strings_cancel_txt">ביטול</string>
     <string name="cam_strings_zoom_help_txt">השתמש במקש עוצמת הקול להגדלה/הקטנה</string>
     <string name="cam_strings_zoom_not_supported_txt">לא ניתן לבצע זום במצב זה</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">"להצגת תצלום בתלת-מ', חבר את המצלמה לטלוויזיית תלת-מ' על-ידי HDMI או הקשה על לחצן Play."</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">To view a photo in 3D, connect your phone to a 3D TV by using a HDMI or tapping Play on device button.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">גע במסך כדי להקליט וידיאו</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">כדי להציג תמונה זו בתלת-ממד, חבר את הטלפון שלך לטלוויזיה תלת-ממדית על-ידי הקשה על לחצן Play (הפעל).</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">To view this photo in 3D, connect your phone to a 3D TV by tapping Play on device button.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">אין כרטיס SD זמין. מיקום השמירה המוגדר כברירת מחדל השתנה לאחסון פנימי.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">כרטיס SD זמין. מיקום השמירה המוגדר כברירת מחדל השתנה לכרטיס SD.</string>
 </resources>

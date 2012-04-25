@@ -29,13 +29,13 @@
     .parameter "spans"
 
     .prologue
-    .line 2079
+    .line 2080
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2080
+    .line 2081
     invoke-virtual {p0, p1, p2}, Landroid/text/Layout$TabStops;->reset(I[Ljava/lang/Object;)V
 
-    .line 2081
+    .line 2082
     return-void
 .end method
 
@@ -45,7 +45,7 @@
     .parameter "inc"
 
     .prologue
-    .line 2128
+    .line 2129
     int-to-float v0, p1
 
     add-float/2addr v0, p0
@@ -70,17 +70,17 @@
     .parameter "h"
 
     .prologue
-    .line 2114
+    .line 2115
     iget v1, p0, Landroid/text/Layout$TabStops;->mNumStops:I
 
-    .line 2115
+    .line 2116
     .local v1, ns:I
     if-lez v1, :cond_1
 
-    .line 2116
+    .line 2117
     iget-object v3, p0, Landroid/text/Layout$TabStops;->mStops:[I
 
-    .line 2117
+    .line 2118
     .local v3, stops:[I
     const/4 v0, 0x0
 
@@ -88,10 +88,10 @@
     :goto_0
     if-ge v0, v1, :cond_1
 
-    .line 2118
+    .line 2119
     aget v2, v3, v0
 
-    .line 2119
+    .line 2120
     .local v2, stop:I
     int-to-float v4, v2
 
@@ -99,17 +99,17 @@
 
     if-lez v4, :cond_0
 
-    .line 2120
+    .line 2121
     int-to-float v4, v2
 
-    .line 2124
+    .line 2125
     .end local v0           #i:I
     .end local v2           #stop:I
     .end local v3           #stops:[I
     :goto_1
     return v4
 
-    .line 2117
+    .line 2118
     .restart local v0       #i:I
     .restart local v2       #stop:I
     .restart local v3       #stops:[I
@@ -118,7 +118,7 @@
 
     goto :goto_0
 
-    .line 2124
+    .line 2125
     .end local v0           #i:I
     .end local v2           #stop:I
     .end local v3           #stops:[I
@@ -138,20 +138,20 @@
     .parameter "spans"
 
     .prologue
-    .line 2084
+    .line 2085
     iput p1, p0, Landroid/text/Layout$TabStops;->mIncrement:I
 
-    .line 2086
+    .line 2087
     const/4 v4, 0x0
 
-    .line 2087
+    .line 2088
     .local v4, ns:I
     if-eqz p2, :cond_6
 
-    .line 2088
+    .line 2089
     iget-object v8, p0, Landroid/text/Layout$TabStops;->mStops:[I
 
-    .line 2089
+    .line 2090
     .local v8, stops:[I
     move-object v0, p2
 
@@ -171,21 +171,21 @@
 
     aget-object v7, v0, v2
 
-    .line 2090
+    .line 2091
     .local v7, o:Ljava/lang/Object;
     instance-of v9, v7, Landroid/text/style/TabStopSpan;
 
     if-eqz v9, :cond_7
 
-    .line 2091
+    .line 2092
     if-nez v8, :cond_1
 
-    .line 2092
+    .line 2093
     const/16 v9, 0xa
 
     new-array v8, v9, [I
 
-    .line 2100
+    .line 2101
     :cond_0
     :goto_1
     add-int/lit8 v4, v5, 0x1
@@ -201,7 +201,7 @@
 
     aput v9, v8, v5
 
-    .line 2089
+    .line 2090
     :goto_2
     add-int/lit8 v2, v2, 0x1
 
@@ -211,19 +211,19 @@
     .restart local v5       #ns:I
     goto :goto_0
 
-    .line 2093
+    .line 2094
     .restart local v7       #o:Ljava/lang/Object;
     :cond_1
     array-length v9, v8
 
     if-ne v5, v9, :cond_0
 
-    .line 2094
+    .line 2095
     mul-int/lit8 v9, v5, 0x2
 
     new-array v6, v9, [I
 
-    .line 2095
+    .line 2096
     .local v6, nstops:[I
     const/4 v1, 0x0
 
@@ -231,23 +231,23 @@
     :goto_3
     if-ge v1, v5, :cond_2
 
-    .line 2096
+    .line 2097
     aget v9, v8, v1
 
     aput v9, v6, v1
 
-    .line 2095
+    .line 2096
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_3
 
-    .line 2098
+    .line 2099
     :cond_2
     move-object v8, v6
 
     goto :goto_1
 
-    .line 2103
+    .line 2104
     .end local v1           #i:I
     .end local v6           #nstops:[I
     .end local v7           #o:Ljava/lang/Object;
@@ -256,24 +256,24 @@
 
     if-le v5, v9, :cond_4
 
-    .line 2104
+    .line 2105
     const/4 v9, 0x0
 
     invoke-static {v8, v9, v5}, Ljava/util/Arrays;->sort([III)V
 
-    .line 2106
+    .line 2107
     :cond_4
     iget-object v9, p0, Landroid/text/Layout$TabStops;->mStops:[I
 
     if-eq v8, v9, :cond_5
 
-    .line 2107
+    .line 2108
     iput-object v8, p0, Landroid/text/Layout$TabStops;->mStops:[I
 
     :cond_5
     move v4, v5
 
-    .line 2110
+    .line 2111
     .end local v0           #arr$:[Ljava/lang/Object;
     .end local v2           #i$:I
     .end local v3           #len$:I
@@ -283,7 +283,7 @@
     :cond_6
     iput v4, p0, Landroid/text/Layout$TabStops;->mNumStops:I
 
-    .line 2111
+    .line 2112
     return-void
 
     .end local v4           #ns:I

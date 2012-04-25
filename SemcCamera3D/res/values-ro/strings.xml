@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Aparat foto</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Recunoaştere situaţie</string>
-    <string name="cam_strings_shortcut_normal_txt">Normal</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Recun. scenă (ap. foto)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normal (aparat foto)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Aparat foto frontal</string>
     <string name="cam_strings_shortcut_video_camera_txt">Cameră video</string>
     <string name="cam_strings_shortcut_front_video_txt">Cameră video frontală</string>
     <string name="cam_strings_scenes_auto_recog_portrait_txt">Portret</string>
     <string name="cam_strings_scenes_auto_recog_landscape_txt">Peisaj</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_txt">Lumină de fundal</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Portret cu lumină de fundal</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_txt">Contre-jour</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Portret în contre-jour</string>
     <string name="cam_strings_scenes_auto_recog_twilight_txt">Situaţie nocturnă</string>
     <string name="cam_strings_scenes_auto_recog_twilight_portrait_txt">Portret nocturn</string>
     <string name="cam_strings_scenes_auto_recog_text_txt">Document</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Locaţia obţinută prin GPS are întotdeauna prioritate faţă de reţelele wireless. Pentru a schimba metoda de obţinere, mergeţi la Setări > Locaţie.</string>
     <string name="cam_strings_do_not_show_again_txt">Nu se mai afişează</string>
     <string name="cam_strings_unavailable_in_scene_txt">Nu se poate modifica în prezenţa setării Situaţie curente</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Nu este disponibil(ă) în timp ce opţiunea Smile Shutter™ este activată</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Indisponibil în timp ce detectarea zâmbetului este activă</string>
     <string name="cam_3d_strings_dialog_delete_txt">Ştergeţi acest fişier?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Şi foto multiunghiulară</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Şi fişierul 3D</string>
@@ -202,7 +202,7 @@ Notă: aceste fişiere conţin o zonă gri."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Pentru această fotografie multiunghiulară există şi o imagine 3D. Le ştergeţi pe ambele?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Doar multi.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Doar 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Imposibil de utilizat acest mod cu un cablu HDMI conectat. Scoateţi cablul.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Deconectaţi cablul. Imposibil de efectuat o fotografie în acest mod cu un cablu conectat.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Pt. a vizualiza acest fişier în 3D, utilizaţi un dispozitiv care acceptă 3D.</string>
     <string name="cam_status_remained_min">%1$d min.</string>
     <string name="cam_strings_both_location_fail_txt">Locaţia nu poate fi stabilită</string>
@@ -216,14 +216,14 @@ Notă: aceste fişiere conţin o zonă gri."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Cum se obţine locaţia</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Ştergere</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Imposibil de fotograf.</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Eroare HDMI</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Eroare</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Telecomandă disponibilă</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Ştergere</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Se salvează imaginea</string>
     <string name="cam_strings_error_message_during_voice_call_title_txt">Apel vocal în curs</string>
     <string name="cam_strings_touch_capture_gude_txt">Atingeţi ecranul pentru a fotografia</string>
     <string name="cam_3d_strings_album_application_name_txt">Album 3D</string>
-    <string name="cam_strings_capturing_mode_scene_recognition_short_txt">Recunoaştere situaţie</string>
+    <string name="cam_strings_capturing_mode_scene_recognition_short_txt">Recunoaştere scenă</string>
     <string name="cam_strings_capturing_mode_normal_short_txt">Normal</string>
     <string name="cam_strings_capturing_mode_front_camera_short_txt">Aparat foto frontal</string>
     <string name="cam_strings_capturing_mode_video_camera_short_txt">Cameră video</string>
@@ -279,9 +279,9 @@ Notă: aceste fişiere conţin o zonă gri."</string>
     <string name="cam_strings_cancel_txt">Revocare</string>
     <string name="cam_strings_zoom_help_txt">Utilizaţi tastele de volum pentru mărire/micşorare</string>
     <string name="cam_strings_zoom_not_supported_txt">Imposibil de mărit/micşorat în acest mod</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Pentru a vizualiza o fotografie 3D, conectaţi aparatul foto la un televizor 3D utilizând un cablu HDMI sau atingând uşor butonul Redare pe.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Pt. a vizualiza o fotografie 3D, conectaţi telefonul la un televizor 3D prin HDMI sau atingând uşor butonul Redare pe dispozitiv.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Atingeţi ecranul pentru a înregistra un clip video</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Pentru a vizualiza această fotografie în 3D, conectaţi telefonul la un televizor 3D atingând uşor butonul Redare pe.</string>
-    <string name="cam_strings_error_storage_changing_to_internal_txt">Nicio cartelă SD disponibilă. Locaţie de salvare implicită schimbată cu stocarea internă.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Pentru a vizualiza această fotografie în 3D, conectaţi telefonul la un televizor 3D atingând uşor butonul Redare pe dispozitiv.</string>
+    <string name="cam_strings_error_storage_changing_to_internal_txt">Nicio cartelă SD disponibilă. Locaţie de salvare implicită a fost înlocuită cu memoria internă.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">Nicio cartelă SD disponibilă. Locaţie de salvare implicită schimbată cu cartela SD.</string>
 </resources>

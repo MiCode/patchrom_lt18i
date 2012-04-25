@@ -411,26 +411,26 @@
 
     sput-object v1, Landroid/widget/TextView;->UNKNOWN_BORING:Landroid/text/BoringLayout$Metrics;
 
-    .line 11777
+    .line 11775
     new-instance v1, Landroid/graphics/RectF;
 
     invoke-direct {v1}, Landroid/graphics/RectF;-><init>()V
 
     sput-object v1, Landroid/widget/TextView;->sTempRect:Landroid/graphics/RectF;
 
-    .line 11778
+    .line 11776
     const/4 v1, 0x2
 
     new-array v1, v1, [F
 
     sput-object v1, Landroid/widget/TextView;->sTmpPosition:[F
 
-    .line 11796
+    .line 11794
     new-array v1, v3, [Landroid/text/InputFilter;
 
     sput-object v1, Landroid/widget/TextView;->NO_FILTERS:[Landroid/text/InputFilter;
 
-    .line 11798
+    .line 11796
     new-instance v1, Landroid/text/SpannedString;
 
     const-string v2, ""
@@ -439,12 +439,12 @@
 
     sput-object v1, Landroid/widget/TextView;->EMPTY_SPANNED:Landroid/text/Spanned;
 
-    .line 11799
+    .line 11797
     const/16 v1, 0x14
 
     sput v1, Landroid/widget/TextView;->DRAG_SHADOW_MAX_TEXT_LENGTH:I
 
-    .line 11805
+    .line 11803
     new-array v1, v4, [I
 
     const v2, 0x101034d
@@ -673,7 +673,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mMarqueeFadeMode:I
 
-    .line 11701
+    .line 11699
     sget-object v63, Landroid/widget/TextView$BufferType;->NORMAL:Landroid/widget/TextView$BufferType;
 
     move-object/from16 v0, v63
@@ -682,7 +682,7 @@
 
     iput-object v0, v1, Landroid/widget/TextView;->mBufferType:Landroid/widget/TextView$BufferType;
 
-    .line 11703
+    .line 11701
     const/16 v63, 0x0
 
     move/from16 v0, v63
@@ -691,7 +691,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mInputType:I
 
-    .line 11714
+    .line 11712
     const/16 v63, 0x0
 
     move-object/from16 v0, v63
@@ -700,7 +700,7 @@
 
     iput-object v0, v1, Landroid/widget/TextView;->mListeners:Ljava/util/ArrayList;
 
-    .line 11720
+    .line 11718
     const v63, 0x6633b5e5
 
     move/from16 v0, v63
@@ -709,7 +709,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mHighlightColor:I
 
-    .line 11731
+    .line 11729
     const/16 v63, 0x1
 
     move/from16 v0, v63
@@ -718,7 +718,7 @@
 
     iput-boolean v0, v1, Landroid/widget/TextView;->mCursorVisible:Z
 
-    .line 11741
+    .line 11739
     const/16 v63, 0x0
 
     move/from16 v0, v63
@@ -727,7 +727,7 @@
 
     iput-boolean v0, v1, Landroid/widget/TextView;->mSelectAllOnFocus:Z
 
-    .line 11743
+    .line 11741
     const v63, 0x800033
 
     move/from16 v0, v63
@@ -736,7 +736,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mGravity:I
 
-    .line 11747
+    .line 11745
     const/16 v63, 0x1
 
     move/from16 v0, v63
@@ -745,7 +745,7 @@
 
     iput-boolean v0, v1, Landroid/widget/TextView;->mLinksClickable:Z
 
-    .line 11749
+    .line 11747
     const/high16 v63, 0x3f80
 
     move/from16 v0, v63
@@ -754,7 +754,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mSpacingMult:F
 
-    .line 11750
+    .line 11748
     const/16 v63, 0x0
 
     move/from16 v0, v63
@@ -763,7 +763,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mSpacingAdd:F
 
-    .line 11751
+    .line 11749
     const/16 v63, 0x0
 
     move/from16 v0, v63
@@ -772,7 +772,7 @@
 
     iput-boolean v0, v1, Landroid/widget/TextView;->mTextIsSelectable:Z
 
-    .line 11757
+    .line 11755
     const v63, 0x7fffffff
 
     move/from16 v0, v63
@@ -781,7 +781,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mMaximum:I
 
-    .line 11758
+    .line 11756
     const/16 v63, 0x1
 
     move/from16 v0, v63
@@ -790,7 +790,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mMaxMode:I
 
-    .line 11759
+    .line 11757
     const/16 v63, 0x0
 
     move/from16 v0, v63
@@ -799,7 +799,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mMinimum:I
 
-    .line 11760
+    .line 11758
     const/16 v63, 0x1
 
     move/from16 v0, v63
@@ -808,7 +808,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mMinMode:I
 
-    .line 11762
+    .line 11760
     move-object/from16 v0, p0
 
     iget v0, v0, Landroid/widget/TextView;->mMaximum:I
@@ -821,7 +821,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mOldMaximum:I
 
-    .line 11763
+    .line 11761
     move-object/from16 v0, p0
 
     iget v0, v0, Landroid/widget/TextView;->mMaxMode:I
@@ -834,7 +834,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mOldMaxMode:I
 
-    .line 11765
+    .line 11763
     const v63, 0x7fffffff
 
     move/from16 v0, v63
@@ -843,7 +843,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mMaxWidth:I
 
-    .line 11766
+    .line 11764
     const/16 v63, 0x2
 
     move/from16 v0, v63
@@ -852,7 +852,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mMaxWidthMode:I
 
-    .line 11767
+    .line 11765
     const/16 v63, 0x0
 
     move/from16 v0, v63
@@ -861,7 +861,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mMinWidth:I
 
-    .line 11768
+    .line 11766
     const/16 v63, 0x2
 
     move/from16 v0, v63
@@ -870,7 +870,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mMinWidthMode:I
 
-    .line 11771
+    .line 11769
     const/16 v63, -0x1
 
     move/from16 v0, v63
@@ -879,7 +879,7 @@
 
     iput v0, v1, Landroid/widget/TextView;->mDesiredHeightAtMeasure:I
 
-    .line 11772
+    .line 11770
     const/16 v63, 0x1
 
     move/from16 v0, v63
@@ -888,7 +888,7 @@
 
     iput-boolean v0, v1, Landroid/widget/TextView;->mIncludePad:Z
 
-    .line 11776
+    .line 11774
     const/16 v63, 0x1
 
     move/from16 v0, v63
@@ -897,7 +897,7 @@
 
     iput-boolean v0, v1, Landroid/widget/TextView;->mHighlightPathBogus:Z
 
-    .line 11787
+    .line 11785
     const/16 v63, 0x0
 
     move-object/from16 v0, v63
@@ -906,7 +906,7 @@
 
     iput-object v0, v1, Landroid/widget/TextView;->mScroller:Landroid/widget/Scroller;
 
-    .line 11794
+    .line 11792
     const/16 v63, 0x0
 
     move-object/from16 v0, v63
@@ -915,7 +915,7 @@
 
     iput-object v0, v1, Landroid/widget/TextView;->mTextDir:Landroid/text/TextDirectionHeuristic;
 
-    .line 11797
+    .line 11795
     sget-object v63, Landroid/widget/TextView;->NO_FILTERS:[Landroid/text/InputFilter;
 
     move-object/from16 v0, v63
@@ -10911,16 +10911,16 @@
     .locals 2
 
     .prologue
-    .line 11646
+    .line 11644
     iget-object v0, p0, Landroid/widget/TextView;->mLayoutAlignment:Landroid/text/Layout$Alignment;
 
-    .line 11649
+    .line 11647
     .local v0, current:Landroid/text/Layout$Alignment;
     const/4 v1, 0x0
 
     iput-object v1, p0, Landroid/widget/TextView;->mLayoutAlignment:Landroid/text/Layout$Alignment;
 
-    .line 11652
+    .line 11650
     invoke-direct {p0}, Landroid/widget/TextView;->getLayoutAlignment()Landroid/text/Layout$Alignment;
 
     move-result-object v1
@@ -10931,10 +10931,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 11653
+    .line 11651
     invoke-direct {p0}, Landroid/widget/TextView;->refreshTextLayout()V
 
-    .line 11655
+    .line 11653
     :cond_0
     return-void
 .end method
@@ -15830,14 +15830,14 @@
     .parameter "end"
 
     .prologue
-    .line 11671
+    .line 11669
     iget-object v0, p0, Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
 
     check-cast v0, Landroid/text/Editable;
 
     invoke-interface {v0, p1, p2}, Landroid/text/Editable;->delete(II)Landroid/text/Editable;
 
-    .line 11672
+    .line 11670
     return-void
 .end method
 
@@ -27906,14 +27906,14 @@
     .parameter "text"
 
     .prologue
-    .line 11679
+    .line 11677
     iget-object v0, p0, Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
 
     check-cast v0, Landroid/text/Editable;
 
     invoke-interface {v0, p1, p2, p3}, Landroid/text/Editable;->replace(IILjava/lang/CharSequence;)Landroid/text/Editable;
 
-    .line 11680
+    .line 11678
     return-void
 .end method
 
@@ -28052,12 +28052,12 @@
     .locals 1
 
     .prologue
-    .line 11642
+    .line 11640
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Landroid/widget/TextView;->mResolvedDrawables:Z
 
-    .line 11643
+    .line 11641
     return-void
 .end method
 
@@ -28107,7 +28107,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 11639
+    .line 11637
     :cond_0
     :goto_0
     return-void
@@ -28148,48 +28148,47 @@
 
     packed-switch v1, :pswitch_data_0
 
-    .line 11624
+    .line 11623
     iget-object v1, v0, Landroid/widget/TextView$Drawables;->mDrawableStart:Landroid/graphics/drawable/Drawable;
 
-    if-eqz v1, :cond_3
+    if-nez v1, :cond_3
 
-    .line 11625
-    iget-object v1, v0, Landroid/widget/TextView$Drawables;->mDrawableStart:Landroid/graphics/drawable/Drawable;
-
-    iput-object v1, v0, Landroid/widget/TextView$Drawables;->mDrawableLeft:Landroid/graphics/drawable/Drawable;
-
-    .line 11627
-    iget v1, v0, Landroid/widget/TextView$Drawables;->mDrawableSizeStart:I
-
-    iput v1, v0, Landroid/widget/TextView$Drawables;->mDrawableSizeLeft:I
-
-    .line 11628
-    iget v1, v0, Landroid/widget/TextView$Drawables;->mDrawableHeightStart:I
-
-    iput v1, v0, Landroid/widget/TextView$Drawables;->mDrawableHeightLeft:I
-
-    .line 11630
-    :cond_3
     iget-object v1, v0, Landroid/widget/TextView$Drawables;->mDrawableEnd:Landroid/graphics/drawable/Drawable;
 
     if-eqz v1, :cond_4
 
-    .line 11631
+    .line 11624
+    :cond_3
+    iget-object v1, v0, Landroid/widget/TextView$Drawables;->mDrawableStart:Landroid/graphics/drawable/Drawable;
+
+    iput-object v1, v0, Landroid/widget/TextView$Drawables;->mDrawableLeft:Landroid/graphics/drawable/Drawable;
+
+    .line 11626
+    iget v1, v0, Landroid/widget/TextView$Drawables;->mDrawableSizeStart:I
+
+    iput v1, v0, Landroid/widget/TextView$Drawables;->mDrawableSizeLeft:I
+
+    .line 11627
+    iget v1, v0, Landroid/widget/TextView$Drawables;->mDrawableHeightStart:I
+
+    iput v1, v0, Landroid/widget/TextView$Drawables;->mDrawableHeightLeft:I
+
+    .line 11629
     iget-object v1, v0, Landroid/widget/TextView$Drawables;->mDrawableEnd:Landroid/graphics/drawable/Drawable;
 
     iput-object v1, v0, Landroid/widget/TextView$Drawables;->mDrawableRight:Landroid/graphics/drawable/Drawable;
 
-    .line 11633
+    .line 11631
     iget v1, v0, Landroid/widget/TextView$Drawables;->mDrawableSizeEnd:I
 
     iput v1, v0, Landroid/widget/TextView$Drawables;->mDrawableSizeRight:I
 
-    .line 11634
+    .line 11632
     iget v1, v0, Landroid/widget/TextView$Drawables;->mDrawableHeightEnd:I
 
     iput v1, v0, Landroid/widget/TextView$Drawables;->mDrawableHeightRight:I
 
-    .line 11638
+    .line 11636
     :cond_4
     :goto_1
     iput-boolean v2, p0, Landroid/widget/TextView;->mResolvedDrawables:Z
@@ -28200,9 +28199,14 @@
     :pswitch_0
     iget-object v1, v0, Landroid/widget/TextView$Drawables;->mDrawableStart:Landroid/graphics/drawable/Drawable;
 
-    if-eqz v1, :cond_5
+    if-nez v1, :cond_5
+
+    iget-object v1, v0, Landroid/widget/TextView$Drawables;->mDrawableEnd:Landroid/graphics/drawable/Drawable;
+
+    if-eqz v1, :cond_4
 
     .line 11609
+    :cond_5
     iget-object v1, v0, Landroid/widget/TextView$Drawables;->mDrawableStart:Landroid/graphics/drawable/Drawable;
 
     iput-object v1, v0, Landroid/widget/TextView$Drawables;->mDrawableRight:Landroid/graphics/drawable/Drawable;
@@ -28218,22 +28222,16 @@
     iput v1, v0, Landroid/widget/TextView$Drawables;->mDrawableHeightRight:I
 
     .line 11614
-    :cond_5
-    iget-object v1, v0, Landroid/widget/TextView$Drawables;->mDrawableEnd:Landroid/graphics/drawable/Drawable;
-
-    if-eqz v1, :cond_4
-
-    .line 11615
     iget-object v1, v0, Landroid/widget/TextView$Drawables;->mDrawableEnd:Landroid/graphics/drawable/Drawable;
 
     iput-object v1, v0, Landroid/widget/TextView$Drawables;->mDrawableLeft:Landroid/graphics/drawable/Drawable;
 
-    .line 11617
+    .line 11616
     iget v1, v0, Landroid/widget/TextView$Drawables;->mDrawableSizeEnd:I
 
     iput v1, v0, Landroid/widget/TextView$Drawables;->mDrawableSizeLeft:I
 
-    .line 11618
+    .line 11617
     iget v1, v0, Landroid/widget/TextView$Drawables;->mDrawableHeightEnd:I
 
     iput v1, v0, Landroid/widget/TextView$Drawables;->mDrawableHeightLeft:I
@@ -29687,14 +29685,14 @@
     .parameter "end"
 
     .prologue
-    .line 11695
+    .line 11693
     iget-object v0, p0, Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
 
     check-cast v0, Landroid/text/Editable;
 
     invoke-static {v0, p1, p2}, Landroid/text/Selection;->setSelection(Landroid/text/Spannable;II)V
 
-    .line 11696
+    .line 11694
     return-void
 .end method
 
@@ -31724,14 +31722,14 @@
     .parameter "flags"
 
     .prologue
-    .line 11687
+    .line 11685
     iget-object v0, p0, Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
 
     check-cast v0, Landroid/text/Editable;
 
     invoke-interface {v0, p1, p2, p3, p4}, Landroid/text/Editable;->setSpan(Ljava/lang/Object;III)V
 
-    .line 11688
+    .line 11686
     return-void
 .end method
 
@@ -33183,13 +33181,13 @@
     .parameter "imm"
 
     .prologue
-    .line 11661
+    .line 11659
     if-eqz p1, :cond_0
 
-    .line 11662
+    .line 11660
     invoke-virtual {p1, p0}, Landroid/view/inputmethod/InputMethodManager;->viewClicked(Landroid/view/View;)V
 
-    .line 11664
+    .line 11662
     :cond_0
     return-void
 .end method

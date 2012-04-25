@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Камера</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Көріністі тану</string>
-    <string name="cam_strings_shortcut_normal_txt">Қалыпты</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Көріністі тану(камера)</string>
+    <string name="cam_strings_shortcut_normal_txt">Қалыпты(камера)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Алдыңғы камера</string>
     <string name="cam_strings_shortcut_video_camera_txt">Бейнекамера</string>
     <string name="cam_strings_shortcut_front_video_txt">Алдыңғы бейне</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">"GPS жүйесінің көмегімен алынған орын әрқашан сымсыз желілерден басым болады. Алу әдісін өзгерту үшін  Параметрлер > Орын тармағына өтіңіз."</string>
     <string name="cam_strings_do_not_show_again_txt">Қайтадан көрсетпеу</string>
     <string name="cam_strings_unavailable_in_scene_txt">Ағымдағы көрініс параметрімен бірге өзгерту мүмкін емес.</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Smile Shutter™ қосулы кезде өзгермейді</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Жымиюды анықтау қосулы болған кезде қол жетімді емес</string>
     <string name="cam_3d_strings_dialog_delete_txt">Осы файлды жою керек пе?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Multi Angle файлы</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">3D файлы</string>
@@ -202,7 +202,7 @@
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Бұл Multi Angle фотосуреті үшін 3D кескіні де бар. Екеуін де жою керек пе?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Тек M.Angle</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Тек 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">HDMI кабелі жалғанған кезде бұл режим пайдаланылмайды. Кабельді ажыратыңыз.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Кабелді ажыратыңыз. Жалғанған кабельмен бұл режимде суретке түсіре алмайсыз.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Бұл файлды 3D р-де көру үшін 3D реж. қолдайтын құрыл. пайдал-з.</string>
     <string name="cam_status_remained_min">%1$d мин</string>
     <string name="cam_strings_both_location_fail_txt">Орынды анықтау мүмкін емес</string>
@@ -216,7 +216,7 @@
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Орынға жету әдісі</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Жою</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Түсіру мүмкін емес</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI қатесі</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Қате</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Қашықтан басқ. болады</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Жою</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Сурет сақталуда</string>
@@ -233,7 +233,7 @@
     <string name="cam_3d_strings_sweep_panorama_short_txt">Sweep Panorama</string>
     <string name="cam_strings_capturing_method_txt">Түсіру әдісі</string>
     <string name="cam_strings_error_memory_ims_access_error_txt">Жад қатесі</string>
-    <string name="cam_strings_error_memory_ims_full_txt">Жад толы. SD картасынан немесе ішкі жадтан кейбір файлдарды жойыңыз.</string>
+    <string name="cam_strings_error_memory_ims_full_txt">Жад толы. Жадтан кейбір файлдарды жойыңыз.</string>
     <string name="cam_strings_error_memory_ims_no_format_txt">Жад жойылмаған</string>
     <string name="cam_strings_error_memory_ims_read_only_txt">Жад жазудан қорғалған. Файлдарды өңдеу мүмкін емес.</string>
     <string name="cam_strings_error_memory_ims_unavailable_txt">Жад қол жетімді емес.</string>
@@ -255,7 +255,7 @@
     <string name="cam_strings_button_to_deny_txt">Рұқсат етпеу</string>
     <string name="cam_strings_fast_capturing_screen_locked_title_txt">Экран құлыпталған</string>
     <string name="cam_strings_fast_capturing_allowance_title_txt">Жылдам қосуды орнату</string>
-    <string name="cam_strings_fast_capturing_finish_confirmation_title_txt">Жылдам іске қосу режимі</string>
+    <string name="cam_strings_fast_capturing_finish_confirmation_title_txt">Жыл-м іске қосу режимі</string>
     <string name="cam_strings_scenes_title_txt">Көріністер</string>
     <string name="cam_strings_resolution_title_txt">Ажыратымдылық</string>
     <string name="cam_strings_flash_title_txt">Жарықтандырғыш</string>
@@ -279,9 +279,9 @@
     <string name="cam_strings_cancel_txt">Бас тарту</string>
     <string name="cam_strings_zoom_help_txt">Үлкейту/кішірейту үшін дыбыс деңгейі пернесін пайдаланыңыз</string>
     <string name="cam_strings_zoom_not_supported_txt">Бұл режимде масштабтау мүмкін емес</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Суреттер 3D пішімінде көру үшін HDMI көмегімен немесе Ойнату түймесін түрту арқылы камераны 3D теледидарға қосыңыз.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Бұл суретті 3D пішімінде көру үшін, телефонды 3D теледидарға Ойнату түймесін басу арқылы қосыңыз.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Бейне жазу үшін экранды түрту</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Бұл суретті 3D пішімінде көру үшін, телефонды 3D ТД қызметіне Ойнату түймесін басу арқылы қосыңыз.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Бұл суретті 3D пішімінде көру үшін, телефонды 3D теледидарға Ойнату түймесін басу арқылы қосыңыз.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">SD картасы қол жетімді емес. Әдепкі сақтау орны ішкі сақтау орнына ауыстырылды.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">SD картасы қол жетімді. Әдепкі сақтау орны SD картасына ауыстырылды.</string>
 </resources>

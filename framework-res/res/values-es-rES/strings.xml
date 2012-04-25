@@ -897,11 +897,11 @@ Selecciona \"Aceptar\" para continuar o \"Cancelar\" para permanecer en la pági
     <string name="low_internal_storage_view_title">Poco espacio</string>
     <string name="low_internal_storage_view_text">El espacio de almacenamiento del teléfono se está agotando.</string>
     <string name="loading">Cargando...</string>
-    <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_on">SÍ</string>
+    <string name="capital_off">NO</string>
     <string name="whichApplication">Completar acción usando</string>
     <string name="alwaysUse">Usar modo predet. para esta acción</string>
-    <string name="clearDefaultHintMsg">Borrar valores predeterminados en la página de configuración de la pantalla de inicio del teléfono > Aplicaciones > Administrar aplicaciones\".</string>
+    <string name="clearDefaultHintMsg">Borrar valores predeterminados en Ajustes > Aplicaciones.</string>
     <string name="chooseActivity">Seleccionar una acción</string>
     <string name="chooseUsbActivity">Seleccionar una aplicación para el dispositivo USB</string>
     <string name="noApplications">Ninguna aplicación puede realizar esta acción.</string>
@@ -1068,7 +1068,7 @@ para la cuenta %s"</string>
     <string name="reset">Restablecer</string>
     <string name="submit">Enviar</string>
     <string name="car_mode_disable_notification_title">Se ha habilitado el modo coche.</string>
-    <string name="car_mode_disable_notification_message">Selecciona esta opción para salir del modo coche.</string>
+    <string name="car_mode_disable_notification_message">Selecciona para salir del modo coche.</string>
     <string name="tethered_notification_title">Conexión mediante módem USB o zona Wi-Fi</string>
     <string name="tethered_notification_message">Toca para iniciar la configuración.</string>
     <string name="back_button_label">Atrás</string>
@@ -1203,8 +1203,8 @@ para la cuenta %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">Tarjeta SIM bloqueada</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Introducir PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">Tarjeta SIM bloqueada</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Introduzca código PUK dado por el operador</string>
-    <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Póngase en contacto con el operador</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Introduzca el PUK del operador de red</string>
+    <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Póngase en contacto con el operador de red</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Introducir nuevo PIN</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Repetir nuevo PIN</string>
     <string name="lockscreen_strings_sim_puk_wrong_nbr_digits_header_txt">El código PUK debe tener 8 dígitos</string>

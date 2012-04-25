@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kaamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Pildistamisolude tuvastus</string>
-    <string name="cam_strings_shortcut_normal_txt">Tavaline</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Pildis-olude tuv. (kaamera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Tavaline (kaamera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Esikaamera</string>
     <string name="cam_strings_shortcut_video_camera_txt">Videokaamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Esivideokaamera</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">GPS-iga saadud asukohateavet eelistatakse traadita side võrkudest saadavale asukohateabele. Asukoha toomise viisi muutmiseks avage Seaded > Asukoht.</string>
     <string name="cam_strings_do_not_show_again_txt">Ära enam kuva</string>
     <string name="cam_strings_unavailable_in_scene_txt">Praeguse pildistamisolude seadega ei saa seda muuta</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Ei saa valida, kui valik Smile Shutter™ on aktiivne</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Pole saadaval, kui naeratusetuvastus on aktiivne</string>
     <string name="cam_3d_strings_dialog_delete_txt">Kas soovite selle faili kustutada?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Foto mitme nurga alt</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">3D-fail</string>
@@ -196,7 +196,7 @@
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Selle mitme nurga alt võetud foto kohta on ka 3D-pilt. Kas mõlemad kustutada?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Vaid mit-n.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Ainult 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">See pildistamisrežiim ei toeta HDMI-väljundit. Eemaldage HDMI-kaabel.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Lahutage kaabel. Selles režiimis ei saa ühendatud kaabli korral pildistada.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Selle faili vaatamiseks 3D-s kasutage 3D-toega seadet.</string>
     <string name="cam_status_remained_min">%1$d min</string>
     <string name="cam_strings_both_location_fail_txt">Asukohta ei saa määrata</string>
@@ -210,7 +210,7 @@
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Asukoha toomise juhised</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Kustuta</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Ei saanud jäädvustada</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI-tõrge</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Tõrge</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Kaugjuhtimispult saadaval</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Kustuta</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Pildi salvestamine</string>
@@ -273,9 +273,9 @@
     <string name="cam_strings_cancel_txt">Tühista</string>
     <string name="cam_strings_zoom_help_txt">Kasutage suumimiseks helitugevusklahvi</string>
     <string name="cam_strings_zoom_not_supported_txt">Selles režiimis ei saa suumida</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Foto vaatamiseks 3D-s ühendage kaamera HDMI-kaabli abil või koputades nuppu Esita seadmes 3D-teleriga.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Foto vaatamiseks 3D-s ühendage telefon HDMI-kaabli abil või koputades nuppu Esita seadmes 3D-teleriga.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Video salvestamiseks puudutage ekraani</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Foto vaatamiseks 3D-s ühendage telefon 3D-teleriga, koputades nuppu Esita seadmes.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Selle foto vaatamiseks 3D-s ühendage telefon 3D-teleriga, koputades nuppu Esita seadmes.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">SD-mälukaart pole saadaval. Vaikesalvestuskohaks on muudetud sisemälu.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">SD-kaart on saadaval. Vaikesalvestuskohaks on muudetud SD-kaart.</string>
 </resources>

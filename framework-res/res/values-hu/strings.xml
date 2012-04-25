@@ -910,11 +910,11 @@ A folytatáshoz válassza az OK lehetőséget; a Mégse lehetőséget választva
     <string name="low_internal_storage_view_title">Kevés tárhely</string>
     <string name="low_internal_storage_view_text">A telefon tárhelye kezd elfogyni.</string>
     <string name="loading">Betöltés...</string>
-    <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_on">BE</string>
+    <string name="capital_off">KI</string>
     <string name="whichApplication">Használandó alkalmazás:</string>
     <string name="alwaysUse">Alapért. használandó a művelethez.</string>
-    <string name="clearDefaultHintMsg">Az alapértelmezés törlése a Főoldal beállításai > Alkalmazások > Alkalmazások kezelése menüben lehetséges.</string>
+    <string name="clearDefaultHintMsg">Az alapértelmezés törlése a Beállítások > Alkalmazások menüpontban</string>
     <string name="chooseActivity">Művelet kijelölése</string>
     <string name="chooseUsbActivity">Alkalmazás választása az USB-eszközhöz</string>
     <string name="noApplications">Ezt a műveletet egyik alkalmazás sem tudja végrehajtani.</string>
@@ -1221,9 +1221,9 @@ ehhez a fiókhoz: %s"</string>
     <string name="gui_cancel_txt">Mégse</string>
     <string name="gui_ok_txt">OK</string>
     <string name="lockscreen_strings_locked_out_wrong_answer_txt">Helytelen válasz</string>
-    <string name="lockscreen_strings_sim_locked_out_header_txt">A SIM-kártya le van tiltva</string>
+    <string name="lockscreen_strings_sim_locked_out_header_txt">A SIM kártya le van tiltva</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">PUK-kód megadása</string>
-    <string name="lockscreen_strings_sim_puk_locked_header_txt">A SIM-kártya zárolva van</string>
+    <string name="lockscreen_strings_sim_puk_locked_header_txt">A SIM kártya zárolva van</string>
     <string name="lockscreen_strings_sim_puk_locked_message_txt">Adja meg az üzemeltetőtől kapott PUK-kódot.</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Forduljon az üzemeltetőhöz</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Új PIN-kód megadása</string>

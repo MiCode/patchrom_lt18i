@@ -419,7 +419,7 @@
     <string name="permlab_manageAppTokens">管理應用程式語彙基元</string>
     <string name="permdesc_manageAppTokens">允許應用程式不使用其正常的Z軸次序建立及管理自己的語彙基元。一般應用程式不需要此功能。</string>
     <string name="permlab_injectEvents">按下按鍵及控制按鈕</string>
-    <string name="permdesc_injectEvents">允許應用程式傳遞個別的輸入事項(例如按鍵輸入)給其他應用程式。惡意應用程式可能使用此功能接管手機。</string>
+    <string name="permdesc_injectEvents">允許應用程式傳遞個別的輸入活動(例如按鍵輸入)給其他應用程式。惡意應用程式可能使用此功能接管手機。</string>
     <string name="permlab_readInputState">記錄您所輸入的項目及採取的動作</string>
     <string name="permdesc_readInputState">允許應用程式查看您所按的按鍵，即使該應用程式正在與其他應用程式互動(例如輸入密碼)。一般應用程式不需要此功能。</string>
     <string name="permlab_bindInputMethod">限制輸入方法</string>
@@ -488,10 +488,10 @@
     <string name="permdesc_readSocialStream">允許應用程式存取及同步您與好友的最新動態。惡意應用程式可能會藉此竊取您和好友在社交網絡上的私人通訊內容。</string>
     <string name="permlab_writeSocialStream">寫入您的社交串流</string>
     <string name="permdesc_writeSocialStream">允許應用程式顯示好友的最新動態。惡意應用程式可能會藉此假冒您的好友，騙取您的密碼或其他機密資訊。</string>
-    <string name="permlab_readCalendar">讀取行事曆事項與機密資訊</string>
-    <string name="permdesc_readCalendar">允許應用程式讀取所有儲存在手機上的行事曆事項，包括好友或同事的行事曆事項。惡意應用程式可能藉此在未經擁有者同意的情況下，從這些行事曆擷取個人資訊。</string>
-    <string name="permlab_writeCalendar">在未經擁有者同意的情況下新增或修改行事曆事項，以及傳送電子郵件給邀請對象</string>
-    <string name="permdesc_writeCalendar">允許應用程式以行事曆擁有者的身分傳送事項邀請，以及新增、移除、更改您可以在裝置上修改的事項，包括好友或同事的事項。惡意應用程式可能藉此假冒行事曆擁有者傳送垃圾電子郵件、在未經擁有者同意的情況下修改事項，或新增不實事項。</string>
+    <string name="permlab_readCalendar">讀取行事曆活動與機密資訊</string>
+    <string name="permdesc_readCalendar">允許應用程式讀取所有儲存在手機上的行事曆活動，包括好友或同事的行事曆活動。惡意應用程式可能藉此在未經擁有者同意的情況下，從這些行事曆擷取個人資訊。</string>
+    <string name="permlab_writeCalendar">在未經擁有者同意的情況下新增或修改行事曆活動，以及傳送電子郵件給邀請對象</string>
+    <string name="permdesc_writeCalendar">允許應用程式以行事曆擁有者的身分傳送活動邀請，以及新增、移除、更改您可以在裝置上修改的活動，包括好友或同事的活動。惡意應用程式可能藉此假冒行事曆擁有者傳送垃圾電子郵件、在未經擁有者同意的情況下修改活動，或新增不實活動。</string>
     <string name="permlab_accessMockLocation">模擬位置來源以進行測試</string>
     <string name="permdesc_accessMockLocation">建立模擬位置來源以進行測試。惡意應用程式可以利用此功能取代實際位置來源(如GPS或網絡提供者)的位置及/或狀態。</string>
     <string name="permlab_accessLocationExtraCommands">存取其他位置提供者的指令</string>
@@ -753,7 +753,7 @@
     <string name="lockscreen_plugged_in">充電中，%d%%</string>
     <string name="lockscreen_charged">已充電。</string>
     <string name="lockscreen_battery_short">%d%%</string>
-    <string name="lockscreen_low_battery">連接您的充電器。</string>
+    <string name="lockscreen_low_battery">連接您的充電器</string>
     <string name="lockscreen_missing_sim_message_short">沒有SIM卡。</string>
     <string name="lockscreen_missing_sim_message">手機中未插入SIM卡。</string>
     <string name="lockscreen_missing_sim_instructions">請插入SIM卡。</string>
@@ -904,11 +904,11 @@
     <string name="low_internal_storage_view_title">空間不足</string>
     <string name="low_internal_storage_view_text">手機貯存空間即將不足。</string>
     <string name="loading">載入中...</string>
-    <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_on">開啟</string>
+    <string name="capital_off">關閉</string>
     <string name="whichApplication">使用下列應用程式完成動作</string>
     <string name="alwaysUse">依預設針對此動作使用。</string>
-    <string name="clearDefaultHintMsg">清除 [主螢幕設定] > [應用程式] > [管理應用程式] 中的預設值。</string>
+    <string name="clearDefaultHintMsg">清除[設定] > [應用程式]中的預設。</string>
     <string name="chooseActivity">選取動作</string>
     <string name="chooseUsbActivity">選取USB裝置要使用的應用程式</string>
     <string name="noApplications">沒有應用程式能執行此動作。</string>
@@ -1213,7 +1213,7 @@
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM卡已被封鎖</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">輸入PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM卡已被鎖定</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">輸入由您的網絡供應商所提供的PUK碼</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">輸入由您的網絡服務商所提供的PUK碼</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">請聯絡您的網絡供應商</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">輸入新PIN</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">重複輸入新PIN</string>

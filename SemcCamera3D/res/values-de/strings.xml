@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Motiverkennung</string>
-    <string name="cam_strings_shortcut_normal_txt">Normal</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Motiverkennung (Kamera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normal (Kamera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Frontkamera</string>
     <string name="cam_strings_shortcut_video_camera_txt">Videokamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Frontvideo</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Der über GPS ermittelte Standort hat immer Vorrang vor kabellosen Netzwerken. Wechseln Sie zu „Einstellungen“ > „Standort“, um das Verfahren zur Ermittlung zu ändern.</string>
     <string name="cam_strings_do_not_show_again_txt">Nicht wieder anzeigen</string>
     <string name="cam_strings_unavailable_in_scene_txt">Bei der aktuellen Motiveinstellung nicht veränderbar</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Bei aktiviertem Smile Shutter™ nicht verfügbar</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Bei aktivierter Lächelerkennung nicht verfügbar</string>
     <string name="cam_3d_strings_dialog_delete_txt">Diese Datei löschen?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Auch Multi-Angle</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Auch 3D-Dat</string>
@@ -202,7 +202,7 @@ Hinweis: Diese Dateien enthalten einen grauen Bereich."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Es ist auch ein 3D-Bild dieses Multi-Angle-Fotos vorhanden. Beide löschen?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Nur M.Angle</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Nur 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Dieser Modus kann nicht mit angeschlossenem HDMI-Kabel verwendet werden. Ziehen Sie das Kabel ab.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">"Ziehen Sie das Kabel ab. In diesem Modus kann kein Foto aufgenommen werden, während ein Kabel angeschlossen ist. "</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Zum Anzeigen dieser Datei in 3D verwenden Sie ein 3D-fähiges Gerät.</string>
     <string name="cam_status_remained_min">%1$d Min.</string>
     <string name="cam_strings_both_location_fail_txt">Kann Standort nicht ermitteln</string>
@@ -216,7 +216,7 @@ Hinweis: Diese Dateien enthalten einen grauen Bereich."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Abruf von Standortinfo</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Löschen</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Aufnahme nicht möglich</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI-Fehler</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Fehler</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Fernsteuerung verfügbar</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Löschen</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Bild wird gespeichert.</string>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Fotoaparat</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Prepoznavanje scene</string>
-    <string name="cam_strings_shortcut_normal_txt">Normalno</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Prepoz. scena (fotoaparat)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normalno (fotoaparat)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Prednja kamera</string>
     <string name="cam_strings_shortcut_video_camera_txt">Videokamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Prednja videokamera</string>
@@ -46,7 +46,7 @@
     <string name="cam_strings_self_timer_txt">Samookidač</string>
     <string name="cam_strings_self_timer_2_txt">Uključeno (2 sekunde)</string>
     <string name="cam_strings_self_timer_10_txt">Uključeno (10 sekundi)</string>
-    <string name="cam_strings_smile_capture_txt">Otkrivanje osmijeha</string>
+    <string name="cam_strings_smile_capture_txt">Prepoznavanje osmijeha</string>
     <string name="cam_strings_smile_capture_big_txt">Veliki osmijeh</string>
     <string name="cam_strings_smile_capture_normal_txt">Prosječni osmijeh</string>
     <string name="cam_strings_smile_capture_faint_txt">Mali osmijeh</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Informacije o lokaciji dohvaćene pomoću GPS-a uvijek imaju prednost u odnosu na bežične mreže. Da biste promijenili način dohvaćanja lokacije, otvorite Postavke > Lokacija.</string>
     <string name="cam_strings_do_not_show_again_txt">Ne prikazuj ponovno</string>
     <string name="cam_strings_unavailable_in_scene_txt">Nije moguće mijenjati u kombinaciji s trenutnom postavkom scene.</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Nije dostupno dok je aktivan Smile Shutter™</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Nije dostupno dok je aktivirano prepoznavanje osmijeha</string>
     <string name="cam_3d_strings_dialog_delete_txt">Želite li izbrisati tu datoteku?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">I višekutnu</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">I 3D</string>
@@ -202,7 +202,7 @@ Napomena: te datoteke sadrže sivo područje."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">"Za tu višekutnu fotografiju postoji i 3D slika. Želite li ih  obje izbrisati?"</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Samo višek.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Samo 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Taj način nije moguće koristiti dok je priključen HDMI kabel. Iskopčajte kabel.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Iskopčajte kabel. U ovom načinu rada nije moguće snimiti fotografiju ako je kabel priključen.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Da biste pogledali tu datoteku u 3D prikazu, koristite 3D uređaj.</string>
     <string name="cam_status_remained_min">%1$d min</string>
     <string name="cam_strings_both_location_fail_txt">Nije moguće utvrditi lokaciju</string>
@@ -216,7 +216,7 @@ Napomena: te datoteke sadrže sivo područje."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Način dohvaćanja lokacije</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Brisanje</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Snimanje nije moguće</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Pogreška HDMI-ja</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Pogreška</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Dostupan je daljin. upravlj.</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Brisanje</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Spremanje slike</string>
@@ -261,7 +261,7 @@ Napomena: te datoteke sadrže sivo područje."</string>
     <string name="cam_strings_flash_title_txt">Bljeskalica</string>
     <string name="cam_strings_light_title_txt">Fotosvjetlo</string>
     <string name="cam_strings_self_timer_title_txt">Samookidač</string>
-    <string name="cam_strings_smile_capture_title_txt">Otkrivanje osmijeha</string>
+    <string name="cam_strings_smile_capture_title_txt">Prepoznavanje osmijeha</string>
     <string name="cam_strings_focus_mode_title_txt">Način fokusiranja</string>
     <string name="cam_strings_exposure_level_title_txt">Vrijednost ekspozicije</string>
     <string name="cam_strings_white_balance_title_txt">Balans bijele</string>
@@ -280,9 +280,9 @@ Napomena: te datoteke sadrže sivo područje."</string>
     <string name="cam_strings_cancel_txt">Poništi</string>
     <string name="cam_strings_zoom_help_txt">Za povećavanje ili smanjivanje prikaza koristite tipku za glasnoću</string>
     <string name="cam_strings_zoom_not_supported_txt">U ovom načinu rada nije moguće zumiranje</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Da biste vidjeli sliku u 3D tehnici, kameru priključite na 3D televizor pomoću HDMI kabela ili dotaknite gumb Reproduciraj na uređaju.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Da biste vidjeli sliku u 3D tehnici, telefon priključite na 3D televizor pomoću HDMI kabela ili dotaknite gumb Reproduciraj na uređaju.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Da biste snimili videozapis, dodirnite zaslon</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Da biste vidjeli sliku u 3D tehnici, povežite telefon s 3D televizorom tako da dotaknete gumb Reproduciraj na uređaju.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Da biste vidjeli sliku u 3D tehnici, telefon priključite na 3D televizor tako da dotaknete gumb Reproduciraj na uređaju.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Nije dostupna SD kartica. Zadana lokacija za spremanje promijenjena je u internu memoriju.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">Dostupna je SD kartica. Zadana lokacija za spremanje promijenjena je u SD karticu.</string>
 </resources>

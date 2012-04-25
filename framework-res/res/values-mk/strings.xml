@@ -748,7 +748,7 @@
     <string name="lockscreen_screen_locked">Екранот е заклучен.</string>
     <string name="lockscreen_instructions_when_pattern_enabled">Притиснете Мени за да се отклучи или да се пласира итен повик.</string>
     <string name="lockscreen_instructions_when_pattern_disabled">Притиснете Мени за да се отклучи.</string>
-    <string name="lockscreen_pattern_instructions">Нацртајте шаблон за отклучување</string>
+    <string name="lockscreen_pattern_instructions">Нацртајте шаблон за отклучув.</string>
     <string name="lockscreen_emergency_call">Итен повик</string>
     <string name="lockscreen_return_to_call">Врати се на повикот</string>
     <string name="lockscreen_pattern_correct">Точно!</string>
@@ -911,8 +911,8 @@
     <string name="capital_on">|</string>
     <string name="capital_off">〇</string>
     <string name="whichApplication">Доврши акција корист.</string>
-    <string name="alwaysUse">Користи стандардно за ова акција.</string>
-    <string name="clearDefaultHintMsg">Избриши стандардни вредности во Почетни поставки > Апликации > Управувај со апликации.</string>
+    <string name="alwaysUse">Користете станд. за ова дејство.</string>
+    <string name="clearDefaultHintMsg">Избриши стандардно во Поставки > Апликации.</string>
     <string name="chooseActivity">Одберете акција</string>
     <string name="chooseUsbActivity">Одберете апликација за USB-уредот</string>
     <string name="noApplications">Нема апликации што можат да ја изведат оваа акција.</string>
@@ -1027,7 +1027,7 @@
     <string name="extmedia_format_message">Дали сте сигурни дека сакате да ја форматирате SD-картичката? Сите податоци на картичката ќе бидат изгубени.</string>
     <string name="extmedia_format_button_format">Форматирај</string>
     <string name="adb_active_notification_title">Поврзано е USB дебагирање</string>
-    <string name="adb_active_notification_message">Одберете за да се исклучи дебагирање на USB.</string>
+    <string name="adb_active_notification_message">Одбер. за да се исклучи дебагирање на USB.</string>
     <string name="select_input_method">Одбери влезен метод</string>
     <string name="configure_input_methods">Конфигурирај начини на внесување</string>
     <string name="fast_scroll_alphabet">" АБВГДЃЕЖЗЅИЈКЛЉМНЊОПРСТЌУФХЦЧЏШABCDEFGHIJKLMNOPQRSTUVWXYZ"</string>
@@ -1085,7 +1085,7 @@
     <string name="reset">Ресетирај</string>
     <string name="submit">Поднеси</string>
     <string name="car_mode_disable_notification_title">Режимот на автомоб. е вклуч.</string>
-    <string name="car_mode_disable_notification_message">Одбер. за да излезете од режим на автомобил.</string>
+    <string name="car_mode_disable_notification_message">Одбер. да излезете од режим на автомобил.</string>
     <string name="tethered_notification_title">Врзувањето или „жешкото“ место се активни</string>
     <string name="tethered_notification_message">Допрете за да конфигурирате</string>
     <string name="back_button_label">Назад</string>
@@ -1220,7 +1220,7 @@
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM-карт. е блокирана</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Внесете PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM-картич. е заклучена</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Внесете го кодот PUK од својот оператор</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Внесете PUK од својот обезбед. на услуги</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Контактирајте со операторот</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Внесете нов PIN</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Повторете го новиот PIN</string>

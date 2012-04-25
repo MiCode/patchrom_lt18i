@@ -914,7 +914,7 @@ Ak chcete pokračovať, stlačte tlačidlo OK. Ak chcete ostať na aktuálnej st
     <string name="capital_off">〇</string>
     <string name="whichApplication">Vykon. akcie pomoc. aplik.</string>
     <string name="alwaysUse">Predvolene použiť na túto akciu.</string>
-    <string name="clearDefaultHintMsg">Vymazanie predvolených hodnôt v časti Nastavenia plochy > Aplikácie > Správa aplikácií.</string>
+    <string name="clearDefaultHintMsg">Zrušiť začiarknutie predvolenia v časti Nastavenia > Aplikácie.</string>
     <string name="chooseActivity">Vybrať akciu</string>
     <string name="chooseUsbActivity">Výber aplikácie pre zariadenie USB</string>
     <string name="noApplications">Túto akciu nemôže vykonať žiadna aplikácia.</string>
@@ -1224,7 +1224,7 @@ pre konto %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">Karta SIM je zablokovaná</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Zadajte kód PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">Karta SIM je zablokovaná</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Zadajte kód PUK, ktorý poskytol operátor</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Zadajte kód PUK od mobilného operátora</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Kontaktujte svojho operátora</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Zadajte nový kód PIN</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Zopakujte nový kód PIN</string>

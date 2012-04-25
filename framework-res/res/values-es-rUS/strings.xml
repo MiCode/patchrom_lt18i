@@ -873,7 +873,7 @@ Selecciona Aceptar para continuar o Cancelar para permanecer en la página actua
     <string name="capital_off">〇</string>
     <string name="whichApplication">Completar acción con</string>
     <string name="alwaysUse">Usar predetermin en esta acción.</string>
-    <string name="clearDefaultHintMsg">Puedes borrar las acciones predeterminadas en Ajustes > Aplicaciones.</string>
+    <string name="clearDefaultHintMsg">Borrar predeterminado en Ajustes > Aplicaciones.</string>
     <string name="chooseActivity">Seleccionar una acción</string>
     <string name="chooseUsbActivity">Seleccione una aplicación para el dispositivo USB</string>
     <string name="noApplications">Ninguna aplicación puede realizar esta acción.</string>
@@ -990,7 +990,7 @@ Selecciona Aceptar para continuar o Cancelar para permanecer en la página actua
     <string name="extmedia_format_message">¿Estás seguro de que quieres formatear la tarjeta SD? Se perderán todos los datos de la tarjeta.</string>
     <string name="extmedia_format_button_format">Formato</string>
     <string name="adb_active_notification_title">Depuración de USB conectada</string>
-    <string name="adb_active_notification_message">Seleccionar para desactivar la depuración de USB.</string>
+    <string name="adb_active_notification_message">Seleccionar para desactivar depuración de USB.</string>
     <string name="select_input_method">Seleccionar método de entrada</string>
     <string name="configure_input_methods">Configurar métodos de introducción</string>
     <string name="fast_scroll_alphabet">" ABCDEFGHIJKLMNOPQRSTUVWXYZ"</string>

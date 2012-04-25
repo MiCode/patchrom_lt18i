@@ -913,8 +913,8 @@ Vyberte OK, chcete-li pokračovat, nebo Zrušit, chcete-li na stránce zůstat."
     <string name="capital_on">|</string>
     <string name="capital_off">〇</string>
     <string name="whichApplication">Dokončit pomocí aplikace</string>
-    <string name="alwaysUse">Použít jako výchozí pro tuto činnost.</string>
-    <string name="clearDefaultHintMsg">Vymažte výchozí hodnoty v Nastavení plochy > Aplikace > Správa aplikací.</string>
+    <string name="alwaysUse">Použít jako výchozí pro tuto akci.</string>
+    <string name="clearDefaultHintMsg">Vymažte výchozí hodnoty v nabídce Nastavení > Aplikace.</string>
     <string name="chooseActivity">Vyberte akci</string>
     <string name="chooseUsbActivity">Vybrat aplikaci pro zařízení USB</string>
     <string name="noApplications">Tuto činnost nemohou provádět žádné aplikace.</string>

@@ -25,7 +25,7 @@
     .locals 0
 
     .prologue
-    .line 2160
+    .line 2161
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,7 +37,7 @@
     .locals 1
 
     .prologue
-    .line 2170
+    .line 2171
     iget v0, p0, Landroid/text/Layout$CursorPosition;->leadingIndex:I
 
     return v0
@@ -47,7 +47,7 @@
     .locals 1
 
     .prologue
-    .line 2178
+    .line 2179
     invoke-virtual {p0}, Landroid/text/Layout$CursorPosition;->getTrailingAbsPos()I
 
     move-result v0
@@ -59,7 +59,7 @@
     .locals 2
 
     .prologue
-    .line 2174
+    .line 2175
     iget v0, p0, Landroid/text/Layout$CursorPosition;->leadingIndex:I
 
     iget v1, p0, Landroid/text/Layout$CursorPosition;->offset:I
@@ -75,10 +75,10 @@
     .parameter "trailing"
 
     .prologue
-    .line 2182
+    .line 2183
     iput p1, p0, Landroid/text/Layout$CursorPosition;->leadingIndex:I
 
-    .line 2184
+    .line 2185
     sub-int v0, p2, p1
 
     const/4 v1, 0x0
@@ -89,6 +89,6 @@
 
     iput v0, p0, Landroid/text/Layout$CursorPosition;->offset:I
 
-    .line 2185
+    .line 2186
     return-void
 .end method

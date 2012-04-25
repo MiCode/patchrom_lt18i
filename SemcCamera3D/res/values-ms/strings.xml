@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Pengecamn pemandangn</string>
-    <string name="cam_strings_shortcut_normal_txt">Normal</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">"P'ngcmn p'mndngn(kmera)"</string>
+    <string name="cam_strings_shortcut_normal_txt">Normal(kamera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Kamera depan</string>
     <string name="cam_strings_shortcut_video_camera_txt">Kamera video</string>
     <string name="cam_strings_shortcut_front_video_txt">Hadapan video</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Lokasi yang diperoleh dengan GPS sentiasa diberi keutamaan melebihi rangkaian wayarles. Untuk menukar kaedah pemerolehan, pergi ke Tetapan > Lokasi.</string>
     <string name="cam_strings_do_not_show_again_txt">Jangan tunjukkan lagi</string>
     <string name="cam_strings_unavailable_in_scene_txt">Tidak boleh ditukar dalam gabungan dengan tetapan Pemandangan semasa</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Tidak tersedia apabila Smile Shutter™ aktif</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Tidak tersedia apabila pengesanan senyuman aktif</string>
     <string name="cam_3d_strings_dialog_delete_txt">Padamkan fail ini?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Berbilang Sudut juga</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Fail 3D juga</string>
@@ -202,7 +202,7 @@ Nota: Fail ini mengandungi kawasan kelabu."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Terdapat juga imej 3D untuk foto Berbilang Sudut ini. Padamkan kedua-duanya?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Hanya B.Sdt</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Hanya 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Tidak boleh menggunakan mod ini dengan kabel HDMI disambungkan. Sila cabutkan pemalam kabel.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Cabut pemalam kabel. Anda tidak boleh menangkap foto dalam mod ini dengan kabel disambungkan.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Untuk melihat fail ini dalam 3D, gunakan peranti yang menyokong 3D.</string>
     <string name="cam_status_remained_min">%1$d min.</string>
     <string name="cam_strings_both_location_fail_txt">Tidak dapat memastikan lokasi</string>
@@ -216,7 +216,7 @@ Nota: Fail ini mengandungi kawasan kelabu."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Cara mendapatkan lokasi</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Padam</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Tidak boleh rakam</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Ralat HDMI</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Ralat</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Kawalan jauh tersedia</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Padam</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Menyimpan imej</string>
@@ -279,9 +279,9 @@ Nota: Fail ini mengandungi kawasan kelabu."</string>
     <string name="cam_strings_cancel_txt">Batal</string>
     <string name="cam_strings_zoom_help_txt">Gunakan kekunci kelantangan untuk mengezum masuk/keluar</string>
     <string name="cam_strings_zoom_not_supported_txt">Tidak boleh mengezum masuk dalam mod ini</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Untuk melihat foto dalam 3D, sambungkan kamera anda kepada TV 3D dengan menggunakan HDMI atau mengetik butang Mainkan pada.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Untuk melihat foto dalam 3D, sambungkan telefon anda kepada TV 3D menggunakan HDMI atau ketik Main pada butang peranti.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Sentuh skrin untuk merakam video</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Untuk melihat foto ini dalam 3D, sambungkan telefon anda kepada TV 3D dengan mengetik Main pada butang.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Untuk melihat foto ini dalam 3D, sambungkan telefon anda kepada TV 3D dengan mengetik Main pada butang peranti.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Tiada kad SD tersedia. Lokasi penyimpanan lalai ditukar ke storan dalaman.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">Kad SD tersedia. Lokasi penyimpanan lalai ditukar ke kad SD.</string>
 </resources>

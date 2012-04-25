@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Caméra</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Reconnaissance de scène</string>
-    <string name="cam_strings_shortcut_normal_txt">Normal</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Recon. scène (caméra)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normal (caméra)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Appareil photo frontal</string>
     <string name="cam_strings_shortcut_video_camera_txt">Caméra vidéo</string>
     <string name="cam_strings_shortcut_front_video_txt">Vidéo frontale</string>
@@ -131,7 +131,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">"Un positionnement acquis avec le GPS prévaut toujours sur les réseaux sans fil. Pour changer la méthode d'acquisition, aller dans Paramètres > Positionnement."</string>
     <string name="cam_strings_do_not_show_again_txt">Ne pas afficher de nouveau</string>
     <string name="cam_strings_unavailable_in_scene_txt">Non disponible avec le paramètre de scène actuel.</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Non disponible quand le Smile Shutter™ est activé</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Non disponible quand la détection de sourire est activée</string>
     <string name="cam_3d_strings_dialog_delete_txt">Supprimer ce fichier ?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Angle multiple</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Fichier 3D</string>
@@ -197,7 +197,7 @@
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Cette photo à angles mutliples comporte aussi une image 3D. Supprimer les deux ?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">"Seul. l'angle"</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Seul. 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Ce mode de capture ne prend pas en charge la sortie HDMI. Veuillez débrancher le câble.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Veuillez débrancher le câble. Vous ne pouvez pas prendre de photo dans ce mode avec un câble.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Pour voir ce fichier en 3D, utilisez un appareil compatbible 3D.</string>
     <string name="cam_status_remained_min">%1$d mn</string>
     <string name="cam_strings_both_location_fail_txt">Impossible de déterminer le positionnement</string>
@@ -211,7 +211,7 @@
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Comment obtenir un lieu</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Supprimer</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Prise impossible</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Erreur HDMI</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">"Erreur "</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Commande à dist. disp.</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Supprimer</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Sauvegarder image</string>
@@ -271,9 +271,9 @@
     <string name="cam_strings_cancel_txt">Annuler</string>
     <string name="cam_strings_zoom_help_txt">Utilisez la touche du volume pour zoomer avant / arrière</string>
     <string name="cam_strings_zoom_not_supported_txt">Impossible de zoomer dans ce mode</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Pour afficher une photo en 3D, connectez votre caméra à un téléviseur 3D en utilisant un câble HDMI ou en tapant sur ​​la touche Lecture.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Pour afficher une photo en 3D, branchez votre caméra à un téléviseur 3D en utilisant un câble HDMI ou en tapant sur ​​la touche Lecture.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">"Touchez l'écran pour enregistrer une vidéo"</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Pour visionner cette photo en 3D, connectez votre téléphone à un téléviseur 3D en tapant sur ​​le bouton de Lecture.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Pour visionner cette photo en 3D, branchez votre téléphone à un téléviseur 3D en tapant sur ​​le bouton de Lecture.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">"Carte SD disponible. Défaut a changé l'emplacement d'enregistrement sur le stockage interne."</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">"Carte SD disponible. Défaut a changé l'emplacement d'enregistrement sur ​​la carte SD."</string>
 </resources>

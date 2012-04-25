@@ -902,11 +902,9 @@ Sélectionnez OK pour continuer, ou Annuler pour rester sur la page actuelle."</
     <string name="low_internal_storage_view_title">"Bientôt à court d'espace"</string>
     <string name="low_internal_storage_view_text">La mémoire de stockage du téléphone est bientôt pleine.</string>
     <string name="loading">Chargement en cours...</string>
-    <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
     <string name="whichApplication">"Effectuer l'action avec"</string>
     <string name="alwaysUse">Utiliser par défaut pour cette action.</string>
-    <string name="clearDefaultHintMsg">"Effacer la valeur par défaut dans Paramètres d'accueil > Applications > Gérer les applications."</string>
+    <string name="clearDefaultHintMsg">Effacer la valeur par défaut dans Paramètres > Applications</string>
     <string name="chooseActivity">Sélectionnez une action</string>
     <string name="chooseUsbActivity">Sélectionnez une application pour le périphérique USB</string>
     <string name="noApplications">Aucune application ne peut effectuer cette action.</string>

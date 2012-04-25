@@ -71,14 +71,14 @@
     .prologue
     const v3, 0x7f0c011b
 
-    .line 382
+    .line 378
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->sErrorMessageId:Ljava/util/Map;
 
-    .line 385
+    .line 381
     sget-object v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->sErrorMessageId:Ljava/util/Map;
 
     const/4 v1, 0x0
@@ -93,7 +93,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 387
+    .line 383
     sget-object v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->sErrorMessageId:Ljava/util/Map;
 
     const/4 v1, 0x2
@@ -108,7 +108,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 389
+    .line 385
     sget-object v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->sErrorMessageId:Ljava/util/Map;
 
     const/4 v1, 0x1
@@ -123,7 +123,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 391
+    .line 387
     return-void
 .end method
 
@@ -476,26 +476,13 @@
 
     invoke-direct {v10, v5, v5, v0, v1}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 257
+    .line 258
     .local v10, rect:Landroid/graphics/Rect;
-    iget v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mPreviewWidth:I
+    const/4 v0, 0x1
 
-    const/16 v1, 0x500
+    iput-boolean v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mConvertNv12ToNv21:Z
 
-    if-eq v0, v1, :cond_2
-
-    iget v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mPictureWidth:I
-
-    const/16 v1, 0x1bf0
-
-    if-ne v0, v1, :cond_3
-
-    .line 259
-    :cond_2
-    iput-boolean v5, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mConvertNv12ToNv21:Z
-
-    .line 264
-    :goto_0
+    .line 260
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mStitchEngine:Lcom/sonyericsson/android/camera3d/StitchEngineWrapper;
 
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCaptureCallback:Lcom/sonyericsson/android/camera3d/SweepCameraController$CaptureCallback;
@@ -518,7 +505,7 @@
 
     invoke-virtual/range {v0 .. v6}, Lcom/sonyericsson/android/camera3d/StitchEngineWrapper;->start(Lcom/sonyericsson/android/camera3d/StitchCommon$CaptureCallback;IIIIZ)V
 
-    .line 266
+    .line 262
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
 
     check-cast v0, Lcom/sonyericsson/android/camera3d/CameraActivity;
@@ -531,21 +518,13 @@
 
     invoke-virtual {v0, v1}, Lcom/sonyericsson/android/camera3d/ShutterToneGenerator;->play(I)V
 
-    .line 270
+    .line 266
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraWindow:Lcom/sonyericsson/android/camera3d/view/CameraWindow;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/view/CameraWindow;->startCapture()V
 
-    .line 271
+    .line 267
     return-void
-
-    .line 261
-    :cond_3
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mConvertNv12ToNv21:Z
-
-    goto :goto_0
 .end method
 
 .method private doShowStoreProgress(I)V
@@ -553,14 +532,14 @@
     .parameter "status"
 
     .prologue
-    .line 376
+    .line 372
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraWindow:Lcom/sonyericsson/android/camera3d/view/CameraWindow;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, p1, v1}, Lcom/sonyericsson/android/camera3d/view/CameraWindow;->showStoreProgress(ILjava/lang/String;)V
 
-    .line 377
+    .line 373
     return-void
 .end method
 
@@ -568,12 +547,12 @@
     .locals 2
 
     .prologue
-    .line 347
+    .line 343
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mStitchEngine:Lcom/sonyericsson/android/camera3d/StitchEngineWrapper;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/StitchEngineWrapper;->stop()V
 
-    .line 348
+    .line 344
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
 
     check-cast v0, Lcom/sonyericsson/android/camera3d/CameraActivity;
@@ -586,14 +565,14 @@
 
     invoke-virtual {v0, v1}, Lcom/sonyericsson/android/camera3d/ShutterToneGenerator;->play(I)V
 
-    .line 350
+    .line 346
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
 
     check-cast v0, Lcom/sonyericsson/android/camera3d/CameraActivity;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/CameraActivity;->enableAutoOffTimer()V
 
-    .line 351
+    .line 347
     return-void
 .end method
 
@@ -602,29 +581,29 @@
     .parameter "status"
 
     .prologue
-    .line 355
+    .line 351
     invoke-static {}, Lcom/sonyericsson/android/camera3d/WorkArea;->getInstance()Lcom/sonyericsson/android/camera3d/WorkArea;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/WorkArea;->unlock()V
 
-    .line 356
+    .line 352
     invoke-direct {p0, p1}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->doShowStoreProgress(I)V
 
-    .line 359
+    .line 355
     iget-object v4, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mTakenStatus:Lcom/sonyericsson/android/camera3d/TakenStatus;
 
-    .line 360
+    .line 356
     .local v4, takenStatus:Lcom/sonyericsson/android/camera3d/TakenStatus;
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mTakenStatus:Lcom/sonyericsson/android/camera3d/TakenStatus;
 
-    .line 361
+    .line 357
     if-eqz v4, :cond_0
 
-    .line 362
+    .line 358
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraWindow:Lcom/sonyericsson/android/camera3d/view/CameraWindow;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/view/CameraWindow;->doGetCompressedData()I
@@ -633,14 +612,14 @@
 
     iput v0, v4, Lcom/sonyericsson/android/camera3d/TakenStatus;->mRequestId:I
 
-    .line 363
+    .line 359
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mStitchEngine:Lcom/sonyericsson/android/camera3d/StitchEngineWrapper;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/StitchEngineWrapper;->getYUVData()[Lcom/sonyericsson/android/camera3d/YuvOutBuffer$YuvOutData;
 
     move-result-object v2
 
-    .line 364
+    .line 360
     .local v2, data:[Lcom/sonyericsson/android/camera3d/YuvOutBuffer$YuvOutData;
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mImageManager:Lcom/sonyericsson/android/camera3d/ImageManager;
 
@@ -652,7 +631,7 @@
 
     invoke-virtual/range {v0 .. v5}, Lcom/sonyericsson/android/camera3d/ImageManager;->storeSweepPictures(I[Lcom/sonyericsson/android/camera3d/YuvOutBuffer$YuvOutData;ZLcom/sonyericsson/android/camera3d/TakenStatus;Lcom/sonyericsson/android/camera3d/ImageManager$StoreDataCallback;)V
 
-    .line 372
+    .line 368
     .end local v2           #data:[Lcom/sonyericsson/android/camera3d/YuvOutBuffer$YuvOutData;
     :cond_0
     return-void
@@ -670,10 +649,10 @@
     .parameter "height"
 
     .prologue
-    .line 299
+    .line 295
     if-eqz p7, :cond_1
 
-    .line 307
+    .line 303
     invoke-virtual/range {p7 .. p7}, Landroid/location/Location;->getLatitude()D
 
     move-result-wide v1
@@ -694,7 +673,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 308
+    .line 304
     :cond_0
     invoke-virtual/range {p7 .. p7}, Landroid/location/Location;->hasAltitude()Z
 
@@ -702,18 +681,18 @@
 
     if-nez v1, :cond_1
 
-    .line 309
+    .line 305
     const-wide/16 v1, 0x0
 
     move-object/from16 v0, p7
 
     invoke-virtual {v0, v1, v2}, Landroid/location/Location;->setAltitude(D)V
 
-    .line 315
+    .line 311
     :cond_1
     move/from16 p5, p6
 
-    .line 316
+    .line 312
     const/16 v1, 0x5a
 
     move/from16 v0, p6
@@ -726,17 +705,17 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 317
+    .line 313
     :cond_2
     const/16 p4, 0x1
 
-    .line 322
+    .line 318
     :goto_0
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraDevice:Lcom/sonyericsson/android/camera3d/CameraDevice;
 
     iget-object v11, v1, Lcom/sonyericsson/android/camera3d/CameraDevice;->mCameraInfo:Landroid/hardware/Camera$CameraInfo;
 
-    .line 326
+    .line 322
     .local v11, info:Landroid/hardware/Camera$CameraInfo;
     iget v1, v11, Landroid/hardware/Camera$CameraInfo;->facing:I
 
@@ -744,7 +723,7 @@
 
     if-ne v1, v2, :cond_4
 
-    .line 327
+    .line 323
     iget v1, v11, Landroid/hardware/Camera$CameraInfo;->orientation:I
 
     add-int v1, v1, p5
@@ -755,7 +734,7 @@
 
     move/from16 p5, v0
 
-    .line 329
+    .line 325
     move/from16 v0, p5
 
     rsub-int v1, v0, 0x168
@@ -764,7 +743,7 @@
 
     move/from16 p5, v0
 
-    .line 335
+    .line 331
     :goto_1
     new-instance v1, Lcom/sonyericsson/android/camera3d/TakenStatus;
 
@@ -788,14 +767,14 @@
 
     return-object v1
 
-    .line 319
+    .line 315
     .end local v11           #info:Landroid/hardware/Camera$CameraInfo;
     :cond_3
     const/16 p4, 0x2
 
     goto :goto_0
 
-    .line 332
+    .line 328
     .restart local v11       #info:Landroid/hardware/Camera$CameraInfo;
     :cond_4
     iget v1, v11, Landroid/hardware/Camera$CameraInfo;->orientation:I
@@ -821,17 +800,17 @@
 
     const/4 v1, 0x0
 
-    .line 643
+    .line 639
     iget-object v3, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraDevice:Lcom/sonyericsson/android/camera3d/CameraDevice;
 
     if-nez v3, :cond_1
 
-    .line 659
+    .line 655
     :cond_0
     :goto_0
     return v1
 
-    .line 647
+    .line 643
     :cond_1
     iget-object v3, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraDevice:Lcom/sonyericsson/android/camera3d/CameraDevice;
 
@@ -843,10 +822,10 @@
 
     move v1, v2
 
-    .line 648
+    .line 644
     goto :goto_0
 
-    .line 651
+    .line 647
     :cond_2
     iget-object v3, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraDevice:Lcom/sonyericsson/android/camera3d/CameraDevice;
 
@@ -854,11 +833,11 @@
 
     move-result-object v0
 
-    .line 652
+    .line 648
     .local v0, size:Landroid/hardware/Camera$Size;
     if-eqz v0, :cond_0
 
-    .line 656
+    .line 652
     iget v3, v0, Landroid/hardware/Camera$Size;->width:I
 
     if-ne v3, p1, :cond_3
@@ -870,7 +849,7 @@
     :cond_3
     move v1, v2
 
-    .line 657
+    .line 653
     goto :goto_0
 .end method
 
@@ -878,7 +857,7 @@
     .locals 4
 
     .prologue
-    .line 434
+    .line 430
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
 
     const/16 v1, 0x85
@@ -889,7 +868,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 435
+    .line 431
     return-void
 .end method
 
@@ -898,7 +877,7 @@
     .parameter "init"
 
     .prologue
-    .line 596
+    .line 592
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraWindow:Lcom/sonyericsson/android/camera3d/view/CameraWindow;
 
     iget v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mPreviewWidth:I
@@ -907,7 +886,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/sonyericsson/android/camera3d/view/CameraWindow;->changeSurfaceSize(II)V
 
-    .line 597
+    .line 593
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraDevice:Lcom/sonyericsson/android/camera3d/CameraDevice;
 
     const/4 v1, 0x0
@@ -922,17 +901,17 @@
 
     invoke-virtual/range {v0 .. v5}, Lcom/sonyericsson/android/camera3d/CameraDevice;->changeSize(ZIIII)V
 
-    .line 599
+    .line 595
     if-eqz p1, :cond_0
 
-    .line 600
+    .line 596
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraDevice:Lcom/sonyericsson/android/camera3d/CameraDevice;
 
     const/4 v1, 0x2
 
     invoke-virtual {v0, v1}, Lcom/sonyericsson/android/camera3d/CameraDevice;->setOrientation(I)V
 
-    .line 602
+    .line 598
     :cond_0
     return-void
 .end method
@@ -941,12 +920,12 @@
     .locals 1
 
     .prologue
-    .line 834
+    .line 830
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mStitchEngine:Lcom/sonyericsson/android/camera3d/StitchEngineWrapper;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/StitchEngineWrapper;->setupStitchingEngine()V
 
-    .line 835
+    .line 831
     return-void
 .end method
 
@@ -957,7 +936,7 @@
     .parameter "focusPosition"
 
     .prologue
-    .line 408
+    .line 404
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
 
     const/16 v1, 0x31
@@ -966,7 +945,7 @@
 
     invoke-virtual {v0, v1, v2, p1}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 409
+    .line 405
     return-void
 .end method
 
@@ -974,7 +953,7 @@
     .locals 4
 
     .prologue
-    .line 413
+    .line 409
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
 
     const/16 v1, 0x32
@@ -985,7 +964,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 414
+    .line 410
     return-void
 .end method
 
@@ -993,7 +972,7 @@
     .locals 0
 
     .prologue
-    .line 427
+    .line 423
     return-void
 .end method
 
@@ -1001,7 +980,7 @@
     .locals 4
 
     .prologue
-    .line 418
+    .line 414
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
 
     const/16 v1, 0x30
@@ -1012,7 +991,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 419
+    .line 415
     return-void
 .end method
 
@@ -1020,29 +999,29 @@
     .locals 2
 
     .prologue
-    .line 802
+    .line 798
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraDevice:Lcom/sonyericsson/android/camera3d/CameraDevice;
 
     if-eqz v0, :cond_0
 
-    .line 803
+    .line 799
     iget-boolean v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mIsPhotoLightOn:Z
 
     if-eqz v0, :cond_1
 
-    .line 804
+    .line 800
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraDevice:Lcom/sonyericsson/android/camera3d/CameraDevice;
 
     const-string v1, "torch"
 
     invoke-virtual {v0, v1}, Lcom/sonyericsson/android/camera3d/CameraDevice;->setFlashMode(Ljava/lang/String;)V
 
-    .line 811
+    .line 807
     :cond_0
     :goto_0
     return-void
 
-    .line 806
+    .line 802
     :cond_1
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraDevice:Lcom/sonyericsson/android/camera3d/CameraDevice;
 
@@ -1123,7 +1102,7 @@
     .locals 2
 
     .prologue
-    .line 395
+    .line 391
     sget-object v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->sErrorMessageId:Ljava/util/Map;
 
     iget v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturingMode:I
@@ -1144,7 +1123,7 @@
 
     invoke-virtual {p0, v0}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->showZoomMessage(I)V
 
-    .line 396
+    .line 392
     return-void
 .end method
 
@@ -1152,7 +1131,7 @@
     .locals 2
 
     .prologue
-    .line 400
+    .line 396
     sget-object v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->sErrorMessageId:Ljava/util/Map;
 
     iget v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturingMode:I
@@ -1173,7 +1152,7 @@
 
     invoke-virtual {p0, v0}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->showZoomMessage(I)V
 
-    .line 401
+    .line 397
     return-void
 .end method
 
@@ -1181,7 +1160,7 @@
     .locals 4
 
     .prologue
-    .line 509
+    .line 505
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
 
     const/16 v1, 0xf3
@@ -1192,7 +1171,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 510
+    .line 506
     return-void
 .end method
 
@@ -1200,7 +1179,7 @@
     .locals 0
 
     .prologue
-    .line 823
+    .line 819
     return-void
 .end method
 
@@ -1208,7 +1187,7 @@
     .locals 0
 
     .prologue
-    .line 829
+    .line 825
     return-void
 .end method
 
@@ -1218,14 +1197,14 @@
     .parameter "camera"
 
     .prologue
-    .line 453
+    .line 449
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
 
     const/16 v1, 0x80
 
     invoke-virtual {v0, v1, p1, p2}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 454
+    .line 450
     return-void
 .end method
 
@@ -1234,7 +1213,7 @@
     .parameter "error"
 
     .prologue
-    .line 459
+    .line 455
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
 
     const/16 v1, 0x81
@@ -1243,7 +1222,7 @@
 
     invoke-virtual {v0, v1, p1, v2}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 460
+    .line 456
     return-void
 .end method
 
@@ -1251,7 +1230,7 @@
     .locals 4
 
     .prologue
-    .line 515
+    .line 511
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
 
     const/16 v1, 0x100
@@ -1262,7 +1241,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 516
+    .line 512
     return-void
 .end method
 
@@ -1270,7 +1249,7 @@
     .locals 4
 
     .prologue
-    .line 521
+    .line 517
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
 
     const/16 v1, 0x101
@@ -1281,7 +1260,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 522
+    .line 518
     return-void
 .end method
 
@@ -1289,7 +1268,7 @@
     .locals 4
 
     .prologue
-    .line 464
+    .line 460
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
 
     const/16 v1, 0x82
@@ -1300,7 +1279,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 465
+    .line 461
     return-void
 .end method
 
@@ -1308,7 +1287,7 @@
     .locals 4
 
     .prologue
-    .line 499
+    .line 495
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
 
     const/16 v1, 0xf2
@@ -1319,7 +1298,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 500
+    .line 496
     return-void
 .end method
 
@@ -1327,7 +1306,7 @@
     .locals 4
 
     .prologue
-    .line 504
+    .line 500
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
 
     const/16 v1, 0xf1
@@ -1338,7 +1317,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 505
+    .line 501
     return-void
 .end method
 
@@ -1350,44 +1329,44 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 474
+    .line 470
     const/4 v0, 0x0
 
-    .line 475
+    .line 471
     .local v0, consumed:Z
     iget-boolean v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mIsTouchCapturing:Z
 
     if-eqz v1, :cond_0
 
-    .line 476
+    .line 472
     const/4 v0, 0x1
 
-    .line 477
+    .line 473
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v1
 
     packed-switch v1, :pswitch_data_0
 
-    .line 494
+    .line 490
     :cond_0
     :goto_0
     :pswitch_0
     return v0
 
-    .line 479
+    .line 475
     :pswitch_1
     invoke-virtual {p0, v4}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->autofocus(Landroid/graphics/Rect;)V
 
     goto :goto_0
 
-    .line 483
+    .line 479
     :pswitch_2
     invoke-virtual {p0}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->cancelAutoFocus()V
 
     goto :goto_0
 
-    .line 487
+    .line 483
     :pswitch_3
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
 
@@ -1399,7 +1378,7 @@
 
     goto :goto_0
 
-    .line 477
+    .line 473
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1
@@ -1458,19 +1437,19 @@
     .locals 4
 
     .prologue
-    .line 613
+    .line 609
     iget v2, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mSweepDirection:I
 
     packed-switch v2, :pswitch_data_0
 
-    .line 625
+    .line 621
     const/16 v1, 0x640
 
-    .line 626
+    .line 622
     .local v1, previewWidth:I
     const/16 v0, 0x4b0
 
-    .line 630
+    .line 626
     .local v0, previewHeight:I
     :goto_0
     invoke-direct {p0, v1, v0}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->isNeedRestartPreview(II)Z
@@ -1479,64 +1458,64 @@
 
     if-eqz v2, :cond_0
 
-    .line 631
+    .line 627
     iget-boolean v2, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mIsFaceDetection:Z
 
     iget-boolean v3, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mIsSceneRecognition:Z
 
     invoke-virtual {p0, v2, v3}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->stopPreview(ZZ)V
 
-    .line 632
+    .line 628
     iput v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mPreviewWidth:I
 
-    .line 633
+    .line 629
     iput v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mPreviewHeight:I
 
-    .line 634
+    .line 630
     const/4 v2, 0x0
 
     invoke-direct {p0, v2}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->setupPreview(Z)V
 
-    .line 635
+    .line 631
     iget-boolean v2, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mIsFaceDetection:Z
 
     iget-boolean v3, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mIsSceneRecognition:Z
 
     invoke-virtual {p0, v2, v3}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->startPreview(ZZ)V
 
-    .line 640
+    .line 636
     :cond_0
     return-void
 
-    .line 616
+    .line 612
     .end local v0           #previewHeight:I
     .end local v1           #previewWidth:I
     :pswitch_0
     const/16 v1, 0x640
 
-    .line 617
+    .line 613
     .restart local v1       #previewWidth:I
     const/16 v0, 0x4b0
 
-    .line 618
+    .line 614
     .restart local v0       #previewHeight:I
     goto :goto_0
 
-    .line 621
+    .line 617
     .end local v0           #previewHeight:I
     .end local v1           #previewWidth:I
     :pswitch_1
     const/16 v1, 0x500
 
-    .line 622
+    .line 618
     .restart local v1       #previewWidth:I
     const/16 v0, 0x2d0
 
-    .line 623
+    .line 619
     .restart local v0       #previewHeight:I
     goto :goto_0
 
-    .line 613
+    .line 609
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -1551,10 +1530,10 @@
     .parameter "value"
 
     .prologue
-    .line 752
+    .line 748
     const/4 v0, -0x1
 
-    .line 753
+    .line 749
     .local v0, mode:I
     const-string v1, "PANORAMA_3D"
 
@@ -1564,23 +1543,23 @@
 
     if-eqz v1, :cond_1
 
-    .line 754
+    .line 750
     const/4 v0, 0x0
 
-    .line 760
+    .line 756
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mStitchEngine:Lcom/sonyericsson/android/camera3d/StitchEngineWrapper;
 
     invoke-virtual {v1, v0}, Lcom/sonyericsson/android/camera3d/StitchEngineWrapper;->setCapturingMode(I)Z
 
-    .line 761
+    .line 757
     iput v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturingMode:I
 
-    .line 763
+    .line 759
     return-void
 
-    .line 755
+    .line 751
     :cond_1
     const-string v1, "MULTI_ANGLE"
 
@@ -1590,12 +1569,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 756
+    .line 752
     const/4 v0, 0x2
 
     goto :goto_0
 
-    .line 757
+    .line 753
     :cond_2
     const-string v1, "PANORAMA_2D"
 
@@ -1605,7 +1584,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 758
+    .line 754
     const/4 v0, 0x1
 
     goto :goto_0
@@ -1616,7 +1595,7 @@
     .parameter "mode"
 
     .prologue
-    .line 711
+    .line 707
     return-void
 .end method
 
@@ -1625,16 +1604,16 @@
     .parameter "mode"
 
     .prologue
-    .line 736
+    .line 732
     iput-object p1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mFocusMode:Ljava/lang/String;
 
-    .line 737
+    .line 733
     invoke-virtual {p0, p1}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->setFocusModeToDevice(Ljava/lang/String;)V
 
-    .line 738
+    .line 734
     invoke-virtual {p0, p1}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->setFocusModeToView(Ljava/lang/String;)V
 
-    .line 739
+    .line 735
     return-void
 .end method
 
@@ -1642,7 +1621,7 @@
     .locals 2
 
     .prologue
-    .line 795
+    .line 791
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
 
     new-instance v1, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;
@@ -1651,7 +1630,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->setState(Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;)V
 
-    .line 796
+    .line 792
     return-void
 .end method
 
@@ -1660,10 +1639,10 @@
     .parameter "mode"
 
     .prologue
-    .line 787
+    .line 783
     iput-boolean p1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mIsPhotoLightOn:Z
 
-    .line 788
+    .line 784
     return-void
 .end method
 
@@ -1675,15 +1654,15 @@
     .parameter "prevH"
 
     .prologue
-    .line 745
+    .line 741
     invoke-super {p0, p1, p2, p3, p4}, Lcom/sonyericsson/android/camera3d/CameraController;->setResolution(IIII)V
 
-    .line 746
+    .line 742
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mStitchEngine:Lcom/sonyericsson/android/camera3d/StitchEngineWrapper;
 
     invoke-virtual {v0, p1, p2}, Lcom/sonyericsson/android/camera3d/StitchEngineWrapper;->setResolution(II)V
 
-    .line 747
+    .line 743
     return-void
 .end method
 
@@ -1692,7 +1671,7 @@
     .parameter "mode"
 
     .prologue
-    .line 716
+    .line 712
     return-void
 .end method
 
@@ -1701,7 +1680,7 @@
     .parameter "mode"
 
     .prologue
-    .line 731
+    .line 727
     return-void
 .end method
 
@@ -1710,7 +1689,7 @@
     .parameter "mode"
 
     .prologue
-    .line 721
+    .line 717
     return-void
 .end method
 
@@ -1719,7 +1698,7 @@
     .parameter "value"
 
     .prologue
-    .line 726
+    .line 722
     return-void
 .end method
 
@@ -1728,10 +1707,10 @@
     .parameter "value"
 
     .prologue
-    .line 768
+    .line 764
     const/4 v0, 0x0
 
-    .line 769
+    .line 765
     .local v0, direction:I
     const-string v1, "LEFT_2_RIGHT"
 
@@ -1741,23 +1720,23 @@
 
     if-eqz v1, :cond_1
 
-    .line 770
+    .line 766
     const/4 v0, 0x0
 
-    .line 780
+    .line 776
     :cond_0
     :goto_0
     iput v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mSweepDirection:I
 
-    .line 781
+    .line 777
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mStitchEngine:Lcom/sonyericsson/android/camera3d/StitchEngineWrapper;
 
     invoke-virtual {v1, v0}, Lcom/sonyericsson/android/camera3d/StitchEngineWrapper;->setCapturingDirection(I)V
 
-    .line 782
+    .line 778
     return-void
 
-    .line 771
+    .line 767
     :cond_1
     const-string v1, "RIGHT_2_LEFT"
 
@@ -1767,12 +1746,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 772
+    .line 768
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 773
+    .line 769
     :cond_2
     const-string v1, "TOP_2_BOTTOM"
 
@@ -1782,12 +1761,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 774
+    .line 770
     const/4 v0, 0x2
 
     goto :goto_0
 
-    .line 775
+    .line 771
     :cond_3
     const-string v1, "BOTTOM_2_TOP"
 
@@ -1797,7 +1776,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 776
+    .line 772
     const/4 v0, 0x3
 
     goto :goto_0
@@ -1846,12 +1825,12 @@
     .parameter "startSceneRecognition"
 
     .prologue
-    .line 674
+    .line 670
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraDevice:Lcom/sonyericsson/android/camera3d/CameraDevice;
 
     if-eqz v1, :cond_0
 
-    .line 676
+    .line 672
     :try_start_0
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraDevice:Lcom/sonyericsson/android/camera3d/CameraDevice;
 
@@ -1859,16 +1838,16 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 684
+    .line 680
     :cond_0
     :goto_0
     return-void
 
-    .line 678
+    .line 674
     :catch_0
     move-exception v0
 
-    .line 679
+    .line 675
     .local v0, ex:Ljava/lang/Exception;
     const-string v1, "SweepCameraController"
 
@@ -1883,7 +1862,7 @@
     .locals 0
 
     .prologue
-    .line 423
+    .line 419
     return-void
 .end method
 
@@ -1893,17 +1872,17 @@
     .parameter "stopSceneRecognition"
 
     .prologue
-    .line 697
+    .line 693
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraDevice:Lcom/sonyericsson/android/camera3d/CameraDevice;
 
     if-eqz v0, :cond_0
 
-    .line 698
+    .line 694
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraDevice:Lcom/sonyericsson/android/camera3d/CameraDevice;
 
     invoke-virtual {v0, p1, p2}, Lcom/sonyericsson/android/camera3d/CameraDevice;->stopPreview(ZZ)V
 
-    .line 703
+    .line 699
     :cond_0
     return-void
 .end method
@@ -1912,7 +1891,7 @@
     .locals 0
 
     .prologue
-    .line 431
+    .line 427
     return-void
 .end method
 
@@ -1989,6 +1968,6 @@
     .parameter "mode"
 
     .prologue
-    .line 817
+    .line 813
     return-void
 .end method

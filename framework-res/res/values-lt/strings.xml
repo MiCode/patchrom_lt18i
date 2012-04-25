@@ -915,7 +915,7 @@ Pasirinkite „Gerai“, jei norite tęsti, arba „Atšaukti“, jei norite lik
     <string name="capital_off">〇</string>
     <string name="whichApplication">Užbaigti veiksmo naudoj.</string>
     <string name="alwaysUse">Šiam veiksmui naudoti kaip numat.</string>
-    <string name="clearDefaultHintMsg">Išvalykite numatytuosius nustatymus apsilankę „Pagrindiniai nustatymai“ > „Programos“ > „Valdyti programas“.</string>
+    <string name="clearDefaultHintMsg">Išvalykite numatytąjį nustatymą apsilankę „Nustatymai“ > „Programos“</string>
     <string name="chooseActivity">Veiksmo pasirinkimas</string>
     <string name="chooseUsbActivity">Pasirinkite USB įrenginio programą</string>
     <string name="noApplications">Nėra programos, kuri galėtų atlikti šį veiksmą.</string>
@@ -1224,7 +1224,7 @@ naudojant %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM kortelė užblokuota</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Įveskite PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM kortelė užrakinta</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Įveskite operatoriaus suteiktą PUK kodą</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Įveskite paslaugos teikėjo suteiktą PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Susisiekite su operatoriumi</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Įveskite naują PIN</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Pakartokite naują PIN</string>

@@ -910,11 +910,11 @@ Wählen Sie \"OK\", um fortzufahren, oder wählen Sie \"Abbrechen\", um auf der 
     <string name="low_internal_storage_view_title">Geringer Speicher</string>
     <string name="low_internal_storage_view_text">Kaum noch Telefonspeicher frei</string>
     <string name="loading">Wird geladen...</string>
-    <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_on">AN</string>
+    <string name="capital_off">AUS</string>
     <string name="whichApplication">Aktion durchführen mit</string>
     <string name="alwaysUse">Als Standard für diese Aktion verw.</string>
-    <string name="clearDefaultHintMsg">Standardeinstellung zurücksetzen unter \"Einstellungen > Apps > Apps verwalten\"</string>
+    <string name="clearDefaultHintMsg">Standardeinstellung unter \"Einstellungen\" > \"Apps\" löschen</string>
     <string name="chooseActivity">Aktion auswählen</string>
     <string name="chooseUsbActivity">Anwendung für das USB-Gerät auswählen</string>
     <string name="noApplications">Diese Aktion kann von keiner Anwendung ausgeführt werden.</string>

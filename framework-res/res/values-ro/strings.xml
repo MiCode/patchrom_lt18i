@@ -753,7 +753,7 @@
     <string name="lockscreen_screen_locked">Ecran blocat.</string>
     <string name="lockscreen_instructions_when_pattern_enabled">Apăsaţi pe Meniu pentru deblocare sau efectuaţi un apel de urgenţă.</string>
     <string name="lockscreen_instructions_when_pattern_disabled">Apăsaţi pe Meniu pentru deblocare</string>
-    <string name="lockscreen_pattern_instructions">Desenaţi modelul pentru deblocare</string>
+    <string name="lockscreen_pattern_instructions">Desenaţi traseul pentru deblocare</string>
     <string name="lockscreen_emergency_call">Apel de urgenţă</string>
     <string name="lockscreen_return_to_call">Revenire la apel</string>
     <string name="lockscreen_pattern_correct">Corect!</string>
@@ -918,8 +918,8 @@ Selectaţi OK pentru a continua sau Revocare pentru a rămâne la pagina actual�
     <string name="capital_on">|</string>
     <string name="capital_off">〇</string>
     <string name="whichApplication">Finalizare acţiune utilizând</string>
-    <string name="alwaysUse">Se util. implicit pt. această acţiune.</string>
-    <string name="clearDefaultHintMsg">Ştergeţi setările prestabilite din Setări pagină de pornire > Aplicaţii > Gestionare aplicaţii.</string>
+    <string name="alwaysUse">Se utilizează implicit pt. ac. acţiune.</string>
+    <string name="clearDefaultHintMsg">Goliţi setările implicite din Setări > Aplicaţii.</string>
     <string name="chooseActivity">Selectare acţiune</string>
     <string name="chooseUsbActivity">Selectaţi o aplicaţie pentru dispozitivul USB</string>
     <string name="noApplications">Nicio aplicaţie nu poate efectua această acţiune.</string>
@@ -1036,7 +1036,7 @@ Doriţi să îl închideţi?"</string>
     <string name="extmedia_format_message">Sigur formataţi cartela SD? Veţi pierde toate datele de pe cartelă.</string>
     <string name="extmedia_format_button_format">Formatare</string>
     <string name="adb_active_notification_title">Disp. USB pt. depanare conectat</string>
-    <string name="adb_active_notification_message">Selectaţi pentru a dezactiva depanarea USB.</string>
+    <string name="adb_active_notification_message">Select. pentru a dezactiva depanarea USB.</string>
     <string name="select_input_method">Selectare metodă de intrare</string>
     <string name="configure_input_methods">Configurare metode de intrare</string>
     <string name="fast_scroll_alphabet">" ABCDEFGHIJKLMNOPQRSTUVWXYZ"</string>
@@ -1094,7 +1094,7 @@ pentru contul %s"</string>
     <string name="reset">Reiniţializare</string>
     <string name="submit">Trimitere</string>
     <string name="car_mode_disable_notification_title">Modul Auto a fost activat</string>
-    <string name="car_mode_disable_notification_message">Selectaţi pentru a ieşi din modul Auto.</string>
+    <string name="car_mode_disable_notification_message">Selectaţi pentru a ieşi din modul Automobil.</string>
     <string name="tethered_notification_title">Conexiune prin modem sau hotspot activ</string>
     <string name="tethered_notification_message">Atingeţi pentru a configura</string>
     <string name="back_button_label">Înapoi</string>
@@ -1229,7 +1229,7 @@ pentru contul %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">Cartelă SIM blocată</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Introduceţi codul PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">Cartelă SIM blocată</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Introduceţi codul PUK de la operator</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Introduceţi codul PUK de la operat. de reţea</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Contactaţi operatorul dvs.</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Introduceţi cod PIN nou</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Repetaţi cod PIN nou</string>

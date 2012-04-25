@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Njohja e skenës</string>
-    <string name="cam_strings_shortcut_normal_txt">Normale</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Njohja e skenës (kamera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normal (kamera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Kamera e përparme</string>
     <string name="cam_strings_shortcut_video_camera_txt">Videokamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Videoja e përparme</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Vendndodhja e gjetur me GPS ka gjithnjë përparësi ndaj asaj prej rrjeteve pa tel. Për të ndryshuar mënyrën e gjetjes së vendndodhjes, shkoni te Cilësimet > Vendndodhja.</string>
     <string name="cam_strings_do_not_show_again_txt">Mos e afisho përsëri</string>
     <string name="cam_strings_unavailable_in_scene_txt">Nuk mund të ndryshohet kur është në kombinim me cilësimin aktual të skenës.</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Nuk disponohet kur Smile Shutter™ është aktive</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">E padisponueshme kur dallimi i buzëqeshjes është aktiv</string>
     <string name="cam_3d_strings_dialog_delete_txt">Të fshihet ky skedar?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Dhe shumëkëndoren</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Dhe skd. 3D</string>
@@ -202,7 +202,7 @@ Shënim: Këta skedarë përmbajnë një zonë gri."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Ekziston edhe një imazh 3D për këtë foto shumëkëndore. Të fshihen të dyja?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">VetëmSh.kn.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Vetëm 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Nuk mund ta përdorni këtë mënyrë kur është lidhur një kabllo HDMI. Shkëputni kabllon.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Shkëputni kabllon. Nuk mund të nxirrni foto në këtë mënyrë kur kablloja është e lidhur.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Për ta parë këtë skedar në 3D, përdorni një pajisje që mbështet 3D.</string>
     <string name="cam_status_remained_min">%1$d min.</string>
     <string name="cam_strings_both_location_fail_txt">Vendndodhja nuk mund të tregohet</string>
@@ -216,7 +216,7 @@ Shënim: Këta skedarë përmbajnë një zonë gri."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Si të gjeni vendndodhjen</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Fshi</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">"S'mund të fotografohej"</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Gabim i HDMI-së</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Gabim</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Telekomanda e dispon.</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Fshi</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Duke ruajtur imazhin</string>
@@ -255,7 +255,7 @@ Shënim: Këta skedarë përmbajnë një zonë gri."</string>
     <string name="cam_strings_button_to_deny_txt">Mos lejo</string>
     <string name="cam_strings_fast_capturing_screen_locked_title_txt">Ekrani i kyçur</string>
     <string name="cam_strings_fast_capturing_allowance_title_txt">Cilësoni hapjen e shpejtë</string>
-    <string name="cam_strings_fast_capturing_finish_confirmation_title_txt">Mënyra e hapjes së shpejtë</string>
+    <string name="cam_strings_fast_capturing_finish_confirmation_title_txt">Mënyra hapjes së shpejtë</string>
     <string name="cam_strings_scenes_title_txt">Skenat</string>
     <string name="cam_strings_resolution_title_txt">Rezolucioni</string>
     <string name="cam_strings_flash_title_txt">Flashi</string>
@@ -279,7 +279,7 @@ Shënim: Këta skedarë përmbajnë një zonë gri."</string>
     <string name="cam_strings_cancel_txt">Anulo</string>
     <string name="cam_strings_zoom_help_txt">Përdorni tastin e volumit për të zmadhuar ose zvogëluar</string>
     <string name="cam_strings_zoom_not_supported_txt">Nuk mund të bëhet zoom në këtë mënyrë</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Për të parë një foto në 3D, lidheni kamerën me një televizor me funksionin 3D duke përdorur HDMI ose duke trokitur lehtë mbi butonin Riprodho në.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Për të parë një foto në 3D, lidheni telefonin me një televizor me funksionin 3D duke përdorur HDMI ose duke trokitur lehtë mbi butonin Riprodho në.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Prekni ekranin për të regjistruar një video</string>
     <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Për të parë këtë foto në 3D, lidheni telefonin me një TV me funksionin 3D duke trokitur lehtë në butonin Riprodho në.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Nuk ka asnjë kartë SD të disponueshme. Vendndodhja e paracaktuar e ruajtjes u ndryshua në arkivin e brendshëm.</string>

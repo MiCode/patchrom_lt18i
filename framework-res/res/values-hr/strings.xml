@@ -914,7 +914,7 @@ Odaberite U redu da biste nastavili ili Odustani da biste ostali na trenutnoj st
     <string name="capital_off">〇</string>
     <string name="whichApplication">Dovrši radnju pomoću</string>
     <string name="alwaysUse">Koristi po zadanom za tu akciju.</string>
-    <string name="clearDefaultHintMsg">Izbrišite zadane postavke u izborniku Početne postavke > Aplikacije > Upravljanje aplikacijama.</string>
+    <string name="clearDefaultHintMsg">Izbrišite zadane postavke na izborniku Postavke > Aplikacije.</string>
     <string name="chooseActivity">Odabir radnje</string>
     <string name="chooseUsbActivity">Odaberite program za USB uređaj</string>
     <string name="noApplications">Nijedna aplikacija ne može izvršiti ovu radnju.</string>
@@ -1031,7 +1031,7 @@ Odaberite U redu da biste nastavili ili Odustani da biste ostali na trenutnoj st
     <string name="extmedia_format_message">Jeste li sigurni da želite formatirati SD karticu? Svi podaci na kartici bit će izgubljeni.</string>
     <string name="extmedia_format_button_format">Formatiraj</string>
     <string name="adb_active_notification_title">Uklanj. pogrešaka za USB uključ.</string>
-    <string name="adb_active_notification_message">Odaberite radi onemog. uklanj. pogrešaka za USB.</string>
+    <string name="adb_active_notification_message">Odaber. da biste onemuć. uklanj. pogreš. za USB.</string>
     <string name="select_input_method">Odabir metode unosa</string>
     <string name="configure_input_methods">Konfiguriraj načine ulaza</string>
     <string name="fast_scroll_alphabet">" ABCDEFGHIJKLMNOPQRSTUVWXYZ"</string>
@@ -1224,7 +1224,7 @@ za račun %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM kartica je blokirana</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Unesite PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM kartica je zaključana</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Unesite PUK koji ste dobili od operatora</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Unesite PUK koji ste dobili od mrež. operatera</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Obratite se operatoru</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Unesite novi PIN</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Ponovno unesite novi PIN</string>

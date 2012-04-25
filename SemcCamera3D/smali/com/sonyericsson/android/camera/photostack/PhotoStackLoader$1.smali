@@ -30,7 +30,7 @@
     .parameter
 
     .prologue
-    .line 613
+    .line 618
     iput-object p1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$1;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
     iput-object p2, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$1;->val$requests:Ljava/util/List;
@@ -46,7 +46,7 @@
     .locals 2
 
     .prologue
-    .line 615
+    .line 620
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$1;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
     iget-object v1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$1;->val$requests:Ljava/util/List;
@@ -54,6 +54,6 @@
     #calls: Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->loadThumbnails(Ljava/util/List;)V
     invoke-static {v0, v1}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->access$400(Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;Ljava/util/List;)V
 
-    .line 616
+    .line 621
     return-void
 .end method

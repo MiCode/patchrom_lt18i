@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">كاميرا</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">التعرف على المشهد</string>
-    <string name="cam_strings_shortcut_normal_txt">عادي</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">التعرف على المشهد (كاميرا)</string>
+    <string name="cam_strings_shortcut_normal_txt">عادي (كاميرا)</string>
     <string name="cam_strings_shortcut_front_camera_txt">كاميرا أمامية</string>
     <string name="cam_strings_shortcut_video_camera_txt">كاميرا الفيديو</string>
     <string name="cam_strings_shortcut_front_video_txt">فيديو امامي</string>
@@ -51,13 +51,26 @@
     <string name="cam_strings_smile_capture_normal_txt">ابتسامة متوسطة</string>
     <string name="cam_strings_smile_capture_faint_txt">ابتسامة صغيرة</string>
     <string name="cam_strings_focus_mode_txt">وضع ضبط البؤرة</string>
-    <string name="cam_strings_focus_mode_single_af_txt">الضبط التلقائي للبؤرة الفردي</string>
-    <string name="cam_strings_focus_mode_multi_af_txt">الضبط التلقائي للبؤرة المتعدد</string>
+    <string name="cam_strings_focus_mode_single_af_txt">الضبط التلقائي الفردي للبؤرة</string>
+    <string name="cam_strings_focus_mode_multi_af_txt">الضبط التلقائي المتعدد للبؤرة</string>
     <string name="cam_strings_focus_mode_infinity_txt">بلا نهاية</string>
     <string name="cam_strings_focus_mode_face_detection_txt">اكتشاف الوجه</string>
     <string name="cam_strings_focus_mode_touch_focus_txt">ضبط البؤرة باللمس</string>
     <string name="cam_strings_focus_mode_macro_txt">التصوير عن قرب</string>
     <string name="cam_strings_exposure_level_txt">قيمة التعرض</string>
+    <string name="cam_strings_exposure_level_m20_txt">ق ت -2.0</string>
+    <string name="cam_strings_exposure_level_m17_txt">ق ت -1.7</string>
+    <string name="cam_strings_exposure_level_m13_txt">ق ت -1.3</string>
+    <string name="cam_strings_exposure_level_m10_txt">ق ت -1.0</string>
+    <string name="cam_strings_exposure_level_m07_txt">ق ت -0.7</string>
+    <string name="cam_strings_exposure_level_m03_txt">ق ت -0.3</string>
+    <string name="cam_strings_exposure_level_pm0_txt">ق ت ±0.0</string>
+    <string name="cam_strings_exposure_level_p03_txt">ق ت +0.3</string>
+    <string name="cam_strings_exposure_level_p07_txt">ق ت +0.7</string>
+    <string name="cam_strings_exposure_level_p10_txt">ق ت +1.0</string>
+    <string name="cam_strings_exposure_level_p13_txt">ق ت +1.3</string>
+    <string name="cam_strings_exposure_level_p17_txt">ق ت +1.7</string>
+    <string name="cam_strings_exposure_level_p20_txt">ق ت +2.0</string>
     <string name="cam_strings_iso_txt">ISO</string>
     <string name="cam_strings_iso_100_txt">100</string>
     <string name="cam_strings_iso_200_txt">200</string>
@@ -118,7 +131,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">تكون للموقع الذي تم الحصول عليه من خلال GPS أولوية على الشبكات اللاسلكية. لتغيير طريقة الحصول على الموقع، انتقل إلى إعدادات > موقع.</string>
     <string name="cam_strings_do_not_show_again_txt">لا تعرض مجددًا</string>
     <string name="cam_strings_unavailable_in_scene_txt">غير قابل للتغيير بالاشتراك مع إعداد المشهد الحالي.</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">غير متوفر عندما يكون Smile Shutter™ نشطًا</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">غير متوفر عندما يكون اكتشاف الابتسامة نشطا</string>
     <string name="cam_3d_strings_dialog_delete_txt">حذف هذا الملف؟</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">متعددة الزوايا أيضًا</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">والملف 3D</string>
@@ -145,7 +158,7 @@
     <string name="cam_3d_strings_setting_shooting_direction_up_txt">لأعلى</string>
     <string name="cam_3d_strings_setting_shooting_direction_down_txt">لأسفل</string>
     <string name="cam_3d_strings_album_multi_angle_view_guide_txt">إمالة الهاتف يمينا أو يسارا</string>
-    <string name="cam_3d_strings_album_3d_panorama_view_guide_txt">لعرض الصورة ثلاثية الأبعاد، صل بتلفاز ثلاثي الأبعاد باستخدام كبل HDMI</string>
+    <string name="cam_3d_strings_album_3d_panorama_view_guide_txt">لعرض الصورة ثلاثية الأبعاد، صل بتلفاز ثلاثي الأبعاد باستخدام كابل HDMI</string>
     <string name="cam_3d_strings_error_zoom_3d_sweep_panorama_txt">التكبير/التصغير غير متوفر في بانوراما تحريك 3D</string>
     <string name="cam_3d_strings_error_zoom_sweep_multi_angle_txt">التكبير/التصغير غير متوفر في التحريك متعدد الزوايا</string>
     <string name="cam_3d_strings_error_zoom_sweep_panorama_txt">التكبير/التصغير غير متوفر في بانوراما التحريك</string>
@@ -189,7 +202,7 @@
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">توجد صورة ثلاثية الأبعاد أيضًا لهذه الصورة متعددة الزوايا. حذف كلتيهما؟</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">م. ز. فقط</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">ث. ع. فقط</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">يتعذر استخدام هذا الوضع عند توصيل كبل HDMI. الرجاء فصل الكبل.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">افصل الكابل. لا يمكنك التقاط صورة في هذا الوضع مع توصيل كابل.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">لعرض هذا الملف بالأبعاد الثلاثية، استخدم جهازًا مدعومًا ثلاثي الأبعاد.</string>
     <string name="cam_status_remained_min">%1$d دقيقة</string>
     <string name="cam_strings_both_location_fail_txt">يتعذر إنشاء موقع</string>
@@ -203,7 +216,7 @@
     <string name="cam_strings_wireless_gps_explanatory_title_txt">كيفية الحصول على الموقع</string>
     <string name="cam_strings_file_delete_confirm_title_txt">حذف</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">تعذر الالتقاط</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">خطأ HDMI</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">خطأ</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">أداة التحكم عن بعد متوفرة</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">حذف</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">يتم حفظ الصورة</string>
@@ -267,9 +280,9 @@
     <string name="cam_strings_cancel_txt">إلغاء</string>
     <string name="cam_strings_zoom_help_txt">استخدام مفتاح مستوى الصوت للتكبير/التصغير</string>
     <string name="cam_strings_zoom_not_supported_txt">يتعذر التكبير/التصغير في هذا الوضع</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">لعرض صورة بأبعاد ثلاثية، صل الكاميرا بتلفاز 3D باستخدام HDMI أو النقر فوق زر التشغيل على.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">لعرض صورة بأبعاد ثلاثية، صل هاتفك بتلفاز ثلاثي الأبعاد بـ HDMI أو النقر فوق زر التشغيل على جهاز.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">المس الشاشة لتسجيل الفيديو</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">لعرض هذه الصورة بأبعاد ثلاثية، صل هاتفك بتلفاز ثلاثي الأبعاد بالنقر سريعا على زر التشغيل على.</string>
-    <string name="cam_strings_error_storage_changing_to_internal_txt">لا توجد بطاقة SD متوفرة. قم بتغيير موقع الحفظ الافتراضي إلى مخزن داخلي.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">لعرض هذه الصورة بأبعاد ثلاثية، صل هاتفك بتلفاز ثلاثي الأبعاد بالنقر على زر التشغيل على جهاز.</string>
+    <string name="cam_strings_error_storage_changing_to_internal_txt">لا توجد بطاقة SD متوفرة. قم بتغيير موقع الحفظ الافتراضي إلى سعة تخزين داخلية.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">لا توجد بطاقة SD متوفرة. قم بتغيير موقع الحفظ الافتراضي إلى بطاقة SD.</string>
 </resources>

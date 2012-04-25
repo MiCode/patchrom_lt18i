@@ -26,33 +26,33 @@
     .parameter
 
     .prologue
-    .line 1463
+    .line 1459
     iput-object p1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;-><init>(Lcom/sonyericsson/android/camera3d/SweepCameraController;Lcom/sonyericsson/android/camera3d/SweepCameraController$1;)V
 
-    .line 1464
+    .line 1460
     iget-object v0, p1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
 
     check-cast v0, Lcom/sonyericsson/android/camera3d/CameraActivity;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/CameraActivity;->disableBackKey()V
 
-    .line 1465
+    .line 1461
     iget-object v0, p1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
 
     check-cast v0, Lcom/sonyericsson/android/camera3d/CameraActivity;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/CameraActivity;->disableAutoOffTimer()V
 
-    .line 1466
+    .line 1462
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->mProgress:I
 
-    .line 1467
+    .line 1463
     return-void
 .end method
 
@@ -63,7 +63,7 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 1530
+    .line 1526
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -94,23 +94,23 @@
 
     invoke-static {v0, v1}, Lcom/sonyericsson/android/camera3d/util/CameraLogger;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1532
+    .line 1528
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     invoke-virtual {v0, v3, v3}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->stopPreview(ZZ)V
 
-    .line 1533
+    .line 1529
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     #calls: Lcom/sonyericsson/android/camera3d/SweepCameraController;->doStopCapture()V
     invoke-static {v0}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->access$1300(Lcom/sonyericsson/android/camera3d/SweepCameraController;)V
 
-    .line 1534
+    .line 1530
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->doStopAf()V
 
-    .line 1535
+    .line 1531
     iget v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->mProgress:I
 
     int-to-float v0, v0
@@ -121,7 +121,7 @@
 
     if-ltz v0, :cond_0
 
-    .line 1536
+    .line 1532
     new-instance v0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Store;
 
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
@@ -130,7 +130,7 @@
 
     invoke-virtual {p1, v0}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->setState(Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;)V
 
-    .line 1537
+    .line 1533
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     const/4 v1, 0x5
@@ -138,7 +138,7 @@
     #calls: Lcom/sonyericsson/android/camera3d/SweepCameraController;->doStoreData(I)V
     invoke-static {v0, v1}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->access$1400(Lcom/sonyericsson/android/camera3d/SweepCameraController;I)V
 
-    .line 1539
+    .line 1535
     :cond_0
     return-void
 .end method
@@ -152,13 +152,13 @@
     .parameter "arg2"
 
     .prologue
-    .line 1472
+    .line 1468
     invoke-direct {p0, p1}, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->stopCaptureUrgently(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;)V
 
-    .line 1475
+    .line 1471
     invoke-super {p0, p1, p2, p3}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;->handleAborting(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;ILjava/lang/Object;)V
 
-    .line 1476
+    .line 1472
     return-void
 .end method
 
@@ -169,13 +169,13 @@
     .parameter "arg2"
 
     .prologue
-    .line 1481
+    .line 1477
     invoke-direct {p0, p1}, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->stopCaptureUrgently(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;)V
 
-    .line 1484
+    .line 1480
     invoke-super {p0, p1, p2, p3}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;->handleCameraError(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;ILjava/lang/Object;)V
 
-    .line 1485
+    .line 1481
     return-void
 .end method
 
@@ -186,15 +186,15 @@
     .parameter "arg2"
 
     .prologue
-    .line 1544
+    .line 1540
     invoke-super {p0, p1, p2, p3}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;->handleCaptureDone(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;ILjava/lang/Object;)V
 
-    .line 1546
+    .line 1542
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->doStopAf()V
 
-    .line 1555
+    .line 1551
     check-cast p3, Ljava/lang/Boolean;
 
     .end local p3
@@ -204,7 +204,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1557
+    .line 1553
     new-instance v0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Store;
 
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
@@ -213,13 +213,13 @@
 
     invoke-virtual {p1, v0}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->setState(Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;)V
 
-    .line 1558
+    .line 1554
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     #calls: Lcom/sonyericsson/android/camera3d/SweepCameraController;->doStoreData(I)V
     invoke-static {v0, p2}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->access$1400(Lcom/sonyericsson/android/camera3d/SweepCameraController;I)V
 
-    .line 1559
+    .line 1555
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v0, v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
@@ -234,7 +234,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sonyericsson/android/camera3d/ShutterToneGenerator;->play(I)V
 
-    .line 1569
+    .line 1565
     :goto_0
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
@@ -242,10 +242,10 @@
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/view/CameraWindow;->hideCaptureProgress()V
 
-    .line 1570
+    .line 1566
     return-void
 
-    .line 1564
+    .line 1560
     :cond_0
     new-instance v0, Lcom/sonyericsson/android/camera3d/SweepCameraController$CaptureFailed;
 
@@ -255,13 +255,13 @@
 
     invoke-virtual {p1, v0}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->setState(Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;)V
 
-    .line 1565
+    .line 1561
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     #calls: Lcom/sonyericsson/android/camera3d/SweepCameraController;->onCameraReady()V
     invoke-static {v0}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->access$1500(Lcom/sonyericsson/android/camera3d/SweepCameraController;)V
 
-    .line 1566
+    .line 1562
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v0, v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
@@ -286,22 +286,22 @@
     .parameter "arg2"
 
     .prologue
-    .line 1575
+    .line 1571
     invoke-super {p0, p1, p2, p3}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;->handleCaptureFailed(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;ILjava/lang/Object;)V
 
-    .line 1577
+    .line 1573
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->doStopAf()V
 
-    .line 1580
+    .line 1576
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v0, v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraWindow:Lcom/sonyericsson/android/camera3d/view/CameraWindow;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/view/CameraWindow;->hideCaptureProgress()V
 
-    .line 1581
+    .line 1577
     new-instance v0, Lcom/sonyericsson/android/camera3d/SweepCameraController$CaptureFailed;
 
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
@@ -310,7 +310,7 @@
 
     invoke-virtual {p1, v0}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->setState(Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;)V
 
-    .line 1582
+    .line 1578
     return-void
 .end method
 
@@ -321,10 +321,10 @@
     .parameter "arg2"
 
     .prologue
-    .line 1587
+    .line 1583
     invoke-super {p0, p1, p2, p3}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;->handleCaptureProgress(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;ILjava/lang/Object;)V
 
-    .line 1588
+    .line 1584
     check-cast p3, Ljava/lang/Float;
 
     .end local p3
@@ -334,7 +334,7 @@
 
     iput v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->mProgress:I
 
-    .line 1589
+    .line 1585
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v0, v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraWindow:Lcom/sonyericsson/android/camera3d/view/CameraWindow;
@@ -343,7 +343,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sonyericsson/android/camera3d/view/CameraWindow;->updateCaptureProgress(I)V
 
-    .line 1590
+    .line 1586
     return-void
 .end method
 
@@ -354,13 +354,13 @@
     .parameter "arg2"
 
     .prologue
-    .line 1490
+    .line 1486
     invoke-direct {p0, p1}, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->stopCaptureUrgently(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;)V
 
-    .line 1493
+    .line 1489
     invoke-super {p0, p1, p2, p3}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;->handleExternalMemoryError(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;ILjava/lang/Object;)V
 
-    .line 1494
+    .line 1490
     return-void
 .end method
 
@@ -371,13 +371,13 @@
     .parameter "arg2"
 
     .prologue
-    .line 1524
+    .line 1520
     invoke-super {p0, p1, p2, p3}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;->handlePhoneOffHook(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;ILjava/lang/Object;)V
 
-    .line 1525
+    .line 1521
     invoke-direct {p0, p1}, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->stopCaptureUrgently(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;)V
 
-    .line 1526
+    .line 1522
     new-instance v0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;
 
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
@@ -386,7 +386,7 @@
 
     invoke-virtual {p1, v0}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->setState(Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;)V
 
-    .line 1527
+    .line 1523
     return-void
 .end method
 
@@ -397,13 +397,13 @@
     .parameter "arg2"
 
     .prologue
-    .line 1516
+    .line 1512
     invoke-super {p0, p1, p2, p3}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;->handlePhoneRinging(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;ILjava/lang/Object;)V
 
-    .line 1517
+    .line 1513
     invoke-direct {p0, p1}, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->stopCaptureUrgently(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;)V
 
-    .line 1518
+    .line 1514
     new-instance v0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;
 
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
@@ -412,7 +412,7 @@
 
     invoke-virtual {p1, v0}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->setState(Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;)V
 
-    .line 1519
+    .line 1515
     return-void
 .end method
 
@@ -423,13 +423,13 @@
     .parameter "arg2"
 
     .prologue
-    .line 1508
+    .line 1504
     invoke-super {p0, p1, p2, p3}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;->handleSurfaceChanged(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;ILjava/lang/Object;)V
 
-    .line 1509
+    .line 1505
     invoke-direct {p0, p1}, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->stopCaptureUrgently(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;)V
 
-    .line 1510
+    .line 1506
     new-instance v0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;
 
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
@@ -438,7 +438,7 @@
 
     invoke-virtual {p1, v0}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->setState(Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;)V
 
-    .line 1511
+    .line 1507
     return-void
 .end method
 
@@ -449,12 +449,12 @@
     .parameter "arg2"
 
     .prologue
-    .line 1499
+    .line 1495
     invoke-direct {p0, p1}, Lcom/sonyericsson/android/camera3d/SweepCameraController$Capture;->stopCaptureUrgently(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;)V
 
-    .line 1502
+    .line 1498
     invoke-super {p0, p1, p2, p3}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;->handleSurfaceDestroyed(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;ILjava/lang/Object;)V
 
-    .line 1503
+    .line 1499
     return-void
 .end method

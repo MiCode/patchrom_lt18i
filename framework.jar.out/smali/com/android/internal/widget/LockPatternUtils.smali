@@ -580,7 +580,7 @@
     return-object v0
 .end method
 
-.method protected static patternToHash(Ljava/util/List;)[B
+.method private static patternToHash(Ljava/util/List;)[B
     .locals 9
     .parameter
     .annotation system Ldalvik/annotation/Signature;
@@ -3877,26 +3877,3 @@
 
     goto :goto_0
 .end method
-
-.method public getPowerButtonInstantlyLocks()Z
-    .locals 1
-
-    .prologue
-
-    const/4 v0, 0x0
-
-    return v0
-
-.end method
-
-.method public setPowerButtonInstantlyLocks(Z)V
-    .locals 0
-    .parameter "value"
-
-    .prologue
-
-    return-void
-
-.end method
-
-

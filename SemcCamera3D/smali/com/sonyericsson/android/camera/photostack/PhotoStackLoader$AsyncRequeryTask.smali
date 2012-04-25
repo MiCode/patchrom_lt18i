@@ -38,21 +38,21 @@
     .parameter "listener"
 
     .prologue
-    .line 368
+    .line 373
     iput-object p1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
-    .line 369
+    .line 374
     if-eqz p2, :cond_0
 
-    .line 370
+    .line 375
     iput-object p2, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;->mListener:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$RequeryListener;
 
-    .line 374
+    .line 379
     return-void
 
-    .line 372
+    .line 377
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -70,7 +70,7 @@
     .parameter "x0"
 
     .prologue
-    .line 365
+    .line 370
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1
@@ -86,7 +86,7 @@
     .parameter "params"
 
     .prologue
-    .line 379
+    .line 384
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
     #getter for: Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMediaCS:Ljava/lang/Object;
@@ -96,7 +96,7 @@
 
     monitor-enter v1
 
-    .line 380
+    .line 385
     :try_start_0
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
@@ -107,7 +107,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 381
+    .line 386
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
     #getter for: Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMedia:Landroid/database/Cursor;
@@ -117,16 +117,16 @@
 
     invoke-interface {v0}, Landroid/database/Cursor;->requery()Z
 
-    .line 383
+    .line 388
     :cond_0
     monitor-exit v1
 
-    .line 384
+    .line 389
     const/4 v0, 0x0
 
     return-object v0
 
-    .line 383
+    .line 388
     :catchall_0
     move-exception v0
 
@@ -141,12 +141,12 @@
     .locals 1
 
     .prologue
-    .line 395
+    .line 400
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;->mListener:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$RequeryListener;
 
     invoke-interface {v0}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$RequeryListener;->onCancel()V
 
-    .line 396
+    .line 401
     return-void
 .end method
 
@@ -155,7 +155,7 @@
     .parameter "x0"
 
     .prologue
-    .line 365
+    .line 370
     check-cast p1, Ljava/lang/Void;
 
     .end local p1
@@ -169,12 +169,12 @@
     .parameter "result"
 
     .prologue
-    .line 389
+    .line 394
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;->mListener:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$RequeryListener;
 
     invoke-interface {v0}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$RequeryListener;->onRequeryComplete()V
 
-    .line 390
+    .line 395
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;->this$0:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;
 
     #getter for: Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mRequeryTaskQueue:Ljava/util/LinkedList;
@@ -184,6 +184,6 @@
 
     invoke-virtual {v0, p0}, Ljava/util/LinkedList;->remove(Ljava/lang/Object;)Z
 
-    .line 391
+    .line 396
     return-void
 .end method

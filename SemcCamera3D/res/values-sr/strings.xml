@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Prepoznavanje scene</string>
-    <string name="cam_strings_shortcut_normal_txt">Normalno</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Prepoznav. scene(kamera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normalno(kamera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Prednja kamera</string>
     <string name="cam_strings_shortcut_video_camera_txt">Video kamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Prednji video</string>
     <string name="cam_strings_scenes_auto_recog_portrait_txt">Vertikalno</string>
     <string name="cam_strings_scenes_auto_recog_landscape_txt">Pejzaž</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_txt">Pozadinsko osvetljenje</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Pozadinsko osvetljenje, vertikalno</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_txt">Kontrasvetlo</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Kontrasvetlo, vertikalno</string>
     <string name="cam_strings_scenes_auto_recog_twilight_txt">Noćna scena</string>
     <string name="cam_strings_scenes_auto_recog_twilight_portrait_txt">Noć, portret</string>
     <string name="cam_strings_scenes_auto_recog_text_txt">Dokument</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Lokacija dobijena putem GPS-a uvek ima prednost nad bežičnim mrežama. Da biste promenili metod dobijanja, idite u opciju „Podešavanja > Lokacija“.</string>
     <string name="cam_strings_do_not_show_again_txt">Ne prikazuj ponovo</string>
     <string name="cam_strings_unavailable_in_scene_txt">Nije moguće promeniti u kombinaciji sa trenutnim podešavanjem scene.</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Nije dostupno kada je Smile Shutter™ aktivan</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Nije dostupno dok je aktivno prepoznavanje osmeha</string>
     <string name="cam_3d_strings_dialog_delete_txt">Želite li da izbrišete ovu datoteku?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">I sliku iz više uglova</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">I 3D datot.</string>
@@ -202,7 +202,7 @@ Napomena: ove datoteke sadrže sivu oblast."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Za ovu 3D sliku postoji i fotografija iz više uglova. Izbrisati obe?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Samo v. ugl.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Samo 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Nije moguće koristiti ovaj režim sa povezanim HDMI kablom. Isključite kabl.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Isključite kabl. Nije moguće snimiti fotografiju u ovom režimu pomoću povezanog kabla.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Da biste prikazali ovu datoteku u 3D-u, koristite uređaj koji podržava 3D.</string>
     <string name="cam_status_remained_min">%1$d min.</string>
     <string name="cam_strings_both_location_fail_txt">Nije moguće utvrditi lokaciju</string>
@@ -216,7 +216,7 @@ Napomena: ove datoteke sadrže sivu oblast."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Način dobijanja lokacije</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Izbriši</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Slikanje nije moguće</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI greška</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Greška</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Daljinski upr. je dostupan</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Izbriši</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Čuvanje slike</string>
@@ -280,9 +280,9 @@ Napomena: ove datoteke sadrže sivu oblast."</string>
     <string name="cam_strings_cancel_txt">Otkaži</string>
     <string name="cam_strings_zoom_help_txt">Koristite taster za jačinu zvuka da biste uvećali/umanjili</string>
     <string name="cam_strings_zoom_not_supported_txt">Zumiranje nije moguće u ovom režimu</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Da biste prikazali fotografiju u 3D-u, povežite kameru sa 3D TV-om pomoću HDMI kabla ili tapnite na dugme „Reprodukuj na uređaju“.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Da biste prikazali fotografiju u 3D-u, povežite telefon sa 3D TV-om pomoću HDMI kabla ili tapnite na dugme „Reprodukuj na uređaju“.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Dodirnite ekran da biste snimili video zapis</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Da biste prikazali ovu fotografiju u 3D-u, povežite telefon sa 3D TV-om tako što ćete tapnuti na dugme „Reprodukuj na“.</string>
-    <string name="cam_strings_error_storage_changing_to_internal_txt">SD kartica nije dostupna. Podrazumevana lokacija čuvanja promenjena je u unutrašnje skladište.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Da biste prikazali ovu fotografiju u 3D-u, povežite telefon sa 3D TV-om tako što ćete tapnuti na dugme „Reprodukuj na uređaju“.</string>
+    <string name="cam_strings_error_storage_changing_to_internal_txt">SD kartica nije dostupna. Podrazumevana lokacija čuvanja promenjena je u internu memoriju.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">SD kartica je dostupna. Podrazumevana lokacija čuvanja promenjena je u SD karticu.</string>
 </resources>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Témafelismerés</string>
-    <string name="cam_strings_shortcut_normal_txt">Normál</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Témafelismerés (kamera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normál (kamera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Elülső kamera</string>
     <string name="cam_strings_shortcut_video_camera_txt">Videokamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Elülső videó</string>
     <string name="cam_strings_scenes_auto_recog_portrait_txt">Arckép</string>
     <string name="cam_strings_scenes_auto_recog_landscape_txt">Tájkép</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_txt">Háttérvilágítás</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Arckép háttérvilágítással</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_txt">Ellenfény</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Arckép ellenfényben</string>
     <string name="cam_strings_scenes_auto_recog_twilight_txt">Éjszakai felvétel</string>
     <string name="cam_strings_scenes_auto_recog_twilight_portrait_txt">Éjszakai portré</string>
     <string name="cam_strings_scenes_auto_recog_text_txt">Dokumentum</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">A GPS segítségével meghatározott tartózkodási hely mindig elsőbbséget élvez a vezeték nélküli hálózatokkal szemben. A meghatározási mód a Beállítások > Hely területen változtatható meg.</string>
     <string name="cam_strings_do_not_show_again_txt">Ne jelenjen meg újra</string>
     <string name="cam_strings_unavailable_in_scene_txt">A jelenlegi motívumprogrammal nem érhető el.</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Nem érhető el, amíg a Smile Shutter™ aktív</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Nem érhető el, amikor a mosolyérzékelés aktív</string>
     <string name="cam_3d_strings_dialog_delete_txt">Törli ezt a fájlt?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">A többszögű kép is</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">A 3D fájl is</string>
@@ -202,7 +202,7 @@ Megjegyzés: Ezek a fájlok egy szürke területet tartalmaznak."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Ehhez a több látószögű fényképhez tartozik egy 3D kép is. Törli mindkettőt?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Csak t.szögű</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Csak a 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Ez a mód nem használható csatlakoztatott HDMI-kábellel. Húzza ki a kábelt.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Húzza ki a kábelt. Ebben a módban nem készíthet fényképet csatlakoztatott kábellel.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">A fájl 3D-t támogató készülék használatával nézhető meg 3D-ben.</string>
     <string name="cam_status_remained_min">%1$d perc</string>
     <string name="cam_strings_both_location_fail_txt">A hely nem állapítható meg</string>
@@ -216,7 +216,7 @@ Megjegyzés: Ezek a fájlok egy szürke területet tartalmaznak."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Hely meghatározása</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Törlés</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Nem sikerült a felvétel</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI-hiba</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Hiba</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Távvezérlő elérhető</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Törlés</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Kép mentése</string>
@@ -279,9 +279,9 @@ Megjegyzés: Ezek a fájlok egy szürke területet tartalmaznak."</string>
     <string name="cam_strings_cancel_txt">Mégse</string>
     <string name="cam_strings_zoom_help_txt">A zoom növeléséhez/csökkentéséhez a hangerőbillentyű használható</string>
     <string name="cam_strings_zoom_not_supported_txt">Ebben a módban nem használható zoom</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Ha 3D módban szeretne fényképet megnézni, csatlakoztassa a kamerát 3D tévéhez HDMI-kábellel vagy a Lejátszás ezen gombra koppintással.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Ha 3D módban szeretne fényképet megnézni, HDMI-kábellel vagy a Lejátszás eszközön gombra koppintva csatlakoztassa a telefont 3D tévéhez.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Videó rögzítéséhez érintse meg a képernyőt</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Ha 3D módban szeretné a fényképet megnézni, a Lejátszás gombra koppintva csatlakoztassa a telefont egy 3D tévéhez.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Ha 3D módban szeretné a fényképet megnézni, a Lejátszás eszközön gombra koppintva csatlakoztassa a telefont egy 3D tévéhez.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Az SD kártya nem érhető el. A mentés alapértelmezett helye belső tárhelyre módosult.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">Az SD kártya elérhető. A mentés alapértelmezett helye SD kártyára módosult.</string>
 </resources>

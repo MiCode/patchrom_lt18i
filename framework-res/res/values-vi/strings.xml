@@ -319,8 +319,8 @@
     <string name="global_action_toggle_silent_mode">Chế độ im lặng</string>
     <string name="global_action_silent_mode_on_status">Âm tắt</string>
     <string name="global_action_silent_mode_off_status">Âm thanh đang BẬT</string>
-    <string name="global_actions_toggle_airplane_mode">Chế độ trên máy bay</string>
-    <string name="global_actions_airplane_mode_on_status">Chế độ trên máy bay BẬT</string>
+    <string name="global_actions_toggle_airplane_mode">Chế độ máy bay</string>
+    <string name="global_actions_airplane_mode_on_status">Chế độ máy bay BẬT</string>
     <string name="global_actions_airplane_mode_off_status">Chế độ máy bay tắt</string>
     <string name="safeMode">Chế độ an toàn</string>
     <string name="android_system_label">Hệ thống Android</string>
@@ -910,11 +910,11 @@ Chọn OK để tiếp tục hoặc Huỷ để ở lại trang hiện tại."</
     <string name="low_internal_storage_view_title">Dung lượng sắp hết</string>
     <string name="low_internal_storage_view_text">Dung lượng lưu trữ của điện thoại thấp.</string>
     <string name="loading">Đang tải...</string>
-    <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_on">BẬT</string>
+    <string name="capital_off">TẮT</string>
     <string name="whichApplication">Hoàn tất thao tác bằng</string>
     <string name="alwaysUse">Dùng theo m.định cho thao tác này.</string>
-    <string name="clearDefaultHintMsg">Xóa mặc định trong Cài đặt Màn hình trang chủ > Ứng dụng> Quản lý ứng dụng.</string>
+    <string name="clearDefaultHintMsg">Xóa mặc định trong Cài đặt > Ứng dụng.</string>
     <string name="chooseActivity">Chọn thao tác</string>
     <string name="chooseUsbActivity">Chọn một ứng dụng cho thiết bị USB</string>
     <string name="noApplications">Không có ứng dụng nào có thể thực hiện thao tác này.</string>
@@ -1221,7 +1221,7 @@ Bạn có muốn đóng quá trình này không?"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">Chặn SIM</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Nhập mã PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">Đã khoá SIM</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Nhập mã PUK do nhà k.thác mạng cung cấp</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Nhập mã PUK của nhà cung cấp dịch vụ</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Vui lòng liên hệ với nhà khai thác của bạn</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Nhập mã PIN mới</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Nhập lại mã PIN mới</string>

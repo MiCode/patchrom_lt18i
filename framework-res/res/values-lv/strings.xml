@@ -919,8 +919,8 @@ Izvēlieties Labi, lai turpinātu, vai Atcelt, lai paliktu pašreizējā lapā."
     <string name="capital_on">|</string>
     <string name="capital_off">〇</string>
     <string name="whichApplication">Darb. pabeigš., izmantojot</string>
-    <string name="alwaysUse">Lietot pēc noklusējuma šai darbībai.</string>
-    <string name="clearDefaultHintMsg">Notīriet noklusējumu šeit: Sākuma iestatījumi > Lietojumprogrammas > Lietojumprogrammu pārvaldība.</string>
+    <string name="alwaysUse">Lietot pēc noklus. šai darbībai.</string>
+    <string name="clearDefaultHintMsg">Notīriet noklusējumu sadaļā Iestatījumi > Lietotnes.</string>
     <string name="chooseActivity">Darbības izvēle</string>
     <string name="chooseUsbActivity">Izvēlieties programmu USB ierīcei</string>
     <string name="noApplications">Šo darbību nevar veikt neviena programma.</string>
@@ -1037,7 +1037,7 @@ Vai vēlaties to aizvērt?"</string>
     <string name="extmedia_format_message">Vai tiešām vēlaties formatēt SD karti? Visi kartē esošie dati tiks zaudēti.</string>
     <string name="extmedia_format_button_format">Formatēt</string>
     <string name="adb_active_notification_title">Pievienots USB atkļūdotājs</string>
-    <string name="adb_active_notification_message">Izvēlieties, lai deaktivizētu USB atkļūdošanu.</string>
+    <string name="adb_active_notification_message">Atlasiet, lai atspējotu USB atkļūdošanu.</string>
     <string name="select_input_method">Ievades metodes izvēle</string>
     <string name="configure_input_methods">Konfigurēt ievades metodes</string>
     <string name="fast_scroll_alphabet">" AĀBCČDEĒFGĢHIĪJKĶLĻMNŅOPRSŠTUŪVZŽ"</string>
@@ -1230,7 +1230,7 @@ kontam %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM karte bloķēta</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">PUK koda ievade</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM karte bloķēta</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Ievadiet PUK kodu, ko piešķīris jūsu operators</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Iev. PUK kodu, ko piešķīris jūsu tīkla oper.</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Lūdzu, sazinieties ar savu operatoru</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Jauna PIN koda ievade</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Jaunā PIN koda atkārtošana</string>

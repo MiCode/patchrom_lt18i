@@ -773,7 +773,7 @@ Selecione OK para continuar ou Cancelar para permanecer na página atual."</stri
     <string name="capital_off">〇</string>
     <string name="whichApplication">Complete a ação usando</string>
     <string name="alwaysUse">Usar como padrão para esta ação.</string>
-    <string name="clearDefaultHintMsg">Limpar o padrão em Configurações da página inicial > Aplicativos > Gerenciar aplicativos.</string>
+    <string name="clearDefaultHintMsg">Limpar o padrão em Configurações > Aplicativos</string>
     <string name="chooseActivity">Selecionar uma ação</string>
     <string name="chooseUsbActivity">Selecione um aplicativo p/ o dispositivo USB</string>
     <string name="noApplications">Nenhum aplicativo pode realizar esta ação.</string>
@@ -1081,7 +1081,7 @@ para a conta %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">Chip bloqueado</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Digite o PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">Chip bloqueado</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Digite o código PUK da sua operadora</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Digite o código PUK da sua operadora de rede</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Contate sua operadora</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Digite o novo PIN</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Repita o novo PIN</string>

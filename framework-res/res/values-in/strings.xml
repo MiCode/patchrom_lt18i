@@ -18,7 +18,7 @@
     <string name="untitled">&lt;tanpa judul></string>
     <string name="VideoView_error_button">OK</string>
     <string name="VideoView_error_text_unknown">Maaf, video ini tidak dapat diputar.</string>
-    <string name="VideoView_error_title">Tidak dapat memutar video</string>
+    <string name="VideoView_error_title">Tdk dapat memutar video</string>
     <string name="yes">OK</string>
     <string name="dialog_alert_title">Perhatian</string>
     <string name="VideoView_error_text_invalid_progressive_playback">Maaf, video ini tidak valid untuk streaming ke perangkat ini.</string>
@@ -920,7 +920,7 @@ Pilih OK untuk melanjutkan, atau Batal untuk tetap di halaman sekarang."</string
     <string name="capital_off">〇</string>
     <string name="whichApplication">Selesaikan aksi dengan</string>
     <string name="alwaysUse">Gunakan secara default utk aksi ini.</string>
-    <string name="clearDefaultHintMsg">Bersihkan bawaan pada Setelan Beranda > Aplikasi > Kelola aplikasi.</string>
+    <string name="clearDefaultHintMsg">Bersihkan default di Setelan > Aplikasi.</string>
     <string name="chooseActivity">Pilih tindakan</string>
     <string name="chooseUsbActivity">Plilih aplikasi untuk perangkat USB</string>
     <string name="noApplications">Tidak ada aplikasi yang dapat menjalankan tindakan ini.</string>
@@ -1106,7 +1106,7 @@ untuk akun %s"</string>
     <string name="throttled_notification_title">Batasan data seluler terlampaui</string>
     <string name="throttled_notification_message">Sentuh untuk mempelajari selengkapnya tentang penggunaan data selular</string>
     <string name="no_matches">Tidak ada kecocokan</string>
-    <string name="find_on_page">Temukan pada laman</string>
+    <string name="find_on_page">Temukan pada halaman</string>
     <string name="action_mode_done">Selesai</string>
     <string name="progress_unmounting">Melepas kartu SD...</string>
     <string name="progress_erasing">Menghapus kartu SD...</string>
@@ -1229,7 +1229,7 @@ untuk akun %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">Kartu SIM diblokir</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Masukkan PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">Kartu SIM dikunci</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Masukkan kode PUK yang diberikan operator</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Masukkan PUK yang diberikan operator</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Kontak operator Anda</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Masukkan PIN baru</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Ulangi PIN baru</string>

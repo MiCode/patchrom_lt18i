@@ -163,7 +163,7 @@
     <string name="abbrev_wday_month_day_year">EEE, d MMM yyyy</string>
     <string name="mmcc_imsi_unknown_in_hlr">Δεν προβλέπεται κάρτα SIM MM #2</string>
     <string name="mmcc_illegal_ms">Η κάρτα SIM δεν επιτρέπεται MM #3</string>
-    <string name="mmcc_illegal_me">Το τηλέφωνο δεν επιτρέπεται MM #6</string>
+    <string name="mmcc_illegal_me">Το κινητό δεν επιτρέπεται MM #6</string>
     <string name="mmcc_authentication_reject">Η κάρτα SIM δεν επιτρέπεται</string>
     <string name="carrier_invalid_sim_card">Μη έγκυρη κάρτα SIM</string>
     <string name="unregistered_sim">Μη καταχωρημένη κάρτα SIM</string>
@@ -321,7 +321,7 @@
     <string name="global_action_silent_mode_off_status">Ο ήχος είναι ενεργοποιημένος</string>
     <string name="global_actions_toggle_airplane_mode">Λειτουργία πτήσης</string>
     <string name="global_actions_airplane_mode_on_status">Η λειτουργία πτήσης είναι ενεργή.</string>
-    <string name="global_actions_airplane_mode_off_status">Η λειτουργία πτήσης είναι ανενεργή</string>
+    <string name="global_actions_airplane_mode_off_status">Η λειτ. πτήσης είναι ανενεργή</string>
     <string name="safeMode">Ασφαλής λειτουργία</string>
     <string name="android_system_label">Σύστημα Android</string>
     <string name="permgrouplab_costMoney">Υπηρεσίες επί πληρωμή</string>
@@ -912,9 +912,9 @@
     <string name="loading">Φόρτωση...</string>
     <string name="capital_on">|</string>
     <string name="capital_off">〇</string>
-    <string name="whichApplication">Ολοκλ. ενέργειας με χρήση</string>
-    <string name="alwaysUse">Χρήση από προεπ. για την ενέργεια.</string>
-    <string name="clearDefaultHintMsg">Εκκαθάριση προεπιλεγμένων σε Ρυθμίσεις αρχικής σελίδας > Εφαρμογές > Διαχείριση εφαρμογών.</string>
+    <string name="whichApplication">Ολοκλ. ενέργ. με χρήση</string>
+    <string name="alwaysUse">Χρήση από προεπ. για την ενέρ.</string>
+    <string name="clearDefaultHintMsg">Εκκαθάριση προεπιλεγμένων σε Ρυθμίσεις > Εφαρμογές.</string>
     <string name="chooseActivity">Επιλέξτε μια ενέργεια</string>
     <string name="chooseUsbActivity">Επιλέξτε μια εφαρμογή για τη συσκευή USB</string>
     <string name="noApplications">Δεν υπάρχουν εφαρμογές, οι οποίες μπορούν να εκτελέσουν αυτήν την ενέργεια.</string>
@@ -1029,7 +1029,7 @@
     <string name="extmedia_format_message">Είστε βέβαιοι ότι θέλετε να διαμορφώσετε την κάρτα SD; Όλα τα δεδομένα στην κάρτα σας θα χαθούν.</string>
     <string name="extmedia_format_button_format">Διαμόρφωση</string>
     <string name="adb_active_notification_title">Συνδέθ. ο εντοπισμός σφαλμ.USB</string>
-    <string name="adb_active_notification_message">Επιλογή για απενεργ. του εντοπισμού σφαλμ.USB.</string>
+    <string name="adb_active_notification_message">Επιλογή για απενεργ. του εντοπ. σφαλμ.USB.</string>
     <string name="select_input_method">Επιλογή μεθόδου εισόδου</string>
     <string name="configure_input_methods">Διαμόρφωση μεθόδων εισαγωγής</string>
     <string name="fast_scroll_alphabet">" ABCDEFGHIJKLMNOPQRSTUVWXYZ"</string>

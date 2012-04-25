@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Fotoaparát</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">S rozlišením scény</string>
-    <string name="cam_strings_shortcut_normal_txt">Normálně</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">S rozp. scény (fotoaparát)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normální (fotoaparát)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Přední fotoaparát</string>
     <string name="cam_strings_shortcut_video_camera_txt">Videokamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Přední video</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Poloha zjištěná pomocí GPS má vždy přednost před bezdrátovými sítěmi. Chcete-li změnit způsob získání polohy, použijte příkaz Nastavení > Poloha.</string>
     <string name="cam_strings_do_not_show_again_txt">Znovu nezobrazovat</string>
     <string name="cam_strings_unavailable_in_scene_txt">Nelze změnit v kombinaci s aktuálním nastavením scény</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Není k dispozici při aktivaci funkce Smile Shutter™</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Není k dispozici při aktivaci funkce rozpoznávání úsměvu</string>
     <string name="cam_3d_strings_dialog_delete_txt">Chcete odstranit tento soubor?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Také z více úhlů</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Také 3D</string>
@@ -202,7 +202,7 @@ Poznámka: Tyto soubory obsahují šedou oblast."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">K tomuto snímku z více úhlů existuje také 3D obraz. Chcete odstranit oboje?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Pouze víc ú.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Pouze 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Tento režim nelze použít se zapojeným kabelem HDMI. Odpojte kabel.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Odpojte kabel. V tomto režimu nelze pořídit fotografii se zapojeným kabelem.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">K 3D zobrazení tohoto souboru použijte podporované 3D zařízení.</string>
     <string name="cam_status_remained_min">%1$d min</string>
     <string name="cam_strings_both_location_fail_txt">Nelze zjistit umístění</string>
@@ -216,14 +216,14 @@ Poznámka: Tyto soubory obsahují šedou oblast."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Jak získat polohu</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Odstranit</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Nelze snímat</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Chyba HDMI</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Chyba</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Dálk. ovládání k dispozici</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Odstranit</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Ukládání obrázku</string>
     <string name="cam_strings_error_message_during_voice_call_title_txt">Během hlas. hovoru</string>
     <string name="cam_strings_touch_capture_gude_txt">Fotografii pořídíte dotykem obrazovky.</string>
     <string name="cam_3d_strings_album_application_name_txt">3D album</string>
-    <string name="cam_strings_capturing_mode_scene_recognition_short_txt">S rozlišením scény</string>
+    <string name="cam_strings_capturing_mode_scene_recognition_short_txt">S rozpoznáním scény</string>
     <string name="cam_strings_capturing_mode_normal_short_txt">Normálně</string>
     <string name="cam_strings_capturing_mode_front_camera_short_txt">Přední fotoaparát</string>
     <string name="cam_strings_capturing_mode_video_camera_short_txt">Videokamera</string>
@@ -279,9 +279,9 @@ Poznámka: Tyto soubory obsahují šedou oblast."</string>
     <string name="cam_strings_cancel_txt">Zrušit</string>
     <string name="cam_strings_zoom_help_txt">K přiblížení/oddálení použijte tlačítko hlasitosti</string>
     <string name="cam_strings_zoom_not_supported_txt">Nelze přiblížit v tomto režimu</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Chcete-li zobrazit fotografii ve 3D, připojte fotoaparát k televizi s podporou 3D TV pomocí rozhraní HDMI nebo ťuknutím na tlačítko Přehrát v zařízení.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Chcete-li zobrazit fotografii ve 3D, připojte telefon k televizi s podporou 3D TV pomocí rozhraní HDMI nebo ťuknutím na tlačítko Přehrát v zařízení.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Video zaznamenáte dotknutím se obrazovky.</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Chcete-li zobrazit tuto fotografii ve 3D, připojte telefon k 3D TV ťuknutím na tlačítko Přehrát v.</string>
-    <string name="cam_strings_error_storage_changing_to_internal_txt">Není k dispozici karta SD. Výchozí místo pro ukládání bylo změněno na interní úložiště.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Chcete-li zobrazit tuto fotografii ve 3D, připojte telefon k 3D TV ťuknutím na tlačítko Přehrát v zařízení.</string>
+    <string name="cam_strings_error_storage_changing_to_internal_txt">Není k dispozici karta SD. Výchozí místo pro ukládání bylo změněno na vnitřní úložiště.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">Karta SD je k dispozici. Výchozí místo pro ukládání bylo změněno na kartu SD.</string>
 </resources>

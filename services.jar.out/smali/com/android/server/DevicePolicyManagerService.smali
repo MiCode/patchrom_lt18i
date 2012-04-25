@@ -247,55 +247,13 @@
 .end method
 
 .method private getEncryptionStatus()I
-    .locals 3
+    .locals 1
 
     .prologue
-    .line 2014
-    const-string v1, "ro.crypto.state"
+    .line 2019
+    const/4 v0, 0x0
 
-    const-string v2, "unsupported"
-
-    invoke-static {v1, v2}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 2015
-    .local v0, status:Ljava/lang/String;
-    const-string v1, "encrypted"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 2016
-    const/4 v1, 0x3
-
-    .line 2020
-    :goto_0
-    return v1
-
-    .line 2017
-    :cond_0
-    const-string v1, "unencrypted"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    .line 2018
-    const/4 v1, 0x1
-
-    goto :goto_0
-
-    .line 2020
-    :cond_1
-    const/4 v1, 0x0
-
-    goto :goto_0
+    return v0
 .end method
 
 .method private getIPowerManager()Landroid/os/IPowerManager;
@@ -2515,7 +2473,7 @@
     .parameter "encrypt"
 
     .prologue
-    .line 2028
+    .line 2026
     return-void
 .end method
 
@@ -2675,7 +2633,7 @@
     .parameter "args"
 
     .prologue
-    .line 2079
+    .line 2077
     iget-object v4, p0, Lcom/android/server/DevicePolicyManagerService;->mContext:Landroid/content/Context;
 
     const-string v5, "android.permission.DUMP"
@@ -2686,7 +2644,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 2082
+    .line 2080
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -2725,39 +2683,39 @@
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2117
+    .line 2115
     :goto_0
     return-void
 
-    .line 2088
+    .line 2086
     :cond_0
     new-instance v3, Landroid/util/PrintWriterPrinter;
 
     invoke-direct {v3, p2}, Landroid/util/PrintWriterPrinter;-><init>(Ljava/io/PrintWriter;)V
 
-    .line 2090
+    .line 2088
     .local v3, p:Landroid/util/Printer;
     monitor-enter p0
 
-    .line 2091
+    .line 2089
     :try_start_0
     const-string v4, "Current Device Policy Manager state:"
 
     invoke-interface {v3, v4}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2093
+    .line 2091
     const-string v4, "  Enabled Device Admins:"
 
     invoke-interface {v3, v4}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2094
+    .line 2092
     iget-object v4, p0, Lcom/android/server/DevicePolicyManagerService;->mAdminList:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
-    .line 2095
+    .line 2093
     .local v0, N:I
     const/4 v2, 0x0
 
@@ -2765,7 +2723,7 @@
     :goto_1
     if-ge v2, v0, :cond_2
 
-    .line 2096
+    .line 2094
     iget-object v4, p0, Lcom/android/server/DevicePolicyManagerService;->mAdminList:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -2774,11 +2732,11 @@
 
     check-cast v1, Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;
 
-    .line 2097
+    .line 2095
     .local v1, ap:Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;
     if-eqz v1, :cond_1
 
-    .line 2098
+    .line 2096
     const-string v4, "  "
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
@@ -2795,35 +2753,35 @@
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 2099
+    .line 2097
     const-string v4, ":"
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2100
+    .line 2098
     const-string v4, "    "
 
     invoke-virtual {v1, v4, p2}, Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;->dump(Ljava/lang/String;Ljava/io/PrintWriter;)V
 
-    .line 2095
+    .line 2093
     :cond_1
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
-    .line 2104
+    .line 2102
     .end local v1           #ap:Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;
     :cond_2
     const-string v4, " "
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2105
+    .line 2103
     const-string v4, "  mActivePasswordQuality=0x"
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 2106
+    .line 2104
     iget v4, p0, Lcom/android/server/DevicePolicyManagerService;->mActivePasswordQuality:I
 
     invoke-static {v4}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
@@ -2832,7 +2790,7 @@
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 2107
+    .line 2105
     const-string v4, "  mActivePasswordLength="
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
@@ -2841,7 +2799,7 @@
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 2108
+    .line 2106
     const-string v4, "  mActivePasswordUpperCase="
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
@@ -2850,7 +2808,7 @@
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 2109
+    .line 2107
     const-string v4, "  mActivePasswordLowerCase="
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
@@ -2859,7 +2817,7 @@
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 2110
+    .line 2108
     const-string v4, "  mActivePasswordLetters="
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
@@ -2868,7 +2826,7 @@
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 2111
+    .line 2109
     const-string v4, "  mActivePasswordNumeric="
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
@@ -2877,7 +2835,7 @@
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 2112
+    .line 2110
     const-string v4, "  mActivePasswordSymbols="
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
@@ -2886,7 +2844,7 @@
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 2113
+    .line 2111
     const-string v4, "  mActivePasswordNonLetter="
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
@@ -2895,7 +2853,7 @@
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 2114
+    .line 2112
     const-string v4, "  mFailedPasswordAttempts="
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
@@ -2904,7 +2862,7 @@
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 2115
+    .line 2113
     const-string v4, "  mPasswordOwner="
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
@@ -2913,7 +2871,7 @@
 
     invoke-virtual {p2, v4}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 2116
+    .line 2114
     monitor-exit p0
 
     goto/16 :goto_0
@@ -3515,19 +3473,19 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 2059
+    .line 2057
     monitor-enter p0
 
-    .line 2060
+    .line 2058
     if-eqz p1, :cond_1
 
-    .line 2061
+    .line 2059
     :try_start_0
     invoke-virtual {p0, p1}, Lcom/android/server/DevicePolicyManagerService;->getActiveAdminUncheckedLocked(Landroid/content/ComponentName;)Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;
 
     move-result-object v1
 
-    .line 2062
+    .line 2060
     .local v1, admin:Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;
     if-eqz v1, :cond_0
 
@@ -3536,12 +3494,12 @@
     :cond_0
     monitor-exit p0
 
-    .line 2073
+    .line 2071
     .end local v1           #admin:Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;
     :goto_0
     return v3
 
-    .line 2066
+    .line 2064
     :cond_1
     iget-object v4, p0, Lcom/android/server/DevicePolicyManagerService;->mAdminList:Ljava/util/ArrayList;
 
@@ -3549,7 +3507,7 @@
 
     move-result v0
 
-    .line 2067
+    .line 2065
     .local v0, N:I
     const/4 v2, 0x0
 
@@ -3557,7 +3515,7 @@
     :goto_1
     if-ge v2, v0, :cond_3
 
-    .line 2068
+    .line 2066
     iget-object v4, p0, Lcom/android/server/DevicePolicyManagerService;->mAdminList:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -3566,20 +3524,20 @@
 
     check-cast v1, Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;
 
-    .line 2069
+    .line 2067
     .restart local v1       #admin:Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;
     iget-boolean v4, v1, Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;->disableCamera:Z
 
     if-eqz v4, :cond_2
 
-    .line 2070
+    .line 2068
     const/4 v3, 0x1
 
     monitor-exit p0
 
     goto :goto_0
 
-    .line 2074
+    .line 2072
     .end local v0           #N:I
     .end local v1           #admin:Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;
     .end local v2           #i:I
@@ -3592,7 +3550,7 @@
 
     throw v3
 
-    .line 2067
+    .line 2065
     .restart local v0       #N:I
     .restart local v1       #admin:Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;
     .restart local v2       #i:I
@@ -3601,7 +3559,7 @@
 
     goto :goto_1
 
-    .line 2073
+    .line 2071
     .end local v1           #admin:Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;
     :cond_3
     :try_start_1
@@ -7454,13 +7412,13 @@
     .parameter "disabled"
 
     .prologue
-    .line 2040
+    .line 2038
     monitor-enter p0
 
-    .line 2041
+    .line 2039
     if-nez p1, :cond_0
 
-    .line 2042
+    .line 2040
     :try_start_0
     new-instance v1, Ljava/lang/NullPointerException;
 
@@ -7470,7 +7428,7 @@
 
     throw v1
 
-    .line 2051
+    .line 2049
     :catchall_0
     move-exception v1
 
@@ -7480,7 +7438,7 @@
 
     throw v1
 
-    .line 2044
+    .line 2042
     :cond_0
     const/16 v1, 0x8
 
@@ -7489,28 +7447,28 @@
 
     move-result-object v0
 
-    .line 2046
+    .line 2044
     .local v0, ap:Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;
     iget-boolean v1, v0, Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;->disableCamera:Z
 
     if-eq v1, p2, :cond_1
 
-    .line 2047
+    .line 2045
     iput-boolean p2, v0, Lcom/android/server/DevicePolicyManagerService$ActiveAdmin;->disableCamera:Z
 
-    .line 2048
+    .line 2046
     invoke-direct {p0}, Lcom/android/server/DevicePolicyManagerService;->saveSettingsLocked()V
 
-    .line 2050
+    .line 2048
     :cond_1
     invoke-virtual {p0}, Lcom/android/server/DevicePolicyManagerService;->syncDeviceCapabilitiesLocked()V
 
-    .line 2051
+    .line 2049
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 2052
+    .line 2050
     return-void
 .end method
 

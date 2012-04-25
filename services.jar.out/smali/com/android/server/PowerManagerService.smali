@@ -9276,8 +9276,6 @@
 
     .line 2597
     :cond_1
-    invoke-direct {p0, p1}, Lcom/android/server/PowerManagerService;->checkRecovery(Ljava/lang/String;)V
-
     move-object v0, p1
 
     .line 2598
@@ -10801,52 +10799,4 @@
 
     .line 2348
     return-void
-.end method
-
-.method private checkRecovery(Ljava/lang/String;)V
-    .locals 2
-    .parameter "reason"
-
-    .prologue
-    .line 2581
-    const-string v1, "recovery"
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    .line 2588
-    :goto_0
-    return-void
-
-    .line 2583
-    :cond_0
-    :try_start_0
-    new-instance v0, Ljava/io/FileWriter;
-
-    const-string v1, "/cache/recovery/boot"
-
-    invoke-direct {v0, v1}, Ljava/io/FileWriter;-><init>(Ljava/lang/String;)V
-
-    .line 2584
-    .local v0, writer:Ljava/io/FileWriter;
-    const-string v1, "true"
-
-    invoke-virtual {v0, v1}, Ljava/io/FileWriter;->write(Ljava/lang/String;)V
-
-    .line 2585
-    invoke-virtual {v0}, Ljava/io/FileWriter;->close()V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    .line 2586
-    .end local v0           #writer:Ljava/io/FileWriter;
-    :catch_0
-    move-exception v1
-
-    goto :goto_0
 .end method

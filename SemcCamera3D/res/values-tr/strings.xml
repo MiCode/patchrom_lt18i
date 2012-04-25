@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Çekim modu tanıma</string>
-    <string name="cam_strings_shortcut_normal_txt">Normal</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Çekim md blrlme(kamera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normal(kamera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Ön kamera</string>
     <string name="cam_strings_shortcut_video_camera_txt">Video kamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Ön video</string>
     <string name="cam_strings_scenes_auto_recog_portrait_txt">Dikey</string>
     <string name="cam_strings_scenes_auto_recog_landscape_txt">Manzara</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_txt">Arka plan ışığı</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Arka plan ışığı dikey</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_txt">Ters ışık</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Ters ışık dikey</string>
     <string name="cam_strings_scenes_auto_recog_twilight_txt">Gece çekimi</string>
     <string name="cam_strings_scenes_auto_recog_twilight_portrait_txt">Gece portre çekimi</string>
     <string name="cam_strings_scenes_auto_recog_text_txt">Belge</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">"GPS ile alınan konum her zaman kablosuz ağlardan önceliklidir. Konum alma yönteminizi değiştirmek için, Ayarlar > Konum'a gidin."</string>
     <string name="cam_strings_do_not_show_again_txt">Bir daha gösterme</string>
     <string name="cam_strings_unavailable_in_scene_txt">Geçerli Çekim modu ayarıyla birlikte kullanılamaz</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Smile Shutter™ etkin olduğunda kullanılamaz</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Gülümseme saptama etkin olduğunda kullanılamaz</string>
     <string name="cam_3d_strings_dialog_delete_txt">Bu dosya silinsin mi?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Çok Açılı da</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">3D dosya da</string>
@@ -202,7 +202,7 @@ Not: Bu dosyalarda gri alan var."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Bu Çok Açılı fotoğrafın 3D görüntüsü de var. Her ikisi de silinsin mi?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Sadece Ç. A.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Sadece 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Bu mod HDMI kablosu bağlıyken kullanılamaz. Lütfen kabloyu çıkarın.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Kabloyu çıkarın. Bu modda kablo bağlıyken fotoğraf çekemezsiniz.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Bu dosyayı 3D görüntülemek için, 3D destekleyen aygıt kullanın.</string>
     <string name="cam_status_remained_min">%1$d dk.</string>
     <string name="cam_strings_both_location_fail_txt">Konum belirlenemiyor</string>
@@ -216,14 +216,14 @@ Not: Bu dosyalarda gri alan var."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Konum alma</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Sil</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Çekim yapılamadı</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI hatası</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Hata</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Uzaktn kuman. kullanıl.</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Sil</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Görüntü kaydediliyor</string>
     <string name="cam_strings_error_message_during_voice_call_title_txt">Sesli arama sırasında</string>
     <string name="cam_strings_touch_capture_gude_txt">Fotoğraf çekmek için ekrana dokunun</string>
     <string name="cam_3d_strings_album_application_name_txt">3D Albüm</string>
-    <string name="cam_strings_capturing_mode_scene_recognition_short_txt">Çekim modu tanıma</string>
+    <string name="cam_strings_capturing_mode_scene_recognition_short_txt">Çekim modu belirleme</string>
     <string name="cam_strings_capturing_mode_normal_short_txt">Normal</string>
     <string name="cam_strings_capturing_mode_front_camera_short_txt">Ön kamera</string>
     <string name="cam_strings_capturing_mode_video_camera_short_txt">Video kamera</string>
@@ -280,9 +280,9 @@ Not: Bu dosyalarda gri alan var."</string>
     <string name="cam_strings_cancel_txt">İptal</string>
     <string name="cam_strings_zoom_help_txt">Yaklaştırmak/uzaklaştırmak için ses seviyesi tuşunu kullanın</string>
     <string name="cam_strings_zoom_not_supported_txt">Bu modda yakınlaştırılamıyor</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">"Bir fotoğrafı 3D olarak görüntülemek için kameranızı HDMI kullanarak bir 3D TV'ye bağlayın veya Şurada oynat düğmesine dokunun."</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">"Bir fotoğrafı 3D olarak görüntülemek için HDMI kullanarak veya Şurada çal düğmesine dokunarak telefonunuzu 3D TV'ye bağlayın."</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Video kaydetmek için ekrana dokunun</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">"Bu fotoğrafı 3D görüntülemek için Şurada çal düğmesine dokunarak telefonunuzu 3D bir TV'ye bağlayın."</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">"Bu fotoğrafı 3D görüntülemek için Şurada çal düğmesine dokunarak telefonunuzu 3D TV'ye bağlayın."</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Hiçbir SD kart kullanılamıyor. Varsayılan kaydetme konumu dahili depolama olarak değiştirildi.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">SD kart kullanılabiliyor. Varsayılan kaydetme konumu SD kart olarak değiştirildi.</string>
 </resources>

@@ -27,15 +27,15 @@
     .parameter "thumbnail"
 
     .prologue
-    .line 1057
+    .line 1062
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1058
+    .line 1063
     iput p1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailLoadRequest;->mIndex:I
 
-    .line 1059
+    .line 1064
     iput-object p2, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailLoadRequest;->mThumbnail:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;
 
-    .line 1060
+    .line 1065
     return-void
 .end method

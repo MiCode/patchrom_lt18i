@@ -25,7 +25,7 @@
     .locals 3
 
     .prologue
-    .line 869
+    .line 874
     invoke-static {}, Lcom/sonyericsson/android/camera/photostack/PhotoStack$ContentMode;->values()[Lcom/sonyericsson/android/camera/photostack/PhotoStack$ContentMode;
 
     move-result-object v0
@@ -83,7 +83,7 @@
     :try_end_2
     .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_1
 
-    .line 314
+    .line 319
     :goto_2
     invoke-static {}, Lcom/sonyericsson/android/camera/photostack/PhotoStack$SecurityLevel;->values()[Lcom/sonyericsson/android/camera/photostack/PhotoStack$SecurityLevel;
 
@@ -118,7 +118,7 @@
 
     goto :goto_3
 
-    .line 869
+    .line 874
     :catch_1
     move-exception v0
 

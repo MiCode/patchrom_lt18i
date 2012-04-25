@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">دوربین</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">تشخیص صحنه</string>
-    <string name="cam_strings_shortcut_normal_txt">معمولی</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">تشخیص صحنه (دوربین)</string>
+    <string name="cam_strings_shortcut_normal_txt">عادی (دوربین)</string>
     <string name="cam_strings_shortcut_front_camera_txt">دوربین جلو</string>
     <string name="cam_strings_shortcut_video_camera_txt">دوربین فیلمبرداری</string>
     <string name="cam_strings_shortcut_front_video_txt">دوربين فيلمبرداري جلو</string>
@@ -68,7 +68,7 @@
     <string name="cam_strings_white_balance_auto_txt">خودکار</string>
     <string name="cam_strings_white_balance_incandescent_txt">تابان</string>
     <string name="cam_strings_white_balance_fluorescent_txt">فلورسنت</string>
-    <string name="cam_strings_white_balance_day_light_txt">نور روز</string>
+    <string name="cam_strings_white_balance_day_light_txt">روز</string>
     <string name="cam_strings_white_balance_cloudy_txt">ابری</string>
     <string name="cam_strings_photometry_txt">نورسنجی</string>
     <string name="cam_strings_photometry_center_txt">مرکز</string>
@@ -117,7 +117,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">محل به دست آمده از طريق GPS هميشه نسبت به شبكه های بی سيم دارای اولویت است. برای تغییر نحوه یافتن محل خود، به تنظیمات > محل برويد.</string>
     <string name="cam_strings_do_not_show_again_txt">دوباره نمایش داده نشود</string>
     <string name="cam_strings_unavailable_in_scene_txt">در ترکیب با تنظیمات منظره فعلی قابل تغییر نیست</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">وقتی ™Smile Shutter فعال است، قابل دسترسی نیست</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">وقتی ردیابی لبخند فعال است، قابل دسترسی نیست</string>
     <string name="cam_3d_strings_dialog_delete_txt">این فایل حذف شود؟</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">چند زاویه ای نیز هست</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">3D است</string>
@@ -143,7 +143,7 @@
     <string name="cam_3d_strings_setting_shooting_direction_left_txt">چپ</string>
     <string name="cam_3d_strings_setting_shooting_direction_up_txt">بالا</string>
     <string name="cam_3d_strings_setting_shooting_direction_down_txt">پایین</string>
-    <string name="cam_3d_strings_album_multi_angle_view_guide_txt">تلفن را به راست یا چپ کج کنید</string>
+    <string name="cam_3d_strings_album_multi_angle_view_guide_txt">تلفن را به چپ یا راست کچ کنید</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_txt">برای مشاهده تصویر 3D، با کابل HDMI به تلویزیون 3D متصل شوید.</string>
     <string name="cam_3d_strings_error_zoom_3d_sweep_panorama_txt">در حالت جابجایی پانورامای 3D امکان استفاده از بزرگنمایی وجود ندارد</string>
     <string name="cam_3d_strings_error_zoom_sweep_multi_angle_txt">در حالت جابجایی چند زاویه ای امکان استفاده از بزرگنمایی وجود ندارد</string>
@@ -184,14 +184,14 @@
     <string name="cam_3d_strings_shooting_guide_press_key_txt">دکمه دوربین را فشار دهید و سپس به آهستگی دوربین را حرکت دهید</string>
     <string name="cam_3d_strings_shooting_direction_guide_txt">تغییر جهت با ضربه زدن روی نماد به سمت چپ</string>
     <string name="cam_3d_strings_shooting_guide_touch_cap_txt">روی نمایاب ضربه بزنید و سپس به آرامی دوربین را حرکت دهید</string>
-    <string name="cam_3d_strings_dialog_loading_txt">درحال بارگذاری</string>
+    <string name="cam_3d_strings_dialog_loading_txt">بارگیری</string>
     <string name="cam_3d_strings_dialog_delete_3d_with_ma_txt">یک عکس چند زاویه ای نیز برای این تصویر 3D وجود دارد. هر دو حذف شوند؟</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">یک تصویر 3D برای این عکس چند زاویه ای وجود دارد. هر دو حذف شوند؟</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">فقط چندزاویه</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">فقط 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">استفاده از این حالت با اتصال کابل HDMI امکان پذیر نیست. لطفاً کابل را جدا کنید.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">کابل را جدا کنید. در این حالت با کابل متصل نمی توانید عکس بگیرید.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">جهت مشاهده فایل 3D، از دستگاهی استفاده کنید که 3D را پشتیبانی کند.</string>
-    <string name="cam_status_remained_min">‏ %1$d دقیقه</string>
+    <string name="cam_status_remained_min">‏ %1$d دق</string>
     <string name="cam_strings_both_location_fail_txt">تعیین مکان امکان پذیر نیست</string>
     <string name="cam_strings_gps_location_fail_txt">با استفاده از GPS نمی توان مکان را تعیین کرد</string>
     <string name="cam_strings_wireless_location_fail_txt">تعیین مکان با شبکه های بی سیم امکان پذیر نیست</string>
@@ -203,7 +203,7 @@
     <string name="cam_strings_wireless_gps_explanatory_title_txt">نحوه یافتن محل</string>
     <string name="cam_strings_file_delete_confirm_title_txt">حذف</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">عکس گرفته نشد</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">خطای HDMI</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">خطا</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">کنترل از راه دور موجود است</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">حذف</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">ذخیره تصویر</string>
@@ -270,7 +270,7 @@
     <string name="cam_strings_zoom_not_supported_txt">در این حالت بزرگنمایی انجام نمی شود</string>
     <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">برای دیدن عکس 3D، دوربین را با HDMI، یا ضربه بر پخش در دکمه، به تلویزیون 3D وصل کنید.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">برای ضبط فیلم، صفحه را لمس کنید</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">برای دیدن عکس بصورت 3D، تلفن را با ضربه بر پخش در دکمه به یک تلویزیون 3D وصل کنید.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">برای دیدن عکس 3D، تلفن را با ضربه بر دکمه پخش در دستگاه، به یک تلویزیون 3D وصل کنید.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">هیچ کارت SD موجود نیست. موقعیت ذخیره پیش فرض به حافظه داخلی تغییر کرد.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">کارت SD موجود است. موقعیت ذخیره پیش فرض به کارت SD تغییر کرد.</string>
 </resources>

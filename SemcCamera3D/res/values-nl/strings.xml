@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Camera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Scèneherkenning</string>
-    <string name="cam_strings_shortcut_normal_txt">Normaal</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Scèneherkenning (camera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normaal (camera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Camera aan voorzijde</string>
     <string name="cam_strings_shortcut_video_camera_txt">Videocamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Video voorzijde</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">De locatie die is opgehaald met GPS, heeft altijd voorrang boven draadloze netwerken. Als u de ophaalmethode wilt wijzigen, gaat u naar Instellingen > Locatie.</string>
     <string name="cam_strings_do_not_show_again_txt">Niet meer tonen</string>
     <string name="cam_strings_unavailable_in_scene_txt">Kan niet worden gewijzigd in combinatie met de huidige scène-instelling</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Niet beschikbaar wanneer Smile Shutter™ actief is</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Niet beschikbaar wanneer lachdetectie actief is</string>
     <string name="cam_3d_strings_dialog_delete_txt">Dit bestand verwijderen?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Ook multi-angle</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Ook 3D</string>
@@ -203,7 +203,7 @@ Opmerking: deze bestanden bevatten een grijs gebied."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Er bestaat ook een 3D-foto voor deze multi-angle-foto. Beide verwijderen?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Alln m.angle</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Alleen 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Deze opnamemodus kan niet worden gebruikt met een aangesloten HDMI-kabel. Verwijder de kabel.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">"Verwijder de kabel. U kunt in deze modus geen foto's maken wanneer er een kabel is aangesloten."</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Gebruik app. met 3D-ondersteuning om bestand in 3D weer te geven.</string>
     <string name="cam_status_remained_min">%1$d min.</string>
     <string name="cam_strings_both_location_fail_txt">Kan locatie niet vaststellen</string>
@@ -217,7 +217,7 @@ Opmerking: deze bestanden bevatten een grijs gebied."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Locatie ophalen</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Verwijderen</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Kan niet vastleggen</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI-fout</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Fout</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Afstandsbed. beschikbaar</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Verwijderen</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Afbeelding opslaan</string>
@@ -280,9 +280,9 @@ Opmerking: deze bestanden bevatten een grijs gebied."</string>
     <string name="cam_strings_cancel_txt">Annuleren</string>
     <string name="cam_strings_zoom_help_txt">Gebruik de volumetoets om in en uit te zoomen</string>
     <string name="cam_strings_zoom_not_supported_txt">Kan niet zoomen in deze modus</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Als u een foto in 3D wilt weergeven, sluit u de camera aan op een 3D-tv met een HDMI-kabel, of tikt u op de knop Afspelen op.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Als u een foto in 3D wilt weergeven, sluit u de camera aan op een 3D-tv via HDMl of tikt u op de knop Afspelen op apparaat.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Raak het scherm aan om een video op te nemen</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Als u deze foto in 3D wilt weergeven, sluit u de telefoon aan op een 3D-tv door op de knop Afspelen op te tikken.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Als u deze foto in 3D wilt weergeven, sluit u de telefoon aan op een 3D-tv door op de knop Afspelen op apparaat te tikken.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Geen SD-kaart beschikbaar. Standaardopslaglocatie is gewijzigd in intern geheugen.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">SD-kaart beschikbaar. Standaardopslaglocatie gewijzigd in SD-kaart.</string>
 </resources>

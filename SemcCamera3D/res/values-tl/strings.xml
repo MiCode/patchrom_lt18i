@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Camera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Pagkilala sa eksena</string>
-    <string name="cam_strings_shortcut_normal_txt">Normal</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Pagkilala sa eksena(cam.)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normal(camera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Camera sa harap</string>
     <string name="cam_strings_shortcut_video_camera_txt">Video camera</string>
     <string name="cam_strings_shortcut_front_video_txt">Unahang video</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Laging nauuna ang lokasyong nakuha sa GPS kaysa sa mga wireless network. Upang baguhin kung paano mo nakukuha ang iyong lokasyon, pumunta sa Mga Setting > Lokasyon.</string>
     <string name="cam_strings_do_not_show_again_txt">Huwag ipakitang muli</string>
     <string name="cam_strings_unavailable_in_scene_txt">Hindi nababago bilang kumbinasyon sa kasalukuyang setting ng Eksena</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Hindi available kapag aktibo ang Smile Shutter™</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Hindi available kapag aktibo ang smile detection</string>
     <string name="cam_3d_strings_dialog_delete_txt">Tanggalin ang file na ito?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Maraming Angulo, din</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">3D file, din</string>
@@ -202,7 +202,7 @@ Paalala: Naglalaman ang mga file na ito ng malabong bahagi."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Mayroon ding larawang 3D para sa Maraming Angulong larawang ito. Tanggalin pareho?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">M.AngleLang</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">3D lamang</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Hindi magagamit ang mode na may nakakonektang HDMI cable. Paki-unplug ang cable.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Tanggalin ang cable. Hindi ka makakakuha ng larawan sa mode na ito kapag may nakakonektang cable.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Upang tingnan file na ito sa 3D, gamit ng aparatong sumusuporta sa 3D.</string>
     <string name="cam_status_remained_min">%1$d min.</string>
     <string name="cam_strings_both_location_fail_txt">Hindi maitaguyod ang lokasyon</string>
@@ -216,7 +216,7 @@ Paalala: Naglalaman ang mga file na ito ng malabong bahagi."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Paano makuha lokasyon</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Tanggalin</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Hindi makakuha</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Error na HDMI</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Error</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Available remote control</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Tanggalin</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Sine-save ang imahe</string>
@@ -273,9 +273,9 @@ Paalala: Naglalaman ang mga file na ito ng malabong bahagi."</string>
     <string name="cam_strings_cancel_txt">Kanselahin</string>
     <string name="cam_strings_zoom_help_txt">Gamitin ang volume key upang mag-zoom in/out</string>
     <string name="cam_strings_zoom_not_supported_txt">Hindi makapag-zoom sa mode na ito</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Upang tingnan ang isang larawan sa 3D, ikonekta ang iyong camera sa 3D TV sa pamamagitan ng HDMI o pagtapik sa button na I-play sa.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Upang tingnan isang larawan sa 3D, ikonekta ang telepono mo sa 3D na TV sa pamamagitan ng paggamit ng HDMI o pagtapik sa button na I-play sa device.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Pindutin ang screen upang mag-record ng video</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Upang tingnan ang larawang ito sa 3D, ikonekta ang iyong telepono sa isang 3D na TV sa pamamagitan ng pagtapik sa pindutang I-Play sa.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Upang tingnan larawang ito sa 3D, ikonekta ang telepono mo sa isang 3D na TV sa pamamagitan ng pagtapik sa button na I-Play sa device.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Walang available na SD card. Binago ang lokasyon ng default na pag-save patungo sa internal na storage.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">Available ang SD card. Binago ang lokasyon ng default na pag-save patungo sa SD card.</string>
 </resources>

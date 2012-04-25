@@ -914,7 +914,7 @@ Zgjidhni OK për të vazhduar ose Anulo për të qëndruar në faqen aktuale."</
     <string name="capital_off">〇</string>
     <string name="whichApplication">Përfundo veprimin me</string>
     <string name="alwaysUse">Përd. sipas paracak. për këtë vepr.</string>
-    <string name="clearDefaultHintMsg">Zbraz default te Parametrat bazë > Aplikacionet > Menaxhimi i aplikacioneve.</string>
+    <string name="clearDefaultHintMsg">Zbraz paracaktimin te Cilësimet > Aplikacionet.</string>
     <string name="chooseActivity">Përzgjedhja e një veprimi</string>
     <string name="chooseUsbActivity">Përzgjidh një aplikacion për pajisjen USB</string>
     <string name="noApplications">Asnjë aplikacion nuk mund ta kryejë këtë veprim.</string>
@@ -1029,7 +1029,7 @@ Dëshironi ta mbyllni?"</string>
     <string name="extmedia_format_message">Jeni të sigurt se dëshironi të formatoni kartën SD? Të gjitha të dhënat në kartën tuaj do të humbasin.</string>
     <string name="extmedia_format_button_format">Formato</string>
     <string name="adb_active_notification_title">Korrigjimi i USB-së u lidh</string>
-    <string name="adb_active_notification_message">Përzgjidhni për të çaktivizuar korrigjimin e USB-së.</string>
+    <string name="adb_active_notification_message">Përzgjidhni të çaktivizoni korrigjimin e USB-së.</string>
     <string name="select_input_method">Zgjidh mënyrën shkrimore</string>
     <string name="configure_input_methods">Konfiguro metodat e futjes</string>
     <string name="fast_scroll_alphabet">" ABCÇDEËFGHIJKLMNOPQRSTUVXYZ"</string>
@@ -1087,7 +1087,7 @@ për llogarinë %s"</string>
     <string name="reset">Ricilëso</string>
     <string name="submit">Parashtro</string>
     <string name="car_mode_disable_notification_title">Modaliteti Në makinë i aktivizuar</string>
-    <string name="car_mode_disable_notification_message">Përzgjidheni për të dalë nga modaliteti Në makinë.</string>
+    <string name="car_mode_disable_notification_message">Përzgjidheni për të dalë nga mënyra Në makinë.</string>
     <string name="tethered_notification_title">Ndërlidhja ose pika aktive është aktive</string>
     <string name="tethered_notification_message">Prekeni për ta konfiguruar</string>
     <string name="back_button_label">Prapa</string>
@@ -1222,7 +1222,7 @@ për llogarinë %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">Karta SIM u bllokua</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Fut kodin PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">Karta SIM u bllokua</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Futni kodin PUK të ofruar nga operatori juaj</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Futni kodin PUK nga ofruesi juaj i shërbimit</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Ju lutemi kontaktoni operatorin tuaj</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Fut kodin PIN të ri</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Përsërit kodin PIN të ri</string>

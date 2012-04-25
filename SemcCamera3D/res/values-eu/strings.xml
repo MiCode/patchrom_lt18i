@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Eszena hautematea</string>
-    <string name="cam_strings_shortcut_normal_txt">Arrunta</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Eszena hautematea (arg.)</string>
+    <string name="cam_strings_shortcut_normal_txt">Arrunta (argazkiak)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Aurreko kamera</string>
     <string name="cam_strings_shortcut_video_camera_txt">Bideokamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Aurreko bideoa</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">GPS bidez lortutako kokapena hobesten da hari gabeko sarearen bidez lortutakoa baino lehen. Eskuratze metodoa aldatzeko, Joan Ezarpenak > Kokapena atalera.</string>
     <string name="cam_strings_do_not_show_again_txt">Ez erakutsi berriro</string>
     <string name="cam_strings_unavailable_in_scene_txt">Ezin da aldatu uneko eszena ezarpenarekin</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Ezin dago erabilgarri Smile Shutter™ aktibatuta dagoenean</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Ez dago erabilgarri Irribarre detekzioa aktibatuta dagoenean</string>
     <string name="cam_3d_strings_dialog_delete_txt">Fitxategia ezabatu?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Angelu anitza ere bai</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">3Da ere bai</string>
@@ -200,10 +200,10 @@ Oharra: irudiok eremu gris bat dute."</string>
     <string name="cam_3d_strings_shooting_guide_touch_cap_txt">Ukitu bisorea eta mugitu kamera poliki</string>
     <string name="cam_3d_strings_dialog_loading_txt">Kargatzen</string>
     <string name="cam_3d_strings_dialog_delete_3d_with_ma_txt">3D irudiaren argazki angelu anitza dago. Biak ezabatu?</string>
-    <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Argazki angelu anitzaren 3D irudia dago. Biak ezabatu?</string>
+    <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Argazki angelu anitzak 3D irudia ere badu. Bi irudiak ezabatu?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Ang. anitza</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">3D irudia</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Ezin da modu hau erabili HDMI kablea konektatuta dela. Deskonektatu kablea.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Deskonektatu kablea. Kablea konektatuta dagoela, ezin da modu hau erabili argazkiak ateratzeko.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Fitxategia hiru dimentsiotan ikusteko, erabili 3D gailu bateragarri bat.</string>
     <string name="cam_status_remained_min">%1$d min.</string>
     <string name="cam_strings_both_location_fail_txt">Ezin da kokapena zehaztu</string>
@@ -217,7 +217,7 @@ Oharra: irudiok eremu gris bat dute."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Kokapena nola eskuratu</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Ezabatu</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Ezin izan da atera</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI errorea</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Errorea</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Agintea erabilgarri</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Ezabatu</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Irudia gordetzen</string>
@@ -281,9 +281,9 @@ Oharra: irudiok eremu gris bat dute."</string>
     <string name="cam_strings_cancel_txt">Utzi</string>
     <string name="cam_strings_zoom_help_txt">Erabili bolumen tekla handiagotzeko eta txikiagotzeko</string>
     <string name="cam_strings_zoom_not_supported_txt">Modu honetan ezin da zooma erabili</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Argazkia hiru dimentsiotan ikusteko, konektatu kamera 3D telebista batera HDMI kablea erabilita edo Erreproduzitu botoia punteatuta.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Argazkia hiru dimentsiotan ikusteko, konektatu telefonoa 3D telebista batera HDMI kablea erabilita edo Erreproduzitu gailuan botoia punteatuta.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Bideoa grabatzeko, ukitu pantaila</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Argazkia hiru dimentsiotan ikusteko, konektatu telefonoa 3D telebista batera Erreproduzitu botoia sakatuta.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Argazkia hiru dimentsiotan ikusteko, konektatu telefonoa 3D telebista batera Erreproduzitu gailuan botoia punteatuta.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Ez dago SD txartelik erabilgarri. Biltegi lehenetsia barneko memoriara aldatu da.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">SD txartela erabilgarri. Biltegi lehenetsia SD txartelera aldatu da.</string>
 </resources>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Myndavél</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Umhverfisgreining</string>
-    <string name="cam_strings_shortcut_normal_txt">Venjuleg</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Umhverfiskennsl (mynd)</string>
+    <string name="cam_strings_shortcut_normal_txt">Venjulegt (myndavél)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Fremri myndavél</string>
     <string name="cam_strings_shortcut_video_camera_txt">Upptökuvél</string>
     <string name="cam_strings_shortcut_front_video_txt">Fremri myndupptaka</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Staðsetningarupplýsingar sem eru sóttar um GPS fá alltaf forgang fram yfir þráðlaus net. Hægt er að breyta því hvernig staðsetning er sótt í Stillingar > Staðsetning.</string>
     <string name="cam_strings_do_not_show_again_txt">Ekki sýna aftur</string>
     <string name="cam_strings_unavailable_in_scene_txt">Ekki hægt að breyta með virkri umhverfisstillingu</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Ekki hægt að breyta á meðan að Smile Shutter™ er virkt</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Ekki hægt að breyta á meðan brosgreining er virk</string>
     <string name="cam_3d_strings_dialog_delete_txt">Eyða þessari skrá?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Líka margf. sjónarh.</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Líka þrívídd</string>
@@ -202,7 +202,7 @@ Ath.: Skrárnar gætu innihaldið grá svæði."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Einnig er til afrit í þrívídd af þessari mynd. Eyða báðum?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Margf. sjón.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Aðeins þrív.</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Þessi tökustilling styður ekki HDMI-úttak. Taktu HDMI-snúruna úr sambandi.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Taktu snúruna úr sambandi. Ekki er hægt að taka mynd í þessari stillingu með snúru tengda.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Notaðu tæki sem styður þrívídd til að skoða þessa skrá í þrívídd.</string>
     <string name="cam_status_remained_min">%1$d mín.</string>
     <string name="cam_strings_both_location_fail_txt">Mistókst að staðsetja</string>
@@ -216,14 +216,14 @@ Ath.: Skrárnar gætu innihaldið grá svæði."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Ákvörðun staðsetningar</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Eyða</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Myndataka mistókst</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI-villa</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Villa</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Fjarstýring tiltæk</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Eyða</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Vista mynd</string>
     <string name="cam_strings_error_message_during_voice_call_title_txt">Símtal stendur yfir</string>
     <string name="cam_strings_touch_capture_gude_txt">Snertu skjáinn til að taka mynd</string>
     <string name="cam_3d_strings_album_application_name_txt">3D-albúm</string>
-    <string name="cam_strings_capturing_mode_scene_recognition_short_txt">Umhverfisgreining</string>
+    <string name="cam_strings_capturing_mode_scene_recognition_short_txt">Umhverfiskennsl</string>
     <string name="cam_strings_capturing_mode_normal_short_txt">Venjuleg</string>
     <string name="cam_strings_capturing_mode_front_camera_short_txt">Fremri myndavél</string>
     <string name="cam_strings_capturing_mode_video_camera_short_txt">Upptökuvél</string>
@@ -280,9 +280,9 @@ Ath.: Skrárnar gætu innihaldið grá svæði."</string>
     <string name="cam_strings_cancel_txt">Hætta við</string>
     <string name="cam_strings_zoom_help_txt">Notaðu hljóðstyrkshnappana til að auka og minnka aðdráttinn</string>
     <string name="cam_strings_zoom_not_supported_txt">Ekki er hægt að breyta aðdrætti í þessari stillingu</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Tengdu myndavélina og pikkaðu á hnappinn Spila í til að skoða mynd í þrívídd.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Til að skoða mynd í þrívídd skaltu tengja símann við þrívíddarsjónvarp með HDMI eða með því að pikka á hnappinn Spila í tæki.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Snertu skjáinn til að taka upp myndskeið</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Til að skoða þessa mynd í þrívídd skaltu tengja símann við þrívíddarhnapp.</string>
-    <string name="cam_strings_error_storage_changing_to_internal_txt">Ekkert minniskort tiltækt. Sjálfgefnum vistunarstað breytt í innra minni.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Til að skoða þessa mynd í þrívídd skaltu tengja símann við þrívíddarsjónvarp með því að pikka á hnappinn Spila í tæki.</string>
+    <string name="cam_strings_error_storage_changing_to_internal_txt">Ekkert minniskort tiltækt. Sjálfgefnum vistunarstað breytt í innri geymslu.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">Minniskort tiltækt. Sjálfgefnum vistunarstað breytt í minniskort.</string>
 </resources>

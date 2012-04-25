@@ -914,7 +914,7 @@
     <string name="capital_off">〇</string>
     <string name="whichApplication">إكمال الإجراء باستخدام</string>
     <string name="alwaysUse">الاستخدام بشكل افتراضي لهذا الإجراء.</string>
-    <string name="clearDefaultHintMsg">محو الإعداد الافتراضي في الإعدادات الرئيسية > التطبيقات > إدارة التطبيقات.</string>
+    <string name="clearDefaultHintMsg">إزالة الإعداد الافتراضي في الإعدادات > التطبيقات.</string>
     <string name="chooseActivity">تحديد إجراء</string>
     <string name="chooseUsbActivity">حدد أحد التطبيقات لجهاز USB</string>
     <string name="noApplications">لا توجد تطبيقات بإمكانها تنفيذ هذا الإجراء.</string>
@@ -1116,7 +1116,7 @@
     <string name="gpsVerifYes">نعم</string>
     <string name="gpsVerifNo">لا</string>
     <string name="sync_too_many_deletes">تم تجاوز حد الحذف</string>
-    <string name="sync_too_many_deletes_desc">هناك %1$d من العناصر المحذوفة بالنسبة إلى %2$s، في الحساب %3$s. ما الذي تريد فعله؟</string>
+    <string name="sync_too_many_deletes_desc">هنا %1$d عناصر محذوفة لـ %2$s، الحساب %3$s. هل ترغب في القيام بذلك؟</string>
     <string name="sync_really_delete">احذف العناصر.</string>
     <string name="sync_undo_deletes">تراجع عن عمليات الحذف.</string>
     <string name="sync_do_nothing">عدم تنفيذ أي شيء الآن.</string>
@@ -1221,7 +1221,7 @@
     <string name="lockscreen_strings_sim_locked_out_header_txt">تم حظر بطاقة SIM</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">أدخل PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">تم قفل بطاقة SIM</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">أدخل رمز PUK الذي قدمه لك المشغل</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">أدخل رمز PUK الذي قدمه لك مشغل الخدمة</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">يرجى الاتصال بالمشغل</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">أدخل رمز PIN الجديد</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">كرر رمز PIN الجديد</string>

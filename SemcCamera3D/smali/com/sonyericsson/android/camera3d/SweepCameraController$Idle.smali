@@ -24,28 +24,28 @@
     .parameter
 
     .prologue
-    .line 977
+    .line 973
     iput-object p1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;-><init>(Lcom/sonyericsson/android/camera3d/SweepCameraController;Lcom/sonyericsson/android/camera3d/SweepCameraController$1;)V
 
-    .line 978
+    .line 974
     iget-object v0, p1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
 
     check-cast v0, Lcom/sonyericsson/android/camera3d/CameraActivity;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/CameraActivity;->enableBackKey()V
 
-    .line 979
+    .line 975
     iget-object v0, p1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraWindow:Lcom/sonyericsson/android/camera3d/view/CameraWindow;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/sonyericsson/android/camera3d/view/CameraWindow;->showIdleView(I)V
 
-    .line 980
+    .line 976
     return-void
 .end method
 
@@ -58,7 +58,7 @@
     .parameter "arg2"
 
     .prologue
-    .line 1055
+    .line 1051
     return-void
 .end method
 
@@ -69,7 +69,7 @@
     .parameter "arg2"
 
     .prologue
-    .line 1058
+    .line 1054
     return-void
 .end method
 
@@ -80,10 +80,10 @@
     .parameter "arg2"
 
     .prologue
-    .line 985
+    .line 981
     invoke-super {p0, p1, p2, p3}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;->handleSetupController(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;ILjava/lang/Object;)V
 
-    .line 988
+    .line 984
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v0, v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraDevice:Lcom/sonyericsson/android/camera3d/CameraDevice;
@@ -92,7 +92,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sonyericsson/android/camera3d/CameraDevice;->setPreviewMode(Z)V
 
-    .line 991
+    .line 987
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v0, v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraWindow:Lcom/sonyericsson/android/camera3d/view/CameraWindow;
@@ -103,28 +103,28 @@
 
     if-eqz v0, :cond_0
 
-    .line 993
+    .line 989
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v0, v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mConfigManager:Lcom/sonyericsson/android/camera3d/CameraConfigManager;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/CameraConfigManager;->updateLocationServiceAvailable()V
 
-    .line 994
+    .line 990
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v0, v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mConfigManager:Lcom/sonyericsson/android/camera3d/CameraConfigManager;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/CameraConfigManager;->setAllCameraSettings()V
 
-    .line 995
+    .line 991
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v0, v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraWindow:Lcom/sonyericsson/android/camera3d/view/CameraWindow;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/view/CameraWindow;->showSurfaceView()V
 
-    .line 1002
+    .line 998
     :goto_0
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
@@ -133,10 +133,10 @@
     #calls: Lcom/sonyericsson/android/camera3d/SweepCameraController;->setupPreview(Z)V
     invoke-static {v0, v1}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->access$400(Lcom/sonyericsson/android/camera3d/SweepCameraController;Z)V
 
-    .line 1003
+    .line 999
     return-void
 
-    .line 998
+    .line 994
     :cond_0
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
@@ -166,10 +166,10 @@
     .parameter "arg2"
 
     .prologue
-    .line 1008
+    .line 1004
     invoke-super {p0, p1, p2, p3}, Lcom/sonyericsson/android/camera3d/SweepCameraController$SweepCapturerState;->handleSurfaceChanged(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;ILjava/lang/Object;)V
 
-    .line 1012
+    .line 1008
     :try_start_0
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
@@ -182,7 +182,7 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1019
+    .line 1015
     :goto_0
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
@@ -192,7 +192,7 @@
 
     invoke-virtual {v1, v2}, Lcom/sonyericsson/android/camera3d/CameraDevice;->setPreviewFpsRange(I)V
 
-    .line 1022
+    .line 1018
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v2, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
@@ -205,7 +205,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->startPreview(ZZ)V
 
-    .line 1024
+    .line 1020
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v1, v1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraWindow:Lcom/sonyericsson/android/camera3d/view/CameraWindow;
@@ -216,7 +216,7 @@
 
     if-nez v1, :cond_0
 
-    .line 1028
+    .line 1024
     :try_start_1
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
@@ -227,28 +227,28 @@
     .catch Ljava/lang/OutOfMemoryError; {:try_start_1 .. :try_end_1} :catch_1
     .catch Landroid/view/InflateException; {:try_start_1 .. :try_end_1} :catch_2
 
-    .line 1039
+    .line 1035
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v1, v1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mConfigManager:Lcom/sonyericsson/android/camera3d/CameraConfigManager;
 
     invoke-virtual {v1}, Lcom/sonyericsson/android/camera3d/CameraConfigManager;->updateLocationServiceAvailable()V
 
-    .line 1040
+    .line 1036
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v1, v1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mConfigManager:Lcom/sonyericsson/android/camera3d/CameraConfigManager;
 
     invoke-virtual {v1}, Lcom/sonyericsson/android/camera3d/CameraConfigManager;->setAllCameraSettings()V
 
-    .line 1042
+    .line 1038
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v1, v1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCameraWindow:Lcom/sonyericsson/android/camera3d/view/CameraWindow;
 
     invoke-virtual {v1}, Lcom/sonyericsson/android/camera3d/view/CameraWindow;->startFadeinAnimation()V
 
-    .line 1045
+    .line 1041
     :cond_0
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
@@ -260,7 +260,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 1047
+    .line 1043
     new-instance v1, Lcom/sonyericsson/android/camera3d/SweepCameraController$Store;
 
     iget-object v2, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
@@ -269,7 +269,7 @@
 
     invoke-virtual {p1, v1}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->setState(Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;)V
 
-    .line 1048
+    .line 1044
     iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v1, v1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mImageManager:Lcom/sonyericsson/android/camera3d/ImageManager;
@@ -283,15 +283,15 @@
 
     invoke-virtual {v1, v2}, Lcom/sonyericsson/android/camera3d/ImageManager;->addStoreDataCallback(Lcom/sonyericsson/android/camera3d/ImageManager$StoreDataCallback;)V
 
-    .line 1052
+    .line 1048
     :goto_1
     return-void
 
-    .line 1013
+    .line 1009
     :catch_0
     move-exception v0
 
-    .line 1014
+    .line 1010
     .local v0, e:Ljava/io/IOException;
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -307,16 +307,40 @@
 
     goto :goto_0
 
-    .line 1029
+    .line 1025
     .end local v0           #e:Ljava/io/IOException;
     :catch_1
     move-exception v0
 
-    .line 1030
+    .line 1026
     .local v0, e:Ljava/lang/OutOfMemoryError;
     const-string v1, "SweepCameraController"
 
     const-string v2, "Out of memory error occurred in CameraWindow.prepare()."
+
+    invoke-static {v1, v2}, Lcom/sonyericsson/android/camera3d/util/CameraLogger;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1027
+    iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
+
+    iget-object v1, v1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
+
+    check-cast v1, Lcom/sonyericsson/android/camera3d/CameraActivity;
+
+    invoke-virtual {v1}, Lcom/sonyericsson/android/camera3d/CameraActivity;->abortByStartFailed()V
+
+    goto :goto_1
+
+    .line 1029
+    .end local v0           #e:Ljava/lang/OutOfMemoryError;
+    :catch_2
+    move-exception v0
+
+    .line 1030
+    .local v0, e:Landroid/view/InflateException;
+    const-string v1, "SweepCameraController"
+
+    const-string v2, "InflateException occurred in CameraWindow.prepare()."
 
     invoke-static {v1, v2}, Lcom/sonyericsson/android/camera3d/util/CameraLogger;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -331,31 +355,7 @@
 
     goto :goto_1
 
-    .line 1033
-    .end local v0           #e:Ljava/lang/OutOfMemoryError;
-    :catch_2
-    move-exception v0
-
-    .line 1034
-    .local v0, e:Landroid/view/InflateException;
-    const-string v1, "SweepCameraController"
-
-    const-string v2, "InflateException occurred in CameraWindow.prepare()."
-
-    invoke-static {v1, v2}, Lcom/sonyericsson/android/camera3d/util/CameraLogger;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1035
-    iget-object v1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$Idle;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
-
-    iget-object v1, v1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
-
-    check-cast v1, Lcom/sonyericsson/android/camera3d/CameraActivity;
-
-    invoke-virtual {v1}, Lcom/sonyericsson/android/camera3d/CameraActivity;->abortByStartFailed()V
-
-    goto :goto_1
-
-    .line 1050
+    .line 1046
     .end local v0           #e:Landroid/view/InflateException;
     :cond_1
     new-instance v1, Lcom/sonyericsson/android/camera3d/SweepCameraController$ViewFinder;

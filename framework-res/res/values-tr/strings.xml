@@ -914,7 +914,7 @@ Devam etmek için Tamam'ı, sayfada kalmak için İptal'i tıklatın."</string>
     <string name="capital_off">〇</string>
     <string name="whichApplication">İşlemi şununla tamamla</string>
     <string name="alwaysUse">Bu işlem için otomatik kullan.</string>
-    <string name="clearDefaultHintMsg">"Giriş Ayarları > Uygulamalar > Uygulamaları yönet'te varsayılanı temizleyin."</string>
+    <string name="clearDefaultHintMsg">Ayarlar > Uygulamalar üzerinden varsayılanı temizleyin.</string>
     <string name="chooseActivity">İşlem seç</string>
     <string name="chooseUsbActivity">USB aygıtı için uygulama seçin</string>
     <string name="noApplications">Hiçbir uygulama bu işlemi yapamaz.</string>
@@ -1222,7 +1222,7 @@ Bu işlemi kapatmak ister misiniz?"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM kart engellendi</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">PUK kodunu girin</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM kart kilitlendi</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Operatörünüzden gelen PUK kodunu girin</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Servis sağlayıcınızdan gelen PUK kodunu girin</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Lütfen operatörünüze başvurun</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">"Yeni PIN'i girin"</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">"Yeni PIN'i tekrar girin"</string>

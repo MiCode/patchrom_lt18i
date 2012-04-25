@@ -905,7 +905,7 @@ Pilih Muhun kanggo ngalanjutkeun, atawa Bolay kanggo tetep dina kaca nu ayeuna."
     <string name="capital_off">〇</string>
     <string name="whichApplication">Rengsekeun aksi nganggo</string>
     <string name="alwaysUse">Jadikeun standar pikeun ieu aksi.</string>
-    <string name="clearDefaultHintMsg">Bersihan default tina Setelan Awal > Aplikasi > Atur Aplikasi.</string>
+    <string name="clearDefaultHintMsg">Pupus standar dina Setelan > Aplikasi.</string>
     <string name="chooseActivity">Pilih sahiji kadamelan</string>
     <string name="chooseUsbActivity">Pilih aplikasi jang alat USB</string>
     <string name="noApplications">Teu aya aplikasi nu tiasa ngalaksanakeun padamelan ieu.</string>
@@ -1205,12 +1205,12 @@ Tutup wae?"</string>
     <string name="dialer_keyboard_hint_txt">Anggo kib. pi. nyambu. tel.</string>
     <string name="general_dialpad_voicemail_txt">Surat sora</string>
     <string name="gui_cancel_txt">Bolay</string>
-    <string name="gui_ok_txt">OKEH</string>
+    <string name="gui_ok_txt">OKE</string>
     <string name="lockscreen_strings_locked_out_wrong_answer_txt">Jawaban teu leres</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">Kartu SIM kablokir</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Asupkeun PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">Kartu SIM kakonci</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Asupkeun kodeu PUK ti operator</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Asupkeun PUK ti operator jaringan</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Mangga taroskeun operator Anjeun</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Asupkeun PIN anyar</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Ulang deui PIN anyar</string>

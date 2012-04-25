@@ -79,13 +79,13 @@
     <string name="day_of_week_long_thursday">목요일</string>
     <string name="day_of_week_long_friday">금요일</string>
     <string name="day_of_week_long_saturday">토요일</string>
-    <string name="day_of_week_medium_sunday">일</string>
-    <string name="day_of_week_medium_monday">월</string>
-    <string name="day_of_week_medium_tuesday">화</string>
-    <string name="day_of_week_medium_wednesday">수</string>
-    <string name="day_of_week_medium_thursday">목</string>
-    <string name="day_of_week_medium_friday">금</string>
-    <string name="day_of_week_medium_saturday">토</string>
+    <string name="day_of_week_medium_sunday">일요일</string>
+    <string name="day_of_week_medium_monday">월요일</string>
+    <string name="day_of_week_medium_tuesday">화요일</string>
+    <string name="day_of_week_medium_wednesday">수요일</string>
+    <string name="day_of_week_medium_thursday">목요일</string>
+    <string name="day_of_week_medium_friday">금요일</string>
+    <string name="day_of_week_medium_saturday">토요일</string>
     <string name="day_of_week_short_sunday">일</string>
     <string name="day_of_week_short_monday">월</string>
     <string name="day_of_week_short_tuesday">화</string>
@@ -412,7 +412,7 @@
     <string name="permdesc_batteryStats">수집된 배터리 통계를 수정할 수 있도록 합니다. 일반 애플리케이션에서는 사용하지 않습니다.</string>
     <string name="permlab_backup">시스템 백업 및 복원 관리</string>
     <string name="permdesc_backup">애플리케이션이 시스템의 백업 및 복원 매커니즘을 제어할 수 있도록 합니다. 일반 애플리케이션에서는 사용하지 않습니다.</string>
-    <string name="permlab_confirm_full_backup">전체 백업 또는 복구 작업 확인</string>
+    <string name="permlab_confirm_full_backup">전체 백업 또는 복원 작업 확인</string>
     <string name="permdesc_confirm_full_backup">응용프로그램이 전체 백업 확인UI를 실행할 수 있도록 합니다. 다른 응용프로그램에서는 사용할 수 없습니다.</string>
     <string name="permlab_internalSystemWindow">인증되지 않은 창 표시</string>
     <string name="permdesc_internalSystemWindow">내부 시스템 사용자 인터페이스에서 사용하는 창을 만들 수 있도록 합니다. 일반 애플리케이션에서는 사용하지 않습니다.</string>
@@ -588,7 +588,7 @@
     <string name="permdesc_useCredentials">애플리케이션이 인증 토큰을 요청하도록 합니다.</string>
     <string name="permlab_accessNetworkState">네트워크 상태 보기</string>
     <string name="permdesc_accessNetworkState">애플리케이션이 모든 네트워크의 상태를 볼 수 있도록 합니다.</string>
-    <string name="permlab_createNetworkSockets">인터넷에 최대한 액세스</string>
+    <string name="permlab_createNetworkSockets">인터넷에 최대한 접속</string>
     <string name="permdesc_createNetworkSockets">애플리케이션이 네트워크 소켓을 만들 수 있도록 합니다.</string>
     <string name="permlab_writeApnSettings">네트워크 설정 및 트래픽 변경/가로채기</string>
     <string name="permdesc_writeApnSettings">응용프로그램이 모든 네트워크 트래픽을 가로채고 검사하거나 네트워크 설정을 변경하도록 허용합니다. 예를 들어 프록시나APN의 포트를 변경할 수 있습니다. 악성 응용프로그램이 사용자 모르게 네트워크 패킷을 모니터링하고 리디렉션하며 수정할 수도 있습니다.</string>
@@ -609,9 +609,9 @@
     <string name="permlab_changeWimaxState">WiMAX상태 변경</string>
     <string name="permdesc_changeWimaxState">응용프로그램이WiMAX네트워크에 연결하거나 WiMAX네트워크에서 연결 해제하도록 합니다.</string>
     <string name="permlab_bluetoothAdmin">Bluetooth 관리</string>
-    <string name="permdesc_bluetoothAdmin">응용프로그램이 로컬Bluetooth휴대폰을 구성한 다음 원격 장치를 검색하여 페어링할 수 있도록 합니다.</string>
+    <string name="permdesc_bluetoothAdmin">응용프로그램이 로컬Bluetooth휴대폰을 구성한 다음 원격 장치를 검색하여 연결할 수 있도록 합니다.</string>
     <string name="permlab_bluetooth">Bluetooth 연결 만들기</string>
-    <string name="permdesc_bluetooth">응용프로그램이 로컬Bluetooth휴대폰의 구성을 보고 페어링된 장치에 연결하거나 연결을 수락할 수 있도록 합니다.</string>
+    <string name="permdesc_bluetooth">응용프로그램이 로컬Bluetooth휴대폰의 구성을 보고 연결된 장치에 연결하거나 연결을 수락할 수 있도록 합니다.</string>
     <string name="permlab_nfc">NFC(Near Field Communication) 제어</string>
     <string name="permdesc_nfc">애플리케이션에서 NFC(Near Field Communication) 태그, 카드 및 리더와 통신할 수 있습니다.</string>
     <string name="permlab_disableKeyguard">키 잠금 사용 중지</string>
@@ -631,8 +631,7 @@
     <string name="permlab_writeDictionary">사용자정의 사전에 작성</string>
     <string name="permdesc_writeDictionary">애플리케이션이 사용자 사전에 새 단어를 입력할 수 있도록 합니다.</string>
     <string name="permlab_sdcardWrite">SD카드 콘텐츠 수정/삭제</string>
-    <string name="permdesc_sdcardWrite">"응용프로그램이SD카드에 쓸 수 있도록 합니다.
-"</string>
+    <string name="permdesc_sdcardWrite">응용프로그램이SD카드에 쓸 수 있도록 합니다.</string>
     <string name="permlab_mediaStorageWrite">내부 미디어 저장소 콘텐츠 수정/삭제</string>
     <string name="permdesc_mediaStorageWrite">응용프로그램이 내부 미디어 저장소의 콘텐츠를 수정할 수 있도록 합니다.</string>
     <string name="permlab_cache_filesystem">캐시 파일시스템 액세스</string>
@@ -644,8 +643,7 @@
     <string name="permlab_readNetworkUsageHistory">이전 네트워크 사용량 읽기</string>
     <string name="permdesc_readNetworkUsageHistory">응용프로그램이 특정 네트워크 및 응용프로그램에 대한 이전 네트워크 사용량을 읽을 수 있도록 합니다.</string>
     <string name="permlab_manageNetworkPolicy">네트워크 정책 관리</string>
-    <string name="permdesc_manageNetworkPolicy">"응용프로그램이 네트워크 정책을 관리하고 응용프로그램별 규칙을 정의할 수 있도록 합니다.
-"</string>
+    <string name="permdesc_manageNetworkPolicy">응용프로그램이 네트워크 정책을 관리하고 응용프로그램별 규칙을 정의할 수 있도록 합니다.</string>
     <string name="permlab_modifyNetworkAccounting">네트워크 사용량 계산 수정</string>
     <string name="permdesc_modifyNetworkAccounting">응용프로그램에 대해 네트워크 사용량을 계산하는 방법을 수정하도록 허용합니다. 일반 응용프로그램에서는 사용할 수 없습니다.</string>
     <string name="policylab_limitPassword">비밀번호 규칙 설정</string>
@@ -916,7 +914,7 @@
     <string name="capital_off">〇</string>
     <string name="whichApplication">사용할 애플리케이션</string>
     <string name="alwaysUse">이 작업에 대해 기본값으로 사용</string>
-    <string name="clearDefaultHintMsg">홈 설정 > 애플리케이션 > 애플리케이션 관리에서 기본값을 지웁니다.</string>
+    <string name="clearDefaultHintMsg">설정 > 응용프로그램에서 기본값을 지웁니다.</string>
     <string name="chooseActivity">작업 선택</string>
     <string name="chooseUsbActivity">USB장치용 애플리케이션 선택</string>
     <string name="noApplications">작업을 수행할 수 있는 애플리케이션이 없습니다.</string>
@@ -1010,18 +1008,18 @@
     <string name="usb_storage_activity_title">USB 대용량 저장소</string>
     <string name="usb_storage_title">USB 연결됨</string>
     <string name="usb_storage_message">USB를 통해 컴퓨터에 연결했습니다. 컴퓨터와Android의SD카드 간에 파일을 복사하려면 아래의 버튼을 터치하십시오.</string>
-    <string name="usb_storage_button_mount">USB 저장소 사용</string>
+    <string name="usb_storage_button_mount">USB 저장 장치 사용</string>
     <string name="usb_storage_error_message">USB대용량 저장소로SD카드를 사용하는 동안 문제가 발생했습니다.</string>
     <string name="usb_storage_notification_title">USB 연결됨</string>
     <string name="usb_storage_notification_message">PC로 메모리카드를 관리하려면 선택하세요</string>
-    <string name="usb_storage_stop_notification_title">USB 저장소 사용 안함</string>
-    <string name="usb_storage_stop_notification_message">"'USB 저장소 사용 중지'를 선택하세요."</string>
-    <string name="usb_storage_stop_title">USB 저장소 사용 중</string>
-    <string name="usb_storage_stop_message">USB저장소를 끄기 전에 컴퓨터에서Android의SD카드를 마운트 해제했는지(“꺼냈는지”) 확인하십시오.</string>
-    <string name="usb_storage_stop_button_mount">USB 저장소 사용 안함</string>
-    <string name="usb_storage_stop_error_message">USB 저장소를 사용하지 않도록 설정하는 동안 문제가 발생했습니다. USB 호스트와 마운트 해제했는지 확인한 다음 다시 시도하세요.</string>
-    <string name="dlg_confirm_kill_storage_users_title">USB 저장소 사용</string>
-    <string name="dlg_confirm_kill_storage_users_text">USB 저장소를 사용하면 사용 중인 일부 애플리케이션이 중지되어 USB 저장소를 사용 중지할 때까지 사용할 수 없게 됩니다.</string>
+    <string name="usb_storage_stop_notification_title">USB 저장 장치 사용 안함</string>
+    <string name="usb_storage_stop_notification_message">"'USB 저장 장치 사용 중지'를 선택하세요."</string>
+    <string name="usb_storage_stop_title">USB 저장 장치 사용 중</string>
+    <string name="usb_storage_stop_message">USB저장 장치를 끄기 전에 컴퓨터에서Android의SD카드를 마운트 해제했는지(“꺼냈는지”) 확인하십시오.</string>
+    <string name="usb_storage_stop_button_mount">USB 저장 장치 사용 안함</string>
+    <string name="usb_storage_stop_error_message">USB 저장 장치를 사용하지 않도록 설정하는 동안 문제가 발생했습니다. USB 호스트와 마운트 해제했는지 확인한 다음 다시 시도하세요.</string>
+    <string name="dlg_confirm_kill_storage_users_title">USB 저장 장치 사용</string>
+    <string name="dlg_confirm_kill_storage_users_text">USB 저장 장치를 사용하면 사용 중인 일부 애플리케이션이 중지되어 USB 저장 장치를 사용 중지할 때까지 사용할 수 없게 됩니다.</string>
     <string name="dlg_error_title">USB작업 실패</string>
     <string name="dlg_ok">확인</string>
     <string name="usb_mtp_notification_title">미디어 장치로 연결됨</string>
@@ -1180,7 +1178,7 @@
     <string name="action_menu_overflow_description">옵션 더보기</string>
     <string name="storage_internal">내부 저장소</string>
     <string name="storage_sd_card">SD카드</string>
-    <string name="storage_usb">USB저장소</string>
+    <string name="storage_usb">USB저장 장치</string>
     <string name="extract_edit_menu_button">편집...</string>
     <string name="data_usage_warning_title">데이터 사용 경고</string>
     <string name="data_usage_warning_body">사용량 및 설정을 보려면 터치</string>
@@ -1226,7 +1224,7 @@
     <string name="lockscreen_strings_sim_locked_out_header_txt">USIM카드 차단됨</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">PUK입력</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">USIM카드 잠금</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">이동통신 사업자가 제공한PUK코드 입력</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">서비스 공급자가 제공한PUK입력</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">이동통신 사업자에게 문의하세요.</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">새PIN입력</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">새PIN다시 입력</string>

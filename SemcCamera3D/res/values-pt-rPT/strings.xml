@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Câmara</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Reconh. de cenas</string>
-    <string name="cam_strings_shortcut_normal_txt">Normal</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Reconh. de cenas (câmara)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normal (câmara)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Câmara frontal</string>
     <string name="cam_strings_shortcut_video_camera_txt">Câmara de vídeo</string>
     <string name="cam_strings_shortcut_front_video_txt">Vídeo frontal</string>
@@ -20,7 +20,7 @@
     <string name="cam_strings_scenes_txt">Cenas</string>
     <string name="cam_strings_scenes_portrait_txt">Retrato</string>
     <string name="cam_strings_scenes_landscape_txt">Paisagem</string>
-    <string name="cam_strings_scenes_nightmode_txt">Modo nocturno</string>
+    <string name="cam_strings_scenes_nightmode_txt">Modo noturno</string>
     <string name="cam_strings_scenes_nightportrait_txt">Retrato noturno</string>
     <string name="cam_strings_scenes_nightscene_txt">Cena noturna</string>
     <string name="cam_strings_scenes_party_txt">Festa</string>
@@ -46,7 +46,7 @@
     <string name="cam_strings_self_timer_txt">Autotemporizador</string>
     <string name="cam_strings_self_timer_2_txt">Ligar (2 segundos)</string>
     <string name="cam_strings_self_timer_10_txt">Ligar (10 segundos)</string>
-    <string name="cam_strings_smile_capture_txt">Detecção de sorriso</string>
+    <string name="cam_strings_smile_capture_txt">Deteção de sorriso</string>
     <string name="cam_strings_smile_capture_big_txt">Sorriso grande</string>
     <string name="cam_strings_smile_capture_normal_txt">Sorriso médio</string>
     <string name="cam_strings_smile_capture_faint_txt">Sorriso pequeno</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">A localização obtida com o GPS prevalece sempre sobre as redes sem fios. Para alterar o método de obtenção, vá para Definições > Localização.</string>
     <string name="cam_strings_do_not_show_again_txt">Não voltar a mostrar</string>
     <string name="cam_strings_unavailable_in_scene_txt">Não disponível em combinação com a definição de cena atual.</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Não pode ser alterado enquanto o Smile Shutter™ estiver activo</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Não disponível enquanto a deteção de sorriso estiver ativa</string>
     <string name="cam_3d_strings_dialog_delete_txt">Eliminar este ficheiro?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Multi Angle, também</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">3D também</string>
@@ -202,7 +202,7 @@ Nota: estes ficheiros contêm uma área cinzenta."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Existe também uma fotografia Multi Angle para esta imagem 3D. Eliminar ambas?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Só M.Angle</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Apenas 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Não é possível utilizar este modo de captura com cabo HDMI ligado. Desligue o cabo.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Desligue o cabo. Não é possível tirar uma fotografia neste modo com um cabo ligado.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Para ver este ficheiro em 3D, utilize um aparelho que suporte 3D.</string>
     <string name="cam_status_remained_min">%1$d min.</string>
     <string name="cam_strings_both_location_fail_txt">Não é possível definir localização</string>
@@ -216,7 +216,7 @@ Nota: estes ficheiros contêm uma área cinzenta."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Como obter a localização</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Eliminar</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Impossível disparar</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Erro HDMI</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Erro</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Controlo remoto disp.</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Eliminar</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Guardar imagem</string>
@@ -233,7 +233,7 @@ Nota: estes ficheiros contêm uma área cinzenta."</string>
     <string name="cam_3d_strings_sweep_panorama_short_txt">Sweep Panorama</string>
     <string name="cam_strings_capturing_method_txt">Método de captura</string>
     <string name="cam_strings_error_memory_ims_access_error_txt">Erro de memória</string>
-    <string name="cam_strings_error_memory_ims_full_txt">Memória cheia. Elimine alguns ficheiros do cartão SD ou do armazenamento interno.</string>
+    <string name="cam_strings_error_memory_ims_full_txt">Memória cheia. Elimine alguns ficheiros da memória.</string>
     <string name="cam_strings_error_memory_ims_no_format_txt">Memória não formatada</string>
     <string name="cam_strings_error_memory_ims_read_only_txt">Memória protegida contra escrita. Não foi possível editar ficheiros.</string>
     <string name="cam_strings_error_memory_ims_unavailable_txt">Memória não disponível</string>
@@ -249,7 +249,7 @@ Nota: estes ficheiros contêm uma área cinzenta."</string>
     <string name="cam_strings_fast_capturing_quick_shooting_txt">Captura rápida</string>
     <string name="cam_strings_fast_capturing_finish_confirmation_txt">A câmara está em modo de Iniciação Rápida. As definições não estão disponíveis. Voltar ao modo normal?</string>
     <string name="cam_strings_fast_capturing_screen_locked_txt">Está definido o bloqueio de ecrã. Para usar a Iniciação Rápida, desbloqueie o ecrã e ative esta funcionalidade.</string>
-    <string name="cam_strings_fast_capturing_allowance_txt">Com a Iniciação Rápida, pode activar instantaneamente a câmara a partir do modo de suspensão, premindo sem soltar a tecla da câmara. Esta funcionalidade liga a câmara mesmo se o ecrã estiver bloqueado. Permitir Iniciação Rápida?</string>
+    <string name="cam_strings_fast_capturing_allowance_txt">Com a Iniciação Rápida, pode ativar instantaneamente a câmara a partir do modo de suspensão, premindo sem soltar a tecla da câmara. Esta funcionalidade liga a câmara mesmo se o ecrã estiver bloqueado. Permitir Iniciação Rápida?</string>
     <string name="cam_strings_fast_capturing_quick_shooting_dialog_txt">Com a Captura Rápida, pode iniciar instantaneamente a câmara e tirar imediatamente a primeira fotografia, mantendo premida a tecla da câmara</string>
     <string name="cam_strings_button_to_allow_txt">Permitir</string>
     <string name="cam_strings_button_to_deny_txt">Não permitir</string>
@@ -260,7 +260,7 @@ Nota: estes ficheiros contêm uma área cinzenta."</string>
     <string name="cam_strings_resolution_title_txt">Resolução</string>
     <string name="cam_strings_light_title_txt">Luz da fotografia</string>
     <string name="cam_strings_self_timer_title_txt">Autotemporizador</string>
-    <string name="cam_strings_smile_capture_title_txt">Detecção de sorriso</string>
+    <string name="cam_strings_smile_capture_title_txt">Deteção de sorriso</string>
     <string name="cam_strings_focus_mode_title_txt">Modo de focagem</string>
     <string name="cam_strings_exposure_level_title_txt">Valor de exposição</string>
     <string name="cam_strings_white_balance_title_txt">Equilíb. brancos</string>
@@ -278,9 +278,9 @@ Nota: estes ficheiros contêm uma área cinzenta."</string>
     <string name="cam_strings_cancel_txt">Cancelar</string>
     <string name="cam_strings_zoom_help_txt">Utilize a tecla volume para ampliar/reduzir</string>
     <string name="cam_strings_zoom_not_supported_txt">Não é possível ampliar neste modo</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Para ver uma fotografia em 3D, ligue a sua câmara a uma televisão 3D, utilizando uma entrada HDMI ou tocando no botão Reproduzir em.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Para ver uma fotografia em 3D, ligue o seu telefone a uma televisão 3D, utilizando um cabo HDMI ou tocando no botão Reproduzir no dispositivo.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Toque no ecrã para gravar um vídeo</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Para ver esta fotografia em 3D, ligue o seu telefone a uma televisão 3D e toque no botão Reproduzir em.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Para ver esta fotografia em 3D, ligue o seu telefone a uma televisão 3D e toque no botão Reproduzir no dispositivo.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Sem cartão SD disponível. Localização predefinida de gravação alterada para armazenamento interno.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">Cartão SD disponível. Localização predefinida de gravação alterada para cartão SD.</string>
 </resources>

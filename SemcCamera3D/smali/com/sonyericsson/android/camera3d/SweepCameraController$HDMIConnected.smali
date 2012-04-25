@@ -26,19 +26,19 @@
     .parameter
 
     .prologue
-    .line 883
+    .line 879
     iput-object p1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$HDMIConnected;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     invoke-direct {p0}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;-><init>()V
 
-    .line 884
+    .line 880
     iget-object v0, p1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
 
     check-cast v0, Lcom/sonyericsson/android/camera3d/CameraActivity;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/CameraActivity;->enableBackKey()V
 
-    .line 889
+    .line 885
     iget-object v0, p1, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mContext:Landroid/content/Context;
 
     check-cast v0, Lcom/sonyericsson/android/camera3d/CameraActivity;
@@ -59,15 +59,15 @@
 
     iput-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$HDMIConnected;->errDialog:Landroid/app/Dialog;
 
-    .line 893
+    .line 889
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$HDMIConnected;->errDialog:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->show()V
 
-    .line 896
+    .line 892
     invoke-virtual {p1}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->doResetKeyState()V
 
-    .line 897
+    .line 893
     return-void
 .end method
 
@@ -80,15 +80,15 @@
     .parameter "arg2"
 
     .prologue
-    .line 901
+    .line 897
     invoke-super {p0, p1, p2, p3}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;->handleHdmiDisconnected(Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;ILjava/lang/Object;)V
 
-    .line 905
+    .line 901
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$HDMIConnected;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera3d/SweepCameraController;->restartPreview()V
 
-    .line 906
+    .line 902
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$HDMIConnected;->errDialog:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
@@ -101,12 +101,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 907
+    .line 903
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$HDMIConnected;->errDialog:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->hide()V
 
-    .line 910
+    .line 906
     :cond_0
     new-instance v0, Lcom/sonyericsson/android/camera3d/SweepCameraController$ViewFinder;
 
@@ -116,6 +116,6 @@
 
     invoke-virtual {p1, v0}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->setState(Lcom/sonyericsson/android/camera3d/Capturer$CapturerState;)V
 
-    .line 911
+    .line 907
     return-void
 .end method

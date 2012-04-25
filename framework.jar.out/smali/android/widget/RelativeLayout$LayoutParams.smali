@@ -120,17 +120,17 @@
     .parameter "h"
 
     .prologue
-    .line 1137
+    .line 1146
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(II)V
 
-    .line 1035
+    .line 1044
     const/16 v0, 0x10
 
     new-array v0, v0, [I
 
     iput-object v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRules:[I
 
-    .line 1138
+    .line 1147
     return-void
 .end method
 
@@ -144,34 +144,34 @@
 
     const/4 v7, 0x0
 
-    .line 1068
+    .line 1077
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 1035
+    .line 1044
     const/16 v5, 0x10
 
     new-array v5, v5, [I
 
     iput-object v5, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRules:[I
 
-    .line 1070
+    .line 1079
     sget-object v5, Lcom/android/internal/R$styleable;->RelativeLayout_Layout:[I
 
     invoke-virtual {p1, p2, v5}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object v1
 
-    .line 1073
+    .line 1082
     .local v1, a:Landroid/content/res/TypedArray;
     iget-object v4, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRules:[I
 
-    .line 1075
+    .line 1084
     .local v4, rules:[I
     invoke-virtual {v1}, Landroid/content/res/TypedArray;->getIndexCount()I
 
     move-result v0
 
-    .line 1076
+    .line 1085
     .local v0, N:I
     const/4 v3, 0x0
 
@@ -179,22 +179,22 @@
     :goto_0
     if-ge v3, v0, :cond_7
 
-    .line 1077
+    .line 1086
     invoke-virtual {v1, v3}, Landroid/content/res/TypedArray;->getIndex(I)I
 
     move-result v2
 
-    .line 1078
+    .line 1087
     .local v2, attr:I
     packed-switch v2, :pswitch_data_0
 
-    .line 1076
+    .line 1085
     :goto_1
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 1080
+    .line 1089
     :pswitch_0
     invoke-virtual {v1, v2, v7}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
@@ -204,7 +204,7 @@
 
     goto :goto_1
 
-    .line 1083
+    .line 1092
     :pswitch_1
     invoke-virtual {v1, v2, v7}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -214,7 +214,7 @@
 
     goto :goto_1
 
-    .line 1086
+    .line 1095
     :pswitch_2
     const/4 v5, 0x1
 
@@ -226,7 +226,7 @@
 
     goto :goto_1
 
-    .line 1089
+    .line 1098
     :pswitch_3
     const/4 v5, 0x2
 
@@ -238,7 +238,7 @@
 
     goto :goto_1
 
-    .line 1092
+    .line 1101
     :pswitch_4
     const/4 v5, 0x3
 
@@ -250,7 +250,7 @@
 
     goto :goto_1
 
-    .line 1095
+    .line 1104
     :pswitch_5
     const/4 v5, 0x4
 
@@ -262,7 +262,7 @@
 
     goto :goto_1
 
-    .line 1098
+    .line 1107
     :pswitch_6
     const/4 v5, 0x5
 
@@ -274,7 +274,7 @@
 
     goto :goto_1
 
-    .line 1101
+    .line 1110
     :pswitch_7
     const/4 v5, 0x6
 
@@ -286,7 +286,7 @@
 
     goto :goto_1
 
-    .line 1104
+    .line 1113
     :pswitch_8
     const/4 v5, 0x7
 
@@ -298,7 +298,7 @@
 
     goto :goto_1
 
-    .line 1107
+    .line 1116
     :pswitch_9
     const/16 v5, 0x8
 
@@ -310,7 +310,7 @@
 
     goto :goto_1
 
-    .line 1110
+    .line 1119
     :pswitch_a
     const/16 v8, 0x9
 
@@ -332,7 +332,7 @@
 
     goto :goto_2
 
-    .line 1113
+    .line 1122
     :pswitch_b
     const/16 v8, 0xa
 
@@ -354,7 +354,7 @@
 
     goto :goto_3
 
-    .line 1116
+    .line 1125
     :pswitch_c
     const/16 v8, 0xb
 
@@ -376,7 +376,7 @@
 
     goto :goto_4
 
-    .line 1119
+    .line 1128
     :pswitch_d
     const/16 v8, 0xc
 
@@ -398,7 +398,7 @@
 
     goto :goto_5
 
-    .line 1122
+    .line 1131
     :pswitch_e
     const/16 v8, 0xd
 
@@ -420,7 +420,7 @@
 
     goto :goto_6
 
-    .line 1125
+    .line 1134
     :pswitch_f
     const/16 v8, 0xe
 
@@ -442,7 +442,7 @@
 
     goto :goto_7
 
-    .line 1128
+    .line 1137
     :pswitch_10
     const/16 v8, 0xf
 
@@ -464,15 +464,15 @@
 
     goto :goto_8
 
-    .line 1133
+    .line 1142
     .end local v2           #attr:I
     :cond_7
     invoke-virtual {v1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 1134
+    .line 1143
     return-void
 
-    .line 1078
+    .line 1087
     nop
 
     :pswitch_data_0
@@ -502,17 +502,17 @@
     .parameter "source"
 
     .prologue
-    .line 1144
+    .line 1153
     invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1035
+    .line 1044
     const/16 v0, 0x10
 
     new-array v0, v0, [I
 
     iput-object v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRules:[I
 
-    .line 1145
+    .line 1154
     return-void
 .end method
 
@@ -521,17 +521,17 @@
     .parameter "source"
 
     .prologue
-    .line 1151
+    .line 1160
     invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
-    .line 1035
+    .line 1044
     const/16 v0, 0x10
 
     new-array v0, v0, [I
 
     iput-object v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRules:[I
 
-    .line 1152
+    .line 1161
     return-void
 .end method
 
@@ -540,7 +540,7 @@
     .parameter "x0"
 
     .prologue
-    .line 1034
+    .line 1043
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRight:I
 
     return v0
@@ -552,7 +552,7 @@
     .parameter "x1"
 
     .prologue
-    .line 1034
+    .line 1043
     iput p1, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRight:I
 
     return p1
@@ -564,7 +564,7 @@
     .parameter "x1"
 
     .prologue
-    .line 1034
+    .line 1043
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRight:I
 
     add-int/2addr v0, p1
@@ -579,7 +579,7 @@
     .parameter "x0"
 
     .prologue
-    .line 1034
+    .line 1043
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mBottom:I
 
     return v0
@@ -591,7 +591,7 @@
     .parameter "x1"
 
     .prologue
-    .line 1034
+    .line 1043
     iput p1, p0, Landroid/widget/RelativeLayout$LayoutParams;->mBottom:I
 
     return p1
@@ -603,7 +603,7 @@
     .parameter "x1"
 
     .prologue
-    .line 1034
+    .line 1043
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mBottom:I
 
     add-int/2addr v0, p1
@@ -618,7 +618,7 @@
     .parameter "x0"
 
     .prologue
-    .line 1034
+    .line 1043
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mLeft:I
 
     return v0
@@ -630,7 +630,7 @@
     .parameter "x1"
 
     .prologue
-    .line 1034
+    .line 1043
     iput p1, p0, Landroid/widget/RelativeLayout$LayoutParams;->mLeft:I
 
     return p1
@@ -642,7 +642,7 @@
     .parameter "x1"
 
     .prologue
-    .line 1034
+    .line 1043
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mLeft:I
 
     add-int/2addr v0, p1
@@ -657,7 +657,7 @@
     .parameter "x0"
 
     .prologue
-    .line 1034
+    .line 1043
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mTop:I
 
     return v0
@@ -669,7 +669,7 @@
     .parameter "x1"
 
     .prologue
-    .line 1034
+    .line 1043
     iput p1, p0, Landroid/widget/RelativeLayout$LayoutParams;->mTop:I
 
     return p1
@@ -681,7 +681,7 @@
     .parameter "x1"
 
     .prologue
-    .line 1034
+    .line 1043
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mTop:I
 
     add-int/2addr v0, p1
@@ -696,7 +696,7 @@
     .parameter "x0"
 
     .prologue
-    .line 1034
+    .line 1043
     iget-object v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRules:[I
 
     return-object v0
@@ -709,14 +709,14 @@
     .parameter "verb"
 
     .prologue
-    .line 1173
+    .line 1182
     iget-object v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRules:[I
 
     const/4 v1, -0x1
 
     aput v1, v0, p1
 
-    .line 1174
+    .line 1183
     return-void
 .end method
 
@@ -726,12 +726,12 @@
     .parameter "anchor"
 
     .prologue
-    .line 1191
+    .line 1200
     iget-object v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRules:[I
 
     aput p2, v0, p1
 
-    .line 1192
+    .line 1201
     return-void
 .end method
 
@@ -740,7 +740,7 @@
     .parameter "output"
 
     .prologue
-    .line 1156
+    .line 1165
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -798,7 +798,7 @@
     .locals 1
 
     .prologue
-    .line 1203
+    .line 1212
     iget-object v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRules:[I
 
     return-object v0

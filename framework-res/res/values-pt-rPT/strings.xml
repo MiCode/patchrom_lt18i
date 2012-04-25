@@ -906,7 +906,7 @@ Seleccione OK para continuar ou Cancelar para permanecer na página actual."</st
     <string name="capital_off">〇</string>
     <string name="whichApplication">Concluir acção utilizando</string>
     <string name="alwaysUse">Utilizar por predef. para esta acção.</string>
-    <string name="clearDefaultHintMsg">Limpar predefinição em Definições iniciais > Aplicações > Gerir aplicações.</string>
+    <string name="clearDefaultHintMsg">Apagar predefinição em Definições > Aplicações.</string>
     <string name="chooseActivity">Seleccionar uma acção</string>
     <string name="chooseUsbActivity">Seleccione uma aplicação para o dispositivo USB</string>
     <string name="noApplications">Nenhuma aplicação pode efectuar esta acção.</string>
@@ -1212,7 +1212,7 @@ para a conta %s"</string>
     <string name="general_dialpad_voicemail_txt">Correio de voz</string>
     <string name="gui_cancel_txt">Cancel.</string>
     <string name="gui_ok_txt">OK</string>
-    <string name="lockscreen_strings_locked_out_wrong_answer_txt">Resposta incorrecta</string>
+    <string name="lockscreen_strings_locked_out_wrong_answer_txt">Resposta incorreta</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">Cartão SIM bloqueado</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Introduzir o PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">Cartão SIM bloqueado</string>

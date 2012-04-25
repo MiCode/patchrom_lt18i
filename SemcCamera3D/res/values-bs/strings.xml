@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Prepoznavanje scena</string>
-    <string name="cam_strings_shortcut_normal_txt">Normalno</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Prepoznav. scena (kamera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normalno (kamera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Prednja kamera</string>
     <string name="cam_strings_shortcut_video_camera_txt">Video kamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Prednja video kamera</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Lokacije pribavljene GPS-om uvijek imaju prednost nad bežičnim mrežama. Za promjenu načina pribavljanja lokacije idite na Postavke > Lokacija.</string>
     <string name="cam_strings_do_not_show_again_txt">Ne prikazivati opet</string>
     <string name="cam_strings_unavailable_in_scene_txt">Nije moguće mijenjati u kombinaciji sa trenutnom postavkom scene</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Nije moguće mijenjati dok je aktivan Smile Shutter™</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Nije dostupno kada je aktivno prepoznavanje osmijeha</string>
     <string name="cam_3d_strings_dialog_delete_txt">Izbrisati ovu datoteku?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">I višestruko zakrenutu</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">I 3D datot.</string>
@@ -202,7 +202,7 @@ Napomena: datoteke sadrže sivo područje."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Za ovu fotografiju načinjenu višestrukim zakretanjem postoji i 3D slika. Želite izbrisati oboje?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Samo viš. z.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Samo 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Nije moguće koristiti ovaj režim kad je povezan HDMI kabl. Izvucite kabl.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Izvucite kabl. Ne možete snimiti fotografiju u ovom načinu rada kada je povezan kabl.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Za prikaz ove datoteke u 3D tehnici, koristite uređaj koji podržava 3D.</string>
     <string name="cam_status_remained_min">%1$d min.</string>
     <string name="cam_strings_both_location_fail_txt">Nije moguće utvrditi lokaciju</string>
@@ -216,7 +216,7 @@ Napomena: datoteke sadrže sivo područje."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Kako pribaviti lokaciju</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Izbrisati</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Snimanje nije moguće</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI greška</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Greška</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Daljinski upravlj. dostupan</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Izbrisati</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Čuvanje slike u toku</string>
@@ -279,9 +279,9 @@ Napomena: datoteke sadrže sivo područje."</string>
     <string name="cam_strings_cancel_txt">Otkaži</string>
     <string name="cam_strings_zoom_help_txt">Koristite tipku za jačinu zvuka za povećanje ili smanjenje zuma</string>
     <string name="cam_strings_zoom_not_supported_txt">Zumiranje nije moguće u ovom načinu rada</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Da biste prikazali fotografiju u 3D prikazu, povežite kameru na 3D TV putem HDMI veze ili kucnite dugme Reproduciraj na.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Da biste prikazali fotografiju u 3D prikazu, povežite telefon na 3D TV putem HDMI veze ili kucnite dugme Reproduciraj na uređaju.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Dodirnite ekran kako biste snimili video</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Da biste prikazali ovu sliku u 3D prikazu, kucnite dugme Reproduciraj na kako biste povezali telefon na 3D TV.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Da biste prikazali ovu fotografiju u 3D prikazu, kucnite dugme Reproduciraj na uređaju kako biste povezali telefon na 3D TV.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">SD kartica nije dostupna. Zadana lokacija za čuvanje je promijenjena na internu pohranu.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">SD kartica je dostupna. Zadana lokacija za čuvanje je promijenjena na SD karticu.</string>
 </resources>

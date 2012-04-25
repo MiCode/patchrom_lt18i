@@ -914,7 +914,7 @@ Valitse OK, jos haluat jatkaa, tai Peruuta, jos haluat pysyä valitulla sivulla.
     <string name="capital_off">〇</string>
     <string name="whichApplication">Viimeistele sovelluksella</string>
     <string name="alwaysUse">Käytä oletusarvona toimenpiteelle.</string>
-    <string name="clearDefaultHintMsg">Tyhjennä oletusasetus kohdassa Etusivun asetukset > Sovellukset > Hallinnoi sovelluksia.</string>
+    <string name="clearDefaultHintMsg">Tyhjennä oletusasetus kohdassa Asetukset > Sovellukset.</string>
     <string name="chooseActivity">Valitse toimenpide</string>
     <string name="chooseUsbActivity">Valitse sovellus USB-laitteelle</string>
     <string name="noApplications">Mikään sovellus ei voi suorittaa tätä toimenpidettä.</string>
@@ -1224,7 +1224,7 @@ tilille %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM-kortti estetty</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Anna PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM-kortti lukittu</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Anna operaattorilta saamasi PUK-koodi</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Anna verkko-operaattorilta saatu PUK-koodi</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Ota yhteys operaattoriin</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Anna uusi PIN</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Toista uusi PIN</string>

@@ -757,7 +757,7 @@
     <string name="lockscreen_plugged_in">正在充电，%d%%</string>
     <string name="lockscreen_charged">已充满。</string>
     <string name="lockscreen_battery_short">%d%%</string>
-    <string name="lockscreen_low_battery">连接您的充电器。</string>
+    <string name="lockscreen_low_battery">连接您的充电器</string>
     <string name="lockscreen_missing_sim_message_short">没有 SIM 卡</string>
     <string name="lockscreen_missing_sim_message">手机中无 SIM 卡</string>
     <string name="lockscreen_missing_sim_instructions">请插入 SIM 卡</string>
@@ -910,11 +910,11 @@
     <string name="low_internal_storage_view_title">存储空间不足</string>
     <string name="low_internal_storage_view_text">手机内存所剩不多了。</string>
     <string name="loading">正在载入...</string>
-    <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_on">打开</string>
+    <string name="capital_off">关闭</string>
     <string name="whichApplication">完成操作需使用</string>
     <string name="alwaysUse">默认使用此操作方式。</string>
-    <string name="clearDefaultHintMsg">通过主屏幕上的“设置”>“应用程序”>“管理应用程序”清除默认设置。</string>
+    <string name="clearDefaultHintMsg">在“设定”>“应用程序”中清除默认设定。</string>
     <string name="chooseActivity">选择一项操作</string>
     <string name="chooseUsbActivity">选择用于USB设备的应用程序</string>
     <string name="noApplications">没有应用程序可执行此操作。</string>
@@ -1224,7 +1224,7 @@
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM 卡被阻止</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">输入PUK码</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM 卡已锁定</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">输入运营商提供的PUK码</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">输入服务提供商提供的PUK码</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">请联系您的运营商</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">输入新PIN码</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">再次输入新PIN码</string>

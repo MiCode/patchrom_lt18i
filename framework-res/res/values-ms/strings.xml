@@ -916,7 +916,7 @@ Pilih OK untuk meneruskan, atau Batal untuk kekal di halaman ini."</string>
     <string name="capital_off">〇</string>
     <string name="whichApplication">Selesaikan tindakan dgn</string>
     <string name="alwaysUse">Gunakn scara lalai utk tindakan ini.</string>
-    <string name="clearDefaultHintMsg">Padam bersih lalai dalam Tetapan Halaman Utama > Aplikasi > Urus aplikasi.</string>
+    <string name="clearDefaultHintMsg">Padam bersih lalai dalam Tetapan > Aplikasi</string>
     <string name="chooseActivity">Pilih tindakan</string>
     <string name="chooseUsbActivity">Pilih aplikasi untuk peranti USB</string>
     <string name="noApplications">Tiada aplikasi yang boleh menjalankan tindakan ini.</string>
@@ -981,7 +981,7 @@ Adakah anda mahu menutupnya?"</string>
     <string name="wifi_watchdog_network_disabled">Tidak boleh menyambung kepada Wi-Fi</string>
     <string name="wifi_watchdog_network_disabled_detailed">" mempunyai sambungan internet yang kurang baik."</string>
     <string name="wifi_p2p_dialog_title">Wi-Fi Langsung</string>
-    <string name="wifi_p2p_turnon_message">Mulakan pengendalian Wi-Fi Langsung. Hal ini akan mematikan pengendalian klien Wi-Fi/tempat liputan.</string>
+    <string name="wifi_p2p_turnon_message">Mulakan pengendalian Wi-Fi Langsung. Hal ini akan mematikan pengendalian klien Wi-Fi/hotspot.</string>
     <string name="wifi_p2p_failed_message">Tidak dapat memulakan Wi-Fi Langsung</string>
     <string name="wifi_p2p_pbc_go_negotiation_request_message">Permintaan persediaan sambungan Wi-Fi Langsung dari %1$s. Klik OK untuk menerima.</string>
     <string name="wifi_p2p_pin_go_negotiation_request_message">Permintaan persediaan sambungan Wi-Fi Langsung dari %1$s. Masukkan pin untuk meneruskan.</string>
@@ -1225,7 +1225,7 @@ menggunakan %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">Kad SIM disekat</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Masukkan PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">Kad SIM dikunci</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Masukkan kod PUK drpd pengendali anda.</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Masukkan PUK drpd pengendali rangk anda</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Sila hubungi pengendali anda</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Masukkan PIN baru</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Ulangi PIN baru</string>

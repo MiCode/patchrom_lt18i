@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">कैमरा</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">दृश्य पहचान</string>
-    <string name="cam_strings_shortcut_normal_txt">सामान्य</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">दृश्य पहचान(कैमरा)</string>
+    <string name="cam_strings_shortcut_normal_txt">सामान्य(कैमरा)</string>
     <string name="cam_strings_shortcut_front_camera_txt">सामने का कैमरा</string>
     <string name="cam_strings_shortcut_video_camera_txt">वीडियो कैमरा</string>
     <string name="cam_strings_shortcut_front_video_txt">सामने का वीडियो</string>
@@ -118,7 +118,7 @@
     <string name="cam_strings_error_message_during_voice_call_txt">वॉयस कॉल के दौरान कैमरा उपलब्ध नहीं</string>
     <string name="cam_strings_error_no_memory_txt">कोई SD कार्ड नहीं</string>
     <string name="cam_strings_store_fail_txt">रक्षित नहीं कर सका</string>
-    <string name="cam_strings_memory_full_save_failed_txt">रक्षित नहीं जा सकी। मेमोरी भर गई है।</string>
+    <string name="cam_strings_memory_full_save_failed_txt">रक्षित नहीं कर सका। मेमोरी भर गई है।</string>
     <string name="cam_strings_error_rec_size_limit_txt">वीडियो रिकॉर्ड नहीं किया जा सका। मेमोरी पर्याप्त नहीं।</string>
     <string name="cam_strings_file_delete_confirm_txt">इस फ़ाइल को हटाएं?</string>
     <string name="cam_strings_file_share_title_txt">साझा करें</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">GPS से प्राप्त स्थान हमेशा बेतार नेटवर्क पर वरीयता लेता है। स्थान प्राप्त करने की पद्धति परिवर्तित करने के लिए सेटिंग > स्थान पर जाएं।</string>
     <string name="cam_strings_do_not_show_again_txt">दोबारा न दिखाएं</string>
     <string name="cam_strings_unavailable_in_scene_txt">वर्तमान दृश्य सेटिंग के साथ संयोजन में परिवर्तनीय नहीं है</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Smile Shutter™ सक्रिय होने पर परिवर्तनीय नहीं है</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">मुस्कान पहचान के सक्रिय होने पर उपलब्ध नहीं है</string>
     <string name="cam_3d_strings_dialog_delete_txt">यह फ़ाइल हटाएं?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">मल्टी एंगल, भी</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">3D फ़ाइल, भी</string>
@@ -202,9 +202,9 @@
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">इस मल्टी एंगल फोटो के लिए, एक 3D छवि भी है। दोनों हटाएं?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">OnlyM.Angle</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">केवल 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">HDMI केबल कनेक्ट होने पर, इस मोड का उपयोग नहीं कर सकते। कृपया केबल अनप्लग करें।</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">केबल अनप्लग करें। केबल कनेक्ट होने पर, आप इस मोड में फोटो नहीं ले सकते।</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">इस फ़ाइल को 3D में देखने के लिए, कोई 3D समर्थित डिवाइस उपयोग करें।</string>
-    <string name="cam_status_remained_min">%1$d मिनट</string>
+    <string name="cam_status_remained_min">%1$d मि.</string>
     <string name="cam_strings_both_location_fail_txt">स्थान स्थापित नहीं कर सकता</string>
     <string name="cam_strings_gps_location_fail_txt">GPS सैटेलाइट का उपयोग करके स्थान स्थापित नहीं कर सकता</string>
     <string name="cam_strings_wireless_location_fail_txt">बेतार नेटवर्क के साथ स्थान स्थापित नहीं कर सकता</string>
@@ -216,7 +216,7 @@
     <string name="cam_strings_wireless_gps_explanatory_title_txt">स्थान कैसे प्राप्त करें</string>
     <string name="cam_strings_file_delete_confirm_title_txt">हटाएं</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">शूट नहीं किया जा सका</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI त्रुटि</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">त्रुटि</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">रिमोट कंट्रोल उपलब्ध</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">हटाएं</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">छवि रक्षित करना</string>
@@ -281,9 +281,9 @@
     <string name="cam_strings_cancel_txt">रद्द करें</string>
     <string name="cam_strings_zoom_help_txt">ज़ूम इन/आउट करने के लिए वॉल्यूम कुंजी का उपयोग करें</string>
     <string name="cam_strings_zoom_not_supported_txt">इस मोड में ज़ूम नहीं किया जा सकता</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">फोटो 3D में देखने हेतु, HDMI के उप. से या चालू करें बटन टैप करके अपना कै. 3D टीवी से कने. करें।</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">फोटो को 3D में देखने हेतु, HDMI के उप. से या डिवा. ब. पर च. टैप कर. अपना फो. 3D टे. से कने. क.।</string>
     <string name="cam_strings_touch_capture_gude_video_txt">वीडियो रिकॉर्ड करने के लिए स्क्रीन स्पर्श करें</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">इस फोटो को 3D में देखने के लिए, चलाएं बटन टैप करके अपने फोन को 3D टेलीविजन से कनेक्ट करें।</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">इस फोटो को 3D में देखने हेतु, डिवाइस बटन पर चलाएं टैप करके अपना फोन 3D टेलीवि. से कने. करें।</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">कोई SD कार्ड उपलब्ध नहीं। डिफॉल्ट रूप से रक्षित स्थान आंतरिक संग्रहण में परिवर्तित किया गया।</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">SD कार्ड उपलब्ध। डिफॉल्ट रूप से रक्षित स्थान SD कार्ड में परिवर्तित किया गया।</string>
 </resources>

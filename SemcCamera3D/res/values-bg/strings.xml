@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Камера</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Разпознаване на сцена</string>
-    <string name="cam_strings_shortcut_normal_txt">Нормален</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Разпозн. на сцена (кам.)</string>
+    <string name="cam_strings_shortcut_normal_txt">Нормален (камера)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Предна камера</string>
     <string name="cam_strings_shortcut_video_camera_txt">Видеокамера</string>
     <string name="cam_strings_shortcut_front_video_txt">Режим на предна камера</string>
     <string name="cam_strings_scenes_auto_recog_portrait_txt">Портрет</string>
     <string name="cam_strings_scenes_auto_recog_landscape_txt">Пейзаж</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_txt">Подсветка</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Портрет с подсветка</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_txt">Контражур</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Портрет с контражур</string>
     <string name="cam_strings_scenes_auto_recog_twilight_txt">Нощна сцена</string>
     <string name="cam_strings_scenes_auto_recog_twilight_portrait_txt">Нощен портрет</string>
     <string name="cam_strings_scenes_auto_recog_text_txt">Документ</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Местоположение, получено чрез GPS, винаги се приема с предимство пред местоположение от безжичните мрежи. За да промените метода на получаване, отидете в \"Настройки\" > \"Местоположение\".</string>
     <string name="cam_strings_do_not_show_again_txt">Не показвай повече</string>
     <string name="cam_strings_unavailable_in_scene_txt">Не може да се промени в комбинация с текущата настройка на сцената</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Не може да се промени при активирано Smile Shutter™</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Не може да се промени при активирана функция за откриване на усмивки</string>
     <string name="cam_3d_strings_dialog_delete_txt">Искате ли да изтриете този файл?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">И от много ъгли</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">И 3D файла</string>
@@ -202,7 +202,7 @@
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Към снимката от много ъгли има и 3D изображение. Изтриване на двете?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">СамоМн.ъгл.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Само 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Този режим не може да се използва при свързан HDMI кабел. Извадете кабела.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Извадете кабела. Не можете да заснемете снимка в този режим при свързан кабел.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">За разглеждане на файла в 3D използвайте поддърж. 3D устройство.</string>
     <string name="cam_status_remained_min">%1$d мин.</string>
     <string name="cam_strings_both_location_fail_txt">Не може да се установи местоположение</string>
@@ -216,7 +216,7 @@
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Намиране на местоп.</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Изтриване</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Неуспешно снимане</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI грешка</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Грешка</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Дист. управл. налично</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Изтриване</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Записване на изображ.</string>
@@ -280,9 +280,9 @@
     <string name="cam_strings_cancel_txt">Отказ</string>
     <string name="cam_strings_zoom_help_txt">Използвайте клавиша за сила на звука, за да увеличите/намалите мащаба</string>
     <string name="cam_strings_zoom_not_supported_txt">Мащабирането не може да се извърши в този режим</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">За разглеждане на снимка в 3D свържете камерата с 3D телевизор с помощта на HDMI или чрез натискане на бутона \"Изпълнение на\".</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">За преглед на снимка в 3D свържете телефона към 3D телевизор през HDMI или чрез натискане на бутона \"Изпълнение на устройство\".</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Докоснете екрана за записване на видеоклип</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">За преглед на тази снимка в 3D свържете телефона към 3D телевизор чрез натискане на бутона \"Изпълн. на\".</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">За преглед на тази снимка в 3D свържете телефона към 3D телевизор чрез натискане на бутона \"Изпълн. на устройство\".</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Няма налична SD карта. Местоположението за записване по подразбиране е променено на вътрешната памет.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">Има налична SD карта. Местоположението за записване по подразбиране е променено на SD картата.</string>
 </resources>

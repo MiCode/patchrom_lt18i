@@ -32,7 +32,7 @@
     .parameter "tag"
 
     .prologue
-    .line 1013
+    .line 1018
     move-object v0, p0
 
     move-object v1, p1
@@ -47,10 +47,10 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/sonyericsson/android/camera/photostack/PagingCursor;-><init>(Lcom/sonyericsson/android/camera3d/ExtendedActivity;Landroid/net/Uri;Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;ILjava/lang/String;)V
 
-    .line 1014
+    .line 1019
     iput p5, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;->mOrderedColumnIndex:I
 
-    .line 1015
+    .line 1020
     return-void
 .end method
 
@@ -60,7 +60,7 @@
     .locals 2
 
     .prologue
-    .line 1018
+    .line 1023
     invoke-virtual {p0}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;->isClosed()Z
 
     move-result v0
@@ -73,11 +73,11 @@
 
     if-eqz v0, :cond_1
 
-    .line 1019
+    .line 1024
     :cond_0
     const-wide/16 v0, -0x1
 
-    .line 1021
+    .line 1026
     :goto_0
     return-wide v0
 

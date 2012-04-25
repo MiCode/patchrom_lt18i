@@ -316,7 +316,7 @@
     <string name="global_action_silent_mode_on_status">Zvuk je ISKLJUČEN</string>
     <string name="global_action_silent_mode_off_status">Zvuk je UKLJUČEN</string>
     <string name="global_actions_toggle_airplane_mode">Režim letenja avionom</string>
-    <string name="global_actions_airplane_mode_on_status">Režim letenja avionom je UKLJUČEN</string>
+    <string name="global_actions_airplane_mode_on_status">Režim letenja avionom UKLJUČEN</string>
     <string name="global_actions_airplane_mode_off_status">Režim letenja avionom ISKLJUČEN</string>
     <string name="safeMode">Sigurni način rada</string>
     <string name="android_system_label">Android System</string>
@@ -913,7 +913,7 @@ Odaberite OK za nastavak ili Otkazati za ostanak na trenutnoj stranici."</string
     <string name="capital_off">〇</string>
     <string name="whichApplication">Dovršite aktivnost koristeći</string>
     <string name="alwaysUse">Koristiti kao zadano za ovu radnju.</string>
-    <string name="clearDefaultHintMsg">Izbrisati zadano u Glavne postavke > Aplikacije > Upravljanje aplikacijama.</string>
+    <string name="clearDefaultHintMsg">Obrišite zadane vrijednosti u Postavke > Aplikacije.</string>
     <string name="chooseActivity">Odaberite aktivnost</string>
     <string name="chooseUsbActivity">Odaberite aplikaciju za USB uređaj</string>
     <string name="noApplications">Nema aplikacija koje mogu izvesti ovu aktivnost.</string>

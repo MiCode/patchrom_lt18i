@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Càmera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">"Reconeixement d'escena"</string>
-    <string name="cam_strings_shortcut_normal_txt">Normal</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Reconeix. escena (càmera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normal (càmera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Càmera frontal</string>
     <string name="cam_strings_shortcut_video_camera_txt">Càmera de vídeo</string>
     <string name="cam_strings_shortcut_front_video_txt">Vídeo frontal</string>
@@ -117,7 +117,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">"La ubicació adquirida amb el GPS sempre té preferència per davant de les xarxes sense fil. Per canviar el mètode d'adquisició, aneu a Paràmetres > Ubicació."</string>
     <string name="cam_strings_do_not_show_again_txt">No ho tornis a mostrar</string>
     <string name="cam_strings_unavailable_in_scene_txt">"No es pot canviar en combinació amb el paràmetre d'escena actual."</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">No està disponible quan Smile Shutter™ està actiu</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">No està disponible quan la detecció de somriures està activada</string>
     <string name="cam_3d_strings_dialog_delete_txt">Voleu suprimir aquest fitxer?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">També angle múltiple</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">I el fitxer 3D</string>
@@ -189,7 +189,7 @@ Nota: aquests fitxers contenen una àrea grisa."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">"També hi ha una imatge en 3D per a aquesta fotografia d'angle múltiple. Voleu suprimir-les totes dues?"</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Nom. ang. M</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Només 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Aquest mode de captura no permet compatibilitat amb sortida HDMI. Desendolleu el cable HDMI.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Desconnecteu el cable. No podeu fer fotos en aquest mode amb un cable connectat.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Per visualitzar aquest fitxer en 3D, utilitzeu un dispositiu 3D compatible.</string>
     <string name="cam_status_remained_min">%1$d min.</string>
     <string name="cam_strings_both_location_fail_txt">No es pot establir la ubicació</string>
@@ -203,7 +203,7 @@ Nota: aquests fitxers contenen una àrea grisa."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Com es pot obtenir ubic.</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Suprimir</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">"No s'ha pogut capturar"</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Error HDMI</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Error</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Controlador remot dispon.</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Suprimir</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">"S'està desant la imatge"</string>
@@ -267,9 +267,9 @@ Nota: aquests fitxers contenen una àrea grisa."</string>
     <string name="cam_strings_cancel_txt">Cancel·la</string>
     <string name="cam_strings_zoom_help_txt">Utilitzeu la tecla de volum per ampliar o reduir</string>
     <string name="cam_strings_zoom_not_supported_txt">No es pot ampliar amb aquest mode</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Per visualitzar una foto en 3D, connecteu la càmera a un televisor 3D mitjançant un cable HDMI o puntejant el botó Reproducció contínua.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Per visualitzar una foto en 3D, connecteu el telèfon a un televisor 3D mitjançant un cable HDMI o puntejant el botó Reprodueix a dispositiu.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Toqueu la pantalla per gravar un vídeo</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Per visualitzar aquesta foto en 3D, connecteu el telèfon a un televisor 3D; per fer-ho, puntegeu el botó Reprodueix a.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Per visualitzar aquesta foto en 3D, connecteu el telèfon a un televisor 3D; per fer-ho, puntegeu el botó Reprodueix a dispositiu.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">"No hi ha cap targeta SD disponible. La ubicació desada per defecte s'ha canviat a l'emmagatzematge intern."</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">"Targeta SD disponible. La ubicació desada per defecte s'ha canviat a la targeta SD."</string>
 </resources>

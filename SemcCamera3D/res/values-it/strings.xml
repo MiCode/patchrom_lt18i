@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Fotocamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Riconoscimento scena</string>
-    <string name="cam_strings_shortcut_normal_txt">Normale</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Ricon. scena (fotocamera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normale (fotocamera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Fotocamera frontale</string>
     <string name="cam_strings_shortcut_video_camera_txt">Videocamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Videocamera frontale</string>
     <string name="cam_strings_scenes_auto_recog_portrait_txt">Verticale</string>
     <string name="cam_strings_scenes_auto_recog_landscape_txt">Orizzontale</string>
     <string name="cam_strings_scenes_auto_recog_backlight_txt">Retroilluminazione</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Ritratto retroilluminato</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Ritratto controluce</string>
     <string name="cam_strings_scenes_auto_recog_twilight_txt">Scena notturna</string>
     <string name="cam_strings_scenes_auto_recog_twilight_portrait_txt">Ritratto notturno</string>
     <string name="cam_strings_scenes_auto_recog_text_txt">Documento</string>
@@ -100,7 +100,7 @@
     <string name="cam_strings_save_destination_txt">Archivio dati</string>
     <string name="cam_strings_save_destination_ims_txt">Archiviazione interna</string>
     <string name="cam_strings_save_destination_sd_txt">Scheda SD</string>
-    <string name="cam_strings_fast_capturing_txt">Quick launch</string>
+    <string name="cam_strings_fast_capturing_txt">Avvio rapido</string>
     <string name="cam_strings_video_size_txt">Dimensioni video</string>
     <string name="cam_strings_video_size_mms_txt">MMS</string>
     <string name="cam_strings_video_size_fwvga_txt">Full Wide VGA</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">La posizione acquisita con il GPS ha sempre precedenza sulle reti wireless. Per cambiare il metodo di acquisizione, andare a Impostazioni > Posizione.</string>
     <string name="cam_strings_do_not_show_again_txt">Non visualizzare più questo messaggio</string>
     <string name="cam_strings_unavailable_in_scene_txt">"Non modificabile in combinazione all'impostazione della scena corrente."</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">"Non disponibile quando Smile Shutter™  è attivo"</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Non disponibile quando il riconoscimento del sorriso è attivato</string>
     <string name="cam_3d_strings_dialog_delete_txt">Eliminare questo file?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Pure multi angolo</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Pure file 3D</string>
@@ -202,7 +202,7 @@ Nota: questi file contengono un'area grigia."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">"Per questa foto multi angolo è presente anche un'immagine 3D. Eliminare entrambe?"</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Solo m. ang.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Solo 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">"Questa modalità di acquisizione non supporta l'uscita HDMI. Scollegare il cavo HDMI."</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Scollegare il cavo. Impossibile scattare una foto in questa modalità con un cavo connesso.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Per visualizzare questo file in 3D, utilizza un dispositivo supportato.</string>
     <string name="cam_status_remained_min">%1$d min.</string>
     <string name="cam_strings_both_location_fail_txt">Impossibile determinare la posizione</string>
@@ -216,14 +216,14 @@ Nota: questi file contengono un'area grigia."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Acquisizione posizione</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Elimina</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Impossibile scattare</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Errore HDMI</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Errore</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Telecomando disponibile</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Elimina</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Salvataggio immagine</string>
     <string name="cam_strings_error_message_during_voice_call_title_txt">Nella chiamata vocale</string>
     <string name="cam_strings_touch_capture_gude_txt">Tocca lo schermo per scattare foto</string>
     <string name="cam_3d_strings_album_application_name_txt">Album 3D</string>
-    <string name="cam_strings_capturing_mode_scene_recognition_short_txt">Riconoscimento scene</string>
+    <string name="cam_strings_capturing_mode_scene_recognition_short_txt">Riconoscimento scena</string>
     <string name="cam_strings_capturing_mode_normal_short_txt">Normale</string>
     <string name="cam_strings_capturing_mode_front_camera_short_txt">Fotocamera frontale</string>
     <string name="cam_strings_capturing_mode_video_camera_short_txt">Videocamera</string>
@@ -242,20 +242,20 @@ Nota: questi file contengono un'area grigia."</string>
     <string name="cam_strings_touch_capture_gude_with_touch_focus_txt">Tocca un punto dello schermo per mettere a fuoco e scattare una foto</string>
     <string name="cam_strings_fast_capturing_launch_and_capture_txt">Avvio e acquisizione</string>
     <string name="cam_strings_fast_capturing_launch_only_txt">Solo avvio</string>
-    <string name="cam_strings_fast_capturing_activated_txt">Modalità Quick Launch</string>
+    <string name="cam_strings_fast_capturing_activated_txt">Modalità Avvio rapido</string>
     <string name="cam_strings_fast_capturing_ended_txt">Uscire dalla modalità Quick Launch</string>
     <string name="cam_strings_fast_capturing_cannot_move_shortcut_txt">"Impossibile spostare l'icona di scorciatoia in modalità Quick Launch"</string>
     <string name="cam_3d_strings_error_application_busy_txt">Attendi alcuni secondi per avviare la fotocamera 3D</string>
     <string name="cam_strings_fast_capturing_quick_shooting_txt">Acquisizione rapida</string>
-    <string name="cam_strings_fast_capturing_finish_confirmation_txt">La fotocamera è in modalità Quick Launch. Impostazioni non disponibile. Tornare in modalità normale?</string>
-    <string name="cam_strings_fast_capturing_screen_locked_txt">Lo schermo è bloccato. Per utilizzare Quick Launch, sbloccare lo schermo e abilitare questa funzione.</string>
-    <string name="cam_strings_fast_capturing_allowance_txt">Grazie a Quick Launch puoi attivare istantaneamente la fotocamera con il telefono in modalità di sospensione, tenendo premuto il tasto della fotocamera. Questa funzione accende la fotocamera anche se lo schermo è bloccato. Consentire Quick Launch?</string>
+    <string name="cam_strings_fast_capturing_finish_confirmation_txt">La fotocamera è in modalità Avvio rapido. Impostazioni non disponibile. Tornare in modalità normale?</string>
+    <string name="cam_strings_fast_capturing_screen_locked_txt">Lo schermo è bloccato. Per utilizzare Avvio rapido, sbloccare lo schermo e abilitare questa funzione.</string>
+    <string name="cam_strings_fast_capturing_allowance_txt">Grazie a Avvio rapido puoi attivare istantaneamente la fotocamera con il telefono in modalità di sospensione, tenendo premuto il tasto della fotocamera. Questa funzione accende la fotocamera anche se lo schermo è bloccato. Consentire Avvio rapido?</string>
     <string name="cam_strings_fast_capturing_quick_shooting_dialog_txt">Grazie a Quick Launch puoi attivare istantaneamente la fotocamera e scattare immediatamente la prima foto tenendo premuto il tasto della fotocamera.</string>
     <string name="cam_strings_button_to_allow_txt">Consenti</string>
     <string name="cam_strings_button_to_deny_txt">Non consentire</string>
     <string name="cam_strings_fast_capturing_screen_locked_title_txt">Schermo bloccato</string>
-    <string name="cam_strings_fast_capturing_allowance_title_txt">Imposta Quick Launch</string>
-    <string name="cam_strings_fast_capturing_finish_confirmation_title_txt">Modalità Quick Launch</string>
+    <string name="cam_strings_fast_capturing_allowance_title_txt">Imposta Avvio rapido</string>
+    <string name="cam_strings_fast_capturing_finish_confirmation_title_txt">Modalità Avvio rapido</string>
     <string name="cam_strings_scenes_title_txt">Scene</string>
     <string name="cam_strings_resolution_title_txt">Risoluzione</string>
     <string name="cam_strings_light_title_txt">Illuminatore</string>
@@ -270,7 +270,7 @@ Nota: questi file contengono un'area grigia."</string>
     <string name="cam_strings_capturing_method_title_txt">Metodo di acquisizione</string>
     <string name="cam_strings_shutter_sound_title_txt">Suono otturatore</string>
     <string name="cam_strings_save_destination_title_txt">Memoria dati</string>
-    <string name="cam_strings_fast_capturing_title_txt">Quick Launch</string>
+    <string name="cam_strings_fast_capturing_title_txt">Avvio rapido</string>
     <string name="cam_strings_video_size_title_txt">Dimensione video</string>
     <string name="cam_strings_microphone_title_txt">Microfono</string>
     <string name="cam_3d_strings_setting_image_size_title_txt">Dimens. immagine panoramica</string>
@@ -278,9 +278,9 @@ Nota: questi file contengono un'area grigia."</string>
     <string name="cam_strings_cancel_txt">Annulla</string>
     <string name="cam_strings_zoom_help_txt">Utilizza il tasto del volume per ingrandire/ridurre</string>
     <string name="cam_strings_zoom_not_supported_txt">Impossibile eseguire lo zoom in questa modalità</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Per visualizzare un foto in 3D, connettere la fotocamera premendo il pulsante play.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Per visualizzare un foto in 3D, collegare il telefono a una TV 3D utilizzando un HDMI o sfiorando Play sul pulsante del dispositivo.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Toccare lo schermo per registrare un video</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Per visualizzare la foto in 3D, collegare il telefono a una TV 3D toccando Riproduci sul pulsante.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Per visualizzare la foto in 3D, collegare il telefono a una TV 3D sfiorando Play sul pulsante del dispositivo.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">"Scheda SD non disponibile. La posizione di salvataggio predefinita è stata spostata nell'archivio interno."</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">Scheda SD disponibile. La posizione di salvataggio predefinita è stata spostata nella scheda SD.</string>
 </resources>

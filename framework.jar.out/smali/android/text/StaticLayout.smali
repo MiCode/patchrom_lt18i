@@ -8,6 +8,8 @@
 
 .field private mBufferStartDisplay:I
 
+.field private mMaximumVisibleLineCount:I
+
 
 # direct methods
 .method public constructor <init>(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V
@@ -23,7 +25,7 @@
     .parameter "includepad"
 
     .prologue
-    .line 63
+    .line 65
     const/4 v10, 0x0
 
     const/4 v11, 0x0
@@ -50,7 +52,7 @@
 
     invoke-direct/range {v0 .. v11}, Landroid/text/StaticLayout;-><init>(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZLandroid/text/TextUtils$TruncateAt;I)V
 
-    .line 65
+    .line 67
     return-void
 .end method
 
@@ -69,7 +71,7 @@
     .parameter "ellipsizedWidth"
 
     .prologue
-    .line 85
+    .line 87
     sget-object v7, Landroid/text/TextDirectionHeuristics;->FIRSTSTRONG_LTR:Landroid/text/TextDirectionHeuristic;
 
     const v13, 0x7fffffff
@@ -100,7 +102,7 @@
 
     invoke-direct/range {v0 .. v13}, Landroid/text/StaticLayout;-><init>(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;Landroid/text/TextDirectionHeuristic;FFZLandroid/text/TextUtils$TruncateAt;II)V
 
-    .line 88
+    .line 90
     return-void
 .end method
 
@@ -118,7 +120,7 @@
     .parameter "includepad"
 
     .prologue
-    .line 75
+    .line 77
     const/4 v11, 0x0
 
     const/4 v12, 0x0
@@ -149,7 +151,7 @@
 
     invoke-direct/range {v0 .. v13}, Landroid/text/StaticLayout;-><init>(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;Landroid/text/TextDirectionHeuristic;FFZLandroid/text/TextUtils$TruncateAt;II)V
 
-    .line 77
+    .line 79
     return-void
 .end method
 
@@ -170,7 +172,7 @@
     .parameter "maxLines"
 
     .prologue
-    .line 99
+    .line 101
     if-nez p11, :cond_2
 
     move-object v2, p1
@@ -198,44 +200,54 @@
 
     invoke-direct/range {v1 .. v11}, Landroid/text/Layout;-><init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;Landroid/text/TextDirectionHeuristic;FFZLandroid/text/TextUtils$TruncateAt;I)V
 
-    .line 105
+    .line 39
+    const v1, 0x7fffffff
+
+    iput v1, p0, Landroid/text/StaticLayout;->mMaximumVisibleLineCount:I
+
+    .line 107
     iput p2, p0, Landroid/text/StaticLayout;->mBufferStartDisplay:I
 
-    .line 106
+    .line 108
     move/from16 v0, p3
 
     iput v0, p0, Landroid/text/StaticLayout;->mBufferEndDisplay:I
 
-    .line 116
+    .line 109
+    move/from16 v0, p13
+
+    iput v0, p0, Landroid/text/StaticLayout;->mMaximumVisibleLineCount:I
+
+    .line 119
     if-eqz p11, :cond_0
 
-    .line 117
+    .line 120
     invoke-virtual {p0}, Landroid/text/StaticLayout;->getText()Ljava/lang/CharSequence;
 
     move-result-object v12
 
     check-cast v12, Landroid/text/Layout$Ellipsizer;
 
-    .line 119
+    .line 122
     .local v12, e:Landroid/text/Layout$Ellipsizer;
     iput-object p0, v12, Landroid/text/Layout$Ellipsizer;->mLayout:Landroid/text/Layout;
 
-    .line 120
+    .line 123
     move/from16 v0, p12
 
     iput v0, v12, Landroid/text/Layout$Ellipsizer;->mWidth:I
 
-    .line 121
+    .line 124
     move-object/from16 v0, p11
 
     iput-object v0, v12, Landroid/text/Layout$Ellipsizer;->mMethod:Landroid/text/TextUtils$TruncateAt;
 
-    .line 124
+    .line 127
     .end local v12           #e:Landroid/text/Layout$Ellipsizer;
     :cond_0
     invoke-virtual {p0}, Landroid/text/StaticLayout;->initLayout()V
 
-    .line 125
+    .line 128
     if-nez p2, :cond_1
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
@@ -246,13 +258,13 @@
 
     if-eq v0, v1, :cond_4
 
-    .line 126
+    .line 129
     :cond_1
     invoke-interface/range {p1 .. p3}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    .line 127
+    .line 130
     .local v2, subSequence:Ljava/lang/CharSequence;
     const/4 v3, 0x0
 
@@ -266,15 +278,15 @@
 
     invoke-virtual/range {v1 .. v6}, Landroid/text/StaticLayout;->updateText(Ljava/lang/CharSequence;IIIZ)V
 
-    .line 128
+    .line 131
     invoke-virtual {p0, v2}, Landroid/text/StaticLayout;->reflowFull(Ljava/lang/CharSequence;)V
 
-    .line 133
+    .line 136
     .end local v2           #subSequence:Ljava/lang/CharSequence;
     :goto_1
     return-void
 
-    .line 99
+    .line 101
     :cond_2
     instance-of v1, p1, Landroid/text/Spanned;
 
@@ -293,7 +305,7 @@
 
     goto :goto_0
 
-    .line 130
+    .line 133
     :cond_4
     const/4 v5, 0x0
 
@@ -311,7 +323,7 @@
 
     invoke-virtual/range {v3 .. v8}, Landroid/text/StaticLayout;->updateText(Ljava/lang/CharSequence;IIIZ)V
 
-    .line 131
+    .line 134
     invoke-virtual {p0, p1}, Landroid/text/StaticLayout;->reflowFull(Ljava/lang/CharSequence;)V
 
     goto :goto_1
@@ -328,7 +340,7 @@
     .parameter "includepad"
 
     .prologue
-    .line 43
+    .line 45
     const/4 v2, 0x0
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
@@ -353,7 +365,7 @@
 
     invoke-direct/range {v0 .. v9}, Landroid/text/StaticLayout;-><init>(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V
 
-    .line 45
+    .line 47
     return-void
 .end method
 
@@ -369,7 +381,7 @@
     .parameter "includepad"
 
     .prologue
-    .line 54
+    .line 56
     const/4 v2, 0x0
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
@@ -396,7 +408,7 @@
 
     invoke-direct/range {v0 .. v10}, Landroid/text/StaticLayout;-><init>(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;Landroid/text/TextDirectionHeuristic;FFZ)V
 
-    .line 56
+    .line 58
     return-void
 .end method
 
@@ -406,7 +418,7 @@
     .locals 1
 
     .prologue
-    .line 188
+    .line 197
     iget-object v0, p0, Landroid/text/Layout;->mBlockLayout:Landroid/graphics/BlockLayout;
 
     invoke-virtual {v0}, Landroid/graphics/BlockLayout;->getBottomPadding()I
@@ -423,7 +435,7 @@
     .parameter "editingBuffer"
 
     .prologue
-    .line 196
+    .line 205
     iget-object v0, p0, Landroid/text/Layout;->mBlockLayout:Landroid/graphics/BlockLayout;
 
     iget v1, p1, Landroid/text/Layout$CursorPosition;->leadingIndex:I
@@ -442,7 +454,7 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/BlockLayout;->getCursorPath(IILandroid/graphics/Path;II)V
 
-    .line 198
+    .line 207
     return-void
 .end method
 
@@ -451,7 +463,7 @@
     .parameter "line"
 
     .prologue
-    .line 262
+    .line 271
     if-ltz p1, :cond_0
 
     iget-object v0, p0, Landroid/text/Layout;->mBlockLayout:Landroid/graphics/BlockLayout;
@@ -462,7 +474,7 @@
 
     if-le p1, v0, :cond_1
 
-    .line 263
+    .line 272
     :cond_0
     new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
 
@@ -470,7 +482,7 @@
 
     throw v0
 
-    .line 265
+    .line 274
     :cond_1
     iget-object v0, p0, Landroid/text/Layout;->mBlockLayout:Landroid/graphics/BlockLayout;
 
@@ -486,7 +498,7 @@
     .parameter "line"
 
     .prologue
-    .line 270
+    .line 279
     if-ltz p1, :cond_0
 
     iget-object v0, p0, Landroid/text/Layout;->mBlockLayout:Landroid/graphics/BlockLayout;
@@ -497,7 +509,7 @@
 
     if-le p1, v0, :cond_1
 
-    .line 271
+    .line 280
     :cond_0
     new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
 
@@ -505,7 +517,7 @@
 
     throw v0
 
-    .line 273
+    .line 282
     :cond_1
     iget-object v0, p0, Landroid/text/Layout;->mBlockLayout:Landroid/graphics/BlockLayout;
 
@@ -520,7 +532,7 @@
     .locals 1
 
     .prologue
-    .line 279
+    .line 288
     iget v0, p0, Landroid/text/Layout;->mEllipsizedWidth:I
 
     return v0
@@ -531,7 +543,7 @@
     .parameter "line"
 
     .prologue
-    .line 173
+    .line 182
     invoke-virtual {p0, p1}, Landroid/text/StaticLayout;->getLineContainsTabDefault(I)Z
 
     move-result v0
@@ -543,7 +555,7 @@
     .locals 1
 
     .prologue
-    .line 142
+    .line 151
     iget-object v0, p0, Landroid/text/Layout;->mBlockLayout:Landroid/graphics/BlockLayout;
 
     invoke-virtual {v0}, Landroid/graphics/BlockLayout;->getLineCount()I
@@ -558,7 +570,7 @@
     .parameter "line"
 
     .prologue
-    .line 152
+    .line 161
     iget-object v0, p0, Landroid/text/Layout;->mBlockLayout:Landroid/graphics/BlockLayout;
 
     invoke-virtual {v0, p1}, Landroid/graphics/BlockLayout;->getLineDescent(I)I
@@ -573,7 +585,7 @@
     .parameter "line"
 
     .prologue
-    .line 178
+    .line 187
     invoke-virtual {p0, p1}, Landroid/text/StaticLayout;->getLineDirectionsDefault(I)Landroid/text/Layout$Directions;
 
     move-result-object v0
@@ -586,7 +598,7 @@
     .parameter "offset"
 
     .prologue
-    .line 202
+    .line 211
     iget v0, p0, Landroid/text/StaticLayout;->mBufferStartDisplay:I
 
     sub-int v0, p1, v0
@@ -603,7 +615,7 @@
     .parameter "vertical"
 
     .prologue
-    .line 137
+    .line 146
     invoke-super {p0, p1}, Landroid/text/Layout;->getLineForVertical(I)I
 
     move-result v0
@@ -616,7 +628,7 @@
     .parameter "line"
 
     .prologue
-    .line 157
+    .line 166
     iget-object v0, p0, Landroid/text/Layout;->mBlockLayout:Landroid/graphics/BlockLayout;
 
     invoke-virtual {v0, p1}, Landroid/graphics/BlockLayout;->getLineStart(I)I
@@ -635,7 +647,7 @@
     .parameter "line"
 
     .prologue
-    .line 147
+    .line 156
     iget-object v0, p0, Landroid/text/Layout;->mBlockLayout:Landroid/graphics/BlockLayout;
 
     invoke-virtual {v0, p1}, Landroid/graphics/BlockLayout;->getLineTop(I)I
@@ -650,7 +662,7 @@
     .parameter "line"
 
     .prologue
-    .line 163
+    .line 172
     invoke-super {p0, p1}, Landroid/text/Layout;->getLineVisibleEnd(I)I
 
     move-result v0
@@ -668,7 +680,7 @@
     .parameter "horiz"
 
     .prologue
-    .line 207
+    .line 216
     invoke-super {p0, p1, p2}, Landroid/text/Layout;->getOffsetForHorizontal(IF)I
 
     move-result v0
@@ -685,12 +697,12 @@
     .parameter "pos"
 
     .prologue
-    .line 215
+    .line 224
     iget v1, p0, Landroid/text/StaticLayout;->mBufferStartDisplay:I
 
     if-eqz v1, :cond_1
 
-    .line 216
+    .line 225
     iget v1, p1, Landroid/text/Layout$CursorPosition;->leadingIndex:I
 
     iget v2, p0, Landroid/text/StaticLayout;->mBufferStartDisplay:I
@@ -699,12 +711,12 @@
 
     iput v1, p1, Landroid/text/Layout$CursorPosition;->leadingIndex:I
 
-    .line 217
+    .line 226
     invoke-virtual {p1}, Landroid/text/Layout$CursorPosition;->getLogicalIndex()I
 
     move-result v0
 
-    .line 218
+    .line 227
     .local v0, logicalIndex:I
     if-ltz v0, :cond_0
 
@@ -716,10 +728,10 @@
 
     if-gt v0, v1, :cond_0
 
-    .line 219
+    .line 228
     invoke-super {p0, p1}, Landroid/text/Layout;->getOffsetToLeftOf(Landroid/text/Layout$CursorPosition;)V
 
-    .line 221
+    .line 230
     :cond_0
     iget v1, p1, Landroid/text/Layout$CursorPosition;->leadingIndex:I
 
@@ -729,12 +741,12 @@
 
     iput v1, p1, Landroid/text/Layout$CursorPosition;->leadingIndex:I
 
-    .line 225
+    .line 234
     .end local v0           #logicalIndex:I
     :goto_0
     return-void
 
-    .line 223
+    .line 232
     :cond_1
     invoke-super {p0, p1}, Landroid/text/Layout;->getOffsetToLeftOf(Landroid/text/Layout$CursorPosition;)V
 
@@ -746,12 +758,12 @@
     .parameter "pos"
 
     .prologue
-    .line 232
+    .line 241
     iget v1, p0, Landroid/text/StaticLayout;->mBufferStartDisplay:I
 
     if-eqz v1, :cond_1
 
-    .line 233
+    .line 242
     iget v1, p1, Landroid/text/Layout$CursorPosition;->leadingIndex:I
 
     iget v2, p0, Landroid/text/StaticLayout;->mBufferStartDisplay:I
@@ -760,12 +772,12 @@
 
     iput v1, p1, Landroid/text/Layout$CursorPosition;->leadingIndex:I
 
-    .line 234
+    .line 243
     invoke-virtual {p1}, Landroid/text/Layout$CursorPosition;->getLogicalIndex()I
 
     move-result v0
 
-    .line 235
+    .line 244
     .local v0, logicalIndex:I
     if-ltz v0, :cond_0
 
@@ -777,10 +789,10 @@
 
     if-gt v0, v1, :cond_0
 
-    .line 236
+    .line 245
     invoke-super {p0, p1}, Landroid/text/Layout;->getOffsetToRightOf(Landroid/text/Layout$CursorPosition;)V
 
-    .line 238
+    .line 247
     :cond_0
     iget v1, p1, Landroid/text/Layout$CursorPosition;->leadingIndex:I
 
@@ -790,12 +802,12 @@
 
     iput v1, p1, Landroid/text/Layout$CursorPosition;->leadingIndex:I
 
-    .line 242
+    .line 251
     .end local v0           #logicalIndex:I
     :goto_0
     return-void
 
-    .line 240
+    .line 249
     :cond_1
     invoke-super {p0, p1}, Landroid/text/Layout;->getOffsetToRightOf(Landroid/text/Layout$CursorPosition;)V
 
@@ -807,7 +819,7 @@
     .parameter "line"
 
     .prologue
-    .line 168
+    .line 177
     iget-object v0, p0, Landroid/text/Layout;->mBlockLayout:Landroid/graphics/BlockLayout;
 
     invoke-virtual {v0, p1}, Landroid/graphics/BlockLayout;->getParagraphDirection(I)I
@@ -822,7 +834,7 @@
     .parameter "offset"
 
     .prologue
-    .line 246
+    .line 255
     iget-object v0, p0, Landroid/text/Layout;->mBlockLayout:Landroid/graphics/BlockLayout;
 
     iget v1, p0, Landroid/text/StaticLayout;->mBufferStartDisplay:I
@@ -843,7 +855,7 @@
     .parameter "offset"
 
     .prologue
-    .line 251
+    .line 260
     iget-object v0, p0, Landroid/text/Layout;->mBlockLayout:Landroid/graphics/BlockLayout;
 
     iget v1, p0, Landroid/text/StaticLayout;->mBufferStartDisplay:I
@@ -866,10 +878,10 @@
     .parameter "dest"
 
     .prologue
-    .line 256
+    .line 265
     iget v0, p0, Landroid/text/StaticLayout;->mBufferStartDisplay:I
 
-    .line 257
+    .line 266
     .local v0, bufstart:I
     sub-int v1, p1, v0
 
@@ -877,7 +889,7 @@
 
     invoke-super {p0, v1, v2, p3}, Landroid/text/Layout;->getSelectionPath(IILandroid/graphics/Path;)V
 
-    .line 258
+    .line 267
     return-void
 .end method
 
@@ -885,7 +897,7 @@
     .locals 1
 
     .prologue
-    .line 183
+    .line 192
     iget-object v0, p0, Landroid/text/Layout;->mBlockLayout:Landroid/graphics/BlockLayout;
 
     invoke-virtual {v0}, Landroid/graphics/BlockLayout;->getTopPadding()I
@@ -895,6 +907,24 @@
     return v0
 .end method
 
+.method initLayout()V
+    .locals 2
+
+    .prologue
+    .line 140
+    invoke-super {p0}, Landroid/text/Layout;->initLayout()V
+
+    .line 141
+    iget-object v0, p0, Landroid/text/Layout;->mBlockLayout:Landroid/graphics/BlockLayout;
+
+    iget v1, p0, Landroid/text/StaticLayout;->mMaximumVisibleLineCount:I
+
+    invoke-virtual {v0, v1}, Landroid/graphics/BlockLayout;->setMaximumVisibleLineCount(I)V
+
+    .line 142
+    return-void
+.end method
+
 .method isValidLine(III)Z
     .locals 1
     .parameter "line"
@@ -902,12 +932,12 @@
     .parameter "max"
 
     .prologue
-    .line 285
+    .line 294
     if-lt p1, p2, :cond_0
 
     if-le p1, p3, :cond_1
 
-    .line 286
+    .line 295
     :cond_0
     new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
 
@@ -915,7 +945,7 @@
 
     throw v0
 
-    .line 289
+    .line 298
     :cond_1
     const/4 v0, 0x1
 

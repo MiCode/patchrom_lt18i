@@ -910,11 +910,11 @@ Kies OK om door te gaan of Annuleren om op de huidige pagina te blijven."</strin
     <string name="low_internal_storage_view_title">Weinig ruimte</string>
     <string name="low_internal_storage_view_text">Opslagruimte van telefoon bijna vol.</string>
     <string name="loading">Laden...</string>
-    <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_on">AAN</string>
+    <string name="capital_off">UIT</string>
     <string name="whichApplication">Actie voltooien met</string>
     <string name="alwaysUse">Standaard gebruiken voor actie.</string>
-    <string name="clearDefaultHintMsg">"Wis standaardinstelling via startscherm: 'Instellingen' > 'Toepassingen' > 'Toepassingen beheren'."</string>
+    <string name="clearDefaultHintMsg">Wis standaardinstelling in Instellingen > Apps.</string>
     <string name="chooseActivity">Een actie selecteren</string>
     <string name="chooseUsbActivity">Selecteer een toepassing voor het USB-apparaat</string>
     <string name="noApplications">Geen enkele toepassing kan deze actie uitvoeren.</string>
@@ -1223,7 +1223,7 @@ voor account '%s'"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM-kaart geblokkeerd</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Voer PUK in</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM-kaart vergrendeld</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Voer de PUK-code van uw operator in</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Voer de PUK-code van uw serviceprovider in</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Neem contact op met de operator</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Voer nieuwe PIN in</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Herhaal nieuwe PIN</string>

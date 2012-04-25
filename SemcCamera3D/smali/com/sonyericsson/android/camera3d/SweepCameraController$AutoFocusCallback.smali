@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 527
+    .line 523
     iput-object p1, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$AutoFocusCallback;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .parameter "x1"
 
     .prologue
-    .line 527
+    .line 523
     invoke-direct {p0, p1}, Lcom/sonyericsson/android/camera3d/SweepCameraController$AutoFocusCallback;-><init>(Lcom/sonyericsson/android/camera3d/SweepCameraController;)V
 
     return-void
@@ -56,12 +56,12 @@
     .prologue
     const/16 v2, 0xb0
 
-    .line 540
+    .line 536
     iget-boolean v0, p1, Lcom/sonyericsson/cameraextension/CameraExtension$AutoFocusResult;->focused:Z
 
     if-eqz v0, :cond_0
 
-    .line 541
+    .line 537
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$AutoFocusCallback;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 
     iget-object v0, v0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mCapturer:Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;
@@ -70,11 +70,11 @@
 
     invoke-virtual {v0, v2, v1, p1}, Lcom/sonyericsson/android/camera3d/Capturer$CapturerContext;->sendEvent(IILjava/lang/Object;)V
 
-    .line 545
+    .line 541
     :goto_0
     return-void
 
-    .line 543
+    .line 539
     :cond_0
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController$AutoFocusCallback;->this$0:Lcom/sonyericsson/android/camera3d/SweepCameraController;
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">カメラ</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">シーン認識</string>
-    <string name="cam_strings_shortcut_normal_txt">ノーマル</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">シーン認識(カメラ)</string>
+    <string name="cam_strings_shortcut_normal_txt">ノーマル(カメラ)</string>
     <string name="cam_strings_shortcut_front_camera_txt">フロントカメラ</string>
     <string name="cam_strings_shortcut_video_camera_txt">ビデオカメラ</string>
     <string name="cam_strings_shortcut_front_video_txt">フロントビデオカメラ</string>
@@ -134,9 +134,9 @@
     <string name="cam_strings_unavailable_in_scene_txt">現在のシーン設定では変更できません</string>
     <string name="cam_strings_unavailable_in_smile_capture_txt">スマイル検出が起動中は変更できません</string>
     <string name="cam_3d_strings_dialog_delete_txt">このファイルを削除しますか?</string>
-    <string name="cam_3d_strings_dialog_delete_include_ma_txt">ﾏﾙﾁｱﾝｸﾞﾙ含む</string>
-    <string name="cam_3d_strings_dialog_delete_include_3d_txt">3D画像含む</string>
-    <string name="cam_3d_strings_dialog_delete_one_category_file_txt">このﾌｧｲﾙのみ</string>
+    <string name="cam_3d_strings_dialog_delete_include_ma_txt">両方</string>
+    <string name="cam_3d_strings_dialog_delete_include_3d_txt">両方</string>
+    <string name="cam_3d_strings_dialog_delete_one_category_file_txt">この画像のみ</string>
     <string name="cam_3d_strings_shortcut_3d_sweep_panorama_txt">3Dスイングパノラマ</string>
     <string name="cam_3d_strings_shortcut_sweep_multi_angle_txt">スイングマルチアングル</string>
     <string name="cam_3d_strings_shortcut_sweep_panorama_txt">スイングパノラマ</string>
@@ -206,11 +206,11 @@
     <string name="cam_3d_strings_shooting_direction_guide_txt">左側のアイコンをタップして撮影方向を変更できます</string>
     <string name="cam_3d_strings_shooting_guide_touch_cap_txt">画面をタップしてゆっくりカメラを動かしてください</string>
     <string name="cam_3d_strings_dialog_loading_txt">ロード中</string>
-    <string name="cam_3d_strings_dialog_delete_3d_with_ma_txt">この3D画像にはマルチアングルの写真があります。両方とも削除しますか？</string>
-    <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">このマルチアングル写真には3D画像もあります。両方とも削除しますか？</string>
+    <string name="cam_3d_strings_dialog_delete_3d_with_ma_txt">この画像はマルチアングルでも保存されています。両方とも削除しますか?</string>
+    <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">この画像は3Dでも保存されています。両方とも削除しますか?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">ﾏﾙﾁｱﾝｸﾞﾙ</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">3Dのみ</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">このモードではHDMI接続中に撮影できません。撮影するにはHDMIケーブルを外してください。</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">ケーブルを外してください。このモードではケーブルを接続中に撮影できません。</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">3Dで画像を見るには、3D対応している機器を使用してください。</string>
     <string name="cam_status_remained_min">%1$d分</string>
     <string name="cam_strings_both_location_fail_txt">現在地を特定できません</string>
@@ -224,7 +224,7 @@
     <string name="cam_strings_wireless_gps_explanatory_title_txt">現在地取得方法</string>
     <string name="cam_strings_file_delete_confirm_title_txt">削除</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">撮影エラー</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMIエラー</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">エラー</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">リモコン利用可</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">削除</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">画像保存中</string>

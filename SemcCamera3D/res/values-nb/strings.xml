@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Motiv-gjenkjenning</string>
-    <string name="cam_strings_shortcut_normal_txt">Normal</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Motivgjenkj. (kamera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normal (kamera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Frontkamera</string>
     <string name="cam_strings_shortcut_video_camera_txt">Videokamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Frontvideo</string>
     <string name="cam_strings_scenes_auto_recog_portrait_txt">Portrett</string>
     <string name="cam_strings_scenes_auto_recog_landscape_txt">Landskap</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_txt">Baklys</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Baklys portrett</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_txt">Motlys</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Motlysportrett</string>
     <string name="cam_strings_scenes_auto_recog_twilight_txt">Nattmotiv</string>
     <string name="cam_strings_scenes_auto_recog_twilight_portrait_txt">Nattportrett</string>
     <string name="cam_strings_scenes_auto_recog_text_txt">Dokument</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Sted hentet med GPS har alltid prioritet fremfor trådløse nettverk. Hvis du vil endre hentemetode, kan du gå til Innstillinger > Sted.</string>
     <string name="cam_strings_do_not_show_again_txt">Ikke vis igjen</string>
     <string name="cam_strings_unavailable_in_scene_txt">Kan ikke endres i kombinasjon med gjeldende motivinnstilling.</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Ikke tilgjengelig mens Smile Shutter™ er aktiv</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Ikke tilgjengelig mens smilegjenkjenning er aktiv</string>
     <string name="cam_3d_strings_dialog_delete_txt">Slette denne filen?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Flervinkelsbilde også</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">3D-fil også</string>
@@ -202,7 +202,7 @@ Merk: Disse filene inneholder et grått område."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Det er også et 3D-bilde for dette flervinkelsbildet. Slette begge?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">BareFl.vinkel</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Bare 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Kan ikke bruke denne modusen med en HDMI-kabel tilkoblet. Ta ut kabelen.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Koble fra kabelen. Du kan ikke ta bilde i denne modusen når en kabel er koblet til.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Bruk en enhet med 3D-støtte for å vise denne filen i 3D</string>
     <string name="cam_status_remained_min">%1$d min</string>
     <string name="cam_strings_both_location_fail_txt">Kan ikke fastslå plassering</string>
@@ -216,7 +216,7 @@ Merk: Disse filene inneholder et grått område."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Hente sted</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Slett</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Kan ikke ta bilde</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI-feil</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Feil</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Fjernkontroll tilgjengelig</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Slett</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Lagrer bilde</string>
@@ -278,9 +278,9 @@ Merk: Disse filene inneholder et grått område."</string>
     <string name="cam_strings_cancel_txt">Avbryt</string>
     <string name="cam_strings_zoom_help_txt">Bruk volumtasten til å zoome inn/ut</string>
     <string name="cam_strings_zoom_not_supported_txt">Kan ikke zoome i denne modusen</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Hvis du vil vise et bilde i 3D, kobler du kameraet til en 3D-TV ved hjelp av HDMI eller ved å ta hurtig på Spill av på-knappen.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Hvis du vil vise et bilde i 3D, må du koble telefonen til en 3D-TV ved hjelp av HDMI eller ved å ta hurtig på knappen Spill av på enhet.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Berør skjermen for å ta opp en video</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">For å vise dette bildet i 3D kobler du telefonen til en 3D-TV ved å ta hurtig på Spill av på-knappen.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Hvis du vil vise dette bildet i 3D, må du koble telefonen til en 3D-TV ved å ta hurtig på knappen Spill av på enhet.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Ingen SD-kort er tilgjengelig. Endret standard lagringsplassering til intern lagring.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">SD-kort er tilgjengelig. Endret standard lagringsplassering til SD-kort.</string>
 </resources>

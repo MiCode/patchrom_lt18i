@@ -395,19 +395,19 @@
 
     const/4 v8, 0x0
 
-    .line 778
+    .line 783
     new-instance v3, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
     invoke-direct {v3}, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;-><init>()V
 
-    .line 780
+    .line 785
     .local v3, param:Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
     if-ne p2, v7, :cond_1
 
-    .line 781
+    .line 786
     sget-object v4, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
-    .line 782
+    .line 787
     .local v4, uri:Landroid/net/Uri;
     new-array v9, v7, [Ljava/lang/String;
 
@@ -417,7 +417,7 @@
 
     iput-object v9, v3, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->projection:[Ljava/lang/String;
 
-    .line 783
+    .line 788
     sget-object v9, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     const-string v10, "%s=%s"
@@ -440,13 +440,13 @@
 
     iput-object v9, v3, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->where:Ljava/lang/String;
 
-    .line 785
+    .line 790
     iput v8, v3, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->offset:I
 
-    .line 786
+    .line 791
     iput v7, v3, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->limit:I
 
-    .line 798
+    .line 803
     :goto_0
     iget-object v9, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mExtendedActivity:Lcom/sonyericsson/android/camera3d/ExtendedActivity;
 
@@ -458,25 +458,25 @@
 
     move-result-object v0
 
-    .line 800
+    .line 805
     .local v0, cursor:Landroid/database/Cursor;
     if-nez v0, :cond_2
 
-    .line 819
+    .line 824
     .end local v0           #cursor:Landroid/database/Cursor;
     .end local v4           #uri:Landroid/net/Uri;
     :cond_0
     :goto_1
     return v8
 
-    .line 787
+    .line 792
     :cond_1
     if-ne p2, v11, :cond_0
 
-    .line 788
+    .line 793
     sget-object v4, Landroid/provider/MediaStore$Video$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
-    .line 789
+    .line 794
     .restart local v4       #uri:Landroid/net/Uri;
     new-array v9, v7, [Ljava/lang/String;
 
@@ -486,7 +486,7 @@
 
     iput-object v9, v3, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->projection:[Ljava/lang/String;
 
-    .line 790
+    .line 795
     sget-object v9, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     const-string v10, "%s=%s"
@@ -509,15 +509,15 @@
 
     iput-object v9, v3, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->where:Ljava/lang/String;
 
-    .line 792
+    .line 797
     iput v8, v3, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->offset:I
 
-    .line 793
+    .line 798
     iput v7, v3, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->limit:I
 
     goto :goto_0
 
-    .line 805
+    .line 810
     .restart local v0       #cursor:Landroid/database/Cursor;
     :cond_2
     const/4 v9, 0x0
@@ -529,18 +529,18 @@
 
     if-eqz v9, :cond_4
 
-    .line 806
+    .line 811
     const/4 v9, 0x0
 
     invoke-interface {v0, v9}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 807
+    .line 812
     .local v2, miniThumbMagic:Ljava/lang/String;
     if-eqz v2, :cond_4
 
-    .line 808
+    .line 813
     invoke-static {v2}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -548,7 +548,7 @@
 
     move-result-wide v5
 
-    .line 810
+    .line 815
     .local v5, value:J
     const-wide/16 v9, 0x0
 
@@ -556,7 +556,7 @@
 
     if-eqz v9, :cond_3
 
-    .line 817
+    .line 822
     :goto_2
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
@@ -567,10 +567,10 @@
     :cond_3
     move v7, v8
 
-    .line 810
+    .line 815
     goto :goto_2
 
-    .line 817
+    .line 822
     .end local v2           #miniThumbMagic:Ljava/lang/String;
     .end local v5           #value:J
     :cond_4
@@ -578,11 +578,11 @@
 
     goto :goto_1
 
-    .line 813
+    .line 818
     :catch_0
     move-exception v1
 
-    .line 814
+    .line 819
     .local v1, e:Ljava/lang/Exception;
     :try_start_1
     const-string v7, "PhotoStackLoader"
@@ -593,7 +593,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 817
+    .line 822
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
     goto :goto_1
@@ -612,7 +612,7 @@
     .parameter "request"
 
     .prologue
-    .line 624
+    .line 629
     new-instance v0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$2;
 
     invoke-direct {v0, p0, p1}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$2;-><init>(Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailDecodeRequest;)V
@@ -635,7 +635,7 @@
     .end annotation
 
     .prologue
-    .line 613
+    .line 618
     .local p1, requests:Ljava/util/List;,"Ljava/util/List<Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailLoadRequest;>;"
     new-instance v0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$1;
 
@@ -651,10 +651,10 @@
     .parameter "targetHeight"
 
     .prologue
-    .line 1102
+    .line 1107
     if-eqz p0, :cond_1
 
-    .line 1112
+    .line 1117
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v3
@@ -665,7 +665,7 @@
 
     if-ge v3, v4, :cond_0
 
-    .line 1114
+    .line 1119
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v3
@@ -678,11 +678,11 @@
 
     div-int/lit8 v1, v3, 0x2
 
-    .line 1115
+    .line 1120
     .local v1, x:I
     const/4 v2, 0x0
 
-    .line 1122
+    .line 1127
     .local v2, y:I
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
 
@@ -696,7 +696,7 @@
 
     move-result-object v0
 
-    .line 1137
+    .line 1142
     .local v0, square:Landroid/graphics/Bitmap;
     :goto_0
     const/4 v3, 0x0
@@ -705,18 +705,18 @@
 
     move-result-object v3
 
-    .line 1139
+    .line 1144
     .end local v0           #square:Landroid/graphics/Bitmap;
     .end local v1           #x:I
     .end local v2           #y:I
     :goto_1
     return-object v3
 
-    .line 1125
+    .line 1130
     :cond_0
     const/4 v1, 0x0
 
-    .line 1126
+    .line 1131
     .restart local v1       #x:I
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
 
@@ -730,7 +730,7 @@
 
     div-int/lit8 v2, v3, 0x2
 
-    .line 1133
+    .line 1138
     .restart local v2       #y:I
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -747,7 +747,7 @@
     .restart local v0       #square:Landroid/graphics/Bitmap;
     goto :goto_0
 
-    .line 1139
+    .line 1144
     .end local v0           #square:Landroid/graphics/Bitmap;
     .end local v1           #x:I
     .end local v2           #y:I
@@ -762,22 +762,22 @@
     .parameter "request"
 
     .prologue
-    .line 710
+    .line 715
     iget-object v1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mExtendedActivity:Lcom/sonyericsson/android/camera3d/ExtendedActivity;
 
     invoke-virtual {v1}, Lcom/sonyericsson/android/camera3d/ExtendedActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 711
+    .line 716
     .local v0, cr:Landroid/content/ContentResolver;
     iget-object v9, p1, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailDecodeRequest;->mThumbnail:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;
 
-    .line 712
+    .line 717
     .local v9, thumbnail:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;
     const/4 v8, 0x0
 
-    .line 714
+    .line 719
     .local v8, thumbBitmap:Landroid/graphics/Bitmap;
     invoke-virtual {v9}, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;->isLoading()Z
 
@@ -785,27 +785,27 @@
 
     if-nez v1, :cond_0
 
-    .line 773
+    .line 778
     :goto_0
     return-void
 
-    .line 718
+    .line 723
     :cond_0
     monitor-enter p0
 
-    .line 719
+    .line 724
     :try_start_0
     invoke-virtual {v9}, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;->getMediaInfo()Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
 
     move-result-object v7
 
-    .line 720
+    .line 725
     .local v7, info:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
     iget-boolean v1, v7, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mExistThumbnail:Z
 
     if-nez v1, :cond_2
 
-    .line 722
+    .line 727
     iget v1, v7, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mId:I
 
     iget v2, v7, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mType:I
@@ -816,12 +816,12 @@
 
     if-nez v1, :cond_5
 
-    .line 729
+    .line 734
     iget-object v1, v7, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mOriginalPath:Ljava/lang/String;
 
     if-nez v1, :cond_1
 
-    .line 730
+    .line 735
     iget v1, v7, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mId:I
 
     iget v2, v7, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mType:I
@@ -832,13 +832,13 @@
 
     iput-object v1, v7, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mOriginalPath:Ljava/lang/String;
 
-    .line 732
+    .line 737
     :cond_1
     invoke-static {v7}, Lcom/sonyericsson/android/camera/photostack/ThumbnailFactory;->createMicroThumbnail(Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;)Landroid/graphics/Bitmap;
 
     move-result-object v8
 
-    .line 742
+    .line 747
     :cond_2
     :goto_1
     iget-boolean v1, v7, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mExistThumbnail:Z
@@ -847,7 +847,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 744
+    .line 749
     :try_start_1
     iget v1, v7, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mType:I
 
@@ -863,7 +863,7 @@
 
     move-result-object v8
 
-    .line 746
+    .line 751
     if-eqz v8, :cond_3
 
     invoke-virtual {v8}, Landroid/graphics/Bitmap;->getWidth()I
@@ -876,7 +876,7 @@
 
     if-eq v1, v2, :cond_3
 
-    .line 747
+    .line 752
     iget v1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mThumbnailSize:I
 
     iget v2, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mThumbnailSize:I
@@ -888,7 +888,7 @@
 
     move-result-object v8
 
-    .line 759
+    .line 764
     :cond_3
     :goto_2
     :try_start_2
@@ -896,10 +896,10 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 761
+    .line 766
     if-nez v8, :cond_4
 
-    .line 762
+    .line 767
     iget-object v1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mExtendedActivity:Lcom/sonyericsson/android/camera3d/ExtendedActivity;
 
     invoke-virtual {v1}, Lcom/sonyericsson/android/camera3d/ExtendedActivity;->getResources()Landroid/content/res/Resources;
@@ -912,14 +912,14 @@
 
     move-result-object v8
 
-    .line 766
+    .line 771
     :cond_4
     if-eqz v8, :cond_6
 
-    .line 767
+    .line 772
     invoke-virtual {v9, v8}, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;->completeLoading(Landroid/graphics/Bitmap;)Z
 
-    .line 772
+    .line 777
     :goto_3
     iget v1, p1, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailDecodeRequest;->mIndex:I
 
@@ -927,19 +927,19 @@
 
     goto :goto_0
 
-    .line 736
+    .line 741
     :cond_5
     const/4 v1, 0x1
 
     :try_start_3
     iput-boolean v1, v7, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mExistThumbnail:Z
 
-    .line 737
+    .line 742
     invoke-virtual {v9, v7}, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;->setMediaInfo(Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;)V
 
     goto :goto_1
 
-    .line 759
+    .line 764
     .end local v7           #info:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
     :catchall_0
     move-exception v1
@@ -950,12 +950,12 @@
 
     throw v1
 
-    .line 750
+    .line 755
     .restart local v7       #info:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
     :catch_0
     move-exception v6
 
-    .line 756
+    .line 761
     .local v6, ex:Ljava/lang/Exception;
     :try_start_4
     const-string v1, "PhotoStackLoader"
@@ -968,7 +968,7 @@
 
     goto :goto_2
 
-    .line 769
+    .line 774
     .end local v6           #ex:Ljava/lang/Exception;
     :cond_6
     invoke-virtual {v9}, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;->cancelLoading()V
@@ -990,19 +990,19 @@
 
     const/4 v9, 0x0
 
-    .line 825
+    .line 830
     new-instance v2, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
     invoke-direct {v2}, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;-><init>()V
 
-    .line 827
+    .line 832
     .local v2, param:Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
     if-ne p2, v10, :cond_1
 
-    .line 828
+    .line 833
     sget-object v3, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
-    .line 829
+    .line 834
     .local v3, uri:Landroid/net/Uri;
     new-array v5, v10, [Ljava/lang/String;
 
@@ -1012,7 +1012,7 @@
 
     iput-object v5, v2, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->projection:[Ljava/lang/String;
 
-    .line 830
+    .line 835
     sget-object v5, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     const-string v6, "%s=%s"
@@ -1035,13 +1035,13 @@
 
     iput-object v5, v2, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->where:Ljava/lang/String;
 
-    .line 832
+    .line 837
     iput v9, v2, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->offset:I
 
-    .line 833
+    .line 838
     iput v10, v2, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->limit:I
 
-    .line 845
+    .line 850
     :goto_0
     iget-object v5, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mExtendedActivity:Lcom/sonyericsson/android/camera3d/ExtendedActivity;
 
@@ -1053,25 +1053,25 @@
 
     move-result-object v0
 
-    .line 847
+    .line 852
     .local v0, cursor:Landroid/database/Cursor;
     if-nez v0, :cond_2
 
-    .line 861
+    .line 866
     .end local v0           #cursor:Landroid/database/Cursor;
     .end local v3           #uri:Landroid/net/Uri;
     :cond_0
     :goto_1
     return-object v4
 
-    .line 834
+    .line 839
     :cond_1
     if-ne p2, v7, :cond_0
 
-    .line 835
+    .line 840
     sget-object v3, Landroid/provider/MediaStore$Video$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
-    .line 836
+    .line 841
     .restart local v3       #uri:Landroid/net/Uri;
     new-array v5, v10, [Ljava/lang/String;
 
@@ -1081,7 +1081,7 @@
 
     iput-object v5, v2, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->projection:[Ljava/lang/String;
 
-    .line 837
+    .line 842
     sget-object v5, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     const-string v6, "%s=%s"
@@ -1104,15 +1104,15 @@
 
     iput-object v5, v2, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->where:Ljava/lang/String;
 
-    .line 839
+    .line 844
     iput v9, v2, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->offset:I
 
-    .line 840
+    .line 845
     iput v10, v2, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->limit:I
 
     goto :goto_0
 
-    .line 852
+    .line 857
     .restart local v0       #cursor:Landroid/database/Cursor;
     :cond_2
     const/4 v5, 0x0
@@ -1124,7 +1124,7 @@
 
     if-eqz v5, :cond_3
 
-    .line 853
+    .line 858
     const/4 v5, 0x0
 
     invoke-interface {v0, v5}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
@@ -1134,7 +1134,7 @@
 
     move-result-object v4
 
-    .line 859
+    .line 864
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
     goto :goto_1
@@ -1144,11 +1144,11 @@
 
     goto :goto_1
 
-    .line 855
+    .line 860
     :catch_0
     move-exception v1
 
-    .line 856
+    .line 861
     .local v1, e:Ljava/lang/RuntimeException;
     :try_start_1
     const-string v5, "PhotoStackLoader"
@@ -1159,7 +1159,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 859
+    .line 864
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
     goto :goto_1
@@ -1177,12 +1177,12 @@
     .locals 3
 
     .prologue
-    .line 516
+    .line 521
     iget-object v1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mState:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$State;
 
     monitor-enter v1
 
-    .line 517
+    .line 522
     :try_start_0
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mState:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$State;
 
@@ -1202,7 +1202,7 @@
 
     goto :goto_0
 
-    .line 518
+    .line 523
     :catchall_0
     move-exception v0
 
@@ -1217,12 +1217,12 @@
     .locals 3
 
     .prologue
-    .line 507
+    .line 512
     iget-object v1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mState:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$State;
 
     monitor-enter v1
 
-    .line 508
+    .line 513
     :try_start_0
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mState:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$State;
 
@@ -1242,7 +1242,7 @@
 
     goto :goto_0
 
-    .line 509
+    .line 514
     :catchall_0
     move-exception v0
 
@@ -1267,7 +1267,7 @@
     .end annotation
 
     .prologue
-    .line 647
+    .line 652
     .local p1, requests:Ljava/util/List;,"Ljava/util/List<Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailLoadRequest;>;"
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1288,21 +1288,21 @@
 
     check-cast v5, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailLoadRequest;
 
-    .line 648
+    .line 653
     .local v5, request:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailLoadRequest;
     iget v1, v5, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailLoadRequest;->mIndex:I
 
-    .line 649
+    .line 654
     .local v1, index:I
     iget-object v6, v5, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailLoadRequest;->mThumbnail:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;
 
-    .line 650
+    .line 655
     .local v6, requestThumbnail:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;
     invoke-virtual {v6}, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;->getMediaInfo()Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
 
     move-result-object v4
 
-    .line 651
+    .line 656
     .local v4, loadedInfo:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
     iget v7, v4, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mId:I
 
@@ -1310,7 +1310,7 @@
 
     const/4 v3, 0x1
 
-    .line 653
+    .line 658
     .local v3, infoIsLoaded:Z
     :goto_1
     invoke-virtual {v6}, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;->isLoading()Z
@@ -1319,15 +1319,15 @@
 
     if-eqz v7, :cond_0
 
-    .line 658
+    .line 663
     iget-boolean v7, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mCanceled:Z
 
     if-eqz v7, :cond_2
 
-    .line 659
+    .line 664
     if-eqz v3, :cond_0
 
-    .line 663
+    .line 668
     new-instance v7, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailDecodeRequest;
 
     invoke-direct {v7, v5}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailDecodeRequest;-><init>(Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailLoadRequest;)V
@@ -1338,37 +1338,37 @@
 
     goto :goto_0
 
-    .line 651
+    .line 656
     .end local v3           #infoIsLoaded:Z
     :cond_1
     const/4 v3, 0x0
 
     goto :goto_1
 
-    .line 666
+    .line 671
     .restart local v3       #infoIsLoaded:Z
     :cond_2
     if-nez v3, :cond_4
 
-    .line 668
+    .line 673
     invoke-virtual {p0, v1}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->getThumbnailInfo(I)Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
 
     move-result-object v2
 
-    .line 669
+    .line 674
     .local v2, info:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
     if-nez v2, :cond_3
 
-    .line 670
+    .line 675
     invoke-virtual {v6}, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;->cancelLoading()V
 
     goto :goto_0
 
-    .line 673
+    .line 678
     :cond_3
     invoke-virtual {v6, v2}, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;->setMediaInfo(Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;)V
 
-    .line 676
+    .line 681
     .end local v2           #info:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
     :cond_4
     invoke-virtual {v6}, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;->getMediaInfo()Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
@@ -1379,7 +1379,7 @@
 
     if-eqz v7, :cond_5
 
-    .line 679
+    .line 684
     new-instance v7, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailDecodeRequest;
 
     invoke-direct {v7, v5}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailDecodeRequest;-><init>(Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailLoadRequest;)V
@@ -1388,7 +1388,7 @@
 
     goto :goto_0
 
-    .line 687
+    .line 692
     :cond_5
     new-instance v7, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailDecodeRequest;
 
@@ -1400,7 +1400,7 @@
 
     goto :goto_0
 
-    .line 697
+    .line 702
     .end local v1           #index:I
     .end local v3           #infoIsLoaded:Z
     .end local v4           #loadedInfo:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
@@ -1409,10 +1409,10 @@
     :cond_6
     invoke-static {}, Lcom/sonyericsson/android/media/panorama3d/provider/Panorama3dMiniThumbFile;->reset()V
 
-    .line 698
+    .line 703
     invoke-static {}, Landroid/media/MiniThumbFile;->reset()V
 
-    .line 699
+    .line 704
     return-void
 .end method
 
@@ -1422,12 +1422,12 @@
     .parameter "delay"
 
     .prologue
-    .line 528
+    .line 533
     const/4 v0, -0x1
 
     iput v0, p1, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$ThumbnailDecodeRequest;->mIndex:I
 
-    .line 530
+    .line 535
     :try_start_0
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mDecodeExecutor:Ljava/util/concurrent/ScheduledExecutorService;
 
@@ -1441,11 +1441,11 @@
     :try_end_0
     .catch Ljava/util/concurrent/RejectedExecutionException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 536
+    .line 541
     :goto_0
     return-void
 
-    .line 533
+    .line 538
     :catch_0
     move-exception v0
 
@@ -1466,7 +1466,7 @@
 
     const/4 v6, 0x0
 
-    .line 917
+    .line 922
     new-instance v0, Landroid/database/MatrixCursor;
 
     const/4 v3, 0x6
@@ -1501,7 +1501,7 @@
 
     invoke-direct {v0, v3}, Landroid/database/MatrixCursor;-><init>([Ljava/lang/String;)V
 
-    .line 925
+    .line 930
     .local v0, cursor:Landroid/database/MatrixCursor;
     iget-object v3, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLocalCache:Ljava/util/LinkedList;
 
@@ -1523,7 +1523,7 @@
 
     check-cast v2, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
 
-    .line 926
+    .line 931
     .local v2, info:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
     const/4 v3, 0x6
 
@@ -1567,7 +1567,7 @@
 
     goto :goto_0
 
-    .line 930
+    .line 935
     .end local v2           #info:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
     :cond_0
     return-object v0
@@ -1581,10 +1581,10 @@
 
     const/4 v5, 0x3
 
-    .line 868
+    .line 873
     const/4 v14, 0x0
 
-    .line 869
+    .line 874
     .local v14, result:Landroid/database/Cursor;
     sget-object v1, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$3;->$SwitchMap$com$sonyericsson$android$camera$photostack$PhotoStack$ContentMode:[I
 
@@ -1598,11 +1598,11 @@
 
     packed-switch v1, :pswitch_data_0
 
-    .line 909
+    .line 914
     :goto_0
     return-object v14
 
-    .line 871
+    .line 876
     :pswitch_0
     new-instance v0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;
 
@@ -1616,7 +1616,7 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;-><init>(Lcom/sonyericsson/android/camera3d/ExtendedActivity;Landroid/net/Uri;Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;IILjava/lang/String;)V
 
-    .line 877
+    .line 882
     .local v0, photoCursor:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;
     new-instance v6, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;
 
@@ -1634,7 +1634,7 @@
 
     invoke-direct/range {v6 .. v12}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;-><init>(Lcom/sonyericsson/android/camera3d/ExtendedActivity;Landroid/net/Uri;Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;IILjava/lang/String;)V
 
-    .line 884
+    .line 889
     .local v6, videoCursor:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;->isEnable()Z
 
@@ -1648,7 +1648,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 886
+    .line 891
     new-instance v14, Lcom/sonyericsson/android/camera3d/util/RandomAccessCursorJoiner;
 
     .end local v14           #result:Landroid/database/Cursor;
@@ -1657,16 +1657,16 @@
     .restart local v14       #result:Landroid/database/Cursor;
     goto :goto_0
 
-    .line 889
+    .line 894
     :cond_0
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;->close()V
 
-    .line 890
+    .line 895
     invoke-virtual {v6}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;->close()V
 
     goto :goto_0
 
-    .line 895
+    .line 900
     .end local v0           #photoCursor:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;
     .end local v6           #videoCursor:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;
     :pswitch_1
@@ -1686,7 +1686,7 @@
 
     invoke-direct/range {v7 .. v13}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;-><init>(Lcom/sonyericsson/android/camera3d/ExtendedActivity;Landroid/net/Uri;Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;IILjava/lang/String;)V
 
-    .line 901
+    .line 906
     .local v7, mpoCursor:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;
     invoke-virtual {v7}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;->isEnable()Z
 
@@ -1694,18 +1694,18 @@
 
     if-eqz v1, :cond_1
 
-    .line 902
+    .line 907
     move-object v14, v7
 
     goto :goto_0
 
-    .line 904
+    .line 909
     :cond_1
     invoke-virtual {v7}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$OrderedPagingCursor;->close()V
 
     goto :goto_0
 
-    .line 869
+    .line 874
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -1718,12 +1718,12 @@
     .locals 6
 
     .prologue
-    .line 1026
+    .line 1031
     iget-object v4, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mExtendedActivity:Lcom/sonyericsson/android/camera3d/ExtendedActivity;
 
     if-eqz v4, :cond_0
 
-    .line 1027
+    .line 1032
     iget-object v4, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mExtendedActivity:Lcom/sonyericsson/android/camera3d/ExtendedActivity;
 
     invoke-virtual {v4}, Lcom/sonyericsson/android/camera3d/ExtendedActivity;->getMainLooper()Landroid/os/Looper;
@@ -1738,7 +1738,7 @@
 
     move-result-wide v2
 
-    .line 1028
+    .line 1033
     .local v2, mainThreadId:J
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
@@ -1748,13 +1748,13 @@
 
     move-result-wide v0
 
-    .line 1029
+    .line 1034
     .local v0, currThreadId:J
     cmp-long v4, v2, v0
 
     if-eqz v4, :cond_0
 
-    .line 1030
+    .line 1035
     new-instance v4, Ljava/lang/IllegalThreadStateException;
 
     const-string v5, "This method should be call in UI thread."
@@ -1763,7 +1763,7 @@
 
     throw v4
 
-    .line 1033
+    .line 1038
     .end local v0           #currThreadId:J
     .end local v2           #mainThreadId:J
     :cond_0
@@ -1777,12 +1777,12 @@
     .parameter "info"
 
     .prologue
-    .line 1064
+    .line 1069
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLocalCache:Ljava/util/LinkedList;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedList;->addFirst(Ljava/lang/Object;)V
 
-    .line 1065
+    .line 1070
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLocalCache:Ljava/util/LinkedList;
 
     invoke-virtual {v0}, Ljava/util/LinkedList;->size()I
@@ -1793,12 +1793,12 @@
 
     if-le v0, v1, :cond_0
 
-    .line 1066
+    .line 1071
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLocalCache:Ljava/util/LinkedList;
 
     invoke-virtual {v0}, Ljava/util/LinkedList;->removeLast()Ljava/lang/Object;
 
-    .line 1068
+    .line 1073
     :cond_0
     return-void
 .end method
@@ -1839,7 +1839,29 @@
 
     iput-boolean v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mCanceled:Z
 
+    .line 252
+    iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mDecodeExecutor:Ljava/util/concurrent/ScheduledExecutorService;
+
+    invoke-interface {v0}, Ljava/util/concurrent/ScheduledExecutorService;->isShutdown()Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
     .line 253
+    iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mDecodeExecutor:Ljava/util/concurrent/ScheduledExecutorService;
+
+    invoke-interface {v0}, Ljava/util/concurrent/ScheduledExecutorService;->shutdownNow()Ljava/util/List;
+
+    .line 254
+    invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadScheduledExecutor()Ljava/util/concurrent/ScheduledExecutorService;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mDecodeExecutor:Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 258
+    :cond_1
     return-void
 .end method
 
@@ -1847,17 +1869,17 @@
     .locals 1
 
     .prologue
-    .line 1085
+    .line 1090
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLocalCache:Ljava/util/LinkedList;
 
     if-eqz v0, :cond_0
 
-    .line 1086
+    .line 1091
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLocalCache:Ljava/util/LinkedList;
 
     invoke-virtual {v0}, Ljava/util/LinkedList;->clear()V
 
-    .line 1088
+    .line 1093
     :cond_0
     return-void
 .end method
@@ -1866,7 +1888,7 @@
     .locals 1
 
     .prologue
-    .line 1097
+    .line 1102
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mContentMode:Lcom/sonyericsson/android/camera/photostack/PhotoStack$ContentMode;
 
     return-object v0
@@ -1876,23 +1898,23 @@
     .locals 2
 
     .prologue
-    .line 410
+    .line 415
     iget-object v1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMediaCS:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 411
+    .line 416
     :try_start_0
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMedia:Landroid/database/Cursor;
 
     if-nez v0, :cond_0
 
-    .line 412
+    .line 417
     const/4 v0, 0x0
 
     monitor-exit v1
 
-    .line 414
+    .line 419
     :goto_0
     return v0
 
@@ -1907,7 +1929,7 @@
 
     goto :goto_0
 
-    .line 416
+    .line 421
     :catchall_0
     move-exception v0
 
@@ -1923,14 +1945,14 @@
     .parameter "index"
 
     .prologue
-    .line 423
+    .line 428
     move-object/from16 v0, p0
 
     iget-object v13, v0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMediaCS:Ljava/lang/Object;
 
     monitor-enter v13
 
-    .line 426
+    .line 431
     :try_start_0
     move-object/from16 v0, p0
 
@@ -1938,16 +1960,16 @@
 
     if-nez v12, :cond_0
 
-    .line 427
+    .line 432
     const/4 v3, 0x0
 
     monitor-exit v13
 
-    .line 492
+    .line 497
     :goto_0
     return-object v3
 
-    .line 428
+    .line 433
     :cond_0
     move-object/from16 v0, p0
 
@@ -1961,14 +1983,14 @@
 
     if-nez v12, :cond_1
 
-    .line 429
+    .line 434
     const/4 v3, 0x0
 
     monitor-exit v13
 
     goto :goto_0
 
-    .line 493
+    .line 498
     :catchall_0
     move-exception v12
 
@@ -1978,7 +2000,7 @@
 
     throw v12
 
-    .line 434
+    .line 439
     :cond_1
     :try_start_1
     move-object/from16 v0, p0
@@ -1991,7 +2013,7 @@
 
     move-result v7
 
-    .line 435
+    .line 440
     .local v7, thumbID:I
     move-object/from16 v0, p0
 
@@ -2003,7 +2025,7 @@
 
     move-result-object v4
 
-    .line 436
+    .line 441
     .local v4, mime:Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -2015,7 +2037,7 @@
 
     move-result-object v1
 
-    .line 437
+    .line 442
     .local v1, data:Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -2027,7 +2049,7 @@
 
     move-result-object v5
 
-    .line 441
+    .line 446
     .local v5, miniThumbMagic:Ljava/lang/String;
     const-string v12, "image/jpeg"
 
@@ -2037,7 +2059,7 @@
 
     if-eqz v12, :cond_3
 
-    .line 442
+    .line 447
     sget-object v12, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v7}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -2048,18 +2070,18 @@
 
     move-result-object v9
 
-    .line 444
+    .line 449
     .local v9, uriOriginal:Landroid/net/Uri;
     const/4 v8, 0x1
 
-    .line 464
+    .line 469
     .local v8, type:I
     :goto_1
     const/4 v12, 0x1
 
     if-ne v8, v12, :cond_7
 
-    .line 465
+    .line 470
     move-object/from16 v0, p0
 
     iget-object v12, v0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMedia:Landroid/database/Cursor;
@@ -2073,16 +2095,16 @@
 
     move-result v6
 
-    .line 470
+    .line 475
     .local v6, orientDeg:I
     :goto_2
     const/4 v2, 0x0
 
-    .line 471
+    .line 476
     .local v2, existThumbnail:Z
     if-eqz v5, :cond_2
 
-    .line 473
+    .line 478
     :try_start_2
     invoke-static {v5}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
     :try_end_2
@@ -2091,7 +2113,7 @@
 
     move-result-wide v10
 
-    .line 474
+    .line 479
     .local v10, value:J
     const-wide/16 v14, 0x0
 
@@ -2101,7 +2123,7 @@
 
     const/4 v2, 0x1
 
-    .line 480
+    .line 485
     .end local v10           #value:J
     :cond_2
     :goto_3
@@ -2110,32 +2132,32 @@
 
     invoke-direct {v3}, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;-><init>()V
 
-    .line 481
+    .line 486
     .local v3, info:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
     iput v7, v3, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mId:I
 
-    .line 482
+    .line 487
     iput-object v9, v3, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mOriginalUri:Landroid/net/Uri;
 
-    .line 483
+    .line 488
     iput-object v1, v3, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mOriginalPath:Ljava/lang/String;
 
-    .line 484
+    .line 489
     iput v8, v3, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mType:I
 
-    .line 485
+    .line 490
     iput v6, v3, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mOrientation:I
 
-    .line 486
+    .line 491
     iput-object v4, v3, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mMimeType:Ljava/lang/String;
 
-    .line 487
+    .line 492
     iput-boolean v2, v3, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mExistThumbnail:Z
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
 
-    .line 488
+    .line 493
     :try_start_4
     monitor-exit v13
     :try_end_4
@@ -2143,7 +2165,7 @@
 
     goto :goto_0
 
-    .line 445
+    .line 450
     .end local v2           #existThumbnail:Z
     .end local v3           #info:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
     .end local v6           #orientDeg:I
@@ -2159,7 +2181,7 @@
 
     if-eqz v12, :cond_4
 
-    .line 446
+    .line 451
     sget-object v12, Landroid/provider/MediaStore$Video$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v7}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -2170,14 +2192,14 @@
 
     move-result-object v9
 
-    .line 448
+    .line 453
     .restart local v9       #uriOriginal:Landroid/net/Uri;
     const/4 v8, 0x2
 
     .restart local v8       #type:I
     goto :goto_1
 
-    .line 449
+    .line 454
     .end local v8           #type:I
     .end local v9           #uriOriginal:Landroid/net/Uri;
     :cond_4
@@ -2189,7 +2211,7 @@
 
     if-eqz v12, :cond_5
 
-    .line 450
+    .line 455
     sget-object v12, Landroid/provider/MediaStore$Video$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v7}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -2200,14 +2222,14 @@
 
     move-result-object v9
 
-    .line 452
+    .line 457
     .restart local v9       #uriOriginal:Landroid/net/Uri;
     const/4 v8, 0x2
 
     .restart local v8       #type:I
     goto :goto_1
 
-    .line 453
+    .line 458
     .end local v8           #type:I
     .end local v9           #uriOriginal:Landroid/net/Uri;
     :cond_5
@@ -2219,7 +2241,7 @@
 
     if-eqz v12, :cond_6
 
-    .line 454
+    .line 459
     sget-object v12, Lcom/sonyericsson/android/camera/photostack/QueryParameterAdapter;->MPO_3DPICTURES_CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v7}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -2233,14 +2255,14 @@
 
     move-result-object v9
 
-    .line 457
+    .line 462
     .restart local v9       #uriOriginal:Landroid/net/Uri;
     const/4 v8, 0x3
 
     .restart local v8       #type:I
     goto :goto_1
 
-    .line 460
+    .line 465
     .end local v8           #type:I
     .end local v9           #uriOriginal:Landroid/net/Uri;
     :cond_6
@@ -2251,7 +2273,7 @@
 
     goto/16 :goto_0
 
-    .line 467
+    .line 472
     .restart local v8       #type:I
     .restart local v9       #uriOriginal:Landroid/net/Uri;
     :cond_7
@@ -2260,7 +2282,7 @@
     .restart local v6       #orientDeg:I
     goto :goto_2
 
-    .line 474
+    .line 479
     .restart local v2       #existThumbnail:Z
     .restart local v10       #value:J
     :cond_8
@@ -2268,7 +2290,7 @@
 
     goto :goto_3
 
-    .line 489
+    .line 494
     .end local v1           #data:Ljava/lang/String;
     .end local v2           #existThumbnail:Z
     .end local v4           #mime:Ljava/lang/String;
@@ -2281,7 +2303,7 @@
     :catch_0
     move-exception v12
 
-    .line 492
+    .line 497
     const/4 v3, 0x0
 
     monitor-exit v13
@@ -2290,7 +2312,7 @@
 
     goto/16 :goto_0
 
-    .line 475
+    .line 480
     .restart local v1       #data:Ljava/lang/String;
     .restart local v2       #existThumbnail:Z
     .restart local v4       #mime:Ljava/lang/String;
@@ -2309,12 +2331,12 @@
     .locals 2
 
     .prologue
-    .line 293
+    .line 298
     iget-object v1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLockCountCS:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 294
+    .line 299
     :try_start_0
     iget v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLockCount:I
 
@@ -2332,7 +2354,7 @@
 
     goto :goto_0
 
-    .line 295
+    .line 300
     :catchall_0
     move-exception v0
 
@@ -2347,26 +2369,26 @@
     .locals 2
 
     .prologue
-    .line 261
+    .line 266
     iget-object v1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLockCountCS:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 262
+    .line 267
     :try_start_0
     iget v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLockCount:I
 
     if-gtz v0, :cond_0
 
-    .line 263
+    .line 268
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLockCount:I
 
-    .line 264
+    .line 269
     invoke-virtual {p0}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->cancel()V
 
-    .line 266
+    .line 271
     :cond_0
     iget v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLockCount:I
 
@@ -2374,13 +2396,13 @@
 
     iput v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLockCount:I
 
-    .line 267
+    .line 272
     monitor-exit v1
 
-    .line 269
+    .line 274
     return-void
 
-    .line 267
+    .line 272
     :catchall_0
     move-exception v0
 
@@ -2397,12 +2419,12 @@
     .parameter "thumbnail"
 
     .prologue
-    .line 500
+    .line 505
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mListener:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$PhotoStackLoaderListener;
 
     invoke-interface {v0, p0, p1, p2}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$PhotoStackLoaderListener;->onLoaded(Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;ILcom/sonyericsson/android/camera/photostack/ThumbnailCache$Thumbnail;)V
 
-    .line 501
+    .line 506
     return-void
 .end method
 
@@ -2410,25 +2432,25 @@
     .locals 2
 
     .prologue
-    .line 335
+    .line 340
     sget-object v0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$State;->Pause:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$State;
 
     iput-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mState:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$State;
 
-    .line 336
+    .line 341
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMainHandler:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$MainHandler;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$MainHandler;->cancelReload()V
 
-    .line 337
+    .line 342
     invoke-virtual {p0}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->cancel()V
 
-    .line 338
+    .line 343
     iget-object v1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMediaCS:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 339
+    .line 344
     :try_start_0
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMedia:Landroid/database/Cursor;
 
@@ -2442,24 +2464,24 @@
 
     if-nez v0, :cond_0
 
-    .line 340
+    .line 345
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMedia:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
-    .line 342
+    .line 347
     :cond_0
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMedia:Landroid/database/Cursor;
 
-    .line 343
+    .line 348
     monitor-exit v1
 
-    .line 344
+    .line 349
     return-void
 
-    .line 343
+    .line 348
     :catchall_0
     move-exception v0
 
@@ -2474,18 +2496,18 @@
     .locals 2
 
     .prologue
-    .line 305
+    .line 310
     invoke-direct {p0}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->isPaused()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 326
+    .line 331
     :goto_0
     return-void
 
-    .line 314
+    .line 319
     :cond_0
     sget-object v0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$3;->$SwitchMap$com$sonyericsson$android$camera$photostack$PhotoStack$SecurityLevel:[I
 
@@ -2499,20 +2521,20 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 322
+    .line 327
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMainHandler:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$MainHandler;
 
     invoke-virtual {v0}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$MainHandler;->requestReload()V
 
     goto :goto_0
 
-    .line 316
+    .line 321
     :pswitch_0
     iget-object v1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMediaCS:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 317
+    .line 322
     :try_start_0
     invoke-direct {p0}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->searchFromLocalCache()Landroid/database/Cursor;
 
@@ -2520,7 +2542,7 @@
 
     iput-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMedia:Landroid/database/Cursor;
 
-    .line 318
+    .line 323
     monitor-exit v1
 
     goto :goto_0
@@ -2534,7 +2556,7 @@
 
     throw v0
 
-    .line 314
+    .line 319
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -2546,7 +2568,7 @@
     .parameter "info"
 
     .prologue
-    .line 1071
+    .line 1076
     const/4 v1, 0x0
 
     .local v1, i:I
@@ -2559,7 +2581,7 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 1072
+    .line 1077
     iget-object v2, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLocalCache:Ljava/util/LinkedList;
 
     invoke-virtual {v2, v1}, Ljava/util/LinkedList;->get(I)Ljava/lang/Object;
@@ -2568,7 +2590,7 @@
 
     check-cast v0, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
 
-    .line 1073
+    .line 1078
     .local v0, cacheInfo:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
     iget v2, v0, Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;->mId:I
 
@@ -2576,17 +2598,17 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 1074
+    .line 1079
     iget-object v2, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLocalCache:Ljava/util/LinkedList;
 
     invoke-virtual {v2, v1}, Ljava/util/LinkedList;->remove(I)Ljava/lang/Object;
 
-    .line 1078
+    .line 1083
     .end local v0           #cacheInfo:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
     :cond_0
     return-void
 
-    .line 1071
+    .line 1076
     .restart local v0       #cacheInfo:Lcom/sonyericsson/android/camera/photostack/ThumbnailCache$MediaInfo;
     :cond_1
     add-int/lit8 v1, v1, 0x1
@@ -2601,12 +2623,12 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 351
+    .line 356
     new-instance v1, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;
 
     invoke-direct {v1, p0, p1}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;-><init>(Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$RequeryListener;)V
 
-    .line 352
+    .line 357
     .local v1, task:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;
     iget-object v2, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mRequeryTaskQueue:Ljava/util/LinkedList;
 
@@ -2618,7 +2640,7 @@
 
     if-ne v2, v3, :cond_0
 
-    .line 353
+    .line 358
     iget-object v2, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mRequeryTaskQueue:Ljava/util/LinkedList;
 
     invoke-virtual {v2}, Ljava/util/LinkedList;->removeFirst()Ljava/lang/Object;
@@ -2627,23 +2649,23 @@
 
     check-cast v0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;
 
-    .line 354
+    .line 359
     .local v0, removeTask:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;
     invoke-virtual {v0, v4}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;->cancel(Z)Z
 
-    .line 356
+    .line 361
     .end local v0           #removeTask:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;
     :cond_0
     iget-object v2, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mRequeryTaskQueue:Ljava/util/LinkedList;
 
     invoke-virtual {v2, v1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
-    .line 357
+    .line 362
     new-array v2, v4, [Ljava/lang/Void;
 
     invoke-virtual {v1, v2}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 358
+    .line 363
     return-void
 .end method
 
@@ -2709,7 +2731,7 @@
     .locals 3
 
     .prologue
-    .line 400
+    .line 405
     iget-object v2, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mRequeryTaskQueue:Ljava/util/LinkedList;
 
     invoke-virtual {v2}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
@@ -2730,7 +2752,7 @@
 
     check-cast v1, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;
 
-    .line 401
+    .line 406
     .local v1, task:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;
     const/4 v2, 0x0
 
@@ -2738,14 +2760,14 @@
 
     goto :goto_0
 
-    .line 403
+    .line 408
     .end local v1           #task:Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader$AsyncRequeryTask;
     :cond_0
     iget-object v2, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mRequeryTaskQueue:Ljava/util/LinkedList;
 
     invoke-virtual {v2}, Ljava/util/LinkedList;->clear()V
 
-    .line 404
+    .line 409
     return-void
 .end method
 
@@ -2754,10 +2776,10 @@
     .parameter "contentMode"
 
     .prologue
-    .line 1092
+    .line 1097
     iput-object p1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mContentMode:Lcom/sonyericsson/android/camera/photostack/PhotoStack$ContentMode;
 
-    .line 1093
+    .line 1098
     invoke-static {}, Lcom/sonyericsson/android/camera3d/DcfPathBuilder;->getInstance()Lcom/sonyericsson/android/camera3d/DcfPathBuilder;
 
     move-result-object v0
@@ -2768,7 +2790,7 @@
 
     invoke-virtual {p0, v0}, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->setupQueryParam(Ljava/lang/String;)V
 
-    .line 1094
+    .line 1099
     return-void
 .end method
 
@@ -2787,14 +2809,14 @@
 
     const/4 v5, 0x0
 
-    .line 546
+    .line 551
     new-instance v0, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
     invoke-direct {v0}, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;-><init>()V
 
     iput-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mPhotoQueryParam:Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
-    .line 547
+    .line 552
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mPhotoQueryParam:Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
     const/4 v1, 0x6
@@ -2829,7 +2851,7 @@
 
     iput-object v1, v0, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->projection:[Ljava/lang/String;
 
-    .line 555
+    .line 560
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mPhotoQueryParam:Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
@@ -2848,7 +2870,7 @@
 
     iput-object v1, v0, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->sortOrder:Ljava/lang/String;
 
-    .line 557
+    .line 562
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mPhotoQueryParam:Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
@@ -2883,14 +2905,14 @@
 
     iput-object v1, v0, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->where:Ljava/lang/String;
 
-    .line 566
+    .line 571
     new-instance v0, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
     invoke-direct {v0}, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;-><init>()V
 
     iput-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mVideoQueryParam:Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
-    .line 567
+    .line 572
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mVideoQueryParam:Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
     const/4 v1, 0x5
@@ -2919,7 +2941,7 @@
 
     iput-object v1, v0, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->projection:[Ljava/lang/String;
 
-    .line 574
+    .line 579
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mVideoQueryParam:Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
@@ -2938,7 +2960,7 @@
 
     iput-object v1, v0, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->sortOrder:Ljava/lang/String;
 
-    .line 576
+    .line 581
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mVideoQueryParam:Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
@@ -2967,14 +2989,14 @@
 
     iput-object v1, v0, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->where:Ljava/lang/String;
 
-    .line 584
+    .line 589
     new-instance v0, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
     invoke-direct {v0}, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;-><init>()V
 
     iput-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMpoQueryParam:Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
-    .line 585
+    .line 590
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMpoQueryParam:Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
     const/4 v1, 0x6
@@ -3009,7 +3031,7 @@
 
     iput-object v1, v0, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->projection:[Ljava/lang/String;
 
-    .line 593
+    .line 598
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMpoQueryParam:Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
@@ -3028,7 +3050,7 @@
 
     iput-object v1, v0, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->sortOrder:Ljava/lang/String;
 
-    .line 596
+    .line 601
     sget-object v0, Lcom/sonyericsson/android/camera/photostack/PhotoStack$ContentMode;->MULTI_ANGLE:Lcom/sonyericsson/android/camera/photostack/PhotoStack$ContentMode;
 
     iget-object v1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mContentMode:Lcom/sonyericsson/android/camera/photostack/PhotoStack$ContentMode;
@@ -3039,7 +3061,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 597
+    .line 602
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMpoQueryParam:Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
@@ -3062,12 +3084,12 @@
 
     iput-object v1, v0, Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;->where:Ljava/lang/String;
 
-    .line 607
+    .line 612
     :cond_0
     :goto_0
     return-void
 
-    .line 601
+    .line 606
     :cond_1
     sget-object v0, Lcom/sonyericsson/android/camera/photostack/PhotoStack$ContentMode;->PANORAMA_3D:Lcom/sonyericsson/android/camera/photostack/PhotoStack$ContentMode;
 
@@ -3079,7 +3101,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 602
+    .line 607
     iget-object v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mMpoQueryParam:Lcom/sonyericsson/android/camera3d/util/CrQueryParameter;
 
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
@@ -3111,12 +3133,12 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 276
+    .line 281
     iget-object v1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLockCountCS:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 277
+    .line 282
     :try_start_0
     iget v2, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLockCount:I
 
@@ -3124,22 +3146,22 @@
 
     iput v2, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLockCount:I
 
-    .line 278
+    .line 283
     iget v2, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLockCount:I
 
     if-gtz v2, :cond_0
 
-    .line 279
+    .line 284
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mLockCount:I
 
-    .line 281
+    .line 286
     const/4 v0, 0x1
 
     monitor-exit v1
 
-    .line 284
+    .line 289
     :goto_0
     return v0
 
@@ -3148,7 +3170,7 @@
 
     goto :goto_0
 
-    .line 285
+    .line 290
     :catchall_0
     move-exception v0
 
@@ -3164,9 +3186,9 @@
     .parameter "securityLevel"
 
     .prologue
-    .line 1081
+    .line 1086
     iput-object p1, p0, Lcom/sonyericsson/android/camera/photostack/PhotoStackLoader;->mSecurityLevel:Lcom/sonyericsson/android/camera/photostack/PhotoStack$SecurityLevel;
 
-    .line 1082
+    .line 1087
     return-void
 .end method

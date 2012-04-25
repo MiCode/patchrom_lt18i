@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">กล้อง</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">การรู้จำฉาก</string>
-    <string name="cam_strings_shortcut_normal_txt">ปกติ</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">การเลือกฉาก (กล้อง)</string>
+    <string name="cam_strings_shortcut_normal_txt">ปกติ (กล้อง)</string>
     <string name="cam_strings_shortcut_front_camera_txt">โหมดกล้องด้านหน้า</string>
     <string name="cam_strings_shortcut_video_camera_txt">กล้องวิดีโอ</string>
     <string name="cam_strings_shortcut_front_video_txt">กล้องวิดีโอด้านหน้า</string>
@@ -120,7 +120,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">ตำแหน่งที่ตั้งที่ได้รับจาก GPS จะมีความสำคัญกว่าเครือข่าย ไร้สายเสมอ หากต้องการเปลี่ยนวิธีรับตำแหน่งที่ตั้งของคุณ ให้ไปที่ การตั้งค่า > ตำแหน่งที่ตั้ง</string>
     <string name="cam_strings_do_not_show_again_txt">ไม่ต้องแสดงอีก</string>
     <string name="cam_strings_unavailable_in_scene_txt">เปลี่ยนแปลงไม่ได้เมื่อใช้ร่วมกับการตั้งค่าฉาก ปัจจุบัน</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">ไม่พร้อมใช้งานเมื่อ Smile Shutter™ ทำงาน</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">ใช้งานไม่ได้เมื่อการตรวจจับรอยยิ้มทำงานอยู่</string>
     <string name="cam_3d_strings_dialog_delete_txt">ลบไฟล์นี้?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">ไฟล์หลายมุมด้วย</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">ไฟล์ 3D ด้วย</string>
@@ -200,7 +200,9 @@
 หลายมุมนี้อีกหนึ่งภาพ ลบทั้งสองภาพ?"</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">เฉพาะM.Ang.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">3D เท่านั้น</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">ไม่สามารถใช้โหมดนี้หากเชื่อมต่อสาย HDMI โปรดถอดสายดังกล่าว</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">"ถอดสายเคเบิล คุณไม่สามารถ
+ถ่ายภาพในโหมดนี้ได้โดยที่
+สายเคเบิลยังเชื่อมต่ออยู่"</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">หากต้องการดูไฟล์นี้ในรูปแบบ 3 มิติ โปรดใช้อุปกรณ์ที่รองรับระบบ 3 มิติ</string>
     <string name="cam_status_remained_min">%1$d นาที</string>
     <string name="cam_strings_both_location_fail_txt">ไม่สามารถกำหนดตำแหน่ง</string>
@@ -214,14 +216,14 @@
     <string name="cam_strings_wireless_gps_explanatory_title_txt">วิธีรับตำแหน่งที่ตั้ง</string>
     <string name="cam_strings_file_delete_confirm_title_txt">ลบ</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">ไม่สามารถถ่ายภาพได้</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI เกิดข้อผิดพลาด</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">เกิดข้อผิดพลาด</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">ใช้งานรีโมตคอนโทรลได้</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">ลบ</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">กำลังบันทึกภาพ</string>
     <string name="cam_strings_error_message_during_voice_call_title_txt">ในระหว่างสายสนทนา</string>
     <string name="cam_strings_touch_capture_gude_txt">สัมผัสหน้าจอเพื่อถ่ายภาพ</string>
     <string name="cam_3d_strings_album_application_name_txt">อัลบั้มภาพ 3 มิติ</string>
-    <string name="cam_strings_capturing_mode_scene_recognition_short_txt">การรู้จำฉาก</string>
+    <string name="cam_strings_capturing_mode_scene_recognition_short_txt">การเลือกฉาก</string>
     <string name="cam_strings_capturing_mode_normal_short_txt">ปกติ</string>
     <string name="cam_strings_capturing_mode_front_camera_short_txt">โหมดกล้องด้านหน้า</string>
     <string name="cam_strings_capturing_mode_video_camera_short_txt">กล้องวิดีโอ</string>
@@ -287,9 +289,9 @@
     <string name="cam_strings_cancel_txt">ยกเลิก</string>
     <string name="cam_strings_zoom_help_txt">ใช้ปุ่มปรับระดับเสียงเพื่อซูมเข้า/ออก</string>
     <string name="cam_strings_zoom_not_supported_txt">ไม่สามารถซูมได้ในโหมดนี้</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">หากต้องการดูภาพถ่ายในแบบ 3D ให้เชื่อมต่อกล้องของคุณเข้ากับ TV ระบบ 3D โดยใช้ HDMI หรือแตะที่ปุ่ม เล่นบน</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">หากต้องการดูภาพถ่ายในแบบ 3D ให้เชื่อมต่อโทรศัพท์ของคุณเข้ากับ TV ระบบ 3D โดยใช้ HDMI หรือแตะที่ปุ่ม เล่นบนอุปกรณ์</string>
     <string name="cam_strings_touch_capture_gude_video_txt">แตะหน้าจอเพื่อบันทึกวิดีโอ</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">หากต้องการดูภาพถ่ายนี้ในแบบ 3D ให้เชื่อมต่อโทรศัพท์ของคุณเข้ากับ TV ระบบ 3D โดยการแตะที่ปุ่ม เล่นบน</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">หากต้องการดูภาพถ่ายนี้ในแบบ 3D ให้เชื่อมต่อโทรศัพท์ของคุณเข้ากับ TV ระบบ 3D โดยการแตะที่ปุ่ม เล่นบนอุปกรณ์</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">"ไม่มีการ์ด SD ที่ใช้งานได้ เปลี่ยนตำแหน่งการบันทึกเริ่มต้น
 เป็นที่เก็บข้อมูลภายใน"</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">"การ์ด SD ใช้งานได้ เปลี่ยนตำแหน่งการบันทึกเริ่มต้น

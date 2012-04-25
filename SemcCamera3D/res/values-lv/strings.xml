@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Sižeta atpazīšana</string>
-    <string name="cam_strings_shortcut_normal_txt">Parasts</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Siž. atpazīšana (kamera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Parasts (kamera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Priekšējā kamera</string>
     <string name="cam_strings_shortcut_video_camera_txt">Videokamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Priekšējā videokamera</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Ar GPS noteiktai atrašanās vietai vienmēr ir prioritāte attiecībā pret bezvadu tīkliem. Lai mainītu atrašanās vietas noteikšanas metodi, pārejiet uz Iestatījumi > Atrašanās vieta.</string>
     <string name="cam_strings_do_not_show_again_txt">Vairs nerādīt</string>
     <string name="cam_strings_unavailable_in_scene_txt">Nav pieejama kombinācijā ar pašreizējo Sižeta iestatījumu.</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Nav pieejams, ja ir aktīva funkcija Smile Shutter™</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Nav pieejams, ja ir aktīva smaida noteikšana</string>
     <string name="cam_3d_strings_dialog_delete_txt">Vai dzēst šo failu?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Arī Multi Angle</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Arī 3D failu</string>
@@ -202,7 +202,7 @@ Piezīme. Šajos failos ir pelēks apgabals."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Šim Multi Angle attēlam ir arī 3D fotoattēls. Vai izdzēst abus?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Tikai M.Ang.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Tikai 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Šo režīmu nevar izmantot, kad ir pievienots HDMI kabelis. Lūdzu, atvienojiet kabeli.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Atvienojiet kabeli. Šajā režīmā nevar uzņemt fotoattēlu, ja ir pievienots kabelis.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Lai skatītu šo failu 3D formātā, izm. ierīci, kas atbalsta 3D iesp.</string>
     <string name="cam_status_remained_min">%1$d min</string>
     <string name="cam_strings_both_location_fail_txt">Nevar noteikt atrašanās vietu</string>
@@ -216,7 +216,7 @@ Piezīme. Šajos failos ir pelēks apgabals."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Kā noteikt atrašanās vietu</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Dzēšana</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Nevarēja uzņemt</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI kļūda</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Kļūda</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Pieejama tālvadība</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Dzēšana</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Tiek saglabāts attēls</string>
@@ -280,9 +280,9 @@ Piezīme. Šajos failos ir pelēks apgabals."</string>
     <string name="cam_strings_cancel_txt">Atcelt</string>
     <string name="cam_strings_zoom_help_txt">Lai tuvinātu/tālinātu, izmantojiet skaļuma taustiņu</string>
     <string name="cam_strings_zoom_not_supported_txt">Šajā režīmā nevar veikt tālummaiņu</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Lai fotoattēlu skatītu 3D formātā, savienojiet kameru ar 3D TV, izmantojot HDMI vai piesitot pogai Atskaņot.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Lai fotoattēlu skatītu 3D, savienojiet savu tālruni ar 3D TV, izmantojot HDMI vai piesitot pogai Atsk. ierīcē.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Pieskarieties ekrānam, lai ierakstītu videoklipu</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Lai šo fotoattēlu skatītu 3D, savienojiet savu tālruni ar 3D TV, piesitot pogai Atsk.ierīcē.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Lai šo fotoattēlu skatītu 3D, savienojiet savu tālruni ar 3D TV, piesitot pogai Atsk. ierīcē.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Nav pieejama neviena SD karte. Noklusējuma saglabāšanas vieta nomainīta uz iekšējo atmiņu.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">Pieejama SD karte. Noklusējuma saglabāšanas vieta nomainīta uz SD karti.</string>
 </resources>

@@ -218,7 +218,7 @@
     <string name="badPin">Неправильний старий PIN-код.</string>
     <string name="badPuk">Неправильний PUK-код.</string>
     <string name="mismatchPin">Ви ввели неправильні PIN-коди.</string>
-    <string name="invalidPin">Введіть PIN-код від 4 до 8 цифр.</string>
+    <string name="invalidPin">Введіть PIN від 4 до 8 цифр.</string>
     <string name="invalidPuk">Введіть PUK-код із 8 або більше цифр.</string>
     <string name="needPuk">Ваша SIM-картка захищена PUK-кодом. Уведіть PUK-код, щоб розблокувати її.</string>
     <string name="needPuk2">Уведіть PUK2, щоб розблокувати SIM-картку.</string>
@@ -914,7 +914,7 @@
     <string name="capital_off">〇</string>
     <string name="whichApplication">Заверш. дію за допом.</string>
     <string name="alwaysUse">Використ. за замовч. для цієї дії.</string>
-    <string name="clearDefaultHintMsg">Очист. налашт. за умовч. у Дом. налашт. > Програми > Керув. програмами.</string>
+    <string name="clearDefaultHintMsg">Очистити стандартні налаштування в меню «Установки» > «Програми».</string>
     <string name="chooseActivity">Вибрати завдання</string>
     <string name="chooseUsbActivity">Вибір програми для пристрою USB</string>
     <string name="noApplications">Жодна програма не може виконати цього завдання.</string>
@@ -1087,7 +1087,7 @@
     <string name="reset">Скинути</string>
     <string name="submit">Надіслати</string>
     <string name="car_mode_disable_notification_title">Автомоб. режим увімкнуто</string>
-    <string name="car_mode_disable_notification_message">Виберіть, щоб вийти з автомобільного режиму.</string>
+    <string name="car_mode_disable_notification_message">Виберіть, щоб вийти з режиму автомобіля.</string>
     <string name="tethered_notification_title">"З'єднання або портативна точка доступу активні"</string>
     <string name="tethered_notification_message">Торкніться, щоб налаштувати</string>
     <string name="back_button_label">Назад</string>
@@ -1222,7 +1222,7 @@
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM-картка заблокована</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Введіть PUK-код</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM-картка заблокована</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Введіть отриманий від оператора PUK-код</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Введіть отриманий від оператора PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Зверніться до свого оператора</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Введіть новий PIN-код</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Ще раз введіть новий PIN-код</string>

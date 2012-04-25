@@ -4799,7 +4799,7 @@
     .prologue
     .line 335
     .local p1, emailFileRecord:Ljava/util/ArrayList;,"Ljava/util/ArrayList<[B>;"
-    if-eqz p1, :cond_1
+    if-nez p1, :cond_1
 
     .line 342
     :cond_0

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Kuvausohjelman tunnist.</string>
-    <string name="cam_strings_shortcut_normal_txt">Normaali</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Kuvausohj. tunn. (kamera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normaali (kamera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Etukamera</string>
     <string name="cam_strings_shortcut_video_camera_txt">Videokamera</string>
     <string name="cam_strings_shortcut_front_video_txt">Edustavideo</string>
     <string name="cam_strings_scenes_auto_recog_portrait_txt">Muotokuva</string>
     <string name="cam_strings_scenes_auto_recog_landscape_txt">Maisema</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_txt">Taustavalo</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Taustavalaistu muotokuva</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_txt">Vastavalo</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Vastavalomuotokuva</string>
     <string name="cam_strings_scenes_auto_recog_twilight_txt">Hämäräkuvausohjelma</string>
     <string name="cam_strings_scenes_auto_recog_twilight_portrait_txt">Hämärämuotokuva</string>
     <string name="cam_strings_scenes_auto_recog_text_txt">Asiakirja</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">GPS:llä hankittu sijainti menee aina langattomien verkkojen edelle. Voit vaihtaa hankintamenetelmää valitsemalla Asetukset > Sijainti.</string>
     <string name="cam_strings_do_not_show_again_txt">Älä näytä uudelleen</string>
     <string name="cam_strings_unavailable_in_scene_txt">Ei vaihdettavissa nykyisen kuvausohjelma-asetuksen kanssa</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Ei vaihdettavissa, kun Smile Shutter™ -hymysuljin on aktiivinen</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Ei vaihdettavissa, kun hymyntunnistus on aktiivinen</string>
     <string name="cam_3d_strings_dialog_delete_txt">Poistetaanko tämä tiedosto?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Myös monikulma</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Myös 3D</string>
@@ -202,7 +202,7 @@ Huomautus: Näissä tiedostoissa on harmaa alue."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Tästä monikulmakuvasta on myös 3D-kuva. Poistetaanko molemmat?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Vain monik.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Vain 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Tätä tilaa ei voi käyttää, kun HDMI-kaapeli on liitetty. Irrota kaapeli.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Irrota kaapeli. Valokuvaa ei voi ottaa tässä tilassa, kun kaapeli on liitetty.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Jos haluat tarkastella tätä tiedostoa 3D:nä, käytä tuettua 3D-laitetta.</string>
     <string name="cam_status_remained_min">%1$d min</string>
     <string name="cam_strings_both_location_fail_txt">Sijaintia ei löydy</string>
@@ -216,8 +216,8 @@ Huomautus: Näissä tiedostoissa on harmaa alue."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Sijainnin hankkiminen</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Poista</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Ei voitu kuvata</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI-virhe</string>
-    <string name="cam_3d_strings_dialog_3d_output_title_txt">Kauko-ohjaus käytettävissä</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Virhe</string>
+    <string name="cam_3d_strings_dialog_3d_output_title_txt">Kauko-ohjaus käytettäv.</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Poista</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Kuvaa tallennetaan</string>
     <string name="cam_strings_error_message_during_voice_call_title_txt">Puhelun aikana</string>
@@ -279,9 +279,9 @@ Huomautus: Näissä tiedostoissa on harmaa alue."</string>
     <string name="cam_strings_cancel_txt">Peruuta</string>
     <string name="cam_strings_zoom_help_txt">Zoomaa äänenvoimakkuusnäppäimellä</string>
     <string name="cam_strings_zoom_not_supported_txt">Ei voi zoomata tässä tilassa</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Jos haluat tarkastella kuvaa kolmiulotteisesti, liitä kamera kolmiulotteiseen televisioon HDMI-kaapelilla tai napauttamalla Toista laitteella -painiketta.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Jos haluat tarkastella valokuvaa kolmiulotteisesti, liitä kamera kolmiulottei-seen TV:hen HDMI-kaapelilla tai napauttamalla Toista laitteella -painiketta.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Kuvaa video koskettamalla näyttöä</string>
     <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Jos haluat tarkastella tätä valokuvaa kolmiulotteisesti, liitä puhelin kolmiulotteiseen televisioon napauttamalla Toista laitteella -painiketta.</string>
-    <string name="cam_strings_error_storage_changing_to_internal_txt">SD-kortti ei ole käytettävissä. Oletustallennussijainniksi vaihdettiin sisäinen tallennustila.</string>
+    <string name="cam_strings_error_storage_changing_to_internal_txt">SD-kortti ei ole käytettävissä. Oletustallennussijainniksi vaihdettiin sisäinen muisti.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">SD-kortti käytettävissä. Oletustallennussijainniksi vaihdettiin SD-kortti.</string>
 </resources>

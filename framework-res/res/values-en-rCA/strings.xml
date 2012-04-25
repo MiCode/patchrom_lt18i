@@ -320,7 +320,7 @@ Please try again in %d seconds."</string>
     <string name="permdesc_packageVerificationAgent">Allows the application to verify a package is installable.</string>
     <string name="permdesc_bindPackageVerifier">Allows the holder to make requests of package verifiers. Should never be needed for normal applications.</string>
     <string name="replace">Replace…</string>
-    <string name="clearDefaultHintMsg">Clear default in Settings > Apps.</string>
+    <string name="clearDefaultHintMsg">Clear default in Settings > Apps</string>
     <string name="aerr_process">Unfortunately, the process %1$s has stopped.</string>
     <string name="smv_application">The application %1$s (process %2$s) has violated its self-enforced StrictMode policy.</string>
     <string name="smv_process">The process %1$s has has violated its self-enforced StrictMode policy.</string>
@@ -349,6 +349,6 @@ Please try again in %d seconds."</string>
     <string name="org_name">Organization:</string>
     <string name="org_unit">Organizational unit:</string>
     <string name="list_delimeter">", "</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Enter PUK code from your service provider</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Enter PUK from your service provider</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Please contact your service provider</string>
 </resources>

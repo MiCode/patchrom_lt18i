@@ -918,7 +918,7 @@ Hautatu \"Ados\" jarraitzeko, edo hautatu \"Utzi\" uneko orrian gelditzeko."</st
     <string name="capital_off">〇</string>
     <string name="whichApplication">Osatu ekintza hau erabiliz:</string>
     <string name="alwaysUse">Erabili lehenespenez honetarako.</string>
-    <string name="clearDefaultHintMsg">Ezabatu lehenetsiak Hasierako ezarpenak > Aplikazioak > Kudeatu aplikazioak atalean.</string>
+    <string name="clearDefaultHintMsg">Ezabatu lehenetsiak Ezarpenak > Aplikazioak atalean.</string>
     <string name="chooseActivity">Hautatu ekintza</string>
     <string name="chooseUsbActivity">Hautatu USB gailuentzako aplikazioa</string>
     <string name="noApplications">Ez dago ekintza hau buru dezakeen aplikaziorik.</string>

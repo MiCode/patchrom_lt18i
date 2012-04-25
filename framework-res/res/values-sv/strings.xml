@@ -910,11 +910,11 @@ Tryck på OK om du vill fortsätta eller på Avbryt om du vill vara kvar på den
     <string name="low_internal_storage_view_title">Dåligt med utrymme</string>
     <string name="low_internal_storage_view_text">Mobilens lagringsutrymme håller på att ta slut.</string>
     <string name="loading">Läser in...</string>
-    <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_on">PÅ</string>
+    <string name="capital_off">AV</string>
     <string name="whichApplication">Slutför åtgärd med</string>
     <string name="alwaysUse">Använd alltid för denna åtgärd.</string>
-    <string name="clearDefaultHintMsg">Rensa standardinställning i Startinställningar > Appar > Hantera appar.</string>
+    <string name="clearDefaultHintMsg">Rensa standardinställning i Inställningar > Appar.</string>
     <string name="chooseActivity">Välj en åtgärd</string>
     <string name="chooseUsbActivity">Välj ett program för USB-enheten</string>
     <string name="noApplications">Inga program kan utföra den här åtgärden.</string>
@@ -1220,9 +1220,9 @@ för kontot %s"</string>
     <string name="general_dialpad_voicemail_txt">Röstbrevlåda</string>
     <string name="gui_cancel_txt">Avbryt</string>
     <string name="gui_ok_txt">OK</string>
-    <string name="lockscreen_strings_locked_out_wrong_answer_txt">Fel svar</string>
+    <string name="lockscreen_strings_locked_out_wrong_answer_txt">Felaktigt svar</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM-kortet är spärrat</string>
-    <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Ange PUK-kod</string>
+    <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Ange PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM-kortet är låst</string>
     <string name="lockscreen_strings_sim_puk_locked_message_txt">Ange PUK-koden som du fick av din operatör</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Kontakta operatören</string>

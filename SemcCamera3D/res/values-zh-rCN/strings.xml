@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">使用GPS获取的位置总是优先于通过无线网络获取的位置。若要更改获取方式，请转到“设定”>“位置”。</string>
     <string name="cam_strings_do_not_show_again_txt">不再显示</string>
     <string name="cam_strings_unavailable_in_scene_txt">在当前的“场景”设定下无法更改。</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">当Smile Shutter™处于活动状态时不可用</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">当笑容检测处于活动状态时不可用</string>
     <string name="cam_3d_strings_dialog_delete_txt">要删除此文件吗？</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">是</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">是</string>
@@ -178,7 +178,7 @@
 - 多角度图像
 - 3D 图像
 注意：这些文件包含一个灰色区域。"</string>
-    <string name="cam_3d_strings_gallery_txt">图片库</string>
+    <string name="cam_3d_strings_gallery_txt">媒体库</string>
     <string name="cam_3d_strings_album_browser_no_data_txt">无项目</string>
     <string name="cam_3d_strings_menu_go_to_ma_player_txt">查看多角度图像</string>
     <string name="cam_3d_strings_menu_go_to_3d_player_txt">查看3D图像</string>
@@ -202,7 +202,7 @@
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">此多角度照片还有一张3D图像。要一起删除吗？</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">仅多角度</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">仅3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">连接HDMI连接线时无法使用此模式。请拔出连接线。</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">连接连接线时无法在此模式下拍摄照片。请拔出连接线。</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">要以3D模式查看此文件，请使用支持3D的设备。</string>
     <string name="cam_status_remained_min">%1$d分钟。</string>
     <string name="cam_strings_both_location_fail_txt">无法确定位置</string>
@@ -216,7 +216,7 @@
     <string name="cam_strings_wireless_gps_explanatory_title_txt">如何获取位置</string>
     <string name="cam_strings_file_delete_confirm_title_txt">删除</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">无法拍摄</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">HDMI错误</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">错误</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">远程控制可用</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">删除</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">保存图像</string>
@@ -229,7 +229,7 @@
     <string name="cam_strings_capturing_mode_video_camera_short_txt">摄像模式</string>
     <string name="cam_strings_capturing_mode_front_video_short_txt">前置视频</string>
     <string name="cam_3d_strings_3d_sweep_panorama_short_txt">3D全景扫描</string>
-    <string name="cam_3d_strings_sweep_multi_angle_short_txt">多角度拍摄</string>
+    <string name="cam_3d_strings_sweep_multi_angle_short_txt">多角度扫描</string>
     <string name="cam_3d_strings_sweep_panorama_short_txt">全景扫描</string>
     <string name="cam_strings_capturing_method_txt">拍摄方法</string>
     <string name="cam_strings_error_memory_ims_access_error_txt">记忆卡错误</string>
@@ -280,9 +280,9 @@
     <string name="cam_strings_cancel_txt">取消</string>
     <string name="cam_strings_zoom_help_txt">使用音量键放大/缩小</string>
     <string name="cam_strings_zoom_not_supported_txt">在此模式下无法进行缩放</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">要查看三维照片，请使用HDMI或点按“播放”按键将您的相机连接到三维电视。</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">要查看3D照片，请使用HDMI或点按设备上的“播放”按键将您的手机连接到3D电视。</string>
     <string name="cam_strings_touch_capture_gude_video_txt">触摸屏幕可录制视频</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">要查看三维照片，请点按“播放”按键将您的手机连接到三维电视。</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">要查看3D照片，请点按设备上的“播放”按键将您的手机连接到3D电视。</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">SD卡不可用。将默认保存位置更改为内部海量存储。</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">SD卡可用。将默认保存位置更改为SD卡。</string>
 </resources>

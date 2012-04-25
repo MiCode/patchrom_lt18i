@@ -978,11 +978,11 @@ Select OK to continue, or Cancel to stay on the current page."</string>
     <string name="low_internal_storage_view_title">Low on space</string>
     <string name="low_internal_storage_view_text">Phone storage space is getting low.</string>
     <string name="loading">Loading...</string>
-    <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_on">ON</string>
+    <string name="capital_off">OFF</string>
     <string name="whichApplication">Complete action using</string>
     <string name="alwaysUse">Use by default for this action.</string>
-    <string name="clearDefaultHintMsg">Clear default in Settings > Apps.</string>
+    <string name="clearDefaultHintMsg">Clear default in Settings > Apps</string>
     <string name="chooseActivity">Select an action</string>
     <string name="chooseUsbActivity">Select an application for the USB device</string>
     <string name="noApplications">No applications can perform this action.</string>
@@ -1322,7 +1322,7 @@ for account %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM card blocked</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Enter PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">SIM card locked</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Enter PUK code from your service provider</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Enter PUK from your service provider</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Please contact your service provider</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Enter new PIN</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Repeat new PIN</string>

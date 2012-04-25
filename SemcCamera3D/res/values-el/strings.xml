@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Κάμερα</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Αναγνώριση σκηνής</string>
-    <string name="cam_strings_shortcut_normal_txt">Κανονική λήψη</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Αναγν. σκηνής (κάμερα)</string>
+    <string name="cam_strings_shortcut_normal_txt">Κανονική λήψη (κάμερα)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Εμπρός κάμερα</string>
     <string name="cam_strings_shortcut_video_camera_txt">Λειτουργία video</string>
     <string name="cam_strings_shortcut_front_video_txt">Μπροστινή βιντεοκάμ.</string>
     <string name="cam_strings_scenes_auto_recog_portrait_txt">Πορτρέτο</string>
     <string name="cam_strings_scenes_auto_recog_landscape_txt">Τοπίο</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_txt">Οπίσθιος φωτισμός</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Πορτρέτο σε οπίσθιο φωτισμό</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_txt">Κόντρα φως</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Πορτρέτο σε κόντρα φως</string>
     <string name="cam_strings_scenes_auto_recog_twilight_txt">Νυχτερινή σκηνή</string>
     <string name="cam_strings_scenes_auto_recog_twilight_portrait_txt">Νυχτερινό πορτρέτο</string>
     <string name="cam_strings_scenes_auto_recog_text_txt">Έγγραφο</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Η λήψη τοποθεσίας από το σύστημα GPS προηγείται της λήψης μέσω ασύρματων δικτύων. Για να αλλάξετε τη μέθοδο λήψης της τοποθεσίας σας, μεταβείτε στις Ρυθμίσεις > Τοποθεσία.</string>
     <string name="cam_strings_do_not_show_again_txt">Να μην εμφανιστεί ξανά</string>
     <string name="cam_strings_unavailable_in_scene_txt">Δεν υπάρχει δυνατότητα αλλαγής σε συνδυασμό με την τρέχουσα ρύθμιση σκηνής.</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Δεν υπάρχει δυνατότητα αλλαγής όσο το Smile Shutter™ είναι ενεργό</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Μη διαθέσιμο όταν είναι ενεργή η ανίχνευση χαμόγελου</string>
     <string name="cam_3d_strings_dialog_delete_txt">Να διαγραφεί αυτό το αρχείο;</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Και πολλ. γωνιών</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Και το 3D</string>
@@ -156,7 +156,7 @@
     <string name="cam_3d_strings_setting_shooting_direction_left_txt">Αριστερά</string>
     <string name="cam_3d_strings_setting_shooting_direction_up_txt">Επάνω</string>
     <string name="cam_3d_strings_setting_shooting_direction_down_txt">Κάτω</string>
-    <string name="cam_3d_strings_album_multi_angle_view_guide_txt">Γύρετε το τηλέφωνο αριστερά ή δεξιά</string>
+    <string name="cam_3d_strings_album_multi_angle_view_guide_txt">Γείρετε το κινητό αριστερά ή δεξιά</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_txt">Για προβολή της εικόνας 3D, συνδεθείτε σε τηλεόρ.3D με καλώδιο HDMI</string>
     <string name="cam_3d_strings_error_zoom_3d_sweep_panorama_txt">Η λειτουργία ζουμ δεν είναι διαθέσιμη στην Ημικυκλική πανοραμική λήψη 3D</string>
     <string name="cam_3d_strings_error_zoom_sweep_multi_angle_txt">Η λειτουργία ζουμ δεν είναι διαθέσιμη στη Σάρωση πολλαπλών γωνιών</string>
@@ -200,7 +200,7 @@
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Υπάρχει επίσης μια εικόνα 3D για αυτήν τη φωτογραφία πολλαπλών γωνιών. Να διαγραφούν και οι δύο;</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Μόνο π.γων.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Μόνο το 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Δεν είναι δυνατή η χρήση της λειτουργίας με συνδεδεμένο το καλώδιο HDMI. Αποσυνδέστε το καλώδιο.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Αποσυνδέστε το καλώδιο. Δεν είναι δυνατή η λήψη φωτογραφίας σε αυτήν τη λειτουργία με συνδεδεμένο καλώδιο.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Για προβολή σε 3D, χρησιμοποιήστε μια συσκευή που υποστηρίζει 3D</string>
     <string name="cam_status_remained_min">%1$d λεπτ.</string>
     <string name="cam_strings_both_location_fail_txt">Δεν είναι δυνατός ο προσδιορισμός θέσης</string>
@@ -214,7 +214,7 @@
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Τρόπος εύρ. τοποθεσίας</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Διαγραφή</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Αδύνατη η λήψη</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Σφάλμα HDMI</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Σφάλμα</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Διαθ. απομακρ. έλεγχ.</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Διαγραφή</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Αποθήκευση εικόνας</string>
@@ -247,13 +247,13 @@
     <string name="cam_strings_fast_capturing_quick_shooting_txt">Γρήγορη λήψη</string>
     <string name="cam_strings_fast_capturing_finish_confirmation_txt">Η κάμερα βρίσκεται σε κατάσταση Γρήγορης εκκίνησης. Οι ρυθμίσεις δεν είναι διαθέσιμες. Επιστροφή στην κανονική λειτουργία;</string>
     <string name="cam_strings_fast_capturing_screen_locked_txt">Το κλείδωμα οθόνης έχει ενεργοποιηθεί. Αν θέλετε να χρησιμοποιήσετε τη Γρήγορη εκκίνηση, ξεκλειδώστε την οθόνη για να ενεργοποιήσετε αυτήν τη λειτουργία.</string>
-    <string name="cam_strings_fast_capturing_allowance_txt">Με τη λειτουργία Γρήγορης εκκίνησης, μπορείτε να ενεργοποιείτε άμεσα την κάμερα από τη λειτουργία αναστολής του τηλεφώνου, πατώντας παρατεταμένα το πλήκτρο κάμερας. Αυτή η λειτουργία ενεργοποιεί την κάμερα ακόμα και αν η οθόνη είναι κλειδωμένη. Να επιτρέπεται η Γρήγορη εκκίνηση;</string>
+    <string name="cam_strings_fast_capturing_allowance_txt">Με τη λειτουργία Γρήγορης εκκίνησης, μπορείτε να ενεργοποιείτε άμεσα την κάμερα από τη λειτουργία αναστολής του κινητού, πατώντας παρατεταμένα το πλήκτρο κάμερας. Αυτή η λειτουργία ενεργοποιεί την κάμερα ακόμα και αν η οθόνη είναι κλειδωμένη. Να επιτρέπεται η Γρήγορη εκκίνηση;</string>
     <string name="cam_strings_fast_capturing_quick_shooting_dialog_txt">Με τη λειτουργία Γρήγορης λήψης, μπορείτε να κάνετε εκκίνηση της κάμεράς σας άμεσα και έπειτα να τραβήξετε απευθείας την πρώτη φωτογραφία πατώντας παρατεταμένα το πλήκτρο κάμερας</string>
     <string name="cam_strings_button_to_allow_txt">Επιτρέπεται</string>
     <string name="cam_strings_button_to_deny_txt">Δεν επιτρέπεται</string>
     <string name="cam_strings_fast_capturing_screen_locked_title_txt">Κλειδωμένη οθόνη</string>
     <string name="cam_strings_fast_capturing_allowance_title_txt">Ορισμός Γρήγ. εκκίνησης</string>
-    <string name="cam_strings_fast_capturing_finish_confirmation_title_txt">Λειτουργ. Γρήγ. εκκίνησης</string>
+    <string name="cam_strings_fast_capturing_finish_confirmation_title_txt">Λειτ. γρήγορης εκκίνησης</string>
     <string name="cam_strings_scenes_title_txt">Σκηνές</string>
     <string name="cam_strings_resolution_title_txt">Ανάλυση</string>
     <string name="cam_strings_flash_title_txt">Φλας</string>
@@ -277,9 +277,9 @@
     <string name="cam_strings_cancel_txt">Άκυρο</string>
     <string name="cam_strings_zoom_help_txt">Χρησιμοποιήστε το πλήκτρο έντασης ζουμ</string>
     <string name="cam_strings_zoom_not_supported_txt">Δεν υπάρχει δυνατότητα για ζουμ σε αυτήν την λειτουργία</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Για την προβολή φωτογραφίας σε 3D, συνδέστε την κάμερα σε τηλεόραση 3D χρησιμοποιώντας HDMI ή πατώντας το κουμπί Play on.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Για την προβολή αυτής της φωτογραφίας σε 3D, συνδέστε το κινητό σας σε τηλεόραση 3D πατώντας το κουμπί Play on.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Αγγίξτε την οθόνη για την εγγραφή βίντεο</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Για την προβολή αυτής της εικόνας σε 3D, συνδέστε το τηλέφωνό σας σε τηλεόραση 3D πατώντας το κουμπί Play on.</string>
-    <string name="cam_strings_error_storage_changing_to_internal_txt">Δεν υπάρχει διαθέσιμη κάρτα SD. Η προεπιλεγμένη θέση αποθήκευσης άλλαξε σε εσωτερικό χώρο αποθήκευσης.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Για την προβολή αυτής της φωτογραφίας σε 3D, συνδέστε το κινητό σας σε τηλεόραση 3D πατώντας το κουμπί Play on.</string>
+    <string name="cam_strings_error_storage_changing_to_internal_txt">Δεν υπάρχει διαθέσιμη κάρτα SD. Η προεπιλεγμένη θέση αποθήκευσης άλλαξε σε εσωτερική μνήμη.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">Υπάρχει διαθέσιμη κάρτα SD. Η προεπιλεγμένη θέση αποθήκευσης άλλαξε σε κάρτα SD.</string>
 </resources>

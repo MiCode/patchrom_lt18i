@@ -917,7 +917,7 @@ Izberite »V redu«, če želite nadaljevati, ali »Prekliči«, če želite ost
     <string name="capital_off">〇</string>
     <string name="whichApplication">Dejanje dokončaj z</string>
     <string name="alwaysUse">Uporabi privzeto za to dejanje.</string>
-    <string name="clearDefaultHintMsg">Počistite privzete nastavitve v razdelku Osnovne nastavitve > Programi > Upravljanje programov.</string>
+    <string name="clearDefaultHintMsg">Počistite privzete nastavitve v razdelku »Nastavitve« > »Programi«.</string>
     <string name="chooseActivity">Izbira dejanja</string>
     <string name="chooseUsbActivity">Izberite aplikacijo za napravo USB</string>
     <string name="noApplications">Tega dejanja ne more izvesti nobena aplikacija.</string>
@@ -1226,7 +1226,7 @@ s %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">Kartica SIM je blokirana.</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Vnesite kodo PUK.</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">Kartica SIM je zaklenjena.</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Vnesite kodo PUK, ki vam jo je posr. operater</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Vnes. kodo PUK, ki vam jo je posr. pon. storit.</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Obrnite se na svojega operaterja.</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Vnesite novo kodo PIN.</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Ponovitev nove kode PIN</string>

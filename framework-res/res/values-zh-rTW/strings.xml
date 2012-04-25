@@ -423,7 +423,7 @@
     <string name="permlab_manageAppTokens">管理應用程式 token</string>
     <string name="permdesc_manageAppTokens">允許應用程式略過一般 Z-ordering，建立與管理自己的 token。一般應用程式不需要此功能。</string>
     <string name="permlab_injectEvents">按鍵及控制按鈕</string>
-    <string name="permdesc_injectEvents">允許應用程式發送輸入事件 (如按鍵輸入) 給其他應用程式。請注意：惡意程式可能使用此功能接管手機。</string>
+    <string name="permdesc_injectEvents">允許應用程式發送輸入活動 (如按鍵輸入) 給其他應用程式。請注意：惡意程式可能使用此功能接管手機。</string>
     <string name="permlab_readInputState">記錄您的輸入內容與操作</string>
     <string name="permdesc_readInputState">允許應用程式在使用者操作其他程式時 (例如：輸入密碼)，仍可監看輸入的按鍵。一般應用程式應不需要此功能。</string>
     <string name="permlab_bindInputMethod">連結至輸入法</string>
@@ -757,7 +757,7 @@
     <string name="lockscreen_plugged_in">充電中 (%d%%)</string>
     <string name="lockscreen_charged">充電完成。</string>
     <string name="lockscreen_battery_short">%d%%</string>
-    <string name="lockscreen_low_battery">請連接充電器。</string>
+    <string name="lockscreen_low_battery">請連接充電器</string>
     <string name="lockscreen_missing_sim_message_short">"沒有 SIM  卡。"</string>
     <string name="lockscreen_missing_sim_message">手機未插入 SIM 卡。</string>
     <string name="lockscreen_missing_sim_instructions">請插入 SIM 卡。</string>
@@ -910,8 +910,8 @@
     <string name="low_internal_storage_view_title">儲存空間即將不足</string>
     <string name="low_internal_storage_view_text">手機儲存空間即將不足。</string>
     <string name="loading">載入中...</string>
-    <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_on">開啟</string>
+    <string name="capital_off">關閉</string>
     <string name="whichApplication">完成操作需使用</string>
     <string name="alwaysUse">以此為本操作預設值。</string>
     <string name="clearDefaultHintMsg">經由主畫面上的[設定] > [應用程式] > [管理應用程式] 清除預設值。</string>

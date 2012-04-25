@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Aparat</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Rozpoznawanie scenerii</string>
-    <string name="cam_strings_shortcut_normal_txt">Normalny</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Rozpozn. scenerii (aparat)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normalny (aparat)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Aparat z przodu</string>
     <string name="cam_strings_shortcut_video_camera_txt">Kamera wideo</string>
     <string name="cam_strings_shortcut_front_video_txt">Kamera z przodu</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Przy ustalaniu lokalizacji współrzędne z GPS mają zawsze pierwszeństwo przed tymi z sieci bezprzewodowych. Aby zmienić sposób uzyskiwania informacji lokalizacji, przejdź do sekcji Ustawienia > Lokalizacja.</string>
     <string name="cam_strings_do_not_show_again_txt">Nie pokazuj ponownie</string>
     <string name="cam_strings_unavailable_in_scene_txt">Nie można zmieniać w kombinacji z bieżącym ustawieniem scenerii.</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Nie można zmienić przy włączonej funkcji Smile Shutter™</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Nie można zmienić przy włączonej detekcji uśmiechu</string>
     <string name="cam_3d_strings_dialog_delete_txt">Usunąć ten plik?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Plik multi-angle też</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Plik 3D też</string>
@@ -202,7 +202,7 @@ Uwaga: Te pliki zawierają szary obszar."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Dla tego zdjęcia multi-angle istnieje też obraz 3D. Usunąć oba elementy?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">Tylko m.ang.</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Tylko 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Nie można korzystać z tego trybu z podłączonym przewodem HDMI. Odłącz przewód.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Odłącz przewód. Nie można robić zdjęć w tym trybie przy podłączonym przewodzie.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Aby wyświetlić ten plik w 3D, skorzystaj z urządzenia z obsługą 3D.</string>
     <string name="cam_status_remained_min">%1$d min</string>
     <string name="cam_strings_both_location_fail_txt">Nie można wyznaczyć lokalizacji</string>
@@ -216,7 +216,7 @@ Uwaga: Te pliki zawierają szary obszar."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Jak uzyskać inf. o lokaliz.</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Usuń</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Nie można zrobić</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Błąd HDMI</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Błąd</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Dostępny pilot</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Usuwanie</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Zapisywanie obrazu</string>
@@ -255,7 +255,7 @@ Uwaga: Te pliki zawierają szary obszar."</string>
     <string name="cam_strings_button_to_deny_txt">Nie zezwalaj</string>
     <string name="cam_strings_fast_capturing_screen_locked_title_txt">Ekran zablokowany</string>
     <string name="cam_strings_fast_capturing_allowance_title_txt">Ustaw Szybkie urucham.</string>
-    <string name="cam_strings_fast_capturing_finish_confirmation_title_txt">Tryb Szybkie uruchamianie</string>
+    <string name="cam_strings_fast_capturing_finish_confirmation_title_txt">Tryb Szybkie urucham.</string>
     <string name="cam_strings_scenes_title_txt">Scenerie</string>
     <string name="cam_strings_resolution_title_txt">Rozdzielczość</string>
     <string name="cam_strings_flash_title_txt">Lampa błyskowa</string>
@@ -279,7 +279,7 @@ Uwaga: Te pliki zawierają szary obszar."</string>
     <string name="cam_strings_cancel_txt">Anuluj</string>
     <string name="cam_strings_zoom_help_txt">Użyj klawisza głośności do powiększania/pomniejszania</string>
     <string name="cam_strings_zoom_not_supported_txt">Nie można powiększyć w tym trybie</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Aby wyświetlić zdjęcie w 3D, podłącz swój aparat do telewizora 3D, używając złącza HDMI lub stukając przycisk Odtwarzaj.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Aby wyświetlić zdjęcie w 3D, podłącz swój telefon do telewizora 3D, używając złącza HDMI lub stukając przycisk Odtwórz na urządzeniu.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Dotknij ekranu, aby zarejestrować nagranie wideo</string>
     <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Aby obejrzeć to zdjęcie w 3D, podłącz telefon do telewizora 3D, stukając przycisk Odtwórz na urządzeniu.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Brak dostępnej karty SD. Zmieniono domyślną lokalizację zapisywania na pamięć wewnętrzną.</string>

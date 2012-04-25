@@ -216,7 +216,7 @@
     <string name="passwordIncorrect">Неправилна парола.</string>
     <string name="mmiComplete">MMI завърши.</string>
     <string name="badPin">Въведеният стар ПИН код е неправилен.</string>
-    <string name="badPuk">Въведеният PUK код е неправил.</string>
+    <string name="badPuk">Въведен. PUK код е неправилен.</string>
     <string name="mismatchPin">Въведените ПИН кодове не съвпадат.</string>
     <string name="invalidPin">Въведете ПИН от 4 до 8 цифри.</string>
     <string name="invalidPuk">Въведете PUK код с поне осем цифри.</string>
@@ -913,8 +913,8 @@
     <string name="capital_on">|</string>
     <string name="capital_off">〇</string>
     <string name="whichApplication">Изпъл. на действ. чрез</string>
-    <string name="alwaysUse">Изпол. по подразб. за това действ.</string>
-    <string name="clearDefaultHintMsg">Изчистване на стандартната стойност в „Начални настройки“ > „Приложения“ > „Управление на приложенията“.</string>
+    <string name="alwaysUse">Изпол. по подраз. за това действ.</string>
+    <string name="clearDefaultHintMsg">Изчистване на стойностите по подразбиране в \"Настройки\" > \"Приложения\".</string>
     <string name="chooseActivity">Изберете действие</string>
     <string name="chooseUsbActivity">Изберете приложение за USB устройството</string>
     <string name="noApplications">Това действие не може да се изпълни от никое приложение.</string>
@@ -1031,7 +1031,7 @@
     <string name="extmedia_format_message">Наистина ли искате да форматирате SD картата? Всички данни на нея ще се заличат.</string>
     <string name="extmedia_format_button_format">Форматиране</string>
     <string name="adb_active_notification_title">Отстран. на грешки в USB връз.</string>
-    <string name="adb_active_notification_message">Избор на забран. на отстраняв. на USB грешки.</string>
+    <string name="adb_active_notification_message">Избер. за забран. на отстран. на USB грешки.</string>
     <string name="select_input_method">Изберете метод на въвеждане</string>
     <string name="configure_input_methods">Конфигуриране на методите на въвеждане</string>
     <string name="fast_scroll_alphabet">" АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЮЯ"</string>
@@ -1215,7 +1215,7 @@
     <string name="SetupCallDefault">Искате ли да приемете обаждането?</string>
     <string name="dialer_keyboard_hint_txt">Изп. клав. за набиране</string>
     <string name="general_dialpad_voicemail_txt">Гласова поща</string>
-    <string name="gui_cancel_txt">Отмяна</string>
+    <string name="gui_cancel_txt">Отказ</string>
     <string name="gui_ok_txt">OK</string>
     <string name="lockscreen_strings_locked_out_wrong_answer_txt">Неправилен отговор</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">SIM карта е блокирана</string>

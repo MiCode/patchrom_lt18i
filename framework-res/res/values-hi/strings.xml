@@ -908,11 +908,11 @@
     <string name="low_internal_storage_view_title">कम स्थान</string>
     <string name="low_internal_storage_view_text">फ़ोन संग्रहण स्‍थान कम हो रहा है।</string>
     <string name="loading">लोड हो रहा है...</string>
-    <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_on">चालू</string>
+    <string name="capital_off">बंद</string>
     <string name="whichApplication">इसका उपयोग करके क्रिया पूर्ण करें</string>
     <string name="alwaysUse">इस क्रिया हेतु डिफॉल्ट रूप से इसका उपयोग करें।</string>
-    <string name="clearDefaultHintMsg">होम सेटिंग > एप्‍लिकेशन > एप्‍लिकेशन प्रबंधित करें में डिफ़ॉल्‍ट साफ़ करें.</string>
+    <string name="clearDefaultHintMsg">सेटिंग > अनुप्रयोग में डिफ़ॉल्‍ट साफ़ करें।</string>
     <string name="chooseActivity">कोई क्रिया चयनित करें</string>
     <string name="chooseUsbActivity">USB डिवाइस के लिए अनुप्रयोग का चयन करें</string>
     <string name="noApplications">इस क्रिया को कोई भी अनुप्रयोग निष्पादित नहीं कर सकते।</string>
@@ -1215,9 +1215,9 @@
     <string name="gui_ok_txt">ठीक</string>
     <string name="lockscreen_strings_locked_out_wrong_answer_txt">गलत उत्तर</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">सिम कार्ड अवरुद्ध किया गया</string>
-    <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Enter PUK प्रविष्ट करें</string>
+    <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">PUK प्रविष्ट करें</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">सिम कार्ड लॉक किया गया</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">अपने ऑपरेटर द्वारा प्रदान किया गया PUK प्रविष्ट करें</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">अपने सेवा प्रदाता द्वारा प्रदान किया गया PUK प्रविष्ट करें</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">कृपया अपने ऑपरेटर से संपर्क करें</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">नया PIN प्रविष्ट करें</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">नया PIN दोहराएं</string>

@@ -321,7 +321,7 @@
     <string name="global_action_silent_mode_off_status">Audio attivo</string>
     <string name="global_actions_toggle_airplane_mode">Modalità aereo</string>
     <string name="global_actions_airplane_mode_on_status">Modalità aereo attiva</string>
-    <string name="global_actions_airplane_mode_off_status">Disattiva modalità aereo</string>
+    <string name="global_actions_airplane_mode_off_status">Modalità aereo non attiva</string>
     <string name="safeMode">Modalità provvisoria</string>
     <string name="android_system_label">Sistema Android</string>
     <string name="permgrouplab_costMoney">Servizi che prevedono un costo</string>
@@ -914,7 +914,7 @@ Seleziona OK per continuare o Annulla per rimanere nella pagina corrente."</stri
     <string name="capital_off">〇</string>
     <string name="whichApplication">"Completa l'azione con"</string>
     <string name="alwaysUse">"Usa come predefinita per l'azione."</string>
-    <string name="clearDefaultHintMsg">Cancella predefinita in Home > Impostazioni > Applicazioni > Gestisci applicazioni.</string>
+    <string name="clearDefaultHintMsg">Cancella predefinita in Impostazioni > Applicazioni.</string>
     <string name="chooseActivity">"Seleziona un'azione"</string>
     <string name="chooseUsbActivity">"Selezionare un'applicazione per il dispositivo USB"</string>
     <string name="noApplications">Nessuna applicazione è in grado di svolgere questa azione.</string>
@@ -955,7 +955,7 @@ Vuoi chiuderlo?"</string>
     <string name="old_app_description">Non avviare la nuova applicazione.</string>
     <string name="new_app_action">Avvia %1$s</string>
     <string name="new_app_description">Interrompi la vecchia applicazione senza salvare.</string>
-    <string name="sendText">"Selezione un'opzione di invio"</string>
+    <string name="sendText">"Seleziona un'opzione di invio"</string>
     <string name="volume_ringtone">Volume suoneria</string>
     <string name="volume_music">Volume app. multimediali</string>
     <string name="volume_music_hint_playing_through_bluetooth">Riproduzione tramite Bluetooth</string>
@@ -1221,10 +1221,10 @@ per l'account %s"</string>
     <string name="gui_cancel_txt">Annulla</string>
     <string name="gui_ok_txt">OK</string>
     <string name="lockscreen_strings_locked_out_wrong_answer_txt">Risposta errata</string>
-    <string name="lockscreen_strings_sim_locked_out_header_txt">Carta SIM bloccata</string>
+    <string name="lockscreen_strings_sim_locked_out_header_txt">Scheda SIM bloccata</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Immetti codice PUK</string>
-    <string name="lockscreen_strings_sim_puk_locked_header_txt">Carta SIM bloccata</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Immetti PUK fornito dal gestore della rete</string>
+    <string name="lockscreen_strings_sim_puk_locked_header_txt">Scheda SIM bloccata</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Immetti PUK fornito dal provider di servizi</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Contattare il gestore della rete</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Immetti il nuovo PIN</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Ripeti il nuovo PIN</string>

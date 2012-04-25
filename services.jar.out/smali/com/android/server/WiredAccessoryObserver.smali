@@ -139,7 +139,7 @@
     .line 75
     invoke-direct {p0}, Landroid/os/UEventObserver;-><init>()V
 
-    .line 276
+    .line 280
     new-instance v1, Lcom/android/server/WiredAccessoryObserver$1;
 
     invoke-direct {v1, p0}, Lcom/android/server/WiredAccessoryObserver$1;-><init>(Lcom/android/server/WiredAccessoryObserver;)V
@@ -448,276 +448,296 @@
 .end method
 
 .method private final sendIntent(IIILjava/lang/String;)V
-    .locals 10
+    .locals 11
     .parameter "headset"
     .parameter "headsetState"
     .parameter "prevHeadsetState"
     .parameter "headsetName"
 
     .prologue
-    const/16 v9, 0x10
+    const/16 v10, 0x10
 
-    const/16 v8, 0x8
+    const/16 v9, 0x8
 
-    const/4 v5, 0x4
+    const/4 v6, 0x4
+
+    const/high16 v8, 0x4000
 
     const/4 v7, 0x0
 
-    const/high16 v6, 0x4000
-
     .line 219
-    and-int v3, p2, p1
+    and-int v4, p2, p1
 
-    and-int v4, p3, p1
+    and-int v5, p3, p1
 
-    if-eq v3, v4, :cond_6
+    if-eq v4, v5, :cond_6
 
     .line 221
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
     .line 222
-    .local v2, state:I
-    and-int v3, p2, p1
+    .local v3, state:I
+    and-int v4, p2, p1
 
-    if-eqz v3, :cond_0
+    if-eqz v4, :cond_0
 
     .line 223
-    const/4 v2, 0x1
+    const/4 v3, 0x1
 
     .line 225
     :cond_0
-    if-eq p1, v5, :cond_1
+    if-eq p1, v6, :cond_1
 
-    if-eq p1, v8, :cond_1
+    if-eq p1, v9, :cond_1
 
-    if-ne p1, v9, :cond_3
+    if-ne p1, v10, :cond_3
 
     .line 230
     :cond_1
-    if-ne p1, v5, :cond_7
+    if-ne p1, v6, :cond_7
 
     .line 231
-    new-instance v0, Landroid/content/Intent;
+    new-instance v1, Landroid/content/Intent;
 
-    const-string v3, "android.intent.action.USB_ANLG_HEADSET_PLUG"
+    const-string v4, "android.intent.action.USB_ANLG_HEADSET_PLUG"
 
-    invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 232
-    .local v0, intent:Landroid/content/Intent;
-    invoke-virtual {v0, v6}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+    .local v1, intent:Landroid/content/Intent;
+    invoke-virtual {v1, v8}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 233
-    const-string v3, "state"
+    const-string v4, "state"
 
-    invoke-virtual {v0, v3, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-virtual {v1, v4, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 234
-    const-string v3, "name"
+    const-string v4, "name"
 
-    invoke-virtual {v0, v3, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v1, v4, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 235
-    invoke-static {v0, v7}, Landroid/app/ActivityManagerNative;->broadcastStickyIntent(Landroid/content/Intent;Ljava/lang/String;)V
+    invoke-static {v1, v7}, Landroid/app/ActivityManagerNative;->broadcastStickyIntent(Landroid/content/Intent;Ljava/lang/String;)V
 
     .line 250
-    .end local v0           #intent:Landroid/content/Intent;
+    .end local v1           #intent:Landroid/content/Intent;
     :cond_2
     :goto_0
-    sget-object v3, Lcom/android/server/WiredAccessoryObserver;->TAG:Ljava/lang/String;
+    sget-object v4, Lcom/android/server/WiredAccessoryObserver;->TAG:Ljava/lang/String;
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "Intent.ACTION_USB_HEADSET_PLUG: state: "
+    const-string v6, "Intent.ACTION_USB_HEADSET_PLUG: state: "
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v5
 
-    const-string v5, " name: "
+    const-string v6, " name: "
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v4, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-static {v3, v4}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v4, v5}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 253
     :cond_3
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    if-eq p1, v3, :cond_4
+    if-eq p1, v4, :cond_4
 
-    const/4 v3, 0x2
+    const/4 v4, 0x2
 
-    if-ne p1, v3, :cond_6
+    if-ne p1, v4, :cond_6
 
     .line 256
     :cond_4
-    new-instance v0, Landroid/content/Intent;
+    new-instance v1, Landroid/content/Intent;
 
-    const-string v3, "android.intent.action.HEADSET_PLUG"
+    const-string v4, "android.intent.action.HEADSET_PLUG"
 
-    invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 257
-    .restart local v0       #intent:Landroid/content/Intent;
-    invoke-virtual {v0, v6}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+    .restart local v1       #intent:Landroid/content/Intent;
+    invoke-virtual {v1, v8}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 259
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
     .line 261
-    .local v1, microphone:I
-    and-int/lit8 v3, p1, 0x1
+    .local v2, microphone:I
+    and-int/lit8 v4, p1, 0x1
 
-    if-eqz v3, :cond_5
+    if-eqz v4, :cond_5
 
     .line 262
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
     .line 265
     :cond_5
-    const-string v3, "state"
+    const-string v4, "state"
 
-    invoke-virtual {v0, v3, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-virtual {v1, v4, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 266
-    const-string v3, "name"
+    const-string v4, "name"
 
-    invoke-virtual {v0, v3, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v1, v4, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 267
-    const-string v3, "microphone"
+    const-string v4, "microphone"
 
-    invoke-virtual {v0, v3, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-virtual {v1, v4, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    .line 268
+    new-instance v0, Landroid/content/Intent;
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
 
     .line 269
-    sget-object v3, Lcom/android/server/WiredAccessoryObserver;->TAG:Ljava/lang/String;
+    .local v0, extraIntent:Landroid/content/Intent;
+    const-string v4, "com.sonyericsson.system.intent.action.HEADSET_PLUG"
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v4}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    .line 270
+    const/4 v4, 0x0
 
-    const-string v5, "Intent.ACTION_HEADSET_PLUG: state: "
+    invoke-virtual {v0, v4}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 272
+    sget-object v4, Lcom/android/server/WiredAccessoryObserver;->TAG:Ljava/lang/String;
 
-    move-result-object v4
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-object v4
+    const-string v6, "Intent.ACTION_HEADSET_PLUG: state: "
 
-    const-string v5, " name: "
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    move-result-object v4
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    move-result-object v4
+    const-string v6, " name: "
 
-    const-string v5, " mic: "
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    move-result-object v4
+    invoke-virtual {v5, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    move-result-object v4
+    const-string v6, " mic: "
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-static {v3, v4}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 271
-    invoke-static {v0, v7}, Landroid/app/ActivityManagerNative;->broadcastStickyIntent(Landroid/content/Intent;Ljava/lang/String;)V
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 274
-    .end local v0           #intent:Landroid/content/Intent;
-    .end local v1           #microphone:I
-    .end local v2           #state:I
+    invoke-static {v1, v7}, Landroid/app/ActivityManagerNative;->broadcastStickyIntent(Landroid/content/Intent;Ljava/lang/String;)V
+
+    .line 275
+    invoke-static {v0, v7}, Landroid/app/ActivityManagerNative;->broadcastStickyIntent(Landroid/content/Intent;Ljava/lang/String;)V
+
+    .line 278
+    .end local v0           #extraIntent:Landroid/content/Intent;
+    .end local v1           #intent:Landroid/content/Intent;
+    .end local v2           #microphone:I
+    .end local v3           #state:I
     :cond_6
     return-void
 
     .line 236
-    .restart local v2       #state:I
+    .restart local v3       #state:I
     :cond_7
-    if-ne p1, v8, :cond_8
+    if-ne p1, v9, :cond_8
 
     .line 237
-    new-instance v0, Landroid/content/Intent;
+    new-instance v1, Landroid/content/Intent;
 
-    const-string v3, "android.intent.action.USB_DGTL_HEADSET_PLUG"
+    const-string v4, "android.intent.action.USB_DGTL_HEADSET_PLUG"
 
-    invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 238
-    .restart local v0       #intent:Landroid/content/Intent;
-    invoke-virtual {v0, v6}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+    .restart local v1       #intent:Landroid/content/Intent;
+    invoke-virtual {v1, v8}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 239
-    const-string v3, "state"
+    const-string v4, "state"
 
-    invoke-virtual {v0, v3, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-virtual {v1, v4, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 240
-    const-string v3, "name"
+    const-string v4, "name"
 
-    invoke-virtual {v0, v3, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v1, v4, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 241
-    invoke-static {v0, v7}, Landroid/app/ActivityManagerNative;->broadcastStickyIntent(Landroid/content/Intent;Ljava/lang/String;)V
+    invoke-static {v1, v7}, Landroid/app/ActivityManagerNative;->broadcastStickyIntent(Landroid/content/Intent;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
     .line 242
-    .end local v0           #intent:Landroid/content/Intent;
+    .end local v1           #intent:Landroid/content/Intent;
     :cond_8
-    if-ne p1, v9, :cond_2
+    if-ne p1, v10, :cond_2
 
     .line 243
-    new-instance v0, Landroid/content/Intent;
+    new-instance v1, Landroid/content/Intent;
 
-    const-string v3, "android.intent.action.HDMI_AUDIO_PLUG"
+    const-string v4, "android.intent.action.HDMI_AUDIO_PLUG"
 
-    invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 244
-    .restart local v0       #intent:Landroid/content/Intent;
-    invoke-virtual {v0, v6}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+    .restart local v1       #intent:Landroid/content/Intent;
+    invoke-virtual {v1, v8}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 245
-    const-string v3, "state"
+    const-string v4, "state"
 
-    invoke-virtual {v0, v3, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    invoke-virtual {v1, v4, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 246
-    const-string v3, "name"
+    const-string v4, "name"
 
-    invoke-virtual {v0, v3, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v1, v4, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 247
-    invoke-static {v0, v7}, Landroid/app/ActivityManagerNative;->broadcastStickyIntent(Landroid/content/Intent;Ljava/lang/String;)V
+    invoke-static {v1, v7}, Landroid/app/ActivityManagerNative;->broadcastStickyIntent(Landroid/content/Intent;Ljava/lang/String;)V
 
     goto/16 :goto_0
 .end method

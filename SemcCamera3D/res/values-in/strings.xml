@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cam_strings_application_name_txt">Kamera</string>
-    <string name="cam_strings_shortcut_scene_recognition_txt">Pengenalan pmandangan</string>
-    <string name="cam_strings_shortcut_normal_txt">Normal</string>
+    <string name="cam_strings_shortcut_scene_recognition_txt">Pendeteksi pem. (kamera)</string>
+    <string name="cam_strings_shortcut_normal_txt">Normal (kamera)</string>
     <string name="cam_strings_shortcut_front_camera_txt">Kamera depan</string>
     <string name="cam_strings_shortcut_video_camera_txt">Kamera video</string>
     <string name="cam_strings_shortcut_front_video_txt">Video depan</string>
     <string name="cam_strings_scenes_auto_recog_portrait_txt">Potret</string>
     <string name="cam_strings_scenes_auto_recog_landscape_txt">Lanskap</string>
     <string name="cam_strings_scenes_auto_recog_backlight_txt">Lampu latar</string>
-    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Potret backlight</string>
+    <string name="cam_strings_scenes_auto_recog_backlight_portrait_txt">Potret lampu latar</string>
     <string name="cam_strings_scenes_auto_recog_twilight_txt">Pemandangan malam</string>
     <string name="cam_strings_scenes_auto_recog_twilight_portrait_txt">Potret malam</string>
     <string name="cam_strings_scenes_auto_recog_text_txt">Dokumen</string>
@@ -130,7 +130,7 @@
     <string name="cam_strings_wireless_gps_explanatory_txt">Lokasi yang diperoleh dengan GPS selalu lebih diutamakan dari jaringan nirkabel. Untuk mengubah cara mencari lokasi, buka Setelan > Lokasi.</string>
     <string name="cam_strings_do_not_show_again_txt">Jangan tampilkan lagi</string>
     <string name="cam_strings_unavailable_in_scene_txt">Tidak dapat diubah dalam kombinasi dengan setelan Pemandangan saat ini</string>
-    <string name="cam_strings_unavailable_in_smile_capture_txt">Tidak tersedia apabila Smile Shutter™ aktif</string>
+    <string name="cam_strings_unavailable_in_smile_capture_txt">Tidak tersedia ketika deteksi senyuman aktif</string>
     <string name="cam_3d_strings_dialog_delete_txt">Hapus berkas ini?</string>
     <string name="cam_3d_strings_dialog_delete_include_ma_txt">Juga Multi Sudut</string>
     <string name="cam_3d_strings_dialog_delete_include_3d_txt">Jg berkas 3D</string>
@@ -202,7 +202,7 @@ Catatan: Berkas ini berisi area abu-abu."</string>
     <string name="cam_3d_strings_dialog_delete_ma_with_3d_txt">Juga tersedia gambar 3D untuk foto Multi Sudut ini. Hapus semua?</string>
     <string name="cam_3d_strings_dialog_delete_only_ma_txt">OnlyM.Angle</string>
     <string name="cam_3d_strings_dialog_delete_only_3d_txt">Hanya 3D</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Tidak dapat menggunakan modus ini apabila kabel HDMI tersambung. Silakan cabut kabel HDMI.</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_txt">Cabut kabel. Anda tidak dapat mengambil foto dalam modus ini saat kabelnya tersambung.</string>
     <string name="cam_3d_strings_album_3d_panorama_view_guide_no_hdmi_txt">Untuk melihat berkas ini dlm 3D, gunakan perangkat alat pendukung 3D.</string>
     <string name="cam_status_remained_min">%1$d mnt.</string>
     <string name="cam_strings_both_location_fail_txt">Tidak dapat menetapkan lokasi</string>
@@ -216,14 +216,14 @@ Catatan: Berkas ini berisi area abu-abu."</string>
     <string name="cam_strings_wireless_gps_explanatory_title_txt">Cara mencari lokasi</string>
     <string name="cam_strings_file_delete_confirm_title_txt">Hapus</string>
     <string name="cam_3d_strings_shooting_failure_title_txt">Tidak dapat memotret</string>
-    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Galat HDMI</string>
+    <string name="cam_3d_strings_error_capturing_during_connecting_tv_title_txt">Galat</string>
     <string name="cam_3d_strings_dialog_3d_output_title_txt">Tersedia remote control</string>
     <string name="cam_3d_strings_dialog_delete_title_txt">Hapus</string>
     <string name="cam_3d_strings_dialog_processing_saving_image_title_txt">Menyimpan gambar</string>
     <string name="cam_strings_error_message_during_voice_call_title_txt">Selama panggil. suara</string>
     <string name="cam_strings_touch_capture_gude_txt">Sentuh layar untuk memotret</string>
     <string name="cam_3d_strings_album_application_name_txt">Album 3D</string>
-    <string name="cam_strings_capturing_mode_scene_recognition_short_txt">Pengenalan pemandangan</string>
+    <string name="cam_strings_capturing_mode_scene_recognition_short_txt">Pendeteksi pemandangan</string>
     <string name="cam_strings_capturing_mode_normal_short_txt">Normal</string>
     <string name="cam_strings_capturing_mode_front_camera_short_txt">Kamera depan</string>
     <string name="cam_strings_capturing_mode_video_camera_short_txt">Kamera video</string>
@@ -278,9 +278,9 @@ Catatan: Berkas ini berisi area abu-abu."</string>
     <string name="cam_strings_cancel_txt">Batal</string>
     <string name="cam_strings_zoom_help_txt">Gunakan tombol volume untuk memperbesar/memperkecil</string>
     <string name="cam_strings_zoom_not_supported_txt">Tidak dapat zum dalam modus ini</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Untuk melihat foto di 3D, sambungkan kamera ke TV 3D dengan HDMI atau ketuk tombol Putar di.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_txt">Untuk melihat foto di 3D, sambungkan telepon ke TV 3D dengan HDMI atau ketuk tombol Putar di tombol perangkat.</string>
     <string name="cam_strings_touch_capture_gude_video_txt">Sentuh layar untuk merekam video</string>
-    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Untuk melihat foto ini dalam 3D, sambungkan telepon dengan TV 3D dengan mengetuk tombol Putar di.</string>
+    <string name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt">Untuk melihat foto ini dalam 3D, sambungkan telepon ke TV 3D dengan tombol perangkat.</string>
     <string name="cam_strings_error_storage_changing_to_internal_txt">Kartu SD tidak tersedia. Lokasi penyimpanan default diubah ke penyimpanan internal.</string>
     <string name="cam_strings_error_storage_changing_to_SD_txt">Kartu SD tersedia. Lokasi penyimpanan default diubah ke penyimpanan internal.</string>
 </resources>

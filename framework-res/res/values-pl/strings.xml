@@ -910,11 +910,11 @@ Wybierz opcję OK, aby kontynuować, lub opcję Anuluj, aby pozostać na tej str
     <string name="low_internal_storage_view_title">Mało miejsca</string>
     <string name="low_internal_storage_view_text">Pamięć telefonu wkrótce zostanie zapełniona.</string>
     <string name="loading">Ładowanie...</string>
-    <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_on">WŁ.</string>
+    <string name="capital_off">WYŁ.</string>
     <string name="whichApplication">Zakończ czynność w</string>
-    <string name="alwaysUse">Używaj domyślnie dla tej czynności.</string>
-    <string name="clearDefaultHintMsg">Wyczyść domyślne w: Ustawienia strony głównej > Aplikacje > Zarządzaj aplikacjami.</string>
+    <string name="alwaysUse">Używaj domyślnie dla tej czynności</string>
+    <string name="clearDefaultHintMsg">Wyczyść ustawienia domyślne w: Ustawienia > Aplikacje.</string>
     <string name="chooseActivity">Wybierz czynność</string>
     <string name="chooseUsbActivity">Wybierz aplikację dla urządzenia USB</string>
     <string name="noApplications">Żadna z aplikacji nie może wykonać tej czynności.</string>
@@ -1224,7 +1224,7 @@ dotyczące konta %s"</string>
     <string name="lockscreen_strings_sim_locked_out_header_txt">Karta SIM zablokowana</string>
     <string name="lockscreen_strings_sim_puk_enter_puk_header_txt">Wprowadź kod PUK</string>
     <string name="lockscreen_strings_sim_puk_locked_header_txt">Karta SIM zablokowana</string>
-    <string name="lockscreen_strings_sim_puk_locked_message_txt">Wprowadź kod PUK od operatora</string>
+    <string name="lockscreen_strings_sim_puk_locked_message_txt">Wprowadź kod PUK od operatora sieci</string>
     <string name="lockscreen_strings_sim_puk_locked_out_message_txt">Skontaktuj się z operatorem</string>
     <string name="lockscreen_strings_sim_puk_new_pin_header_txt">Wprowadź nowy kod PIN</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Powtórz nowy kod PIN</string>
