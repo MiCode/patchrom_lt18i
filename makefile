@@ -9,7 +9,7 @@ local-zip-file     := lt18i_4.1.A.0.562.zip
 #local-out-zip-file := MIUI_lt18i.zip
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := SemcCamera3D
+local-modified-apps := SemcCamera3D CustomizedSettings
 
 local-modified-jars := #HTCExtension
 

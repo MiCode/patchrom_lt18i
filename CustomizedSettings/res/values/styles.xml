@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="CustSettingsDefaultTheme" parent="@com.sonyericsson.uxp:style/SEMCTheme">
-        <item name="android:errorMessageAboveBackground">1</item>
+        <item name="android:errorMessageAboveBackground">@android:drawable/popup_inline_error_above</item>
     </style>
 </resources>
