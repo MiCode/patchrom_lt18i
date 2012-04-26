@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <setting name="bluetooth_on" />
+    <setting name="data_roaming" />
+    <setting name="install_non_market_apps" />
+    <setting name="location_providers_allowed" />
+    <setting name="assisted_gps_enabled" />
+    <setting name="network_preference" />
+    <setting name="usb_mass_storage_enabled" />
+    <setting name="wifi_on" />
+    <setting name="wifi_networks_available_notification_on" />
+    <setting name="wifi_watchdog_watch_list" />
+    <setting name="preferred_network_mode" />
+    <setting name="cdma_cell_broadcast_sms" />
+    <setting name="preferred_cdma_subscription" />
+    <setting name="adb_enabled" />
+    <setting name="mock_location" />
+    <setting name="backup_enabled" />
+    <setting name="backup_transport" />
+    <setting name="use_location" />
+    <setting name="default_input_method" />
+    <setting name="tether_dun_apn" />
+    <setting name="tether_dun_required" />
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Customised settings</string>
+    <string name="permlab_customized_settings_txt">Access to customised settings</string>
+    <string name="permdesc_customized_settings_txt">Allows the application to access operator customisation settings</string>
+</resources>
