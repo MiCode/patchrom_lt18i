@@ -23,10 +23,12 @@ ro.semc.version.cust_revision=R10D
       #########################################################################
       
 
-ro.config.ringtone=sony_ericsson.ogg
-ro.config.notification_sound=notification.ogg
-ro.config.alarm_alert=alarm.ogg
+ro.config.ringtone=MI.ogg
+ro.config.notification_sound=FadeIn.ogg
+ro.config.alarm_alert=GoodMorning.ogg
 ro.semc.content.number=PA3
+ro.config.sms_received_sound=FadeIn.ogg
+ro.config.sms_delivered_sound=MessageComplete.ogg
 
 ################# Updating of the SW Version #################
 ro.semc.version.fs_revision=4.1.A.0.562
