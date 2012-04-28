@@ -5235,7 +5235,14 @@
     :cond_4
     invoke-static {}, Landroid/view/Surface;->openTransaction()V
 
-    .line 7570
+    move-object/from16 v0, p0
+
+    move/from16 v1, v48
+
+    move/from16 v2, v44
+
+    invoke-direct {v0, v1, v2}, Lcom/android/server/wm/WindowManagerService;->createRoundCorners(II)V
+
     if-eqz v41, :cond_5
 
     .line 7571
@@ -13453,6 +13460,10 @@
     iput v3, v2, Landroid/content/res/Configuration;->fontScale:F
 
     .line 3444
+    iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mTempConfiguration:Landroid/content/res/Configuration;
+
+    invoke-static {p1, v2}, Landroid/app/MiuiThemeHelper;->copyExtraConfigurations(Landroid/content/res/Configuration;Landroid/content/res/Configuration;)V
+
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mTempConfiguration:Landroid/content/res/Configuration;
 
     invoke-virtual {p0, v2}, Lcom/android/server/wm/WindowManagerService;->computeNewConfigurationLocked(Landroid/content/res/Configuration;)Z
