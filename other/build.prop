@@ -88,8 +88,6 @@ DEVICE_PROVISIONED=1
 
 wifi.interface = wlan0
 ro.semc.wifi.hostapd=1
-persist.wifienabled=1
-persist.btenabled=1
 wifi.supplicant_scan_interval=60
 
 ro.semc.timescape_keys=Sony_Ericsson_Xperia
