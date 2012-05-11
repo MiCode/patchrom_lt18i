@@ -26972,7 +26972,7 @@
 
     move-result v10
 
-    if-eqz v10, :cond_5
+    if-nez v10, :cond_5
 
     .line 2585
     .end local v7           #packageName:Ljava/lang/String;
