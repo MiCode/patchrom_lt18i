@@ -13,7 +13,7 @@ local-modified-apps := SemcCamera3D CustomizedSettings
 
 local-modified-jars := #HTCExtension
 
-local-miui-modified-apps := MiuiHome Mms Settings Phone #ThemeManager Mms TelephonyProvider MiuiSystemUI
+local-miui-modified-apps := MiuiHome Mms Settings Phone MiuiGallery#ThemeManager Mms TelephonyProvider MiuiSystemUI
 
 local-miui-removed-apps  := MediaProvider
 
@@ -35,7 +35,7 @@ local-remove-apps   := AdobeFlashPlayer Conversations datatrafficswitch DigitalC
 	antstatenotifer PMSserviceTrigger MarketUpdater OneTimeInitializer neoreader SetupWizard \
 	Phonesky GoogleQuickSearchBox VoiceSearch widgetworldclock  widgetcalendar MediaUploader  \
 	SemcPhone enhancedusbux \
-	AddWidget AntHalService CdfInfoAccessor DefaultThemes DrmDialogs FastDormancy \
+	AddWidget CdfInfoAccessor DefaultThemes DrmDialogs FastDormancy \
 	HoloSpiralWallpaper LearningClient Protips \
 	ReadyToRun SecureClockJava SemcCnapProvider SemcCrashMonitor SemcEmail \
 	SemcSnpPlatformUtil SemcSnpVideoPlayer ShutDownAnimation SmartSearch SoundPicker \
