@@ -18,7 +18,30 @@ local-miui-modified-apps := MiuiHome Mms Settings Phone #ThemeManager Mms Teleph
 local-miui-removed-apps  := MediaProvider
 
 # All apps need to be removed from original ZIP file
-local-remove-apps   := AdobeFlashPlayer Conversations datatrafficswitch DigitalClockWidget EventStream EventStreamPluginCallLog EventStreamPluginFacebook EventStreamPluginTelephony EventStreamPluginTwitter FBIAppShare FBMediaDiscovery FBSetupwizard FBCalendarSync FBMusicLike FBNotificationPublisher GenieWidget JapaneseIME letsgolf_ay livewaremanager MagicSmokeWallpapers MediaWidget MusicWidget officesuite PhotoWidget playnowclientarvato POBoxSknPink POBoxSknWood PostViewer retaildemo SemcDeskClock SemcDlna SEMCFacebookProxy SemcVideoEdit StatusSwitch storefront SyncWizard Talk TimescapeRssPlugin TimescapeSpline TimescapeWidget trackid TtsService usersupport VisualizationWallpapers WallpaperPicker WeatherWidget widgetdigitalclock widgetfavouritepeople widgetonoff WikipediaPlugin wisepilot YouTube YouTubeKaraokePlugin YouTubePlugin facebook SemcTelephonyProvider SemcContactsProvider LocalContacts SimContacts Phonebook SemcMusic SemcCalendar SemcGallery3D UpdateCenter SEMCSetupWizard PhaseBeam OmaDatasyncService Home Galaxy4 NoiseField SystemUI InfiniteView Gallery2 SemcSettings OemCryptoReceiver Videos textinput-tng chinesetextinput Street Gmail antradioservice AppEnabler GoogleFeedback widgettimer  widgetanalogclock adobereader antstatenotifer PMSserviceTrigger MarketUpdater OneTimeInitializer neoreader SetupWizard Phonesky GoogleQuickSearchBox VoiceSearch widgetworldclock  widgetcalendar MediaUploader  SemcPhone enhancedusbux
+local-remove-apps   := AdobeFlashPlayer Conversations datatrafficswitch DigitalClockWidget \
+	EventStream EventStreamPluginCallLog EventStreamPluginFacebook EventStreamPluginTelephony \
+	EventStreamPluginTwitter FBIAppShare FBMediaDiscovery FBSetupwizard FBCalendarSync \
+	FBMusicLike FBNotificationPublisher GenieWidget JapaneseIME letsgolf_ay livewaremanager \
+	MagicSmokeWallpapers MediaWidget MusicWidget officesuite PhotoWidget playnowclientarvato \
+	POBoxSknPink POBoxSknWood PostViewer retaildemo SemcDeskClock SemcDlna SEMCFacebookProxy \
+	SemcVideoEdit StatusSwitch storefront SyncWizard Talk TimescapeRssPlugin TimescapeSpline \
+	TimescapeWidget trackid TtsService usersupport VisualizationWallpapers WallpaperPicker \
+	WeatherWidget widgetdigitalclock widgetfavouritepeople widgetonoff WikipediaPlugin wisepilot \
+	YouTube YouTubeKaraokePlugin YouTubePlugin facebook SemcTelephonyProvider SemcContactsProvider \
+	LocalContacts SimContacts Phonebook SemcMusic SemcCalendar SemcGallery3D UpdateCenter \
+	SEMCSetupWizard PhaseBeam OmaDatasyncService Home Galaxy4 NoiseField SystemUI InfiniteView \
+	Gallery2 SemcSettings OemCryptoReceiver Videos textinput-tng chinesetextinput Street Gmail \
+	antradioservice AppEnabler GoogleFeedback widgettimer  widgetanalogclock adobereader \
+	antstatenotifer PMSserviceTrigger MarketUpdater OneTimeInitializer neoreader SetupWizard \
+	Phonesky GoogleQuickSearchBox VoiceSearch widgetworldclock  widgetcalendar MediaUploader  \
+	SemcPhone enhancedusbux \
+	AddWidget AntHalService CdfInfoAccessor DefaultThemes DrmDialogs FastDormancy \
+	HoloSpiralWallpaper LearningClient Protips \
+	ReadyToRun SecureClockJava SemcCnapProvider SemcCrashMonitor SemcEmail \
+	SemcSnpPlatformUtil SemcSnpVideoPlayer ShutDownAnimation SmartSearch SoundPicker \
+	Sync talkback UnsupportedHeadsetNotifier VerifyCertificatesDummyAppApplication \
+	VerifyCertificatesDummyAppMedia VerifyCertificatesDummyAppPlatform \
+	VerifyCertificatesDummyAppShared
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
