@@ -73,6 +73,33 @@
 
     .line 1470
     :cond_1
+    const-string v17, "android.intent.action.RESTORE_FINISH"
+
+    invoke-virtual {v17, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v17
+
+    if-eqz v17, :cond_z
+
+    move-object/from16 v0, p0
+
+    iget-object v17, v0, Lcom/android/server/AppWidgetService$3;->this$0:Lcom/android/server/AppWidgetService;
+
+    const/16 v16, 0x0
+
+    move/from16 v0, v16
+
+    iput-boolean v0, v17, Lcom/android/server/AppWidgetService;->mStateLoaded:Z
+
+    move-object/from16 v0, p0
+
+    iget-object v17, v0, Lcom/android/server/AppWidgetService$3;->this$0:Lcom/android/server/AppWidgetService;
+
+    invoke-virtual {v17}, Lcom/android/server/AppWidgetService;->sendInitialBroadcasts()V
+
+    goto :goto_0
+
+    :cond_z
     const-string v17, "android.intent.action.CONFIGURATION_CHANGED"
 
     move-object/from16 v0, v17
