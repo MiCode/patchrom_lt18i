@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Miui.Theme.Settings">
+        <item name="android:windowBackground">@*android:drawable/background_holo_light</item>
+    </style>
+</resources>
