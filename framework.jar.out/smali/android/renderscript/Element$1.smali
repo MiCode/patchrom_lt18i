@@ -23,7 +23,7 @@
     .locals 3
 
     .prologue
-    .line 829
+    .line 835
     invoke-static {}, Landroid/renderscript/Element$DataKind;->values()[Landroid/renderscript/Element$DataKind;
 
     move-result-object v0

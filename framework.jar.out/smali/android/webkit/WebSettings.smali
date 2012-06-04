@@ -444,7 +444,7 @@
     iput-object p2, p0, Landroid/webkit/WebSettings;->mWebView:Landroid/webkit/WebView;
 
     .line 391
-    const v2, 0x10400b7
+    const v2, 0x10400b8
 
     invoke-virtual {p1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -490,7 +490,7 @@
     iput-boolean v0, p0, Landroid/webkit/WebSettings;->mUseDefaultUserAgent:Z
 
     .line 401
-    const v2, 0x1040022
+    const v2, 0x1040023
 
     new-array v3, v0, [Ljava/lang/Object;
 
@@ -957,7 +957,7 @@
 
     move-result-object v9
 
-    const v10, 0x1040341
+    const v10, 0x1040342
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -975,7 +975,7 @@
 
     move-result-object v9
 
-    const v10, 0x1040340
+    const v10, 0x1040341
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

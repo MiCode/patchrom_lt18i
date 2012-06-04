@@ -795,8 +795,8 @@
     <string name="lockscreen_forgot_pattern_button_text">Забыли графический ключ?</string>
     <string name="lockscreen_glogin_forgot_pattern">Снятие блокировки аккаунта</string>
     <string name="lockscreen_glogin_too_many_attempts">Слишком много попыток ввода графического ключа!</string>
-    <string name="lockscreen_glogin_instructions">Для разблокировки войдите с помощью своего аккаунта Google</string>
-    <string name="lockscreen_glogin_username_hint">Имя пользователя (электронная почта)</string>
+    <string name="lockscreen_glogin_instructions">Чтобы разблокировать устройство, войдите в свой аккаунт Google.</string>
+    <string name="lockscreen_glogin_username_hint">Имя пользователя (эл. почта)</string>
     <string name="lockscreen_glogin_password_hint">Пароль</string>
     <string name="lockscreen_glogin_submit_button">Вход</string>
     <string name="lockscreen_glogin_invalid_input">Неверное имя пользователя или пароль.</string>

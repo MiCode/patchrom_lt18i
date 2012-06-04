@@ -158,7 +158,7 @@
 
     iget-object v2, p0, Landroid/webkit/StreamLoader;->mContext:Landroid/content/Context;
 
-    const v3, 0x1040131
+    const v3, 0x1040132
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

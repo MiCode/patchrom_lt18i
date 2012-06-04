@@ -1488,7 +1488,7 @@
 
     const/16 v5, -0x9
 
-    const v6, 0x1040139
+    const v6, 0x104013a
 
     invoke-virtual {v4, v5, v6}, Landroid/net/http/Request;->error(II)V
 

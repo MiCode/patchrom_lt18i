@@ -29,7 +29,7 @@
     .parameter
 
     .prologue
-    .line 1976
+    .line 1989
     iput-object p1, p0, Landroid/widget/NumberPicker$ChangeCurrentByOneFromLongPressCommand;->this$0:Landroid/widget/NumberPicker;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .parameter "x1"
 
     .prologue
-    .line 1976
+    .line 1989
     invoke-direct {p0, p1}, Landroid/widget/NumberPicker$ChangeCurrentByOneFromLongPressCommand;->setIncrement(Z)V
 
     return-void
@@ -54,10 +54,10 @@
     .parameter "increment"
 
     .prologue
-    .line 1980
+    .line 1993
     iput-boolean p1, p0, Landroid/widget/NumberPicker$ChangeCurrentByOneFromLongPressCommand;->mIncrement:Z
 
-    .line 1981
+    .line 1994
     return-void
 .end method
 
@@ -67,7 +67,7 @@
     .locals 3
 
     .prologue
-    .line 1984
+    .line 1997
     iget-object v0, p0, Landroid/widget/NumberPicker$ChangeCurrentByOneFromLongPressCommand;->this$0:Landroid/widget/NumberPicker;
 
     iget-boolean v1, p0, Landroid/widget/NumberPicker$ChangeCurrentByOneFromLongPressCommand;->mIncrement:Z
@@ -75,7 +75,7 @@
     #calls: Landroid/widget/NumberPicker;->changeCurrentByOne(Z)V
     invoke-static {v0, v1}, Landroid/widget/NumberPicker;->access$100(Landroid/widget/NumberPicker;Z)V
 
-    .line 1985
+    .line 1998
     iget-object v0, p0, Landroid/widget/NumberPicker$ChangeCurrentByOneFromLongPressCommand;->this$0:Landroid/widget/NumberPicker;
 
     iget-object v1, p0, Landroid/widget/NumberPicker$ChangeCurrentByOneFromLongPressCommand;->this$0:Landroid/widget/NumberPicker;
@@ -87,6 +87,6 @@
 
     invoke-virtual {v0, p0, v1, v2}, Landroid/widget/NumberPicker;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 1986
+    .line 1999
     return-void
 .end method

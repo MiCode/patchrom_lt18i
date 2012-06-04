@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 4307
+    .line 4341
     iput-object p1, p0, Lcom/android/server/am/ActivityStack$ScreenStatusReceiver;->this$0:Lcom/android/server/am/ActivityStack;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -42,7 +42,7 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 4311
+    .line 4345
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v3
@@ -55,7 +55,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 4312
+    .line 4346
     iget-object v3, p0, Lcom/android/server/am/ActivityStack$ScreenStatusReceiver;->this$0:Lcom/android/server/am/ActivityStack;
 
     const-string v4, "SCREEN_STATUS_REQUEST"
@@ -67,7 +67,7 @@
     #setter for: Lcom/android/server/am/ActivityStack;->mScreenStatusRequest:Z
     invoke-static {v3, v4}, Lcom/android/server/am/ActivityStack;->access$002(Lcom/android/server/am/ActivityStack;Z)Z
 
-    .line 4313
+    .line 4347
     iget-object v3, p0, Lcom/android/server/am/ActivityStack$ScreenStatusReceiver;->this$0:Lcom/android/server/am/ActivityStack;
 
     const-string v4, "SCREEN_STATUS_AVAILABLE_REQUEST"
@@ -79,7 +79,7 @@
     #setter for: Lcom/android/server/am/ActivityStack;->mScreenStatusAvailableRequest:Z
     invoke-static {v3, v4}, Lcom/android/server/am/ActivityStack;->access$102(Lcom/android/server/am/ActivityStack;Z)Z
 
-    .line 4315
+    .line 4349
     iget-object v3, p0, Lcom/android/server/am/ActivityStack$ScreenStatusReceiver;->this$0:Lcom/android/server/am/ActivityStack;
 
     #getter for: Lcom/android/server/am/ActivityStack;->mScreenStatusRequest:Z
@@ -89,7 +89,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 4316
+    .line 4350
     iget-object v3, p0, Lcom/android/server/am/ActivityStack$ScreenStatusReceiver;->this$0:Lcom/android/server/am/ActivityStack;
 
     iget-object v3, v3, Lcom/android/server/am/ActivityStack;->mHistory:Ljava/util/ArrayList;
@@ -100,18 +100,18 @@
 
     add-int/lit8 v2, v3, -0x1
 
-    .line 4317
+    .line 4351
     .local v2, top:I
     if-ltz v2, :cond_0
 
-    .line 4318
+    .line 4352
     new-instance v0, Landroid/content/Intent;
 
     const-string v3, "com.sonyericsson.intent.action.stk.idle_screen"
 
     invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 4319
+    .line 4353
     .local v0, StkIntent:Landroid/content/Intent;
     iget-object v3, p0, Lcom/android/server/am/ActivityStack$ScreenStatusReceiver;->this$0:Lcom/android/server/am/ActivityStack;
 
@@ -123,7 +123,7 @@
 
     check-cast v1, Lcom/android/server/am/ActivityRecord;
 
-    .line 4320
+    .line 4354
     .local v1, p:Lcom/android/server/am/ActivityRecord;
     iget-object v3, v1, Lcom/android/server/am/ActivityRecord;->intent:Landroid/content/Intent;
 
@@ -135,20 +135,20 @@
 
     if-eqz v3, :cond_1
 
-    .line 4321
+    .line 4355
     const-string v3, "SCREEN_IDLE"
 
     const/4 v4, 0x1
 
     invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 4322
+    .line 4356
     iget-object v3, p0, Lcom/android/server/am/ActivityStack$ScreenStatusReceiver;->this$0:Lcom/android/server/am/ActivityStack;
 
     #calls: Lcom/android/server/am/ActivityStack;->screenStatusAvailable(Landroid/content/Intent;)V
     invoke-static {v3, v0}, Lcom/android/server/am/ActivityStack;->access$200(Lcom/android/server/am/ActivityStack;Landroid/content/Intent;)V
 
-    .line 4326
+    .line 4360
     :goto_0
     iget-object v3, p0, Lcom/android/server/am/ActivityStack$ScreenStatusReceiver;->this$0:Lcom/android/server/am/ActivityStack;
 
@@ -156,14 +156,14 @@
 
     invoke-virtual {v3, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 4330
+    .line 4364
     .end local v0           #StkIntent:Landroid/content/Intent;
     .end local v1           #p:Lcom/android/server/am/ActivityRecord;
     .end local v2           #top:I
     :cond_0
     return-void
 
-    .line 4324
+    .line 4358
     .restart local v0       #StkIntent:Landroid/content/Intent;
     .restart local v1       #p:Lcom/android/server/am/ActivityRecord;
     .restart local v2       #top:I

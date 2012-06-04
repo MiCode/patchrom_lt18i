@@ -351,6 +351,14 @@
     .end annotation
 .end method
 
+.method public abstract lockNow()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract monitorInput(Ljava/lang/String;)Landroid/view/InputChannel;
     .annotation system Ldalvik/annotation/Throws;
         value = {

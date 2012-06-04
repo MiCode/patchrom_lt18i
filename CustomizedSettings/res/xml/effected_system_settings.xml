@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <setting name="dim_screen" />
-    <setting name="stay_on_while_plugged_in" />
-    <setting name="screen_off_timeout" />
-    <setting name="emergency_tone" />
-    <setting name="call_auto_retry" />
-    <setting name="dtmf_tone_type" />
-    <setting name="hearing_aid" />
-    <setting name="tty_mode" />
-    <setting name="airplane_mode_on" />
-    <setting name="airplane_mode_radios" />
-    <setting name="airplane_mode_toggleable_radios" />
-    <setting name="auto_time" />
-    <setting name="auto_time_zone" />
-    <setting name="screen_brightness" />
-    <setting name="screen_brightness_mode" />
-    <setting name="accelerometer_rotation" />
-    <setting name="notification_light_pulse" />
-    <setting name="window_animation_scale" />
-    <setting name="transition_animation_scale" />
-    <setting name="haptic_feedback_enabled" />
-    <setting name="sound_effects_enabled" />
-    <setting name="wifi_sleep_policy" />
-    <setting name="time_12_24" />
+    <setting name="dim_screen" version="1" />
+    <setting name="stay_on_while_plugged_in" version="1" />
+    <setting name="screen_off_timeout" version="1" />
+    <setting name="emergency_tone" version="1" />
+    <setting name="call_auto_retry" version="1" />
+    <setting name="dtmf_tone_type" version="1" />
+    <setting name="hearing_aid" version="1" />
+    <setting name="tty_mode" version="1" />
+    <setting name="airplane_mode_on" version="1" />
+    <setting name="airplane_mode_radios" version="1" />
+    <setting name="airplane_mode_toggleable_radios" version="1" />
+    <setting name="auto_time" version="1" />
+    <setting name="auto_time_zone" version="1" />
+    <setting name="screen_brightness" version="1" />
+    <setting name="screen_brightness_mode" version="1" />
+    <setting name="accelerometer_rotation" version="1" />
+    <setting name="notification_light_pulse" version="1" />
+    <setting name="window_animation_scale" version="1" />
+    <setting name="transition_animation_scale" version="1" />
+    <setting name="haptic_feedback_enabled" version="1" />
+    <setting name="sound_effects_enabled" version="1" />
+    <setting name="wifi_sleep_policy" version="1" />
+    <setting name="time_12_24" version="1" />
 </resources>

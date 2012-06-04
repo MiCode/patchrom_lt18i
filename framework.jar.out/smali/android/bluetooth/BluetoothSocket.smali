@@ -80,24 +80,24 @@
 
     const/4 v1, -0x1
 
-    .line 125
+    .line 131
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 126
+    .line 132
     if-ne p1, v0, :cond_1
 
     if-nez p7, :cond_1
 
     if-ne p2, v1, :cond_1
 
-    .line 127
+    .line 133
     if-lt p6, v0, :cond_0
 
     const/16 v0, 0x1e
 
     if-le p6, v0, :cond_1
 
-    .line 128
+    .line 134
     :cond_0
     new-instance v0, Ljava/io/IOException;
 
@@ -123,43 +123,43 @@
 
     throw v0
 
-    .line 131
+    .line 137
     :cond_1
     if-nez p7, :cond_2
 
-    .line 132
+    .line 138
     iput p6, p0, Landroid/bluetooth/BluetoothSocket;->mPort:I
 
-    .line 133
+    .line 139
     iput-object v2, p0, Landroid/bluetooth/BluetoothSocket;->mSdp:Landroid/bluetooth/BluetoothSocket$SdpHelper;
 
-    .line 138
+    .line 144
     :goto_0
     iput p1, p0, Landroid/bluetooth/BluetoothSocket;->mType:I
 
-    .line 139
+    .line 145
     iput-boolean p3, p0, Landroid/bluetooth/BluetoothSocket;->mAuth:Z
 
-    .line 140
+    .line 146
     iput-boolean p4, p0, Landroid/bluetooth/BluetoothSocket;->mEncrypt:Z
 
-    .line 141
+    .line 147
     iput-object p5, p0, Landroid/bluetooth/BluetoothSocket;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
-    .line 142
+    .line 148
     if-nez p5, :cond_3
 
-    .line 143
+    .line 149
     iput-object v2, p0, Landroid/bluetooth/BluetoothSocket;->mAddress:Ljava/lang/String;
 
-    .line 147
+    .line 153
     :goto_1
     if-ne p2, v1, :cond_4
 
-    .line 148
+    .line 154
     invoke-direct {p0}, Landroid/bluetooth/BluetoothSocket;->initSocketNative()V
 
-    .line 152
+    .line 158
     :goto_2
     new-instance v0, Landroid/bluetooth/BluetoothInputStream;
 
@@ -167,29 +167,29 @@
 
     iput-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mInputStream:Landroid/bluetooth/BluetoothInputStream;
 
-    .line 153
+    .line 159
     new-instance v0, Landroid/bluetooth/BluetoothOutputStream;
 
     invoke-direct {v0, p0}, Landroid/bluetooth/BluetoothOutputStream;-><init>(Landroid/bluetooth/BluetoothSocket;)V
 
     iput-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mOutputStream:Landroid/bluetooth/BluetoothOutputStream;
 
-    .line 154
+    .line 160
     sget-object v0, Landroid/bluetooth/BluetoothSocket$SocketState;->INIT:Landroid/bluetooth/BluetoothSocket$SocketState;
 
     iput-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mSocketState:Landroid/bluetooth/BluetoothSocket$SocketState;
 
-    .line 155
+    .line 161
     new-instance v0, Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;-><init>()V
 
     iput-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
-    .line 156
+    .line 162
     return-void
 
-    .line 135
+    .line 141
     :cond_2
     new-instance v0, Landroid/bluetooth/BluetoothSocket$SdpHelper;
 
@@ -197,12 +197,12 @@
 
     iput-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mSdp:Landroid/bluetooth/BluetoothSocket$SdpHelper;
 
-    .line 136
+    .line 142
     iput v1, p0, Landroid/bluetooth/BluetoothSocket;->mPort:I
 
     goto :goto_0
 
-    .line 145
+    .line 151
     :cond_3
     invoke-virtual {p5}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
@@ -212,7 +212,7 @@
 
     goto :goto_1
 
-    .line 150
+    .line 156
     :cond_4
     invoke-direct {p0, p2}, Landroid/bluetooth/BluetoothSocket;->initSocketFromFdNative(I)V
 
@@ -234,7 +234,7 @@
     .end annotation
 
     .prologue
-    .line 171
+    .line 177
     new-instance v5, Landroid/bluetooth/BluetoothDevice;
 
     invoke-direct {v5, p5}, Landroid/bluetooth/BluetoothDevice;-><init>(Ljava/lang/String;)V
@@ -255,7 +255,7 @@
 
     invoke-direct/range {v0 .. v7}, Landroid/bluetooth/BluetoothSocket;-><init>(IIZZLandroid/bluetooth/BluetoothDevice;ILandroid/os/ParcelUuid;)V
 
-    .line 172
+    .line 178
     return-void
 .end method
 
@@ -346,7 +346,7 @@
     .end annotation
 
     .prologue
-    .line 301
+    .line 307
     iget-object v1, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -355,7 +355,7 @@
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;->lock()V
 
-    .line 303
+    .line 309
     :try_start_0
     iget-object v1, p0, Landroid/bluetooth/BluetoothSocket;->mSocketState:Landroid/bluetooth/BluetoothSocket$SocketState;
 
@@ -373,7 +373,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 309
+    .line 315
     :catchall_0
     move-exception v1
 
@@ -387,14 +387,14 @@
 
     throw v1
 
-    .line 305
+    .line 311
     :cond_0
     :try_start_1
     invoke-direct {p0, p1}, Landroid/bluetooth/BluetoothSocket;->acceptNative(I)Landroid/bluetooth/BluetoothSocket;
 
     move-result-object v0
 
-    .line 306
+    .line 312
     .local v0, acceptedSocket:Landroid/bluetooth/BluetoothSocket;
     sget-object v1, Landroid/bluetooth/BluetoothSocket$SocketState;->CONNECTED:Landroid/bluetooth/BluetoothSocket$SocketState;
 
@@ -402,7 +402,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 309
+    .line 315
     iget-object v1, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -423,7 +423,7 @@
     .end annotation
 
     .prologue
-    .line 314
+    .line 320
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -432,7 +432,7 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;->lock()V
 
-    .line 316
+    .line 322
     :try_start_0
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mSocketState:Landroid/bluetooth/BluetoothSocket$SocketState;
 
@@ -450,7 +450,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 319
+    .line 325
     :catchall_0
     move-exception v0
 
@@ -464,7 +464,7 @@
 
     throw v0
 
-    .line 317
+    .line 323
     :cond_0
     :try_start_1
     invoke-direct {p0}, Landroid/bluetooth/BluetoothSocket;->availableNative()I
@@ -473,7 +473,7 @@
 
     move-result v0
 
-    .line 319
+    .line 325
     iget-object v1, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -489,7 +489,7 @@
     .locals 2
 
     .prologue
-    .line 291
+    .line 297
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -498,7 +498,7 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;->lock()V
 
-    .line 293
+    .line 299
     :try_start_0
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mSocketState:Landroid/bluetooth/BluetoothSocket$SocketState;
 
@@ -510,7 +510,7 @@
 
     const/16 v0, 0x4d
 
-    .line 296
+    .line 302
     iget-object v1, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -522,7 +522,7 @@
     :goto_0
     return v0
 
-    .line 294
+    .line 300
     :cond_0
     :try_start_1
     invoke-direct {p0}, Landroid/bluetooth/BluetoothSocket;->bindListenNative()I
@@ -531,7 +531,7 @@
 
     move-result v0
 
-    .line 296
+    .line 302
     iget-object v1, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -565,7 +565,7 @@
     .end annotation
 
     .prologue
-    .line 224
+    .line 230
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -574,7 +574,7 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;->lock()V
 
-    .line 226
+    .line 232
     :try_start_0
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mSocketState:Landroid/bluetooth/BluetoothSocket$SocketState;
 
@@ -584,7 +584,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 232
+    .line 238
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -593,29 +593,29 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;->unlock()V
 
-    .line 244
+    .line 250
     :goto_0
     return-void
 
-    .line 227
+    .line 233
     :cond_0
     :try_start_1
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mSdp:Landroid/bluetooth/BluetoothSocket$SdpHelper;
 
     if-eqz v0, :cond_1
 
-    .line 228
+    .line 234
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mSdp:Landroid/bluetooth/BluetoothSocket$SdpHelper;
 
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothSocket$SdpHelper;->cancel()V
 
-    .line 230
+    .line 236
     :cond_1
     invoke-direct {p0}, Landroid/bluetooth/BluetoothSocket;->abortNative()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 232
+    .line 238
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -624,7 +624,7 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;->unlock()V
 
-    .line 237
+    .line 243
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->writeLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;
@@ -633,18 +633,18 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;->lock()V
 
-    .line 239
+    .line 245
     :try_start_2
     sget-object v0, Landroid/bluetooth/BluetoothSocket$SocketState;->CLOSED:Landroid/bluetooth/BluetoothSocket$SocketState;
 
     iput-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mSocketState:Landroid/bluetooth/BluetoothSocket$SocketState;
 
-    .line 240
+    .line 246
     invoke-direct {p0}, Landroid/bluetooth/BluetoothSocket;->destroyNative()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 242
+    .line 248
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->writeLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;
@@ -655,7 +655,7 @@
 
     goto :goto_0
 
-    .line 232
+    .line 238
     :catchall_0
     move-exception v0
 
@@ -669,7 +669,7 @@
 
     throw v0
 
-    .line 242
+    .line 248
     :catchall_1
     move-exception v0
 
@@ -693,7 +693,7 @@
     .end annotation
 
     .prologue
-    .line 202
+    .line 208
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -702,7 +702,7 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;->lock()V
 
-    .line 204
+    .line 210
     :try_start_0
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mSocketState:Landroid/bluetooth/BluetoothSocket$SocketState;
 
@@ -720,7 +720,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 213
+    .line 219
     :catchall_0
     move-exception v0
 
@@ -734,14 +734,14 @@
 
     throw v0
 
-    .line 206
+    .line 212
     :cond_0
     :try_start_1
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mSdp:Landroid/bluetooth/BluetoothSocket$SdpHelper;
 
     if-eqz v0, :cond_1
 
-    .line 207
+    .line 213
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mSdp:Landroid/bluetooth/BluetoothSocket$SdpHelper;
 
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothSocket$SdpHelper;->doSdp()I
@@ -750,18 +750,18 @@
 
     iput v0, p0, Landroid/bluetooth/BluetoothSocket;->mPort:I
 
-    .line 210
+    .line 216
     :cond_1
     invoke-direct {p0}, Landroid/bluetooth/BluetoothSocket;->connectNative()V
 
-    .line 211
+    .line 217
     sget-object v0, Landroid/bluetooth/BluetoothSocket$SocketState;->CONNECTED:Landroid/bluetooth/BluetoothSocket$SocketState;
 
     iput-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mSocketState:Landroid/bluetooth/BluetoothSocket$SocketState;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 213
+    .line 219
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -770,7 +770,7 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;->unlock()V
 
-    .line 215
+    .line 221
     return-void
 .end method
 
@@ -783,19 +783,19 @@
     .end annotation
 
     .prologue
-    .line 178
+    .line 184
     :try_start_0
     invoke-virtual {p0}, Landroid/bluetooth/BluetoothSocket;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 180
+    .line 186
     invoke-super {p0}, Ljava/lang/Object;->finalize()V
 
-    .line 182
+    .line 188
     return-void
 
-    .line 180
+    .line 186
     :catchall_0
     move-exception v0
 
@@ -813,7 +813,7 @@
     .end annotation
 
     .prologue
-    .line 262
+    .line 268
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mInputStream:Landroid/bluetooth/BluetoothInputStream;
 
     return-object v0
@@ -828,7 +828,7 @@
     .end annotation
 
     .prologue
-    .line 273
+    .line 279
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mOutputStream:Landroid/bluetooth/BluetoothOutputStream;
 
     return-object v0
@@ -838,7 +838,7 @@
     .locals 1
 
     .prologue
-    .line 251
+    .line 257
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
     return-object v0
@@ -848,7 +848,7 @@
     .locals 2
 
     .prologue
-    .line 283
+    .line 289
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mSocketState:Landroid/bluetooth/BluetoothSocket$SocketState;
 
     sget-object v1, Landroid/bluetooth/BluetoothSocket$SocketState;->CONNECTED:Landroid/bluetooth/BluetoothSocket$SocketState;
@@ -878,7 +878,7 @@
     .end annotation
 
     .prologue
-    .line 324
+    .line 330
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -887,7 +887,7 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;->lock()V
 
-    .line 326
+    .line 332
     :try_start_0
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mSocketState:Landroid/bluetooth/BluetoothSocket$SocketState;
 
@@ -905,7 +905,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 329
+    .line 335
     :catchall_0
     move-exception v0
 
@@ -919,7 +919,7 @@
 
     throw v0
 
-    .line 327
+    .line 333
     :cond_0
     :try_start_1
     invoke-direct {p0, p1, p2, p3}, Landroid/bluetooth/BluetoothSocket;->readNative([BII)I
@@ -928,7 +928,7 @@
 
     move-result v0
 
-    .line 329
+    .line 335
     iget-object v1, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -960,7 +960,7 @@
     .end annotation
 
     .prologue
-    .line 334
+    .line 340
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -969,7 +969,7 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;->lock()V
 
-    .line 336
+    .line 342
     :try_start_0
     iget-object v0, p0, Landroid/bluetooth/BluetoothSocket;->mSocketState:Landroid/bluetooth/BluetoothSocket$SocketState;
 
@@ -987,7 +987,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 339
+    .line 345
     :catchall_0
     move-exception v0
 
@@ -1001,7 +1001,7 @@
 
     throw v0
 
-    .line 337
+    .line 343
     :cond_0
     :try_start_1
     invoke-direct {p0, p1, p2, p3}, Landroid/bluetooth/BluetoothSocket;->writeNative([BII)I
@@ -1010,7 +1010,7 @@
 
     move-result v0
 
-    .line 339
+    .line 345
     iget-object v1, p0, Landroid/bluetooth/BluetoothSocket;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;

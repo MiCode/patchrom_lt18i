@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 902
+    .line 904
     iput-object p1, p0, Lcom/android/server/NotificationManagerService$3;->this$0:Lcom/android/server/NotificationManagerService;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
@@ -38,7 +38,7 @@
     .locals 5
 
     .prologue
-    .line 908
+    .line 910
     :try_start_0
     iget-object v1, p0, Lcom/android/server/NotificationManagerService$3;->this$0:Lcom/android/server/NotificationManagerService;
 
@@ -51,7 +51,7 @@
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 909
+    .line 911
     :try_start_1
     iget-object v1, p0, Lcom/android/server/NotificationManagerService$3;->this$0:Lcom/android/server/NotificationManagerService;
 
@@ -62,7 +62,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 910
+    .line 912
     iget-object v1, p0, Lcom/android/server/NotificationManagerService$3;->this$0:Lcom/android/server/NotificationManagerService;
 
     #getter for: Lcom/android/server/NotificationManagerService;->mInCallToneGenerator:Landroid/media/ToneGenerator;
@@ -76,15 +76,15 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/media/ToneGenerator;->startTone(II)Z
 
-    .line 913
+    .line 915
     :cond_0
     monitor-exit v2
 
-    .line 917
+    .line 919
     :goto_0
     return-void
 
-    .line 913
+    .line 915
     :catchall_0
     move-exception v1
 
@@ -97,11 +97,11 @@
     :try_end_2
     .catch Ljava/lang/RuntimeException; {:try_start_2 .. :try_end_2} :catch_0
 
-    .line 914
+    .line 916
     :catch_0
     move-exception v0
 
-    .line 915
+    .line 917
     .local v0, e:Ljava/lang/RuntimeException;
     const-string v1, "NotificationService"
 

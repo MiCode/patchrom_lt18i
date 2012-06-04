@@ -33,7 +33,7 @@
     .parameter
 
     .prologue
-    .line 661
+    .line 674
     iput-object p1, p0, Lcom/android/internal/widget/SlidingTabSemc$3;->this$0:Lcom/android/internal/widget/SlidingTabSemc;
 
     iput p2, p0, Lcom/android/internal/widget/SlidingTabSemc$3;->val$amount:I
@@ -54,7 +54,7 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 667
+    .line 680
     iget v0, p0, Lcom/android/internal/widget/SlidingTabSemc$3;->val$amount:I
 
     if-le v0, v2, :cond_0
@@ -68,7 +68,7 @@
 
     if-nez v0, :cond_0
 
-    .line 668
+    .line 681
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc$3;->this$0:Lcom/android/internal/widget/SlidingTabSemc;
 
     iget v1, p0, Lcom/android/internal/widget/SlidingTabSemc$3;->val$amount:I
@@ -80,11 +80,11 @@
     #calls: Lcom/android/internal/widget/SlidingTabSemc;->animateGhostMore(II)V
     invoke-static {v0, v1, v2}, Lcom/android/internal/widget/SlidingTabSemc;->access$500(Lcom/android/internal/widget/SlidingTabSemc;II)V
 
-    .line 674
+    .line 687
     :goto_0
     return-void
 
-    .line 670
+    .line 683
     :cond_0
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc$3;->this$0:Lcom/android/internal/widget/SlidingTabSemc;
 
@@ -93,7 +93,7 @@
     #setter for: Lcom/android/internal/widget/SlidingTabSemc;->mIsGhostAnimating:Z
     invoke-static {v0, v1}, Lcom/android/internal/widget/SlidingTabSemc;->access$702(Lcom/android/internal/widget/SlidingTabSemc;Z)Z
 
-    .line 671
+    .line 684
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc$3;->this$0:Lcom/android/internal/widget/SlidingTabSemc;
 
     #getter for: Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
@@ -105,7 +105,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 672
+    .line 685
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc$3;->this$0:Lcom/android/internal/widget/SlidingTabSemc;
 
     #calls: Lcom/android/internal/widget/SlidingTabSemc;->resetSlider(Z)V
@@ -119,7 +119,7 @@
     .parameter "animation"
 
     .prologue
-    .line 664
+    .line 677
     return-void
 .end method
 
@@ -128,6 +128,6 @@
     .parameter "animation"
 
     .prologue
-    .line 663
+    .line 676
     return-void
 .end method

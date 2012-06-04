@@ -20,11 +20,11 @@
         <item quantity="one">wczoraj</item>
     </plurals>
     <plurals name="in_num_seconds">
-        <item quantity="other">za %d sekund</item>
+        <item quantity="other">za %d sek.</item>
         <item quantity="one">za sekundę</item>
     </plurals>
     <plurals name="in_num_minutes">
-        <item quantity="other">za %d minut</item>
+        <item quantity="other">za %d min.</item>
         <item quantity="one">za minutę</item>
     </plurals>
     <plurals name="in_num_hours">

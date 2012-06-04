@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1890
+    .line 1907
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$8$1;->this$1:Lcom/android/internal/policy/impl/PhoneWindowManager$8;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 1892
+    .line 1909
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$8$1;->this$1:Lcom/android/internal/policy/impl/PhoneWindowManager$8;
 
     iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager$8;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
@@ -50,7 +50,7 @@
 
     monitor-enter v1
 
-    .line 1893
+    .line 1910
     :try_start_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$8$1;->this$1:Lcom/android/internal/policy/impl/PhoneWindowManager$8;
 
@@ -62,12 +62,12 @@
 
     iput v2, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mForceClearedSystemUiFlags:I
 
-    .line 1895
+    .line 1912
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1896
+    .line 1913
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$8$1;->this$1:Lcom/android/internal/policy/impl/PhoneWindowManager$8;
 
     iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager$8;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
@@ -76,10 +76,10 @@
 
     invoke-interface {v0}, Landroid/view/WindowManagerPolicy$WindowManagerFuncs;->reevaluateStatusBarVisibility()V
 
-    .line 1897
+    .line 1914
     return-void
 
-    .line 1895
+    .line 1912
     :catchall_0
     move-exception v0
 

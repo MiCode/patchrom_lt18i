@@ -159,7 +159,7 @@
 
     .line 237
     .local v0, inflate:Landroid/view/LayoutInflater;
-    const v4, 0x10900c7
+    const v4, 0x10900c9
 
     const/4 v5, 0x0
 
@@ -485,24 +485,4 @@
     move-exception v3
 
     goto :goto_0
-.end method
-
-.method public setType(I)V
-    .locals 1
-    .parameter "type"
-    .annotation build Landroid/annotation/MiuiHook;
-        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
-    .end annotation
-
-    .prologue
-    iget-object v0, p0, Landroid/widget/Toast;->mTN:Landroid/widget/Toast$TN;
-
-    #getter for: Landroid/widget/Toast$TN;->mParams:Landroid/view/WindowManager$LayoutParams;
-    invoke-static {v0}, Landroid/widget/Toast$TN;->access$000(Landroid/widget/Toast$TN;)Landroid/view/WindowManager$LayoutParams;
-
-    move-result-object v0
-
-    iput p1, v0, Landroid/view/WindowManager$LayoutParams;->type:I
-
-    return-void
 .end method

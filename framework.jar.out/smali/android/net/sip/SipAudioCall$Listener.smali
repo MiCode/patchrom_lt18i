@@ -19,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 66
+    .line 73
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,10 +32,10 @@
     .parameter "call"
 
     .prologue
-    .line 135
+    .line 142
     invoke-virtual {p0, p1}, Landroid/net/sip/SipAudioCall$Listener;->onChanged(Landroid/net/sip/SipAudioCall;)V
 
-    .line 136
+    .line 143
     return-void
 .end method
 
@@ -44,10 +44,10 @@
     .parameter "call"
 
     .prologue
-    .line 125
+    .line 132
     invoke-virtual {p0, p1}, Landroid/net/sip/SipAudioCall$Listener;->onChanged(Landroid/net/sip/SipAudioCall;)V
 
-    .line 126
+    .line 133
     return-void
 .end method
 
@@ -56,10 +56,10 @@
     .parameter "call"
 
     .prologue
-    .line 115
+    .line 122
     invoke-virtual {p0, p1}, Landroid/net/sip/SipAudioCall$Listener;->onChanged(Landroid/net/sip/SipAudioCall;)V
 
-    .line 116
+    .line 123
     return-void
 .end method
 
@@ -68,10 +68,10 @@
     .parameter "call"
 
     .prologue
-    .line 145
+    .line 152
     invoke-virtual {p0, p1}, Landroid/net/sip/SipAudioCall$Listener;->onChanged(Landroid/net/sip/SipAudioCall;)V
 
-    .line 146
+    .line 153
     return-void
 .end method
 
@@ -80,10 +80,10 @@
     .parameter "call"
 
     .prologue
-    .line 84
+    .line 91
     invoke-virtual {p0, p1}, Landroid/net/sip/SipAudioCall$Listener;->onChanged(Landroid/net/sip/SipAudioCall;)V
 
-    .line 85
+    .line 92
     return-void
 .end method
 
@@ -92,7 +92,7 @@
     .parameter "call"
 
     .prologue
-    .line 168
+    .line 175
     return-void
 .end method
 
@@ -103,7 +103,7 @@
     .parameter "errorMessage"
 
     .prologue
-    .line 159
+    .line 166
     return-void
 .end method
 
@@ -112,10 +112,10 @@
     .parameter "call"
 
     .prologue
-    .line 74
+    .line 81
     invoke-virtual {p0, p1}, Landroid/net/sip/SipAudioCall$Listener;->onChanged(Landroid/net/sip/SipAudioCall;)V
 
-    .line 75
+    .line 82
     return-void
 .end method
 
@@ -125,10 +125,10 @@
     .parameter "caller"
 
     .prologue
-    .line 95
+    .line 102
     invoke-virtual {p0, p1}, Landroid/net/sip/SipAudioCall$Listener;->onChanged(Landroid/net/sip/SipAudioCall;)V
 
-    .line 96
+    .line 103
     return-void
 .end method
 
@@ -137,9 +137,9 @@
     .parameter "call"
 
     .prologue
-    .line 105
+    .line 112
     invoke-virtual {p0, p1}, Landroid/net/sip/SipAudioCall$Listener;->onChanged(Landroid/net/sip/SipAudioCall;)V
 
-    .line 106
+    .line 113
     return-void
 .end method

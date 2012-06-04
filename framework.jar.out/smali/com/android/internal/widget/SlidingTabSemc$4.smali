@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 708
+    .line 721
     iput-object p1, p0, Lcom/android/internal/widget/SlidingTabSemc$4;->this$0:Lcom/android/internal/widget/SlidingTabSemc;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .parameter "animation"
 
     .prologue
-    .line 713
+    .line 726
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc$4;->this$0:Lcom/android/internal/widget/SlidingTabSemc;
 
     const/4 v1, 0x1
@@ -50,7 +50,7 @@
     #calls: Lcom/android/internal/widget/SlidingTabSemc;->resetSlider(Z)V
     invoke-static {v0, v1}, Lcom/android/internal/widget/SlidingTabSemc;->access$200(Lcom/android/internal/widget/SlidingTabSemc;Z)V
 
-    .line 714
+    .line 727
     return-void
 .end method
 
@@ -59,7 +59,7 @@
     .parameter "animation"
 
     .prologue
-    .line 710
+    .line 723
     return-void
 .end method
 
@@ -68,6 +68,6 @@
     .parameter "animation"
 
     .prologue
-    .line 709
+    .line 722
     return-void
 .end method

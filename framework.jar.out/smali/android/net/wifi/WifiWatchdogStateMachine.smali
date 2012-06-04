@@ -1911,7 +1911,7 @@
     if-eqz p1, :cond_1
 
     .line 538
-    const v5, 0x1040401
+    const v5, 0x1040402
 
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1933,7 +1933,7 @@
 
     move-result-object v5
 
-    const v6, 0x1040402
+    const v6, 0x1040403
 
     invoke-virtual {v2, v6}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -2103,7 +2103,7 @@
     invoke-virtual {v1, v6}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     .line 508
-    const v6, 0x10403ff
+    const v6, 0x1040400
 
     new-array v7, v10, [Ljava/lang/Object;
 
@@ -2119,7 +2119,7 @@
 
     .line 509
     .local v5, title:Ljava/lang/CharSequence;
-    const v6, 0x1040400
+    const v6, 0x1040401
 
     new-array v7, v10, [Ljava/lang/Object;
 
@@ -2148,7 +2148,7 @@
     iput-wide v6, v2, Landroid/app/Notification;->when:J
 
     .line 514
-    const v6, 0x10806bf
+    const v6, 0x10806c0
 
     iput v6, v2, Landroid/app/Notification;->icon:I
 

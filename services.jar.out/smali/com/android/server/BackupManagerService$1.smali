@@ -35,33 +35,35 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 13
+    .locals 11
     .parameter "context"
     .parameter "intent"
 
     .prologue
+    const/4 v10, 0x0
+
     .line 1274
-    const-string v10, "BackupManagerService"
+    const-string v7, "BackupManagerService"
 
-    new-instance v11, Ljava/lang/StringBuilder;
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v12, "Received broadcast "
+    const-string v9, "Received broadcast "
 
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v8
 
-    invoke-virtual {v11, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v11
+    move-result-object v8
 
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v11
+    move-result-object v8
 
-    invoke-static {v10, v11}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v7, v8}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 1276
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
@@ -70,321 +72,253 @@
 
     .line 1277
     .local v0, action:Ljava/lang/String;
-    const/4 v8, 0x0
+    const/4 v5, 0x0
 
     .line 1278
-    .local v8, replacing:Z
+    .local v5, replacing:Z
     const/4 v1, 0x0
 
     .line 1279
     .local v1, added:Z
     invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
-    move-result-object v3
+    move-result-object v2
 
     .line 1280
-    .local v3, extras:Landroid/os/Bundle;
-    const/4 v6, 0x0
+    .local v2, extras:Landroid/os/Bundle;
+    const/4 v3, 0x0
 
     .line 1281
-    .local v6, pkgList:[Ljava/lang/String;
-    const-string v10, "android.intent.action.PACKAGE_ADDED"
+    .local v3, pkgList:[Ljava/lang/String;
+    const-string v7, "android.intent.action.PACKAGE_ADDED"
 
-    invoke-virtual {v10, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v10
+    move-result v7
 
-    if-nez v10, :cond_0
+    if-nez v7, :cond_0
 
-    const-string v10, "android.intent.action.PACKAGE_REMOVED"
+    const-string v7, "android.intent.action.PACKAGE_REMOVED"
 
-    invoke-virtual {v10, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v10
+    move-result v7
 
-    if-nez v10, :cond_0
+    if-nez v7, :cond_0
 
-    const-string v10, "android.intent.action.PACKAGE_REPLACED"
+    const-string v7, "android.intent.action.PACKAGE_REPLACED"
 
-    invoke-virtual {v10, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v10
+    move-result v7
 
-    if-eqz v10, :cond_6
+    if-eqz v7, :cond_6
 
     .line 1284
     :cond_0
     invoke-virtual {p2}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
-    move-result-object v9
+    move-result-object v6
 
     .line 1285
-    .local v9, uri:Landroid/net/Uri;
-    if-nez v9, :cond_2
+    .local v6, uri:Landroid/net/Uri;
+    if-nez v6, :cond_2
 
-    .line 1334
+    .line 1328
     .end local v1           #added:Z
-    .end local v9           #uri:Landroid/net/Uri;
+    .end local v6           #uri:Landroid/net/Uri;
     :cond_1
     :goto_0
     return-void
 
     .line 1288
     .restart local v1       #added:Z
-    .restart local v9       #uri:Landroid/net/Uri;
+    .restart local v6       #uri:Landroid/net/Uri;
     :cond_2
-    invoke-virtual {v9}, Landroid/net/Uri;->getSchemeSpecificPart()Ljava/lang/String;
+    invoke-virtual {v6}, Landroid/net/Uri;->getSchemeSpecificPart()Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v4
 
     .line 1289
-    .local v7, pkgName:Ljava/lang/String;
-    if-eqz v7, :cond_3
+    .local v4, pkgName:Ljava/lang/String;
+    if-eqz v4, :cond_3
 
     .line 1290
-    const/4 v10, 0x1
+    const/4 v7, 0x1
 
-    new-array v6, v10, [Ljava/lang/String;
+    new-array v3, v7, [Ljava/lang/String;
 
-    .end local v6           #pkgList:[Ljava/lang/String;
-    const/4 v10, 0x0
-
-    aput-object v7, v6, v10
+    .end local v3           #pkgList:[Ljava/lang/String;
+    aput-object v4, v3, v10
 
     .line 1292
-    .restart local v6       #pkgList:[Ljava/lang/String;
+    .restart local v3       #pkgList:[Ljava/lang/String;
     :cond_3
-    const-string v10, "android.intent.action.PACKAGE_REPLACED"
+    const-string v7, "android.intent.action.PACKAGE_REPLACED"
 
-    invoke-virtual {v10, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v10
+    move-result v7
 
-    if-eqz v10, :cond_5
+    if-eqz v7, :cond_5
 
     .line 1295
-    const/4 v8, 0x1
+    const/4 v5, 0x1
 
-    move v1, v8
+    move v1, v5
 
     .line 1308
     .end local v1           #added:Z
-    .end local v7           #pkgName:Ljava/lang/String;
-    .end local v9           #uri:Landroid/net/Uri;
+    .end local v4           #pkgName:Ljava/lang/String;
+    .end local v6           #uri:Landroid/net/Uri;
     :cond_4
     :goto_1
-    if-eqz v6, :cond_1
+    if-eqz v3, :cond_1
 
-    array-length v10, v6
+    array-length v7, v3
 
-    if-eqz v10, :cond_1
+    if-eqz v7, :cond_1
 
     .line 1311
-    if-eqz v1, :cond_a
+    if-eqz v1, :cond_9
 
     .line 1312
-    iget-object v10, p0, Lcom/android/server/BackupManagerService$1;->this$0:Lcom/android/server/BackupManagerService;
+    iget-object v7, p0, Lcom/android/server/BackupManagerService$1;->this$0:Lcom/android/server/BackupManagerService;
 
-    iget-object v11, v10, Lcom/android/server/BackupManagerService;->mBackupParticipants:Landroid/util/SparseArray;
+    iget-object v8, v7, Lcom/android/server/BackupManagerService;->mBackupParticipants:Landroid/util/SparseArray;
 
-    monitor-enter v11
+    monitor-enter v8
 
     .line 1313
-    move-object v2, v6
-
-    .local v2, arr$:[Ljava/lang/String;
-    :try_start_0
-    array-length v5, v2
-
-    .local v5, len$:I
-    const/4 v4, 0x0
-
-    .local v4, i$:I
-    :goto_2
-    if-ge v4, v5, :cond_9
-
-    aget-object v7, v2, v4
+    if-eqz v5, :cond_8
 
     .line 1314
-    .restart local v7       #pkgName:Ljava/lang/String;
-    if-eqz v8, :cond_8
+    :try_start_0
+    iget-object v7, p0, Lcom/android/server/BackupManagerService$1;->this$0:Lcom/android/server/BackupManagerService;
 
-    .line 1316
-    iget-object v10, p0, Lcom/android/server/BackupManagerService$1;->this$0:Lcom/android/server/BackupManagerService;
+    invoke-virtual {v7, v3}, Lcom/android/server/BackupManagerService;->updatePackageParticipantsLocked([Ljava/lang/String;)V
 
-    invoke-virtual {v10, v7}, Lcom/android/server/BackupManagerService;->updatePackageParticipantsLocked(Ljava/lang/String;)V
+    .line 1318
+    :goto_2
+    monitor-exit v8
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v7
+
+    monitor-exit v8
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1313
-    :goto_3
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_2
+    throw v7
 
     .line 1297
-    .end local v2           #arr$:[Ljava/lang/String;
-    .end local v4           #i$:I
-    .end local v5           #len$:I
     .restart local v1       #added:Z
-    .restart local v9       #uri:Landroid/net/Uri;
+    .restart local v4       #pkgName:Ljava/lang/String;
+    .restart local v6       #uri:Landroid/net/Uri;
     :cond_5
-    const-string v10, "android.intent.action.PACKAGE_ADDED"
+    const-string v7, "android.intent.action.PACKAGE_ADDED"
 
-    invoke-virtual {v10, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     .line 1298
-    const-string v10, "android.intent.extra.REPLACING"
+    const-string v7, "android.intent.extra.REPLACING"
 
-    const/4 v11, 0x0
+    invoke-virtual {v2, v7, v10}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
 
-    invoke-virtual {v3, v10, v11}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v8
+    move-result v5
 
     goto :goto_1
 
     .line 1300
-    .end local v7           #pkgName:Ljava/lang/String;
-    .end local v9           #uri:Landroid/net/Uri;
+    .end local v4           #pkgName:Ljava/lang/String;
+    .end local v6           #uri:Landroid/net/Uri;
     :cond_6
-    const-string v10, "android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE"
+    const-string v7, "android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE"
 
-    invoke-virtual {v10, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v10
+    move-result v7
 
-    if-eqz v10, :cond_7
+    if-eqz v7, :cond_7
 
     .line 1301
     const/4 v1, 0x1
 
     .line 1302
-    const-string v10, "android.intent.extra.changed_package_list"
+    const-string v7, "android.intent.extra.changed_package_list"
 
-    invoke-virtual {p2, v10}, Landroid/content/Intent;->getStringArrayExtra(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {p2, v7}, Landroid/content/Intent;->getStringArrayExtra(Ljava/lang/String;)[Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v3
 
     goto :goto_1
 
     .line 1303
     :cond_7
-    const-string v10, "android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE"
+    const-string v7, "android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE"
 
-    invoke-virtual {v10, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v7, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v10
+    move-result v7
 
-    if-eqz v10, :cond_4
+    if-eqz v7, :cond_4
 
     .line 1304
     const/4 v1, 0x0
 
     .line 1305
-    const-string v10, "android.intent.extra.changed_package_list"
+    const-string v7, "android.intent.extra.changed_package_list"
 
-    invoke-virtual {p2, v10}, Landroid/content/Intent;->getStringArrayExtra(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {p2, v7}, Landroid/content/Intent;->getStringArrayExtra(Ljava/lang/String;)[Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v3
 
     goto :goto_1
 
-    .line 1319
+    .line 1316
     .end local v1           #added:Z
-    .restart local v2       #arr$:[Ljava/lang/String;
-    .restart local v4       #i$:I
-    .restart local v5       #len$:I
-    .restart local v7       #pkgName:Ljava/lang/String;
     :cond_8
     :try_start_1
-    iget-object v10, p0, Lcom/android/server/BackupManagerService$1;->this$0:Lcom/android/server/BackupManagerService;
+    iget-object v7, p0, Lcom/android/server/BackupManagerService$1;->this$0:Lcom/android/server/BackupManagerService;
 
-    invoke-virtual {v10, v7}, Lcom/android/server/BackupManagerService;->addPackageParticipantsLocked(Ljava/lang/String;)V
-
-    goto :goto_3
-
-    .line 1322
-    .end local v4           #i$:I
-    .end local v5           #len$:I
-    .end local v7           #pkgName:Ljava/lang/String;
-    :catchall_0
-    move-exception v10
-
-    monitor-exit v11
+    invoke-virtual {v7, v3}, Lcom/android/server/BackupManagerService;->addPackageParticipantsLocked([Ljava/lang/String;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    throw v10
+    goto :goto_2
 
-    .restart local v4       #i$:I
-    .restart local v5       #len$:I
+    .line 1320
     :cond_9
+    if-nez v5, :cond_1
+
+    .line 1323
+    iget-object v7, p0, Lcom/android/server/BackupManagerService$1;->this$0:Lcom/android/server/BackupManagerService;
+
+    iget-object v8, v7, Lcom/android/server/BackupManagerService;->mBackupParticipants:Landroid/util/SparseArray;
+
+    monitor-enter v8
+
+    .line 1324
     :try_start_2
-    monitor-exit v11
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    iget-object v7, p0, Lcom/android/server/BackupManagerService$1;->this$0:Lcom/android/server/BackupManagerService;
+
+    invoke-virtual {v7, v3}, Lcom/android/server/BackupManagerService;->removePackageParticipantsLocked([Ljava/lang/String;)V
+
+    .line 1325
+    monitor-exit v8
 
     goto :goto_0
 
-    .line 1324
-    .end local v2           #arr$:[Ljava/lang/String;
-    .end local v4           #i$:I
-    .end local v5           #len$:I
-    :cond_a
-    if-nez v8, :cond_1
-
-    .line 1327
-    iget-object v10, p0, Lcom/android/server/BackupManagerService$1;->this$0:Lcom/android/server/BackupManagerService;
-
-    iget-object v11, v10, Lcom/android/server/BackupManagerService;->mBackupParticipants:Landroid/util/SparseArray;
-
-    monitor-enter v11
-
-    .line 1328
-    move-object v2, v6
-
-    .restart local v2       #arr$:[Ljava/lang/String;
-    :try_start_3
-    array-length v5, v2
-
-    .restart local v5       #len$:I
-    const/4 v4, 0x0
-
-    .restart local v4       #i$:I
-    :goto_4
-    if-ge v4, v5, :cond_b
-
-    aget-object v7, v2, v4
-
-    .line 1329
-    .restart local v7       #pkgName:Ljava/lang/String;
-    iget-object v10, p0, Lcom/android/server/BackupManagerService$1;->this$0:Lcom/android/server/BackupManagerService;
-
-    invoke-virtual {v10, v7}, Lcom/android/server/BackupManagerService;->removePackageParticipantsLocked(Ljava/lang/String;)V
-
-    .line 1328
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_4
-
-    .line 1331
-    .end local v7           #pkgName:Ljava/lang/String;
-    :cond_b
-    monitor-exit v11
-
-    goto/16 :goto_0
-
-    .end local v4           #i$:I
-    .end local v5           #len$:I
     :catchall_1
-    move-exception v10
+    move-exception v7
 
-    monitor-exit v11
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+    monitor-exit v8
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    throw v10
+    throw v7
 .end method

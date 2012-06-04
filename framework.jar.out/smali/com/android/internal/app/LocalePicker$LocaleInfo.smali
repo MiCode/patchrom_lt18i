@@ -30,11 +30,11 @@
 # static fields
 .field public static final LOCALE_DIVIDER:I = 0x0
 
-.field private static final LOCALE_DIVIDER_LAYOUT:I = 0x1090066
+.field private static final LOCALE_DIVIDER_LAYOUT:I = 0x1090068
 
 .field public static final LOCALE_ITEM:I = 0x1
 
-.field private static final LOCALE_ITEM_LAYOUT:I = 0x1090067
+.field private static final LOCALE_ITEM_LAYOUT:I = 0x1090069
 
 .field public static final NBR_OF_TYPES:I = 0x2
 
@@ -103,7 +103,7 @@
 
     .line 138
     :pswitch_0
-    const v0, 0x1090066
+    const v0, 0x1090068
 
     iput v0, p0, Lcom/android/internal/app/LocalePicker$LocaleInfo;->resourceId:I
 
@@ -122,7 +122,7 @@
 
     .line 144
     :pswitch_1
-    const v0, 0x1090067
+    const v0, 0x1090069
 
     iput v0, p0, Lcom/android/internal/app/LocalePicker$LocaleInfo;->resourceId:I
 

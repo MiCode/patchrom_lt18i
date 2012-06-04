@@ -222,8 +222,8 @@
     <string name="serviceClassDataSync">Sincronización</string>
     <string name="serviceClassPacket">Paquete</string>
     <string name="serviceClassPAD">PAD</string>
-    <string name="roamingText0">Indicador de roaming encendido</string>
-    <string name="roamingText1">Indicador de roaming apagado</string>
+    <string name="roamingText0">Indicador de roaming activado</string>
+    <string name="roamingText1">Indicador de roaming desactivado</string>
     <string name="roamingText2">Indicador de roaming titilando</string>
     <string name="roamingText3">Fuera del vecindario</string>
     <string name="roamingText4">Fuera de construcción</string>
@@ -233,8 +233,8 @@
     <string name="roamingText8">Roaming: socio premium</string>
     <string name="roamingText9">Roaming: funcionalidad de servicio completa</string>
     <string name="roamingText10">Roaming: funcionalidad de servicio parcial</string>
-    <string name="roamingText11">Banner de roaming encendido</string>
-    <string name="roamingText12">Banner de roaming apagado</string>
+    <string name="roamingText11">Banner de roaming activado</string>
+    <string name="roamingText12">Banner de roaming desactivado</string>
     <string name="roamingTextSearching">Buscando servicio</string>
     <string name="cfTemplateNotForwarded">{0}: no se ha remitido</string>
     <string name="cfTemplateForwarded">{0}: {1}</string>
@@ -265,10 +265,13 @@
     <string name="me">Yo</string>
     <string name="power_dialog">Opciones del teléfono</string>
     <string name="silent_mode">Modo silencioso</string>
-    <string name="turn_on_radio">Encender el teléfono inalámbrico</string>
-    <string name="turn_off_radio">Apagar el teléfono inalámbrico</string>
+    <string name="turn_on_radio">Activar conexión inalámbrica</string>
+    <string name="turn_off_radio">Desactivar conexión inalámbrica</string>
     <string name="screen_lock">Bloqueo de pantalla</string>
     <string name="power_off">Apagar</string>
+    <string name="silent_mode_silent">Timbre desactivado</string>
+    <string name="silent_mode_vibrate">Modo vibración</string>
+    <string name="silent_mode_ring">Timbre activado</string>
     <string name="shutdown_progress">Apagando…</string>
     <string name="shutdown_confirm">El teléfono se apagará.</string>
     <string name="shutdown_confirm_question">¿Seguro?</string>
@@ -278,17 +281,17 @@
     <string name="global_action_lock">Bloqueo de pantalla</string>
     <string name="global_action_power_off">Apagar</string>
     <string name="global_action_toggle_silent_mode">Modo silencioso</string>
-    <string name="global_action_silent_mode_on_status">El sonido está Apagado</string>
-    <string name="global_action_silent_mode_off_status">El sonido está Encendido</string>
+    <string name="global_action_silent_mode_on_status">El sonido está Desactivado</string>
+    <string name="global_action_silent_mode_off_status">El sonido está Activado</string>
     <string name="global_actions_toggle_airplane_mode">Modo avión</string>
-    <string name="global_actions_airplane_mode_on_status">El modo avión está Encendido</string>
-    <string name="global_actions_airplane_mode_off_status">El modo avión está Apagado</string>
+    <string name="global_actions_airplane_mode_on_status">El modo avión está Activado</string>
+    <string name="global_actions_airplane_mode_off_status">El modo avión está Desactivado</string>
     <string name="safeMode">Modo seguro</string>
     <string name="android_system_label">Sistema Android</string>
     <string name="permgrouplab_costMoney">Servicios que te cuestan dinero</string>
     <string name="permgroupdesc_costMoney">Admite aplicaciones que realizan actividades que te pueden costar dinero.</string>
     <string name="permgrouplab_messages">Tus mensajes</string>
-    <string name="permgroupdesc_messages">Lee y escribe tu SMS, mensaje de correo electrónico y otros mensajes.</string>
+    <string name="permgroupdesc_messages">Lee y escribe tu SMS, mensaje de correo y otros mensajes.</string>
     <string name="permgrouplab_personalInfo">Tu información personal</string>
     <string name="permgroupdesc_personalInfo">Acceso directo al calendario y a los contactos almacenados en el teléfono</string>
     <string name="permgrouplab_location">Tu ubicación</string>
@@ -298,7 +301,7 @@
     <string name="permgrouplab_accounts">Tus cuentas</string>
     <string name="permgroupdesc_accounts">Acceder a las cuentas disponibles.</string>
     <string name="permgrouplab_hardwareControls">Controles de hardware</string>
-    <string name="permgroupdesc_hardwareControls">Acceso directo al hardware en el teléfono.</string>
+    <string name="permgroupdesc_hardwareControls">Acceso directo al hardware en el dispositivo.</string>
     <string name="permgrouplab_phoneCalls">Llamadas telefónicas</string>
     <string name="permgroupdesc_phoneCalls">Controlar, grabar y procesar llamadas telefónicas.</string>
     <string name="permgrouplab_systemTools">Herramientas del sistema</string>
@@ -341,7 +344,7 @@
     <string name="permdesc_setDebugApp">Admite una aplicación que activa la depuración en otra aplicación. Las aplicaciones maliciosas pueden utilizarlo para suprimir otras aplicaciones.</string>
     <string name="permlab_changeConfiguration">cambiar tu configuración de la interfaz de usuario</string>
     <string name="permdesc_changeConfiguration">Admite una aplicación para cambiar la configuración actual, como el tamaño de fuente local o general.</string>
-    <string name="permlab_enableCarMode">habilitar el modo de auto</string>
+    <string name="permlab_enableCarMode">activar el modo de auto</string>
     <string name="permdesc_enableCarMode">Permite que una aplicación habilite el modo auto.</string>
     <string name="permlab_killBackgroundProcesses">eliminar los procesos de fondo</string>
     <string name="permdesc_killBackgroundProcesses">Permite que una aplicación elimine los procesos de fondo de otras aplicaciones, aun si la memoria no es baja.</string>
@@ -479,7 +482,7 @@
     <string name="permdesc_camera">Admite una aplicación que toma fotografías y graba video con la cámara. Esto permite que la aplicación en cualquier momento recopile imágenes que esté viendo la cámara.</string>
     <string name="permlab_brick">inhabilitar el teléfono de forma permanente</string>
     <string name="permdesc_brick">Permite que la aplicación inhabilite todas las funciones del teléfono de forma permanente. Este permiso es muy peligroso.</string>
-    <string name="permlab_reboot">forzar reinicio del teléfono</string>
+    <string name="permlab_reboot">forzar reinicio del dispositivo</string>
     <string name="permdesc_reboot">Permite que la aplicación fuerce al teléfono a reiniciarse.</string>
     <string name="permlab_mount_unmount_filesystems">montar y desmontar filesystems</string>
     <string name="permdesc_mount_unmount_filesystems">Admite que la aplicación monte y desmonte filesystems para obtener almacenamiento extraíble.</string>
@@ -517,9 +520,9 @@
     <string name="permdesc_checkinProperties">Admite el acceso de lectura y escritura a las propiedades subidas por el servicio de protección. Las aplicaciones normales no deben utilizarlo.</string>
     <string name="permlab_bindGadget">elegir widgets</string>
     <string name="permdesc_bindGadget">Admite que la aplicación indique al sistema qué widgets puede utilizar cada aplicación. Con este permiso, las aplicaciones pueden brindar acceso a los datos personales a otras aplicaciones. Las aplicaciones normales no deben utilizarlo.</string>
-    <string name="permlab_modifyPhoneState">modificar el estado del teléfono</string>
-    <string name="permdesc_modifyPhoneState">Admite que la aplicación controle las funciones telefónicas del dispositivo. Una aplicación con este permiso puede cambiar las redes, encender y apagar la radio del teléfono y funciones similares sin notificarte en ningún momento.</string>
-    <string name="permlab_readPhoneState">leer el estado del teléfono y la identidad</string>
+    <string name="permlab_modifyPhoneState">modificar el estado del dispositivo</string>
+    <string name="permdesc_modifyPhoneState">Admite que la aplicación controle las funciones telefónicas del dispositivo. Una aplicación con este permiso puede cambiar las redes, encender y apagar la radio del dispositivo y funciones similares sin notificarte en ningún momento.</string>
+    <string name="permlab_readPhoneState">leer el estado del dispositivo y la identidad</string>
     <string name="permdesc_readPhoneState">Admite que la aplicación acceda a las funciones telefónicas del dispositivo. Una aplicación con este permiso puede determinar el número de teléfono y el número de serie de este teléfono, si una llamada está activa, el número al cual está conectado esa llamada y funciones similares.</string>
     <string name="permlab_wakeLock">impedir que el teléfono entre en modo de suspensión</string>
     <string name="permdesc_wakeLock">Permite que una aplicación impida que el teléfono entre en modo de suspensión.</string>
@@ -576,7 +579,7 @@
     <string name="permlab_nfc">controlar la Transmisión de datos en proximidad</string>
     <string name="permdesc_nfc">Permite que una aplicación se comunique con etiquetas, tarjetas y lectores de Transmisión de datos en proximidad (NFC).</string>
     <string name="permlab_disableKeyguard">desactivar el bloqueo</string>
-    <string name="permdesc_disableKeyguard">Admite una aplicación que desactiva el bloqueo y cualquier seguridad con contraseña relacionada. Un ejemplo legítimo de esto es el bloqueo desactivado por el teléfono cuando recibe una llamada telefónica entrante, y luego la reactivación del bloqueo cuando finaliza la llamada.</string>
+    <string name="permdesc_disableKeyguard">Admite una aplicación que desactiva el bloqueo y cualquier seguridad con contraseña relacionada. Un ejemplo legítimo de esto es el bloqueo desactivado por el dispositivo cuando recibe una llamada telefónica entrante, y luego la reactivación del bloqueo cuando finaliza la llamada.</string>
     <string name="permlab_readSyncSettings">leer la configuración de sincronización</string>
     <string name="permdesc_readSyncSettings">Admite una aplicación que lee la configuración de sincronización, como si está activada la sincronización para los Contactos.</string>
     <string name="permlab_writeSyncSettings">escribir configuración de sincronización</string>
@@ -613,7 +616,7 @@
     <string name="policydesc_resetPassword">Cambiar la contraseña para desbloquear la pantalla</string>
     <string name="policylab_forceLock">Bloquear la pantalla</string>
     <string name="policydesc_forceLock">Controlar cómo y cuándo se bloquea la pantalla</string>
-    <string name="policylab_wipeData">Borrar todos los datos</string>
+    <string name="policylab_wipeData">Eliminar todos los datos</string>
     <string name="policydesc_wipeData">Borrado de los datos del teléfono sin avisar restableciendo datos de fábrica</string>
     <string name="policylab_setGlobalProxy">Definir el servidor proxy global</string>
     <string name="policydesc_setGlobalProxy">Define el servidor proxy global que se debe utilizar mientras la política esté habilitada. Solo el primer administrador de dispositivos define el servidor proxy global efectivo.</string>
@@ -625,7 +628,7 @@
     <string name="policydesc_disableCamera">Evitar el uso de las cámaras del dispositivo</string>
     <string name="phoneTypeCustom">Personalizado</string>
     <string name="phoneTypeHome">Casa</string>
-    <string name="phoneTypeMobile">Celular</string>
+    <string name="phoneTypeMobile">Móvil</string>
     <string name="phoneTypeWork">Trabajo</string>
     <string name="phoneTypeFaxWork">Fax laboral</string>
     <string name="phoneTypeFaxHome">Fax personal</string>
@@ -652,7 +655,7 @@
     <string name="emailTypeHome">Email: Casa</string>
     <string name="emailTypeWork">Email: Trabajo</string>
     <string name="emailTypeOther">Email: Otro</string>
-    <string name="emailTypeMobile">Celular</string>
+    <string name="emailTypeMobile">Móvil</string>
     <string name="postalTypeCustom">Personalizado</string>
     <string name="postalTypeHome">Casa</string>
     <string name="postalTypeWork">Trabajo</string>
@@ -753,7 +756,7 @@ Inténtalo de nuevo dentro de %d segundos."</string>
     <string name="lockscreen_glogin_forgot_pattern">Desbloquear cuenta</string>
     <string name="lockscreen_glogin_too_many_attempts">Demasiados intentos de patrón.</string>
     <string name="lockscreen_glogin_instructions">Para desbloquear, regístrate en tu cuenta de Google</string>
-    <string name="lockscreen_glogin_username_hint">Nombre de usuario (correo electrónico)</string>
+    <string name="lockscreen_glogin_username_hint">Nombre de usuario (correo)</string>
     <string name="lockscreen_glogin_password_hint">Contraseña</string>
     <string name="lockscreen_glogin_submit_button">Inicia sesión</string>
     <string name="lockscreen_glogin_invalid_input">Nombre de usuario o contraseña incorrecta.</string>
@@ -761,8 +764,8 @@ Inténtalo de nuevo dentro de %d segundos."</string>
 accede a la página "<b>google.com/accounts/recovery</b>.</string>
     <string name="lockscreen_glogin_checking_password">Comprobando...</string>
     <string name="lockscreen_unlock_label">Desbloquear</string>
-    <string name="lockscreen_sound_on_label">Sonido encendido</string>
-    <string name="lockscreen_sound_off_label">Sonido apagado</string>
+    <string name="lockscreen_sound_on_label">Sonido activado</string>
+    <string name="lockscreen_sound_off_label">Sonido desactivado</string>
     <string name="lockscreen_access_pattern_start">Patrón iniciado</string>
     <string name="lockscreen_access_pattern_cleared">Patrón borrado</string>
     <string name="lockscreen_access_pattern_cell_added">Se agregó una celda.</string>
@@ -837,7 +840,7 @@ Selecciona Aceptar para continuar o Cancelar para permanecer en la página actua
     <string name="beforeOneMonthDurationPast">Anterior a 1 mes atrás</string>
     <string name="last_month">Último mes</string>
     <string name="older">Antiguos</string>
-    <string name="preposition_for_date">encendido %s</string>
+    <string name="preposition_for_date">activado %s</string>
     <string name="preposition_for_time">a las %s</string>
     <string name="preposition_for_year">en %s</string>
     <string name="day">día</string>
@@ -1145,7 +1148,7 @@ para la cuenta %s"</string>
     <string name="data_usage_4g_limit_title">Datos 4G inhabilitados</string>
     <string name="data_usage_mobile_limit_title">Datos móviles inhabilitados</string>
     <string name="data_usage_wifi_limit_title">Datos Wi-Fi inhabilitados</string>
-    <string name="data_usage_limit_body">Tocar para habilitar</string>
+    <string name="data_usage_limit_body">Tocar para activar</string>
     <string name="data_usage_3g_limit_snoozed_title">Límite de datos 2G-3G superado</string>
     <string name="data_usage_4g_limit_snoozed_title">Límite de datos 4G superado</string>
     <string name="data_usage_mobile_limit_snoozed_title">Límite de datos móviles superado</string>

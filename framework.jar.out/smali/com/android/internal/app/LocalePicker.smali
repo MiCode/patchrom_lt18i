@@ -678,7 +678,7 @@
 
     .prologue
     .line 185
-    const v0, 0x1090067
+    const v0, 0x1090069
 
     const v1, 0x102016e
 

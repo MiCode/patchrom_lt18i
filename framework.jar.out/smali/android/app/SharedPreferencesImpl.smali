@@ -122,7 +122,9 @@
     iput-object v0, p0, Landroid/app/SharedPreferencesImpl;->mBackupFile:Ljava/io/File;
 
     .line 74
-    iput p2, p0, Landroid/app/SharedPreferencesImpl;->mMode:I
+    or-int/lit8 v0, p2, 0x1
+
+    iput v0, p0, Landroid/app/SharedPreferencesImpl;->mMode:I
 
     .line 75
     iput-boolean v1, p0, Landroid/app/SharedPreferencesImpl;->mLoaded:Z

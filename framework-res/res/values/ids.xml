@@ -155,6 +155,7 @@
     <item type="id" name="answerText">false</item>
     <item type="id" name="footerUnlockButton">false</item>
     <item type="id" name="emergencyCallButton">false</item>
+    <item type="id" name="buttonsLayout">false</item>
     <item type="id" name="subHeaderText">false</item>
     <item type="id" name="lockscreen_backup_selection_list_view">false</item>
     <item type="id" name="lockscreen_backup_selection_next_button">false</item>
@@ -192,10 +193,20 @@
     <item type="id" name="pinDisplay">false</item>
     <item type="id" name="backspace">false</item>
     <item type="id" name="topDisplayGroup">false</item>
+    <item type="id" name="bottomPart">false</item>
+    <item type="id" name="okCancelButtons">false</item>
     <item type="id" name="keyPad">false</item>
+    <item type="id" name="one">false</item>
+    <item type="id" name="two">false</item>
+    <item type="id" name="three">false</item>
+    <item type="id" name="four">false</item>
+    <item type="id" name="five">false</item>
+    <item type="id" name="six">false</item>
+    <item type="id" name="seven">false</item>
+    <item type="id" name="eight">false</item>
+    <item type="id" name="nine">false</item>
+    <item type="id" name="zero">false</item>
     <item type="id" name="spacerBottom">false</item>
-    <item type="id" name="enter_puk">false</item>
-    <item type="id" name="enter_pin">false</item>
     <item type="id" name="pukDisplay">false</item>
     <item type="id" name="pukDel">false</item>
     <item type="id" name="timeDisplayBackground">false</item>
@@ -376,17 +387,8 @@
     <item type="id" name="minute">false</item>
     <item type="id" name="amPm">false</item>
     <item type="id" name="timePicker">false</item>
+    <item type="id" name="focus_stub">false</item>
     <item type="id" name="divider">false</item>
-    <item type="id" name="one">false</item>
-    <item type="id" name="two">false</item>
-    <item type="id" name="three">false</item>
-    <item type="id" name="four">false</item>
-    <item type="id" name="five">false</item>
-    <item type="id" name="six">false</item>
-    <item type="id" name="seven">false</item>
-    <item type="id" name="eight">false</item>
-    <item type="id" name="nine">false</item>
-    <item type="id" name="zero">false</item>
     <item type="id" name="main">false</item>
     <item type="id" name="banner">false</item>
     <item type="id" name="mount_button">false</item>

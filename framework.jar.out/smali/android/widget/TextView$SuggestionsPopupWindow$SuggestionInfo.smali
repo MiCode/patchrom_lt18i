@@ -36,19 +36,19 @@
     .parameter
 
     .prologue
-    .line 9827
+    .line 9811
     iput-object p1, p0, Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionInfo;->this$1:Landroid/widget/TextView$SuggestionsPopupWindow;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 9831
+    .line 9815
     new-instance v0, Landroid/text/SpannableStringBuilder;
 
     invoke-direct {v0}, Landroid/text/SpannableStringBuilder;-><init>()V
 
     iput-object v0, p0, Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionInfo;->text:Landroid/text/SpannableStringBuilder;
 
-    .line 9832
+    .line 9816
     new-instance v0, Landroid/text/style/TextAppearanceSpan;
 
     iget-object v1, p0, Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionInfo;->this$1:Landroid/widget/TextView$SuggestionsPopupWindow;
@@ -75,7 +75,7 @@
     .parameter "x1"
 
     .prologue
-    .line 9827
+    .line 9811
     invoke-direct {p0, p1}, Landroid/widget/TextView$SuggestionsPopupWindow$SuggestionInfo;-><init>(Landroid/widget/TextView$SuggestionsPopupWindow;)V
 
     return-void

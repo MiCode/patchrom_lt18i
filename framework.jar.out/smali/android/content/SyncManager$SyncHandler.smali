@@ -787,7 +787,7 @@
 
     move-result-object v6
 
-    const v7, 0x1040141
+    const v7, 0x1040142
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -797,7 +797,7 @@
     .local v5, tooManyDeletesDescFormat:Ljava/lang/CharSequence;
     new-instance v2, Landroid/app/Notification;
 
-    const v6, 0x10806be
+    const v6, 0x10806bf
 
     iget-object v7, p0, Landroid/content/SyncManager$SyncHandler;->this$0:Landroid/content/SyncManager;
 
@@ -806,7 +806,7 @@
 
     move-result-object v7
 
-    const v8, 0x104013f
+    const v8, 0x1040140
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -834,7 +834,7 @@
 
     move-result-object v7
 
-    const v8, 0x1040140
+    const v8, 0x1040141
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

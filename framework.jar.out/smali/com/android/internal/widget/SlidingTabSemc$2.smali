@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 610
+    .line 623
     iput-object p1, p0, Lcom/android/internal/widget/SlidingTabSemc$2;->this$0:Lcom/android/internal/widget/SlidingTabSemc;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 616
+    .line 629
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc$2;->this$0:Lcom/android/internal/widget/SlidingTabSemc;
 
     #getter for: Lcom/android/internal/widget/SlidingTabSemc;->mResetAfterGhost:Z
@@ -54,24 +54,24 @@
 
     if-eqz v0, :cond_0
 
-    .line 617
+    .line 630
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc$2;->this$0:Lcom/android/internal/widget/SlidingTabSemc;
 
     #calls: Lcom/android/internal/widget/SlidingTabSemc;->resetSlider(Z)V
     invoke-static {v0, v1}, Lcom/android/internal/widget/SlidingTabSemc;->access$200(Lcom/android/internal/widget/SlidingTabSemc;Z)V
 
-    .line 622
+    .line 635
     :goto_0
     return-void
 
-    .line 619
+    .line 632
     :cond_0
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc$2;->this$0:Lcom/android/internal/widget/SlidingTabSemc;
 
     #setter for: Lcom/android/internal/widget/SlidingTabSemc;->mLongpressGhostStarted:Z
     invoke-static {v0, v1}, Lcom/android/internal/widget/SlidingTabSemc;->access$302(Lcom/android/internal/widget/SlidingTabSemc;Z)Z
 
-    .line 620
+    .line 633
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc$2;->this$0:Lcom/android/internal/widget/SlidingTabSemc;
 
     const/16 v1, 0x190
@@ -94,7 +94,7 @@
     .parameter "animation"
 
     .prologue
-    .line 613
+    .line 626
     return-void
 .end method
 
@@ -103,6 +103,6 @@
     .parameter "animation"
 
     .prologue
-    .line 612
+    .line 625
     return-void
 .end method

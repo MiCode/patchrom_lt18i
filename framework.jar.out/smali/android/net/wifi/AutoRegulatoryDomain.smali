@@ -32,36 +32,36 @@
     .parameter "wifiStateMachine"
 
     .prologue
-    .line 51
+    .line 52
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 52
+    .line 53
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x10e002c
+    const v2, 0x10e002d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
 
     move-result v0
 
-    .line 54
+    .line 55
     .local v0, instanceType:I
     if-nez v0, :cond_0
 
-    .line 56
+    .line 57
     new-instance v1, Landroid/net/wifi/AutoRegulatoryDomain$MccUpdateLogic;
 
     invoke-direct {v1, p0, p1, p2}, Landroid/net/wifi/AutoRegulatoryDomain$MccUpdateLogic;-><init>(Landroid/net/wifi/AutoRegulatoryDomain;Landroid/content/Context;Landroid/net/wifi/WifiStateMachine;)V
 
     iput-object v1, p0, Landroid/net/wifi/AutoRegulatoryDomain;->mUpdateLogic:Landroid/net/wifi/AutoRegulatoryDomain$UpdateLogic;
 
-    .line 62
+    .line 63
     :goto_0
     return-void
 
-    .line 60
+    .line 61
     :cond_0
     new-instance v1, Landroid/net/wifi/AutoRegulatoryDomain$CrdaUpdateLogic;
 
@@ -78,14 +78,14 @@
     .locals 2
 
     .prologue
-    .line 68
+    .line 69
     iget-object v0, p0, Landroid/net/wifi/AutoRegulatoryDomain;->mUpdateLogic:Landroid/net/wifi/AutoRegulatoryDomain$UpdateLogic;
 
     const/4 v1, 0x2
 
     invoke-virtual {v0, v1}, Landroid/net/wifi/AutoRegulatoryDomain$UpdateLogic;->sendEmptyMessage(I)Z
 
-    .line 69
+    .line 70
     return-void
 .end method
 
@@ -93,13 +93,13 @@
     .locals 2
 
     .prologue
-    .line 75
+    .line 76
     iget-object v0, p0, Landroid/net/wifi/AutoRegulatoryDomain;->mUpdateLogic:Landroid/net/wifi/AutoRegulatoryDomain$UpdateLogic;
 
     const/4 v1, 0x3
 
     invoke-virtual {v0, v1}, Landroid/net/wifi/AutoRegulatoryDomain$UpdateLogic;->sendEmptyMessage(I)Z
 
-    .line 76
+    .line 77
     return-void
 .end method

@@ -1426,7 +1426,7 @@
     .local v3, n:Landroid/app/Notification;
     iget-object v8, p0, Landroid/accounts/AccountManagerService;->mContext:Landroid/content/Context;
 
-    const v9, 0x1040463
+    const v9, 0x1040464
 
     const/4 v10, 0x1
 
@@ -1629,7 +1629,7 @@
     .local v2, n:Landroid/app/Notification;
     iget-object v5, p0, Landroid/accounts/AccountManagerService;->mContext:Landroid/content/Context;
 
-    const v6, 0x104013e
+    const v6, 0x104013f
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -2152,11 +2152,11 @@
 
     iget v4, v1, Landroid/content/pm/RegisteredServicesCache$ServiceInfo;->uid:I
 
-    invoke-static {v2, p1, v4, p2}, Lmiui/content/pm/ExtraPackageManager;->isTrustedAccountSignature(Landroid/content/pm/PackageManager;Ljava/lang/String;II)Z
+    invoke-virtual {v2, v4, p2}, Landroid/content/pm/PackageManager;->checkSignatures(II)I
 
     move-result v2
 
-    if-eqz v2, :cond_2
+    if-nez v2, :cond_2
 
     :cond_1
     const/4 v2, 0x1

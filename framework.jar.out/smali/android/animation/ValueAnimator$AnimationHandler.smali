@@ -19,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 542
+    .line 549
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
@@ -30,7 +30,7 @@
     .parameter "x0"
 
     .prologue
-    .line 542
+    .line 549
     invoke-direct {p0}, Landroid/animation/ValueAnimator$AnimationHandler;-><init>()V
 
     return-void
@@ -43,10 +43,10 @@
     .parameter "msg"
 
     .prologue
-    .line 557
+    .line 564
     const/4 v6, 0x1
 
-    .line 558
+    .line 565
     .local v6, callAgain:Z
     invoke-static {}, Landroid/animation/ValueAnimator;->access$100()Ljava/lang/ThreadLocal;
 
@@ -58,15 +58,15 @@
 
     check-cast v12, Landroid/animation/ValueAnimator$AnimationHolder;
 
-    .line 559
+    .line 566
     .local v12, holder:Landroid/animation/ValueAnimator$AnimationHolder;
     iget-object v5, v12, Landroid/animation/ValueAnimator$AnimationHolder;->mAnimations:Ljava/util/ArrayList;
 
-    .line 560
+    .line 567
     .local v5, animations:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/animation/ValueAnimator;>;"
     iget-object v10, v12, Landroid/animation/ValueAnimator$AnimationHolder;->mDelayedAnims:Ljava/util/ArrayList;
 
-    .line 561
+    .line 568
     .local v10, delayedAnims:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/animation/ValueAnimator;>;"
     move-object/from16 v0, p1
 
@@ -76,18 +76,18 @@
 
     packed-switch v20, :pswitch_data_0
 
-    .line 655
+    .line 662
     :cond_0
     :goto_0
     return-void
 
-    .line 565
+    .line 572
     :pswitch_0
     iget-object v0, v12, Landroid/animation/ValueAnimator$AnimationHolder;->mPendingAnimations:Ljava/util/ArrayList;
 
     move-object/from16 v17, v0
 
-    .line 566
+    .line 573
     .local v17, pendingAnimations:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/animation/ValueAnimator;>;"
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
@@ -101,11 +101,11 @@
 
     if-lez v20, :cond_2
 
-    .line 567
+    .line 574
     :cond_1
     const/4 v6, 0x0
 
-    .line 574
+    .line 581
     :cond_2
     invoke-virtual/range {v17 .. v17}, Ljava/util/ArrayList;->size()I
 
@@ -113,23 +113,23 @@
 
     if-lez v20, :cond_4
 
-    .line 575
+    .line 582
     invoke-virtual/range {v17 .. v17}, Ljava/util/ArrayList;->clone()Ljava/lang/Object;
 
     move-result-object v18
 
     check-cast v18, Ljava/util/ArrayList;
 
-    .line 577
+    .line 584
     .local v18, pendingCopy:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/animation/ValueAnimator;>;"
     invoke-virtual/range {v17 .. v17}, Ljava/util/ArrayList;->clear()V
 
-    .line 578
+    .line 585
     invoke-virtual/range {v18 .. v18}, Ljava/util/ArrayList;->size()I
 
     move-result v7
 
-    .line 579
+    .line 586
     .local v7, count:I
     const/4 v13, 0x0
 
@@ -137,7 +137,7 @@
     :goto_1
     if-ge v13, v7, :cond_2
 
-    .line 580
+    .line 587
     move-object/from16 v0, v18
 
     invoke-virtual {v0, v13}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -146,7 +146,7 @@
 
     check-cast v4, Landroid/animation/ValueAnimator;
 
-    .line 582
+    .line 589
     .local v4, anim:Landroid/animation/ValueAnimator;
     #getter for: Landroid/animation/ValueAnimator;->mStartDelay:J
     invoke-static {v4}, Landroid/animation/ValueAnimator;->access$200(Landroid/animation/ValueAnimator;)J
@@ -159,23 +159,23 @@
 
     if-nez v20, :cond_3
 
-    .line 583
+    .line 590
     #calls: Landroid/animation/ValueAnimator;->startAnimation()V
     invoke-static {v4}, Landroid/animation/ValueAnimator;->access$300(Landroid/animation/ValueAnimator;)V
 
-    .line 579
+    .line 586
     :goto_2
     add-int/lit8 v13, v13, 0x1
 
     goto :goto_1
 
-    .line 585
+    .line 592
     :cond_3
     invoke-virtual {v10, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 593
+    .line 600
     .end local v4           #anim:Landroid/animation/ValueAnimator;
     .end local v7           #count:I
     .end local v13           #i:I
@@ -187,23 +187,23 @@
 
     move-result-wide v8
 
-    .line 594
+    .line 601
     .local v8, currentTime:J
     iget-object v0, v12, Landroid/animation/ValueAnimator$AnimationHolder;->mReadyAnims:Ljava/util/ArrayList;
 
     move-object/from16 v19, v0
 
-    .line 595
+    .line 602
     .local v19, readyAnims:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/animation/ValueAnimator;>;"
     iget-object v11, v12, Landroid/animation/ValueAnimator$AnimationHolder;->mEndingAnims:Ljava/util/ArrayList;
 
-    .line 599
+    .line 606
     .local v11, endingAnims:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/animation/ValueAnimator;>;"
     invoke-virtual {v10}, Ljava/util/ArrayList;->size()I
 
     move-result v15
 
-    .line 600
+    .line 607
     .local v15, numDelayedAnims:I
     const/4 v13, 0x0
 
@@ -211,14 +211,14 @@
     :goto_3
     if-ge v13, v15, :cond_6
 
-    .line 601
+    .line 608
     invoke-virtual {v10, v13}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Landroid/animation/ValueAnimator;
 
-    .line 602
+    .line 609
     .restart local v4       #anim:Landroid/animation/ValueAnimator;
     #calls: Landroid/animation/ValueAnimator;->delayedAnimationFrame(J)Z
     invoke-static {v4, v8, v9}, Landroid/animation/ValueAnimator;->access$400(Landroid/animation/ValueAnimator;J)Z
@@ -227,29 +227,29 @@
 
     if-eqz v20, :cond_5
 
-    .line 603
+    .line 610
     move-object/from16 v0, v19
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 600
+    .line 607
     :cond_5
     add-int/lit8 v13, v13, 0x1
 
     goto :goto_3
 
-    .line 606
+    .line 613
     .end local v4           #anim:Landroid/animation/ValueAnimator;
     :cond_6
     invoke-virtual/range {v19 .. v19}, Ljava/util/ArrayList;->size()I
 
     move-result v16
 
-    .line 607
+    .line 614
     .local v16, numReadyAnims:I
     if-lez v16, :cond_8
 
-    .line 608
+    .line 615
     const/4 v13, 0x0
 
     :goto_4
@@ -257,7 +257,7 @@
 
     if-ge v13, v0, :cond_7
 
-    .line 609
+    .line 616
     move-object/from16 v0, v19
 
     invoke-virtual {v0, v13}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -266,12 +266,12 @@
 
     check-cast v4, Landroid/animation/ValueAnimator;
 
-    .line 610
+    .line 617
     .restart local v4       #anim:Landroid/animation/ValueAnimator;
     #calls: Landroid/animation/ValueAnimator;->startAnimation()V
     invoke-static {v4}, Landroid/animation/ValueAnimator;->access$300(Landroid/animation/ValueAnimator;)V
 
-    .line 611
+    .line 618
     const/16 v20, 0x1
 
     move/from16 v0, v20
@@ -279,41 +279,41 @@
     #setter for: Landroid/animation/ValueAnimator;->mRunning:Z
     invoke-static {v4, v0}, Landroid/animation/ValueAnimator;->access$502(Landroid/animation/ValueAnimator;Z)Z
 
-    .line 612
+    .line 619
     invoke-virtual {v10, v4}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 608
+    .line 615
     add-int/lit8 v13, v13, 0x1
 
     goto :goto_4
 
-    .line 614
+    .line 621
     .end local v4           #anim:Landroid/animation/ValueAnimator;
     :cond_7
     invoke-virtual/range {v19 .. v19}, Ljava/util/ArrayList;->clear()V
 
-    .line 619
+    .line 626
     :cond_8
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
     move-result v14
 
-    .line 620
+    .line 627
     .local v14, numAnims:I
     const/4 v13, 0x0
 
-    .line 621
+    .line 628
     :goto_5
     if-ge v13, v14, :cond_b
 
-    .line 622
+    .line 629
     invoke-virtual {v5, v13}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Landroid/animation/ValueAnimator;
 
-    .line 623
+    .line 630
     .restart local v4       #anim:Landroid/animation/ValueAnimator;
     invoke-virtual {v4, v8, v9}, Landroid/animation/ValueAnimator;->animationFrame(J)Z
 
@@ -321,10 +321,10 @@
 
     if-eqz v20, :cond_9
 
-    .line 624
+    .line 631
     invoke-virtual {v11, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 626
+    .line 633
     :cond_9
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
@@ -334,21 +334,21 @@
 
     if-ne v0, v14, :cond_a
 
-    .line 627
+    .line 634
     add-int/lit8 v13, v13, 0x1
 
     goto :goto_5
 
-    .line 636
+    .line 643
     :cond_a
     add-int/lit8 v14, v14, -0x1
 
-    .line 637
+    .line 644
     invoke-virtual {v11, v4}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     goto :goto_5
 
-    .line 640
+    .line 647
     .end local v4           #anim:Landroid/animation/ValueAnimator;
     :cond_b
     invoke-virtual {v11}, Ljava/util/ArrayList;->size()I
@@ -357,7 +357,7 @@
 
     if-lez v20, :cond_d
 
-    .line 641
+    .line 648
     const/4 v13, 0x0
 
     :goto_6
@@ -369,7 +369,7 @@
 
     if-ge v13, v0, :cond_c
 
-    .line 642
+    .line 649
     invoke-virtual {v11, v13}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v20
@@ -379,16 +379,16 @@
     #calls: Landroid/animation/ValueAnimator;->endAnimation()V
     invoke-static/range {v20 .. v20}, Landroid/animation/ValueAnimator;->access$600(Landroid/animation/ValueAnimator;)V
 
-    .line 641
+    .line 648
     add-int/lit8 v13, v13, 0x1
 
     goto :goto_6
 
-    .line 644
+    .line 651
     :cond_c
     invoke-virtual {v11}, Ljava/util/ArrayList;->clear()V
 
-    .line 649
+    .line 656
     :cond_d
     if-eqz v6, :cond_0
 
@@ -404,7 +404,7 @@
 
     if-nez v20, :cond_0
 
-    .line 650
+    .line 657
     :cond_e
     const/16 v20, 0x1
 
@@ -436,7 +436,7 @@
 
     goto/16 :goto_0
 
-    .line 561
+    .line 568
     nop
 
     :pswitch_data_0

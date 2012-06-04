@@ -413,11 +413,11 @@
 
     const v3, 0x10802e3
 
-    const v4, 0x1040158
+    const v4, 0x1040159
 
-    const v5, 0x1040159
+    const v5, 0x104015a
 
-    const v6, 0x104015a
+    const v6, 0x104015b
 
     move-object v1, p0
 
@@ -439,7 +439,7 @@
 
     const v2, 0x1080030
 
-    const v3, 0x1040154
+    const v3, 0x1040155
 
     invoke-direct {v1, p0, v2, v3}, Lcom/android/internal/policy/impl/GlobalActions$2;-><init>(Lcom/android/internal/policy/impl/GlobalActions;II)V
 

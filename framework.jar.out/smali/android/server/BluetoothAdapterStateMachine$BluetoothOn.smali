@@ -229,7 +229,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_5
 
     .line 522
     iget-object v1, p0, Landroid/server/BluetoothAdapterStateMachine$BluetoothOn;->this$0:Landroid/server/BluetoothAdapterStateMachine;
@@ -254,9 +254,23 @@
     :goto_1
     iget v1, p1, Landroid/os/Message;->what:I
 
-    if-ne v1, v6, :cond_0
+    if-eq v1, v6, :cond_4
+
+    iget-object v1, p0, Landroid/server/BluetoothAdapterStateMachine$BluetoothOn;->this$0:Landroid/server/BluetoothAdapterStateMachine;
+
+    #getter for: Landroid/server/BluetoothAdapterStateMachine;->mBluetoothService:Landroid/server/BluetoothService;
+    invoke-static {v1}, Landroid/server/BluetoothAdapterStateMachine;->access$2400(Landroid/server/BluetoothAdapterStateMachine;)Landroid/server/BluetoothService;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/server/BluetoothService;->isAirplaneModeOn()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
 
     .line 533
+    :cond_4
     iget-object v1, p0, Landroid/server/BluetoothAdapterStateMachine$BluetoothOn;->this$0:Landroid/server/BluetoothAdapterStateMachine;
 
     #calls: Landroid/server/BluetoothAdapterStateMachine;->allProcessesCallback(Z)V
@@ -277,7 +291,7 @@
     goto/16 :goto_0
 
     .line 526
-    :cond_4
+    :cond_5
     iget-object v1, p0, Landroid/server/BluetoothAdapterStateMachine$BluetoothOn;->this$0:Landroid/server/BluetoothAdapterStateMachine;
 
     #getter for: Landroid/server/BluetoothAdapterStateMachine;->mBluetoothService:Landroid/server/BluetoothService;

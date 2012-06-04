@@ -22,7 +22,7 @@
     <string name="yes">OK</string>
     <string name="dialog_alert_title">Bemærk</string>
     <string name="VideoView_error_text_invalid_progressive_playback">Beklager! Denne video er ikke gyldig til streaming på denne enhed.</string>
-    <string name="selectTextMode">Marker tekst...</string>
+    <string name="selectTextMode">Markér tekst...</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="month_long_standalone_january">januar</string>
     <string name="month_long_standalone_february">februar</string>
@@ -308,7 +308,7 @@
     <string name="silent_mode_silent">Ringning fra</string>
     <string name="silent_mode_vibrate">Ringning med vibration</string>
     <string name="silent_mode_ring">Ringning til</string>
-    <string name="shutdown_progress">Lukker ned ...</string>
+    <string name="shutdown_progress">Lukker ned...</string>
     <string name="shutdown_confirm">Din telefon slukkes nu.</string>
     <string name="shutdown_confirm_question">Vil du slukke?</string>
     <string name="recent_tasks_title">Seneste</string>

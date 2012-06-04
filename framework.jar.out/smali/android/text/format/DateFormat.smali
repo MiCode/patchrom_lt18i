@@ -869,7 +869,7 @@
     if-ltz v4, :cond_5
 
     .line 299
-    const v5, 0x1040082
+    const v5, 0x1040083
 
     invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1047,7 +1047,7 @@
     .end local v2           #template:Ljava/lang/String;
     .end local v4           #year:I
     :cond_5
-    const v5, 0x1040081
+    const v5, 0x1040082
 
     invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1162,7 +1162,7 @@
     if-eqz v0, :cond_0
 
     .line 254
-    const v1, 0x104007f
+    const v1, 0x1040080
 
     .line 259
     .local v1, res:I
@@ -1180,7 +1180,7 @@
     .line 256
     .end local v1           #res:I
     :cond_0
-    const v1, 0x104007e
+    const v1, 0x104007f
 
     .restart local v1       #res:I
     goto :goto_0
@@ -1326,20 +1326,13 @@
 
     iget-object v1, v7, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
 
+    .line 210
     .local v1, locale:Ljava/util/Locale;
-
-    sget-object v7, Ljava/util/Locale;->CHINA:Ljava/util/Locale;
-
-    invoke-virtual {v7, v1}, Ljava/util/Locale;->equals(Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-nez v7, :goto_0
-
     sget-object v7, Landroid/text/format/DateFormat;->sLocaleLock:Ljava/lang/Object;
 
     monitor-enter v7
 
+    .line 211
     :try_start_0
     sget-object v8, Landroid/text/format/DateFormat;->sIs24HourLocale:Ljava/util/Locale;
 

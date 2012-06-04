@@ -330,7 +330,7 @@
     <string name="permgroupdesc_messages">Четене и писане на SMS съобщения, електронна поща и други съобщения.</string>
     <string name="permgrouplab_personalInfo">Вашите лични данни</string>
     <string name="permgroupdesc_personalInfo">Пряк достъп до контактите и календара ви, съхранявани в телефона.</string>
-    <string name="permgrouplab_location">Вашето местоположение</string>
+    <string name="permgrouplab_location">Местоположение</string>
     <string name="permgroupdesc_location">Следене на физическото местоположение</string>
     <string name="permgrouplab_network">Мрежова комуникация</string>
     <string name="permgroupdesc_network">Разрешаване на достъп на приложенията до различни мрежови функции.</string>

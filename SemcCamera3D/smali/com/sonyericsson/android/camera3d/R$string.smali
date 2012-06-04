@@ -197,9 +197,11 @@
 
 .field public static final cam_strings_advanced_setting_geo_tag_title_txt:I = 0x7f0c00d7
 
-.field public static final cam_strings_advanced_setting_on_wf_gps_txt:I = 0x7f0c0121
+.field public static final cam_strings_advanced_setting_on_wf_gps_txt:I = 0x7f0c0122
 
-.field public static final cam_strings_advanced_setting_on_wf_txt:I = 0x7f0c0122
+.field public static final cam_strings_advanced_setting_on_wf_txt:I = 0x7f0c0123
+
+.field public static final cam_strings_advanced_setting_photometry_center_txt:I = 0x7f0c0121
 
 .field public static final cam_strings_application_name_txt:I = 0x7f0c0001
 

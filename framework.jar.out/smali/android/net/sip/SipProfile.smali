@@ -66,7 +66,7 @@
     .locals 1
 
     .prologue
-    .line 58
+    .line 65
     new-instance v0, Landroid/net/sip/SipProfile$1;
 
     invoke-direct {v0}, Landroid/net/sip/SipProfile$1;-><init>()V
@@ -82,31 +82,31 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 301
+    .line 308
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 50
+    .line 57
     const-string v0, "UDP"
 
     iput-object v0, p0, Landroid/net/sip/SipProfile;->mProtocol:Ljava/lang/String;
 
-    .line 53
+    .line 60
     const/16 v0, 0x13c4
 
     iput v0, p0, Landroid/net/sip/SipProfile;->mPort:I
 
-    .line 54
+    .line 61
     iput-boolean v1, p0, Landroid/net/sip/SipProfile;->mSendKeepAlive:Z
 
-    .line 55
+    .line 62
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Landroid/net/sip/SipProfile;->mAutoRegistration:Z
 
-    .line 56
+    .line 63
     iput v1, p0, Landroid/net/sip/SipProfile;->mCallingUid:I
 
-    .line 302
+    .line 309
     return-void
 .end method
 
@@ -115,7 +115,7 @@
     .parameter "x0"
 
     .prologue
-    .line 41
+    .line 48
     invoke-direct {p0}, Landroid/net/sip/SipProfile;-><init>()V
 
     return-void
@@ -130,29 +130,29 @@
 
     const/4 v1, 0x0
 
-    .line 304
+    .line 311
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 50
+    .line 57
     const-string v0, "UDP"
 
     iput-object v0, p0, Landroid/net/sip/SipProfile;->mProtocol:Ljava/lang/String;
 
-    .line 53
+    .line 60
     const/16 v0, 0x13c4
 
     iput v0, p0, Landroid/net/sip/SipProfile;->mPort:I
 
-    .line 54
+    .line 61
     iput-boolean v1, p0, Landroid/net/sip/SipProfile;->mSendKeepAlive:Z
 
-    .line 55
+    .line 62
     iput-boolean v2, p0, Landroid/net/sip/SipProfile;->mAutoRegistration:Z
 
-    .line 56
+    .line 63
     iput v1, p0, Landroid/net/sip/SipProfile;->mCallingUid:I
 
-    .line 305
+    .line 312
     invoke-virtual {p1}, Landroid/os/Parcel;->readSerializable()Ljava/io/Serializable;
 
     move-result-object v0
@@ -161,42 +161,42 @@
 
     iput-object v0, p0, Landroid/net/sip/SipProfile;->mAddress:Ljavax/sip/address/Address;
 
-    .line 306
+    .line 313
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Landroid/net/sip/SipProfile;->mProxyAddress:Ljava/lang/String;
 
-    .line 307
+    .line 314
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Landroid/net/sip/SipProfile;->mPassword:Ljava/lang/String;
 
-    .line 308
+    .line 315
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Landroid/net/sip/SipProfile;->mDomain:Ljava/lang/String;
 
-    .line 309
+    .line 316
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Landroid/net/sip/SipProfile;->mProtocol:Ljava/lang/String;
 
-    .line 310
+    .line 317
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Landroid/net/sip/SipProfile;->mProfileName:Ljava/lang/String;
 
-    .line 311
+    .line 318
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
@@ -208,7 +208,7 @@
     :goto_0
     iput-boolean v0, p0, Landroid/net/sip/SipProfile;->mSendKeepAlive:Z
 
-    .line 312
+    .line 319
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
@@ -218,40 +218,40 @@
     :goto_1
     iput-boolean v1, p0, Landroid/net/sip/SipProfile;->mAutoRegistration:Z
 
-    .line 313
+    .line 320
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroid/net/sip/SipProfile;->mCallingUid:I
 
-    .line 314
+    .line 321
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroid/net/sip/SipProfile;->mPort:I
 
-    .line 315
+    .line 322
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Landroid/net/sip/SipProfile;->mAuthUserName:Ljava/lang/String;
 
-    .line 316
+    .line 323
     return-void
 
     :cond_0
     move v0, v2
 
-    .line 311
+    .line 318
     goto :goto_0
 
     :cond_1
     move v1, v2
 
-    .line 312
+    .line 319
     goto :goto_1
 .end method
 
@@ -261,7 +261,7 @@
     .parameter "x1"
 
     .prologue
-    .line 41
+    .line 48
     invoke-direct {p0, p1}, Landroid/net/sip/SipProfile;-><init>(Landroid/os/Parcel;)V
 
     return-void
@@ -273,7 +273,7 @@
     .parameter "x1"
 
     .prologue
-    .line 41
+    .line 48
     iput-boolean p1, p0, Landroid/net/sip/SipProfile;->mAutoRegistration:Z
 
     return p1
@@ -285,7 +285,7 @@
     .parameter "x1"
 
     .prologue
-    .line 41
+    .line 48
     iput-object p1, p0, Landroid/net/sip/SipProfile;->mPassword:Ljava/lang/String;
 
     return-object p1
@@ -297,7 +297,7 @@
     .parameter "x1"
 
     .prologue
-    .line 41
+    .line 48
     iput-object p1, p0, Landroid/net/sip/SipProfile;->mProxyAddress:Ljava/lang/String;
 
     return-object p1
@@ -313,7 +313,7 @@
     .end annotation
 
     .prologue
-    .line 41
+    .line 48
     invoke-virtual {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
@@ -327,7 +327,7 @@
     .parameter "x1"
 
     .prologue
-    .line 41
+    .line 48
     iput-object p1, p0, Landroid/net/sip/SipProfile;->mAddress:Ljavax/sip/address/Address;
 
     return-object p1
@@ -338,7 +338,7 @@
     .parameter "x0"
 
     .prologue
-    .line 41
+    .line 48
     iget v0, p0, Landroid/net/sip/SipProfile;->mPort:I
 
     return v0
@@ -350,7 +350,7 @@
     .parameter "x1"
 
     .prologue
-    .line 41
+    .line 48
     iput p1, p0, Landroid/net/sip/SipProfile;->mPort:I
 
     return p1
@@ -362,7 +362,7 @@
     .parameter "x1"
 
     .prologue
-    .line 41
+    .line 48
     iput-object p1, p0, Landroid/net/sip/SipProfile;->mDomain:Ljava/lang/String;
 
     return-object p1
@@ -374,7 +374,7 @@
     .parameter "x1"
 
     .prologue
-    .line 41
+    .line 48
     iput-object p1, p0, Landroid/net/sip/SipProfile;->mAuthUserName:Ljava/lang/String;
 
     return-object p1
@@ -386,7 +386,7 @@
     .parameter "x1"
 
     .prologue
-    .line 41
+    .line 48
     iput-object p1, p0, Landroid/net/sip/SipProfile;->mProfileName:Ljava/lang/String;
 
     return-object p1
@@ -397,7 +397,7 @@
     .parameter "x0"
 
     .prologue
-    .line 41
+    .line 48
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mProtocol:Ljava/lang/String;
 
     return-object v0
@@ -409,7 +409,7 @@
     .parameter "x1"
 
     .prologue
-    .line 41
+    .line 48
     iput-object p1, p0, Landroid/net/sip/SipProfile;->mProtocol:Ljava/lang/String;
 
     return-object p1
@@ -421,7 +421,7 @@
     .parameter "x1"
 
     .prologue
-    .line 41
+    .line 48
     iput-boolean p1, p0, Landroid/net/sip/SipProfile;->mSendKeepAlive:Z
 
     return p1
@@ -436,7 +436,7 @@
     .end annotation
 
     .prologue
-    .line 492
+    .line 499
     iget v0, p0, Landroid/net/sip/SipProfile;->mPort:I
 
     if-nez v0, :cond_0
@@ -445,7 +445,7 @@
 
     iput v0, p0, Landroid/net/sip/SipProfile;->mPort:I
 
-    .line 493
+    .line 500
     :cond_0
     return-object p0
 .end method
@@ -456,7 +456,7 @@
     .locals 1
 
     .prologue
-    .line 335
+    .line 342
     const/4 v0, 0x0
 
     return v0
@@ -466,7 +466,7 @@
     .locals 1
 
     .prologue
-    .line 399
+    .line 406
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mAuthUserName:Ljava/lang/String;
 
     return-object v0
@@ -476,7 +476,7 @@
     .locals 1
 
     .prologue
-    .line 471
+    .line 478
     iget-boolean v0, p0, Landroid/net/sip/SipProfile;->mAutoRegistration:Z
 
     return v0
@@ -486,7 +486,7 @@
     .locals 1
 
     .prologue
-    .line 487
+    .line 494
     iget v0, p0, Landroid/net/sip/SipProfile;->mCallingUid:I
 
     return v0
@@ -496,7 +496,7 @@
     .locals 1
 
     .prologue
-    .line 379
+    .line 386
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mAddress:Ljavax/sip/address/Address;
 
     invoke-interface {v0}, Ljavax/sip/address/Address;->getDisplayName()Ljava/lang/String;
@@ -510,7 +510,7 @@
     .locals 1
 
     .prologue
-    .line 408
+    .line 415
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mPassword:Ljava/lang/String;
 
     return-object v0
@@ -520,7 +520,7 @@
     .locals 1
 
     .prologue
-    .line 426
+    .line 433
     iget v0, p0, Landroid/net/sip/SipProfile;->mPort:I
 
     return v0
@@ -530,7 +530,7 @@
     .locals 1
 
     .prologue
-    .line 453
+    .line 460
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mProfileName:Ljava/lang/String;
 
     return-object v0
@@ -540,7 +540,7 @@
     .locals 1
 
     .prologue
-    .line 435
+    .line 442
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mProtocol:Ljava/lang/String;
 
     return-object v0
@@ -550,7 +550,7 @@
     .locals 1
 
     .prologue
-    .line 444
+    .line 451
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mProxyAddress:Ljava/lang/String;
 
     return-object v0
@@ -560,7 +560,7 @@
     .locals 1
 
     .prologue
-    .line 462
+    .line 469
     iget-boolean v0, p0, Landroid/net/sip/SipProfile;->mSendKeepAlive:Z
 
     return v0
@@ -570,7 +570,7 @@
     .locals 1
 
     .prologue
-    .line 370
+    .line 377
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mAddress:Ljavax/sip/address/Address;
 
     return-object v0
@@ -580,7 +580,7 @@
     .locals 1
 
     .prologue
-    .line 417
+    .line 424
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mDomain:Ljava/lang/String;
 
     return-object v0
@@ -590,7 +590,7 @@
     .locals 1
 
     .prologue
-    .line 345
+    .line 352
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mAddress:Ljavax/sip/address/Address;
 
     invoke-interface {v0}, Ljavax/sip/address/Address;->getURI()Ljavax/sip/address/URI;
@@ -606,7 +606,7 @@
     .locals 2
 
     .prologue
-    .line 357
+    .line 364
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mProxyAddress:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -615,7 +615,7 @@
 
     if-nez v0, :cond_0
 
-    .line 358
+    .line 365
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -650,7 +650,7 @@
 
     move-result-object v0
 
-    .line 360
+    .line 367
     :goto_0
     return-object v0
 
@@ -670,7 +670,7 @@
     .locals 1
 
     .prologue
-    .line 388
+    .line 395
     invoke-virtual {p0}, Landroid/net/sip/SipProfile;->getUri()Ljavax/sip/address/SipURI;
 
     move-result-object v0
@@ -687,10 +687,10 @@
     .parameter "uid"
 
     .prologue
-    .line 479
+    .line 486
     iput p1, p0, Landroid/net/sip/SipProfile;->mCallingUid:I
 
-    .line 480
+    .line 487
     return-void
 .end method
 
@@ -704,37 +704,37 @@
 
     const/4 v2, 0x0
 
-    .line 320
+    .line 327
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mAddress:Ljavax/sip/address/Address;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeSerializable(Ljava/io/Serializable;)V
 
-    .line 321
+    .line 328
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mProxyAddress:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 322
+    .line 329
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mPassword:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 323
+    .line 330
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mDomain:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 324
+    .line 331
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mProtocol:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 325
+    .line 332
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mProfileName:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 326
+    .line 333
     iget-boolean v0, p0, Landroid/net/sip/SipProfile;->mSendKeepAlive:Z
 
     if-eqz v0, :cond_0
@@ -744,7 +744,7 @@
     :goto_0
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 327
+    .line 334
     iget-boolean v0, p0, Landroid/net/sip/SipProfile;->mAutoRegistration:Z
 
     if-eqz v0, :cond_1
@@ -752,33 +752,33 @@
     :goto_1
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 328
+    .line 335
     iget v0, p0, Landroid/net/sip/SipProfile;->mCallingUid:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 329
+    .line 336
     iget v0, p0, Landroid/net/sip/SipProfile;->mPort:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 330
+    .line 337
     iget-object v0, p0, Landroid/net/sip/SipProfile;->mAuthUserName:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 331
+    .line 338
     return-void
 
     :cond_0
     move v0, v2
 
-    .line 326
+    .line 333
     goto :goto_0
 
     :cond_1
     move v1, v2
 
-    .line 327
+    .line 334
     goto :goto_1
 .end method

@@ -96,12 +96,12 @@
     .parameter "context"
 
     .prologue
-    .line 128
+    .line 129
     const/4 v0, 0x1
 
     invoke-direct {p0, p1, v0}, Landroid/widget/MediaController;-><init>(Landroid/content/Context;Z)V
 
-    .line 129
+    .line 130
     return-void
 .end method
 
@@ -113,71 +113,71 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 106
+    .line 107
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 181
+    .line 182
     new-instance v0, Landroid/widget/MediaController$1;
 
     invoke-direct {v0, p0}, Landroid/widget/MediaController$1;-><init>(Landroid/widget/MediaController;)V
 
     iput-object v0, p0, Landroid/widget/MediaController;->mLayoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
 
-    .line 193
+    .line 194
     new-instance v0, Landroid/widget/MediaController$2;
 
     invoke-direct {v0, p0}, Landroid/widget/MediaController$2;-><init>(Landroid/widget/MediaController;)V
 
     iput-object v0, p0, Landroid/widget/MediaController;->mTouchListener:Landroid/view/View$OnTouchListener;
 
-    .line 396
+    .line 398
     new-instance v0, Landroid/widget/MediaController$3;
 
     invoke-direct {v0, p0}, Landroid/widget/MediaController$3;-><init>(Landroid/widget/MediaController;)V
 
     iput-object v0, p0, Landroid/widget/MediaController;->mHandler:Landroid/os/Handler;
 
-    .line 537
+    .line 539
     new-instance v0, Landroid/widget/MediaController$4;
 
     invoke-direct {v0, p0}, Landroid/widget/MediaController$4;-><init>(Landroid/widget/MediaController;)V
 
     iput-object v0, p0, Landroid/widget/MediaController;->mPauseListener:Landroid/view/View$OnClickListener;
 
-    .line 575
+    .line 577
     new-instance v0, Landroid/widget/MediaController$5;
 
     invoke-direct {v0, p0}, Landroid/widget/MediaController$5;-><init>(Landroid/widget/MediaController;)V
 
     iput-object v0, p0, Landroid/widget/MediaController;->mSeekListener:Landroid/widget/SeekBar$OnSeekBarChangeListener;
 
-    .line 640
+    .line 642
     new-instance v0, Landroid/widget/MediaController$6;
 
     invoke-direct {v0, p0}, Landroid/widget/MediaController$6;-><init>(Landroid/widget/MediaController;)V
 
     iput-object v0, p0, Landroid/widget/MediaController;->mRewListener:Landroid/view/View$OnClickListener;
 
-    .line 651
+    .line 653
     new-instance v0, Landroid/widget/MediaController$7;
 
     invoke-direct {v0, p0}, Landroid/widget/MediaController$7;-><init>(Landroid/widget/MediaController;)V
 
     iput-object v0, p0, Landroid/widget/MediaController;->mFfwdListener:Landroid/view/View$OnClickListener;
 
-    .line 107
+    .line 108
     iput-object p0, p0, Landroid/widget/MediaController;->mRoot:Landroid/view/View;
 
-    .line 108
+    .line 109
     iput-object p1, p0, Landroid/widget/MediaController;->mContext:Landroid/content/Context;
 
-    .line 109
+    .line 110
     iput-boolean v1, p0, Landroid/widget/MediaController;->mUseFastForward:Z
 
-    .line 110
+    .line 111
     iput-boolean v1, p0, Landroid/widget/MediaController;->mFromXml:Z
 
-    .line 111
+    .line 112
     return-void
 .end method
 
@@ -187,71 +187,71 @@
     .parameter "useFastForward"
 
     .prologue
-    .line 120
+    .line 121
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
-    .line 181
+    .line 182
     new-instance v0, Landroid/widget/MediaController$1;
 
     invoke-direct {v0, p0}, Landroid/widget/MediaController$1;-><init>(Landroid/widget/MediaController;)V
 
     iput-object v0, p0, Landroid/widget/MediaController;->mLayoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
 
-    .line 193
+    .line 194
     new-instance v0, Landroid/widget/MediaController$2;
 
     invoke-direct {v0, p0}, Landroid/widget/MediaController$2;-><init>(Landroid/widget/MediaController;)V
 
     iput-object v0, p0, Landroid/widget/MediaController;->mTouchListener:Landroid/view/View$OnTouchListener;
 
-    .line 396
+    .line 398
     new-instance v0, Landroid/widget/MediaController$3;
 
     invoke-direct {v0, p0}, Landroid/widget/MediaController$3;-><init>(Landroid/widget/MediaController;)V
 
     iput-object v0, p0, Landroid/widget/MediaController;->mHandler:Landroid/os/Handler;
 
-    .line 537
+    .line 539
     new-instance v0, Landroid/widget/MediaController$4;
 
     invoke-direct {v0, p0}, Landroid/widget/MediaController$4;-><init>(Landroid/widget/MediaController;)V
 
     iput-object v0, p0, Landroid/widget/MediaController;->mPauseListener:Landroid/view/View$OnClickListener;
 
-    .line 575
+    .line 577
     new-instance v0, Landroid/widget/MediaController$5;
 
     invoke-direct {v0, p0}, Landroid/widget/MediaController$5;-><init>(Landroid/widget/MediaController;)V
 
     iput-object v0, p0, Landroid/widget/MediaController;->mSeekListener:Landroid/widget/SeekBar$OnSeekBarChangeListener;
 
-    .line 640
+    .line 642
     new-instance v0, Landroid/widget/MediaController$6;
 
     invoke-direct {v0, p0}, Landroid/widget/MediaController$6;-><init>(Landroid/widget/MediaController;)V
 
     iput-object v0, p0, Landroid/widget/MediaController;->mRewListener:Landroid/view/View$OnClickListener;
 
-    .line 651
+    .line 653
     new-instance v0, Landroid/widget/MediaController$7;
 
     invoke-direct {v0, p0}, Landroid/widget/MediaController$7;-><init>(Landroid/widget/MediaController;)V
 
     iput-object v0, p0, Landroid/widget/MediaController;->mFfwdListener:Landroid/view/View$OnClickListener;
 
-    .line 121
+    .line 122
     iput-object p1, p0, Landroid/widget/MediaController;->mContext:Landroid/content/Context;
 
-    .line 122
+    .line 123
     iput-boolean p2, p0, Landroid/widget/MediaController;->mUseFastForward:Z
 
-    .line 123
+    .line 124
     invoke-direct {p0}, Landroid/widget/MediaController;->initFloatingWindowLayout()V
 
-    .line 124
+    .line 125
     invoke-direct {p0}, Landroid/widget/MediaController;->initFloatingWindow()V
 
-    .line 125
+    .line 126
     return-void
 .end method
 
@@ -260,7 +260,7 @@
     .parameter "x0"
 
     .prologue
-    .line 73
+    .line 74
     invoke-direct {p0}, Landroid/widget/MediaController;->updateFloatingWindowLayout()V
 
     return-void
@@ -271,7 +271,7 @@
     .parameter "x0"
 
     .prologue
-    .line 73
+    .line 74
     iget-boolean v0, p0, Landroid/widget/MediaController;->mShowing:Z
 
     return v0
@@ -282,7 +282,7 @@
     .parameter "x0"
 
     .prologue
-    .line 73
+    .line 74
     iget-object v0, p0, Landroid/widget/MediaController;->mCurrentTime:Landroid/widget/TextView;
 
     return-object v0
@@ -294,7 +294,7 @@
     .parameter "x1"
 
     .prologue
-    .line 73
+    .line 74
     invoke-direct {p0, p1}, Landroid/widget/MediaController;->stringForTime(I)Ljava/lang/String;
 
     move-result-object v0
@@ -307,7 +307,7 @@
     .parameter "x0"
 
     .prologue
-    .line 73
+    .line 74
     invoke-direct {p0}, Landroid/widget/MediaController;->updatePausePlay()V
 
     return-void
@@ -318,7 +318,7 @@
     .parameter "x0"
 
     .prologue
-    .line 73
+    .line 74
     iget-object v0, p0, Landroid/widget/MediaController;->mDecor:Landroid/view/View;
 
     return-object v0
@@ -329,7 +329,7 @@
     .parameter "x0"
 
     .prologue
-    .line 73
+    .line 74
     iget-object v0, p0, Landroid/widget/MediaController;->mDecorLayoutParams:Landroid/view/WindowManager$LayoutParams;
 
     return-object v0
@@ -340,7 +340,7 @@
     .parameter "x0"
 
     .prologue
-    .line 73
+    .line 74
     iget-object v0, p0, Landroid/widget/MediaController;->mWindowManager:Landroid/view/WindowManager;
 
     return-object v0
@@ -351,7 +351,7 @@
     .parameter "x0"
 
     .prologue
-    .line 73
+    .line 74
     invoke-direct {p0}, Landroid/widget/MediaController;->setProgress()I
 
     move-result v0
@@ -364,7 +364,7 @@
     .parameter "x0"
 
     .prologue
-    .line 73
+    .line 74
     iget-boolean v0, p0, Landroid/widget/MediaController;->mDragging:Z
 
     return v0
@@ -376,7 +376,7 @@
     .parameter "x1"
 
     .prologue
-    .line 73
+    .line 74
     iput-boolean p1, p0, Landroid/widget/MediaController;->mDragging:Z
 
     return p1
@@ -387,7 +387,7 @@
     .parameter "x0"
 
     .prologue
-    .line 73
+    .line 74
     iget-object v0, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     return-object v0
@@ -398,7 +398,7 @@
     .parameter "x0"
 
     .prologue
-    .line 73
+    .line 74
     invoke-direct {p0}, Landroid/widget/MediaController;->doPauseResume()V
 
     return-void
@@ -409,7 +409,7 @@
     .parameter "x0"
 
     .prologue
-    .line 73
+    .line 74
     iget-object v0, p0, Landroid/widget/MediaController;->mHandler:Landroid/os/Handler;
 
     return-object v0
@@ -419,7 +419,7 @@
     .locals 3
 
     .prologue
-    .line 312
+    .line 313
     :try_start_0
     iget-object v1, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
@@ -433,20 +433,20 @@
 
     if-nez v1, :cond_0
 
-    .line 313
+    .line 314
     iget-object v1, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setEnabled(Z)V
 
-    .line 315
+    .line 316
     :cond_0
     iget-object v1, p0, Landroid/widget/MediaController;->mRewButton:Landroid/widget/ImageButton;
 
     if-eqz v1, :cond_1
 
-    .line 316
+    .line 317
     iget-object v1, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     invoke-interface {v1}, Landroid/widget/MediaController$MediaPlayerControl;->canSeekBackward()Z
@@ -455,21 +455,21 @@
 
     if-eqz v1, :cond_4
 
-    .line 317
+    .line 318
     iget-object v1, p0, Landroid/widget/MediaController;->mRewButton:Landroid/widget/ImageButton;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 322
+    .line 323
     :cond_1
     :goto_0
     iget-object v1, p0, Landroid/widget/MediaController;->mFfwdButton:Landroid/widget/ImageButton;
 
     if-eqz v1, :cond_2
 
-    .line 323
+    .line 324
     iget-object v1, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     invoke-interface {v1}, Landroid/widget/MediaController$MediaPlayerControl;->canSeekForward()Z
@@ -478,14 +478,14 @@
 
     if-eqz v1, :cond_5
 
-    .line 324
+    .line 325
     iget-object v1, p0, Landroid/widget/MediaController;->mFfwdButton:Landroid/widget/ImageButton;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 329
+    .line 330
     :cond_2
     :goto_1
     iget-object v1, p0, Landroid/widget/MediaController;->mProgress:Landroid/widget/ProgressBar;
@@ -498,12 +498,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 330
+    .line 331
     iget-object v0, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     check-cast v0, Landroid/widget/MediaController$MediaSeekControl;
 
-    .line 331
+    .line 332
     .local v0, mediaSeekControl:Landroid/widget/MediaController$MediaSeekControl;
     invoke-interface {v0}, Landroid/widget/MediaController$MediaSeekControl;->canSeekPosition()Z
 
@@ -511,20 +511,20 @@
 
     if-nez v1, :cond_3
 
-    .line 332
+    .line 333
     iget-object v1, p0, Landroid/widget/MediaController;->mProgress:Landroid/widget/ProgressBar;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/widget/ProgressBar;->setEnabled(Z)V
 
-    .line 341
+    .line 342
     .end local v0           #mediaSeekControl:Landroid/widget/MediaController$MediaSeekControl;
     :cond_3
     :goto_2
     return-void
 
-    .line 319
+    .line 320
     :cond_4
     iget-object v1, p0, Landroid/widget/MediaController;->mRewButton:Landroid/widget/ImageButton;
 
@@ -534,13 +534,13 @@
 
     goto :goto_0
 
-    .line 335
+    .line 336
     :catch_0
     move-exception v1
 
     goto :goto_2
 
-    .line 326
+    .line 327
     :cond_5
     iget-object v1, p0, Landroid/widget/MediaController;->mFfwdButton:Landroid/widget/ImageButton;
 
@@ -557,7 +557,7 @@
     .locals 1
 
     .prologue
-    .line 556
+    .line 558
     iget-object v0, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     invoke-interface {v0}, Landroid/widget/MediaController$MediaPlayerControl;->isPlaying()Z
@@ -566,19 +566,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 557
+    .line 559
     iget-object v0, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     invoke-interface {v0}, Landroid/widget/MediaController$MediaPlayerControl;->pause()V
 
-    .line 561
+    .line 563
     :goto_0
     invoke-direct {p0}, Landroid/widget/MediaController;->updatePausePlay()V
 
-    .line 562
+    .line 564
     return-void
 
-    .line 559
+    .line 561
     :cond_0
     iget-object v0, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
@@ -596,8 +596,8 @@
 
     const/16 v3, 0x8
 
-    .line 249
-    const v1, 0x10202d0
+    .line 250
+    const v1, 0x10202db
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -607,26 +607,26 @@
 
     iput-object v1, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
-    .line 250
+    .line 251
     iget-object v1, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
     if-eqz v1, :cond_0
 
-    .line 251
+    .line 252
     iget-object v1, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
     invoke-virtual {v1}, Landroid/widget/ImageButton;->requestFocus()Z
 
-    .line 252
+    .line 253
     iget-object v1, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
     iget-object v4, p0, Landroid/widget/MediaController;->mPauseListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v1, v4}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 255
+    .line 256
     :cond_0
-    const v1, 0x10202d1
+    const v1, 0x10202dc
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -636,24 +636,24 @@
 
     iput-object v1, p0, Landroid/widget/MediaController;->mFfwdButton:Landroid/widget/ImageButton;
 
-    .line 256
+    .line 257
     iget-object v1, p0, Landroid/widget/MediaController;->mFfwdButton:Landroid/widget/ImageButton;
 
     if-eqz v1, :cond_1
 
-    .line 257
+    .line 258
     iget-object v1, p0, Landroid/widget/MediaController;->mFfwdButton:Landroid/widget/ImageButton;
 
     iget-object v4, p0, Landroid/widget/MediaController;->mFfwdListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v1, v4}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 258
+    .line 259
     iget-boolean v1, p0, Landroid/widget/MediaController;->mFromXml:Z
 
     if-nez v1, :cond_1
 
-    .line 259
+    .line 260
     iget-object v4, p0, Landroid/widget/MediaController;->mFfwdButton:Landroid/widget/ImageButton;
 
     iget-boolean v1, p0, Landroid/widget/MediaController;->mUseFastForward:Z
@@ -665,9 +665,9 @@
     :goto_0
     invoke-virtual {v4, v1}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 263
+    .line 264
     :cond_1
-    const v1, 0x10202cf
+    const v1, 0x10202da
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -677,24 +677,24 @@
 
     iput-object v1, p0, Landroid/widget/MediaController;->mRewButton:Landroid/widget/ImageButton;
 
-    .line 264
+    .line 265
     iget-object v1, p0, Landroid/widget/MediaController;->mRewButton:Landroid/widget/ImageButton;
 
     if-eqz v1, :cond_2
 
-    .line 265
+    .line 266
     iget-object v1, p0, Landroid/widget/MediaController;->mRewButton:Landroid/widget/ImageButton;
 
     iget-object v4, p0, Landroid/widget/MediaController;->mRewListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v1, v4}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 266
+    .line 267
     iget-boolean v1, p0, Landroid/widget/MediaController;->mFromXml:Z
 
     if-nez v1, :cond_2
 
-    .line 267
+    .line 268
     iget-object v1, p0, Landroid/widget/MediaController;->mRewButton:Landroid/widget/ImageButton;
 
     iget-boolean v4, p0, Landroid/widget/MediaController;->mUseFastForward:Z
@@ -704,9 +704,9 @@
     :goto_1
     invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 272
+    .line 273
     :cond_2
-    const v1, 0x10202d2
+    const v1, 0x10202dd
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -716,7 +716,7 @@
 
     iput-object v1, p0, Landroid/widget/MediaController;->mNextButton:Landroid/widget/ImageButton;
 
-    .line 273
+    .line 274
     iget-object v1, p0, Landroid/widget/MediaController;->mNextButton:Landroid/widget/ImageButton;
 
     if-eqz v1, :cond_3
@@ -729,14 +729,14 @@
 
     if-nez v1, :cond_3
 
-    .line 274
+    .line 275
     iget-object v1, p0, Landroid/widget/MediaController;->mNextButton:Landroid/widget/ImageButton;
 
     invoke-virtual {v1, v3}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 276
+    .line 277
     :cond_3
-    const v1, 0x10202ce
+    const v1, 0x10202d9
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -746,7 +746,7 @@
 
     iput-object v1, p0, Landroid/widget/MediaController;->mPrevButton:Landroid/widget/ImageButton;
 
-    .line 277
+    .line 278
     iget-object v1, p0, Landroid/widget/MediaController;->mPrevButton:Landroid/widget/ImageButton;
 
     if-eqz v1, :cond_4
@@ -759,14 +759,14 @@
 
     if-nez v1, :cond_4
 
-    .line 278
+    .line 279
     iget-object v1, p0, Landroid/widget/MediaController;->mPrevButton:Landroid/widget/ImageButton;
 
     invoke-virtual {v1, v3}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 281
+    .line 282
     :cond_4
-    const v1, 0x10202d4
+    const v1, 0x10202df
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -776,30 +776,30 @@
 
     iput-object v1, p0, Landroid/widget/MediaController;->mProgress:Landroid/widget/ProgressBar;
 
-    .line 282
+    .line 283
     iget-object v1, p0, Landroid/widget/MediaController;->mProgress:Landroid/widget/ProgressBar;
 
     if-eqz v1, :cond_6
 
-    .line 283
+    .line 284
     iget-object v1, p0, Landroid/widget/MediaController;->mProgress:Landroid/widget/ProgressBar;
 
     instance-of v1, v1, Landroid/widget/SeekBar;
 
     if-eqz v1, :cond_5
 
-    .line 284
+    .line 285
     iget-object v0, p0, Landroid/widget/MediaController;->mProgress:Landroid/widget/ProgressBar;
 
     check-cast v0, Landroid/widget/SeekBar;
 
-    .line 285
+    .line 286
     .local v0, seeker:Landroid/widget/SeekBar;
     iget-object v1, p0, Landroid/widget/MediaController;->mSeekListener:Landroid/widget/SeekBar$OnSeekBarChangeListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
-    .line 287
+    .line 288
     .end local v0           #seeker:Landroid/widget/SeekBar;
     :cond_5
     iget-object v1, p0, Landroid/widget/MediaController;->mProgress:Landroid/widget/ProgressBar;
@@ -808,7 +808,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/ProgressBar;->setMax(I)V
 
-    .line 290
+    .line 291
     :cond_6
     const v1, 0x1020064
 
@@ -820,8 +820,8 @@
 
     iput-object v1, p0, Landroid/widget/MediaController;->mEndTime:Landroid/widget/TextView;
 
-    .line 291
-    const v1, 0x10202d3
+    .line 292
+    const v1, 0x10202de
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -831,14 +831,14 @@
 
     iput-object v1, p0, Landroid/widget/MediaController;->mCurrentTime:Landroid/widget/TextView;
 
-    .line 292
+    .line 293
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     iput-object v1, p0, Landroid/widget/MediaController;->mFormatBuilder:Ljava/lang/StringBuilder;
 
-    .line 293
+    .line 294
     new-instance v1, Ljava/util/Formatter;
 
     iget-object v2, p0, Landroid/widget/MediaController;->mFormatBuilder:Ljava/lang/StringBuilder;
@@ -851,22 +851,22 @@
 
     iput-object v1, p0, Landroid/widget/MediaController;->mFormatter:Ljava/util/Formatter;
 
-    .line 295
+    .line 296
     invoke-direct {p0}, Landroid/widget/MediaController;->installPrevNextListeners()V
 
-    .line 296
+    .line 297
     return-void
 
     :cond_7
     move v1, v3
 
-    .line 259
+    .line 260
     goto/16 :goto_0
 
     :cond_8
     move v2, v3
 
-    .line 267
+    .line 268
     goto/16 :goto_1
 .end method
 
@@ -878,7 +878,7 @@
 
     const/4 v2, 0x1
 
-    .line 132
+    .line 133
     iget-object v0, p0, Landroid/widget/MediaController;->mContext:Landroid/content/Context;
 
     const-string/jumbo v1, "window"
@@ -891,7 +891,7 @@
 
     iput-object v0, p0, Landroid/widget/MediaController;->mWindowManager:Landroid/view/WindowManager;
 
-    .line 133
+    .line 134
     iget-object v0, p0, Landroid/widget/MediaController;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/android/internal/policy/PolicyManager;->makeNewWindow(Landroid/content/Context;)Landroid/view/Window;
@@ -900,19 +900,19 @@
 
     iput-object v0, p0, Landroid/widget/MediaController;->mWindow:Landroid/view/Window;
 
-    .line 134
+    .line 135
     iget-object v0, p0, Landroid/widget/MediaController;->mWindow:Landroid/view/Window;
 
     iget-object v1, p0, Landroid/widget/MediaController;->mWindowManager:Landroid/view/WindowManager;
 
     invoke-virtual {v0, v1, v3, v3}, Landroid/view/Window;->setWindowManager(Landroid/view/WindowManager;Landroid/os/IBinder;Ljava/lang/String;)V
 
-    .line 135
+    .line 136
     iget-object v0, p0, Landroid/widget/MediaController;->mWindow:Landroid/view/Window;
 
     invoke-virtual {v0, v2}, Landroid/view/Window;->requestFeature(I)Z
 
-    .line 136
+    .line 137
     iget-object v0, p0, Landroid/widget/MediaController;->mWindow:Landroid/view/Window;
 
     invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
@@ -921,47 +921,47 @@
 
     iput-object v0, p0, Landroid/widget/MediaController;->mDecor:Landroid/view/View;
 
-    .line 137
+    .line 138
     iget-object v0, p0, Landroid/widget/MediaController;->mDecor:Landroid/view/View;
 
     iget-object v1, p0, Landroid/widget/MediaController;->mTouchListener:Landroid/view/View$OnTouchListener;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 138
+    .line 139
     iget-object v0, p0, Landroid/widget/MediaController;->mWindow:Landroid/view/Window;
 
     invoke-virtual {v0, p0}, Landroid/view/Window;->setContentView(Landroid/view/View;)V
 
-    .line 139
+    .line 140
     iget-object v0, p0, Landroid/widget/MediaController;->mWindow:Landroid/view/Window;
 
     const v1, 0x106000d
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->setBackgroundDrawableResource(I)V
 
-    .line 143
+    .line 144
     iget-object v0, p0, Landroid/widget/MediaController;->mWindow:Landroid/view/Window;
 
     const/4 v1, 0x3
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->setVolumeControlStream(I)V
 
-    .line 145
+    .line 146
     invoke-virtual {p0, v2}, Landroid/widget/MediaController;->setFocusable(Z)V
 
-    .line 146
+    .line 147
     invoke-virtual {p0, v2}, Landroid/widget/MediaController;->setFocusableInTouchMode(Z)V
 
-    .line 147
+    .line 148
     const/high16 v0, 0x4
 
     invoke-virtual {p0, v0}, Landroid/widget/MediaController;->setDescendantFocusability(I)V
 
-    .line 148
+    .line 149
     invoke-virtual {p0}, Landroid/widget/MediaController;->requestFocus()Z
 
-    .line 149
+    .line 150
     return-void
 .end method
 
@@ -971,41 +971,41 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 155
+    .line 156
     new-instance v1, Landroid/view/WindowManager$LayoutParams;
 
     invoke-direct {v1}, Landroid/view/WindowManager$LayoutParams;-><init>()V
 
     iput-object v1, p0, Landroid/widget/MediaController;->mDecorLayoutParams:Landroid/view/WindowManager$LayoutParams;
 
-    .line 156
+    .line 157
     iget-object v0, p0, Landroid/widget/MediaController;->mDecorLayoutParams:Landroid/view/WindowManager$LayoutParams;
 
-    .line 157
+    .line 158
     .local v0, p:Landroid/view/WindowManager$LayoutParams;
     const/16 v1, 0x30
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->gravity:I
 
-    .line 158
+    .line 159
     const/4 v1, -0x2
 
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 159
+    .line 160
     iput v3, v0, Landroid/view/WindowManager$LayoutParams;->x:I
 
-    .line 160
+    .line 161
     const/4 v1, -0x3
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->format:I
 
-    .line 161
+    .line 162
     const/16 v1, 0x3e8
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->type:I
 
-    .line 162
+    .line 163
     iget v1, v0, Landroid/view/WindowManager$LayoutParams;->flags:I
 
     const v2, 0x820020
@@ -1014,15 +1014,15 @@
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->flags:I
 
-    .line 165
+    .line 166
     const/4 v1, 0x0
 
     iput-object v1, v0, Landroid/view/WindowManager$LayoutParams;->token:Landroid/os/IBinder;
 
-    .line 166
+    .line 167
     iput v3, v0, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
 
-    .line 167
+    .line 168
     return-void
 .end method
 
@@ -1034,19 +1034,19 @@
 
     const/4 v2, 0x0
 
-    .line 663
+    .line 665
     iget-object v0, p0, Landroid/widget/MediaController;->mNextButton:Landroid/widget/ImageButton;
 
     if-eqz v0, :cond_0
 
-    .line 664
+    .line 666
     iget-object v0, p0, Landroid/widget/MediaController;->mNextButton:Landroid/widget/ImageButton;
 
     iget-object v3, p0, Landroid/widget/MediaController;->mNextListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 665
+    .line 667
     iget-object v3, p0, Landroid/widget/MediaController;->mNextButton:Landroid/widget/ImageButton;
 
     iget-object v0, p0, Landroid/widget/MediaController;->mNextListener:Landroid/view/View$OnClickListener;
@@ -1058,20 +1058,20 @@
     :goto_0
     invoke-virtual {v3, v0}, Landroid/widget/ImageButton;->setEnabled(Z)V
 
-    .line 668
+    .line 670
     :cond_0
     iget-object v0, p0, Landroid/widget/MediaController;->mPrevButton:Landroid/widget/ImageButton;
 
     if-eqz v0, :cond_1
 
-    .line 669
+    .line 671
     iget-object v0, p0, Landroid/widget/MediaController;->mPrevButton:Landroid/widget/ImageButton;
 
     iget-object v3, p0, Landroid/widget/MediaController;->mPrevListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 670
+    .line 672
     iget-object v0, p0, Landroid/widget/MediaController;->mPrevButton:Landroid/widget/ImageButton;
 
     iget-object v3, p0, Landroid/widget/MediaController;->mPrevListener:Landroid/view/View$OnClickListener;
@@ -1081,20 +1081,20 @@
     :goto_1
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setEnabled(Z)V
 
-    .line 672
+    .line 674
     :cond_1
     return-void
 
     :cond_2
     move v0, v2
 
-    .line 665
+    .line 667
     goto :goto_0
 
     :cond_3
     move v1, v2
 
-    .line 670
+    .line 672
     goto :goto_1
 .end method
 
@@ -1102,7 +1102,7 @@
     .locals 9
 
     .prologue
-    .line 431
+    .line 433
     iget-object v5, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     if-eqz v5, :cond_0
@@ -1111,16 +1111,16 @@
 
     if-eqz v5, :cond_2
 
-    .line 432
+    .line 434
     :cond_0
     const/4 v4, 0x0
 
-    .line 451
+    .line 453
     :cond_1
     :goto_0
     return v4
 
-    .line 434
+    .line 436
     :cond_2
     iget-object v5, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
@@ -1128,7 +1128,7 @@
 
     move-result v4
 
-    .line 435
+    .line 437
     .local v4, position:I
     iget-object v5, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
@@ -1136,16 +1136,16 @@
 
     move-result v0
 
-    .line 436
+    .line 438
     .local v0, duration:I
     iget-object v5, p0, Landroid/widget/MediaController;->mProgress:Landroid/widget/ProgressBar;
 
     if-eqz v5, :cond_4
 
-    .line 437
+    .line 439
     if-lez v0, :cond_3
 
-    .line 439
+    .line 441
     const-wide/16 v5, 0x3e8
 
     int-to-long v7, v4
@@ -1156,7 +1156,7 @@
 
     div-long v2, v5, v7
 
-    .line 440
+    .line 442
     .local v2, pos:J
     iget-object v5, p0, Landroid/widget/MediaController;->mProgress:Landroid/widget/ProgressBar;
 
@@ -1164,7 +1164,7 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/ProgressBar;->setProgress(I)V
 
-    .line 442
+    .line 444
     .end local v2           #pos:J
     :cond_3
     iget-object v5, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
@@ -1173,7 +1173,7 @@
 
     move-result v1
 
-    .line 443
+    .line 445
     .local v1, percent:I
     iget-object v5, p0, Landroid/widget/MediaController;->mProgress:Landroid/widget/ProgressBar;
 
@@ -1181,14 +1181,14 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/ProgressBar;->setSecondaryProgress(I)V
 
-    .line 446
+    .line 448
     .end local v1           #percent:I
     :cond_4
     iget-object v5, p0, Landroid/widget/MediaController;->mEndTime:Landroid/widget/TextView;
 
     if-eqz v5, :cond_5
 
-    .line 447
+    .line 449
     iget-object v5, p0, Landroid/widget/MediaController;->mEndTime:Landroid/widget/TextView;
 
     invoke-direct {p0, v0}, Landroid/widget/MediaController;->stringForTime(I)Ljava/lang/String;
@@ -1197,13 +1197,13 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 448
+    .line 450
     :cond_5
     iget-object v5, p0, Landroid/widget/MediaController;->mCurrentTime:Landroid/widget/TextView;
 
     if-eqz v5, :cond_1
 
-    .line 449
+    .line 451
     iget-object v5, p0, Landroid/widget/MediaController;->mCurrentTime:Landroid/widget/TextView;
 
     invoke-direct {p0, v4}, Landroid/widget/MediaController;->stringForTime(I)Ljava/lang/String;
@@ -1226,33 +1226,33 @@
 
     const/4 v8, 0x0
 
-    .line 416
+    .line 418
     div-int/lit16 v3, p1, 0x3e8
 
-    .line 418
+    .line 420
     .local v3, totalSeconds:I
     rem-int/lit8 v2, v3, 0x3c
 
-    .line 419
+    .line 421
     .local v2, seconds:I
     div-int/lit8 v4, v3, 0x3c
 
     rem-int/lit8 v1, v4, 0x3c
 
-    .line 420
+    .line 422
     .local v1, minutes:I
     div-int/lit16 v0, v3, 0xe10
 
-    .line 422
+    .line 424
     .local v0, hours:I
     iget-object v4, p0, Landroid/widget/MediaController;->mFormatBuilder:Ljava/lang/StringBuilder;
 
     invoke-virtual {v4, v8}, Ljava/lang/StringBuilder;->setLength(I)V
 
-    .line 423
+    .line 425
     if-lez v0, :cond_0
 
-    .line 424
+    .line 426
     iget-object v4, p0, Landroid/widget/MediaController;->mFormatter:Ljava/util/Formatter;
 
     const-string v5, "%d:%02d:%02d"
@@ -1287,7 +1287,7 @@
 
     move-result-object v4
 
-    .line 426
+    .line 428
     :goto_0
     return-object v4
 
@@ -1325,21 +1325,21 @@
     .locals 4
 
     .prologue
-    .line 172
+    .line 173
     const/4 v2, 0x2
 
     new-array v0, v2, [I
 
-    .line 173
+    .line 174
     .local v0, anchorPos:[I
     iget-object v2, p0, Landroid/widget/MediaController;->mAnchor:Landroid/view/View;
 
     invoke-virtual {v2, v0}, Landroid/view/View;->getLocationOnScreen([I)V
 
-    .line 175
+    .line 176
     iget-object v1, p0, Landroid/widget/MediaController;->mDecorLayoutParams:Landroid/view/WindowManager$LayoutParams;
 
-    .line 176
+    .line 177
     .local v1, p:Landroid/view/WindowManager$LayoutParams;
     iget-object v2, p0, Landroid/widget/MediaController;->mAnchor:Landroid/view/View;
 
@@ -1349,7 +1349,7 @@
 
     iput v2, v1, Landroid/view/ViewGroup$LayoutParams;->width:I
 
-    .line 177
+    .line 178
     const/4 v2, 0x1
 
     aget v2, v0, v2
@@ -1364,7 +1364,7 @@
 
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->y:I
 
-    .line 178
+    .line 179
     return-void
 .end method
 
@@ -1372,7 +1372,7 @@
     .locals 2
 
     .prologue
-    .line 545
+    .line 547
     iget-object v0, p0, Landroid/widget/MediaController;->mRoot:Landroid/view/View;
 
     if-eqz v0, :cond_0
@@ -1381,12 +1381,12 @@
 
     if-nez v0, :cond_1
 
-    .line 553
+    .line 555
     :cond_0
     :goto_0
     return-void
 
-    .line 548
+    .line 550
     :cond_1
     iget-object v0, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
@@ -1396,7 +1396,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 549
+    .line 551
     iget-object v0, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
     const v1, 0x1080023
@@ -1405,7 +1405,7 @@
 
     goto :goto_0
 
-    .line 551
+    .line 553
     :cond_2
     iget-object v0, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
@@ -1427,12 +1427,12 @@
 
     const/4 v3, 0x1
 
-    .line 468
+    .line 470
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v0
 
-    .line 469
+    .line 471
     .local v0, keyCode:I
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getRepeatCount()I
 
@@ -1448,7 +1448,7 @@
 
     move v2, v3
 
-    .line 471
+    .line 473
     .local v2, uniqueDown:Z
     :goto_0
     const/16 v4, 0x4f
@@ -1463,46 +1463,46 @@
 
     if-ne v0, v4, :cond_3
 
-    .line 474
+    .line 476
     :cond_0
     if-eqz v2, :cond_1
 
-    .line 475
+    .line 477
     invoke-direct {p0}, Landroid/widget/MediaController;->doPauseResume()V
 
-    .line 476
+    .line 478
     invoke-virtual {p0, v5}, Landroid/widget/MediaController;->show(I)V
 
-    .line 477
+    .line 479
     iget-object v4, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
     if-eqz v4, :cond_1
 
-    .line 478
+    .line 480
     iget-object v4, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
     invoke-virtual {v4}, Landroid/widget/ImageButton;->requestFocus()Z
 
-    .line 534
+    .line 536
     :cond_1
     :goto_1
     return v3
 
-    .line 469
+    .line 471
     .end local v2           #uniqueDown:Z
     :cond_2
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 482
+    .line 484
     .restart local v2       #uniqueDown:Z
     :cond_3
     const/16 v4, 0x7e
 
     if-ne v0, v4, :cond_4
 
-    .line 483
+    .line 485
     if-eqz v2, :cond_1
 
     iget-object v4, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
@@ -1513,20 +1513,20 @@
 
     if-nez v4, :cond_1
 
-    .line 484
+    .line 486
     iget-object v4, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     invoke-interface {v4}, Landroid/widget/MediaController$MediaPlayerControl;->start()V
 
-    .line 485
+    .line 487
     invoke-direct {p0}, Landroid/widget/MediaController;->updatePausePlay()V
 
-    .line 486
+    .line 488
     invoke-virtual {p0, v5}, Landroid/widget/MediaController;->show(I)V
 
     goto :goto_1
 
-    .line 489
+    .line 491
     :cond_4
     const/16 v4, 0x56
 
@@ -1536,7 +1536,7 @@
 
     if-ne v0, v4, :cond_6
 
-    .line 491
+    .line 493
     :cond_5
     if-eqz v2, :cond_1
 
@@ -1548,20 +1548,20 @@
 
     if-eqz v4, :cond_1
 
-    .line 492
+    .line 494
     iget-object v4, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     invoke-interface {v4}, Landroid/widget/MediaController$MediaPlayerControl;->pause()V
 
-    .line 493
+    .line 495
     invoke-direct {p0}, Landroid/widget/MediaController;->updatePausePlay()V
 
-    .line 494
+    .line 496
     invoke-virtual {p0, v5}, Landroid/widget/MediaController;->show(I)V
 
     goto :goto_1
 
-    .line 497
+    .line 499
     :cond_6
     const/16 v4, 0x19
 
@@ -1575,7 +1575,7 @@
 
     if-ne v0, v4, :cond_8
 
-    .line 501
+    .line 503
     :cond_7
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -1583,7 +1583,7 @@
 
     goto :goto_1
 
-    .line 502
+    .line 504
     :cond_8
     const/4 v4, 0x4
 
@@ -1593,16 +1593,16 @@
 
     if-ne v0, v4, :cond_a
 
-    .line 503
+    .line 505
     :cond_9
     if-eqz v2, :cond_1
 
-    .line 504
+    .line 506
     invoke-virtual {p0}, Landroid/widget/MediaController;->hide()V
 
     goto :goto_1
 
-    .line 507
+    .line 509
     :cond_a
     invoke-virtual {p1}, Landroid/view/KeyEvent;->isDown()Z
 
@@ -1614,7 +1614,7 @@
 
     if-ne v0, v4, :cond_b
 
-    .line 508
+    .line 510
     iget-object v4, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     invoke-interface {v4}, Landroid/widget/MediaController$MediaPlayerControl;->getCurrentPosition()I
@@ -1623,21 +1623,21 @@
 
     add-int/lit16 v1, v4, 0x3a98
 
-    .line 509
+    .line 511
     .local v1, pos:I
     iget-object v4, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     invoke-interface {v4, v1}, Landroid/widget/MediaController$MediaPlayerControl;->seekTo(I)V
 
-    .line 510
+    .line 512
     invoke-direct {p0}, Landroid/widget/MediaController;->setProgress()I
 
-    .line 511
+    .line 513
     invoke-virtual {p0, v5}, Landroid/widget/MediaController;->show(I)V
 
     goto :goto_1
 
-    .line 513
+    .line 515
     .end local v1           #pos:I
     :cond_b
     invoke-virtual {p1}, Landroid/view/KeyEvent;->isDown()Z
@@ -1650,7 +1650,7 @@
 
     if-ne v0, v4, :cond_c
 
-    .line 514
+    .line 516
     iget-object v4, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     invoke-interface {v4}, Landroid/widget/MediaController$MediaPlayerControl;->getCurrentPosition()I
@@ -1659,21 +1659,21 @@
 
     add-int/lit16 v1, v4, -0x1388
 
-    .line 515
+    .line 517
     .restart local v1       #pos:I
     iget-object v4, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     invoke-interface {v4, v1}, Landroid/widget/MediaController$MediaPlayerControl;->seekTo(I)V
 
-    .line 516
+    .line 518
     invoke-direct {p0}, Landroid/widget/MediaController;->setProgress()I
 
-    .line 517
+    .line 519
     invoke-virtual {p0, v5}, Landroid/widget/MediaController;->show(I)V
 
     goto/16 :goto_1
 
-    .line 519
+    .line 521
     .end local v1           #pos:I
     :cond_c
     invoke-virtual {p1}, Landroid/view/KeyEvent;->isDown()Z
@@ -1686,28 +1686,28 @@
 
     if-ne v0, v4, :cond_d
 
-    .line 520
+    .line 522
     iget-object v4, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     invoke-interface {v4}, Landroid/widget/MediaController$MediaPlayerControl;->getDuration()I
 
     move-result v1
 
-    .line 521
+    .line 523
     .restart local v1       #pos:I
     iget-object v4, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     invoke-interface {v4, v1}, Landroid/widget/MediaController$MediaPlayerControl;->seekTo(I)V
 
-    .line 522
+    .line 524
     invoke-direct {p0}, Landroid/widget/MediaController;->setProgress()I
 
-    .line 523
+    .line 525
     invoke-virtual {p0, v5}, Landroid/widget/MediaController;->show(I)V
 
     goto/16 :goto_1
 
-    .line 525
+    .line 527
     .end local v1           #pos:I
     :cond_d
     invoke-virtual {p1}, Landroid/view/KeyEvent;->isDown()Z
@@ -1720,29 +1720,29 @@
 
     if-ne v0, v4, :cond_e
 
-    .line 526
+    .line 528
     const/4 v1, 0x0
 
-    .line 527
+    .line 529
     .restart local v1       #pos:I
     iget-object v4, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
     invoke-interface {v4, v1}, Landroid/widget/MediaController$MediaPlayerControl;->seekTo(I)V
 
-    .line 528
+    .line 530
     invoke-direct {p0}, Landroid/widget/MediaController;->setProgress()I
 
-    .line 529
+    .line 531
     invoke-virtual {p0, v5}, Landroid/widget/MediaController;->show(I)V
 
     goto/16 :goto_1
 
-    .line 533
+    .line 535
     .end local v1           #pos:I
     :cond_e
     invoke-virtual {p0, v5}, Landroid/widget/MediaController;->show(I)V
 
-    .line 534
+    .line 536
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     move-result v3
@@ -1754,23 +1754,23 @@
     .locals 3
 
     .prologue
-    .line 382
+    .line 383
     iget-object v1, p0, Landroid/widget/MediaController;->mAnchor:Landroid/view/View;
 
     if-nez v1, :cond_1
 
-    .line 394
+    .line 396
     :cond_0
     :goto_0
     return-void
 
-    .line 385
+    .line 386
     :cond_1
     iget-boolean v1, p0, Landroid/widget/MediaController;->mShowing:Z
 
     if-eqz v1, :cond_0
 
-    .line 387
+    .line 388
     :try_start_0
     iget-object v1, p0, Landroid/widget/MediaController;->mHandler:Landroid/os/Handler;
 
@@ -1778,16 +1778,23 @@
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 388
+    .line 389
     iget-object v1, p0, Landroid/widget/MediaController;->mWindowManager:Landroid/view/WindowManager;
 
     iget-object v2, p0, Landroid/widget/MediaController;->mDecor:Landroid/view/View;
 
     invoke-interface {v1, v2}, Landroid/view/WindowManager;->removeView(Landroid/view/View;)V
+
+    .line 390
+    iget-object v1, p0, Landroid/widget/MediaController;->mWindow:Landroid/view/Window;
+
+    const/high16 v2, -0x8000
+
+    invoke-virtual {v1, v2}, Landroid/view/Window;->setVolumeControlStream(I)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 392
+    .line 394
     :goto_1
     const/4 v1, 0x0
 
@@ -1795,11 +1802,11 @@
 
     goto :goto_0
 
-    .line 389
+    .line 391
     :catch_0
     move-exception v0
 
-    .line 390
+    .line 392
     .local v0, ex:Ljava/lang/IllegalArgumentException;
     const-string v1, "MediaController"
 
@@ -1814,7 +1821,7 @@
     .locals 1
 
     .prologue
-    .line 375
+    .line 376
     iget-boolean v0, p0, Landroid/widget/MediaController;->mShowing:Z
 
     return v0
@@ -1824,7 +1831,7 @@
     .locals 3
 
     .prologue
-    .line 240
+    .line 241
     iget-object v1, p0, Landroid/widget/MediaController;->mContext:Landroid/content/Context;
 
     const-string v2, "layout_inflater"
@@ -1835,9 +1842,9 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    .line 241
+    .line 242
     .local v0, inflate:Landroid/view/LayoutInflater;
-    const v1, 0x1090068
+    const v1, 0x109006a
 
     const/4 v2, 0x0
 
@@ -1847,12 +1854,12 @@
 
     iput-object v1, p0, Landroid/widget/MediaController;->mRoot:Landroid/view/View;
 
-    .line 243
+    .line 244
     iget-object v1, p0, Landroid/widget/MediaController;->mRoot:Landroid/view/View;
 
     invoke-direct {p0, v1}, Landroid/widget/MediaController;->initControllerView(Landroid/view/View;)V
 
-    .line 245
+    .line 246
     iget-object v1, p0, Landroid/widget/MediaController;->mRoot:Landroid/view/View;
 
     return-object v1
@@ -1862,17 +1869,17 @@
     .locals 1
 
     .prologue
-    .line 115
+    .line 116
     iget-object v0, p0, Landroid/widget/MediaController;->mRoot:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
-    .line 116
+    .line 117
     iget-object v0, p0, Landroid/widget/MediaController;->mRoot:Landroid/view/View;
 
     invoke-direct {p0, v0}, Landroid/widget/MediaController;->initControllerView(Landroid/view/View;)V
 
-    .line 117
+    .line 118
     :cond_0
     return-void
 .end method
@@ -1882,12 +1889,12 @@
     .parameter "event"
 
     .prologue
-    .line 456
+    .line 458
     const/16 v0, 0xbb8
 
     invoke-virtual {p0, v0}, Landroid/widget/MediaController;->show(I)V
 
-    .line 457
+    .line 459
     const/4 v0, 0x1
 
     return v0
@@ -1898,12 +1905,12 @@
     .parameter "ev"
 
     .prologue
-    .line 462
+    .line 464
     const/16 v0, 0xbb8
 
     invoke-virtual {p0, v0}, Landroid/widget/MediaController;->show(I)V
 
-    .line 463
+    .line 465
     const/4 v0, 0x0
 
     return v0
@@ -1916,54 +1923,54 @@
     .prologue
     const/4 v4, -0x1
 
-    .line 215
+    .line 216
     iget-object v2, p0, Landroid/widget/MediaController;->mAnchor:Landroid/view/View;
 
     if-eqz v2, :cond_0
 
-    .line 216
+    .line 217
     iget-object v2, p0, Landroid/widget/MediaController;->mAnchor:Landroid/view/View;
 
     iget-object v3, p0, Landroid/widget/MediaController;->mLayoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
 
     invoke-virtual {v2, v3}, Landroid/view/View;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
-    .line 218
+    .line 219
     :cond_0
     iput-object p1, p0, Landroid/widget/MediaController;->mAnchor:Landroid/view/View;
 
-    .line 219
+    .line 220
     iget-object v2, p0, Landroid/widget/MediaController;->mAnchor:Landroid/view/View;
 
     if-eqz v2, :cond_1
 
-    .line 220
+    .line 221
     iget-object v2, p0, Landroid/widget/MediaController;->mAnchor:Landroid/view/View;
 
     iget-object v3, p0, Landroid/widget/MediaController;->mLayoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
 
     invoke-virtual {v2, v3}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
-    .line 223
+    .line 224
     :cond_1
     new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
 
     invoke-direct {v0, v4, v4}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
-    .line 228
+    .line 229
     .local v0, frameParams:Landroid/widget/FrameLayout$LayoutParams;
     invoke-virtual {p0}, Landroid/widget/MediaController;->removeAllViews()V
 
-    .line 229
+    .line 230
     invoke-virtual {p0}, Landroid/widget/MediaController;->makeControllerView()Landroid/view/View;
 
     move-result-object v1
 
-    .line 230
+    .line 231
     .local v1, v:Landroid/view/View;
     invoke-virtual {p0, v1, v0}, Landroid/widget/MediaController;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 231
+    .line 232
     return-void
 .end method
 
@@ -1976,45 +1983,45 @@
 
     const/4 v2, 0x0
 
-    .line 618
+    .line 620
     iget-object v0, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
     if-eqz v0, :cond_0
 
-    .line 619
+    .line 621
     iget-object v0, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setEnabled(Z)V
 
-    .line 621
+    .line 623
     :cond_0
     iget-object v0, p0, Landroid/widget/MediaController;->mFfwdButton:Landroid/widget/ImageButton;
 
     if-eqz v0, :cond_1
 
-    .line 622
+    .line 624
     iget-object v0, p0, Landroid/widget/MediaController;->mFfwdButton:Landroid/widget/ImageButton;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setEnabled(Z)V
 
-    .line 624
+    .line 626
     :cond_1
     iget-object v0, p0, Landroid/widget/MediaController;->mRewButton:Landroid/widget/ImageButton;
 
     if-eqz v0, :cond_2
 
-    .line 625
+    .line 627
     iget-object v0, p0, Landroid/widget/MediaController;->mRewButton:Landroid/widget/ImageButton;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageButton;->setEnabled(Z)V
 
-    .line 627
+    .line 629
     :cond_2
     iget-object v0, p0, Landroid/widget/MediaController;->mNextButton:Landroid/widget/ImageButton;
 
     if-eqz v0, :cond_3
 
-    .line 628
+    .line 630
     iget-object v3, p0, Landroid/widget/MediaController;->mNextButton:Landroid/widget/ImageButton;
 
     if-eqz p1, :cond_6
@@ -2028,13 +2035,13 @@
     :goto_0
     invoke-virtual {v3, v0}, Landroid/widget/ImageButton;->setEnabled(Z)V
 
-    .line 630
+    .line 632
     :cond_3
     iget-object v0, p0, Landroid/widget/MediaController;->mPrevButton:Landroid/widget/ImageButton;
 
     if-eqz v0, :cond_4
 
-    .line 631
+    .line 633
     iget-object v0, p0, Landroid/widget/MediaController;->mPrevButton:Landroid/widget/ImageButton;
 
     if-eqz p1, :cond_7
@@ -2046,37 +2053,37 @@
     :goto_1
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setEnabled(Z)V
 
-    .line 633
+    .line 635
     :cond_4
     iget-object v0, p0, Landroid/widget/MediaController;->mProgress:Landroid/widget/ProgressBar;
 
     if-eqz v0, :cond_5
 
-    .line 634
+    .line 636
     iget-object v0, p0, Landroid/widget/MediaController;->mProgress:Landroid/widget/ProgressBar;
 
     invoke-virtual {v0, p1}, Landroid/widget/ProgressBar;->setEnabled(Z)V
 
-    .line 636
+    .line 638
     :cond_5
     invoke-direct {p0}, Landroid/widget/MediaController;->disableUnsupportedButtons()V
 
-    .line 637
+    .line 639
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->setEnabled(Z)V
 
-    .line 638
+    .line 640
     return-void
 
     :cond_6
     move v0, v2
 
-    .line 628
+    .line 630
     goto :goto_0
 
     :cond_7
     move v1, v2
 
-    .line 631
+    .line 633
     goto :goto_1
 .end method
 
@@ -2085,13 +2092,13 @@
     .parameter "player"
 
     .prologue
-    .line 205
+    .line 206
     iput-object p1, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
-    .line 206
+    .line 207
     invoke-direct {p0}, Landroid/widget/MediaController;->updatePausePlay()V
 
-    .line 207
+    .line 208
     return-void
 .end method
 
@@ -2103,26 +2110,26 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 675
+    .line 677
     iput-object p1, p0, Landroid/widget/MediaController;->mNextListener:Landroid/view/View$OnClickListener;
 
-    .line 676
+    .line 678
     iput-object p2, p0, Landroid/widget/MediaController;->mPrevListener:Landroid/view/View$OnClickListener;
 
-    .line 677
+    .line 679
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Landroid/widget/MediaController;->mListenersSet:Z
 
-    .line 679
+    .line 681
     iget-object v0, p0, Landroid/widget/MediaController;->mRoot:Landroid/view/View;
 
     if-eqz v0, :cond_1
 
-    .line 680
+    .line 682
     invoke-direct {p0}, Landroid/widget/MediaController;->installPrevNextListeners()V
 
-    .line 682
+    .line 684
     iget-object v0, p0, Landroid/widget/MediaController;->mNextButton:Landroid/widget/ImageButton;
 
     if-eqz v0, :cond_0
@@ -2131,12 +2138,12 @@
 
     if-nez v0, :cond_0
 
-    .line 683
+    .line 685
     iget-object v0, p0, Landroid/widget/MediaController;->mNextButton:Landroid/widget/ImageButton;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 685
+    .line 687
     :cond_0
     iget-object v0, p0, Landroid/widget/MediaController;->mPrevButton:Landroid/widget/ImageButton;
 
@@ -2146,12 +2153,12 @@
 
     if-nez v0, :cond_1
 
-    .line 686
+    .line 688
     iget-object v0, p0, Landroid/widget/MediaController;->mPrevButton:Landroid/widget/ImageButton;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 689
+    .line 691
     :cond_1
     return-void
 .end method
@@ -2160,12 +2167,12 @@
     .locals 1
 
     .prologue
-    .line 303
+    .line 304
     const/16 v0, 0xbb8
 
     invoke-virtual {p0, v0}, Landroid/widget/MediaController;->show(I)V
 
-    .line 304
+    .line 305
     return-void
 .end method
 
@@ -2176,7 +2183,7 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 350
+    .line 351
     iget-boolean v1, p0, Landroid/widget/MediaController;->mShowing:Z
 
     if-nez v1, :cond_1
@@ -2185,27 +2192,27 @@
 
     if-eqz v1, :cond_1
 
-    .line 351
-    invoke-direct {p0}, Landroid/widget/MediaController;->setProgress()I
-
     .line 352
-    iget-object v1, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
-
-    if-eqz v1, :cond_0
+    invoke-direct {p0}, Landroid/widget/MediaController;->setProgress()I
 
     .line 353
     iget-object v1, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
+    if-eqz v1, :cond_0
+
+    .line 354
+    iget-object v1, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
+
     invoke-virtual {v1}, Landroid/widget/ImageButton;->requestFocus()Z
 
-    .line 355
+    .line 356
     :cond_0
     invoke-direct {p0}, Landroid/widget/MediaController;->disableUnsupportedButtons()V
 
-    .line 356
+    .line 357
     invoke-direct {p0}, Landroid/widget/MediaController;->updateFloatingWindowLayout()V
 
-    .line 357
+    .line 358
     iget-object v1, p0, Landroid/widget/MediaController;->mWindowManager:Landroid/view/WindowManager;
 
     iget-object v2, p0, Landroid/widget/MediaController;->mDecor:Landroid/view/View;
@@ -2214,44 +2221,44 @@
 
     invoke-interface {v1, v2, v3}, Landroid/view/WindowManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 358
+    .line 359
     iput-boolean v4, p0, Landroid/widget/MediaController;->mShowing:Z
 
-    .line 360
+    .line 361
     :cond_1
     invoke-direct {p0}, Landroid/widget/MediaController;->updatePausePlay()V
 
-    .line 365
+    .line 366
     iget-object v1, p0, Landroid/widget/MediaController;->mHandler:Landroid/os/Handler;
 
     const/4 v2, 0x2
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 367
+    .line 368
     iget-object v1, p0, Landroid/widget/MediaController;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v4}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v0
 
-    .line 368
+    .line 369
     .local v0, msg:Landroid/os/Message;
     if-eqz p1, :cond_2
 
-    .line 369
+    .line 370
     iget-object v1, p0, Landroid/widget/MediaController;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v4}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 370
+    .line 371
     iget-object v1, p0, Landroid/widget/MediaController;->mHandler:Landroid/os/Handler;
 
     int-to-long v2, p1
 
     invoke-virtual {v1, v0, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 372
+    .line 373
     :cond_2
     return-void
 .end method

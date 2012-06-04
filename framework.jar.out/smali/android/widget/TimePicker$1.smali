@@ -22,7 +22,7 @@
     .locals 0
 
     .prologue
-    .line 65
+    .line 69
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,6 +37,6 @@
     .parameter "minute"
 
     .prologue
-    .line 67
+    .line 71
     return-void
 .end method

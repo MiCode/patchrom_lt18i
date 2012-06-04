@@ -50,7 +50,7 @@
 
 .field public static final CONTENT_TYPE:I = 0x84
 
-.field public static final CURRENT_MMS_VERSION:I = 0x12
+.field public static final CURRENT_MMS_VERSION:I = 0x10
 
 .field public static final DATE:I = 0x85
 
@@ -1200,7 +1200,7 @@
 
     .line 479
     :cond_12
-    const/16 p1, 0x12
+    const/16 p1, 0x10
 
     goto :goto_0
 

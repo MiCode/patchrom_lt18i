@@ -43,14 +43,14 @@
     .parameter "wifiStateMachine"
 
     .prologue
-    .line 270
+    .line 271
     iput-object p1, p0, Landroid/net/wifi/AutoRegulatoryDomain$MccUpdateLogic;->this$0:Landroid/net/wifi/AutoRegulatoryDomain;
 
-    .line 271
+    .line 272
     invoke-direct {p0, p1, p2, p3}, Landroid/net/wifi/AutoRegulatoryDomain$UpdateLogic;-><init>(Landroid/net/wifi/AutoRegulatoryDomain;Landroid/content/Context;Landroid/net/wifi/WifiStateMachine;)V
 
-    .line 263
-    const/16 v4, 0x29
+    .line 264
+    const/16 v4, 0x2b
 
     new-array v4, v4, [Ljava/lang/String;
 
@@ -182,119 +182,131 @@
 
     const/16 v5, 0x15
 
-    const-string v6, "260"
+    const-string v6, "255"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x16
 
-    const-string v6, "262"
+    const-string v6, "260"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x17
 
-    const-string v6, "270"
+    const-string v6, "262"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x18
 
-    const-string v6, "272"
+    const-string v6, "268"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x19
 
-    const-string v6, "274"
+    const-string v6, "270"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x1a
 
-    const-string v6, "290"
+    const-string v6, "272"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x1b
 
-    const-string v6, "295"
+    const-string v6, "274"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x1c
 
-    const-string v6, "340"
+    const-string v6, "290"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x1d
 
-    const-string v6, "348"
+    const-string v6, "295"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x1e
 
-    const-string v6, "362"
+    const-string v6, "340"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x1f
 
-    const-string v6, "440"
+    const-string v6, "348"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x20
 
-    const-string v6, "441"
+    const-string v6, "362"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x21
 
-    const-string v6, "450"
+    const-string v6, "440"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x22
 
-    const-string v6, "454"
+    const-string v6, "441"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x23
 
-    const-string v6, "455"
+    const-string v6, "450"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x24
 
-    const-string v6, "460"
+    const-string v6, "454"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x25
 
-    const-string v6, "461"
+    const-string v6, "455"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x26
 
-    const-string v6, "547"
+    const-string v6, "460"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x27
 
-    const-string v6, "604"
+    const-string v6, "461"
 
     aput-object v6, v4, v5
 
     const/16 v5, 0x28
+
+    const-string v6, "547"
+
+    aput-object v6, v4, v5
+
+    const/16 v5, 0x29
+
+    const-string v6, "604"
+
+    aput-object v6, v4, v5
+
+    const/16 v5, 0x2a
 
     const-string v6, "742"
 
@@ -302,7 +314,7 @@
 
     iput-object v4, p0, Landroid/net/wifi/AutoRegulatoryDomain$MccUpdateLogic;->mHighChannelsMccs:[Ljava/lang/String;
 
-    .line 272
+    .line 273
     new-instance v4, Ljava/util/HashSet;
 
     iget-object v5, p0, Landroid/net/wifi/AutoRegulatoryDomain$MccUpdateLogic;->mHighChannelsMccs:[Ljava/lang/String;
@@ -313,7 +325,7 @@
 
     iput-object v4, p0, Landroid/net/wifi/AutoRegulatoryDomain$MccUpdateLogic;->mHighChannelSet:Ljava/util/HashSet;
 
-    .line 273
+    .line 274
     iget-object v0, p0, Landroid/net/wifi/AutoRegulatoryDomain$MccUpdateLogic;->mHighChannelsMccs:[Ljava/lang/String;
 
     .local v0, arr$:[Ljava/lang/String;
@@ -328,18 +340,18 @@
 
     aget-object v3, v0, v1
 
-    .line 274
+    .line 275
     .local v3, mcc:Ljava/lang/String;
     iget-object v4, p0, Landroid/net/wifi/AutoRegulatoryDomain$MccUpdateLogic;->mHighChannelSet:Ljava/util/HashSet;
 
     invoke-virtual {v4, v3}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 273
+    .line 274
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 276
+    .line 277
     .end local v3           #mcc:Ljava/lang/String;
     :cond_0
     return-void
@@ -351,19 +363,19 @@
     .prologue
     const/4 v4, 0x5
 
-    .line 290
+    .line 291
     iget-object v3, p0, Landroid/net/wifi/AutoRegulatoryDomain$UpdateLogic;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
     if-eqz v3, :cond_0
 
-    .line 291
+    .line 292
     iget-object v3, p0, Landroid/net/wifi/AutoRegulatoryDomain$UpdateLogic;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v3}, Landroid/telephony/TelephonyManager;->getNetworkOperator()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 292
+    .line 293
     .local v1, plmn:Ljava/lang/String;
     iget-object v3, p0, Landroid/net/wifi/AutoRegulatoryDomain$UpdateLogic;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
@@ -371,7 +383,7 @@
 
     move-result v2
 
-    .line 293
+    .line 294
     .local v2, simState:I
     if-ne v2, v4, :cond_0
 
@@ -383,7 +395,7 @@
 
     if-lt v3, v4, :cond_0
 
-    .line 295
+    .line 296
     const-string v3, "AutoRegulatoryDomain"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -406,7 +418,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 296
+    .line 297
     const/4 v3, 0x0
 
     const/4 v4, 0x3
@@ -415,7 +427,7 @@
 
     move-result-object v0
 
-    .line 297
+    .line 298
     .local v0, mcc:Ljava/lang/String;
     if-eqz v0, :cond_0
 
@@ -427,10 +439,10 @@
 
     if-eqz v3, :cond_0
 
-    .line 298
+    .line 299
     const-string v3, "SE"
 
-    .line 302
+    .line 303
     .end local v0           #mcc:Ljava/lang/String;
     .end local v1           #plmn:Ljava/lang/String;
     .end local v2           #simState:I
@@ -450,12 +462,12 @@
     .parameter "force"
 
     .prologue
-    .line 280
+    .line 281
     invoke-direct {p0}, Landroid/net/wifi/AutoRegulatoryDomain$MccUpdateLogic;->getCountryCode()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 281
+    .line 282
     .local v0, code:Ljava/lang/String;
     const-string v1, "US"
 
@@ -467,18 +479,18 @@
 
     if-eqz p1, :cond_2
 
-    .line 282
+    .line 283
     :cond_0
     invoke-virtual {p0, v0, p1}, Landroid/net/wifi/AutoRegulatoryDomain$MccUpdateLogic;->setCountryCode(Ljava/lang/String;Z)V
 
-    .line 286
+    .line 287
     :cond_1
     const/4 v1, 0x1
 
     :goto_0
     return v1
 
-    .line 283
+    .line 284
     :cond_2
     iget-object v1, p0, Landroid/net/wifi/AutoRegulatoryDomain$UpdateLogic;->mLastSetCountryCode:Ljava/lang/String;
 
@@ -488,7 +500,7 @@
 
     if-nez v1, :cond_1
 
-    .line 284
+    .line 285
     const/4 v1, 0x0
 
     goto :goto_0

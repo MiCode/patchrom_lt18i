@@ -69,6 +69,9 @@
 .method public abstract isDisplayedLw()Z
 .end method
 
+.method public abstract isGoneForLayoutLw()Z
+.end method
+
 .method public abstract isVisibleLw()Z
 .end method
 

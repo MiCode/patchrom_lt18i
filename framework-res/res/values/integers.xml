@@ -20,6 +20,7 @@
     <integer name="config_lidNavigationAccessibility">0</integer>
     <integer name="config_longPressOnPowerBehavior">1</integer>
     <integer name="config_criticalBatteryWarningLevel">4</integer>
+    <integer name="config_criticalBatteryCloseWarningLevel">10</integer>
     <integer name="config_lowBatteryWarningLevel">15</integer>
     <integer name="config_lowBatteryCloseWarningLevel">20</integer>
     <integer name="config_defaultNotificationLedOn">500</integer>

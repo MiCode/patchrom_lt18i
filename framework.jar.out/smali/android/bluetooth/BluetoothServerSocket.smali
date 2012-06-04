@@ -32,13 +32,13 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 77
+    .line 83
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 78
+    .line 84
     iput p4, p0, Landroid/bluetooth/BluetoothServerSocket;->mChannel:I
 
-    .line 79
+    .line 85
     new-instance v0, Landroid/bluetooth/BluetoothSocket;
 
     const/4 v2, -0x1
@@ -57,7 +57,7 @@
 
     iput-object v0, p0, Landroid/bluetooth/BluetoothServerSocket;->mSocket:Landroid/bluetooth/BluetoothSocket;
 
-    .line 80
+    .line 86
     return-void
 .end method
 
@@ -72,7 +72,7 @@
     .end annotation
 
     .prologue
-    .line 93
+    .line 99
     const/4 v0, -0x1
 
     invoke-virtual {p0, v0}, Landroid/bluetooth/BluetoothServerSocket;->accept(I)Landroid/bluetooth/BluetoothSocket;
@@ -92,7 +92,7 @@
     .end annotation
 
     .prologue
-    .line 107
+    .line 113
     iget-object v0, p0, Landroid/bluetooth/BluetoothServerSocket;->mSocket:Landroid/bluetooth/BluetoothSocket;
 
     invoke-virtual {v0, p1}, Landroid/bluetooth/BluetoothSocket;->accept(I)Landroid/bluetooth/BluetoothSocket;
@@ -111,16 +111,16 @@
     .end annotation
 
     .prologue
-    .line 118
+    .line 124
     monitor-enter p0
 
-    .line 119
+    .line 125
     :try_start_0
     iget-object v0, p0, Landroid/bluetooth/BluetoothServerSocket;->mHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
-    .line 120
+    .line 126
     iget-object v0, p0, Landroid/bluetooth/BluetoothServerSocket;->mHandler:Landroid/os/Handler;
 
     iget v1, p0, Landroid/bluetooth/BluetoothServerSocket;->mMessage:I
@@ -131,21 +131,21 @@
 
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 122
+    .line 128
     :cond_0
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 123
+    .line 129
     iget-object v0, p0, Landroid/bluetooth/BluetoothServerSocket;->mSocket:Landroid/bluetooth/BluetoothSocket;
 
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothSocket;->close()V
 
-    .line 124
+    .line 130
     return-void
 
-    .line 122
+    .line 128
     :catchall_0
     move-exception v0
 
@@ -161,7 +161,7 @@
     .locals 1
 
     .prologue
-    .line 136
+    .line 142
     iget v0, p0, Landroid/bluetooth/BluetoothServerSocket;->mChannel:I
 
     return v0
@@ -173,23 +173,23 @@
     .parameter "message"
 
     .prologue
-    .line 127
+    .line 133
     monitor-enter p0
 
     :try_start_0
     iput-object p1, p0, Landroid/bluetooth/BluetoothServerSocket;->mHandler:Landroid/os/Handler;
 
-    .line 128
+    .line 134
     iput p2, p0, Landroid/bluetooth/BluetoothServerSocket;->mMessage:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 129
+    .line 135
     monitor-exit p0
 
     return-void
 
-    .line 127
+    .line 133
     :catchall_0
     move-exception v0
 

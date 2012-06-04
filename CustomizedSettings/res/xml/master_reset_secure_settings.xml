@@ -8,6 +8,7 @@
     <setting name="bluetooth_on" />
     <setting name="data_roaming" />
     <setting name="default_input_method" />
+    <setting name="lockscreen.options" />
     <setting name="enabled_accessibility_services" />
     <setting name="enabled_input_methods" />
     <setting name="http_proxy" />

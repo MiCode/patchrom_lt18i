@@ -358,6 +358,8 @@
 
 .field public static final RIL_UNSOL_RESPONSE_CDMA_NEW_SMS:I = 0x3fc
 
+.field public static final RIL_UNSOL_RESPONSE_IMS_NETWORK_STATE_CHANGED:I = 0x40c
+
 .field public static final RIL_UNSOL_RESPONSE_NEW_BROADCAST_SMS:I = 0x3fd
 
 .field public static final RIL_UNSOL_RESPONSE_NEW_SMS:I = 0x3eb

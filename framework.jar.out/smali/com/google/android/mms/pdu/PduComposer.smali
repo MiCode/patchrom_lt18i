@@ -380,7 +380,7 @@
     if-nez v19, :cond_1
 
     .line 488
-    const/16 v20, 0x12
+    const/16 v20, 0x10
 
     move-object/from16 v0, p0
 

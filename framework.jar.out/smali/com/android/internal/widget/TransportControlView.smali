@@ -789,7 +789,7 @@
 
     .line 370
     .local v1, imageResId:I
-    const v0, 0x1040317
+    const v0, 0x1040318
 
     .line 371
     .local v0, imageDescId:I
@@ -848,7 +848,7 @@
 
     .line 352
     .restart local v1       #imageResId:I
-    const v0, 0x1040317
+    const v0, 0x1040318
 
     .line 353
     .restart local v0       #imageDescId:I
@@ -862,7 +862,7 @@
 
     .line 357
     .restart local v1       #imageResId:I
-    const v0, 0x1040316
+    const v0, 0x1040317
 
     .line 358
     .restart local v0       #imageDescId:I
@@ -879,7 +879,7 @@
 
     .line 363
     .restart local v1       #imageResId:I
-    const v0, 0x1040318
+    const v0, 0x1040319
 
     .line 364
     .restart local v0       #imageDescId:I
@@ -1167,7 +1167,7 @@
     invoke-virtual {v5, v7}, Landroid/widget/TextView;->setSelected(Z)V
 
     .line 215
-    const v5, 0x10202c0
+    const v5, 0x10202cb
 
     invoke-virtual {p0, v5}, Lcom/android/internal/widget/TransportControlView;->findViewById(I)Landroid/view/View;
 
@@ -1178,7 +1178,7 @@
     iput-object v5, p0, Lcom/android/internal/widget/TransportControlView;->mAlbumArt:Landroid/widget/ImageView;
 
     .line 216
-    const v5, 0x10202c2
+    const v5, 0x10202cd
 
     invoke-virtual {p0, v5}, Lcom/android/internal/widget/TransportControlView;->findViewById(I)Landroid/view/View;
 
@@ -1189,7 +1189,7 @@
     iput-object v5, p0, Lcom/android/internal/widget/TransportControlView;->mBtnPrev:Landroid/widget/ImageView;
 
     .line 217
-    const v5, 0x10202c3
+    const v5, 0x10202ce
 
     invoke-virtual {p0, v5}, Lcom/android/internal/widget/TransportControlView;->findViewById(I)Landroid/view/View;
 
@@ -1200,7 +1200,7 @@
     iput-object v5, p0, Lcom/android/internal/widget/TransportControlView;->mBtnPlay:Landroid/widget/ImageView;
 
     .line 218
-    const v5, 0x10202c4
+    const v5, 0x10202cf
 
     invoke-virtual {p0, v5}, Lcom/android/internal/widget/TransportControlView;->findViewById(I)Landroid/view/View;
 

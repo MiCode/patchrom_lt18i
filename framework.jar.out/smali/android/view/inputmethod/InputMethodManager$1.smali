@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 402
+    .line 426
     iput-object p1, p0, Landroid/view/inputmethod/InputMethodManager$1;->this$0:Landroid/view/inputmethod/InputMethodManager;
 
     invoke-direct {p0}, Lcom/android/internal/view/IInputMethodClient$Stub;-><init>()V
@@ -43,31 +43,31 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 407
+    .line 431
     new-instance v1, Ljava/util/concurrent/CountDownLatch;
 
     invoke-direct {v1, v5}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    .line 408
+    .line 432
     .local v1, latch:Ljava/util/concurrent/CountDownLatch;
     new-instance v2, Lcom/android/internal/os/HandlerCaller$SomeArgs;
 
     invoke-direct {v2}, Lcom/android/internal/os/HandlerCaller$SomeArgs;-><init>()V
 
-    .line 409
+    .line 433
     .local v2, sargs:Lcom/android/internal/os/HandlerCaller$SomeArgs;
     iput-object p1, v2, Lcom/android/internal/os/HandlerCaller$SomeArgs;->arg1:Ljava/lang/Object;
 
-    .line 410
+    .line 434
     iput-object p2, v2, Lcom/android/internal/os/HandlerCaller$SomeArgs;->arg2:Ljava/lang/Object;
 
-    .line 411
+    .line 435
     iput-object p3, v2, Lcom/android/internal/os/HandlerCaller$SomeArgs;->arg3:Ljava/lang/Object;
 
-    .line 412
+    .line 436
     iput-object v1, v2, Lcom/android/internal/os/HandlerCaller$SomeArgs;->arg4:Ljava/lang/Object;
 
-    .line 413
+    .line 437
     iget-object v3, p0, Landroid/view/inputmethod/InputMethodManager$1;->this$0:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v3, v3, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
@@ -82,7 +82,7 @@
 
     invoke-virtual {v3, v4}, Landroid/view/inputmethod/InputMethodManager$H;->sendMessage(Landroid/os/Message;)Z
 
-    .line 415
+    .line 439
     const-wide/16 v3, 0x5
 
     :try_start_0
@@ -94,23 +94,23 @@
 
     if-nez v3, :cond_0
 
-    .line 416
+    .line 440
     const-string v3, "Timeout waiting for dump"
 
     invoke-virtual {p2, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 421
+    .line 445
     :cond_0
     :goto_0
     return-void
 
-    .line 418
+    .line 442
     :catch_0
     move-exception v0
 
-    .line 419
+    .line 443
     .local v0, e:Ljava/lang/InterruptedException;
     const-string v3, "Interrupted waiting for dump"
 
@@ -124,7 +124,7 @@
     .parameter "res"
 
     .prologue
-    .line 427
+    .line 451
     iget-object v0, p0, Landroid/view/inputmethod/InputMethodManager$1;->this$0:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v0, v0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
@@ -141,7 +141,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/inputmethod/InputMethodManager$H;->sendMessage(Landroid/os/Message;)Z
 
-    .line 428
+    .line 452
     return-void
 .end method
 
@@ -150,7 +150,7 @@
     .parameter "sequence"
 
     .prologue
-    .line 431
+    .line 455
     iget-object v0, p0, Landroid/view/inputmethod/InputMethodManager$1;->this$0:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v0, v0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
@@ -169,7 +169,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/inputmethod/InputMethodManager$H;->sendMessage(Landroid/os/Message;)Z
 
-    .line 432
+    .line 456
     return-void
 .end method
 
@@ -180,7 +180,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 435
+    .line 459
     iget-object v0, p0, Landroid/view/inputmethod/InputMethodManager$1;->this$0:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v2, v0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
@@ -202,13 +202,13 @@
 
     invoke-virtual {v2, v0}, Landroid/view/inputmethod/InputMethodManager$H;->sendMessage(Landroid/os/Message;)Z
 
-    .line 436
+    .line 460
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 435
+    .line 459
     goto :goto_0
 .end method
 
@@ -217,6 +217,6 @@
     .parameter "state"
 
     .prologue
-    .line 424
+    .line 448
     return-void
 .end method

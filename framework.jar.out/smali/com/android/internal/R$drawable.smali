@@ -1653,9 +1653,9 @@
 
 .field public static final indicator_input_error:I = 0x1080376
 
-.field public static final input_method_fullscreen_background:I = 0x10807ef
+.field public static final input_method_fullscreen_background:I = 0x10807f0
 
-.field public static final input_method_fullscreen_background_holo:I = 0x10807f0
+.field public static final input_method_fullscreen_background_holo:I = 0x10807f1
 
 .field public static final item_background:I = 0x1080377
 
@@ -2359,15 +2359,15 @@
 
 .field public static final reticle:I = 0x10804c1
 
-.field public static final safe_mode_background:I = 0x10807ee
+.field public static final safe_mode_background:I = 0x10807ef
 
 .field public static final screen_background_dark:I = 0x1080098
 
 .field public static final screen_background_dark_transparent:I = 0x10800a9
 
-.field public static final screen_background_holo_dark:I = 0x10807f3
+.field public static final screen_background_holo_dark:I = 0x10807f4
 
-.field public static final screen_background_holo_light:I = 0x10807f2
+.field public static final screen_background_holo_light:I = 0x10807f3
 
 .field public static final screen_background_light:I = 0x1080099
 
@@ -2415,7 +2415,7 @@
 
 .field public static final scrubber_track_holo_light:I = 0x10804d6
 
-.field public static final search_bar_default_color:I = 0x10807ed
+.field public static final search_bar_default_color:I = 0x10807ee
 
 .field public static final search_dropdown_background:I = 0x10804d7
 
@@ -2437,7 +2437,7 @@
 
 .field public static final seek_thumb_selected:I = 0x10804e0
 
-.field public static final selected_day_background:I = 0x10807f1
+.field public static final selected_day_background:I = 0x10807f2
 
 .field public static final semc_activity_title_bar:I = 0x10804e1
 
@@ -3107,275 +3107,277 @@
 
 .field public static final semc_soundpicker_stop:I = 0x108062e
 
-.field public static final semc_tab_active_bg:I = 0x108062f
+.field public static final semc_stat_sys_warning_pressed:I = 0x108062f
 
-.field public static final semc_tab_bottom_left:I = 0x1080630
+.field public static final semc_tab_active_bg:I = 0x1080630
 
-.field public static final semc_tab_bottom_right:I = 0x1080631
+.field public static final semc_tab_bottom_left:I = 0x1080631
 
-.field public static final semc_tab_focus:I = 0x1080632
+.field public static final semc_tab_bottom_right:I = 0x1080632
 
-.field public static final semc_tab_focus_bar_left:I = 0x1080633
+.field public static final semc_tab_focus:I = 0x1080633
 
-.field public static final semc_tab_focus_bar_right:I = 0x1080634
+.field public static final semc_tab_focus_bar_left:I = 0x1080634
 
-.field public static final semc_tab_inactive_bg:I = 0x1080635
+.field public static final semc_tab_focus_bar_right:I = 0x1080635
 
-.field public static final semc_tab_indicator:I = 0x1080636
+.field public static final semc_tab_inactive_bg:I = 0x1080636
 
-.field public static final semc_tab_indicator_simple:I = 0x1080637
+.field public static final semc_tab_indicator:I = 0x1080637
 
-.field public static final semc_tab_press:I = 0x1080638
+.field public static final semc_tab_indicator_simple:I = 0x1080638
 
-.field public static final semc_tab_press_bar_left:I = 0x1080639
+.field public static final semc_tab_press:I = 0x1080639
 
-.field public static final semc_tab_press_bar_right:I = 0x108063a
+.field public static final semc_tab_press_bar_left:I = 0x108063a
 
-.field public static final semc_tab_selected:I = 0x108063b
+.field public static final semc_tab_press_bar_right:I = 0x108063b
 
-.field public static final semc_tab_selected_bar_left:I = 0x108063c
+.field public static final semc_tab_selected:I = 0x108063c
 
-.field public static final semc_tab_selected_bar_right:I = 0x108063d
+.field public static final semc_tab_selected_bar_left:I = 0x108063d
 
-.field public static final semc_tab_unselected:I = 0x108063e
+.field public static final semc_tab_selected_bar_right:I = 0x108063e
 
-.field public static final semc_textfield_default:I = 0x108063f
+.field public static final semc_tab_unselected:I = 0x108063f
 
-.field public static final semc_textfield_disabled:I = 0x1080640
+.field public static final semc_textfield_default:I = 0x1080640
 
-.field public static final semc_textfield_disabled_selected:I = 0x1080641
+.field public static final semc_textfield_disabled:I = 0x1080641
 
-.field public static final semc_textfield_pressed:I = 0x1080642
+.field public static final semc_textfield_disabled_selected:I = 0x1080642
 
-.field public static final semc_textfield_selected:I = 0x1080643
+.field public static final semc_textfield_pressed:I = 0x1080643
 
-.field public static final semc_time_picker_collapsed_bg:I = 0x1080644
+.field public static final semc_textfield_selected:I = 0x1080644
 
-.field public static final semc_time_picker_collapsed_colon:I = 0x1080645
+.field public static final semc_time_picker_collapsed_bg:I = 0x1080645
 
-.field public static final semc_time_picker_collapsed_pressed_bg:I = 0x1080646
+.field public static final semc_time_picker_collapsed_colon:I = 0x1080646
 
-.field public static final semc_time_picker_disabled_bg:I = 0x1080647
+.field public static final semc_time_picker_collapsed_pressed_bg:I = 0x1080647
 
-.field public static final semc_time_picker_expanded_list_bg:I = 0x1080648
+.field public static final semc_time_picker_disabled_bg:I = 0x1080648
 
-.field public static final semc_time_picker_expanded_list_sel:I = 0x1080649
+.field public static final semc_time_picker_expanded_list_bg:I = 0x1080649
 
-.field public static final semc_title_bar:I = 0x108064a
+.field public static final semc_time_picker_expanded_list_sel:I = 0x108064a
 
-.field public static final semc_title_bar_medium:I = 0x108064b
+.field public static final semc_title_bar:I = 0x108064b
 
-.field public static final semc_title_bar_portrait:I = 0x108064c
+.field public static final semc_title_bar_medium:I = 0x108064c
 
-.field public static final semc_title_bar_shadow:I = 0x108064d
+.field public static final semc_title_bar_portrait:I = 0x108064d
 
-.field public static final semc_title_bar_tall:I = 0x108064e
+.field public static final semc_title_bar_shadow:I = 0x108064e
 
-.field public static final semc_title_expandable_list_item_bg_pressed:I = 0x108064f
+.field public static final semc_title_bar_tall:I = 0x108064f
 
-.field public static final semc_toast_frame:I = 0x1080650
+.field public static final semc_title_expandable_list_item_bg_pressed:I = 0x1080650
 
-.field public static final semc_toggle_btn_disabled:I = 0x1080651
+.field public static final semc_toast_frame:I = 0x1080651
 
-.field public static final semc_toggle_btn_focused:I = 0x1080652
+.field public static final semc_toggle_btn_disabled:I = 0x1080652
 
-.field public static final semc_toggle_btn_focused_disabled:I = 0x1080653
+.field public static final semc_toggle_btn_focused:I = 0x1080653
 
-.field public static final semc_toggle_btn_normal:I = 0x1080654
+.field public static final semc_toggle_btn_focused_disabled:I = 0x1080654
 
-.field public static final semc_toggle_btn_pressed:I = 0x1080655
+.field public static final semc_toggle_btn_normal:I = 0x1080655
 
-.field public static final semc_toggle_glow_1:I = 0x1080656
+.field public static final semc_toggle_btn_pressed:I = 0x1080656
 
-.field public static final semc_toggle_glow_2:I = 0x1080657
+.field public static final semc_toggle_glow_1:I = 0x1080657
 
-.field public static final semc_toggle_glow_3:I = 0x1080658
+.field public static final semc_toggle_glow_2:I = 0x1080658
 
-.field public static final semc_toggle_glow_4:I = 0x1080659
+.field public static final semc_toggle_glow_3:I = 0x1080659
 
-.field public static final semc_toggle_off:I = 0x108065a
+.field public static final semc_toggle_glow_4:I = 0x108065a
 
-.field public static final semc_toggle_on:I = 0x108065b
+.field public static final semc_toggle_off:I = 0x108065b
 
-.field public static final semc_transparent_22x22:I = 0x108065c
+.field public static final semc_toggle_on:I = 0x108065c
 
-.field public static final semc_transparentbutton_glow:I = 0x108065d
+.field public static final semc_transparent_22x22:I = 0x108065d
 
-.field public static final semc_transparentbutton_normal:I = 0x108065e
+.field public static final semc_transparentbutton_glow:I = 0x108065e
 
-.field public static final semc_transparentbutton_pressed:I = 0x108065f
+.field public static final semc_transparentbutton_normal:I = 0x108065f
 
-.field public static final semc_twitter:I = 0x1080660
+.field public static final semc_transparentbutton_pressed:I = 0x1080660
 
-.field public static final semc_twitter_big:I = 0x1080661
+.field public static final semc_twitter:I = 0x1080661
 
-.field public static final semc_twostate_btn_left_disabled:I = 0x1080662
+.field public static final semc_twitter_big:I = 0x1080662
 
-.field public static final semc_twostate_btn_left_focused:I = 0x1080663
+.field public static final semc_twostate_btn_left_disabled:I = 0x1080663
 
-.field public static final semc_twostate_btn_left_focused_disabled:I = 0x1080664
+.field public static final semc_twostate_btn_left_focused:I = 0x1080664
 
-.field public static final semc_twostate_btn_left_normal:I = 0x1080665
+.field public static final semc_twostate_btn_left_focused_disabled:I = 0x1080665
 
-.field public static final semc_twostate_btn_left_pressed:I = 0x1080666
+.field public static final semc_twostate_btn_left_normal:I = 0x1080666
 
-.field public static final semc_twostate_btn_right_disabled:I = 0x1080667
+.field public static final semc_twostate_btn_left_pressed:I = 0x1080667
 
-.field public static final semc_twostate_btn_right_focused:I = 0x1080668
+.field public static final semc_twostate_btn_right_disabled:I = 0x1080668
 
-.field public static final semc_twostate_btn_right_focused_disabled:I = 0x1080669
+.field public static final semc_twostate_btn_right_focused:I = 0x1080669
 
-.field public static final semc_twostate_btn_right_normal:I = 0x108066a
+.field public static final semc_twostate_btn_right_focused_disabled:I = 0x108066a
 
-.field public static final semc_twostate_btn_right_pressed:I = 0x108066b
+.field public static final semc_twostate_btn_right_normal:I = 0x108066b
 
-.field public static final semc_usb_mouse_cursor:I = 0x108066c
+.field public static final semc_twostate_btn_right_pressed:I = 0x108066c
 
-.field public static final semc_wait_feedback_big_1:I = 0x108066d
+.field public static final semc_usb_mouse_cursor:I = 0x108066d
 
-.field public static final semc_wait_feedback_big_2:I = 0x108066e
+.field public static final semc_wait_feedback_big_1:I = 0x108066e
 
-.field public static final semc_wait_feedback_big_3:I = 0x108066f
+.field public static final semc_wait_feedback_big_2:I = 0x108066f
 
-.field public static final semc_wait_feedback_big_4:I = 0x1080670
+.field public static final semc_wait_feedback_big_3:I = 0x1080670
 
-.field public static final semc_wait_feedback_big_5:I = 0x1080671
+.field public static final semc_wait_feedback_big_4:I = 0x1080671
 
-.field public static final semc_wait_feedback_big_6:I = 0x1080672
+.field public static final semc_wait_feedback_big_5:I = 0x1080672
 
-.field public static final semc_wait_feedback_big_7:I = 0x1080673
+.field public static final semc_wait_feedback_big_6:I = 0x1080673
 
-.field public static final semc_wait_feedback_big_8:I = 0x1080674
+.field public static final semc_wait_feedback_big_7:I = 0x1080674
 
-.field public static final semc_wait_feedback_small_1:I = 0x1080675
+.field public static final semc_wait_feedback_big_8:I = 0x1080675
 
-.field public static final semc_wait_feedback_small_2:I = 0x1080676
+.field public static final semc_wait_feedback_small_1:I = 0x1080676
 
-.field public static final semc_wait_feedback_small_3:I = 0x1080677
+.field public static final semc_wait_feedback_small_2:I = 0x1080677
 
-.field public static final semc_wait_feedback_small_4:I = 0x1080678
+.field public static final semc_wait_feedback_small_3:I = 0x1080678
 
-.field public static final semc_wait_feedback_small_5:I = 0x1080679
+.field public static final semc_wait_feedback_small_4:I = 0x1080679
 
-.field public static final semc_wait_feedback_small_6:I = 0x108067a
+.field public static final semc_wait_feedback_small_5:I = 0x108067a
 
-.field public static final semc_wait_feedback_small_7:I = 0x108067b
+.field public static final semc_wait_feedback_small_6:I = 0x108067b
 
-.field public static final semc_wait_feedback_small_8:I = 0x108067c
+.field public static final semc_wait_feedback_small_7:I = 0x108067c
 
-.field public static final semc_widget_bg:I = 0x108067d
+.field public static final semc_wait_feedback_small_8:I = 0x108067d
 
-.field public static final semc_zoom:I = 0x108067e
+.field public static final semc_widget_bg:I = 0x108067e
 
-.field public static final semc_zoom_bg:I = 0x108067f
+.field public static final semc_zoom:I = 0x108067f
 
-.field public static final semc_zoom_in:I = 0x1080680
+.field public static final semc_zoom_bg:I = 0x1080680
 
-.field public static final semc_zoom_out:I = 0x1080681
+.field public static final semc_zoom_in:I = 0x1080681
 
-.field public static final settings_header:I = 0x1080682
+.field public static final semc_zoom_out:I = 0x1080682
 
-.field public static final settings_header_raw:I = 0x1080683
+.field public static final settings_header:I = 0x1080683
 
-.field public static final silent_mode_indicator:I = 0x1080684
+.field public static final settings_header_raw:I = 0x1080684
 
-.field public static final slider_bg:I = 0x1080685
+.field public static final silent_mode_indicator:I = 0x1080685
 
-.field public static final slider_bg_left:I = 0x1080686
+.field public static final slider_bg:I = 0x1080686
 
-.field public static final slider_bg_right:I = 0x1080687
+.field public static final slider_bg_left:I = 0x1080687
 
-.field public static final spinner_16_inner_holo:I = 0x1080688
+.field public static final slider_bg_right:I = 0x1080688
 
-.field public static final spinner_16_outer_holo:I = 0x1080689
+.field public static final spinner_16_inner_holo:I = 0x1080689
 
-.field public static final spinner_20_inner_holo:I = 0x108068a
+.field public static final spinner_16_outer_holo:I = 0x108068a
 
-.field public static final spinner_20_outer_holo:I = 0x108068b
+.field public static final spinner_20_inner_holo:I = 0x108068b
 
-.field public static final spinner_48_inner_holo:I = 0x108068c
+.field public static final spinner_20_outer_holo:I = 0x108068c
 
-.field public static final spinner_48_outer_holo:I = 0x108068d
+.field public static final spinner_48_inner_holo:I = 0x108068d
 
-.field public static final spinner_76_inner_holo:I = 0x108068e
+.field public static final spinner_48_outer_holo:I = 0x108068e
 
-.field public static final spinner_76_outer_holo:I = 0x108068f
+.field public static final spinner_76_inner_holo:I = 0x108068f
 
-.field public static final spinner_ab_default_holo_dark:I = 0x1080690
+.field public static final spinner_76_outer_holo:I = 0x1080690
 
-.field public static final spinner_ab_default_holo_light:I = 0x1080691
+.field public static final spinner_ab_default_holo_dark:I = 0x1080691
 
-.field public static final spinner_ab_disabled_holo_dark:I = 0x1080692
+.field public static final spinner_ab_default_holo_light:I = 0x1080692
 
-.field public static final spinner_ab_disabled_holo_light:I = 0x1080693
+.field public static final spinner_ab_disabled_holo_dark:I = 0x1080693
 
-.field public static final spinner_ab_focused_holo_dark:I = 0x1080694
+.field public static final spinner_ab_disabled_holo_light:I = 0x1080694
 
-.field public static final spinner_ab_focused_holo_light:I = 0x1080695
+.field public static final spinner_ab_focused_holo_dark:I = 0x1080695
 
-.field public static final spinner_ab_holo_dark:I = 0x1080696
+.field public static final spinner_ab_focused_holo_light:I = 0x1080696
 
-.field public static final spinner_ab_holo_light:I = 0x1080697
+.field public static final spinner_ab_holo_dark:I = 0x1080697
 
-.field public static final spinner_ab_pressed_holo_dark:I = 0x1080698
+.field public static final spinner_ab_holo_light:I = 0x1080698
 
-.field public static final spinner_ab_pressed_holo_light:I = 0x1080699
+.field public static final spinner_ab_pressed_holo_dark:I = 0x1080699
+
+.field public static final spinner_ab_pressed_holo_light:I = 0x108069a
 
 .field public static final spinner_background:I = 0x1080070
 
-.field public static final spinner_background_holo_dark:I = 0x108069a
+.field public static final spinner_background_holo_dark:I = 0x108069b
 
-.field public static final spinner_background_holo_light:I = 0x108069b
+.field public static final spinner_background_holo_light:I = 0x108069c
 
-.field public static final spinner_black_16:I = 0x108069c
+.field public static final spinner_black_16:I = 0x108069d
 
-.field public static final spinner_black_20:I = 0x108069d
+.field public static final spinner_black_20:I = 0x108069e
 
-.field public static final spinner_black_48:I = 0x108069e
+.field public static final spinner_black_48:I = 0x108069f
 
-.field public static final spinner_black_76:I = 0x108069f
+.field public static final spinner_black_76:I = 0x10806a0
 
-.field public static final spinner_default_holo_dark:I = 0x10806a0
+.field public static final spinner_default_holo_dark:I = 0x10806a1
 
-.field public static final spinner_default_holo_light:I = 0x10806a1
+.field public static final spinner_default_holo_light:I = 0x10806a2
 
-.field public static final spinner_disabled_holo_dark:I = 0x10806a2
+.field public static final spinner_disabled_holo_dark:I = 0x10806a3
 
-.field public static final spinner_disabled_holo_light:I = 0x10806a3
+.field public static final spinner_disabled_holo_light:I = 0x10806a4
 
 .field public static final spinner_dropdown_background:I = 0x1080071
 
-.field public static final spinner_dropdown_background_down:I = 0x10806a4
+.field public static final spinner_dropdown_background_down:I = 0x10806a5
 
-.field public static final spinner_dropdown_background_up:I = 0x10806a5
+.field public static final spinner_dropdown_background_up:I = 0x10806a6
 
-.field public static final spinner_focused_holo_dark:I = 0x10806a6
+.field public static final spinner_focused_holo_dark:I = 0x10806a7
 
-.field public static final spinner_focused_holo_light:I = 0x10806a7
+.field public static final spinner_focused_holo_light:I = 0x10806a8
 
-.field public static final spinner_normal:I = 0x10806a8
+.field public static final spinner_normal:I = 0x10806a9
 
-.field public static final spinner_press:I = 0x10806a9
+.field public static final spinner_press:I = 0x10806aa
 
-.field public static final spinner_pressed_holo_dark:I = 0x10806aa
+.field public static final spinner_pressed_holo_dark:I = 0x10806ab
 
-.field public static final spinner_pressed_holo_light:I = 0x10806ab
+.field public static final spinner_pressed_holo_light:I = 0x10806ac
 
-.field public static final spinner_select:I = 0x10806ac
+.field public static final spinner_select:I = 0x10806ad
 
-.field public static final spinner_white_16:I = 0x10806ad
+.field public static final spinner_white_16:I = 0x10806ae
 
-.field public static final spinner_white_48:I = 0x10806ae
+.field public static final spinner_white_48:I = 0x10806af
 
-.field public static final spinner_white_76:I = 0x10806af
+.field public static final spinner_white_76:I = 0x10806b0
 
-.field public static final spinnerbox_arrow_first:I = 0x10806b0
+.field public static final spinnerbox_arrow_first:I = 0x10806b1
 
-.field public static final spinnerbox_arrow_last:I = 0x10806b1
+.field public static final spinnerbox_arrow_last:I = 0x10806b2
 
-.field public static final spinnerbox_arrow_middle:I = 0x10806b2
+.field public static final spinnerbox_arrow_middle:I = 0x10806b3
 
-.field public static final spinnerbox_arrow_single:I = 0x10806b3
+.field public static final spinnerbox_arrow_single:I = 0x10806b4
 
 .field public static final star_big_off:I = 0x1080073
 
@@ -3385,29 +3387,29 @@
 
 .field public static final star_on:I = 0x1080074
 
-.field public static final stat_ecb_mode:I = 0x10806b4
+.field public static final stat_ecb_mode:I = 0x10806b5
 
-.field public static final stat_notify_alarm:I = 0x10806b5
+.field public static final stat_notify_alarm:I = 0x10806b6
 
 .field public static final stat_notify_call_mute:I = 0x1080076
 
-.field public static final stat_notify_car_mode:I = 0x10806b6
+.field public static final stat_notify_car_mode:I = 0x10806b7
 
 .field public static final stat_notify_chat:I = 0x1080077
 
-.field public static final stat_notify_disabled:I = 0x10806b7
+.field public static final stat_notify_disabled:I = 0x10806b8
 
-.field public static final stat_notify_disk_full:I = 0x10806b8
+.field public static final stat_notify_disk_full:I = 0x10806b9
 
-.field public static final stat_notify_email_generic:I = 0x10806b9
+.field public static final stat_notify_email_generic:I = 0x10806ba
 
 .field public static final stat_notify_error:I = 0x1080078
 
-.field public static final stat_notify_gmail:I = 0x10806ba
+.field public static final stat_notify_gmail:I = 0x10806bb
 
 .field public static final stat_notify_missed_call:I = 0x108007f
 
-.field public static final stat_notify_mmcc_indication_icn:I = 0x10806bb
+.field public static final stat_notify_mmcc_indication_icn:I = 0x10806bc
 
 .field public static final stat_notify_more:I = 0x1080079
 
@@ -3417,162 +3419,162 @@
 
 .field public static final stat_notify_sdcard_usb:I = 0x108007b
 
-.field public static final stat_notify_sim_toolkit:I = 0x10806bc
+.field public static final stat_notify_sim_toolkit:I = 0x10806bd
 
 .field public static final stat_notify_sync:I = 0x108007c
 
-.field public static final stat_notify_sync_anim0:I = 0x10806bd
+.field public static final stat_notify_sync_anim0:I = 0x10806be
 
-.field public static final stat_notify_sync_error:I = 0x10806be
+.field public static final stat_notify_sync_error:I = 0x10806bf
 
 .field public static final stat_notify_sync_noanim:I = 0x108007d
 
 .field public static final stat_notify_voicemail:I = 0x108007e
 
-.field public static final stat_notify_wifi_in_range:I = 0x10806bf
+.field public static final stat_notify_wifi_in_range:I = 0x10806c0
 
-.field public static final stat_sys_adb:I = 0x10806c0
+.field public static final stat_sys_adb:I = 0x10806c1
 
-.field public static final stat_sys_battery:I = 0x10806c1
+.field public static final stat_sys_battery:I = 0x10806c2
 
-.field public static final stat_sys_battery_0:I = 0x10806c2
+.field public static final stat_sys_battery_0:I = 0x10806c3
 
-.field public static final stat_sys_battery_10:I = 0x10806c3
+.field public static final stat_sys_battery_10:I = 0x10806c4
 
-.field public static final stat_sys_battery_100:I = 0x10806c4
+.field public static final stat_sys_battery_100:I = 0x10806c5
 
-.field public static final stat_sys_battery_15:I = 0x10806c5
+.field public static final stat_sys_battery_15:I = 0x10806c6
 
-.field public static final stat_sys_battery_20:I = 0x10806c6
+.field public static final stat_sys_battery_20:I = 0x10806c7
 
-.field public static final stat_sys_battery_28:I = 0x10806c7
+.field public static final stat_sys_battery_28:I = 0x10806c8
 
-.field public static final stat_sys_battery_40:I = 0x10806c8
+.field public static final stat_sys_battery_40:I = 0x10806c9
 
-.field public static final stat_sys_battery_43:I = 0x10806c9
+.field public static final stat_sys_battery_43:I = 0x10806ca
 
-.field public static final stat_sys_battery_57:I = 0x10806ca
+.field public static final stat_sys_battery_57:I = 0x10806cb
 
-.field public static final stat_sys_battery_60:I = 0x10806cb
+.field public static final stat_sys_battery_60:I = 0x10806cc
 
-.field public static final stat_sys_battery_71:I = 0x10806cc
+.field public static final stat_sys_battery_71:I = 0x10806cd
 
-.field public static final stat_sys_battery_80:I = 0x10806cd
+.field public static final stat_sys_battery_80:I = 0x10806ce
 
-.field public static final stat_sys_battery_85:I = 0x10806ce
+.field public static final stat_sys_battery_85:I = 0x10806cf
 
-.field public static final stat_sys_battery_charge:I = 0x10806cf
+.field public static final stat_sys_battery_charge:I = 0x10806d0
 
-.field public static final stat_sys_battery_charge_anim0:I = 0x10806d0
+.field public static final stat_sys_battery_charge_anim0:I = 0x10806d1
 
-.field public static final stat_sys_battery_charge_anim1:I = 0x10806d1
+.field public static final stat_sys_battery_charge_anim1:I = 0x10806d2
 
-.field public static final stat_sys_battery_charge_anim100:I = 0x10806d2
+.field public static final stat_sys_battery_charge_anim100:I = 0x10806d3
 
-.field public static final stat_sys_battery_charge_anim15:I = 0x10806d3
+.field public static final stat_sys_battery_charge_anim15:I = 0x10806d4
 
-.field public static final stat_sys_battery_charge_anim2:I = 0x10806d4
+.field public static final stat_sys_battery_charge_anim2:I = 0x10806d5
 
-.field public static final stat_sys_battery_charge_anim28:I = 0x10806d5
+.field public static final stat_sys_battery_charge_anim28:I = 0x10806d6
 
-.field public static final stat_sys_battery_charge_anim3:I = 0x10806d6
+.field public static final stat_sys_battery_charge_anim3:I = 0x10806d7
 
-.field public static final stat_sys_battery_charge_anim4:I = 0x10806d7
+.field public static final stat_sys_battery_charge_anim4:I = 0x10806d8
 
-.field public static final stat_sys_battery_charge_anim43:I = 0x10806d8
+.field public static final stat_sys_battery_charge_anim43:I = 0x10806d9
 
-.field public static final stat_sys_battery_charge_anim5:I = 0x10806d9
+.field public static final stat_sys_battery_charge_anim5:I = 0x10806da
 
-.field public static final stat_sys_battery_charge_anim57:I = 0x10806da
+.field public static final stat_sys_battery_charge_anim57:I = 0x10806db
 
-.field public static final stat_sys_battery_charge_anim71:I = 0x10806db
+.field public static final stat_sys_battery_charge_anim71:I = 0x10806dc
 
-.field public static final stat_sys_battery_charge_anim85:I = 0x10806dc
+.field public static final stat_sys_battery_charge_anim85:I = 0x10806dd
 
-.field public static final stat_sys_battery_unknown:I = 0x10806dd
+.field public static final stat_sys_battery_unknown:I = 0x10806de
 
 .field public static final stat_sys_data_bluetooth:I = 0x1080080
 
-.field public static final stat_sys_data_bluetooth_connected:I = 0x10806de
+.field public static final stat_sys_data_bluetooth_connected:I = 0x10806df
 
-.field public static final stat_sys_data_connected_1x:I = 0x10806df
+.field public static final stat_sys_data_connected_1x:I = 0x10806e0
 
-.field public static final stat_sys_data_connected_3g:I = 0x10806e0
+.field public static final stat_sys_data_connected_3g:I = 0x10806e1
 
-.field public static final stat_sys_data_connected_e:I = 0x10806e1
+.field public static final stat_sys_data_connected_e:I = 0x10806e2
 
-.field public static final stat_sys_data_connected_g:I = 0x10806e2
+.field public static final stat_sys_data_connected_g:I = 0x10806e3
 
-.field public static final stat_sys_data_connected_h:I = 0x10806e3
+.field public static final stat_sys_data_connected_h:I = 0x10806e4
 
-.field public static final stat_sys_data_in_1x:I = 0x10806e4
+.field public static final stat_sys_data_in_1x:I = 0x10806e5
 
-.field public static final stat_sys_data_in_3g:I = 0x10806e5
+.field public static final stat_sys_data_in_3g:I = 0x10806e6
 
-.field public static final stat_sys_data_in_e:I = 0x10806e6
+.field public static final stat_sys_data_in_e:I = 0x10806e7
 
-.field public static final stat_sys_data_in_g:I = 0x10806e7
+.field public static final stat_sys_data_in_g:I = 0x10806e8
 
-.field public static final stat_sys_data_in_h:I = 0x10806e8
+.field public static final stat_sys_data_in_h:I = 0x10806e9
 
-.field public static final stat_sys_data_inandout_1x:I = 0x10806e9
+.field public static final stat_sys_data_inandout_1x:I = 0x10806ea
 
-.field public static final stat_sys_data_inandout_3g:I = 0x10806ea
+.field public static final stat_sys_data_inandout_3g:I = 0x10806eb
 
-.field public static final stat_sys_data_inandout_e:I = 0x10806eb
+.field public static final stat_sys_data_inandout_e:I = 0x10806ec
 
-.field public static final stat_sys_data_inandout_g:I = 0x10806ec
+.field public static final stat_sys_data_inandout_g:I = 0x10806ed
 
-.field public static final stat_sys_data_inandout_h:I = 0x10806ed
+.field public static final stat_sys_data_inandout_h:I = 0x10806ee
 
-.field public static final stat_sys_data_out_1x:I = 0x10806ee
+.field public static final stat_sys_data_out_1x:I = 0x10806ef
 
-.field public static final stat_sys_data_out_3g:I = 0x10806ef
+.field public static final stat_sys_data_out_3g:I = 0x10806f0
 
-.field public static final stat_sys_data_out_e:I = 0x10806f0
+.field public static final stat_sys_data_out_e:I = 0x10806f1
 
-.field public static final stat_sys_data_out_g:I = 0x10806f1
+.field public static final stat_sys_data_out_g:I = 0x10806f2
 
-.field public static final stat_sys_data_out_h:I = 0x10806f2
+.field public static final stat_sys_data_out_h:I = 0x10806f3
 
-.field public static final stat_sys_data_usb:I = 0x10806f3
+.field public static final stat_sys_data_usb:I = 0x10806f4
 
-.field public static final stat_sys_data_wimax_signal_3_fully:I = 0x10806f4
+.field public static final stat_sys_data_wimax_signal_3_fully:I = 0x10806f5
 
-.field public static final stat_sys_data_wimax_signal_disconnected:I = 0x10806f5
+.field public static final stat_sys_data_wimax_signal_disconnected:I = 0x10806f6
 
 .field public static final stat_sys_download:I = 0x1080081
 
-.field public static final stat_sys_download_anim0:I = 0x10806f6
+.field public static final stat_sys_download_anim0:I = 0x10806f7
 
-.field public static final stat_sys_download_anim1:I = 0x10806f7
+.field public static final stat_sys_download_anim1:I = 0x10806f8
 
-.field public static final stat_sys_download_anim2:I = 0x10806f8
+.field public static final stat_sys_download_anim2:I = 0x10806f9
 
-.field public static final stat_sys_download_anim3:I = 0x10806f9
+.field public static final stat_sys_download_anim3:I = 0x10806fa
 
-.field public static final stat_sys_download_anim4:I = 0x10806fa
+.field public static final stat_sys_download_anim4:I = 0x10806fb
 
-.field public static final stat_sys_download_anim5:I = 0x10806fb
+.field public static final stat_sys_download_anim5:I = 0x10806fc
 
 .field public static final stat_sys_download_done:I = 0x1080082
 
-.field public static final stat_sys_download_done_static:I = 0x10806fc
+.field public static final stat_sys_download_done_static:I = 0x10806fd
 
-.field public static final stat_sys_gps_acquiring:I = 0x10806fd
+.field public static final stat_sys_gps_acquiring:I = 0x10806fe
 
-.field public static final stat_sys_gps_on:I = 0x10806fe
+.field public static final stat_sys_gps_on:I = 0x10806ff
 
 .field public static final stat_sys_headset:I = 0x1080083
 
-.field public static final stat_sys_no_sim:I = 0x10806ff
+.field public static final stat_sys_no_sim:I = 0x1080700
 
 .field public static final stat_sys_phone_call:I = 0x1080084
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
-.field public static final stat_sys_phone_call_bluetooth:I = 0x1080700
+.field public static final stat_sys_phone_call_bluetooth:I = 0x1080701
 
 .field public static final stat_sys_phone_call_forward:I = 0x1080085
     .annotation runtime Ljava/lang/Deprecated;
@@ -3584,120 +3586,120 @@
     .end annotation
 .end field
 
-.field public static final stat_sys_r_signal_0:I = 0x1080701
+.field public static final stat_sys_r_signal_0:I = 0x1080702
 
-.field public static final stat_sys_r_signal_0_cdma:I = 0x1080702
+.field public static final stat_sys_r_signal_0_cdma:I = 0x1080703
 
-.field public static final stat_sys_r_signal_1:I = 0x1080703
+.field public static final stat_sys_r_signal_1:I = 0x1080704
 
-.field public static final stat_sys_r_signal_1_cdma:I = 0x1080704
+.field public static final stat_sys_r_signal_1_cdma:I = 0x1080705
 
-.field public static final stat_sys_r_signal_2:I = 0x1080705
+.field public static final stat_sys_r_signal_2:I = 0x1080706
 
-.field public static final stat_sys_r_signal_2_cdma:I = 0x1080706
+.field public static final stat_sys_r_signal_2_cdma:I = 0x1080707
 
-.field public static final stat_sys_r_signal_3:I = 0x1080707
+.field public static final stat_sys_r_signal_3:I = 0x1080708
 
-.field public static final stat_sys_r_signal_3_cdma:I = 0x1080708
+.field public static final stat_sys_r_signal_3_cdma:I = 0x1080709
 
-.field public static final stat_sys_r_signal_4:I = 0x1080709
+.field public static final stat_sys_r_signal_4:I = 0x108070a
 
-.field public static final stat_sys_r_signal_4_cdma:I = 0x108070a
+.field public static final stat_sys_r_signal_4_cdma:I = 0x108070b
 
-.field public static final stat_sys_ra_signal_0_cdma:I = 0x108070b
+.field public static final stat_sys_ra_signal_0_cdma:I = 0x108070c
 
-.field public static final stat_sys_ra_signal_1_cdma:I = 0x108070c
+.field public static final stat_sys_ra_signal_1_cdma:I = 0x108070d
 
-.field public static final stat_sys_ra_signal_2_cdma:I = 0x108070d
+.field public static final stat_sys_ra_signal_2_cdma:I = 0x108070e
 
-.field public static final stat_sys_ra_signal_3_cdma:I = 0x108070e
+.field public static final stat_sys_ra_signal_3_cdma:I = 0x108070f
 
-.field public static final stat_sys_ra_signal_4_cdma:I = 0x108070f
+.field public static final stat_sys_ra_signal_4_cdma:I = 0x1080710
 
-.field public static final stat_sys_ringer_silent:I = 0x1080710
+.field public static final stat_sys_ringer_silent:I = 0x1080711
 
-.field public static final stat_sys_ringer_vibrate:I = 0x1080711
+.field public static final stat_sys_ringer_vibrate:I = 0x1080712
 
-.field public static final stat_sys_roaming_cdma_0:I = 0x1080712
+.field public static final stat_sys_roaming_cdma_0:I = 0x1080713
 
-.field public static final stat_sys_roaming_cdma_flash_anim0:I = 0x1080713
+.field public static final stat_sys_roaming_cdma_flash_anim0:I = 0x1080714
 
-.field public static final stat_sys_roaming_cdma_flash_anim1:I = 0x1080714
+.field public static final stat_sys_roaming_cdma_flash_anim1:I = 0x1080715
 
-.field public static final stat_sys_secure:I = 0x1080715
+.field public static final stat_sys_secure:I = 0x1080716
 
-.field public static final stat_sys_signal_0:I = 0x1080716
+.field public static final stat_sys_signal_0:I = 0x1080717
 
-.field public static final stat_sys_signal_0_cdma:I = 0x1080717
+.field public static final stat_sys_signal_0_cdma:I = 0x1080718
 
-.field public static final stat_sys_signal_1:I = 0x1080718
+.field public static final stat_sys_signal_1:I = 0x1080719
 
-.field public static final stat_sys_signal_1_cdma:I = 0x1080719
+.field public static final stat_sys_signal_1_cdma:I = 0x108071a
 
-.field public static final stat_sys_signal_2:I = 0x108071a
+.field public static final stat_sys_signal_2:I = 0x108071b
 
-.field public static final stat_sys_signal_2_cdma:I = 0x108071b
+.field public static final stat_sys_signal_2_cdma:I = 0x108071c
 
-.field public static final stat_sys_signal_3:I = 0x108071c
+.field public static final stat_sys_signal_3:I = 0x108071d
 
-.field public static final stat_sys_signal_3_cdma:I = 0x108071d
+.field public static final stat_sys_signal_3_cdma:I = 0x108071e
 
-.field public static final stat_sys_signal_4:I = 0x108071e
+.field public static final stat_sys_signal_4:I = 0x108071f
 
-.field public static final stat_sys_signal_4_cdma:I = 0x108071f
+.field public static final stat_sys_signal_4_cdma:I = 0x1080720
 
-.field public static final stat_sys_signal_evdo_0:I = 0x1080720
+.field public static final stat_sys_signal_evdo_0:I = 0x1080721
 
-.field public static final stat_sys_signal_evdo_1:I = 0x1080721
+.field public static final stat_sys_signal_evdo_1:I = 0x1080722
 
-.field public static final stat_sys_signal_evdo_2:I = 0x1080722
+.field public static final stat_sys_signal_evdo_2:I = 0x1080723
 
-.field public static final stat_sys_signal_evdo_3:I = 0x1080723
+.field public static final stat_sys_signal_evdo_3:I = 0x1080724
 
-.field public static final stat_sys_signal_evdo_4:I = 0x1080724
+.field public static final stat_sys_signal_evdo_4:I = 0x1080725
 
-.field public static final stat_sys_signal_flightmode:I = 0x1080725
+.field public static final stat_sys_signal_flightmode:I = 0x1080726
 
-.field public static final stat_sys_signal_null:I = 0x1080726
+.field public static final stat_sys_signal_null:I = 0x1080727
 
 .field public static final stat_sys_speakerphone:I = 0x1080087
 
-.field public static final stat_sys_tether_bluetooth:I = 0x1080727
+.field public static final stat_sys_tether_bluetooth:I = 0x1080728
 
-.field public static final stat_sys_tether_general:I = 0x1080728
+.field public static final stat_sys_tether_general:I = 0x1080729
 
-.field public static final stat_sys_tether_usb:I = 0x1080729
+.field public static final stat_sys_tether_usb:I = 0x108072a
 
-.field public static final stat_sys_tether_wifi:I = 0x108072a
+.field public static final stat_sys_tether_wifi:I = 0x108072b
 
-.field public static final stat_sys_throttled:I = 0x108072b
+.field public static final stat_sys_throttled:I = 0x108072c
 
-.field public static final stat_sys_tty_mode:I = 0x108072c
+.field public static final stat_sys_tty_mode:I = 0x108072d
 
 .field public static final stat_sys_upload:I = 0x1080088
 
-.field public static final stat_sys_upload_anim0:I = 0x108072d
+.field public static final stat_sys_upload_anim0:I = 0x108072e
 
-.field public static final stat_sys_upload_anim1:I = 0x108072e
+.field public static final stat_sys_upload_anim1:I = 0x108072f
 
-.field public static final stat_sys_upload_anim2:I = 0x108072f
+.field public static final stat_sys_upload_anim2:I = 0x1080730
 
-.field public static final stat_sys_upload_anim3:I = 0x1080730
+.field public static final stat_sys_upload_anim3:I = 0x1080731
 
-.field public static final stat_sys_upload_anim4:I = 0x1080731
+.field public static final stat_sys_upload_anim4:I = 0x1080732
 
-.field public static final stat_sys_upload_anim5:I = 0x1080732
+.field public static final stat_sys_upload_anim5:I = 0x1080733
 
 .field public static final stat_sys_upload_done:I = 0x1080089
 
-.field public static final stat_sys_upload_done_static:I = 0x1080733
+.field public static final stat_sys_upload_done_static:I = 0x1080734
 
 .field public static final stat_sys_vp_phone_call:I = 0x10800a7
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
-.field public static final stat_sys_vp_phone_call_bluetooth:I = 0x1080734
+.field public static final stat_sys_vp_phone_call_bluetooth:I = 0x1080735
 
 .field public static final stat_sys_vp_phone_call_on_hold:I = 0x10800a8
     .annotation runtime Ljava/lang/Deprecated;
@@ -3706,81 +3708,81 @@
 
 .field public static final stat_sys_warning:I = 0x108008a
 
-.field public static final stat_sys_wifi_signal_0:I = 0x1080735
+.field public static final stat_sys_wifi_signal_0:I = 0x1080736
 
-.field public static final stat_sys_wifi_signal_1:I = 0x1080736
+.field public static final stat_sys_wifi_signal_1:I = 0x1080737
 
-.field public static final stat_sys_wifi_signal_2:I = 0x1080737
+.field public static final stat_sys_wifi_signal_2:I = 0x1080738
 
-.field public static final stat_sys_wifi_signal_3:I = 0x1080738
+.field public static final stat_sys_wifi_signal_3:I = 0x1080739
 
-.field public static final stat_sys_wifi_signal_4:I = 0x1080739
+.field public static final stat_sys_wifi_signal_4:I = 0x108073a
 
-.field public static final status_bar_background:I = 0x108073a
+.field public static final status_bar_background:I = 0x108073b
 
-.field public static final status_bar_close_on:I = 0x108073b
+.field public static final status_bar_close_on:I = 0x108073c
 
-.field public static final status_bar_closed_default_background:I = 0x10807eb
+.field public static final status_bar_closed_default_background:I = 0x10807ec
 
-.field public static final status_bar_header_background:I = 0x108073c
+.field public static final status_bar_header_background:I = 0x108073d
 
 .field public static final status_bar_item_app_background:I = 0x108008b
 
-.field public static final status_bar_item_app_background_normal:I = 0x108073d
+.field public static final status_bar_item_app_background_normal:I = 0x108073e
 
 .field public static final status_bar_item_background:I = 0x108008c
 
-.field public static final status_bar_item_background_focus:I = 0x108073e
+.field public static final status_bar_item_background_focus:I = 0x108073f
 
-.field public static final status_bar_item_background_normal:I = 0x108073f
+.field public static final status_bar_item_background_normal:I = 0x1080740
 
-.field public static final status_bar_item_background_pressed:I = 0x1080740
+.field public static final status_bar_item_background_pressed:I = 0x1080741
 
-.field public static final status_bar_opened_default_background:I = 0x10807ec
+.field public static final status_bar_opened_default_background:I = 0x10807ed
 
-.field public static final statusbar_background:I = 0x1080741
+.field public static final statusbar_background:I = 0x1080742
 
-.field public static final submenu_arrow:I = 0x1080742
+.field public static final submenu_arrow:I = 0x1080743
 
-.field public static final submenu_arrow_nofocus:I = 0x1080743
+.field public static final submenu_arrow_nofocus:I = 0x1080744
 
-.field public static final switch_bg_disabled_holo_dark:I = 0x1080744
+.field public static final switch_bg_disabled_holo_dark:I = 0x1080745
 
-.field public static final switch_bg_disabled_holo_light:I = 0x1080745
+.field public static final switch_bg_disabled_holo_light:I = 0x1080746
 
-.field public static final switch_bg_focused_holo_dark:I = 0x1080746
+.field public static final switch_bg_focused_holo_dark:I = 0x1080747
 
-.field public static final switch_bg_focused_holo_light:I = 0x1080747
+.field public static final switch_bg_focused_holo_light:I = 0x1080748
 
-.field public static final switch_bg_holo_dark:I = 0x1080748
+.field public static final switch_bg_holo_dark:I = 0x1080749
 
-.field public static final switch_bg_holo_light:I = 0x1080749
+.field public static final switch_bg_holo_light:I = 0x108074a
 
-.field public static final switch_inner_holo_dark:I = 0x108074a
+.field public static final switch_inner_holo_dark:I = 0x108074b
 
-.field public static final switch_inner_holo_light:I = 0x108074b
+.field public static final switch_inner_holo_light:I = 0x108074c
 
-.field public static final switch_thumb_activated_holo_dark:I = 0x108074c
+.field public static final switch_thumb_activated_holo_dark:I = 0x108074d
 
-.field public static final switch_thumb_activated_holo_light:I = 0x108074d
+.field public static final switch_thumb_activated_holo_light:I = 0x108074e
 
-.field public static final switch_thumb_disabled_holo_dark:I = 0x108074e
+.field public static final switch_thumb_disabled_holo_dark:I = 0x108074f
 
-.field public static final switch_thumb_disabled_holo_light:I = 0x108074f
+.field public static final switch_thumb_disabled_holo_light:I = 0x1080750
 
-.field public static final switch_thumb_holo_dark:I = 0x1080750
+.field public static final switch_thumb_holo_dark:I = 0x1080751
 
-.field public static final switch_thumb_holo_light:I = 0x1080751
+.field public static final switch_thumb_holo_light:I = 0x1080752
 
-.field public static final switch_thumb_pressed_holo_dark:I = 0x1080752
+.field public static final switch_thumb_pressed_holo_dark:I = 0x1080753
 
-.field public static final switch_thumb_pressed_holo_light:I = 0x1080753
+.field public static final switch_thumb_pressed_holo_light:I = 0x1080754
 
-.field public static final switch_track_holo_dark:I = 0x1080754
+.field public static final switch_track_holo_dark:I = 0x1080755
 
-.field public static final switch_track_holo_light:I = 0x1080755
+.field public static final switch_track_holo_light:I = 0x1080756
 
-.field public static final sym_action_add:I = 0x1080756
+.field public static final sym_action_add:I = 0x1080757
 
 .field public static final sym_action_call:I = 0x108008d
 
@@ -3788,7 +3790,7 @@
 
 .field public static final sym_action_email:I = 0x108008f
 
-.field public static final sym_app_on_sd_unavailable_icon:I = 0x1080757
+.field public static final sym_app_on_sd_unavailable_icon:I = 0x1080758
 
 .field public static final sym_call_incoming:I = 0x1080090
 
@@ -3800,305 +3802,305 @@
 
 .field public static final sym_def_app_icon:I = 0x1080093
 
-.field public static final sym_keyboard_delete:I = 0x1080758
+.field public static final sym_keyboard_delete:I = 0x1080759
 
-.field public static final sym_keyboard_delete_dim:I = 0x1080759
+.field public static final sym_keyboard_delete_dim:I = 0x108075a
 
-.field public static final sym_keyboard_delete_holo:I = 0x108075a
+.field public static final sym_keyboard_delete_holo:I = 0x108075b
 
-.field public static final sym_keyboard_feedback_delete:I = 0x108075b
+.field public static final sym_keyboard_feedback_delete:I = 0x108075c
 
-.field public static final sym_keyboard_feedback_ok:I = 0x108075c
+.field public static final sym_keyboard_feedback_ok:I = 0x108075d
 
-.field public static final sym_keyboard_feedback_return:I = 0x108075d
+.field public static final sym_keyboard_feedback_return:I = 0x108075e
 
-.field public static final sym_keyboard_feedback_shift:I = 0x108075e
+.field public static final sym_keyboard_feedback_shift:I = 0x108075f
 
-.field public static final sym_keyboard_feedback_shift_locked:I = 0x108075f
+.field public static final sym_keyboard_feedback_shift_locked:I = 0x1080760
 
-.field public static final sym_keyboard_feedback_space:I = 0x1080760
+.field public static final sym_keyboard_feedback_space:I = 0x1080761
 
-.field public static final sym_keyboard_num0_no_plus:I = 0x1080761
+.field public static final sym_keyboard_num0_no_plus:I = 0x1080762
 
-.field public static final sym_keyboard_num1:I = 0x1080762
+.field public static final sym_keyboard_num1:I = 0x1080763
 
-.field public static final sym_keyboard_num2:I = 0x1080763
+.field public static final sym_keyboard_num2:I = 0x1080764
 
-.field public static final sym_keyboard_num3:I = 0x1080764
+.field public static final sym_keyboard_num3:I = 0x1080765
 
-.field public static final sym_keyboard_num4:I = 0x1080765
+.field public static final sym_keyboard_num4:I = 0x1080766
 
-.field public static final sym_keyboard_num5:I = 0x1080766
+.field public static final sym_keyboard_num5:I = 0x1080767
 
-.field public static final sym_keyboard_num6:I = 0x1080767
+.field public static final sym_keyboard_num6:I = 0x1080768
 
-.field public static final sym_keyboard_num7:I = 0x1080768
+.field public static final sym_keyboard_num7:I = 0x1080769
 
-.field public static final sym_keyboard_num8:I = 0x1080769
+.field public static final sym_keyboard_num8:I = 0x108076a
 
-.field public static final sym_keyboard_num9:I = 0x108076a
+.field public static final sym_keyboard_num9:I = 0x108076b
 
-.field public static final sym_keyboard_ok:I = 0x108076b
+.field public static final sym_keyboard_ok:I = 0x108076c
 
-.field public static final sym_keyboard_ok_dim:I = 0x108076c
+.field public static final sym_keyboard_ok_dim:I = 0x108076d
 
-.field public static final sym_keyboard_return:I = 0x108076d
+.field public static final sym_keyboard_return:I = 0x108076e
 
-.field public static final sym_keyboard_shift:I = 0x108076e
+.field public static final sym_keyboard_shift:I = 0x108076f
 
-.field public static final sym_keyboard_shift_locked:I = 0x108076f
+.field public static final sym_keyboard_shift_locked:I = 0x1080770
 
-.field public static final sym_keyboard_space:I = 0x1080770
+.field public static final sym_keyboard_space:I = 0x1080771
 
-.field public static final tab_bottom_holo:I = 0x1080771
+.field public static final tab_bottom_holo:I = 0x1080772
 
-.field public static final tab_bottom_left:I = 0x1080772
+.field public static final tab_bottom_left:I = 0x1080773
 
-.field public static final tab_bottom_left_v4:I = 0x1080773
+.field public static final tab_bottom_left_v4:I = 0x1080774
 
-.field public static final tab_bottom_right:I = 0x1080774
+.field public static final tab_bottom_right:I = 0x1080775
 
-.field public static final tab_bottom_right_v4:I = 0x1080775
+.field public static final tab_bottom_right_v4:I = 0x1080776
 
-.field public static final tab_focus:I = 0x1080776
+.field public static final tab_focus:I = 0x1080777
 
-.field public static final tab_focus_bar_left:I = 0x1080777
+.field public static final tab_focus_bar_left:I = 0x1080778
 
-.field public static final tab_focus_bar_right:I = 0x1080778
+.field public static final tab_focus_bar_right:I = 0x1080779
 
-.field public static final tab_indicator:I = 0x1080779
+.field public static final tab_indicator:I = 0x108077a
 
-.field public static final tab_indicator_ab_holo:I = 0x108077a
+.field public static final tab_indicator_ab_holo:I = 0x108077b
 
-.field public static final tab_indicator_holo:I = 0x108077b
+.field public static final tab_indicator_holo:I = 0x108077c
 
-.field public static final tab_indicator_v4:I = 0x108077c
+.field public static final tab_indicator_v4:I = 0x108077d
 
-.field public static final tab_press:I = 0x108077d
+.field public static final tab_press:I = 0x108077e
 
-.field public static final tab_press_bar_left:I = 0x108077e
+.field public static final tab_press_bar_left:I = 0x108077f
 
-.field public static final tab_press_bar_right:I = 0x108077f
+.field public static final tab_press_bar_right:I = 0x1080780
 
-.field public static final tab_pressed_holo:I = 0x1080780
+.field public static final tab_pressed_holo:I = 0x1080781
 
-.field public static final tab_selected:I = 0x1080781
+.field public static final tab_selected:I = 0x1080782
 
-.field public static final tab_selected_bar_left:I = 0x1080782
+.field public static final tab_selected_bar_left:I = 0x1080783
 
-.field public static final tab_selected_bar_left_v4:I = 0x1080783
+.field public static final tab_selected_bar_left_v4:I = 0x1080784
 
-.field public static final tab_selected_bar_right:I = 0x1080784
+.field public static final tab_selected_bar_right:I = 0x1080785
 
-.field public static final tab_selected_bar_right_v4:I = 0x1080785
+.field public static final tab_selected_bar_right_v4:I = 0x1080786
 
-.field public static final tab_selected_focused_holo:I = 0x1080786
+.field public static final tab_selected_focused_holo:I = 0x1080787
 
-.field public static final tab_selected_holo:I = 0x1080787
+.field public static final tab_selected_holo:I = 0x1080788
 
-.field public static final tab_selected_pressed_holo:I = 0x1080788
+.field public static final tab_selected_pressed_holo:I = 0x1080789
 
-.field public static final tab_selected_v4:I = 0x1080789
+.field public static final tab_selected_v4:I = 0x108078a
 
-.field public static final tab_unselected:I = 0x108078a
+.field public static final tab_unselected:I = 0x108078b
 
-.field public static final tab_unselected_focused_holo:I = 0x108078b
+.field public static final tab_unselected_focused_holo:I = 0x108078c
 
-.field public static final tab_unselected_holo:I = 0x108078c
+.field public static final tab_unselected_holo:I = 0x108078d
 
-.field public static final tab_unselected_pressed_holo:I = 0x108078d
+.field public static final tab_unselected_pressed_holo:I = 0x108078e
 
-.field public static final tab_unselected_v4:I = 0x108078e
+.field public static final tab_unselected_v4:I = 0x108078f
 
-.field public static final text_cursor_holo_dark:I = 0x108078f
+.field public static final text_cursor_holo_dark:I = 0x1080790
 
-.field public static final text_cursor_holo_light:I = 0x1080790
+.field public static final text_cursor_holo_light:I = 0x1080791
 
-.field public static final text_edit_paste_window:I = 0x1080791
+.field public static final text_edit_paste_window:I = 0x1080792
 
-.field public static final text_edit_side_paste_window:I = 0x1080792
+.field public static final text_edit_side_paste_window:I = 0x1080793
 
-.field public static final text_edit_suggestions_window:I = 0x1080793
+.field public static final text_edit_suggestions_window:I = 0x1080794
 
-.field public static final text_select_handle_left:I = 0x1080794
+.field public static final text_select_handle_left:I = 0x1080795
 
-.field public static final text_select_handle_middle:I = 0x1080795
+.field public static final text_select_handle_middle:I = 0x1080796
 
-.field public static final text_select_handle_right:I = 0x1080796
+.field public static final text_select_handle_right:I = 0x1080797
 
-.field public static final textfield_activated_holo_dark:I = 0x1080797
+.field public static final textfield_activated_holo_dark:I = 0x1080798
 
-.field public static final textfield_activated_holo_light:I = 0x1080798
+.field public static final textfield_activated_holo_light:I = 0x1080799
 
-.field public static final textfield_bg_activated_holo_dark:I = 0x1080799
+.field public static final textfield_bg_activated_holo_dark:I = 0x108079a
 
-.field public static final textfield_bg_default_holo_dark:I = 0x108079a
+.field public static final textfield_bg_default_holo_dark:I = 0x108079b
 
-.field public static final textfield_bg_disabled_focused_holo_dark:I = 0x108079b
+.field public static final textfield_bg_disabled_focused_holo_dark:I = 0x108079c
 
-.field public static final textfield_bg_disabled_holo_dark:I = 0x108079c
+.field public static final textfield_bg_disabled_holo_dark:I = 0x108079d
 
-.field public static final textfield_bg_focused_holo_dark:I = 0x108079d
+.field public static final textfield_bg_focused_holo_dark:I = 0x108079e
 
-.field public static final textfield_default:I = 0x108079e
+.field public static final textfield_default:I = 0x108079f
 
-.field public static final textfield_default_holo_dark:I = 0x108079f
+.field public static final textfield_default_holo_dark:I = 0x10807a0
 
-.field public static final textfield_default_holo_light:I = 0x10807a0
+.field public static final textfield_default_holo_light:I = 0x10807a1
 
-.field public static final textfield_disabled:I = 0x10807a1
+.field public static final textfield_disabled:I = 0x10807a2
 
-.field public static final textfield_disabled_focused_holo_dark:I = 0x10807a2
+.field public static final textfield_disabled_focused_holo_dark:I = 0x10807a3
 
-.field public static final textfield_disabled_focused_holo_light:I = 0x10807a3
+.field public static final textfield_disabled_focused_holo_light:I = 0x10807a4
 
-.field public static final textfield_disabled_holo_dark:I = 0x10807a4
+.field public static final textfield_disabled_holo_dark:I = 0x10807a5
 
-.field public static final textfield_disabled_holo_light:I = 0x10807a5
+.field public static final textfield_disabled_holo_light:I = 0x10807a6
 
-.field public static final textfield_disabled_selected:I = 0x10807a6
+.field public static final textfield_disabled_selected:I = 0x10807a7
 
-.field public static final textfield_focused_holo_dark:I = 0x10807a7
+.field public static final textfield_focused_holo_dark:I = 0x10807a8
 
-.field public static final textfield_focused_holo_light:I = 0x10807a8
+.field public static final textfield_focused_holo_light:I = 0x10807a9
 
-.field public static final textfield_longpress_holo:I = 0x10807a9
+.field public static final textfield_longpress_holo:I = 0x10807aa
 
-.field public static final textfield_multiline_activated_holo_dark:I = 0x10807aa
+.field public static final textfield_multiline_activated_holo_dark:I = 0x10807ab
 
-.field public static final textfield_multiline_activated_holo_light:I = 0x10807ab
+.field public static final textfield_multiline_activated_holo_light:I = 0x10807ac
 
-.field public static final textfield_multiline_default_holo_dark:I = 0x10807ac
+.field public static final textfield_multiline_default_holo_dark:I = 0x10807ad
 
-.field public static final textfield_multiline_default_holo_light:I = 0x10807ad
+.field public static final textfield_multiline_default_holo_light:I = 0x10807ae
 
-.field public static final textfield_multiline_disabled_focused_holo_dark:I = 0x10807ae
+.field public static final textfield_multiline_disabled_focused_holo_dark:I = 0x10807af
 
-.field public static final textfield_multiline_disabled_focused_holo_light:I = 0x10807af
+.field public static final textfield_multiline_disabled_focused_holo_light:I = 0x10807b0
 
-.field public static final textfield_multiline_disabled_holo_dark:I = 0x10807b0
+.field public static final textfield_multiline_disabled_holo_dark:I = 0x10807b1
 
-.field public static final textfield_multiline_disabled_holo_light:I = 0x10807b1
+.field public static final textfield_multiline_disabled_holo_light:I = 0x10807b2
 
-.field public static final textfield_multiline_focused_holo_dark:I = 0x10807b2
+.field public static final textfield_multiline_focused_holo_dark:I = 0x10807b3
 
-.field public static final textfield_multiline_focused_holo_light:I = 0x10807b3
+.field public static final textfield_multiline_focused_holo_light:I = 0x10807b4
 
-.field public static final textfield_pressed:I = 0x10807b4
+.field public static final textfield_pressed:I = 0x10807b5
 
-.field public static final textfield_pressed_holo:I = 0x10807b5
+.field public static final textfield_pressed_holo:I = 0x10807b6
 
-.field public static final textfield_search:I = 0x10807b6
+.field public static final textfield_search:I = 0x10807b7
 
-.field public static final textfield_search_default:I = 0x10807b7
+.field public static final textfield_search_default:I = 0x10807b8
 
-.field public static final textfield_search_default_holo_dark:I = 0x10807b8
+.field public static final textfield_search_default_holo_dark:I = 0x10807b9
 
-.field public static final textfield_search_default_holo_light:I = 0x10807b9
+.field public static final textfield_search_default_holo_light:I = 0x10807ba
 
-.field public static final textfield_search_default_rtl:I = 0x10807ba
+.field public static final textfield_search_default_rtl:I = 0x10807bb
 
-.field public static final textfield_search_empty:I = 0x10807bb
+.field public static final textfield_search_empty:I = 0x10807bc
 
-.field public static final textfield_search_empty_default:I = 0x10807bc
+.field public static final textfield_search_empty_default:I = 0x10807bd
 
-.field public static final textfield_search_empty_pressed:I = 0x10807bd
+.field public static final textfield_search_empty_pressed:I = 0x10807be
 
-.field public static final textfield_search_empty_selected:I = 0x10807be
+.field public static final textfield_search_empty_selected:I = 0x10807bf
 
-.field public static final textfield_search_pressed:I = 0x10807bf
+.field public static final textfield_search_pressed:I = 0x10807c0
 
-.field public static final textfield_search_pressed_rtl:I = 0x10807c0
+.field public static final textfield_search_pressed_rtl:I = 0x10807c1
 
-.field public static final textfield_search_right_default_holo_dark:I = 0x10807c1
+.field public static final textfield_search_right_default_holo_dark:I = 0x10807c2
 
-.field public static final textfield_search_right_default_holo_light:I = 0x10807c2
+.field public static final textfield_search_right_default_holo_light:I = 0x10807c3
 
-.field public static final textfield_search_right_selected_holo_dark:I = 0x10807c3
+.field public static final textfield_search_right_selected_holo_dark:I = 0x10807c4
 
-.field public static final textfield_search_right_selected_holo_light:I = 0x10807c4
+.field public static final textfield_search_right_selected_holo_light:I = 0x10807c5
 
-.field public static final textfield_search_selected:I = 0x10807c5
+.field public static final textfield_search_selected:I = 0x10807c6
 
-.field public static final textfield_search_selected_holo_dark:I = 0x10807c6
+.field public static final textfield_search_selected_holo_dark:I = 0x10807c7
 
-.field public static final textfield_search_selected_holo_light:I = 0x10807c7
+.field public static final textfield_search_selected_holo_light:I = 0x10807c8
 
-.field public static final textfield_search_selected_rtl:I = 0x10807c8
+.field public static final textfield_search_selected_rtl:I = 0x10807c9
 
-.field public static final textfield_searchview_holo_dark:I = 0x10807c9
+.field public static final textfield_searchview_holo_dark:I = 0x10807ca
 
-.field public static final textfield_searchview_holo_light:I = 0x10807ca
+.field public static final textfield_searchview_holo_light:I = 0x10807cb
 
-.field public static final textfield_searchview_right_holo_dark:I = 0x10807cb
+.field public static final textfield_searchview_right_holo_dark:I = 0x10807cc
 
-.field public static final textfield_searchview_right_holo_light:I = 0x10807cc
+.field public static final textfield_searchview_right_holo_light:I = 0x10807cd
 
-.field public static final textfield_selected:I = 0x10807cd
+.field public static final textfield_selected:I = 0x10807ce
 
-.field public static final tickmark:I = 0x10807ce
+.field public static final tickmark:I = 0x10807cf
 
-.field public static final timepicker_down_disabled:I = 0x10807cf
+.field public static final timepicker_down_disabled:I = 0x10807d0
 
-.field public static final timepicker_down_disabled_focused:I = 0x10807d0
+.field public static final timepicker_down_disabled_focused:I = 0x10807d1
 
-.field public static final timepicker_down_normal:I = 0x10807d1
+.field public static final timepicker_down_normal:I = 0x10807d2
 
-.field public static final timepicker_down_pressed:I = 0x10807d2
+.field public static final timepicker_down_pressed:I = 0x10807d3
 
-.field public static final timepicker_down_selected:I = 0x10807d3
+.field public static final timepicker_down_selected:I = 0x10807d4
 
-.field public static final timepicker_input_disabled:I = 0x10807d4
+.field public static final timepicker_input_disabled:I = 0x10807d5
 
-.field public static final timepicker_input_normal:I = 0x10807d5
+.field public static final timepicker_input_normal:I = 0x10807d6
 
-.field public static final timepicker_input_pressed:I = 0x10807d6
+.field public static final timepicker_input_pressed:I = 0x10807d7
 
-.field public static final timepicker_input_selected:I = 0x10807d7
+.field public static final timepicker_input_selected:I = 0x10807d8
 
-.field public static final timepicker_up_disabled:I = 0x10807d8
+.field public static final timepicker_up_disabled:I = 0x10807d9
 
-.field public static final timepicker_up_disabled_focused:I = 0x10807d9
+.field public static final timepicker_up_disabled_focused:I = 0x10807da
 
-.field public static final timepicker_up_normal:I = 0x10807da
+.field public static final timepicker_up_normal:I = 0x10807db
 
-.field public static final timepicker_up_pressed:I = 0x10807db
+.field public static final timepicker_up_pressed:I = 0x10807dc
 
-.field public static final timepicker_up_selected:I = 0x10807dc
+.field public static final timepicker_up_selected:I = 0x10807dd
 
 .field public static final title_bar:I = 0x1080095
 
-.field public static final title_bar_medium:I = 0x10807dd
+.field public static final title_bar_medium:I = 0x10807de
 
-.field public static final title_bar_portrait:I = 0x10807de
+.field public static final title_bar_portrait:I = 0x10807df
 
-.field public static final title_bar_shadow:I = 0x10807df
+.field public static final title_bar_shadow:I = 0x10807e0
 
 .field public static final title_bar_tall:I = 0x10800a6
 
 .field public static final toast_frame:I = 0x1080096
 
-.field public static final toast_frame_holo:I = 0x10807e0
+.field public static final toast_frame_holo:I = 0x10807e1
 
-.field public static final transportcontrol_bg:I = 0x10807e1
+.field public static final transportcontrol_bg:I = 0x10807e2
 
-.field public static final unknown_image:I = 0x10807e2
+.field public static final unknown_image:I = 0x10807e3
 
-.field public static final unlock_default:I = 0x10807e3
+.field public static final unlock_default:I = 0x10807e4
 
-.field public static final unlock_halo:I = 0x10807e4
+.field public static final unlock_halo:I = 0x10807e5
 
-.field public static final unlock_ring:I = 0x10807e5
+.field public static final unlock_ring:I = 0x10807e6
 
-.field public static final unlock_wave:I = 0x10807e6
+.field public static final unlock_wave:I = 0x10807e7
 
-.field public static final usb_android:I = 0x10807e7
+.field public static final usb_android:I = 0x10807e8
 
-.field public static final usb_android_connected:I = 0x10807e8
+.field public static final usb_android_connected:I = 0x10807e9
 
-.field public static final vpn_connected:I = 0x10807e9
+.field public static final vpn_connected:I = 0x10807ea
 
-.field public static final vpn_disconnected:I = 0x10807ea
+.field public static final vpn_disconnected:I = 0x10807eb
 
 .field public static final zoom_plate:I = 0x1080097
 
@@ -4108,7 +4110,7 @@
     .locals 0
 
     .prologue
-    .line 12503
+    .line 12515
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void

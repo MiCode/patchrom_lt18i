@@ -26,10 +26,10 @@
     .parameter "sc"
 
     .prologue
-    .line 160
+    .line 166
     invoke-direct/range {p0 .. p1}, Landroid/renderscript/RenderScript;-><init>(Landroid/content/Context;)V
 
-    .line 161
+    .line 167
     new-instance v1, Landroid/renderscript/RenderScriptGL$SurfaceConfig;
 
     move-object/from16 v0, p2
@@ -40,12 +40,12 @@
 
     iput-object v1, v0, Landroid/renderscript/RenderScriptGL;->mSurfaceConfig:Landroid/renderscript/RenderScriptGL$SurfaceConfig;
 
-    .line 163
+    .line 169
     invoke-static/range {p1 .. p1}, Landroid/renderscript/RenderScriptGL;->getTargetSdkVersion(Landroid/content/Context;)I
 
     move-result v4
 
-    .line 165
+    .line 171
     .local v4, sdkVersion:I
     const/4 v1, 0x0
 
@@ -53,14 +53,14 @@
 
     iput v1, v0, Landroid/renderscript/RenderScriptGL;->mWidth:I
 
-    .line 166
+    .line 172
     const/4 v1, 0x0
 
     move-object/from16 v0, p0
 
     iput v1, v0, Landroid/renderscript/RenderScriptGL;->mHeight:I
 
-    .line 167
+    .line 173
     invoke-virtual/range {p0 .. p0}, Landroid/renderscript/RenderScriptGL;->nDeviceCreate()I
 
     move-result v1
@@ -69,7 +69,7 @@
 
     iput v1, v0, Landroid/renderscript/RenderScript;->mDev:I
 
-    .line 168
+    .line 174
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -82,7 +82,7 @@
 
     move/from16 v16, v0
 
-    .line 169
+    .line 175
     .local v16, dpi:I
     move-object/from16 v0, p0
 
@@ -166,14 +166,14 @@
 
     iput v1, v0, Landroid/renderscript/RenderScript;->mContext:I
 
-    .line 176
+    .line 182
     move-object/from16 v0, p0
 
     iget v1, v0, Landroid/renderscript/RenderScript;->mContext:I
 
     if-nez v1, :cond_0
 
-    .line 177
+    .line 183
     new-instance v1, Landroid/renderscript/RSDriverException;
 
     const-string v2, "Failed to create RS context."
@@ -182,7 +182,7 @@
 
     throw v1
 
-    .line 179
+    .line 185
     :cond_0
     new-instance v1, Landroid/renderscript/RenderScript$MessageThread;
 
@@ -194,14 +194,14 @@
 
     iput-object v1, v0, Landroid/renderscript/RenderScript;->mMessageThread:Landroid/renderscript/RenderScript$MessageThread;
 
-    .line 180
+    .line 186
     move-object/from16 v0, p0
 
     iget-object v1, v0, Landroid/renderscript/RenderScript;->mMessageThread:Landroid/renderscript/RenderScript$MessageThread;
 
     invoke-virtual {v1}, Landroid/renderscript/RenderScript$MessageThread;->start()V
 
-    .line 181
+    .line 187
     return-void
 .end method
 
@@ -212,17 +212,17 @@
     .parameter "p"
 
     .prologue
-    .line 283
+    .line 289
     invoke-virtual {p0}, Landroid/renderscript/RenderScriptGL;->validate()V
 
-    .line 284
+    .line 290
     invoke-virtual {p0, p1}, Landroid/renderscript/RenderScriptGL;->safeID(Landroid/renderscript/BaseObj;)I
 
     move-result v0
 
     invoke-virtual {p0, v0}, Landroid/renderscript/RenderScriptGL;->nContextBindProgramFragment(I)V
 
-    .line 285
+    .line 291
     return-void
 .end method
 
@@ -231,17 +231,17 @@
     .parameter "p"
 
     .prologue
-    .line 294
+    .line 300
     invoke-virtual {p0}, Landroid/renderscript/RenderScriptGL;->validate()V
 
-    .line 295
+    .line 301
     invoke-virtual {p0, p1}, Landroid/renderscript/RenderScriptGL;->safeID(Landroid/renderscript/BaseObj;)I
 
     move-result v0
 
     invoke-virtual {p0, v0}, Landroid/renderscript/RenderScriptGL;->nContextBindProgramRaster(I)V
 
-    .line 296
+    .line 302
     return-void
 .end method
 
@@ -250,17 +250,17 @@
     .parameter "p"
 
     .prologue
-    .line 272
+    .line 278
     invoke-virtual {p0}, Landroid/renderscript/RenderScriptGL;->validate()V
 
-    .line 273
+    .line 279
     invoke-virtual {p0, p1}, Landroid/renderscript/RenderScriptGL;->safeID(Landroid/renderscript/BaseObj;)I
 
     move-result v0
 
     invoke-virtual {p0, v0}, Landroid/renderscript/RenderScriptGL;->nContextBindProgramStore(I)V
 
-    .line 274
+    .line 280
     return-void
 .end method
 
@@ -269,17 +269,17 @@
     .parameter "p"
 
     .prologue
-    .line 305
+    .line 311
     invoke-virtual {p0}, Landroid/renderscript/RenderScriptGL;->validate()V
 
-    .line 306
+    .line 312
     invoke-virtual {p0, p1}, Landroid/renderscript/RenderScriptGL;->safeID(Landroid/renderscript/BaseObj;)I
 
     move-result v0
 
     invoke-virtual {p0, v0}, Landroid/renderscript/RenderScriptGL;->nContextBindProgramVertex(I)V
 
-    .line 307
+    .line 313
     return-void
 .end method
 
@@ -288,17 +288,17 @@
     .parameter "s"
 
     .prologue
-    .line 261
+    .line 267
     invoke-virtual {p0}, Landroid/renderscript/RenderScriptGL;->validate()V
 
-    .line 262
+    .line 268
     invoke-virtual {p0, p1}, Landroid/renderscript/RenderScriptGL;->safeID(Landroid/renderscript/BaseObj;)I
 
     move-result v0
 
     invoke-virtual {p0, v0}, Landroid/renderscript/RenderScriptGL;->nContextBindRootScript(I)V
 
-    .line 263
+    .line 269
     return-void
 .end method
 
@@ -306,7 +306,7 @@
     .locals 1
 
     .prologue
-    .line 224
+    .line 230
     iget v0, p0, Landroid/renderscript/RenderScriptGL;->mHeight:I
 
     return v0
@@ -316,7 +316,7 @@
     .locals 1
 
     .prologue
-    .line 233
+    .line 239
     iget v0, p0, Landroid/renderscript/RenderScriptGL;->mWidth:I
 
     return v0
@@ -326,13 +326,13 @@
     .locals 0
 
     .prologue
-    .line 241
+    .line 247
     invoke-virtual {p0}, Landroid/renderscript/RenderScriptGL;->validate()V
 
-    .line 242
+    .line 248
     invoke-virtual {p0}, Landroid/renderscript/RenderScriptGL;->nContextPause()V
 
-    .line 243
+    .line 249
     return-void
 .end method
 
@@ -340,13 +340,13 @@
     .locals 0
 
     .prologue
-    .line 250
+    .line 256
     invoke-virtual {p0}, Landroid/renderscript/RenderScriptGL;->validate()V
 
-    .line 251
+    .line 257
     invoke-virtual {p0}, Landroid/renderscript/RenderScriptGL;->nContextResume()V
 
-    .line 252
+    .line 258
     return-void
 .end method
 
@@ -357,32 +357,32 @@
     .parameter "h"
 
     .prologue
-    .line 192
+    .line 198
     invoke-virtual {p0}, Landroid/renderscript/RenderScriptGL;->validate()V
 
-    .line 193
+    .line 199
     const/4 v0, 0x0
 
-    .line 194
+    .line 200
     .local v0, s:Landroid/view/Surface;
     if-eqz p1, :cond_0
 
-    .line 195
+    .line 201
     invoke-interface {p1}, Landroid/view/SurfaceHolder;->getSurface()Landroid/view/Surface;
 
     move-result-object v0
 
-    .line 197
+    .line 203
     :cond_0
     iput p2, p0, Landroid/renderscript/RenderScriptGL;->mWidth:I
 
-    .line 198
+    .line 204
     iput p3, p0, Landroid/renderscript/RenderScriptGL;->mHeight:I
 
-    .line 199
+    .line 205
     invoke-virtual {p0, p2, p3, v0}, Landroid/renderscript/RenderScriptGL;->nContextSetSurface(IILandroid/view/Surface;)V
 
-    .line 200
+    .line 206
     return-void
 .end method
 
@@ -393,18 +393,18 @@
     .parameter "h"
 
     .prologue
-    .line 210
+    .line 216
     invoke-virtual {p0}, Landroid/renderscript/RenderScriptGL;->validate()V
 
-    .line 213
+    .line 219
     iput p2, p0, Landroid/renderscript/RenderScriptGL;->mWidth:I
 
-    .line 214
+    .line 220
     iput p3, p0, Landroid/renderscript/RenderScriptGL;->mHeight:I
 
-    .line 215
+    .line 221
     invoke-virtual {p0, p2, p3, p1}, Landroid/renderscript/RenderScriptGL;->nContextSetSurfaceTexture(IILandroid/graphics/SurfaceTexture;)V
 
-    .line 216
+    .line 222
     return-void
 .end method

@@ -432,7 +432,7 @@
 
     move-result-object v3
 
-    const v4, 0x10404c8
+    const v4, 0x10404c9
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1441,7 +1441,7 @@
     .line 309
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mIndeterminateProgressView:Landroid/widget/ProgressBar;
 
-    const v1, 0x10202f6
+    const v1, 0x1020301
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setId(I)V
 
@@ -1476,7 +1476,7 @@
     .line 301
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mProgressView:Landroid/widget/ProgressBar;
 
-    const v1, 0x10202f7
+    const v1, 0x1020302
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setId(I)V
 
@@ -4683,7 +4683,7 @@
 
     move-result-object v7
 
-    const v8, 0x10404c8
+    const v8, 0x10404c9
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -4703,7 +4703,7 @@
 
     move-result-object v7
 
-    const v8, 0x10404c7
+    const v8, 0x10404c8
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -4875,7 +4875,7 @@
 
     move-result-object v1
 
-    const v2, 0x10404c8
+    const v2, 0x10404c9
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -4895,7 +4895,7 @@
 
     move-result-object v1
 
-    const v2, 0x10404c7
+    const v2, 0x10404c8
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

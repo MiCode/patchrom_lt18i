@@ -873,7 +873,7 @@ Valitse OK, jos haluat jatkaa, tai Peruuta, jos haluat pysyä valitulla sivulla.
     <string name="searchview_description_query">Hakulauseke</string>
     <string name="searchview_description_clear">Tyhjennä kysely</string>
     <string name="searchview_description_submit">Lähetä kysely</string>
-    <string name="searchview_description_voice">Äänihaku</string>
+    <string name="searchview_description_voice">Puhehaku</string>
     <string name="oneMonthDurationPast">1 kuukausi sitten</string>
     <string name="beforeOneMonthDurationPast">Alle 1 kuukausi sitten</string>
     <string name="last_month">Edellinen kuukausi</string>

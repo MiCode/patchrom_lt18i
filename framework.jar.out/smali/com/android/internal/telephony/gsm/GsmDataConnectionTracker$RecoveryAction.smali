@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0xa
     name = "RecoveryAction"
 .end annotation
 
@@ -26,20 +26,58 @@
 .field public static final REREGISTER:I = 0x2
 
 
-# instance fields
-.field final synthetic this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
-
-
 # direct methods
-.method constructor <init>(Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;)V
+.method private constructor <init>()V
     .locals 0
-    .parameter
 
     .prologue
-    .line 105
-    iput-object p1, p0, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$RecoveryAction;->this$0:Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker;
-
+    .line 107
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+.method static synthetic access$900(I)Z
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    .line 107
+    invoke-static {p0}, Lcom/android/internal/telephony/gsm/GsmDataConnectionTracker$RecoveryAction;->isAggressiveRecovery(I)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method private static isAggressiveRecovery(I)Z
+    .locals 2
+    .parameter "value"
+
+    .prologue
+    const/4 v0, 0x1
+
+    .line 115
+    if-eq p0, v0, :cond_0
+
+    const/4 v1, 0x2
+
+    if-eq p0, v1, :cond_0
+
+    const/4 v1, 0x3
+
+    if-eq p0, v1, :cond_0
+
+    const/4 v1, 0x4
+
+    if-ne p0, v1, :cond_1
+
+    :cond_0
+    :goto_0
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

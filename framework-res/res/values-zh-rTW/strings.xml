@@ -791,7 +791,7 @@
     <string name="lockscreen_failed_attempts_now_wiping">您嘗試解除這支手機的鎖定已失敗 %d 次，手機現在將恢復原廠設定。</string>
     <string name="lockscreen_too_many_failed_attempts_countdown">%d 秒後再試一次。</string>
     <string name="lockscreen_forgot_pattern_button_text">忘記解鎖圖形？</string>
-    <string name="lockscreen_glogin_forgot_pattern">解除封鎖帳戶</string>
+    <string name="lockscreen_glogin_forgot_pattern">帳戶解鎖</string>
     <string name="lockscreen_glogin_too_many_attempts">解鎖圖形出錯次數過多！</string>
     <string name="lockscreen_glogin_instructions">如要解除鎖定，請使用 Google 帳戶登入</string>
     <string name="lockscreen_glogin_username_hint">使用者名稱 (電子郵件)</string>

@@ -91,7 +91,7 @@
 
     if-eqz v0, :cond_2
 
-    const v0, 0x1040331
+    const v0, 0x1040332
 
     :goto_0
     invoke-virtual {v1, v0}, Lcom/android/internal/widget/SlidingTab;->setRightHintText(I)V
@@ -116,7 +116,7 @@
 
     .line 239
     :cond_2
-    const v0, 0x1040332
+    const v0, 0x1040333
 
     goto :goto_0
 .end method

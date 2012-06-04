@@ -25,7 +25,7 @@
     .parameter "x0"
 
     .prologue
-    .line 443
+    .line 444
     iput-object p1, p0, Lcom/android/server/wm/InputManager$1;->this$0:Lcom/android/server/wm/InputManager;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -40,11 +40,11 @@
     .parameter "selfChange"
 
     .prologue
-    .line 446
+    .line 447
     iget-object v0, p0, Lcom/android/server/wm/InputManager$1;->this$0:Lcom/android/server/wm/InputManager;
 
     invoke-virtual {v0}, Lcom/android/server/wm/InputManager;->updatePointerSpeedFromSettings()V
 
-    .line 447
+    .line 448
     return-void
 .end method

@@ -907,8 +907,9 @@
     <public type="string" name="cam_3d_strings_3d_panorama_player_guide_dlna_no_hdmi_txt" id="0x7f0c011e" />
     <public type="string" name="cam_strings_error_storage_changing_to_internal_txt" id="0x7f0c011f" />
     <public type="string" name="cam_strings_error_storage_changing_to_SD_txt" id="0x7f0c0120" />
-    <public type="string" name="cam_strings_advanced_setting_on_wf_gps_txt" id="0x7f0c0121" />
-    <public type="string" name="cam_strings_advanced_setting_on_wf_txt" id="0x7f0c0122" />
+    <public type="string" name="cam_strings_advanced_setting_photometry_center_txt" id="0x7f0c0121" />
+    <public type="string" name="cam_strings_advanced_setting_on_wf_gps_txt" id="0x7f0c0122" />
+    <public type="string" name="cam_strings_advanced_setting_on_wf_txt" id="0x7f0c0123" />
     <public type="id" name="capturing_mode_selector_dilaog_modeview_1" id="0x7f0d0000" />
     <public type="id" name="capturing_mode_selector_dilaog_modeview_2" id="0x7f0d0001" />
     <public type="id" name="capturing_mode_selector_dilaog_modeview_3" id="0x7f0d0002" />

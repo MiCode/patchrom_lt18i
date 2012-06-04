@@ -22,7 +22,7 @@
     invoke-virtual {p0, v1}, Lcom/google/android/mms/pdu/SendReq;->setMessageType(I)V
 
     .line 32
-    const/16 v1, 0x12
+    const/16 v1, 0x10
 
     invoke-virtual {p0, v1}, Lcom/google/android/mms/pdu/SendReq;->setMmsVersion(I)V
 

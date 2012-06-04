@@ -13,15 +13,15 @@
     .parameter "context"
 
     .prologue
-    .line 40
+    .line 46
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 42
+    .line 48
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
 
-    .line 44
+    .line 50
     :try_start_0
     invoke-static {p1}, Landroid/nfc/NfcAdapter;->getNfcAdapter(Landroid/content/Context;)Landroid/nfc/NfcAdapter;
     :try_end_0
@@ -29,20 +29,20 @@
 
     move-result-object v0
 
-    .line 48
+    .line 54
     .local v0, adapter:Landroid/nfc/NfcAdapter;
     :goto_0
     iput-object v0, p0, Landroid/nfc/NfcManager;->mAdapter:Landroid/nfc/NfcAdapter;
 
-    .line 49
+    .line 55
     return-void
 
-    .line 45
+    .line 51
     .end local v0           #adapter:Landroid/nfc/NfcAdapter;
     :catch_0
     move-exception v1
 
-    .line 46
+    .line 52
     .local v1, e:Ljava/lang/UnsupportedOperationException;
     const/4 v0, 0x0
 
@@ -56,7 +56,7 @@
     .locals 1
 
     .prologue
-    .line 57
+    .line 63
     iget-object v0, p0, Landroid/nfc/NfcManager;->mAdapter:Landroid/nfc/NfcAdapter;
 
     return-object v0

@@ -104,31 +104,31 @@
 
     sput-object v0, Landroid/text/TextUtils;->CHAR_SEQUENCE_CREATOR:Landroid/os/Parcelable$Creator;
 
-    .line 1663
+    .line 1667
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct/range {v0 .. v0}, Ljava/lang/Object;-><init>()V
 
     sput-object v0, Landroid/text/TextUtils;->sLock:Ljava/lang/Object;
 
-    .line 1664
+    .line 1668
     const/4 v0, 0x0
 
     sput-object v0, Landroid/text/TextUtils;->sTemp:[C
 
-    .line 1666
+    .line 1670
     const/4 v0, 0x0
 
     new-array v0, v0, [Ljava/lang/String;
 
     sput-object v0, Landroid/text/TextUtils;->EMPTY_STRING_ARRAY:[Ljava/lang/String;
 
-    .line 1670
+    .line 1674
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v1, 0x10400e5
+    const v1, 0x10400e6
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -136,12 +136,12 @@
 
     sput-object v0, Landroid/text/TextUtils;->ELLIPSIS_NORMAL:Ljava/lang/String;
 
-    .line 1672
+    .line 1676
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v1, 0x10400e6
+    const v1, 0x10400e7
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -539,19 +539,19 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1345
+    .line 1349
     array-length v0, p0
 
     if-nez v0, :cond_0
 
-    .line 1346
+    .line 1350
     const-string v0, ""
 
-    .line 1382
+    .line 1386
     :goto_0
     return-object v0
 
-    .line 1349
+    .line 1353
     :cond_0
     array-length v0, p0
 
@@ -559,16 +559,16 @@
 
     if-ne v0, v3, :cond_1
 
-    .line 1350
+    .line 1354
     aget-object v0, p0, v1
 
     goto :goto_0
 
-    .line 1353
+    .line 1357
     :cond_1
     const/4 v8, 0x0
 
-    .line 1354
+    .line 1358
     .local v8, spanned:Z
     const/4 v6, 0x0
 
@@ -578,23 +578,23 @@
 
     if-ge v6, v0, :cond_2
 
-    .line 1355
+    .line 1359
     aget-object v0, p0, v6
 
     instance-of v0, v0, Landroid/text/Spanned;
 
     if-eqz v0, :cond_3
 
-    .line 1356
+    .line 1360
     const/4 v8, 0x1
 
-    .line 1361
+    .line 1365
     :cond_2
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1362
+    .line 1366
     .local v7, sb:Ljava/lang/StringBuilder;
     const/4 v6, 0x0
 
@@ -603,46 +603,46 @@
 
     if-ge v6, v0, :cond_4
 
-    .line 1363
+    .line 1367
     aget-object v0, p0, v6
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1362
+    .line 1366
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_2
 
-    .line 1354
+    .line 1358
     .end local v7           #sb:Ljava/lang/StringBuilder;
     :cond_3
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_1
 
-    .line 1366
+    .line 1370
     .restart local v7       #sb:Ljava/lang/StringBuilder;
     :cond_4
     if-nez v8, :cond_5
 
-    .line 1367
+    .line 1371
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 1370
+    .line 1374
     :cond_5
     new-instance v4, Landroid/text/SpannableString;
 
     invoke-direct {v4, v7}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
-    .line 1371
+    .line 1375
     .local v4, ss:Landroid/text/SpannableString;
     const/4 v5, 0x0
 
-    .line 1372
+    .line 1376
     .local v5, off:I
     const/4 v6, 0x0
 
@@ -651,14 +651,14 @@
 
     if-ge v6, v0, :cond_7
 
-    .line 1373
+    .line 1377
     aget-object v0, p0, v6
 
     invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
 
     move-result v2
 
-    .line 1375
+    .line 1379
     .local v2, len:I
     aget-object v0, p0, v6
 
@@ -666,7 +666,7 @@
 
     if-eqz v0, :cond_6
 
-    .line 1376
+    .line 1380
     aget-object v0, p0, v6
 
     check-cast v0, Landroid/text/Spanned;
@@ -675,16 +675,16 @@
 
     invoke-static/range {v0 .. v5}, Landroid/text/TextUtils;->copySpansFrom(Landroid/text/Spanned;IILjava/lang/Class;Landroid/text/Spannable;I)V
 
-    .line 1379
+    .line 1383
     :cond_6
     add-int/2addr v5, v2
 
-    .line 1372
+    .line 1376
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_3
 
-    .line 1382
+    .line 1386
     .end local v2           #len:I
     :cond_7
     new-instance v0, Landroid/text/SpannedString;
@@ -801,7 +801,7 @@
 
     const/4 v4, 0x0
 
-    .line 1592
+    .line 1596
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
@@ -817,22 +817,22 @@
     :cond_0
     move v3, v4
 
-    .line 1610
+    .line 1614
     :cond_1
     :goto_0
     return v3
 
-    .line 1595
+    .line 1599
     :cond_2
     const/4 v2, -0x1
 
-    .line 1596
+    .line 1600
     .local v2, pos:I
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    .line 1597
+    .line 1601
     .local v1, length:I
     :cond_3
     add-int/lit8 v5, v2, 0x1
@@ -845,7 +845,7 @@
 
     if-eq v2, v5, :cond_5
 
-    .line 1598
+    .line 1602
     if-lez v2, :cond_4
 
     add-int/lit8 v5, v2, -0x1
@@ -856,7 +856,7 @@
 
     if-ne v5, p1, :cond_3
 
-    .line 1601
+    .line 1605
     :cond_4
     invoke-virtual {p2}, Ljava/lang/String;->length()I
 
@@ -864,11 +864,11 @@
 
     add-int v0, v2, v5
 
-    .line 1602
+    .line 1606
     .local v0, expectedDelimiterPos:I
     if-eq v0, v1, :cond_1
 
-    .line 1606
+    .line 1610
     invoke-virtual {p0, v0}, Ljava/lang/String;->charAt(I)C
 
     move-result v5
@@ -881,7 +881,7 @@
     :cond_5
     move v3, v4
 
-    .line 1610
+    .line 1614
     goto :goto_0
 .end method
 
@@ -2067,51 +2067,51 @@
 
     const/16 v7, 0x2e
 
-    .line 1496
+    .line 1500
     if-gez p1, :cond_1
 
-    .line 1497
+    .line 1501
     const/4 v4, 0x0
 
-    .line 1581
+    .line 1585
     :cond_0
     :goto_0
     return v4
 
-    .line 1502
+    .line 1506
     :cond_1
     const/4 v4, 0x0
 
-    .line 1504
+    .line 1508
     .local v4, mode:I
     and-int/lit16 v5, p2, 0x1000
 
     if-eqz v5, :cond_2
 
-    .line 1505
+    .line 1509
     or-int/lit16 v4, v4, 0x1000
 
-    .line 1507
+    .line 1511
     :cond_2
     and-int/lit16 v5, p2, 0x6000
 
     if-eqz v5, :cond_0
 
-    .line 1513
+    .line 1517
     move v1, p1
 
     .local v1, i:I
     :goto_1
     if-lez v1, :cond_3
 
-    .line 1514
+    .line 1518
     add-int/lit8 v5, v1, -0x1
 
     invoke-interface {p0, v5}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v0
 
-    .line 1516
+    .line 1520
     .local v0, c:C
     if-eq v0, v8, :cond_5
 
@@ -2125,12 +2125,12 @@
 
     if-eq v5, v6, :cond_5
 
-    .line 1524
+    .line 1528
     .end local v0           #c:C
     :cond_3
     move v2, v1
 
-    .line 1525
+    .line 1529
     .local v2, j:I
     :goto_2
     if-lez v2, :cond_6
@@ -2150,20 +2150,20 @@
 
     if-ne v0, v5, :cond_6
 
-    .line 1526
+    .line 1530
     :cond_4
     add-int/lit8 v2, v2, -0x1
 
     goto :goto_2
 
-    .line 1513
+    .line 1517
     .end local v2           #j:I
     :cond_5
     add-int/lit8 v1, v1, -0x1
 
     goto :goto_1
 
-    .line 1528
+    .line 1532
     .end local v0           #c:C
     .restart local v2       #j:I
     :cond_6
@@ -2179,41 +2179,41 @@
 
     if-ne v5, v6, :cond_8
 
-    .line 1529
+    .line 1533
     :cond_7
     or-int/lit16 v4, v4, 0x2000
 
     goto :goto_0
 
-    .line 1534
+    .line 1538
     :cond_8
     and-int/lit16 v5, p2, 0x4000
 
     if-nez v5, :cond_9
 
-    .line 1535
+    .line 1539
     if-eq v1, v2, :cond_0
 
     or-int/lit16 v4, v4, 0x2000
 
     goto :goto_0
 
-    .line 1541
+    .line 1545
     :cond_9
     if-eq v1, v2, :cond_0
 
-    .line 1547
+    .line 1551
     :goto_3
     if-lez v2, :cond_a
 
-    .line 1548
+    .line 1552
     add-int/lit8 v5, v2, -0x1
 
     invoke-interface {p0, v5}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v0
 
-    .line 1550
+    .line 1554
     .restart local v0       #c:C
     if-eq v0, v8, :cond_d
 
@@ -2227,19 +2227,19 @@
 
     if-eq v5, v6, :cond_d
 
-    .line 1556
+    .line 1560
     .end local v0           #c:C
     :cond_a
     if-lez v2, :cond_0
 
-    .line 1557
+    .line 1561
     add-int/lit8 v5, v2, -0x1
 
     invoke-interface {p0, v5}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v0
 
-    .line 1559
+    .line 1563
     .restart local v0       #c:C
     if-eq v0, v7, :cond_b
 
@@ -2251,46 +2251,46 @@
 
     if-ne v0, v5, :cond_0
 
-    .line 1563
+    .line 1567
     :cond_b
     if-ne v0, v7, :cond_c
 
-    .line 1564
+    .line 1568
     add-int/lit8 v3, v2, -0x2
 
     .local v3, k:I
     :goto_4
     if-ltz v3, :cond_c
 
-    .line 1565
+    .line 1569
     invoke-interface {p0, v3}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v0
 
-    .line 1567
+    .line 1571
     if-eq v0, v7, :cond_0
 
-    .line 1571
+    .line 1575
     invoke-static {v0}, Ljava/lang/Character;->isLetter(C)Z
 
     move-result v5
 
     if-nez v5, :cond_e
 
-    .line 1577
+    .line 1581
     .end local v3           #k:I
     :cond_c
     or-int/lit16 v4, v4, 0x4000
 
     goto/16 :goto_0
 
-    .line 1547
+    .line 1551
     :cond_d
     add-int/lit8 v2, v2, -0x1
 
     goto :goto_3
 
-    .line 1564
+    .line 1568
     .restart local v3       #k:I
     :cond_e
     add-int/lit8 v3, v3, -0x1
@@ -2829,7 +2829,7 @@
     .local v0, c:C
     sparse-switch v0, :sswitch_data_0
 
-    .line 1334
+    .line 1338
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 1315
@@ -2862,15 +2862,15 @@
 
     goto :goto_1
 
-    .line 1328
+    .line 1332
     :sswitch_3
-    const-string v3, "&apos;"
+    const-string v3, "&#39;"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
 
-    .line 1331
+    .line 1335
     :sswitch_4
     const-string v3, "&quot;"
 
@@ -2878,7 +2878,7 @@
 
     goto :goto_1
 
-    .line 1337
+    .line 1341
     .end local v0           #c:C
     :cond_0
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -3226,12 +3226,12 @@
     .parameter "str"
 
     .prologue
-    .line 1423
+    .line 1427
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v1
 
-    .line 1424
+    .line 1428
     .local v1, len:I
     const/4 v0, 0x0
 
@@ -3239,7 +3239,7 @@
     :goto_0
     if-ge v0, v1, :cond_1
 
-    .line 1425
+    .line 1429
     invoke-interface {p0, v0}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v2
@@ -3250,20 +3250,20 @@
 
     if-nez v2, :cond_0
 
-    .line 1426
+    .line 1430
     const/4 v2, 0x0
 
-    .line 1429
+    .line 1433
     :goto_1
     return v2
 
-    .line 1424
+    .line 1428
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1429
+    .line 1433
     :cond_1
     const/4 v2, 0x1
 
@@ -3303,12 +3303,12 @@
     .parameter "c"
 
     .prologue
-    .line 1409
+    .line 1413
     invoke-static {p0}, Ljava/lang/Character;->getType(C)I
 
     move-result v0
 
-    .line 1410
+    .line 1414
     .local v0, gc:I
     const/16 v1, 0xf
 
@@ -3352,12 +3352,12 @@
     .parameter "str"
 
     .prologue
-    .line 1389
+    .line 1393
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v2
 
-    .line 1390
+    .line 1394
     .local v2, len:I
     const/4 v1, 0x0
 
@@ -3365,7 +3365,7 @@
     :goto_0
     if-ge v1, v2, :cond_1
 
-    .line 1391
+    .line 1395
     invoke-interface {p0, v1}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v3
@@ -3374,7 +3374,7 @@
 
     move-result v0
 
-    .line 1392
+    .line 1396
     .local v0, gc:I
     const/16 v3, 0xf
 
@@ -3402,22 +3402,22 @@
 
     if-eq v0, v3, :cond_0
 
-    .line 1399
+    .line 1403
     const/4 v3, 0x1
 
-    .line 1402
+    .line 1406
     .end local v0           #gc:I
     :goto_1
     return v3
 
-    .line 1390
+    .line 1394
     .restart local v0       #gc:I
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 1402
+    .line 1406
     .end local v0           #gc:I
     :cond_1
     const/4 v3, 0x0
@@ -3430,14 +3430,14 @@
     .parameter "c"
 
     .prologue
-    .line 1436
+    .line 1440
     const/16 v0, 0x20
 
-    .line 1437
+    .line 1441
     .local v0, asciiFirst:I
     const/16 v1, 0x7e
 
-    .line 1438
+    .line 1442
     .local v1, asciiLast:I
     const/16 v2, 0x20
 
@@ -3473,12 +3473,12 @@
     .parameter "str"
 
     .prologue
-    .line 1445
+    .line 1449
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v1
 
-    .line 1446
+    .line 1450
     .local v1, len:I
     const/4 v0, 0x0
 
@@ -3486,7 +3486,7 @@
     :goto_0
     if-ge v0, v1, :cond_1
 
-    .line 1447
+    .line 1451
     invoke-interface {p0, v0}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v2
@@ -3497,20 +3497,20 @@
 
     if-nez v2, :cond_0
 
-    .line 1448
+    .line 1452
     const/4 v2, 0x0
 
-    .line 1451
+    .line 1455
     :goto_1
     return v2
 
-    .line 1446
+    .line 1450
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1451
+    .line 1455
     :cond_1
     const/4 v2, 0x1
 
@@ -3538,7 +3538,7 @@
 
     move-result-object v1
 
-    const v2, 0x10404ee
+    const v2, 0x10404ef
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -4124,14 +4124,14 @@
     .local p2, klass:Ljava/lang/Class;,"Ljava/lang/Class<TT;>;"
     const/4 v8, 0x0
 
-    .line 1632
+    .line 1636
     const/4 v0, 0x0
 
-    .line 1633
+    .line 1637
     .local v0, copy:[Ljava/lang/Object;,"[TT;"
     const/4 v1, 0x0
 
-    .line 1635
+    .line 1639
     .local v1, count:I
     const/4 v3, 0x0
 
@@ -4141,29 +4141,29 @@
 
     if-ge v3, v7, :cond_2
 
-    .line 1636
+    .line 1640
     aget-object v5, p0, v3
 
-    .line 1637
+    .line 1641
     .local v5, span:Ljava/lang/Object;,"TT;"
     invoke-interface {p1, v5}, Landroid/text/Spanned;->getSpanStart(Ljava/lang/Object;)I
 
     move-result v6
 
-    .line 1638
+    .line 1642
     .local v6, start:I
     invoke-interface {p1, v5}, Landroid/text/Spanned;->getSpanEnd(Ljava/lang/Object;)I
 
     move-result v2
 
-    .line 1640
+    .line 1644
     .local v2, end:I
     if-ne v6, v2, :cond_1
 
-    .line 1641
+    .line 1645
     if-nez v0, :cond_0
 
-    .line 1642
+    .line 1646
     array-length v7, p0
 
     add-int/lit8 v7, v7, -0x1
@@ -4178,39 +4178,39 @@
 
     check-cast v0, [Ljava/lang/Object;
 
-    .line 1643
+    .line 1647
     invoke-static {p0, v8, v0, v8, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 1644
+    .line 1648
     move v1, v3
 
-    .line 1635
+    .line 1639
     :cond_0
     :goto_1
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 1647
+    .line 1651
     :cond_1
     if-eqz v0, :cond_0
 
-    .line 1648
+    .line 1652
     aput-object v5, v0, v1
 
-    .line 1649
+    .line 1653
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 1654
+    .line 1658
     .end local v2           #end:I
     .end local v5           #span:Ljava/lang/Object;,"TT;"
     .end local v6           #start:I
     :cond_2
     if-eqz v0, :cond_3
 
-    .line 1655
+    .line 1659
     invoke-static {p2, v1}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
 
     move-result-object v7
@@ -4221,11 +4221,11 @@
 
     check-cast v4, [Ljava/lang/Object;
 
-    .line 1656
+    .line 1660
     .local v4, result:[Ljava/lang/Object;,"[TT;"
     invoke-static {v0, v8, v4, v8, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 1659
+    .line 1663
     .end local v4           #result:[Ljava/lang/Object;,"[TT;"
     :goto_2
     return-object v4

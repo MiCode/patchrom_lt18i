@@ -550,7 +550,7 @@
 
     .line 3071
     :cond_1
-    const v0, 0x10202f6
+    const v0, 0x1020301
 
     invoke-virtual {p0, v0}, Lcom/android/internal/policy/impl/PhoneWindow;->findViewById(I)Landroid/view/View;
 
@@ -704,7 +704,7 @@
 
     .line 3085
     :cond_1
-    const v0, 0x10202f7
+    const v0, 0x1020302
 
     invoke-virtual {p0, v0}, Lcom/android/internal/policy/impl/PhoneWindow;->findViewById(I)Landroid/view/View;
 
@@ -1203,7 +1203,7 @@
 
     .line 2837
     :cond_4
-    const v6, 0x10202f9
+    const v6, 0x1020304
 
     invoke-virtual {p0, v6}, Lcom/android/internal/policy/impl/PhoneWindow;->findViewById(I)Landroid/view/View;
 
@@ -1305,7 +1305,7 @@
 
     .line 2861
     :goto_3
-    const v6, 0x10202fb
+    const v6, 0x1020306
 
     invoke-virtual {p0, v6}, Lcom/android/internal/policy/impl/PhoneWindow;->findViewById(I)Landroid/view/View;
 
@@ -1333,7 +1333,7 @@
     invoke-virtual {v6, v4}, Lcom/android/internal/widget/ActionBarView;->setSplitWhenNarrow(Z)V
 
     .line 2868
-    const v6, 0x10202fa
+    const v6, 0x1020305
 
     invoke-virtual {p0, v6}, Lcom/android/internal/policy/impl/PhoneWindow;->findViewById(I)Landroid/view/View;
 
@@ -1880,12 +1880,6 @@
     iget v4, v0, Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;->windowAnimations:I
 
     iput v4, v2, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v16
-
-    invoke-direct {v0, v1, v2}, Lcom/android/internal/policy/impl/PhoneWindow;->handleIcsAppLayoutParams(Landroid/view/WindowManager;Landroid/view/WindowManager$LayoutParams;)V
 
     .line 641
     move-object/from16 v0, p1
@@ -4333,7 +4327,7 @@
 
     move/from16 v1, v25
 
-    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindow;->addFlags(I)V
+    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindow;->clearFlags(I)V
 
     goto/16 :goto_6
 
@@ -4341,7 +4335,7 @@
     .restart local v9       #features:I
     .restart local v14       #params:Landroid/view/WindowManager$LayoutParams;
     :cond_19
-    const v12, 0x109008e
+    const v12, 0x1090090
 
     .restart local v12       #layoutResource:I
     goto/16 :goto_8
@@ -4360,7 +4354,7 @@
     if-nez v25, :cond_1b
 
     .line 2716
-    const v12, 0x109008a
+    const v12, 0x109008c
 
     .restart local v12       #layoutResource:I
     goto/16 :goto_9
@@ -4434,7 +4428,7 @@
     .line 2727
     .end local v12           #layoutResource:I
     :cond_1c
-    const v12, 0x1090089
+    const v12, 0x109008b
 
     .restart local v12       #layoutResource:I
     goto :goto_a
@@ -4510,7 +4504,7 @@
     if-eqz v25, :cond_1f
 
     .line 2741
-    const v12, 0x1090088
+    const v12, 0x109008a
 
     .restart local v12       #layoutResource:I
     goto/16 :goto_9
@@ -4518,7 +4512,7 @@
     .line 2743
     .end local v12           #layoutResource:I
     :cond_1f
-    const v12, 0x1090087
+    const v12, 0x1090089
 
     .restart local v12       #layoutResource:I
     goto/16 :goto_9
@@ -4526,7 +4520,7 @@
     .line 2746
     .end local v12           #layoutResource:I
     :cond_20
-    const v12, 0x109008d
+    const v12, 0x109008f
 
     .restart local v12       #layoutResource:I
     goto/16 :goto_9
@@ -4541,7 +4535,7 @@
     if-eqz v25, :cond_22
 
     .line 2750
-    const v12, 0x109008c
+    const v12, 0x109008e
 
     .restart local v12       #layoutResource:I
     goto/16 :goto_9
@@ -4549,7 +4543,7 @@
     .line 2753
     .end local v12           #layoutResource:I
     :cond_22
-    const v12, 0x109008b
+    const v12, 0x109008d
 
     .restart local v12       #layoutResource:I
     goto/16 :goto_9
@@ -7866,77 +7860,4 @@
     .line 1228
     :cond_0
     return-void
-.end method
-
-.method private handleIcsAppLayoutParams(Landroid/view/WindowManager;Landroid/view/WindowManager$LayoutParams;)V
-    .locals 5
-    .parameter "wm"
-    .parameter "lp"
-    .annotation build Landroid/annotation/MiuiHook;
-        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
-    .end annotation
-
-    .prologue
-    const/4 v0, -0x2
-
-    .local v0, height:I
-    invoke-virtual {p0}, Lcom/android/internal/policy/impl/PhoneWindow;->getContext()Landroid/content/Context;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
-
-    move-result-object v3
-
-    iget v3, v3, Landroid/content/pm/ApplicationInfo;->targetSdkVersion:I
-
-    const/16 v4, 0xe
-
-    if-lt v3, v4, :cond_2
-
-    const/4 v1, 0x1
-
-    .local v1, isIcsApp:Z
-    :goto_0
-    if-eqz v1, :cond_1
-
-    invoke-interface {p1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroid/view/Display;->getRotation()I
-
-    move-result v2
-
-    .local v2, rotation:I
-    if-eqz v2, :cond_0
-
-    const/4 v3, 0x2
-
-    if-eq v2, v3, :cond_0
-
-    const/4 v0, -0x1
-
-    :cond_0
-    iput v0, p2, Landroid/view/WindowManager$LayoutParams;->height:I
-
-    iget v3, p2, Landroid/view/WindowManager$LayoutParams;->flags:I
-
-    or-int/lit8 v3, v3, 0x2
-
-    iput v3, p2, Landroid/view/WindowManager$LayoutParams;->flags:I
-
-    const v3, 0x3f333333
-
-    iput v3, p2, Landroid/view/WindowManager$LayoutParams;->dimAmount:F
-
-    .end local v2           #rotation:I
-    :cond_1
-    return-void
-
-    .end local v1           #isIcsApp:Z
-    :cond_2
-    const/4 v1, 0x0
-
-    goto :goto_0
 .end method

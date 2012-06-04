@@ -49,45 +49,45 @@
 
     const/4 v0, 0x0
 
-    .line 63
+    .line 69
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 51
+    .line 57
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mDepthMin:I
 
-    .line 52
+    .line 58
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mDepthPref:I
 
-    .line 53
+    .line 59
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mStencilMin:I
 
-    .line 54
+    .line 60
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mStencilPref:I
 
-    .line 55
+    .line 61
     iput v2, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mColorMin:I
 
-    .line 56
+    .line 62
     iput v2, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mColorPref:I
 
-    .line 57
+    .line 63
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mAlphaMin:I
 
-    .line 58
+    .line 64
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mAlphaPref:I
 
-    .line 59
+    .line 65
     iput v1, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mSamplesMin:I
 
-    .line 60
+    .line 66
     iput v1, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mSamplesPref:I
 
-    .line 61
+    .line 67
     const/high16 v0, 0x3f80
 
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mSamplesQ:F
 
-    .line 64
+    .line 70
     return-void
 .end method
 
@@ -102,100 +102,100 @@
 
     const/4 v0, 0x0
 
-    .line 66
+    .line 72
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 51
+    .line 57
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mDepthMin:I
 
-    .line 52
+    .line 58
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mDepthPref:I
 
-    .line 53
+    .line 59
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mStencilMin:I
 
-    .line 54
+    .line 60
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mStencilPref:I
 
-    .line 55
+    .line 61
     iput v2, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mColorMin:I
 
-    .line 56
+    .line 62
     iput v2, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mColorPref:I
 
-    .line 57
+    .line 63
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mAlphaMin:I
 
-    .line 58
+    .line 64
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mAlphaPref:I
 
-    .line 59
+    .line 65
     iput v1, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mSamplesMin:I
 
-    .line 60
+    .line 66
     iput v1, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mSamplesPref:I
 
-    .line 61
+    .line 67
     const/high16 v0, 0x3f80
 
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mSamplesQ:F
 
-    .line 67
+    .line 73
     iget v0, p1, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mDepthMin:I
 
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mDepthMin:I
 
-    .line 68
+    .line 74
     iget v0, p1, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mDepthPref:I
 
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mDepthPref:I
 
-    .line 69
+    .line 75
     iget v0, p1, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mStencilMin:I
 
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mStencilMin:I
 
-    .line 70
+    .line 76
     iget v0, p1, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mStencilPref:I
 
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mStencilPref:I
 
-    .line 71
+    .line 77
     iget v0, p1, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mColorMin:I
 
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mColorMin:I
 
-    .line 72
+    .line 78
     iget v0, p1, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mColorPref:I
 
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mColorPref:I
 
-    .line 73
+    .line 79
     iget v0, p1, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mAlphaMin:I
 
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mAlphaMin:I
 
-    .line 74
+    .line 80
     iget v0, p1, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mAlphaPref:I
 
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mAlphaPref:I
 
-    .line 75
+    .line 81
     iget v0, p1, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mSamplesMin:I
 
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mSamplesMin:I
 
-    .line 76
+    .line 82
     iget v0, p1, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mSamplesPref:I
 
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mSamplesPref:I
 
-    .line 77
+    .line 83
     iget v0, p1, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mSamplesQ:F
 
     iput v0, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mSamplesQ:F
 
-    .line 78
+    .line 84
     return-void
 .end method
 
@@ -207,12 +207,12 @@
     .parameter "rmax"
 
     .prologue
-    .line 81
+    .line 87
     if-lt p1, p3, :cond_0
 
     if-le p1, p4, :cond_1
 
-    .line 82
+    .line 88
     :cond_0
     new-instance v0, Landroid/renderscript/RSIllegalArgumentException;
 
@@ -222,11 +222,11 @@
 
     throw v0
 
-    .line 84
+    .line 90
     :cond_1
     if-ge p2, p1, :cond_2
 
-    .line 85
+    .line 91
     new-instance v0, Landroid/renderscript/RSIllegalArgumentException;
 
     const-string/jumbo v1, "preferred must be >= Minimum."
@@ -235,7 +235,7 @@
 
     throw v0
 
-    .line 87
+    .line 93
     :cond_2
     return-void
 .end method
@@ -248,20 +248,20 @@
     .parameter "preferred"
 
     .prologue
-    .line 110
+    .line 116
     const/4 v0, 0x0
 
     const/16 v1, 0x8
 
     invoke-direct {p0, p1, p2, v0, v1}, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->validateRange(IIII)V
 
-    .line 111
+    .line 117
     iput p1, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mAlphaMin:I
 
-    .line 112
+    .line 118
     iput p2, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mAlphaPref:I
 
-    .line 113
+    .line 119
     return-void
 .end method
 
@@ -271,20 +271,20 @@
     .parameter "preferred"
 
     .prologue
-    .line 97
+    .line 103
     const/4 v0, 0x5
 
     const/16 v1, 0x8
 
     invoke-direct {p0, p1, p2, v0, v1}, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->validateRange(IIII)V
 
-    .line 98
+    .line 104
     iput p1, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mColorMin:I
 
-    .line 99
+    .line 105
     iput p2, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mColorPref:I
 
-    .line 100
+    .line 106
     return-void
 .end method
 
@@ -294,20 +294,20 @@
     .parameter "preferred"
 
     .prologue
-    .line 125
+    .line 131
     const/4 v0, 0x0
 
     const/16 v1, 0x18
 
     invoke-direct {p0, p1, p2, v0, v1}, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->validateRange(IIII)V
 
-    .line 126
+    .line 132
     iput p1, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mDepthMin:I
 
-    .line 127
+    .line 133
     iput p2, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mDepthPref:I
 
-    .line 128
+    .line 134
     return-void
 .end method
 
@@ -318,14 +318,14 @@
     .parameter "Q"
 
     .prologue
-    .line 141
+    .line 147
     const/4 v0, 0x1
 
     const/16 v1, 0x20
 
     invoke-direct {p0, p1, p2, v0, v1}, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->validateRange(IIII)V
 
-    .line 142
+    .line 148
     const/4 v0, 0x0
 
     cmpg-float v0, p3, v0
@@ -338,7 +338,7 @@
 
     if-lez v0, :cond_1
 
-    .line 143
+    .line 149
     :cond_0
     new-instance v0, Landroid/renderscript/RSIllegalArgumentException;
 
@@ -348,16 +348,16 @@
 
     throw v0
 
-    .line 145
+    .line 151
     :cond_1
     iput p1, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mSamplesMin:I
 
-    .line 146
+    .line 152
     iput p2, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mSamplesPref:I
 
-    .line 147
+    .line 153
     iput p3, p0, Landroid/renderscript/RenderScriptGL$SurfaceConfig;->mSamplesQ:F
 
-    .line 148
+    .line 154
     return-void
 .end method

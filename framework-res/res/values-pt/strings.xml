@@ -269,6 +269,9 @@
     <string name="turn_off_radio">Desativar a rede sem fio</string>
     <string name="screen_lock">Bloquear tela</string>
     <string name="power_off">Desligar</string>
+    <string name="silent_mode_silent">Campainha desligada</string>
+    <string name="silent_mode_vibrate">Vibração da campainha</string>
+    <string name="silent_mode_ring">Campainha ligada</string>
     <string name="shutdown_progress">Encerrando…</string>
     <string name="shutdown_confirm">O seu telefone será desligado.</string>
     <string name="shutdown_confirm_question">Gostaria de desligar?</string>

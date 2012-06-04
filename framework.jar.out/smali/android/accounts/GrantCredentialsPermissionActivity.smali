@@ -67,7 +67,7 @@
     .line 139
     iget-object v1, p0, Landroid/accounts/GrantCredentialsPermissionActivity;->mInflater:Landroid/view/LayoutInflater;
 
-    const v2, 0x109006c
+    const v2, 0x109006e
 
     const/4 v3, 0x0
 
@@ -77,7 +77,7 @@
 
     .line 140
     .local v0, view:Landroid/view/View;
-    const v1, 0x10202db
+    const v1, 0x10202e6
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -247,7 +247,7 @@
     invoke-virtual {v0, v14}, Landroid/accounts/GrantCredentialsPermissionActivity;->setContentView(I)V
 
     .line 56
-    const v14, 0x104045f
+    const v14, 0x1040460
 
     move-object/from16 v0, p0
 

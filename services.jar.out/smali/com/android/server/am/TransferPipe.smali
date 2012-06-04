@@ -48,10 +48,10 @@
     .end annotation
 
     .prologue
-    .line 56
+    .line 60
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 57
+    .line 61
     new-instance v0, Ljava/lang/Thread;
 
     const-string v1, "TransferPipe"
@@ -60,14 +60,14 @@
 
     iput-object v0, p0, Lcom/android/server/am/TransferPipe;->mThread:Ljava/lang/Thread;
 
-    .line 58
+    .line 62
     invoke-static {}, Landroid/os/ParcelFileDescriptor;->createPipe()[Landroid/os/ParcelFileDescriptor;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/server/am/TransferPipe;->mFds:[Landroid/os/ParcelFileDescriptor;
 
-    .line 59
+    .line 63
     return-void
 .end method
 
@@ -86,7 +86,7 @@
     .end annotation
 
     .prologue
-    .line 75
+    .line 79
     const-wide/16 v5, 0x1388
 
     move-object v0, p0
@@ -101,7 +101,7 @@
 
     invoke-static/range {v0 .. v6}, Lcom/android/server/am/TransferPipe;->go(Lcom/android/server/am/TransferPipe$Caller;Landroid/os/IInterface;Ljava/io/FileDescriptor;Ljava/lang/String;[Ljava/lang/String;J)V
 
-    .line 76
+    .line 80
     return-void
 .end method
 
@@ -121,7 +121,7 @@
     .end annotation
 
     .prologue
-    .line 80
+    .line 84
     invoke-interface {p1}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
 
     move-result-object v1
@@ -130,23 +130,23 @@
 
     if-eqz v1, :cond_0
 
-    .line 83
+    .line 87
     :try_start_0
     invoke-interface {p0, p1, p2, p3, p4}, Lcom/android/server/am/TransferPipe$Caller;->go(Landroid/os/IInterface;Ljava/io/FileDescriptor;Ljava/lang/String;[Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 96
+    .line 100
     :goto_0
     return-void
 
-    .line 89
+    .line 93
     :cond_0
     new-instance v0, Lcom/android/server/am/TransferPipe;
 
     invoke-direct {v0}, Lcom/android/server/am/TransferPipe;-><init>()V
 
-    .line 91
+    .line 95
     .local v0, tp:Lcom/android/server/am/TransferPipe;
     :try_start_1
     invoke-virtual {v0}, Lcom/android/server/am/TransferPipe;->getWriteFd()Landroid/os/ParcelFileDescriptor;
@@ -159,12 +159,12 @@
 
     invoke-interface {p0, p1, v1, p3, p4}, Lcom/android/server/am/TransferPipe$Caller;->go(Landroid/os/IInterface;Ljava/io/FileDescriptor;Ljava/lang/String;[Ljava/lang/String;)V
 
-    .line 92
+    .line 96
     invoke-virtual {v0, p2, p5, p6}, Lcom/android/server/am/TransferPipe;->go(Ljava/io/FileDescriptor;J)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 94
+    .line 98
     invoke-virtual {v0}, Lcom/android/server/am/TransferPipe;->kill()V
 
     goto :goto_0
@@ -176,7 +176,7 @@
 
     throw v1
 
-    .line 84
+    .line 88
     .end local v0           #tp:Lcom/android/server/am/TransferPipe;
     :catch_0
     move-exception v1
@@ -197,12 +197,12 @@
     .end annotation
 
     .prologue
-    .line 100
+    .line 104
     const-wide/16 v0, 0x1388
 
     invoke-static {p0, p1, p2, v0, v1}, Lcom/android/server/am/TransferPipe;->goDump(Landroid/os/IBinder;Ljava/io/FileDescriptor;[Ljava/lang/String;J)V
 
-    .line 101
+    .line 105
     return-void
 .end method
 
@@ -220,28 +220,28 @@
     .end annotation
 
     .prologue
-    .line 105
+    .line 109
     instance-of v1, p0, Landroid/os/Binder;
 
     if-eqz v1, :cond_0
 
-    .line 108
+    .line 112
     :try_start_0
     invoke-interface {p0, p1, p2}, Landroid/os/IBinder;->dump(Ljava/io/FileDescriptor;[Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 121
+    .line 125
     :goto_0
     return-void
 
-    .line 114
+    .line 118
     :cond_0
     new-instance v0, Lcom/android/server/am/TransferPipe;
 
     invoke-direct {v0}, Lcom/android/server/am/TransferPipe;-><init>()V
 
-    .line 116
+    .line 120
     .local v0, tp:Lcom/android/server/am/TransferPipe;
     :try_start_1
     invoke-virtual {v0}, Lcom/android/server/am/TransferPipe;->getWriteFd()Landroid/os/ParcelFileDescriptor;
@@ -254,12 +254,12 @@
 
     invoke-interface {p0, v1, p2}, Landroid/os/IBinder;->dumpAsync(Ljava/io/FileDescriptor;[Ljava/lang/String;)V
 
-    .line 117
+    .line 121
     invoke-virtual {v0, p1, p3, p4}, Lcom/android/server/am/TransferPipe;->go(Ljava/io/FileDescriptor;J)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 119
+    .line 123
     invoke-virtual {v0}, Lcom/android/server/am/TransferPipe;->kill()V
 
     goto :goto_0
@@ -271,7 +271,7 @@
 
     throw v1
 
-    .line 109
+    .line 113
     .end local v0           #tp:Lcom/android/server/am/TransferPipe;
     :catch_0
     move-exception v1
@@ -286,14 +286,14 @@
     .parameter "num"
 
     .prologue
-    .line 166
+    .line 170
     iget-object v0, p0, Lcom/android/server/am/TransferPipe;->mFds:[Landroid/os/ParcelFileDescriptor;
 
     aget-object v0, v0, p1
 
     if-eqz v0, :cond_0
 
-    .line 169
+    .line 173
     :try_start_0
     iget-object v0, p0, Lcom/android/server/am/TransferPipe;->mFds:[Landroid/os/ParcelFileDescriptor;
 
@@ -303,7 +303,7 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 172
+    .line 176
     :goto_0
     iget-object v0, p0, Lcom/android/server/am/TransferPipe;->mFds:[Landroid/os/ParcelFileDescriptor;
 
@@ -311,11 +311,11 @@
 
     aput-object v1, v0, p1
 
-    .line 174
+    .line 178
     :cond_0
     return-void
 
-    .line 170
+    .line 174
     :catch_0
     move-exception v0
 
@@ -326,7 +326,7 @@
     .locals 2
 
     .prologue
-    .line 62
+    .line 66
     iget-object v0, p0, Lcom/android/server/am/TransferPipe;->mFds:[Landroid/os/ParcelFileDescriptor;
 
     const/4 v1, 0x0
@@ -340,7 +340,7 @@
     .locals 2
 
     .prologue
-    .line 66
+    .line 70
     iget-object v0, p0, Lcom/android/server/am/TransferPipe;->mFds:[Landroid/os/ParcelFileDescriptor;
 
     const/4 v1, 0x1
@@ -360,12 +360,12 @@
     .end annotation
 
     .prologue
-    .line 124
+    .line 128
     const-wide/16 v0, 0x1388
 
     invoke-virtual {p0, p1, v0, v1}, Lcom/android/server/am/TransferPipe;->go(Ljava/io/FileDescriptor;J)V
 
-    .line 125
+    .line 129
     return-void
 .end method
 
@@ -380,17 +380,17 @@
     .end annotation
 
     .prologue
-    .line 129
+    .line 133
     :try_start_0
     monitor-enter p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 130
+    .line 134
     :try_start_1
     iput-object p1, p0, Lcom/android/server/am/TransferPipe;->mOutFd:Ljava/io/FileDescriptor;
 
-    .line 131
+    .line 135
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v2
@@ -399,17 +399,17 @@
 
     iput-wide v2, p0, Lcom/android/server/am/TransferPipe;->mEndTime:J
 
-    .line 137
+    .line 141
     const/4 v2, 0x1
 
     invoke-virtual {p0, v2}, Lcom/android/server/am/TransferPipe;->closeFd(I)V
 
-    .line 139
+    .line 143
     iget-object v2, p0, Lcom/android/server/am/TransferPipe;->mThread:Ljava/lang/Thread;
 
     invoke-virtual {v2}, Ljava/lang/Thread;->start()V
 
-    .line 141
+    .line 145
     :goto_0
     iget-object v2, p0, Lcom/android/server/am/TransferPipe;->mFailure:Ljava/lang/String;
 
@@ -419,7 +419,7 @@
 
     if-nez v2, :cond_1
 
-    .line 142
+    .line 146
     iget-wide v2, p0, Lcom/android/server/am/TransferPipe;->mEndTime:J
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
@@ -428,7 +428,7 @@
 
     sub-long v0, v2, v4
 
-    .line 143
+    .line 147
     .local v0, waitTime:J
     const-wide/16 v2, 0x0
 
@@ -436,12 +436,12 @@
 
     if-gtz v2, :cond_0
 
-    .line 145
+    .line 149
     iget-object v2, p0, Lcom/android/server/am/TransferPipe;->mThread:Ljava/lang/Thread;
 
     invoke-virtual {v2}, Ljava/lang/Thread;->interrupt()V
 
-    .line 146
+    .line 150
     new-instance v2, Ljava/io/IOException;
 
     const-string v3, "Timeout"
@@ -450,7 +450,7 @@
 
     throw v2
 
-    .line 159
+    .line 163
     .end local v0           #waitTime:J
     :catchall_0
     move-exception v2
@@ -464,7 +464,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 161
+    .line 165
     :catchall_1
     move-exception v2
 
@@ -472,7 +472,7 @@
 
     throw v2
 
-    .line 150
+    .line 154
     .restart local v0       #waitTime:J
     :cond_0
     :try_start_3
@@ -483,13 +483,13 @@
 
     goto :goto_0
 
-    .line 151
+    .line 155
     :catch_0
     move-exception v2
 
     goto :goto_0
 
-    .line 156
+    .line 160
     .end local v0           #waitTime:J
     :cond_1
     :try_start_4
@@ -497,7 +497,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 157
+    .line 161
     new-instance v2, Ljava/io/IOException;
 
     iget-object v3, p0, Lcom/android/server/am/TransferPipe;->mFailure:Ljava/lang/String;
@@ -506,16 +506,16 @@
 
     throw v2
 
-    .line 159
+    .line 163
     :cond_2
     monitor-exit p0
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 161
+    .line 165
     invoke-virtual {p0}, Lcom/android/server/am/TransferPipe;->kill()V
 
-    .line 163
+    .line 167
     return-void
 .end method
 
@@ -523,255 +523,294 @@
     .locals 1
 
     .prologue
-    .line 177
+    .line 181
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/android/server/am/TransferPipe;->closeFd(I)V
 
-    .line 178
+    .line 182
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/android/server/am/TransferPipe;->closeFd(I)V
 
-    .line 179
+    .line 183
     return-void
 .end method
 
 .method public run()V
-    .locals 11
+    .locals 12
 
     .prologue
-    const/16 v10, 0xa
+    const/16 v11, 0xa
 
-    .line 183
-    const/16 v9, 0x400
-
-    new-array v0, v9, [B
-
-    .line 184
-    .local v0, buffer:[B
-    new-instance v3, Ljava/io/FileInputStream;
-
+    .line 187
     invoke-virtual {p0}, Lcom/android/server/am/TransferPipe;->getReadFd()Landroid/os/ParcelFileDescriptor;
 
-    move-result-object v9
-
-    invoke-virtual {v9}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
-
-    move-result-object v9
-
-    invoke-direct {v3, v9}, Ljava/io/FileInputStream;-><init>(Ljava/io/FileDescriptor;)V
-
-    .line 185
-    .local v3, fis:Ljava/io/FileInputStream;
-    new-instance v4, Ljava/io/FileOutputStream;
-
-    iget-object v9, p0, Lcom/android/server/am/TransferPipe;->mOutFd:Ljava/io/FileDescriptor;
-
-    invoke-direct {v4, v9}, Ljava/io/FileOutputStream;-><init>(Ljava/io/FileDescriptor;)V
+    move-result-object v7
 
     .line 188
-    .local v4, fos:Ljava/io/FileOutputStream;
-    const/4 v1, 0x0
+    .local v7, pfd:Landroid/os/ParcelFileDescriptor;
+    const/16 v10, 0x400
+
+    new-array v0, v10, [B
 
     .line 189
+    .local v0, buffer:[B
+    new-instance v4, Ljava/io/FileOutputStream;
+
+    iget-object v10, p0, Lcom/android/server/am/TransferPipe;->mOutFd:Ljava/io/FileDescriptor;
+
+    invoke-direct {v4, v10}, Ljava/io/FileOutputStream;-><init>(Ljava/io/FileDescriptor;)V
+
+    .line 192
+    .local v4, fos:Ljava/io/FileOutputStream;
+    if-eqz v7, :cond_1
+
+    .line 193
+    new-instance v3, Ljava/io/FileInputStream;
+
+    invoke-virtual {v7}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
+
+    move-result-object v10
+
+    invoke-direct {v3, v10}, Ljava/io/FileInputStream;-><init>(Ljava/io/FileDescriptor;)V
+
+    .line 203
+    .local v3, fis:Ljava/io/FileInputStream;
+    const/4 v1, 0x0
+
+    .line 204
     .local v1, bufferPrefix:[B
     const/4 v6, 0x1
 
-    .line 190
+    .line 205
     .local v6, needPrefix:Z
-    iget-object v9, p0, Lcom/android/server/am/TransferPipe;->mBufferPrefix:Ljava/lang/String;
+    iget-object v10, p0, Lcom/android/server/am/TransferPipe;->mBufferPrefix:Ljava/lang/String;
 
-    if-eqz v9, :cond_0
+    if-eqz v10, :cond_0
 
-    .line 191
-    iget-object v9, p0, Lcom/android/server/am/TransferPipe;->mBufferPrefix:Ljava/lang/String;
+    .line 206
+    iget-object v10, p0, Lcom/android/server/am/TransferPipe;->mBufferPrefix:Ljava/lang/String;
 
-    invoke-virtual {v9}, Ljava/lang/String;->getBytes()[B
+    invoke-virtual {v10}, Ljava/lang/String;->getBytes()[B
 
     move-result-object v1
 
-    .line 196
+    .line 211
     :cond_0
     :goto_0
     :try_start_0
     invoke-virtual {v3, v0}, Ljava/io/FileInputStream;->read([B)I
 
-    move-result v7
+    move-result v8
 
-    .local v7, size:I
-    if-lez v7, :cond_7
+    .local v8, size:I
+    if-lez v8, :cond_8
 
-    .line 198
-    if-nez v1, :cond_1
+    .line 213
+    if-nez v1, :cond_2
 
-    .line 199
-    const/4 v9, 0x0
+    .line 214
+    const/4 v10, 0x0
 
-    invoke-virtual {v4, v0, v9, v7}, Ljava/io/FileOutputStream;->write([BII)V
+    invoke-virtual {v4, v0, v10, v8}, Ljava/io/FileOutputStream;->write([BII)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 229
-    .end local v7           #size:I
+    .line 244
+    .end local v8           #size:I
     :catch_0
     move-exception v2
 
-    .line 230
+    .line 245
     .local v2, e:Ljava/io/IOException;
     monitor-enter p0
 
-    .line 231
+    .line 246
     :try_start_1
     invoke-virtual {v2}, Ljava/io/IOException;->toString()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v10
 
-    iput-object v9, p0, Lcom/android/server/am/TransferPipe;->mFailure:Ljava/lang/String;
+    iput-object v10, p0, Lcom/android/server/am/TransferPipe;->mFailure:Ljava/lang/String;
 
-    .line 232
+    .line 247
     invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
 
-    .line 233
+    .line 248
     monitor-exit p0
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 241
+    .line 256
+    .end local v1           #bufferPrefix:[B
     .end local v2           #e:Ljava/io/IOException;
+    .end local v3           #fis:Ljava/io/FileInputStream;
+    .end local v6           #needPrefix:Z
     :goto_1
     return-void
 
-    .line 201
-    .restart local v7       #size:I
+    .line 195
     :cond_1
-    const/4 v8, 0x0
-
-    .line 202
-    .local v8, start:I
-    const/4 v5, 0x0
-
-    .local v5, i:I
-    :goto_2
-    if-ge v5, v7, :cond_6
-
-    .line 203
-    :try_start_2
-    aget-byte v9, v0, v5
-
-    if-eq v9, v10, :cond_5
-
-    .line 204
-    if-le v5, v8, :cond_2
-
-    .line 205
-    sub-int v9, v5, v8
-
-    invoke-virtual {v4, v0, v8, v9}, Ljava/io/FileOutputStream;->write([BII)V
-
-    .line 207
-    :cond_2
-    move v8, v5
-
-    .line 208
-    if-eqz v6, :cond_3
-
-    .line 209
-    invoke-virtual {v4, v1}, Ljava/io/FileOutputStream;->write([B)V
-
-    .line 210
-    const/4 v6, 0x0
-
-    .line 213
-    :cond_3
-    add-int/lit8 v5, v5, 0x1
-
-    .line 214
-    if-ge v5, v7, :cond_4
-
-    aget-byte v9, v0, v5
-
-    if-ne v9, v10, :cond_3
-
-    .line 215
-    :cond_4
-    if-ge v5, v7, :cond_5
-
-    .line 216
-    const/4 v6, 0x1
-
-    .line 202
-    :cond_5
-    add-int/lit8 v5, v5, 0x1
-
-    goto :goto_2
-
-    .line 220
-    :cond_6
-    if-le v7, v8, :cond_0
-
-    .line 221
-    sub-int v9, v7, v8
-
-    invoke-virtual {v4, v0, v8, v9}, Ljava/io/FileOutputStream;->write([BII)V
-
-    goto :goto_0
-
-    .line 226
-    .end local v5           #i:I
-    .end local v8           #start:I
-    :cond_7
-    iget-object v9, p0, Lcom/android/server/am/TransferPipe;->mThread:Ljava/lang/Thread;
-
-    invoke-virtual {v9}, Ljava/lang/Thread;->isInterrupted()Z
-    :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
-
-    move-result v9
-
-    if-eqz v9, :cond_8
-
-    .line 237
-    :cond_8
     monitor-enter p0
 
-    .line 238
-    const/4 v9, 0x1
-
-    :try_start_3
-    iput-boolean v9, p0, Lcom/android/server/am/TransferPipe;->mComplete:Z
-
-    .line 239
+    .line 196
+    :try_start_2
     invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
 
-    .line 240
+    .line 197
+    const-string v10, "NullPointerException: getReadFd returns null"
+
+    iput-object v10, p0, Lcom/android/server/am/TransferPipe;->mFailure:Ljava/lang/String;
+
+    .line 198
     monitor-exit p0
 
     goto :goto_1
 
+    .line 199
     :catchall_0
-    move-exception v9
+    move-exception v10
 
     monitor-exit p0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    throw v10
+
+    .line 216
+    .restart local v1       #bufferPrefix:[B
+    .restart local v3       #fis:Ljava/io/FileInputStream;
+    .restart local v6       #needPrefix:Z
+    .restart local v8       #size:I
+    :cond_2
+    const/4 v9, 0x0
+
+    .line 217
+    .local v9, start:I
+    const/4 v5, 0x0
+
+    .local v5, i:I
+    :goto_2
+    if-ge v5, v8, :cond_7
+
+    .line 218
+    :try_start_3
+    aget-byte v10, v0, v5
+
+    if-eq v10, v11, :cond_6
+
+    .line 219
+    if-le v5, v9, :cond_3
+
+    .line 220
+    sub-int v10, v5, v9
+
+    invoke-virtual {v4, v0, v9, v10}, Ljava/io/FileOutputStream;->write([BII)V
+
+    .line 222
+    :cond_3
+    move v9, v5
+
+    .line 223
+    if-eqz v6, :cond_4
+
+    .line 224
+    invoke-virtual {v4, v1}, Ljava/io/FileOutputStream;->write([B)V
+
+    .line 225
+    const/4 v6, 0x0
+
+    .line 228
+    :cond_4
+    add-int/lit8 v5, v5, 0x1
+
+    .line 229
+    if-ge v5, v8, :cond_5
+
+    aget-byte v10, v0, v5
+
+    if-ne v10, v11, :cond_4
+
+    .line 230
+    :cond_5
+    if-ge v5, v8, :cond_6
+
+    .line 231
+    const/4 v6, 0x1
+
+    .line 217
+    :cond_6
+    add-int/lit8 v5, v5, 0x1
+
+    goto :goto_2
+
+    .line 235
+    :cond_7
+    if-le v8, v9, :cond_0
+
+    .line 236
+    sub-int v10, v8, v9
+
+    invoke-virtual {v4, v0, v9, v10}, Ljava/io/FileOutputStream;->write([BII)V
+
+    goto :goto_0
+
+    .line 241
+    .end local v5           #i:I
+    .end local v9           #start:I
+    :cond_8
+    iget-object v10, p0, Lcom/android/server/am/TransferPipe;->mThread:Ljava/lang/Thread;
+
+    invoke-virtual {v10}, Ljava/lang/Thread;->isInterrupted()Z
     :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
 
-    throw v9
+    move-result v10
 
-    .line 234
-    .end local v7           #size:I
-    .restart local v2       #e:Ljava/io/IOException;
-    :catchall_1
-    move-exception v9
+    if-eqz v10, :cond_9
+
+    .line 252
+    :cond_9
+    monitor-enter p0
+
+    .line 253
+    const/4 v10, 0x1
 
     :try_start_4
+    iput-boolean v10, p0, Lcom/android/server/am/TransferPipe;->mComplete:Z
+
+    .line 254
+    invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
+
+    .line 255
+    monitor-exit p0
+
+    goto :goto_1
+
+    :catchall_1
+    move-exception v10
+
     monitor-exit p0
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    throw v9
+    throw v10
+
+    .line 249
+    .end local v8           #size:I
+    .restart local v2       #e:Ljava/io/IOException;
+    :catchall_2
+    move-exception v10
+
+    :try_start_5
+    monitor-exit p0
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_2
+
+    throw v10
 .end method
 
 .method setBufferPrefix(Ljava/lang/String;)V
@@ -779,9 +818,9 @@
     .parameter "prefix"
 
     .prologue
-    .line 70
+    .line 74
     iput-object p1, p0, Lcom/android/server/am/TransferPipe;->mBufferPrefix:Ljava/lang/String;
 
-    .line 71
+    .line 75
     return-void
 .end method

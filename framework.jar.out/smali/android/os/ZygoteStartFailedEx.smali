@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 35
+    .line 36
     invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
 
     return-void
@@ -19,7 +19,7 @@
     .parameter "s"
 
     .prologue
-    .line 36
+    .line 37
     invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -30,7 +30,7 @@
     .parameter "cause"
 
     .prologue
-    .line 37
+    .line 38
     invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/Throwable;)V
 
     return-void

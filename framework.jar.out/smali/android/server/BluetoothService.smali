@@ -542,19 +542,7 @@
     return-void
 .end method
 
-.method static synthetic access$1002(Landroid/server/BluetoothService;Landroid/bluetooth/BluetoothHeadset;)Landroid/bluetooth/BluetoothHeadset;
-    .locals 0
-    .parameter "x0"
-    .parameter "x1"
-
-    .prologue
-    .line 90
-    iput-object p1, p0, Landroid/server/BluetoothService;->mHeadsetProxy:Landroid/bluetooth/BluetoothHeadset;
-
-    return-object p1
-.end method
-
-.method static synthetic access$1102(Landroid/server/BluetoothService;Landroid/bluetooth/BluetoothInputDevice;)Landroid/bluetooth/BluetoothInputDevice;
+.method static synthetic access$1002(Landroid/server/BluetoothService;Landroid/bluetooth/BluetoothInputDevice;)Landroid/bluetooth/BluetoothInputDevice;
     .locals 0
     .parameter "x0"
     .parameter "x1"
@@ -566,7 +554,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$1202(Landroid/server/BluetoothService;Landroid/bluetooth/BluetoothPan;)Landroid/bluetooth/BluetoothPan;
+.method static synthetic access$1102(Landroid/server/BluetoothService;Landroid/bluetooth/BluetoothPan;)Landroid/bluetooth/BluetoothPan;
     .locals 0
     .parameter "x0"
     .parameter "x1"
@@ -602,20 +590,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$500(Landroid/server/BluetoothService;)Z
-    .locals 1
-    .parameter "x0"
-
-    .prologue
-    .line 90
-    invoke-direct {p0}, Landroid/server/BluetoothService;->isAirplaneModeOn()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method static synthetic access$600(Landroid/server/BluetoothService;)Landroid/server/BluetoothAdapterStateMachine;
+.method static synthetic access$500(Landroid/server/BluetoothService;)Landroid/server/BluetoothAdapterStateMachine;
     .locals 1
     .parameter "x0"
 
@@ -626,7 +601,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$700()Ljava/lang/String;
+.method static synthetic access$600()Ljava/lang/String;
     .locals 1
 
     .prologue
@@ -636,7 +611,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$702(Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic access$602(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
     .parameter "x0"
 
@@ -647,7 +622,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$802(Landroid/server/BluetoothService;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic access$702(Landroid/server/BluetoothService;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
     .parameter "x0"
     .parameter "x1"
@@ -659,7 +634,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$900(Landroid/server/BluetoothService;)Landroid/content/Context;
+.method static synthetic access$800(Landroid/server/BluetoothService;)Landroid/content/Context;
     .locals 1
     .parameter "x0"
 
@@ -668,6 +643,18 @@
     iget-object v0, p0, Landroid/server/BluetoothService;->mContext:Landroid/content/Context;
 
     return-object v0
+.end method
+
+.method static synthetic access$902(Landroid/server/BluetoothService;Landroid/bluetooth/BluetoothHeadset;)Landroid/bluetooth/BluetoothHeadset;
+    .locals 0
+    .parameter "x0"
+    .parameter "x1"
+
+    .prologue
+    .line 90
+    iput-object p1, p0, Landroid/server/BluetoothService;->mHeadsetProxy:Landroid/bluetooth/BluetoothHeadset;
+
+    return-object p1
 .end method
 
 .method private declared-synchronized addReservedSdpRecords(Ljava/util/ArrayList;)V
@@ -2506,38 +2493,6 @@
 .end method
 
 .method private native initializeNativeDataNative()V
-.end method
-
-.method private final isAirplaneModeOn()Z
-    .locals 4
-
-    .prologue
-    const/4 v0, 0x1
-
-    const/4 v1, 0x0
-
-    .line 1726
-    iget-object v2, p0, Landroid/server/BluetoothService;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v2
-
-    const-string v3, "airplane_mode_on"
-
-    invoke-static {v2, v3, v1}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v2
-
-    if-ne v2, v0, :cond_0
-
-    :goto_0
-    return v0
-
-    :cond_0
-    move v0, v1
-
-    goto :goto_0
 .end method
 
 .method private isBondingFeasible(Ljava/lang/String;)Z
@@ -7143,7 +7098,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-direct {p0}, Landroid/server/BluetoothService;->isAirplaneModeOn()Z
+    invoke-virtual {p0}, Landroid/server/BluetoothService;->isAirplaneModeOn()Z
 
     move-result v1
 
@@ -9469,7 +9424,7 @@
     throw v0
 .end method
 
-.method handlePanDeviceStateChange(Landroid/bluetooth/BluetoothDevice;II)V
+.method declared-synchronized handlePanDeviceStateChange(Landroid/bluetooth/BluetoothDevice;II)V
     .locals 3
     .parameter "device"
     .parameter "state"
@@ -9477,12 +9432,17 @@
 
     .prologue
     .line 2117
+    monitor-enter p0
+
+    :try_start_0
     iget-object v1, p0, Landroid/server/BluetoothService;->mBluetoothPanProfileHandler:Landroid/server/BluetoothPanProfileHandler;
 
     monitor-enter v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     .line 2118
-    :try_start_0
+    :try_start_1
     iget-object v0, p0, Landroid/server/BluetoothService;->mBluetoothPanProfileHandler:Landroid/server/BluetoothPanProfileHandler;
 
     const/4 v2, 0x0
@@ -9491,22 +9451,38 @@
 
     .line 2119
     monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 2120
+    monitor-exit p0
+
     return-void
 
     .line 2119
     :catchall_0
     move-exception v0
 
+    :try_start_2
     monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    :try_start_3
+    throw v0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    .line 2117
+    :catchall_1
+    move-exception v0
+
+    monitor-exit p0
 
     throw v0
 .end method
 
-.method handlePanDeviceStateChange(Landroid/bluetooth/BluetoothDevice;Ljava/lang/String;II)V
+.method declared-synchronized handlePanDeviceStateChange(Landroid/bluetooth/BluetoothDevice;Ljava/lang/String;II)V
     .locals 2
     .parameter "device"
     .parameter "iface"
@@ -9515,29 +9491,50 @@
 
     .prologue
     .line 2110
+    monitor-enter p0
+
+    :try_start_0
     iget-object v1, p0, Landroid/server/BluetoothService;->mBluetoothPanProfileHandler:Landroid/server/BluetoothPanProfileHandler;
 
     monitor-enter v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     .line 2111
-    :try_start_0
+    :try_start_1
     iget-object v0, p0, Landroid/server/BluetoothService;->mBluetoothPanProfileHandler:Landroid/server/BluetoothPanProfileHandler;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Landroid/server/BluetoothPanProfileHandler;->handlePanDeviceStateChange(Landroid/bluetooth/BluetoothDevice;Ljava/lang/String;II)V
 
     .line 2112
     monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 2113
+    monitor-exit p0
+
     return-void
 
     .line 2112
     :catchall_0
     move-exception v0
 
+    :try_start_2
     monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    :try_start_3
+    throw v0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    .line 2110
+    :catchall_1
+    move-exception v0
+
+    monitor-exit p0
 
     throw v0
 .end method
@@ -9708,6 +9705,38 @@
 
     .line 630
     return-void
+.end method
+
+.method final isAirplaneModeOn()Z
+    .locals 4
+
+    .prologue
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    .line 1726
+    iget-object v2, p0, Landroid/server/BluetoothService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const-string v3, "airplane_mode_on"
+
+    invoke-static {v2, v3, v1}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v2
+
+    if-ne v2, v0, :cond_0
+
+    :goto_0
+    return v0
+
+    :cond_0
+    move v0, v1
+
+    goto :goto_0
 .end method
 
 .method isApplicationStateChangeTrackerEmpty()Z

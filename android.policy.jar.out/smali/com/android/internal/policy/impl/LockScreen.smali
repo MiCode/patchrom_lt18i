@@ -155,7 +155,7 @@
     if-eq v2, v3, :cond_0
 
     .line 451
-    const v2, 0x109005a
+    const v2, 0x109005c
 
     const/4 v3, 0x1
 
@@ -237,7 +237,7 @@
     iput-boolean v2, v0, Lcom/android/internal/policy/impl/LockScreen;->mSilentMode:Z
 
     .line 466
-    const v2, 0x10202bb
+    const v2, 0x10202c6
 
     move-object/from16 v0, p0
 
@@ -274,7 +274,7 @@
     invoke-virtual {v13, v2, v3}, Lcom/android/internal/widget/SlidingTabSemc;->setHoldAfterTrigger(ZZ)V
 
     .line 470
-    const v2, 0x1040330
+    const v2, 0x1040331
 
     invoke-virtual {v13, v2}, Lcom/android/internal/widget/SlidingTabSemc;->setLeftHintText(I)V
 
@@ -309,7 +309,7 @@
 
     .line 453
     :cond_0
-    const v2, 0x109005b
+    const v2, 0x109005d
 
     const/4 v3, 0x1
 
@@ -345,7 +345,7 @@
     invoke-virtual {v14, v2, v3}, Lcom/android/internal/widget/SlidingTab;->setHoldAfterTrigger(ZZ)V
 
     .line 478
-    const v2, 0x1040330
+    const v2, 0x1040331
 
     invoke-virtual {v14, v2}, Lcom/android/internal/widget/SlidingTab;->setLeftHintText(I)V
 

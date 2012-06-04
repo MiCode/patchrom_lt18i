@@ -166,7 +166,7 @@
     if-eqz v0, :cond_0
 
     .line 337
-    const v1, 0x10807e9
+    const v1, 0x10807ea
 
     invoke-virtual {v0, v1}, Landroid/app/NotificationManager;->cancel(I)V
 
@@ -203,11 +203,11 @@
     .parameter "icon"
 
     .prologue
-    const v10, 0x10807e9
+    const v10, 0x10807ea
 
-    const/4 v9, 0x0
+    const/4 v9, 0x1
 
-    const/4 v8, 0x1
+    const/4 v8, 0x0
 
     .line 309
     iget-object v4, p0, Lcom/android/server/connectivity/Vpn;->mContext:Landroid/content/Context;
@@ -229,7 +229,7 @@
 
     iget-object v4, p0, Lcom/android/server/connectivity/Vpn;->mContext:Landroid/content/Context;
 
-    const v5, 0x104046a
+    const v5, 0x104046b
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -244,7 +244,7 @@
 
     iget-object v4, p0, Lcom/android/server/connectivity/Vpn;->mContext:Landroid/content/Context;
 
-    const v5, 0x104046c
+    const v5, 0x104046d
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -292,13 +292,11 @@
 
     move-result-object v4
 
-    const/4 v5, -0x1
-
-    invoke-virtual {v4, v5}, Landroid/app/Notification$Builder;->setDefaults(I)Landroid/app/Notification$Builder;
+    invoke-virtual {v4, v8}, Landroid/app/Notification$Builder;->setDefaults(I)Landroid/app/Notification$Builder;
 
     move-result-object v4
 
-    invoke-virtual {v4, v8}, Landroid/app/Notification$Builder;->setOngoing(Z)Landroid/app/Notification$Builder;
+    invoke-virtual {v4, v9}, Landroid/app/Notification$Builder;->setOngoing(Z)Landroid/app/Notification$Builder;
 
     move-result-object v4
 
@@ -321,11 +319,11 @@
     :cond_1
     iget-object v4, p0, Lcom/android/server/connectivity/Vpn;->mContext:Landroid/content/Context;
 
-    const v5, 0x104046b
+    const v5, 0x104046c
 
-    new-array v6, v8, [Ljava/lang/Object;
+    new-array v6, v9, [Ljava/lang/Object;
 
-    aput-object p2, v6, v9
+    aput-object p2, v6, v8
 
     invoke-virtual {v4, v5, v6}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -338,13 +336,13 @@
     :cond_2
     iget-object v4, p0, Lcom/android/server/connectivity/Vpn;->mContext:Landroid/content/Context;
 
-    const v5, 0x104046d
+    const v5, 0x104046e
 
-    new-array v6, v8, [Ljava/lang/Object;
+    new-array v6, v9, [Ljava/lang/Object;
 
     iget-object v7, p1, Lcom/android/internal/net/VpnConfig;->session:Ljava/lang/String;
 
-    aput-object v7, v6, v9
+    aput-object v7, v6, v8
 
     invoke-virtual {v4, v5, v6}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

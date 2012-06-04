@@ -3,12 +3,12 @@
 .source "ComprehensiveCountryDetector.java"
 
 # interfaces
-.implements Landroid/location/CountryListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/location/ComprehensiveCountryDetector;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/server/location/ComprehensiveCountryDetector;->runAfterDetectionAsync(Landroid/location/Country;Landroid/location/Country;ZZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,15 +20,35 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/server/location/ComprehensiveCountryDetector;
 
+.field final synthetic val$country:Landroid/location/Country;
+
+.field final synthetic val$detectedCountry:Landroid/location/Country;
+
+.field final synthetic val$notifyChange:Z
+
+.field final synthetic val$startLocationBasedDetection:Z
+
 
 # direct methods
-.method constructor <init>(Lcom/android/server/location/ComprehensiveCountryDetector;)V
+.method constructor <init>(Lcom/android/server/location/ComprehensiveCountryDetector;Landroid/location/Country;Landroid/location/Country;ZZ)V
     .locals 0
+    .parameter
+    .parameter
+    .parameter
+    .parameter
     .parameter
 
     .prologue
-    .line 93
+    .line 284
     iput-object p1, p0, Lcom/android/server/location/ComprehensiveCountryDetector$2;->this$0:Lcom/android/server/location/ComprehensiveCountryDetector;
+
+    iput-object p2, p0, Lcom/android/server/location/ComprehensiveCountryDetector$2;->val$country:Landroid/location/Country;
+
+    iput-object p3, p0, Lcom/android/server/location/ComprehensiveCountryDetector$2;->val$detectedCountry:Landroid/location/Country;
+
+    iput-boolean p4, p0, Lcom/android/server/location/ComprehensiveCountryDetector$2;->val$notifyChange:Z
+
+    iput-boolean p5, p0, Lcom/android/server/location/ComprehensiveCountryDetector$2;->val$startLocationBasedDetection:Z
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,33 +57,23 @@
 
 
 # virtual methods
-.method public onCountryDetected(Landroid/location/Country;)V
-    .locals 3
-    .parameter "country"
+.method public run()V
+    .locals 5
 
     .prologue
-    .line 97
+    .line 287
     iget-object v0, p0, Lcom/android/server/location/ComprehensiveCountryDetector$2;->this$0:Lcom/android/server/location/ComprehensiveCountryDetector;
 
-    #setter for: Lcom/android/server/location/ComprehensiveCountryDetector;->mCountryFromLocation:Landroid/location/Country;
-    invoke-static {v0, p1}, Lcom/android/server/location/ComprehensiveCountryDetector;->access$202(Lcom/android/server/location/ComprehensiveCountryDetector;Landroid/location/Country;)Landroid/location/Country;
+    iget-object v1, p0, Lcom/android/server/location/ComprehensiveCountryDetector$2;->val$country:Landroid/location/Country;
 
-    .line 99
-    iget-object v0, p0, Lcom/android/server/location/ComprehensiveCountryDetector$2;->this$0:Lcom/android/server/location/ComprehensiveCountryDetector;
+    iget-object v2, p0, Lcom/android/server/location/ComprehensiveCountryDetector$2;->val$detectedCountry:Landroid/location/Country;
 
-    const/4 v1, 0x1
+    iget-boolean v3, p0, Lcom/android/server/location/ComprehensiveCountryDetector$2;->val$notifyChange:Z
 
-    const/4 v2, 0x0
+    iget-boolean v4, p0, Lcom/android/server/location/ComprehensiveCountryDetector$2;->val$startLocationBasedDetection:Z
 
-    #calls: Lcom/android/server/location/ComprehensiveCountryDetector;->detectCountry(ZZ)Landroid/location/Country;
-    invoke-static {v0, v1, v2}, Lcom/android/server/location/ComprehensiveCountryDetector;->access$100(Lcom/android/server/location/ComprehensiveCountryDetector;ZZ)Landroid/location/Country;
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/server/location/ComprehensiveCountryDetector;->runAfterDetection(Landroid/location/Country;Landroid/location/Country;ZZ)V
 
-    .line 100
-    iget-object v0, p0, Lcom/android/server/location/ComprehensiveCountryDetector$2;->this$0:Lcom/android/server/location/ComprehensiveCountryDetector;
-
-    #calls: Lcom/android/server/location/ComprehensiveCountryDetector;->stopLocationBasedDetector()V
-    invoke-static {v0}, Lcom/android/server/location/ComprehensiveCountryDetector;->access$300(Lcom/android/server/location/ComprehensiveCountryDetector;)V
-
-    .line 101
+    .line 289
     return-void
 .end method

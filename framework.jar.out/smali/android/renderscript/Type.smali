@@ -35,10 +35,10 @@
     .parameter "rs"
 
     .prologue
-    .line 170
+    .line 175
     invoke-direct {p0, p1, p2}, Landroid/renderscript/BaseObj;-><init>(ILandroid/renderscript/RenderScript;)V
 
-    .line 171
+    .line 176
     return-void
 .end method
 
@@ -50,34 +50,34 @@
     .prologue
     const/4 v7, 0x1
 
-    .line 132
+    .line 137
     invoke-virtual {p0}, Landroid/renderscript/Type;->hasMipmaps()Z
 
     move-result v2
 
-    .line 133
+    .line 138
     .local v2, hasLod:Z
     invoke-virtual {p0}, Landroid/renderscript/Type;->getX()I
 
     move-result v3
 
-    .line 134
+    .line 139
     .local v3, x:I
     invoke-virtual {p0}, Landroid/renderscript/Type;->getY()I
 
     move-result v4
 
-    .line 135
+    .line 140
     .local v4, y:I
     invoke-virtual {p0}, Landroid/renderscript/Type;->getZ()I
 
     move-result v5
 
-    .line 136
+    .line 141
     .local v5, z:I
     const/4 v1, 0x1
 
-    .line 137
+    .line 142
     .local v1, faces:I
     invoke-virtual {p0}, Landroid/renderscript/Type;->hasFaces()Z
 
@@ -85,31 +85,31 @@
 
     if-eqz v6, :cond_0
 
-    .line 138
+    .line 143
     const/4 v1, 0x6
 
-    .line 140
+    .line 145
     :cond_0
     if-nez v3, :cond_1
 
-    .line 141
+    .line 146
     const/4 v3, 0x1
 
-    .line 143
+    .line 148
     :cond_1
     if-nez v4, :cond_2
 
-    .line 144
+    .line 149
     const/4 v4, 0x1
 
-    .line 146
+    .line 151
     :cond_2
     if-nez v5, :cond_3
 
-    .line 147
+    .line 152
     const/4 v5, 0x1
 
-    .line 150
+    .line 155
     :cond_3
     mul-int v6, v3, v4
 
@@ -117,7 +117,7 @@
 
     mul-int v0, v6, v1
 
-    .line 152
+    .line 157
     .local v0, count:I
     :goto_0
     if-eqz v2, :cond_8
@@ -128,28 +128,28 @@
 
     if-le v5, v7, :cond_8
 
-    .line 153
+    .line 158
     :cond_4
     if-le v3, v7, :cond_5
 
-    .line 154
+    .line 159
     shr-int/lit8 v3, v3, 0x1
 
-    .line 156
+    .line 161
     :cond_5
     if-le v4, v7, :cond_6
 
-    .line 157
+    .line 162
     shr-int/lit8 v4, v4, 0x1
 
-    .line 159
+    .line 164
     :cond_6
     if-le v5, v7, :cond_7
 
-    .line 160
+    .line 165
     shr-int/lit8 v5, v5, 0x1
 
-    .line 163
+    .line 168
     :cond_7
     mul-int v6, v3, v4
 
@@ -161,11 +161,11 @@
 
     goto :goto_0
 
-    .line 165
+    .line 170
     :cond_8
     iput v0, p0, Landroid/renderscript/Type;->mElementCount:I
 
-    .line 166
+    .line 171
     return-void
 .end method
 
@@ -173,7 +173,7 @@
     .locals 1
 
     .prologue
-    .line 128
+    .line 133
     iget v0, p0, Landroid/renderscript/Type;->mElementCount:I
 
     return v0
@@ -183,7 +183,7 @@
     .locals 1
 
     .prologue
-    .line 74
+    .line 79
     iget-object v0, p0, Landroid/renderscript/Type;->mElement:Landroid/renderscript/Element;
 
     return-object v0
@@ -193,7 +193,7 @@
     .locals 1
 
     .prologue
-    .line 83
+    .line 88
     iget v0, p0, Landroid/renderscript/Type;->mDimX:I
 
     return v0
@@ -203,7 +203,7 @@
     .locals 1
 
     .prologue
-    .line 92
+    .line 97
     iget v0, p0, Landroid/renderscript/Type;->mDimY:I
 
     return v0
@@ -213,7 +213,7 @@
     .locals 1
 
     .prologue
-    .line 101
+    .line 106
     iget v0, p0, Landroid/renderscript/Type;->mDimZ:I
 
     return v0
@@ -223,7 +223,7 @@
     .locals 1
 
     .prologue
-    .line 119
+    .line 124
     iget-boolean v0, p0, Landroid/renderscript/Type;->mDimFaces:Z
 
     return v0
@@ -233,7 +233,7 @@
     .locals 1
 
     .prologue
-    .line 110
+    .line 115
     iget-boolean v0, p0, Landroid/renderscript/Type;->mDimMipmaps:Z
 
     return v0
@@ -247,12 +247,12 @@
 
     const/4 v3, 0x1
 
-    .line 177
+    .line 182
     const/4 v2, 0x6
 
     new-array v0, v2, [I
 
-    .line 178
+    .line 183
     .local v0, dataBuffer:[I
     iget-object v2, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -262,24 +262,24 @@
 
     invoke-virtual {v2, v5, v0}, Landroid/renderscript/RenderScript;->nTypeGetNativeData(I[I)V
 
-    .line 180
+    .line 185
     aget v2, v0, v4
 
     iput v2, p0, Landroid/renderscript/Type;->mDimX:I
 
-    .line 181
+    .line 186
     aget v2, v0, v3
 
     iput v2, p0, Landroid/renderscript/Type;->mDimY:I
 
-    .line 182
+    .line 187
     const/4 v2, 0x2
 
     aget v2, v0, v2
 
     iput v2, p0, Landroid/renderscript/Type;->mDimZ:I
 
-    .line 183
+    .line 188
     const/4 v2, 0x3
 
     aget v2, v0, v2
@@ -291,7 +291,7 @@
     :goto_0
     iput-boolean v2, p0, Landroid/renderscript/Type;->mDimMipmaps:Z
 
-    .line 184
+    .line 189
     const/4 v2, 0x4
 
     aget v2, v0, v2
@@ -301,16 +301,16 @@
     :goto_1
     iput-boolean v3, p0, Landroid/renderscript/Type;->mDimFaces:Z
 
-    .line 186
+    .line 191
     const/4 v2, 0x5
 
     aget v1, v0, v2
 
-    .line 187
+    .line 192
     .local v1, elementID:I
     if-eqz v1, :cond_0
 
-    .line 188
+    .line 193
     new-instance v2, Landroid/renderscript/Element;
 
     iget-object v3, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
@@ -319,28 +319,28 @@
 
     iput-object v2, p0, Landroid/renderscript/Type;->mElement:Landroid/renderscript/Element;
 
-    .line 189
+    .line 194
     iget-object v2, p0, Landroid/renderscript/Type;->mElement:Landroid/renderscript/Element;
 
     invoke-virtual {v2}, Landroid/renderscript/Element;->updateFromNative()V
 
-    .line 191
+    .line 196
     :cond_0
     invoke-virtual {p0}, Landroid/renderscript/Type;->calcElementCount()V
 
-    .line 192
+    .line 197
     return-void
 
     .end local v1           #elementID:I
     :cond_1
     move v2, v4
 
-    .line 183
+    .line 188
     goto :goto_0
 
     :cond_2
     move v3, v4
 
-    .line 184
+    .line 189
     goto :goto_1
 .end method

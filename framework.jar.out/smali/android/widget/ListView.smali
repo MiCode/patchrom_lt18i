@@ -2759,7 +2759,7 @@
     .line 669
     :cond_0
     :goto_0
-    if-ge p2, v7, :cond_3
+    if-gt p2, v7, :cond_3
 
     iget v0, p0, Landroid/widget/AdapterView;->mItemCount:I
 
@@ -3324,7 +3324,7 @@
     .line 702
     :cond_0
     :goto_0
-    if-le p2, v7, :cond_3
+    if-lt p2, v7, :cond_3
 
     if-ltz p1, :cond_3
 

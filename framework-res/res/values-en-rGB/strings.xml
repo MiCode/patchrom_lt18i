@@ -269,6 +269,9 @@
     <string name="turn_off_radio">Turn off wireless</string>
     <string name="screen_lock">Screen lock</string>
     <string name="power_off">Power off</string>
+    <string name="silent_mode_silent">Ringer off</string>
+    <string name="silent_mode_vibrate">Ringer vibrate</string>
+    <string name="silent_mode_ring">Ringer on</string>
     <string name="shutdown_progress">Shutting down…</string>
     <string name="shutdown_confirm">Your phone will shut down.</string>
     <string name="shutdown_confirm_question">Would you like to shut down?</string>

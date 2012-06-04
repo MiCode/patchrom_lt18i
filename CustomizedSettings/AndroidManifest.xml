@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.REBOOT" />
     <application android:theme="@style/CustSettingsDefaultTheme" android:label="@string/app_name" android:allowClearUserData="false" android:hardwareAccelerated="false">
         <activity android:name="MasterResetActivity" android:permission="com.sonyericsson.permission.CUSTOMIZED_SETTINGS" android:exported="false" android:taskAffinity="com.sonyericsson.customizedsettings" />
-        <receiver android:name=".BootUpReceiver">
+        <receiver android:name="BootUpCompletedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />

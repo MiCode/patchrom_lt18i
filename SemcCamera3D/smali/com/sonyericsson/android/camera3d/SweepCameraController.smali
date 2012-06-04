@@ -478,9 +478,7 @@
 
     .line 258
     .local v10, rect:Landroid/graphics/Rect;
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mConvertNv12ToNv21:Z
+    iput-boolean v5, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mConvertNv12ToNv21:Z
 
     .line 260
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/SweepCameraController;->mStitchEngine:Lcom/sonyericsson/android/camera3d/StitchEngineWrapper;

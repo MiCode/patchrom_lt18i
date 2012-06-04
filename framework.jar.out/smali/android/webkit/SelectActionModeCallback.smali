@@ -175,10 +175,10 @@
     :sswitch_data_0
     .sparse-switch
         0x1020021 -> :sswitch_0
-        0x1020389 -> :sswitch_2
-        0x102038a -> :sswitch_1
-        0x102038b -> :sswitch_3
-        0x102038c -> :sswitch_4
+        0x102038b -> :sswitch_2
+        0x102038c -> :sswitch_1
+        0x102038d -> :sswitch_3
+        0x102038e -> :sswitch_4
     .end sparse-switch
 .end method
 
@@ -220,7 +220,7 @@
     .local v0, allowText:Z
     if-eqz v0, :cond_1
 
-    const v3, 0x10403bc
+    const v3, 0x10403bd
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -237,7 +237,7 @@
     if-nez v3, :cond_0
 
     .line 61
-    const v3, 0x102038b
+    const v3, 0x102038d
 
     invoke-interface {p2, v3}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 

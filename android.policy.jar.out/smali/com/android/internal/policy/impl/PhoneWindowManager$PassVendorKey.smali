@@ -30,15 +30,15 @@
     .parameter "keyEvent"
 
     .prologue
-    .line 3050
+    .line 3081
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$PassVendorKey;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3051
+    .line 3082
     iput-object p2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$PassVendorKey;->mKeyEvent:Landroid/view/KeyEvent;
 
-    .line 3052
+    .line 3083
     return-void
 .end method
 
@@ -50,26 +50,26 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 3055
+    .line 3086
     invoke-static {}, Landroid/app/ActivityManagerNative;->isSystemReady()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3056
+    .line 3087
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$PassVendorKey;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     invoke-virtual {v0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->sendCloseSystemWindows()V
 
-    .line 3057
+    .line 3088
     new-instance v1, Landroid/content/Intent;
 
     const-string v0, "com.sonyericsson.intent.action.VENDOR_BUTTON"
 
     invoke-direct {v1, v0, v6}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 3058
+    .line 3089
     .local v1, intent:Landroid/content/Intent;
     const-string v0, "android.intent.extra.KEY_EVENT"
 
@@ -77,7 +77,7 @@
 
     invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 3059
+    .line 3090
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$PassVendorKey;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     iget-object v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
@@ -98,7 +98,7 @@
 
     invoke-virtual/range {v0 .. v7}, Landroid/content/Context;->sendOrderedBroadcast(Landroid/content/Intent;Ljava/lang/String;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
 
-    .line 3062
+    .line 3093
     .end local v1           #intent:Landroid/content/Intent;
     :cond_0
     return-void

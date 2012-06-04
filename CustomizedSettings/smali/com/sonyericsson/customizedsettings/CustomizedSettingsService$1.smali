@@ -23,7 +23,7 @@
     .locals 3
 
     .prologue
-    .line 354
+    .line 355
     invoke-static {}, Lcom/sonyericsson/customizedsettings/CustomizedSettingsService$Setting_Provider;->values()[Lcom/sonyericsson/customizedsettings/CustomizedSettingsService$Setting_Provider;
 
     move-result-object v0

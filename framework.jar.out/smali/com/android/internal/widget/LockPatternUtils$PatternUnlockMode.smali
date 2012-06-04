@@ -44,7 +44,7 @@
 
     const/4 v2, 0x0
 
-    .line 162
+    .line 164
     new-instance v0, Lcom/android/internal/widget/LockPatternUtils$PatternUnlockMode;
 
     const-string v1, "None"
@@ -53,7 +53,7 @@
 
     sput-object v0, Lcom/android/internal/widget/LockPatternUtils$PatternUnlockMode;->None:Lcom/android/internal/widget/LockPatternUtils$PatternUnlockMode;
 
-    .line 163
+    .line 165
     new-instance v0, Lcom/android/internal/widget/LockPatternUtils$PatternUnlockMode;
 
     const-string v1, "Question"
@@ -62,7 +62,7 @@
 
     sput-object v0, Lcom/android/internal/widget/LockPatternUtils$PatternUnlockMode;->Question:Lcom/android/internal/widget/LockPatternUtils$PatternUnlockMode;
 
-    .line 164
+    .line 166
     new-instance v0, Lcom/android/internal/widget/LockPatternUtils$PatternUnlockMode;
 
     const-string v1, "Account"
@@ -71,7 +71,7 @@
 
     sput-object v0, Lcom/android/internal/widget/LockPatternUtils$PatternUnlockMode;->Account:Lcom/android/internal/widget/LockPatternUtils$PatternUnlockMode;
 
-    .line 161
+    .line 163
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/android/internal/widget/LockPatternUtils$PatternUnlockMode;
@@ -104,7 +104,7 @@
     .end annotation
 
     .prologue
-    .line 161
+    .line 163
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -115,7 +115,7 @@
     .parameter "name"
 
     .prologue
-    .line 161
+    .line 163
     const-class v0, Lcom/android/internal/widget/LockPatternUtils$PatternUnlockMode;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -131,7 +131,7 @@
     .locals 1
 
     .prologue
-    .line 161
+    .line 163
     sget-object v0, Lcom/android/internal/widget/LockPatternUtils$PatternUnlockMode;->$VALUES:[Lcom/android/internal/widget/LockPatternUtils$PatternUnlockMode;
 
     invoke-virtual {v0}, [Lcom/android/internal/widget/LockPatternUtils$PatternUnlockMode;->clone()Ljava/lang/Object;

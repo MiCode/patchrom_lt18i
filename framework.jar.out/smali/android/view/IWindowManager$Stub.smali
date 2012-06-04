@@ -110,6 +110,8 @@
 
 .field static final TRANSACTION_isViewServerRunning:I = 0x3
 
+.field static final TRANSACTION_lockNow:I = 0x51
+
 .field static final TRANSACTION_monitorInput:I = 0x3f
 
 .field static final TRANSACTION_moveAppToken:I = 0x24
@@ -276,7 +278,7 @@
     .line 43
     sparse-switch p1, :sswitch_data_0
 
-    .line 932
+    .line 939
     invoke-super/range {p0 .. p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
     move-result v1
@@ -3577,6 +3579,26 @@
 
     goto :goto_2a
 
+    .line 933
+    .end local v13           #_result:Z
+    :sswitch_51
+    const-string v1, "android.view.IWindowManager"
+
+    move-object/from16 v0, p2
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 934
+    invoke-virtual {p0}, Landroid/view/IWindowManager$Stub;->lockNow()V
+
+    .line 935
+    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
+
+    .line 936
+    const/4 v1, 0x1
+
+    goto/16 :goto_0
+
     .line 43
     :sswitch_data_0
     .sparse-switch
@@ -3660,6 +3682,7 @@
         0x4e -> :sswitch_4e
         0x4f -> :sswitch_4f
         0x50 -> :sswitch_50
+        0x51 -> :sswitch_51
         0x5f4e5446 -> :sswitch_0
     .end sparse-switch
 .end method

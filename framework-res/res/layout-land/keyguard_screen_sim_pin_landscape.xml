@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#70000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/topDisplayGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="?textAppearanceMedium" android:gravity="center" android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/keyguard_password_enter_pin_code" android:singleLine="true" />
+        <TextView android:textAppearance="?textAppearanceMedium" android:ellipsize="marquee" android:gravity="center" android:id="@id/carrier" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <RelativeLayout android:background="@drawable/semc_btn_dial_textfield_large" android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="7.0dip" android:directionality="none">
+            <TextView android:textSize="28.0sp" android:textColor="#ffffffff" android:id="@id/pinDisplay" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerInParent="true" android:inputType="textPassword" />
+            <ImageButton android:id="@id/backspace" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:src="@drawable/semc_btn_dial_textfield_delete_large" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/bottomPart" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/emergencyCallButton" android:layout_width="wrap_content" android:layout_height="55.0dip" android:minWidth="148.0dip" android:text="@string/lockscreen_strings_backup_question_emergency_button_txt" style="@style/SEMCWidget.Button" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/okCancelButtons" android:layout_width="310.0dip" android:layout_height="wrap_content" android:layout_marginTop="55.0dip" android:layout_below="@id/topDisplayGroup" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/ok" android:layout_width="148.0dip" android:layout_height="55.0dip" android:text="@string/ok" style="@style/SEMCWidget.Button" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/cancel" android:layout_width="148.0dip" android:layout_height="55.0dip" android:text="@string/cancel" style="@style/SEMCWidget.Button" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

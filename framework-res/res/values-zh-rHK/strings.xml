@@ -158,6 +158,7 @@
     <string name="same_year_wday1_mdy1_wday2_mdy2">%9$s 年 %2$s %3$s 日%1$s – %7$s %8$s 日%6$s</string>
     <string name="short_format_month">%b</string>
     <string name="full_wday_month_day_no_year">MMMM d 日EEEE</string>
+    <string name="abbrev_wday_month_day_no_year">M 月 d 日 EEE</string>
     <string name="abbrev_wday_month_day_year">yyyy 年 MMM d 日EEE</string>
     <string name="mmcc_imsi_unknown_in_hlr">SIM卡未提供MM #2</string>
     <string name="mmcc_illegal_ms">SIM卡不允許MM #3</string>

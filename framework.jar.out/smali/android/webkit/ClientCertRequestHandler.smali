@@ -1,5 +1,5 @@
 .class public final Landroid/webkit/ClientCertRequestHandler;
-.super Ljava/lang/Object;
+.super Landroid/os/Handler;
 .source "ClientCertRequestHandler.java"
 
 
@@ -22,99 +22,105 @@
     .parameter "table"
 
     .prologue
-    .line 41
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
-
     .line 42
-    iput-object p1, p0, Landroid/webkit/ClientCertRequestHandler;->mBrowserFrame:Landroid/webkit/BrowserFrame;
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     .line 43
-    iput p2, p0, Landroid/webkit/ClientCertRequestHandler;->mHandle:I
+    iput-object p1, p0, Landroid/webkit/ClientCertRequestHandler;->mBrowserFrame:Landroid/webkit/BrowserFrame;
 
     .line 44
-    iput-object p3, p0, Landroid/webkit/ClientCertRequestHandler;->mHostAndPort:Ljava/lang/String;
+    iput p2, p0, Landroid/webkit/ClientCertRequestHandler;->mHandle:I
 
     .line 45
-    iput-object p4, p0, Landroid/webkit/ClientCertRequestHandler;->mTable:Landroid/webkit/SslClientCertLookupTable;
+    iput-object p3, p0, Landroid/webkit/ClientCertRequestHandler;->mHostAndPort:Ljava/lang/String;
 
     .line 46
+    iput-object p4, p0, Landroid/webkit/ClientCertRequestHandler;->mTable:Landroid/webkit/SslClientCertLookupTable;
+
+    .line 47
     return-void
+.end method
+
+.method static synthetic access$000(Landroid/webkit/ClientCertRequestHandler;)I
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    .line 33
+    iget v0, p0, Landroid/webkit/ClientCertRequestHandler;->mHandle:I
+
+    return v0
+.end method
+
+.method static synthetic access$100(Landroid/webkit/ClientCertRequestHandler;)Landroid/webkit/BrowserFrame;
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    .line 33
+    iget-object v0, p0, Landroid/webkit/ClientCertRequestHandler;->mBrowserFrame:Landroid/webkit/BrowserFrame;
+
+    return-object v0
 .end method
 
 
 # virtual methods
 .method public cancel()V
-    .locals 4
+    .locals 2
 
     .prologue
-    const/4 v1, 0x0
-
-    .line 75
+    .line 88
     iget-object v0, p0, Landroid/webkit/ClientCertRequestHandler;->mTable:Landroid/webkit/SslClientCertLookupTable;
 
-    iget-object v2, p0, Landroid/webkit/ClientCertRequestHandler;->mHostAndPort:Ljava/lang/String;
+    iget-object v1, p0, Landroid/webkit/ClientCertRequestHandler;->mHostAndPort:Ljava/lang/String;
 
-    invoke-virtual {v0, v2}, Landroid/webkit/SslClientCertLookupTable;->Deny(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Landroid/webkit/SslClientCertLookupTable;->Deny(Ljava/lang/String;)V
 
-    .line 76
-    iget-object v2, p0, Landroid/webkit/ClientCertRequestHandler;->mBrowserFrame:Landroid/webkit/BrowserFrame;
+    .line 89
+    new-instance v0, Landroid/webkit/ClientCertRequestHandler$4;
 
-    iget v3, p0, Landroid/webkit/ClientCertRequestHandler;->mHandle:I
+    invoke-direct {v0, p0}, Landroid/webkit/ClientCertRequestHandler$4;-><init>(Landroid/webkit/ClientCertRequestHandler;)V
 
-    move-object v0, v1
+    invoke-virtual {p0, v0}, Landroid/webkit/ClientCertRequestHandler;->post(Ljava/lang/Runnable;)Z
 
-    check-cast v0, [[B
-
-    invoke-virtual {v2, v3, v1, v0}, Landroid/webkit/BrowserFrame;->nativeSslClientCert(I[B[[B)V
-
-    .line 77
+    .line 94
     return-void
 .end method
 
 .method public ignore()V
-    .locals 4
+    .locals 1
 
     .prologue
-    const/4 v1, 0x0
+    .line 77
+    new-instance v0, Landroid/webkit/ClientCertRequestHandler$3;
 
-    .line 68
-    iget-object v2, p0, Landroid/webkit/ClientCertRequestHandler;->mBrowserFrame:Landroid/webkit/BrowserFrame;
+    invoke-direct {v0, p0}, Landroid/webkit/ClientCertRequestHandler$3;-><init>(Landroid/webkit/ClientCertRequestHandler;)V
 
-    iget v3, p0, Landroid/webkit/ClientCertRequestHandler;->mHandle:I
+    invoke-virtual {p0, v0}, Landroid/webkit/ClientCertRequestHandler;->post(Ljava/lang/Runnable;)Z
 
-    move-object v0, v1
-
-    check-cast v0, [[B
-
-    invoke-virtual {v2, v3, v1, v0}, Landroid/webkit/BrowserFrame;->nativeSslClientCert(I[B[[B)V
-
-    .line 69
+    .line 82
     return-void
 .end method
 
 .method public proceed(Ljava/security/PrivateKey;[Ljava/security/cert/X509Certificate;)V
-    .locals 7
+    .locals 5
     .parameter "privateKey"
     .parameter "chain"
 
     .prologue
-    const/4 v4, 0x0
-
-    .line 52
+    .line 53
     invoke-interface {p1}, Ljava/security/PrivateKey;->getEncoded()[B
 
     move-result-object v2
 
-    .line 55
+    .line 56
     .local v2, privateKeyBytes:[B
     :try_start_0
     invoke-static {p2}, Lorg/apache/harmony/xnet/provider/jsse/NativeCrypto;->encodeCertificates([Ljava/security/cert/Certificate;)[[B
-    :try_end_0
-    .catch Ljava/security/cert/CertificateEncodingException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v0
 
-    .line 60
+    .line 57
     .local v0, chainBytes:[[B
     iget-object v3, p0, Landroid/webkit/ClientCertRequestHandler;->mTable:Landroid/webkit/SslClientCertLookupTable;
 
@@ -122,33 +128,31 @@
 
     invoke-virtual {v3, v4, v2, v0}, Landroid/webkit/SslClientCertLookupTable;->Allow(Ljava/lang/String;[B[[B)V
 
-    .line 61
-    iget-object v3, p0, Landroid/webkit/ClientCertRequestHandler;->mBrowserFrame:Landroid/webkit/BrowserFrame;
+    .line 58
+    new-instance v3, Landroid/webkit/ClientCertRequestHandler$1;
 
-    iget v4, p0, Landroid/webkit/ClientCertRequestHandler;->mHandle:I
+    invoke-direct {v3, p0, v2, v0}, Landroid/webkit/ClientCertRequestHandler$1;-><init>(Landroid/webkit/ClientCertRequestHandler;[B[[B)V
 
-    invoke-virtual {v3, v4, v2, v0}, Landroid/webkit/BrowserFrame;->nativeSslClientCert(I[B[[B)V
+    invoke-virtual {p0, v3}, Landroid/webkit/ClientCertRequestHandler;->post(Ljava/lang/Runnable;)Z
+    :try_end_0
+    .catch Ljava/security/cert/CertificateEncodingException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 62
+    .line 71
     .end local v0           #chainBytes:[[B
     :goto_0
     return-void
 
-    .line 56
+    .line 63
     :catch_0
     move-exception v1
 
-    .line 57
+    .line 64
     .local v1, e:Ljava/security/cert/CertificateEncodingException;
-    iget-object v5, p0, Landroid/webkit/ClientCertRequestHandler;->mBrowserFrame:Landroid/webkit/BrowserFrame;
+    new-instance v3, Landroid/webkit/ClientCertRequestHandler$2;
 
-    iget v6, p0, Landroid/webkit/ClientCertRequestHandler;->mHandle:I
+    invoke-direct {v3, p0}, Landroid/webkit/ClientCertRequestHandler$2;-><init>(Landroid/webkit/ClientCertRequestHandler;)V
 
-    move-object v3, v4
-
-    check-cast v3, [[B
-
-    invoke-virtual {v5, v6, v4, v3}, Landroid/webkit/BrowserFrame;->nativeSslClientCert(I[B[[B)V
+    invoke-virtual {p0, v3}, Landroid/webkit/ClientCertRequestHandler;->post(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 .end method

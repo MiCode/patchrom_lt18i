@@ -198,7 +198,7 @@
 
     .line 200
     .local v0, inflater:Landroid/view/LayoutInflater;
-    const v4, 0x10900cb
+    const v4, 0x10900cd
 
     invoke-virtual {v0, v4, v8}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -219,7 +219,7 @@
     .line 207
     iget-object v4, p0, Landroid/view/VolumePanel;->mView:Landroid/view/View;
 
-    const v5, 0x1020379
+    const v5, 0x102037b
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -232,7 +232,7 @@
     .line 208
     iget-object v4, p0, Landroid/view/VolumePanel;->mView:Landroid/view/View;
 
-    const v5, 0x102037a
+    const v5, 0x102037c
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -245,7 +245,7 @@
     .line 209
     iget-object v4, p0, Landroid/view/VolumePanel;->mView:Landroid/view/View;
 
-    const v5, 0x102037c
+    const v5, 0x102037e
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -258,7 +258,7 @@
     .line 210
     iget-object v4, p0, Landroid/view/VolumePanel;->mView:Landroid/view/View;
 
-    const v5, 0x102037b
+    const v5, 0x102037d
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -702,7 +702,7 @@
     iput v6, v4, Landroid/view/VolumePanel$StreamControl;->streamType:I
 
     .line 293
-    const v7, 0x10900cc
+    const v7, 0x10900ce
 
     invoke-virtual {v1, v7, v9}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -720,7 +720,7 @@
     .line 295
     iget-object v7, v4, Landroid/view/VolumePanel$StreamControl;->group:Landroid/view/ViewGroup;
 
-    const v8, 0x102037d
+    const v8, 0x102037f
 
     invoke-virtual {v7, v8}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -766,7 +766,7 @@
     .line 301
     iget-object v7, v4, Landroid/view/VolumePanel$StreamControl;->group:Landroid/view/ViewGroup;
 
-    const v8, 0x10202e9
+    const v8, 0x10202f4
 
     invoke-virtual {v7, v8}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 

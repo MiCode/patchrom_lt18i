@@ -789,7 +789,7 @@ Spróbuj ponownie za %d sek."</string>
 Spróbuj ponownie za %d sek."</string>
     <string name="lockscreen_failed_attempts_almost_at_wipe" formatted="false">Próbowano %d razy nieprawidłowo odblokować telefon. Po kolejnych %d nieudanych próbach telefon zostanie zresetowany do ustawień fabrycznych, a wszystkie dane użytkownika zostaną utracone.</string>
     <string name="lockscreen_failed_attempts_now_wiping">Próbowano %d razy nieprawidłowo odblokować telefon. Telefon zostanie teraz zresetowany do ustawień fabrycznych.</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown">Spróbuj ponownie za %d sekund.</string>
+    <string name="lockscreen_too_many_failed_attempts_countdown">Spróbuj ponownie za %d sek.</string>
     <string name="lockscreen_forgot_pattern_button_text">Zapomniałeś wzoru?</string>
     <string name="lockscreen_glogin_forgot_pattern">Odblokowanie konta</string>
     <string name="lockscreen_glogin_too_many_attempts">Zbyt wiele prób narysowania wzoru!</string>
@@ -1197,12 +1197,12 @@ dotyczące konta %s"</string>
     <string name="ssl_certificate">Certyfikat zabezpieczeń</string>
     <string name="ssl_certificate_is_valid">Certyfikat jest ważny.</string>
     <string name="issued_to">Wystawiono dla:</string>
-    <string name="common_name">Nazwa pospolita (CN):</string>
+    <string name="common_name">Nazwa (CN):</string>
     <string name="org_name">Organizacja:</string>
     <string name="org_unit">Jednostka organizacyjna:</string>
     <string name="issued_by">Wystawca:</string>
     <string name="validity_period">Ważność:</string>
-    <string name="issued_on">Data wystawienia:</string>
+    <string name="issued_on">Wystawiony:</string>
     <string name="expires_on">Wygasa:</string>
     <string name="serial_number">Numer seryjny:</string>
     <string name="fingerprints">Odciski cyfrowe:</string>

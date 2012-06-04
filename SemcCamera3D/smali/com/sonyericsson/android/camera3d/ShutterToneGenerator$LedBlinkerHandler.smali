@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 92
+    .line 90
     iput-object p1, p0, Lcom/sonyericsson/android/camera3d/ShutterToneGenerator$LedBlinkerHandler;->this$0:Lcom/sonyericsson/android/camera3d/ShutterToneGenerator;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,16 +39,16 @@
     .parameter "message"
 
     .prologue
-    .line 102
+    .line 100
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 112
+    .line 110
     :goto_0
     return-void
 
-    .line 104
+    .line 102
     :pswitch_0
     iget-object v0, p0, Lcom/sonyericsson/android/camera3d/ShutterToneGenerator$LedBlinkerHandler;->this$0:Lcom/sonyericsson/android/camera3d/ShutterToneGenerator;
 
@@ -63,7 +63,7 @@
 
     goto :goto_0
 
-    .line 102
+    .line 100
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

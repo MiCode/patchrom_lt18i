@@ -85,7 +85,7 @@
 
     move-result v3
 
-    const v4, 0x10202fb
+    const v4, 0x1020306
 
     if-ne v3, v4, :cond_0
 
@@ -231,7 +231,7 @@
     invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
     .line 76
-    const v0, 0x10202f9
+    const v0, 0x1020304
 
     invoke-virtual {p0, v0}, Lcom/android/internal/widget/ActionBarContainer;->findViewById(I)Landroid/view/View;
 
@@ -545,7 +545,6 @@
     :cond_9
     if-eqz v4, :cond_a
 
-    .line 233
     iget-object v8, p0, Lcom/android/internal/widget/ActionBarContainer;->mStackedBackground:Landroid/graphics/drawable/Drawable;
 
     if-eqz v8, :cond_a
@@ -557,61 +556,7 @@
 
     if-eqz v8, :cond_5
 
-    iget-object v8, p0, Lcom/android/internal/widget/ActionBarContainer;->mBackground:Landroid/graphics/drawable/Drawable;
-
-    if-eqz v8, :cond_b
-
-    iget-object v8, p0, Lcom/android/internal/widget/ActionBarContainer;->mActionBarView:Lcom/android/internal/widget/ActionBarView;
-
-    invoke-virtual {v8}, Lcom/android/internal/widget/ActionBarView;->getHeight()I
-
-    move-result v8
-
-    if-nez v8, :cond_b
-
-    iget-object v8, p0, Lcom/android/internal/widget/ActionBarContainer;->mBackground:Landroid/graphics/drawable/Drawable;
-
-    iget-object v9, p0, Lcom/android/internal/widget/ActionBarContainer;->mTabContainer:Landroid/view/View;
-
-    invoke-virtual {v9}, Landroid/view/View;->getLeft()I
-
-    move-result v9
-
-    iget-object v10, p0, Lcom/android/internal/widget/ActionBarContainer;->mTabContainer:Landroid/view/View;
-
-    invoke-virtual {v10}, Landroid/view/View;->getTop()I
-
-    move-result v10
-
-    iget-object v11, p0, Lcom/android/internal/widget/ActionBarContainer;->mTabContainer:Landroid/view/View;
-
-    invoke-virtual {v11}, Landroid/view/View;->getRight()I
-
-    move-result v11
-
-    iget-object v12, p0, Lcom/android/internal/widget/ActionBarContainer;->mTabContainer:Landroid/view/View;
-
-    invoke-virtual {v12}, Landroid/view/View;->getBottom()I
-
-    move-result v12
-
-    invoke-virtual {v8, v9, v10, v11, v12}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    const/4 v8, 0x0
-
-    iput-boolean v8, p0, Lcom/android/internal/widget/ActionBarContainer;->mIsStacked:Z
-
-    :goto_6
-    const/4 v6, 0x1
-
-    goto :goto_4
-
-    :cond_a
-    const/4 v8, 0x0
-
-    goto :goto_5
-
-    :cond_b
+    .line 233
     iget-object v8, p0, Lcom/android/internal/widget/ActionBarContainer;->mStackedBackground:Landroid/graphics/drawable/Drawable;
 
     iget-object v9, p0, Lcom/android/internal/widget/ActionBarContainer;->mTabContainer:Landroid/view/View;
@@ -640,7 +585,16 @@
 
     invoke-virtual {v8, v9, v10, v11, v12}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    goto :goto_6
+    .line 235
+    const/4 v6, 0x1
+
+    goto :goto_4
+
+    .line 232
+    :cond_a
+    const/4 v8, 0x0
+
+    goto :goto_5
 .end method
 
 .method public onMeasure(II)V

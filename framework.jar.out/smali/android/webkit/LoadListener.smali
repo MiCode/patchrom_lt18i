@@ -883,7 +883,7 @@
 
     iget-object v8, p0, Landroid/webkit/LoadListener;->mContext:Landroid/content/Context;
 
-    const v9, 0x1040139
+    const v9, 0x104013a
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -975,7 +975,7 @@
 
     iget-object v8, p0, Landroid/webkit/LoadListener;->mContext:Landroid/content/Context;
 
-    const v9, 0x1040394
+    const v9, 0x1040395
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

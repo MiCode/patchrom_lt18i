@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 3089
+    .line 3120
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$15;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,7 +40,7 @@
     .parameter "intent"
 
     .prologue
-    .line 3092
+    .line 3123
     const-string v0, "com.sonyericsson.intent.action.stk.user_activity_request"
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
@@ -53,7 +53,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 3093
+    .line 3124
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$15;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     const/4 v1, 0x1
@@ -61,7 +61,7 @@
     #setter for: Lcom/android/internal/policy/impl/PhoneWindowManager;->mUserActivityRequest:Z
     invoke-static {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindowManager;->access$102(Lcom/android/internal/policy/impl/PhoneWindowManager;Z)Z
 
-    .line 3095
+    .line 3126
     :cond_0
     return-void
 .end method

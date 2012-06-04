@@ -30,7 +30,7 @@
     .parameter
 
     .prologue
-    .line 166
+    .line 167
     iput-object p1, p0, Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager$1;->this$1:Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager;
 
     iput-object p2, p0, Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager$1;->val$data:Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager$Data;
@@ -48,7 +48,7 @@
     .prologue
     const/4 v7, 0x0
 
-    .line 168
+    .line 169
     iget-object v5, p0, Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager$1;->this$1:Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager;
 
     #getter for: Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager;->mMessages:Ljava/util/ArrayList;
@@ -60,7 +60,7 @@
 
     invoke-virtual {v5, v6}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 169
+    .line 170
     iget-object v5, p0, Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager$1;->this$1:Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager;
 
     #getter for: Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager;->mMessages:Ljava/util/ArrayList;
@@ -74,11 +74,11 @@
 
     add-int/lit8 v0, v5, -0x1
 
-    .line 172
+    .line 173
     .local v0, last:I
     if-lez v0, :cond_0
 
-    .line 173
+    .line 174
     iget-object v5, p0, Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager$1;->this$1:Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager;
 
     #getter for: Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager;->mMessages:Ljava/util/ArrayList;
@@ -92,15 +92,15 @@
 
     check-cast v3, Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager$Data;
 
-    .line 174
+    .line 175
     .local v3, oldData:Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager$Data;
     iget-object v2, v3, Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager$Data;->text:Ljava/lang/CharSequence;
 
-    .line 175
+    .line 176
     .local v2, lastText:Ljava/lang/CharSequence;
     iget v1, v3, Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager$Data;->icon:I
 
-    .line 181
+    .line 182
     .end local v3           #oldData:Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager$Data;
     .local v1, lastIcon:I
     :goto_0
@@ -113,7 +113,7 @@
 
     invoke-virtual {v5, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 182
+    .line 183
     iget-object v5, p0, Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager$1;->this$1:Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager;
 
     #getter for: Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager;->mTextView:Landroid/widget/TextView;
@@ -123,10 +123,10 @@
 
     invoke-virtual {v5, v1, v7, v7, v7}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
-    .line 183
+    .line 184
     return-void
 
-    .line 177
+    .line 178
     .end local v1           #lastIcon:I
     .end local v2           #lastText:Ljava/lang/CharSequence;
     :cond_0
@@ -134,7 +134,7 @@
 
     invoke-direct {v4, v7}, Llibcore/util/MutableInt;-><init>(I)V
 
-    .line 178
+    .line 179
     .local v4, tmpIcon:Llibcore/util/MutableInt;
     iget-object v5, p0, Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager$1;->this$1:Lcom/android/internal/policy/impl/KeyguardStatusViewManager$TransientTextManager;
 
@@ -145,7 +145,7 @@
 
     move-result-object v2
 
-    .line 179
+    .line 180
     .restart local v2       #lastText:Ljava/lang/CharSequence;
     iget v1, v4, Llibcore/util/MutableInt;->value:I
 

@@ -36,7 +36,7 @@
 
 .field private static final GHOST_START_AFTER:I = 0x258
 
-.field private static final NONE_TOUCH_PART_VERTICALLY:D = 0.4
+.field private static final NONE_TOUCH_PART_VERTICALLY:D = 0.5
 
 .field private static final NO_POINTER_ID:I = -0x1
 
@@ -102,6 +102,8 @@
 
 .field private mIsGhostAnimating:Z
 
+.field private mLanguageIsRtl:Z
+
 .field private mLastMovePos:F
 
 .field private mLongpressGhostStarted:Z
@@ -154,112 +156,115 @@
 
     const/4 v3, 0x0
 
-    .line 167
+    .line 171
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 103
+    .line 104
     iput-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPastActionPoint:Z
 
-    .line 106
+    .line 107
     iput-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mAbortGhostAnimation:Z
 
-    .line 108
+    .line 109
     iput-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mLongpressGhostStarted:Z
 
-    .line 109
+    .line 110
     iput-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mResetAfterGhost:Z
 
-    .line 110
+    .line 111
     const-wide/16 v4, 0x0
 
     iput-wide v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPressTimestamp:J
 
-    .line 113
+    .line 114
     iput-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mIsAnimating:Z
 
-    .line 116
+    .line 117
     iput-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mIsGhostAnimating:Z
 
-    .line 122
+    .line 123
     iput-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerFlickerDone:Z
 
-    .line 125
+    .line 126
     iput-boolean v2, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
-    .line 128
+    .line 129
+    iput-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mLanguageIsRtl:Z
+
+    .line 132
     const/high16 v1, -0x4080
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mLastMovePos:F
 
-    .line 131
+    .line 135
     const/16 v1, 0xa
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mNoneTouchPart:I
 
-    .line 135
+    .line 139
     const/4 v1, -0x1
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mActivePointerId:I
 
-    .line 137
+    .line 141
     const v1, 0x108061f
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableFirstDisabledId:I
 
-    .line 138
+    .line 142
     const v1, 0x1080620
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableFirstExpandedId:I
 
-    .line 139
+    .line 143
     const v1, 0x108061e
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableFirstGotoId:I
 
-    .line 140
+    .line 144
     const v1, 0x108061d
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableFirstGhostId:I
 
-    .line 142
+    .line 146
     const v1, 0x1080627
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableSecondDisabledId:I
 
-    .line 143
+    .line 147
     const v1, 0x1080628
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableSecondExpandedId:I
 
-    .line 144
+    .line 148
     const v1, 0x1080626
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableSecondGotoId:I
 
-    .line 145
+    .line 149
     const v1, 0x1080625
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableSecondGhostId:I
 
-    .line 147
-    const v1, 0x1080685
+    .line 151
+    const v1, 0x1080686
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSlider1Id:I
 
-    .line 148
-    const v1, 0x1080687
+    .line 152
+    const v1, 0x1080688
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSlider2Id:I
 
-    .line 149
-    const v1, 0x1080686
+    .line 153
+    const v1, 0x1080687
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSlider3Id:I
 
-    .line 152
+    .line 156
     iput-byte v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
-    .line 170
+    .line 174
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getTag()Ljava/lang/Object;
 
     move-result-object v1
@@ -272,46 +277,59 @@
 
     if-eqz v1, :cond_0
 
-    .line 171
+    .line 175
     iput-boolean v2, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
-    .line 177
+    .line 181
     :goto_0
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const/high16 v4, 0x111
+
+    invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getBoolean(I)Z
+
+    move-result v1
+
+    iput-boolean v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mLanguageIsRtl:Z
+
+    .line 183
     new-instance v1, Landroid/widget/ImageView;
 
     invoke-direct {v1, p1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
     iput-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mBackground:Landroid/widget/ImageView;
 
-    .line 178
+    .line 184
     new-instance v1, Landroid/widget/ImageView;
 
     invoke-direct {v1, p1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
     iput-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
-    .line 179
+    .line 185
     new-instance v1, Landroid/widget/ImageView;
 
     invoke-direct {v1, p1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
     iput-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledFirstButton:Landroid/widget/ImageView;
 
-    .line 180
+    .line 186
     new-instance v1, Landroid/widget/ImageView;
 
     invoke-direct {v1, p1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
     iput-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledSecondButton:Landroid/widget/ImageView;
 
-    .line 181
+    .line 187
     new-instance v1, Landroid/widget/ImageView;
 
     invoke-direct {v1, p1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
     iput-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
-    .line 182
+    .line 188
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -329,7 +347,7 @@
     :goto_1
     sput-boolean v1, Lcom/android/internal/widget/SlidingTabSemc;->mHapticsEnabled:Z
 
-    .line 185
+    .line 191
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mBackground:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -346,7 +364,7 @@
 
     invoke-direct {p0, v1, v4, v2, v5}, Lcom/android/internal/widget/SlidingTabSemc;->initiateImageView(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;ZI)V
 
-    .line 186
+    .line 192
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -363,7 +381,7 @@
 
     invoke-direct {p0, v1, v4, v3, v5}, Lcom/android/internal/widget/SlidingTabSemc;->initiateImageView(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;ZI)V
 
-    .line 189
+    .line 195
     const-string/jumbo v1, "window"
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -376,13 +394,13 @@
 
     move-result-object v0
 
-    .line 192
+    .line 198
     .local v0, display:Landroid/view/Display;
     iget-boolean v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v1, :cond_3
 
-    .line 193
+    .line 199
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -399,14 +417,14 @@
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderHeight:I
 
-    .line 194
+    .line 200
     invoke-virtual {v0}, Landroid/view/Display;->getWidth()I
 
     move-result v1
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderWidth:I
 
-    .line 195
+    .line 201
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledFirstButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -421,7 +439,7 @@
 
     invoke-direct {p0, v1, v4, v2, v6}, Lcom/android/internal/widget/SlidingTabSemc;->initiateImageView(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;ZI)V
 
-    .line 197
+    .line 203
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledSecondButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -436,7 +454,7 @@
 
     invoke-direct {p0, v1, v4, v2, v7}, Lcom/android/internal/widget/SlidingTabSemc;->initiateImageView(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;ZI)V
 
-    .line 208
+    .line 214
     :goto_2
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
@@ -454,10 +472,10 @@
 
     invoke-direct {p0, v1, v2, v3, v4}, Lcom/android/internal/widget/SlidingTabSemc;->initiateImageView(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;ZI)V
 
-    .line 210
+    .line 216
     return-void
 
-    .line 173
+    .line 177
     .end local v0           #display:Landroid/view/Display;
     :cond_0
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -487,10 +505,10 @@
     :cond_2
     move v1, v3
 
-    .line 182
+    .line 188
     goto/16 :goto_1
 
-    .line 200
+    .line 206
     .restart local v0       #display:Landroid/view/Display;
     :cond_3
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -509,14 +527,14 @@
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderWidth:I
 
-    .line 201
+    .line 207
     invoke-virtual {v0}, Landroid/view/Display;->getHeight()I
 
     move-result v1
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderHeight:I
 
-    .line 202
+    .line 208
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledFirstButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -531,7 +549,7 @@
 
     invoke-direct {p0, v1, v4, v2, v6}, Lcom/android/internal/widget/SlidingTabSemc;->initiateImageView(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;ZI)V
 
-    .line 204
+    .line 210
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledSecondButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -554,7 +572,7 @@
     .parameter "x0"
 
     .prologue
-    .line 44
+    .line 45
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
     return-object v0
@@ -565,7 +583,7 @@
     .parameter "x0"
 
     .prologue
-    .line 44
+    .line 45
     iget-boolean v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mResetAfterGhost:Z
 
     return v0
@@ -577,7 +595,7 @@
     .parameter "x1"
 
     .prologue
-    .line 44
+    .line 45
     invoke-direct {p0, p1}, Lcom/android/internal/widget/SlidingTabSemc;->resetSlider(Z)V
 
     return-void
@@ -589,7 +607,7 @@
     .parameter "x1"
 
     .prologue
-    .line 44
+    .line 45
     iput-boolean p1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mLongpressGhostStarted:Z
 
     return p1
@@ -600,7 +618,7 @@
     .parameter "x0"
 
     .prologue
-    .line 44
+    .line 45
     iget-byte v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
     return v0
@@ -613,7 +631,7 @@
     .parameter "x2"
 
     .prologue
-    .line 44
+    .line 45
     invoke-direct {p0, p1, p2}, Lcom/android/internal/widget/SlidingTabSemc;->animateGhostMore(II)V
 
     return-void
@@ -624,7 +642,7 @@
     .parameter "x0"
 
     .prologue
-    .line 44
+    .line 45
     iget-boolean v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mAbortGhostAnimation:Z
 
     return v0
@@ -636,7 +654,7 @@
     .parameter "x1"
 
     .prologue
-    .line 44
+    .line 45
     iput-boolean p1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mIsGhostAnimating:Z
 
     return p1
@@ -647,7 +665,7 @@
     .parameter "x0"
 
     .prologue
-    .line 44
+    .line 45
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     return-object v0
@@ -662,7 +680,7 @@
 
     const/4 v4, 0x0
 
-    .line 535
+    .line 548
     new-instance v0, Landroid/view/animation/AlphaAnimation;
 
     const/4 v1, 0x0
@@ -671,25 +689,25 @@
 
     invoke-direct {v0, v1, v2}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
 
-    .line 536
+    .line 549
     .local v0, goneToDispAnim:Landroid/view/animation/AlphaAnimation;
     const-wide/16 v1, 0x190
 
     invoke-virtual {v0, v1, v2}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
 
-    .line 537
+    .line 550
     new-instance v1, Lcom/android/internal/widget/SlidingTabSemc$1;
 
     invoke-direct {v1, p0}, Lcom/android/internal/widget/SlidingTabSemc$1;-><init>(Lcom/android/internal/widget/SlidingTabSemc;)V
 
     invoke-virtual {v0, v1}, Landroid/view/animation/AlphaAnimation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
-    .line 547
+    .line 560
     iget-boolean v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v1, :cond_1
 
-    .line 548
+    .line 561
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledFirstButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -704,7 +722,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 550
+    .line 563
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledSecondButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -719,7 +737,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 559
+    .line 572
     :goto_0
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mBackground:Landroid/widget/ImageView;
 
@@ -735,42 +753,42 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 560
+    .line 573
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v5}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 561
+    .line 574
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledFirstButton:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 562
+    .line 575
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledSecondButton:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 564
+    .line 577
     if-eqz p1, :cond_3
 
-    .line 565
+    .line 578
     iget-byte v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
     const/4 v2, 0x1
 
     if-ne v1, v2, :cond_2
 
-    .line 566
+    .line 579
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledSecondButton:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 575
+    .line 588
     :cond_0
     :goto_1
     return-void
 
-    .line 553
+    .line 566
     :cond_1
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledFirstButton:Landroid/widget/ImageView;
 
@@ -786,7 +804,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 555
+    .line 568
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledSecondButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -803,7 +821,7 @@
 
     goto :goto_0
 
-    .line 567
+    .line 580
     :cond_2
     iget-byte v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
@@ -811,25 +829,25 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 568
+    .line 581
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledFirstButton:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
 
     goto :goto_1
 
-    .line 571
+    .line 584
     :cond_3
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v5}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 572
+    .line 585
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledFirstButton:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 573
+    .line 586
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledSecondButton:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
@@ -848,7 +866,7 @@
 
     const/4 v3, 0x0
 
-    .line 578
+    .line 591
     iget-boolean v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mAbortGhostAnimation:Z
 
     if-nez v4, :cond_1
@@ -857,24 +875,24 @@
 
     if-eqz v4, :cond_1
 
-    .line 579
+    .line 592
     const/4 v0, 0x0
 
-    .line 580
+    .line 593
     .local v0, animMove:I
     iput-boolean v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mIsGhostAnimating:Z
 
-    .line 582
+    .line 595
     iget-byte v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
     if-ne v4, v5, :cond_3
 
-    .line 583
+    .line 596
     iget-boolean v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v4, :cond_2
 
-    .line 584
+    .line 597
     iget-object v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -889,7 +907,7 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 590
+    .line 603
     :goto_0
     iget-object v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
@@ -897,28 +915,28 @@
 
     invoke-direct {p0, v4, v5}, Lcom/android/internal/widget/SlidingTabSemc;->setLayout(Landroid/widget/ImageView;I)V
 
-    .line 591
+    .line 604
     iget v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstBtnPosition:I
 
     iget v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSecondBtnPosition:I
 
     sub-int v0, v4, v5
 
-    .line 603
+    .line 616
     :cond_0
     :goto_1
     iget-object v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     invoke-virtual {v4, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 605
+    .line 618
     iget-boolean v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v4, :cond_5
 
     move v1, v0
 
-    .line 606
+    .line 619
     .local v1, fromX:I
     :goto_2
     iget-boolean v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
@@ -927,7 +945,7 @@
 
     move v2, v3
 
-    .line 607
+    .line 620
     .local v2, fromY:I
     :goto_3
     new-instance v3, Landroid/view/animation/TranslateAnimation;
@@ -940,19 +958,19 @@
 
     iput-object v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostMoveAnimationAfter:Landroid/view/animation/TranslateAnimation;
 
-    .line 608
+    .line 621
     iget-object v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostMoveAnimationAfter:Landroid/view/animation/TranslateAnimation;
 
     const-wide/16 v4, 0x352
 
     invoke-virtual {v3, v4, v5}, Landroid/view/animation/TranslateAnimation;->setDuration(J)V
 
-    .line 609
+    .line 622
     iget-object v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostMoveAnimationAfter:Landroid/view/animation/TranslateAnimation;
 
     invoke-virtual {v3, p1, p2}, Landroid/view/animation/TranslateAnimation;->setStartOffset(J)V
 
-    .line 610
+    .line 623
     iget-object v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostMoveAnimationAfter:Landroid/view/animation/TranslateAnimation;
 
     new-instance v4, Lcom/android/internal/widget/SlidingTabSemc$2;
@@ -961,21 +979,21 @@
 
     invoke-virtual {v3, v4}, Landroid/view/animation/TranslateAnimation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
-    .line 624
+    .line 637
     iget-object v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     iget-object v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostMoveAnimationAfter:Landroid/view/animation/TranslateAnimation;
 
     invoke-virtual {v3, v4}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 626
+    .line 639
     .end local v0           #animMove:I
     .end local v1           #fromX:I
     .end local v2           #fromY:I
     :cond_1
     return-void
 
-    .line 587
+    .line 600
     .restart local v0       #animMove:I
     :cond_2
     iget-object v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
@@ -994,7 +1012,7 @@
 
     goto :goto_0
 
-    .line 592
+    .line 605
     :cond_3
     iget-byte v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
@@ -1002,12 +1020,12 @@
 
     if-ne v4, v5, :cond_0
 
-    .line 593
+    .line 606
     iget-boolean v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v4, :cond_4
 
-    .line 594
+    .line 607
     iget-object v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -1022,7 +1040,7 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 600
+    .line 613
     :goto_4
     iget-object v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
@@ -1030,7 +1048,7 @@
 
     invoke-direct {p0, v4, v5}, Lcom/android/internal/widget/SlidingTabSemc;->setLayout(Landroid/widget/ImageView;I)V
 
-    .line 601
+    .line 614
     iget v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSecondBtnPosition:I
 
     iget v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstBtnPosition:I
@@ -1039,7 +1057,7 @@
 
     goto :goto_1
 
-    .line 597
+    .line 610
     :cond_4
     iget-object v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
@@ -1060,14 +1078,14 @@
     :cond_5
     move v1, v3
 
-    .line 605
+    .line 618
     goto :goto_2
 
     .restart local v1       #fromX:I
     :cond_6
     move v2, v0
 
-    .line 606
+    .line 619
     goto :goto_3
 .end method
 
@@ -1083,29 +1101,29 @@
 
     const/4 v8, 0x1
 
-    .line 630
+    .line 643
     iget-boolean v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mAbortGhostAnimation:Z
 
     if-nez v5, :cond_6
 
-    .line 631
+    .line 644
     const/4 v0, 0x0
 
-    .line 632
+    .line 645
     .local v0, animMove:I
     iput-boolean v8, p0, Lcom/android/internal/widget/SlidingTabSemc;->mIsGhostAnimating:Z
 
-    .line 634
+    .line 647
     iget-byte v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
     if-ne v5, v8, :cond_2
 
-    .line 635
+    .line 648
     iget-boolean v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v5, :cond_1
 
-    .line 636
+    .line 649
     iget-object v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -1120,7 +1138,7 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 642
+    .line 655
     :goto_0
     iget-object v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
@@ -1128,28 +1146,28 @@
 
     invoke-direct {p0, v5, v6}, Lcom/android/internal/widget/SlidingTabSemc;->setLayout(Landroid/widget/ImageView;I)V
 
-    .line 643
+    .line 656
     iget v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstBtnPosition:I
 
     iget v6, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSecondBtnPosition:I
 
     sub-int v0, v5, v6
 
-    .line 655
+    .line 668
     :cond_0
     :goto_1
     iget-object v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     invoke-virtual {v5, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 657
+    .line 670
     iget-boolean v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v5, :cond_4
 
     move v1, v0
 
-    .line 658
+    .line 671
     .local v1, fromX:I
     :goto_2
     iget-boolean v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
@@ -1158,7 +1176,7 @@
 
     move v2, v4
 
-    .line 659
+    .line 672
     .local v2, fromY:I
     :goto_3
     new-instance v3, Landroid/view/animation/TranslateAnimation;
@@ -1169,28 +1187,28 @@
 
     invoke-direct {v3, v4, v9, v5, v9}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 660
+    .line 673
     .local v3, ghostMoveAnimation:Landroid/view/animation/TranslateAnimation;
     const-wide/16 v4, 0x352
 
     invoke-virtual {v3, v4, v5}, Landroid/view/animation/TranslateAnimation;->setDuration(J)V
 
-    .line 661
+    .line 674
     new-instance v4, Lcom/android/internal/widget/SlidingTabSemc$3;
 
     invoke-direct {v4, p0, p1, p2}, Lcom/android/internal/widget/SlidingTabSemc$3;-><init>(Lcom/android/internal/widget/SlidingTabSemc;II)V
 
     invoke-virtual {v3, v4}, Landroid/view/animation/TranslateAnimation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
-    .line 676
+    .line 689
     iput-boolean v8, p0, Lcom/android/internal/widget/SlidingTabSemc;->mIsGhostAnimating:Z
 
-    .line 677
+    .line 690
     iget-object v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     invoke-virtual {v4, v3}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 681
+    .line 694
     .end local v0           #animMove:I
     .end local v1           #fromX:I
     .end local v2           #fromY:I
@@ -1198,7 +1216,7 @@
     :goto_4
     return-void
 
-    .line 639
+    .line 652
     .restart local v0       #animMove:I
     :cond_1
     iget-object v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
@@ -1217,7 +1235,7 @@
 
     goto :goto_0
 
-    .line 644
+    .line 657
     :cond_2
     iget-byte v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
@@ -1225,12 +1243,12 @@
 
     if-ne v5, v6, :cond_0
 
-    .line 645
+    .line 658
     iget-boolean v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v5, :cond_3
 
-    .line 646
+    .line 659
     iget-object v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -1245,7 +1263,7 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 652
+    .line 665
     :goto_5
     iget-object v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
@@ -1253,7 +1271,7 @@
 
     invoke-direct {p0, v5, v6}, Lcom/android/internal/widget/SlidingTabSemc;->setLayout(Landroid/widget/ImageView;I)V
 
-    .line 653
+    .line 666
     iget v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSecondBtnPosition:I
 
     iget v6, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstBtnPosition:I
@@ -1262,7 +1280,7 @@
 
     goto :goto_1
 
-    .line 649
+    .line 662
     :cond_3
     iget-object v5, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
@@ -1283,17 +1301,17 @@
     :cond_4
     move v1, v4
 
-    .line 657
+    .line 670
     goto :goto_2
 
     .restart local v1       #fromX:I
     :cond_5
     move v2, v0
 
-    .line 658
+    .line 671
     goto :goto_3
 
-    .line 679
+    .line 692
     .end local v0           #animMove:I
     .end local v1           #fromX:I
     :cond_6
@@ -1306,32 +1324,32 @@
     .locals 2
 
     .prologue
-    .line 421
+    .line 434
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPressTimestamp:J
 
-    .line 423
+    .line 436
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mAbortGhostAnimation:Z
 
-    .line 424
+    .line 437
     iget-byte v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
     invoke-direct {p0, v0}, Lcom/android/internal/widget/SlidingTabSemc;->dispatchGrabbedStateChangeEvent(I)V
 
-    .line 425
+    .line 438
     invoke-direct {p0}, Lcom/android/internal/widget/SlidingTabSemc;->updateExpandable()V
 
-    .line 426
+    .line 439
     const-wide/16 v0, 0x1e
 
     invoke-direct {p0, v0, v1}, Lcom/android/internal/widget/SlidingTabSemc;->vibrate(J)V
 
-    .line 427
+    .line 440
     return-void
 .end method
 
@@ -1342,33 +1360,33 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 886
+    .line 899
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mOnTriggerListener:Lcom/android/internal/widget/SlidingTabSemc$OnTriggerListener;
 
     if-eqz v1, :cond_0
 
-    .line 887
+    .line 900
     iget-boolean v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v1, :cond_1
 
-    .line 888
+    .line 901
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mOnTriggerListener:Lcom/android/internal/widget/SlidingTabSemc$OnTriggerListener;
 
     invoke-interface {v1, p0, p1}, Lcom/android/internal/widget/SlidingTabSemc$OnTriggerListener;->onGrabbedStateChange(Landroid/view/View;I)V
 
-    .line 898
+    .line 911
     :cond_0
     :goto_0
     return-void
 
-    .line 891
+    .line 904
     :cond_1
     if-ne p1, v0, :cond_2
 
     const/4 v0, 0x2
 
-    .line 895
+    .line 908
     .local v0, handle:I
     :cond_2
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mOnTriggerListener:Lcom/android/internal/widget/SlidingTabSemc$OnTriggerListener;
@@ -1385,33 +1403,33 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 867
+    .line 880
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mOnTriggerListener:Lcom/android/internal/widget/SlidingTabSemc$OnTriggerListener;
 
     if-eqz v1, :cond_0
 
-    .line 868
+    .line 881
     iget-boolean v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v1, :cond_1
 
-    .line 869
+    .line 882
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mOnTriggerListener:Lcom/android/internal/widget/SlidingTabSemc$OnTriggerListener;
 
     invoke-interface {v1, p0, p1}, Lcom/android/internal/widget/SlidingTabSemc$OnTriggerListener;->onTrigger(Landroid/view/View;I)V
 
-    .line 879
+    .line 892
     :cond_0
     :goto_0
     return-void
 
-    .line 872
+    .line 885
     :cond_1
     if-ne p1, v0, :cond_2
 
     const/4 v0, 0x2
 
-    .line 876
+    .line 889
     .local v0, handle:I
     :cond_2
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mOnTriggerListener:Lcom/android/internal/widget/SlidingTabSemc$OnTriggerListener;
@@ -1431,22 +1449,22 @@
     .prologue
     const/4 v1, -0x2
 
-    .line 219
+    .line 225
     invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 220
+    .line 226
     sget-object v0, Landroid/widget/ImageView$ScaleType;->FIT_XY:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 221
+    .line 227
     new-instance v0, Landroid/view/ViewGroup$LayoutParams;
 
     invoke-direct {v0, v1, v1}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 222
+    .line 228
     if-eqz p3, :cond_0
 
     const/4 v0, 0x0
@@ -1454,16 +1472,16 @@
     :goto_0
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 223
+    .line 229
     invoke-virtual {p1, p4}, Landroid/widget/ImageView;->setId(I)V
 
-    .line 225
+    .line 231
     invoke-virtual {p0, p1}, Lcom/android/internal/widget/SlidingTabSemc;->addView(Landroid/view/View;)V
 
-    .line 226
+    .line 232
     return-void
 
-    .line 222
+    .line 228
     :cond_0
     const/4 v0, 0x4
 
@@ -1476,44 +1494,44 @@
     .parameter "wantedSize"
 
     .prologue
-    .line 285
+    .line 292
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v1
 
-    .line 286
+    .line 293
     .local v1, specMode:I
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v2
 
-    .line 287
+    .line 294
     .local v2, specSize:I
     move v0, p2
 
-    .line 289
+    .line 296
     .local v0, size:I
     const/high16 v3, -0x8000
 
     if-ne v1, v3, :cond_1
 
-    .line 290
+    .line 297
     invoke-static {v2, v0}, Ljava/lang/Math;->min(II)I
 
     move-result v0
 
-    .line 295
+    .line 302
     :cond_0
     :goto_0
     return v0
 
-    .line 291
+    .line 298
     :cond_1
     const/high16 v3, 0x4000
 
     if-ne v1, v3, :cond_0
 
-    .line 292
+    .line 299
     move v0, v2
 
     goto :goto_0
@@ -1533,7 +1551,7 @@
 
     const/4 v6, 0x1
 
-    .line 684
+    .line 697
     iget-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v3, :cond_0
@@ -1553,7 +1571,7 @@
 
     if-ne v3, v4, :cond_4
 
-    .line 686
+    .line 699
     :cond_1
     iget-object v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
@@ -1569,21 +1587,21 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 693
+    .line 706
     :goto_0
     const/4 v1, 0x0
 
-    .line 694
+    .line 707
     .local v1, animToX:I
     const/4 v2, 0x0
 
-    .line 695
+    .line 708
     .local v2, animToY:I
     iget-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v3, :cond_5
 
-    .line 696
+    .line 709
     invoke-virtual {p1}, Landroid/view/View;->getLeft()I
 
     move-result v3
@@ -1598,7 +1616,7 @@
 
     sub-int v1, v3, p2
 
-    .line 701
+    .line 714
     :goto_1
     if-gt v1, v9, :cond_2
 
@@ -1608,11 +1626,11 @@
 
     if-ge v2, v8, :cond_7
 
-    .line 702
+    .line 715
     :cond_2
     iput-boolean v6, p0, Lcom/android/internal/widget/SlidingTabSemc;->mIsAnimating:Z
 
-    .line 703
+    .line 716
     iget-object v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
     iget-byte v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
@@ -1624,7 +1642,7 @@
     :goto_2
     invoke-direct {p0, v4, v3}, Lcom/android/internal/widget/SlidingTabSemc;->setLayout(Landroid/widget/ImageView;I)V
 
-    .line 706
+    .line 719
     new-instance v0, Landroid/view/animation/TranslateAnimation;
 
     int-to-float v3, v1
@@ -1633,29 +1651,29 @@
 
     invoke-direct {v0, v3, v7, v4, v7}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 707
+    .line 720
     .local v0, anim:Landroid/view/animation/TranslateAnimation;
     const-wide/16 v3, 0x12c
 
     invoke-virtual {v0, v3, v4}, Landroid/view/animation/TranslateAnimation;->setDuration(J)V
 
-    .line 708
+    .line 721
     new-instance v3, Lcom/android/internal/widget/SlidingTabSemc$4;
 
     invoke-direct {v3, p0}, Lcom/android/internal/widget/SlidingTabSemc$4;-><init>(Lcom/android/internal/widget/SlidingTabSemc;)V
 
     invoke-virtual {v0, v3}, Landroid/view/animation/TranslateAnimation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
-    .line 716
+    .line 729
     invoke-virtual {p1, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 724
+    .line 737
     .end local v0           #anim:Landroid/view/animation/TranslateAnimation;
     :cond_3
     :goto_3
     return-void
 
-    .line 689
+    .line 702
     .end local v1           #animToX:I
     .end local v2           #animToY:I
     :cond_4
@@ -1675,7 +1693,7 @@
 
     goto :goto_0
 
-    .line 698
+    .line 711
     .restart local v1       #animToX:I
     .restart local v2       #animToY:I
     :cond_5
@@ -1695,30 +1713,30 @@
 
     goto :goto_1
 
-    .line 703
+    .line 716
     :cond_6
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSecondBtnPosition:I
 
     goto :goto_2
 
-    .line 718
+    .line 731
     :cond_7
     iget-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerFlickerDone:Z
 
     if-eqz v3, :cond_8
 
-    .line 719
+    .line 732
     invoke-direct {p0, v6}, Lcom/android/internal/widget/SlidingTabSemc;->resetSlider(Z)V
 
     goto :goto_3
 
-    .line 720
+    .line 733
     :cond_8
     iget-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mLongpressGhostStarted:Z
 
     if-eqz v3, :cond_3
 
-    .line 721
+    .line 734
     iput-boolean v6, p0, Lcom/android/internal/widget/SlidingTabSemc;->mAbortGhostAnimation:Z
 
     goto :goto_3
@@ -1729,39 +1747,39 @@
     .parameter "newPos"
 
     .prologue
-    .line 456
+    .line 469
     iget-boolean v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mIsGhostAnimating:Z
 
     if-eqz v1, :cond_0
 
-    .line 457
+    .line 470
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     invoke-virtual {v1}, Landroid/widget/ImageView;->clearAnimation()V
 
-    .line 458
+    .line 471
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     const/4 v2, 0x4
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 459
+    .line 472
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostMoveAnimationAfter:Landroid/view/animation/TranslateAnimation;
 
-    .line 460
+    .line 473
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mAbortGhostAnimation:Z
 
-    .line 461
+    .line 474
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mIsGhostAnimating:Z
 
-    .line 464
+    .line 477
     :cond_0
     iget v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstBtnPosition:I
 
@@ -1771,7 +1789,7 @@
 
     move-result p1
 
-    .line 465
+    .line 478
     iget v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSecondBtnPosition:I
 
     int-to-float v1, v1
@@ -1780,12 +1798,12 @@
 
     move-result p1
 
-    .line 467
+    .line 480
     iget-boolean v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v1, :cond_1
 
-    .line 468
+    .line 481
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
     invoke-virtual {v1}, Landroid/widget/ImageView;->getLeft()I
@@ -1802,7 +1820,7 @@
 
     add-int v0, v1, v2
 
-    .line 469
+    .line 482
     .local v0, moveBy:I
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
@@ -1812,11 +1830,11 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->offsetLeftAndRight(I)V
 
-    .line 474
+    .line 487
     :goto_0
     return-void
 
-    .line 471
+    .line 484
     .end local v0           #moveBy:I
     :cond_1
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
@@ -1835,7 +1853,7 @@
 
     add-int v0, v1, v2
 
-    .line 472
+    .line 485
     .restart local v0       #moveBy:I
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
@@ -1855,53 +1873,53 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 518
+    .line 531
     invoke-direct {p0, p1}, Lcom/android/internal/widget/SlidingTabSemc;->animateExpandedToDisabled(Z)V
 
-    .line 519
+    .line 532
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->clearAnimation()V
 
-    .line 520
+    .line 533
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 522
+    .line 535
     iput-boolean v2, p0, Lcom/android/internal/widget/SlidingTabSemc;->mResetAfterGhost:Z
 
-    .line 523
+    .line 536
     iput-boolean v2, p0, Lcom/android/internal/widget/SlidingTabSemc;->mIsAnimating:Z
 
-    .line 524
+    .line 537
     iput-boolean v2, p0, Lcom/android/internal/widget/SlidingTabSemc;->mIsGhostAnimating:Z
 
-    .line 525
+    .line 538
     iput-boolean v2, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerFlickerDone:Z
 
-    .line 526
+    .line 539
     iput-boolean v2, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPastActionPoint:Z
 
-    .line 527
+    .line 540
     iput-boolean v2, p0, Lcom/android/internal/widget/SlidingTabSemc;->mLongpressGhostStarted:Z
 
-    .line 528
+    .line 541
     const/high16 v0, -0x4080
 
     iput v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mLastMovePos:F
 
-    .line 529
+    .line 542
     iput-byte v2, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
-    .line 530
+    .line 543
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mActivePointerId:I
 
-    .line 531
+    .line 544
     return-void
 .end method
 
@@ -1911,12 +1929,12 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 256
+    .line 262
     iget-boolean v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v0, :cond_0
 
-    .line 257
+    .line 263
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mBackground:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getWidth()I
@@ -1927,11 +1945,11 @@
 
     invoke-virtual {v0, v3, v3, v1, v2}, Landroid/widget/ImageView;->layout(IIII)V
 
-    .line 261
+    .line 267
     :goto_0
     return-void
 
-    .line 259
+    .line 265
     :cond_0
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mBackground:Landroid/widget/ImageView;
 
@@ -1954,12 +1972,12 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 246
+    .line 252
     iget-boolean v2, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v2, :cond_0
 
-    .line 247
+    .line 253
     invoke-virtual {p1}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
@@ -1970,7 +1988,7 @@
 
     div-int/lit8 v1, v2, 0x2
 
-    .line 248
+    .line 254
     .local v1, w:I
     sub-int v2, p2, v1
 
@@ -1986,12 +2004,12 @@
 
     invoke-virtual {p1, v2, v5, v3, v4}, Landroid/widget/ImageView;->layout(IIII)V
 
-    .line 253
+    .line 259
     .end local v1           #w:I
     :goto_0
     return-void
 
-    .line 250
+    .line 256
     :cond_0
     invoke-virtual {p1}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -2003,7 +2021,7 @@
 
     div-int/lit8 v0, v2, 0x2
 
-    .line 251
+    .line 257
     .local v0, h:I
     sub-int v2, p2, v0
 
@@ -2031,31 +2049,31 @@
 
     const/4 v1, 0x1
 
-    .line 447
+    .line 460
     iget-byte v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
     if-ne v0, v1, :cond_1
 
-    .line 448
+    .line 461
     invoke-direct {p0, v1}, Lcom/android/internal/widget/SlidingTabSemc;->dispatchTriggerEvent(I)V
 
-    .line 452
+    .line 465
     :cond_0
     :goto_0
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/android/internal/widget/SlidingTabSemc;->resetSlider(Z)V
 
-    .line 453
+    .line 466
     return-void
 
-    .line 449
+    .line 462
     :cond_1
     iget-byte v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
     if-ne v0, v2, :cond_0
 
-    .line 450
+    .line 463
     invoke-direct {p0, v2}, Lcom/android/internal/widget/SlidingTabSemc;->dispatchTriggerEvent(I)V
 
     goto :goto_0
@@ -2067,12 +2085,12 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 431
+    .line 444
     iget-byte v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
     invoke-direct {p0, v0}, Lcom/android/internal/widget/SlidingTabSemc;->dispatchGrabbedStateChangeEvent(I)V
 
-    .line 433
+    .line 446
     iget-boolean v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerFlickerDone:Z
 
     if-nez v0, :cond_0
@@ -2091,24 +2109,24 @@
 
     if-gez v0, :cond_0
 
-    .line 435
+    .line 448
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostButton:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->clearAnimation()V
 
-    .line 436
+    .line 449
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mGhostMoveAnimationAfter:Landroid/view/animation/TranslateAnimation;
 
-    .line 437
+    .line 450
     const/4 v0, 0x2
 
     iget-byte v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
     invoke-direct {p0, v0, v1}, Lcom/android/internal/widget/SlidingTabSemc;->animateGhostMore(II)V
 
-    .line 441
+    .line 454
     :goto_0
     iget-object v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
@@ -2121,16 +2139,16 @@
     :goto_1
     invoke-direct {p0, v1, v0}, Lcom/android/internal/widget/SlidingTabSemc;->moveAnimation(Landroid/view/View;I)V
 
-    .line 443
+    .line 456
     return-void
 
-    .line 439
+    .line 452
     :cond_0
     iput-boolean v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mResetAfterGhost:Z
 
     goto :goto_0
 
-    .line 441
+    .line 454
     :cond_1
     iget v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSecondBtnPosition:I
 
@@ -2141,12 +2159,12 @@
     .locals 1
 
     .prologue
-    .line 416
+    .line 429
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPastActionPoint:Z
 
-    .line 417
+    .line 430
     return-void
 .end method
 
@@ -2166,43 +2184,47 @@
 
     const/4 v2, 0x1
 
-    .line 328
+    .line 335
     iget-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v3, :cond_2
 
     move v0, p2
 
-    .line 330
+    .line 337
     .local v0, touchVal:F
     :goto_0
     if-eqz p1, :cond_0
 
     const/4 v3, 0x5
 
-    if-ne p1, v3, :cond_9
+    if-ne p1, v3, :cond_a
 
-    .line 333
+    .line 340
     :cond_0
-    iget-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
+    iget-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mLanguageIsRtl:Z
 
     if-eqz v3, :cond_3
 
-    .end local p3
-    :goto_1
+    iget-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
+
+    if-nez v3, :cond_3
+
+    .line 341
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mNoneTouchPart:I
 
     int-to-float v3, v3
 
-    cmpg-float v3, p3, v3
+    cmpl-float v3, p2, v3
 
-    if-gez v3, :cond_4
+    if-lez v3, :cond_5
 
     move v1, v2
 
-    .line 411
+    .line 424
+    .end local p3
     :cond_1
-    :goto_2
+    :goto_1
     return v1
 
     .end local v0           #touchVal:F
@@ -2210,48 +2232,70 @@
     :cond_2
     move v0, p3
 
-    .line 328
+    .line 335
     goto :goto_0
 
+    .line 345
     .restart local v0       #touchVal:F
     :cond_3
-    move p3, p2
+    iget-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
-    .line 333
+    if-eqz v3, :cond_4
+
+    .end local p3
+    :goto_2
+    iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mNoneTouchPart:I
+
+    int-to-float v3, v3
+
+    cmpg-float v3, p3, v3
+
+    if-gez v3, :cond_5
+
+    move v1, v2
+
+    .line 346
     goto :goto_1
 
-    .line 337
-    .end local p3
+    .restart local p3
     :cond_4
+    move p3, p2
+
+    .line 345
+    goto :goto_2
+
+    .line 350
+    .end local p3
+    :cond_5
     float-to-int v3, v0
 
     iput v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerStartPos:I
 
-    .line 339
+    .line 352
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstTouchablePart:I
 
     int-to-float v3, v3
 
     cmpg-float v3, v0, v3
 
-    if-gez v3, :cond_7
+    if-gez v3, :cond_8
 
-    .line 340
+    .line 353
     iget-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mIsGhostAnimating:Z
 
-    if-eqz v3, :cond_5
+    if-eqz v3, :cond_6
 
-    .line 341
+    .line 354
     invoke-direct {p0, v1}, Lcom/android/internal/widget/SlidingTabSemc;->resetSlider(Z)V
 
-    .line 344
-    :cond_5
+    .line 357
+    :cond_6
     iput-byte v2, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
-    .line 345
+    .line 358
     invoke-direct {p0}, Lcom/android/internal/widget/SlidingTabSemc;->disableButtonPress()V
 
-    .line 346
+    .line 359
     iget v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerStartPos:I
 
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstBtnPosition:I
@@ -2260,45 +2304,45 @@
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerOff:I
 
-    .line 347
+    .line 360
     iput p4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mActivePointerId:I
 
-    .line 410
-    :cond_6
+    .line 423
+    :cond_7
     :goto_3
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->invalidate()V
 
     move v1, v2
 
-    .line 411
-    goto :goto_2
+    .line 424
+    goto :goto_1
 
-    .line 348
-    :cond_7
+    .line 361
+    :cond_8
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSecondTouchablePart:I
 
     int-to-float v3, v3
 
     cmpl-float v3, v0, v3
 
-    if-lez v3, :cond_6
+    if-lez v3, :cond_7
 
-    .line 349
+    .line 362
     iget-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mIsGhostAnimating:Z
 
-    if-eqz v3, :cond_8
+    if-eqz v3, :cond_9
 
-    .line 350
+    .line 363
     invoke-direct {p0, v1}, Lcom/android/internal/widget/SlidingTabSemc;->resetSlider(Z)V
 
-    .line 353
-    :cond_8
+    .line 366
+    :cond_9
     iput-byte v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
-    .line 354
+    .line 367
     invoke-direct {p0}, Lcom/android/internal/widget/SlidingTabSemc;->disableButtonPress()V
 
-    .line 355
+    .line 368
     iget v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerStartPos:I
 
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSecondBtnPosition:I
@@ -2307,64 +2351,64 @@
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerOff:I
 
-    .line 356
+    .line 369
     iput p4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mActivePointerId:I
 
     goto :goto_3
 
-    .line 358
+    .line 371
     .restart local p3
-    :cond_9
+    :cond_a
     iget-byte v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
-    if-eqz v3, :cond_c
+    if-eqz v3, :cond_d
 
-    if-eq p1, v2, :cond_a
+    if-eq p1, v2, :cond_b
 
     const/4 v3, 0x6
 
-    if-ne p1, v3, :cond_c
+    if-ne p1, v3, :cond_d
 
-    .line 362
-    :cond_a
+    .line 375
+    :cond_b
     const/4 v1, -0x1
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mActivePointerId:I
 
-    .line 363
+    .line 376
     iget-boolean v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPastActionPoint:Z
 
-    if-eqz v1, :cond_b
+    if-eqz v1, :cond_c
 
-    .line 364
+    .line 377
     float-to-int v1, v0
 
     invoke-direct {p0, v1}, Lcom/android/internal/widget/SlidingTabSemc;->sliderButtonReleaseAfter(I)V
 
     goto :goto_3
 
-    .line 366
-    :cond_b
+    .line 379
+    :cond_c
     invoke-direct {p0}, Lcom/android/internal/widget/SlidingTabSemc;->sliderButtonReleaseBefore()V
 
     goto :goto_3
 
-    .line 368
-    :cond_c
+    .line 381
+    :cond_d
     iget-byte v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
-    if-eqz v3, :cond_6
+    if-eqz v3, :cond_7
 
-    if-ne p1, v4, :cond_6
+    if-ne p1, v4, :cond_7
 
-    .line 371
+    .line 384
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mLastMovePos:F
 
     add-float/2addr v3, v5
 
     cmpg-float v3, v0, v3
 
-    if-gez v3, :cond_d
+    if-gez v3, :cond_e
 
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mLastMovePos:F
 
@@ -2374,18 +2418,18 @@
 
     if-gtz v3, :cond_1
 
-    .line 374
-    :cond_d
+    .line 387
+    :cond_e
     iput v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mLastMovePos:F
 
-    .line 377
+    .line 390
     iget-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPastActionPoint:Z
 
-    if-nez v3, :cond_13
+    if-nez v3, :cond_14
 
     iget-byte v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
-    if-ne v3, v2, :cond_e
+    if-ne v3, v2, :cond_f
 
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSecondActivatePoint:I
 
@@ -2393,12 +2437,12 @@
 
     cmpl-float v3, v0, v3
 
-    if-gtz v3, :cond_f
+    if-gtz v3, :cond_10
 
-    :cond_e
+    :cond_f
     iget-byte v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
-    if-ne v3, v4, :cond_13
+    if-ne v3, v4, :cond_14
 
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstActivatePoint:I
 
@@ -2406,37 +2450,37 @@
 
     cmpg-float v3, v0, v3
 
-    if-gez v3, :cond_13
+    if-gez v3, :cond_14
 
-    .line 383
-    :cond_f
+    .line 396
+    :cond_10
     invoke-direct {p0}, Lcom/android/internal/widget/SlidingTabSemc;->sliderPastActivatePoint()V
 
-    .line 393
-    :cond_10
+    .line 406
+    :cond_11
     :goto_4
     iget v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerOff:I
 
-    if-eqz v1, :cond_11
+    if-eqz v1, :cond_12
 
-    .line 394
+    .line 407
     iget v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerOff:I
 
-    if-lez v1, :cond_16
+    if-lez v1, :cond_17
 
-    .line 395
+    .line 408
     iget v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerOff:I
 
     add-int/lit8 v1, v1, -0x1
 
     iput v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerOff:I
 
-    .line 401
-    :cond_11
+    .line 414
+    :cond_12
     :goto_5
     iget-boolean v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerFlickerDone:Z
 
-    if-nez v1, :cond_12
+    if-nez v1, :cond_13
 
     iget v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerStartPos:I
 
@@ -2446,7 +2490,7 @@
 
     cmpl-float v1, v0, v1
 
-    if-gtz v1, :cond_12
+    if-gtz v1, :cond_13
 
     iget v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerStartPos:I
 
@@ -2456,13 +2500,13 @@
 
     cmpg-float v1, v0, v1
 
-    if-gez v1, :cond_6
+    if-gez v1, :cond_7
 
-    .line 405
-    :cond_12
+    .line 418
+    :cond_13
     iput-boolean v2, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerFlickerDone:Z
 
-    .line 406
+    .line 419
     iget v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerOff:I
 
     int-to-float v1, v1
@@ -2473,15 +2517,15 @@
 
     goto/16 :goto_3
 
-    .line 384
-    :cond_13
+    .line 397
+    :cond_14
     iget-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPastActionPoint:Z
 
-    if-eqz v3, :cond_10
+    if-eqz v3, :cond_11
 
     iget-byte v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
-    if-ne v3, v2, :cond_14
+    if-ne v3, v2, :cond_15
 
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSecondActivatePoint:I
 
@@ -2491,12 +2535,12 @@
 
     cmpg-float v3, v0, v3
 
-    if-ltz v3, :cond_15
+    if-ltz v3, :cond_16
 
-    :cond_14
+    :cond_15
     iget-byte v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
-    if-ne v3, v4, :cond_10
+    if-ne v3, v4, :cond_11
 
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstActivatePoint:I
 
@@ -2506,16 +2550,16 @@
 
     cmpl-float v3, v0, v3
 
-    if-lez v3, :cond_10
+    if-lez v3, :cond_11
 
-    .line 390
-    :cond_15
+    .line 403
+    :cond_16
     iput-boolean v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPastActionPoint:Z
 
     goto :goto_4
 
-    .line 397
-    :cond_16
+    .line 410
+    :cond_17
     iget v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFingerOff:I
 
     add-int/lit8 v1, v1, 0x1
@@ -2531,24 +2575,24 @@
     .prologue
     const/4 v3, 0x4
 
-    .line 478
+    .line 491
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledFirstButton:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->clearAnimation()V
 
-    .line 479
+    .line 492
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledSecondButton:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->clearAnimation()V
 
-    .line 481
+    .line 494
     iget-byte v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_2
 
-    .line 482
+    .line 495
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mBackground:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -2563,17 +2607,17 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 483
+    .line 496
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledFirstButton:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 484
+    .line 497
     iget-boolean v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v0, :cond_1
 
-    .line 485
+    .line 498
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledSecondButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -2588,7 +2632,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 487
+    .line 500
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -2603,7 +2647,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 495
+    .line 508
     :goto_0
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
@@ -2611,7 +2655,7 @@
 
     invoke-direct {p0, v0, v1}, Lcom/android/internal/widget/SlidingTabSemc;->setLayout(Landroid/widget/ImageView;I)V
 
-    .line 512
+    .line 525
     :cond_0
     :goto_1
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
@@ -2620,15 +2664,15 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 514
+    .line 527
     const-wide/16 v0, 0x258
 
     invoke-direct {p0, v0, v1}, Lcom/android/internal/widget/SlidingTabSemc;->animateGhost(J)V
 
-    .line 515
+    .line 528
     return-void
 
-    .line 490
+    .line 503
     :cond_1
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledSecondButton:Landroid/widget/ImageView;
 
@@ -2644,7 +2688,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 492
+    .line 505
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -2661,7 +2705,7 @@
 
     goto :goto_0
 
-    .line 496
+    .line 509
     :cond_2
     iget-byte v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderState:B
 
@@ -2669,7 +2713,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 497
+    .line 510
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mBackground:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -2684,17 +2728,17 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 498
+    .line 511
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledSecondButton:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 499
+    .line 512
     iget-boolean v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v0, :cond_3
 
-    .line 500
+    .line 513
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledFirstButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -2709,7 +2753,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 502
+    .line 515
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -2724,7 +2768,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 510
+    .line 523
     :goto_2
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
@@ -2734,7 +2778,7 @@
 
     goto :goto_1
 
-    .line 505
+    .line 518
     :cond_3
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledFirstButton:Landroid/widget/ImageView;
 
@@ -2750,7 +2794,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 507
+    .line 520
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
@@ -2773,17 +2817,17 @@
     .parameter "duration"
 
     .prologue
-    .line 727
+    .line 740
     sget-boolean v0, Lcom/android/internal/widget/SlidingTabSemc;->mHapticsEnabled:Z
 
     if-eqz v0, :cond_1
 
-    .line 728
+    .line 741
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mVibrator:Landroid/os/Vibrator;
 
     if-nez v0, :cond_0
 
-    .line 729
+    .line 742
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -2798,13 +2842,13 @@
 
     iput-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mVibrator:Landroid/os/Vibrator;
 
-    .line 732
+    .line 745
     :cond_0
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mVibrator:Landroid/os/Vibrator;
 
     invoke-virtual {v0, p1, p2}, Landroid/os/Vibrator;->vibrate(J)V
 
-    .line 734
+    .line 747
     :cond_1
     return-void
 .end method
@@ -2815,7 +2859,7 @@
     .locals 1
 
     .prologue
-    .line 242
+    .line 248
     const/4 v0, 0x1
 
     return v0
@@ -2830,25 +2874,25 @@
     .parameter "b"
 
     .prologue
-    .line 230
+    .line 236
     if-nez p1, :cond_0
 
-    .line 235
+    .line 241
     :goto_0
     return-void
 
-    .line 232
+    .line 238
     :cond_0
     invoke-direct {p0}, Lcom/android/internal/widget/SlidingTabSemc;->setBackgroundLayout()V
 
-    .line 233
+    .line 239
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledFirstButton:Landroid/widget/ImageView;
 
     iget v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstBtnPosition:I
 
     invoke-direct {p0, v0, v1}, Lcom/android/internal/widget/SlidingTabSemc;->setLayout(Landroid/widget/ImageView;I)V
 
-    .line 234
+    .line 240
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDisabledSecondButton:Landroid/widget/ImageView;
 
     iget v1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSecondBtnPosition:I
@@ -2864,14 +2908,14 @@
     .parameter "heightMeasureSpec"
 
     .prologue
-    .line 266
+    .line 272
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderWidth:I
 
     invoke-direct {p0, p1, v3}, Lcom/android/internal/widget/SlidingTabSemc;->measureDimension(II)I
 
     move-result v2
 
-    .line 267
+    .line 273
     .local v2, width:I
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderHeight:I
 
@@ -2879,7 +2923,7 @@
 
     move-result v0
 
-    .line 269
+    .line 275
     .local v0, height:I
     iget-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
@@ -2887,7 +2931,7 @@
 
     move v1, v2
 
-    .line 270
+    .line 277
     .local v1, length:I
     :goto_0
     int-to-double v3, v1
@@ -2900,28 +2944,28 @@
 
     iput v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstBtnPosition:I
 
-    .line 271
+    .line 278
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstBtnPosition:I
 
     sub-int v3, v1, v3
 
     iput v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSecondBtnPosition:I
 
-    .line 273
+    .line 280
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstBtnPosition:I
 
     mul-int/lit8 v3, v3, 0x2
 
     iput v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstTouchablePart:I
 
-    .line 274
+    .line 281
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstTouchablePart:I
 
     sub-int v3, v1, v3
 
     iput v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSecondTouchablePart:I
 
-    .line 276
+    .line 283
     int-to-double v3, v1
 
     const-wide v5, 0x3fd3333333333333L
@@ -2932,14 +2976,14 @@
 
     iput v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstActivatePoint:I
 
-    .line 277
+    .line 284
     iget v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mFirstActivatePoint:I
 
     sub-int v3, v1, v3
 
     iput v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSecondActivatePoint:I
 
-    .line 279
+    .line 286
     iget-boolean v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v3, :cond_1
@@ -2949,7 +2993,7 @@
     :goto_1
     int-to-double v3, v3
 
-    const-wide v5, 0x3fd999999999999aL
+    const-wide/high16 v5, 0x3fe0
 
     mul-double/2addr v3, v5
 
@@ -2957,24 +3001,24 @@
 
     iput v3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mNoneTouchPart:I
 
-    .line 281
+    .line 288
     invoke-virtual {p0, v2, v0}, Lcom/android/internal/widget/SlidingTabSemc;->setMeasuredDimension(II)V
 
-    .line 282
+    .line 289
     return-void
 
     .end local v1           #length:I
     :cond_0
     move v1, v0
 
-    .line 269
+    .line 275
     goto :goto_0
 
     .restart local v1       #length:I
     :cond_1
     move v3, v2
 
-    .line 279
+    .line 286
     goto :goto_1
 .end method
 
@@ -2985,24 +3029,24 @@
     .prologue
     const/4 v6, -0x1
 
-    .line 300
+    .line 307
     iget-boolean v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mIsAnimating:Z
 
     if-eqz v4, :cond_1
 
-    .line 301
+    .line 308
     const/4 v3, 0x1
 
-    .line 324
+    .line 331
     :cond_0
     :goto_0
     return v3
 
-    .line 304
+    .line 311
     :cond_1
     const/4 v3, 0x0
 
-    .line 305
+    .line 312
     .local v3, touchHandled:Z
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -3014,13 +3058,13 @@
 
     shr-int/lit8 v0, v4, 0x8
 
-    .line 307
+    .line 314
     .local v0, currentIndex:I
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v1
 
-    .line 309
+    .line 316
     .local v1, currentPointerId:I
     iget v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mActivePointerId:I
 
@@ -3030,7 +3074,7 @@
 
     if-ne v4, v1, :cond_3
 
-    .line 310
+    .line 317
     :cond_2
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -3052,7 +3096,7 @@
 
     goto :goto_0
 
-    .line 313
+    .line 320
     :cond_3
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -3062,18 +3106,18 @@
 
     if-ne v4, v5, :cond_0
 
-    .line 314
+    .line 321
     iget v4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mActivePointerId:I
 
     invoke-virtual {p1, v4}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
     move-result v2
 
-    .line 316
+    .line 323
     .local v2, pointerIndex:I
     if-eq v2, v6, :cond_4
 
-    .line 317
+    .line 324
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v4
@@ -3094,7 +3138,7 @@
 
     goto :goto_0
 
-    .line 320
+    .line 327
     :cond_4
     const/4 v4, 0x0
 
@@ -3109,7 +3153,7 @@
     .parameter "holdRight"
 
     .prologue
-    .line 851
+    .line 864
     return-void
 .end method
 
@@ -3118,7 +3162,7 @@
     .parameter "resId"
 
     .prologue
-    .line 823
+    .line 836
     return-void
 .end method
 
@@ -3130,19 +3174,19 @@
     .parameter "ghostId"
 
     .prologue
-    .line 811
+    .line 824
     iput p1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableFirstDisabledId:I
 
-    .line 812
+    .line 825
     iput p2, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableFirstExpandedId:I
 
-    .line 813
+    .line 826
     iput p3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableFirstGotoId:I
 
-    .line 814
+    .line 827
     iput p4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableFirstGhostId:I
 
-    .line 815
+    .line 828
     return-void
 .end method
 
@@ -3151,10 +3195,10 @@
     .parameter "listener"
 
     .prologue
-    .line 859
+    .line 872
     iput-object p1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mOnTriggerListener:Lcom/android/internal/widget/SlidingTabSemc$OnTriggerListener;
 
-    .line 860
+    .line 873
     return-void
 .end method
 
@@ -3163,7 +3207,7 @@
     .parameter "resId"
 
     .prologue
-    .line 848
+    .line 861
     return-void
 .end method
 
@@ -3175,19 +3219,19 @@
     .parameter "ghostId"
 
     .prologue
-    .line 836
+    .line 849
     iput p1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableSecondDisabledId:I
 
-    .line 837
+    .line 850
     iput p2, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableSecondExpandedId:I
 
-    .line 838
+    .line 851
     iput p3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableSecondGotoId:I
 
-    .line 839
+    .line 852
     iput p4, p0, Lcom/android/internal/widget/SlidingTabSemc;->mDrawableSecondGhostId:I
 
-    .line 840
+    .line 853
     return-void
 .end method
 
@@ -3198,21 +3242,21 @@
     .parameter "sliderLeftId"
 
     .prologue
-    .line 787
+    .line 800
     iput p1, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSlider1Id:I
 
-    .line 788
+    .line 801
     iput p2, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSlider2Id:I
 
-    .line 789
+    .line 802
     iput p3, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSlider3Id:I
 
-    .line 791
+    .line 804
     iget-boolean v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mPortrait:Z
 
     if-eqz v0, :cond_0
 
-    .line 792
+    .line 805
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -3229,11 +3273,11 @@
 
     iput v0, p0, Lcom/android/internal/widget/SlidingTabSemc;->mSliderHeight:I
 
-    .line 796
+    .line 809
     :goto_0
     return-void
 
-    .line 794
+    .line 807
     :cond_0
     invoke-virtual {p0}, Lcom/android/internal/widget/SlidingTabSemc;->getResources()Landroid/content/res/Resources;
 
@@ -3259,14 +3303,14 @@
     .parameter "visibility"
 
     .prologue
-    .line 214
+    .line 220
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->setVisibility(I)V
 
-    .line 215
+    .line 221
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/android/internal/widget/SlidingTabSemc;->resetSlider(Z)V
 
-    .line 216
+    .line 222
     return-void
 .end method

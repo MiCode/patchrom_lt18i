@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1955
+    .line 1968
     iput-object p1, p0, Landroid/widget/NumberPicker$AdjustScrollerCommand;->this$0:Landroid/widget/NumberPicker;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,13 +43,13 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1957
+    .line 1970
     iget-object v0, p0, Landroid/widget/NumberPicker$AdjustScrollerCommand;->this$0:Landroid/widget/NumberPicker;
 
     #setter for: Landroid/widget/NumberPicker;->mPreviousScrollerY:I
     invoke-static {v0, v1}, Landroid/widget/NumberPicker;->access$1402(Landroid/widget/NumberPicker;I)I
 
-    .line 1958
+    .line 1971
     iget-object v0, p0, Landroid/widget/NumberPicker$AdjustScrollerCommand;->this$0:Landroid/widget/NumberPicker;
 
     #getter for: Landroid/widget/NumberPicker;->mInitialScrollOffset:I
@@ -66,13 +66,13 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 1959
+    .line 1972
     iget-object v0, p0, Landroid/widget/NumberPicker$AdjustScrollerCommand;->this$0:Landroid/widget/NumberPicker;
 
     #calls: Landroid/widget/NumberPicker;->updateInputTextView()V
     invoke-static {v0}, Landroid/widget/NumberPicker;->access$1700(Landroid/widget/NumberPicker;)V
 
-    .line 1960
+    .line 1973
     iget-object v0, p0, Landroid/widget/NumberPicker$AdjustScrollerCommand;->this$0:Landroid/widget/NumberPicker;
 
     iget-object v1, p0, Landroid/widget/NumberPicker$AdjustScrollerCommand;->this$0:Landroid/widget/NumberPicker;
@@ -85,11 +85,11 @@
     #calls: Landroid/widget/NumberPicker;->showInputControls(J)V
     invoke-static {v0, v1, v2}, Landroid/widget/NumberPicker;->access$1900(Landroid/widget/NumberPicker;J)V
 
-    .line 1970
+    .line 1983
     :goto_0
     return-void
 
-    .line 1964
+    .line 1977
     :cond_0
     iget-object v0, p0, Landroid/widget/NumberPicker$AdjustScrollerCommand;->this$0:Landroid/widget/NumberPicker;
 
@@ -107,7 +107,7 @@
 
     sub-int v4, v0, v2
 
-    .line 1965
+    .line 1978
     .local v4, deltaY:I
     invoke-static {v4}, Ljava/lang/Math;->abs(I)I
 
@@ -124,7 +124,7 @@
 
     if-le v0, v2, :cond_1
 
-    .line 1966
+    .line 1979
     if-lez v4, :cond_2
 
     iget-object v0, p0, Landroid/widget/NumberPicker$AdjustScrollerCommand;->this$0:Landroid/widget/NumberPicker;
@@ -139,7 +139,7 @@
     :goto_1
     add-int/2addr v4, v0
 
-    .line 1968
+    .line 1981
     :cond_1
     iget-object v0, p0, Landroid/widget/NumberPicker$AdjustScrollerCommand;->this$0:Landroid/widget/NumberPicker;
 
@@ -156,14 +156,14 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/widget/Scroller;->startScroll(IIIII)V
 
-    .line 1969
+    .line 1982
     iget-object v0, p0, Landroid/widget/NumberPicker$AdjustScrollerCommand;->this$0:Landroid/widget/NumberPicker;
 
     invoke-virtual {v0}, Landroid/widget/NumberPicker;->invalidate()V
 
     goto :goto_0
 
-    .line 1966
+    .line 1979
     :cond_2
     iget-object v0, p0, Landroid/widget/NumberPicker$AdjustScrollerCommand;->this$0:Landroid/widget/NumberPicker;
 

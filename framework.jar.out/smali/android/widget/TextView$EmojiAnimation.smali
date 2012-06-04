@@ -54,14 +54,14 @@
     .prologue
     const/4 v1, -0x1
 
-    .line 5167
+    .line 5168
     invoke-static {}, Landroid/widget/TextView;->access$300()Landroid/emoji/EmojiFactory;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 5168
+    .line 5169
     invoke-static {}, Landroid/widget/TextView;->access$300()Landroid/emoji/EmojiFactory;
 
     move-result-object v0
@@ -72,7 +72,7 @@
 
     sput v0, Landroid/widget/TextView$EmojiAnimation;->MIN_EMOJI:I
 
-    .line 5169
+    .line 5170
     invoke-static {}, Landroid/widget/TextView;->access$300()Landroid/emoji/EmojiFactory;
 
     move-result-object v0
@@ -83,7 +83,7 @@
 
     sput v0, Landroid/widget/TextView$EmojiAnimation;->MAX_EMOJI:I
 
-    .line 5170
+    .line 5171
     invoke-static {}, Landroid/widget/TextView;->access$300()Landroid/emoji/EmojiFactory;
 
     move-result-object v0
@@ -94,18 +94,18 @@
 
     sput v0, Landroid/widget/TextView$EmojiAnimation;->EMOJI_DELAY_TIME:I
 
-    .line 5176
+    .line 5177
     :goto_0
     return-void
 
-    .line 5172
+    .line 5173
     :cond_0
     sput v1, Landroid/widget/TextView$EmojiAnimation;->MIN_EMOJI:I
 
-    .line 5173
+    .line 5174
     sput v1, Landroid/widget/TextView$EmojiAnimation;->MAX_EMOJI:I
 
-    .line 5174
+    .line 5175
     sput v1, Landroid/widget/TextView$EmojiAnimation;->EMOJI_DELAY_TIME:I
 
     goto :goto_0
@@ -116,27 +116,27 @@
     .parameter "v"
 
     .prologue
-    .line 5188
+    .line 5189
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 5189
+    .line 5190
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Landroid/widget/TextView$EmojiAnimation;->mView:Ljava/lang/ref/WeakReference;
 
-    .line 5190
+    .line 5191
     const-wide/16 v0, 0x0
 
     iput-wide v0, p0, Landroid/widget/TextView$EmojiAnimation;->mLastUpdateTime:J
 
-    .line 5191
+    .line 5192
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Landroid/widget/TextView$EmojiAnimation;->mShowDefaultImage:Z
 
-    .line 5192
+    .line 5193
     return-void
 .end method
 
@@ -145,27 +145,27 @@
     .parameter "text"
 
     .prologue
-    .line 5263
+    .line 5264
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v5
 
     add-int/lit8 v1, v5, -0x1
 
-    .line 5264
+    .line 5265
     .local v1, end:I
     const/4 v2, 0x0
 
     .local v2, i:I
     move v3, v2
 
-    .line 5265
+    .line 5266
     .end local v2           #i:I
     .local v3, i:I
     :goto_0
     if-ge v3, v1, :cond_2
 
-    .line 5266
+    .line 5267
     add-int/lit8 v2, v3, 0x1
 
     .end local v3           #i:I
@@ -174,7 +174,7 @@
 
     move-result v0
 
-    .line 5267
+    .line 5268
     .local v0, c:C
     invoke-static {v0}, Ljava/lang/Character;->isHighSurrogate(C)Z
 
@@ -182,7 +182,7 @@
 
     if-eqz v5, :cond_1
 
-    .line 5268
+    .line 5269
     add-int/lit8 v3, v2, 0x1
 
     .end local v2           #i:I
@@ -195,7 +195,7 @@
 
     move-result v4
 
-    .line 5269
+    .line 5270
     .local v4, pua:I
     sget v5, Landroid/widget/TextView$EmojiAnimation;->MIN_EMOJI:I
 
@@ -205,7 +205,7 @@
 
     if-gt v4, v5, :cond_0
 
-    .line 5270
+    .line 5271
     invoke-static {}, Landroid/widget/TextView;->access$300()Landroid/emoji/EmojiFactory;
 
     move-result-object v5
@@ -216,12 +216,12 @@
 
     if-eqz v5, :cond_0
 
-    .line 5271
+    .line 5272
     const/4 v5, 0x1
 
     move v2, v3
 
-    .line 5276
+    .line 5277
     .end local v0           #c:C
     .end local v3           #i:I
     .end local v4           #pua:I
@@ -242,12 +242,12 @@
     :cond_1
     move v3, v2
 
-    .line 5275
+    .line 5276
     .end local v2           #i:I
     .restart local v3       #i:I
     goto :goto_0
 
-    .line 5276
+    .line 5277
     .end local v0           #c:C
     :cond_2
     const/4 v5, 0x0
@@ -265,12 +265,12 @@
     .locals 4
 
     .prologue
-    .line 5236
+    .line 5237
     sget v0, Landroid/widget/TextView$EmojiAnimation;->EMOJI_DELAY_TIME:I
 
     if-lez v0, :cond_0
 
-    .line 5237
+    .line 5238
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
@@ -283,7 +283,7 @@
 
     invoke-virtual {p0, p0, v0, v1}, Landroid/widget/TextView$EmojiAnimation;->postAtTime(Ljava/lang/Runnable;J)Z
 
-    .line 5239
+    .line 5240
     :cond_0
     return-void
 .end method
@@ -292,10 +292,10 @@
     .locals 8
 
     .prologue
-    .line 5199
+    .line 5200
     invoke-virtual {p0, p0}, Landroid/widget/TextView$EmojiAnimation;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 5201
+    .line 5202
     iget-object v4, p0, Landroid/widget/TextView$EmojiAnimation;->mView:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v4}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -304,7 +304,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    .line 5202
+    .line 5203
     .local v3, tv:Landroid/widget/TextView;
     if-eqz v3, :cond_0
 
@@ -319,12 +319,12 @@
 
     if-nez v4, :cond_1
 
-    .line 5230
+    .line 5231
     :cond_0
     :goto_0
     return-void
 
-    .line 5206
+    .line 5207
     :cond_1
     iget-object v4, v3, Landroid/widget/TextView;->mLayout:Landroid/text/Layout;
 
@@ -338,24 +338,24 @@
 
     if-eqz v4, :cond_0
 
-    .line 5210
+    .line 5211
     invoke-virtual {v3}, Landroid/widget/TextView;->hasWindowFocus()Z
 
     move-result v4
 
     if-eqz v4, :cond_4
 
-    .line 5211
+    .line 5212
     const/4 v4, 0x0
 
     iput-boolean v4, p0, Landroid/widget/TextView$EmojiAnimation;->mShowDefaultImage:Z
 
-    .line 5212
+    .line 5213
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
 
-    .line 5213
+    .line 5214
     .local v0, currentTime:J
     iget-wide v4, p0, Landroid/widget/TextView$EmojiAnimation;->mLastUpdateTime:J
 
@@ -363,10 +363,10 @@
 
     if-lez v4, :cond_2
 
-    .line 5214
+    .line 5215
     iput-wide v0, p0, Landroid/widget/TextView$EmojiAnimation;->mLastUpdateTime:J
 
-    .line 5216
+    .line 5217
     :cond_2
     iget-wide v4, p0, Landroid/widget/TextView$EmojiAnimation;->mLastUpdateTime:J
 
@@ -380,10 +380,10 @@
 
     if-ltz v4, :cond_3
 
-    .line 5217
+    .line 5218
     iput-wide v0, p0, Landroid/widget/TextView$EmojiAnimation;->mLastUpdateTime:J
 
-    .line 5218
+    .line 5219
     sget v4, Landroid/widget/TextView$EmojiAnimation;->EMOJI_DELAY_TIME:I
 
     int-to-long v4, v4
@@ -396,7 +396,7 @@
 
     long-to-int v2, v4
 
-    .line 5219
+    .line 5220
     .local v2, imageNumber:I
     invoke-static {}, Landroid/widget/TextView;->access$300()Landroid/emoji/EmojiFactory;
 
@@ -409,10 +409,10 @@
 
     invoke-virtual {v4, v2, v5}, Landroid/emoji/EmojiFactory;->setAnimationImageNumber(ILandroid/graphics/Canvas;)V
 
-    .line 5220
+    .line 5221
     invoke-virtual {v3}, Landroid/widget/TextView;->invalidate()V
 
-    .line 5222
+    .line 5223
     .end local v2           #imageNumber:I
     :cond_3
     iget-wide v4, p0, Landroid/widget/TextView$EmojiAnimation;->mLastUpdateTime:J
@@ -427,19 +427,19 @@
 
     goto :goto_0
 
-    .line 5224
+    .line 5225
     .end local v0           #currentTime:J
     :cond_4
     iget-boolean v4, p0, Landroid/widget/TextView$EmojiAnimation;->mShowDefaultImage:Z
 
     if-nez v4, :cond_0
 
-    .line 5225
+    .line 5226
     const/4 v4, 0x1
 
     iput-boolean v4, p0, Landroid/widget/TextView$EmojiAnimation;->mShowDefaultImage:Z
 
-    .line 5226
+    .line 5227
     invoke-static {}, Landroid/widget/TextView;->access$300()Landroid/emoji/EmojiFactory;
 
     move-result-object v4
@@ -453,7 +453,7 @@
 
     invoke-virtual {v4, v5, v6}, Landroid/emoji/EmojiFactory;->setAnimationImageNumber(ILandroid/graphics/Canvas;)V
 
-    .line 5227
+    .line 5228
     invoke-virtual {v3}, Landroid/widget/TextView;->invalidate()V
 
     goto :goto_0
@@ -463,7 +463,7 @@
     .locals 8
 
     .prologue
-    .line 5246
+    .line 5247
     iget-object v4, p0, Landroid/widget/TextView$EmojiAnimation;->mView:Ljava/lang/ref/WeakReference;
 
     if-eqz v4, :cond_0
@@ -474,7 +474,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 5247
+    .line 5248
     iget-object v4, p0, Landroid/widget/TextView$EmojiAnimation;->mView:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v4}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -483,7 +483,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    .line 5248
+    .line 5249
     .local v3, tv:Landroid/widget/TextView;
     if-eqz v3, :cond_0
 
@@ -500,12 +500,12 @@
 
     if-eqz v4, :cond_0
 
-    .line 5249
+    .line 5250
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
 
-    .line 5250
+    .line 5251
     .local v0, currentTime:J
     sget v4, Landroid/widget/TextView$EmojiAnimation;->EMOJI_DELAY_TIME:I
 
@@ -519,7 +519,7 @@
 
     long-to-int v2, v4
 
-    .line 5252
+    .line 5253
     .local v2, imageNumber:I
     invoke-static {}, Landroid/widget/TextView;->access$300()Landroid/emoji/EmojiFactory;
 
@@ -532,7 +532,7 @@
 
     invoke-virtual {v4, v2, v5}, Landroid/emoji/EmojiFactory;->setAnimationImageNumber(ILandroid/graphics/Canvas;)V
 
-    .line 5255
+    .line 5256
     .end local v0           #currentTime:J
     .end local v2           #imageNumber:I
     .end local v3           #tv:Landroid/widget/TextView;

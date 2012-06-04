@@ -399,12 +399,12 @@
 
     .line 263
     .local v1, inflater:Landroid/view/LayoutInflater;
-    const v3, 0x10900d3
+    const v3, 0x10900d5
 
     invoke-virtual {v1, v3, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     .line 265
-    const v3, 0x1020384
+    const v3, 0x1020386
 
     invoke-virtual {v0, v3}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 

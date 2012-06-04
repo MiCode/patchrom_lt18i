@@ -262,7 +262,7 @@
     .line 3346
     new-instance v1, Lcom/android/internal/view/menu/ListMenuPresenter;
 
-    const v2, 0x1090064
+    const v2, 0x1090066
 
     iget v3, p0, Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;->listPresenterTheme:I
 

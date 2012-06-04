@@ -58,7 +58,7 @@
     .locals 1
 
     .prologue
-    .line 187
+    .line 193
     new-instance v0, Ljava/util/WeakHashMap;
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
@@ -73,13 +73,13 @@
     .parameter "context"
 
     .prologue
-    .line 219
+    .line 225
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 220
+    .line 226
     iput-object p1, p0, Landroid/appwidget/AppWidgetManager;->mContext:Landroid/content/Context;
 
-    .line 221
+    .line 227
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -90,7 +90,7 @@
 
     iput-object v0, p0, Landroid/appwidget/AppWidgetManager;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
-    .line 222
+    .line 228
     return-void
 .end method
 
@@ -99,25 +99,25 @@
     .parameter "context"
 
     .prologue
-    .line 200
+    .line 206
     sget-object v4, Landroid/appwidget/AppWidgetManager;->sManagerCache:Ljava/util/WeakHashMap;
 
     monitor-enter v4
 
-    .line 201
+    .line 207
     :try_start_0
     sget-object v3, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
 
     if-nez v3, :cond_0
 
-    .line 202
+    .line 208
     const-string v3, "appwidget"
 
     invoke-static {v3}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
     move-result-object v0
 
-    .line 203
+    .line 209
     .local v0, b:Landroid/os/IBinder;
     invoke-static {v0}, Lcom/android/internal/appwidget/IAppWidgetService$Stub;->asInterface(Landroid/os/IBinder;)Lcom/android/internal/appwidget/IAppWidgetService;
 
@@ -125,7 +125,7 @@
 
     sput-object v3, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
 
-    .line 206
+    .line 212
     .end local v0           #b:Landroid/os/IBinder;
     :cond_0
     sget-object v3, Landroid/appwidget/AppWidgetManager;->sManagerCache:Ljava/util/WeakHashMap;
@@ -136,15 +136,15 @@
 
     check-cast v1, Ljava/lang/ref/WeakReference;
 
-    .line 207
+    .line 213
     .local v1, ref:Ljava/lang/ref/WeakReference;,"Ljava/lang/ref/WeakReference<Landroid/appwidget/AppWidgetManager;>;"
     const/4 v2, 0x0
 
-    .line 208
+    .line 214
     .local v2, result:Landroid/appwidget/AppWidgetManager;
     if-eqz v1, :cond_1
 
-    .line 209
+    .line 215
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v2
@@ -152,18 +152,18 @@
     .end local v2           #result:Landroid/appwidget/AppWidgetManager;
     check-cast v2, Landroid/appwidget/AppWidgetManager;
 
-    .line 211
+    .line 217
     .restart local v2       #result:Landroid/appwidget/AppWidgetManager;
     :cond_1
     if-nez v2, :cond_2
 
-    .line 212
+    .line 218
     new-instance v2, Landroid/appwidget/AppWidgetManager;
 
     .end local v2           #result:Landroid/appwidget/AppWidgetManager;
     invoke-direct {v2, p0}, Landroid/appwidget/AppWidgetManager;-><init>(Landroid/content/Context;)V
 
-    .line 213
+    .line 219
     .restart local v2       #result:Landroid/appwidget/AppWidgetManager;
     sget-object v3, Landroid/appwidget/AppWidgetManager;->sManagerCache:Ljava/util/WeakHashMap;
 
@@ -173,13 +173,13 @@
 
     invoke-virtual {v3, p0, v5}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 215
+    .line 221
     :cond_2
     monitor-exit v4
 
     return-object v2
 
-    .line 216
+    .line 222
     .end local v1           #ref:Ljava/lang/ref/WeakReference;,"Ljava/lang/ref/WeakReference<Landroid/appwidget/AppWidgetManager;>;"
     .end local v2           #result:Landroid/appwidget/AppWidgetManager;
     :catchall_0
@@ -200,7 +200,7 @@
     .parameter "provider"
 
     .prologue
-    .line 432
+    .line 438
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
 
@@ -208,14 +208,14 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 437
+    .line 443
     return-void
 
-    .line 434
+    .line 440
     :catch_0
     move-exception v0
 
-    .line 435
+    .line 441
     .local v0, e:Landroid/os/RemoteException;
     new-instance v1, Ljava/lang/RuntimeException;
 
@@ -233,7 +233,7 @@
     .parameter "connection"
 
     .prologue
-    .line 453
+    .line 459
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
 
@@ -241,14 +241,14 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 458
+    .line 464
     return-void
 
-    .line 455
+    .line 461
     :catch_0
     move-exception v0
 
-    .line 456
+    .line 462
     .local v0, e:Landroid/os/RemoteException;
     new-instance v1, Ljava/lang/RuntimeException;
 
@@ -264,7 +264,7 @@
     .parameter "provider"
 
     .prologue
-    .line 489
+    .line 495
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
 
@@ -276,11 +276,11 @@
 
     return-object v1
 
-    .line 491
+    .line 497
     :catch_0
     move-exception v0
 
-    .line 492
+    .line 498
     .local v0, e:Landroid/os/RemoteException;
     new-instance v1, Ljava/lang/RuntimeException;
 
@@ -296,7 +296,7 @@
     .parameter "appWidgetId"
 
     .prologue
-    .line 401
+    .line 407
     :try_start_0
     sget-object v2, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
 
@@ -304,11 +304,11 @@
 
     move-result-object v1
 
-    .line 402
+    .line 408
     .local v1, info:Landroid/appwidget/AppWidgetProviderInfo;
     if-eqz v1, :cond_0
 
-    .line 404
+    .line 410
     iget v2, v1, Landroid/appwidget/AppWidgetProviderInfo;->minWidth:I
 
     iget-object v3, p0, Landroid/appwidget/AppWidgetManager;->mDisplayMetrics:Landroid/util/DisplayMetrics;
@@ -319,7 +319,7 @@
 
     iput v2, v1, Landroid/appwidget/AppWidgetProviderInfo;->minWidth:I
 
-    .line 406
+    .line 412
     iget v2, v1, Landroid/appwidget/AppWidgetProviderInfo;->minHeight:I
 
     iget-object v3, p0, Landroid/appwidget/AppWidgetManager;->mDisplayMetrics:Landroid/util/DisplayMetrics;
@@ -330,7 +330,7 @@
 
     iput v2, v1, Landroid/appwidget/AppWidgetProviderInfo;->minHeight:I
 
-    .line 408
+    .line 414
     iget v2, v1, Landroid/appwidget/AppWidgetProviderInfo;->minResizeWidth:I
 
     iget-object v3, p0, Landroid/appwidget/AppWidgetManager;->mDisplayMetrics:Landroid/util/DisplayMetrics;
@@ -341,7 +341,7 @@
 
     iput v2, v1, Landroid/appwidget/AppWidgetProviderInfo;->minResizeWidth:I
 
-    .line 410
+    .line 416
     iget v2, v1, Landroid/appwidget/AppWidgetProviderInfo;->minResizeHeight:I
 
     iget-object v3, p0, Landroid/appwidget/AppWidgetManager;->mDisplayMetrics:Landroid/util/DisplayMetrics;
@@ -354,16 +354,16 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 413
+    .line 419
     :cond_0
     return-object v1
 
-    .line 415
+    .line 421
     .end local v1           #info:Landroid/appwidget/AppWidgetProviderInfo;
     :catch_0
     move-exception v0
 
-    .line 416
+    .line 422
     .local v0, e:Landroid/os/RemoteException;
     new-instance v2, Ljava/lang/RuntimeException;
 
@@ -387,7 +387,7 @@
     .end annotation
 
     .prologue
-    .line 374
+    .line 380
     :try_start_0
     sget-object v4, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
 
@@ -395,7 +395,7 @@
 
     move-result-object v3
 
-    .line 375
+    .line 381
     .local v3, providers:Ljava/util/List;,"Ljava/util/List<Landroid/appwidget/AppWidgetProviderInfo;>;"
     invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -415,7 +415,7 @@
 
     check-cast v2, Landroid/appwidget/AppWidgetProviderInfo;
 
-    .line 377
+    .line 383
     .local v2, info:Landroid/appwidget/AppWidgetProviderInfo;
     iget v4, v2, Landroid/appwidget/AppWidgetProviderInfo;->minWidth:I
 
@@ -427,7 +427,7 @@
 
     iput v4, v2, Landroid/appwidget/AppWidgetProviderInfo;->minWidth:I
 
-    .line 379
+    .line 385
     iget v4, v2, Landroid/appwidget/AppWidgetProviderInfo;->minHeight:I
 
     iget-object v5, p0, Landroid/appwidget/AppWidgetManager;->mDisplayMetrics:Landroid/util/DisplayMetrics;
@@ -438,7 +438,7 @@
 
     iput v4, v2, Landroid/appwidget/AppWidgetProviderInfo;->minHeight:I
 
-    .line 381
+    .line 387
     iget v4, v2, Landroid/appwidget/AppWidgetProviderInfo;->minResizeWidth:I
 
     iget-object v5, p0, Landroid/appwidget/AppWidgetManager;->mDisplayMetrics:Landroid/util/DisplayMetrics;
@@ -449,7 +449,7 @@
 
     iput v4, v2, Landroid/appwidget/AppWidgetProviderInfo;->minResizeWidth:I
 
-    .line 383
+    .line 389
     iget v4, v2, Landroid/appwidget/AppWidgetProviderInfo;->minResizeHeight:I
 
     iget-object v5, p0, Landroid/appwidget/AppWidgetManager;->mDisplayMetrics:Landroid/util/DisplayMetrics;
@@ -464,14 +464,14 @@
 
     goto :goto_0
 
-    .line 388
+    .line 394
     .end local v1           #i$:Ljava/util/Iterator;
     .end local v2           #info:Landroid/appwidget/AppWidgetProviderInfo;
     .end local v3           #providers:Ljava/util/List;,"Ljava/util/List<Landroid/appwidget/AppWidgetProviderInfo;>;"
     :catch_0
     move-exception v0
 
-    .line 389
+    .line 395
     .local v0, e:Landroid/os/RemoteException;
     new-instance v4, Ljava/lang/RuntimeException;
 
@@ -481,7 +481,7 @@
 
     throw v4
 
-    .line 386
+    .line 392
     .end local v0           #e:Landroid/os/RemoteException;
     .restart local v1       #i$:Ljava/util/Iterator;
     .restart local v3       #providers:Ljava/util/List;,"Ljava/util/List<Landroid/appwidget/AppWidgetProviderInfo;>;"
@@ -495,7 +495,7 @@
     .parameter "viewId"
 
     .prologue
-    .line 366
+    .line 372
     const/4 v0, 0x1
 
     new-array v0, v0, [I
@@ -506,7 +506,7 @@
 
     invoke-virtual {p0, v0, p2}, Landroid/appwidget/AppWidgetManager;->notifyAppWidgetViewDataChanged([II)V
 
-    .line 367
+    .line 373
     return-void
 .end method
 
@@ -516,7 +516,7 @@
     .parameter "viewId"
 
     .prologue
-    .line 351
+    .line 357
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
 
@@ -524,14 +524,14 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 356
+    .line 362
     return-void
 
-    .line 353
+    .line 359
     :catch_0
     move-exception v0
 
-    .line 354
+    .line 360
     .local v0, e:Landroid/os/RemoteException;
     new-instance v1, Ljava/lang/RuntimeException;
 
@@ -548,7 +548,7 @@
     .parameter "views"
 
     .prologue
-    .line 317
+    .line 323
     const/4 v0, 0x1
 
     new-array v0, v0, [I
@@ -559,7 +559,7 @@
 
     invoke-virtual {p0, v0, p2}, Landroid/appwidget/AppWidgetManager;->partiallyUpdateAppWidget([ILandroid/widget/RemoteViews;)V
 
-    .line 318
+    .line 324
     return-void
 .end method
 
@@ -569,7 +569,7 @@
     .parameter "views"
 
     .prologue
-    .line 290
+    .line 296
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
 
@@ -577,14 +577,14 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 294
+    .line 300
     return-void
 
-    .line 291
+    .line 297
     :catch_0
     move-exception v0
 
-    .line 292
+    .line 298
     .local v0, e:Landroid/os/RemoteException;
     new-instance v1, Ljava/lang/RuntimeException;
 
@@ -601,7 +601,7 @@
     .parameter "intent"
 
     .prologue
-    .line 473
+    .line 479
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
 
@@ -609,14 +609,14 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 478
+    .line 484
     return-void
 
-    .line 475
+    .line 481
     :catch_0
     move-exception v0
 
-    .line 476
+    .line 482
     .local v0, e:Landroid/os/RemoteException;
     new-instance v1, Ljava/lang/RuntimeException;
 
@@ -633,7 +633,7 @@
     .parameter "views"
 
     .prologue
-    .line 264
+    .line 270
     const/4 v0, 0x1
 
     new-array v0, v0, [I
@@ -644,7 +644,7 @@
 
     invoke-virtual {p0, v0, p2}, Landroid/appwidget/AppWidgetManager;->updateAppWidget([ILandroid/widget/RemoteViews;)V
 
-    .line 265
+    .line 271
     return-void
 .end method
 
@@ -654,7 +654,7 @@
     .parameter "views"
 
     .prologue
-    .line 335
+    .line 341
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
 
@@ -662,14 +662,14 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 340
+    .line 346
     return-void
 
-    .line 337
+    .line 343
     :catch_0
     move-exception v0
 
-    .line 338
+    .line 344
     .local v0, e:Landroid/os/RemoteException;
     new-instance v1, Ljava/lang/RuntimeException;
 
@@ -686,7 +686,7 @@
     .parameter "views"
 
     .prologue
-    .line 241
+    .line 247
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
 
@@ -694,14 +694,14 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 246
+    .line 252
     return-void
 
-    .line 243
+    .line 249
     :catch_0
     move-exception v0
 
-    .line 244
+    .line 250
     .local v0, e:Landroid/os/RemoteException;
     new-instance v1, Ljava/lang/RuntimeException;
 

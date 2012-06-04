@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 537
+    .line 550
     iput-object p1, p0, Lcom/android/internal/widget/SlidingTabSemc$1;->this$0:Lcom/android/internal/widget/SlidingTabSemc;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .parameter "animation"
 
     .prologue
-    .line 543
+    .line 556
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTabSemc$1;->this$0:Lcom/android/internal/widget/SlidingTabSemc;
 
     #getter for: Lcom/android/internal/widget/SlidingTabSemc;->mExpandedButton:Landroid/widget/ImageView;
@@ -54,7 +54,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 544
+    .line 557
     return-void
 .end method
 
@@ -63,7 +63,7 @@
     .parameter "animation"
 
     .prologue
-    .line 540
+    .line 553
     return-void
 .end method
 
@@ -72,6 +72,6 @@
     .parameter "animation"
 
     .prologue
-    .line 539
+    .line 552
     return-void
 .end method

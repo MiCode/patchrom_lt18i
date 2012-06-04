@@ -1585,7 +1585,7 @@
     .line 372
     iget-object v1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
-    const v2, 0x10404ad
+    const v2, 0x10404ae
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1623,7 +1623,7 @@
     .line 378
     iget-object v1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
-    const v2, 0x10404ae
+    const v2, 0x10404af
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

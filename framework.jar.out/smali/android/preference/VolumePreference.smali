@@ -103,7 +103,7 @@
 
     move-result-object v2
 
-    const v3, 0x10202e9
+    const v3, 0x10202f4
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -167,7 +167,7 @@
     invoke-super {p0, p1}, Landroid/preference/SeekBarDialogPreference;->onBindDialogView(Landroid/view/View;)V
 
     .line 68
-    const v1, 0x10202e9
+    const v1, 0x10202f4
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

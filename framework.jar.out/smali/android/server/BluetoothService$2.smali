@@ -77,8 +77,7 @@
     .local v2, resolver:Landroid/content/ContentResolver;
     iget-object v4, p0, Landroid/server/BluetoothService$2;->this$0:Landroid/server/BluetoothService;
 
-    #calls: Landroid/server/BluetoothService;->isAirplaneModeOn()Z
-    invoke-static {v4}, Landroid/server/BluetoothService;->access$500(Landroid/server/BluetoothService;)Z
+    invoke-virtual {v4}, Landroid/server/BluetoothService;->isAirplaneModeOn()Z
 
     move-result v4
 
@@ -88,7 +87,7 @@
     iget-object v4, p0, Landroid/server/BluetoothService$2;->this$0:Landroid/server/BluetoothService;
 
     #getter for: Landroid/server/BluetoothService;->mBluetoothState:Landroid/server/BluetoothAdapterStateMachine;
-    invoke-static {v4}, Landroid/server/BluetoothService;->access$600(Landroid/server/BluetoothService;)Landroid/server/BluetoothAdapterStateMachine;
+    invoke-static {v4}, Landroid/server/BluetoothService;->access$500(Landroid/server/BluetoothService;)Landroid/server/BluetoothAdapterStateMachine;
 
     move-result-object v4
 
@@ -103,7 +102,7 @@
     iget-object v4, p0, Landroid/server/BluetoothService$2;->this$0:Landroid/server/BluetoothService;
 
     #getter for: Landroid/server/BluetoothService;->mBluetoothState:Landroid/server/BluetoothAdapterStateMachine;
-    invoke-static {v4}, Landroid/server/BluetoothService;->access$600(Landroid/server/BluetoothService;)Landroid/server/BluetoothAdapterStateMachine;
+    invoke-static {v4}, Landroid/server/BluetoothService;->access$500(Landroid/server/BluetoothService;)Landroid/server/BluetoothAdapterStateMachine;
 
     move-result-object v4
 
@@ -159,13 +158,13 @@
     if-nez v3, :cond_4
 
     .line 1694
-    invoke-static {v8}, Landroid/server/BluetoothService;->access$702(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v8}, Landroid/server/BluetoothService;->access$602(Ljava/lang/String;)Ljava/lang/String;
 
     .line 1695
     iget-object v4, p0, Landroid/server/BluetoothService$2;->this$0:Landroid/server/BluetoothService;
 
     #setter for: Landroid/server/BluetoothService;->mDockPin:Ljava/lang/String;
-    invoke-static {v4, v8}, Landroid/server/BluetoothService;->access$802(Landroid/server/BluetoothService;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v8}, Landroid/server/BluetoothService;->access$702(Landroid/server/BluetoothService;Ljava/lang/String;)Ljava/lang/String;
 
     goto :goto_0
 
@@ -174,7 +173,7 @@
     iget-object v4, p0, Landroid/server/BluetoothService$2;->this$0:Landroid/server/BluetoothService;
 
     #getter for: Landroid/server/BluetoothService;->mContext:Landroid/content/Context;
-    invoke-static {v4}, Landroid/server/BluetoothService;->access$900(Landroid/server/BluetoothService;)Landroid/content/Context;
+    invoke-static {v4}, Landroid/server/BluetoothService;->access$800(Landroid/server/BluetoothService;)Landroid/content/Context;
 
     move-result-object v4
 
@@ -183,7 +182,7 @@
     iget-object v6, p0, Landroid/server/BluetoothService$2;->this$0:Landroid/server/BluetoothService;
 
     #getter for: Landroid/server/BluetoothService;->mContext:Landroid/content/Context;
-    invoke-static {v6}, Landroid/server/BluetoothService;->access$900(Landroid/server/BluetoothService;)Landroid/content/Context;
+    invoke-static {v6}, Landroid/server/BluetoothService;->access$800(Landroid/server/BluetoothService;)Landroid/content/Context;
 
     invoke-virtual {v4, v5, v7}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
@@ -205,7 +204,7 @@
 
     move-result-object v4
 
-    invoke-static {}, Landroid/server/BluetoothService;->access$700()Ljava/lang/String;
+    invoke-static {}, Landroid/server/BluetoothService;->access$600()Ljava/lang/String;
 
     move-result-object v5
 

@@ -38,19 +38,19 @@
     .parameter
 
     .prologue
-    .line 6068
+    .line 6069
     iput-object p1, p0, Landroid/widget/TextView$CorrectionHighlighter;->this$0:Landroid/widget/TextView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6062
+    .line 6063
     new-instance v0, Landroid/graphics/Path;
 
     invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
 
     iput-object v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->mPath:Landroid/graphics/Path;
 
-    .line 6063
+    .line 6064
     new-instance v0, Landroid/graphics/Paint;
 
     const/4 v1, 0x1
@@ -59,7 +59,7 @@
 
     iput-object v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->mPaint:Landroid/graphics/Paint;
 
-    .line 6069
+    .line 6070
     iget-object v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->mPaint:Landroid/graphics/Paint;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getResources()Landroid/content/res/Resources;
@@ -74,14 +74,14 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setCompatibilityScaling(F)V
 
-    .line 6070
+    .line 6071
     iget-object v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->mPaint:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 6071
+    .line 6072
     return-void
 .end method
 
@@ -91,7 +91,7 @@
     .parameter "x1"
 
     .prologue
-    .line 6061
+    .line 6062
     invoke-direct {p0, p1}, Landroid/widget/TextView$CorrectionHighlighter;->invalidate(Z)V
 
     return-void
@@ -102,18 +102,18 @@
     .parameter "delayed"
 
     .prologue
-    .line 6128
+    .line 6129
     iget-object v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->this$0:Landroid/widget/TextView;
 
     iget-object v0, v0, Landroid/widget/TextView;->mLayout:Landroid/text/Layout;
 
     if-nez v0, :cond_0
 
-    .line 6145
+    .line 6146
     :goto_0
     return-void
 
-    .line 6130
+    .line 6131
     :cond_0
     invoke-static {}, Landroid/widget/TextView;->access$800()Landroid/graphics/RectF;
 
@@ -121,7 +121,7 @@
 
     monitor-enter v9
 
-    .line 6131
+    .line 6132
     :try_start_0
     iget-object v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->mPath:Landroid/graphics/Path;
 
@@ -133,14 +133,14 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Path;->computeBounds(Landroid/graphics/RectF;Z)V
 
-    .line 6133
+    .line 6134
     iget-object v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->this$0:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getCompoundPaddingLeft()I
 
     move-result v7
 
-    .line 6134
+    .line 6135
     .local v7, left:I
     iget-object v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->this$0:Landroid/widget/TextView;
 
@@ -159,11 +159,11 @@
 
     add-int v8, v0, v1
 
-    .line 6136
+    .line 6137
     .local v8, top:I
     if-eqz p1, :cond_1
 
-    .line 6137
+    .line 6138
     iget-object v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->this$0:Landroid/widget/TextView;
 
     const-wide/16 v1, 0x10
@@ -210,7 +210,7 @@
 
     invoke-virtual/range {v0 .. v6}, Landroid/widget/TextView;->postInvalidateDelayed(JIIII)V
 
-    .line 6144
+    .line 6145
     :goto_1
     monitor-exit v9
 
@@ -227,7 +227,7 @@
 
     throw v0
 
-    .line 6141
+    .line 6142
     .restart local v7       #left:I
     .restart local v8       #top:I
     :cond_1
@@ -277,7 +277,7 @@
     .locals 2
 
     .prologue
-    .line 6148
+    .line 6149
     iget-object v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->this$0:Landroid/widget/TextView;
 
     const/4 v1, 0x0
@@ -285,7 +285,7 @@
     #setter for: Landroid/widget/TextView;->mCorrectionHighlighter:Landroid/widget/TextView$CorrectionHighlighter;
     invoke-static {v0, v1}, Landroid/widget/TextView;->access$1002(Landroid/widget/TextView;Landroid/widget/TextView$CorrectionHighlighter;)Landroid/widget/TextView$CorrectionHighlighter;
 
-    .line 6149
+    .line 6150
     return-void
 .end method
 
@@ -293,7 +293,7 @@
     .locals 9
 
     .prologue
-    .line 6102
+    .line 6103
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v5
@@ -302,7 +302,7 @@
 
     sub-long v2, v5, v7
 
-    .line 6103
+    .line 6104
     .local v2, duration:J
     const-wide/16 v5, 0x190
 
@@ -312,11 +312,11 @@
 
     const/4 v5, 0x0
 
-    .line 6110
+    .line 6111
     :goto_0
     return v5
 
-    .line 6105
+    .line 6106
     :cond_0
     const/high16 v5, 0x3f80
 
@@ -328,7 +328,7 @@
 
     sub-float v0, v5, v6
 
-    .line 6106
+    .line 6107
     .local v0, coef:F
     iget-object v5, p0, Landroid/widget/TextView$CorrectionHighlighter;->this$0:Landroid/widget/TextView;
 
@@ -341,7 +341,7 @@
 
     move-result v4
 
-    .line 6107
+    .line 6108
     .local v4, highlightColorAlpha:I
     iget-object v5, p0, Landroid/widget/TextView$CorrectionHighlighter;->this$0:Landroid/widget/TextView;
 
@@ -364,13 +364,13 @@
 
     add-int v1, v5, v6
 
-    .line 6109
+    .line 6110
     .local v1, color:I
     iget-object v5, p0, Landroid/widget/TextView$CorrectionHighlighter;->mPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v5, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 6110
+    .line 6111
     const/4 v5, 0x1
 
     goto :goto_0
@@ -380,22 +380,22 @@
     .locals 6
 
     .prologue
-    .line 6114
+    .line 6115
     iget-object v4, p0, Landroid/widget/TextView$CorrectionHighlighter;->this$0:Landroid/widget/TextView;
 
     iget-object v1, v4, Landroid/widget/TextView;->mLayout:Landroid/text/Layout;
 
-    .line 6115
+    .line 6116
     .local v1, layout:Landroid/text/Layout;
     if-nez v1, :cond_0
 
     const/4 v4, 0x0
 
-    .line 6124
+    .line 6125
     :goto_0
     return v4
 
-    .line 6118
+    .line 6119
     :cond_0
     iget-object v4, p0, Landroid/widget/TextView$CorrectionHighlighter;->this$0:Landroid/widget/TextView;
 
@@ -408,7 +408,7 @@
 
     move-result v2
 
-    .line 6119
+    .line 6120
     .local v2, length:I
     iget v4, p0, Landroid/widget/TextView$CorrectionHighlighter;->mStart:I
 
@@ -416,7 +416,7 @@
 
     move-result v3
 
-    .line 6120
+    .line 6121
     .local v3, start:I
     iget v4, p0, Landroid/widget/TextView$CorrectionHighlighter;->mEnd:I
 
@@ -424,13 +424,13 @@
 
     move-result v0
 
-    .line 6122
+    .line 6123
     .local v0, end:I
     iget-object v4, p0, Landroid/widget/TextView$CorrectionHighlighter;->mPath:Landroid/graphics/Path;
 
     invoke-virtual {v4}, Landroid/graphics/Path;->reset()V
 
-    .line 6123
+    .line 6124
     iget-object v4, p0, Landroid/widget/TextView$CorrectionHighlighter;->this$0:Landroid/widget/TextView;
 
     iget-object v4, v4, Landroid/widget/TextView;->mLayout:Landroid/text/Layout;
@@ -439,7 +439,7 @@
 
     invoke-virtual {v4, v3, v0, v5}, Landroid/text/Layout;->getSelectionPath(IILandroid/graphics/Path;)V
 
-    .line 6124
+    .line 6125
     const/4 v4, 0x1
 
     goto :goto_0
@@ -455,7 +455,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 6084
+    .line 6085
     invoke-direct {p0}, Landroid/widget/TextView$CorrectionHighlighter;->updatePath()Z
 
     move-result v0
@@ -468,15 +468,15 @@
 
     if-eqz v0, :cond_2
 
-    .line 6085
+    .line 6086
     if-eqz p2, :cond_0
 
-    .line 6086
+    .line 6087
     int-to-float v0, p2
 
     invoke-virtual {p1, v2, v0}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 6089
+    .line 6090
     :cond_0
     iget-object v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->mPath:Landroid/graphics/Path;
 
@@ -484,31 +484,31 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
-    .line 6091
+    .line 6092
     if-eqz p2, :cond_1
 
-    .line 6092
+    .line 6093
     neg-int v0, p2
 
     int-to-float v0, v0
 
     invoke-virtual {p1, v2, v0}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 6094
+    .line 6095
     :cond_1
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Landroid/widget/TextView$CorrectionHighlighter;->invalidate(Z)V
 
-    .line 6099
+    .line 6100
     :goto_0
     return-void
 
-    .line 6096
+    .line 6097
     :cond_2
     invoke-direct {p0}, Landroid/widget/TextView$CorrectionHighlighter;->stopAnimation()V
 
-    .line 6097
+    .line 6098
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Landroid/widget/TextView$CorrectionHighlighter;->invalidate(Z)V
@@ -521,14 +521,14 @@
     .parameter "info"
 
     .prologue
-    .line 6074
+    .line 6075
     invoke-virtual {p1}, Landroid/view/inputmethod/CorrectionInfo;->getOffset()I
 
     move-result v0
 
     iput v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->mStart:I
 
-    .line 6075
+    .line 6076
     iget v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->mStart:I
 
     invoke-virtual {p1}, Landroid/view/inputmethod/CorrectionInfo;->getNewText()Ljava/lang/CharSequence;
@@ -543,14 +543,14 @@
 
     iput v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->mEnd:I
 
-    .line 6076
+    .line 6077
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->mFadingStartTime:J
 
-    .line 6078
+    .line 6079
     iget v0, p0, Landroid/widget/TextView$CorrectionHighlighter;->mStart:I
 
     if-ltz v0, :cond_0
@@ -559,11 +559,11 @@
 
     if-gez v0, :cond_1
 
-    .line 6079
+    .line 6080
     :cond_0
     invoke-direct {p0}, Landroid/widget/TextView$CorrectionHighlighter;->stopAnimation()V
 
-    .line 6081
+    .line 6082
     :cond_1
     return-void
 .end method

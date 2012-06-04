@@ -175,6 +175,13 @@
 
     .prologue
     .line 314
+    iget v0, p0, Landroid/webkit/HTML5Audio;->mState:I
+
+    sget v1, Landroid/webkit/HTML5Audio;->PREPARED:I
+
+    if-lt v0, v1, :cond_0
+
+    .line 315
     iget-object v0, p0, Landroid/webkit/HTML5Audio;->mMediaPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0}, Landroid/media/MediaPlayer;->getDuration()I
@@ -187,7 +194,14 @@
 
     div-float/2addr v0, v1
 
+    .line 317
+    :goto_0
     return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method
 
 .method private native nativeOnBuffering(II)V
