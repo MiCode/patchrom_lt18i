@@ -238,7 +238,7 @@
 
     move v3, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/server/LightsService$Light;->setLightLocked(IIIII)V
+    invoke-virtual/range {v0 .. v5}, Lcom/android/server/LightsService$Light;->setLightLocked(IIIII)V
 
     .line 99
     const/4 v0, 0x0

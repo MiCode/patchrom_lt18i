@@ -11524,17 +11524,21 @@
 
     invoke-static {}, Lmiui/net/FirewallManager;->getInstance()Lmiui/net/FirewallManager;
 
-    move-result-object v13
+    move-result-object v15
 
     invoke-static {}, Lcom/android/server/ConnectivityService;->getCallingUid()I
 
-    move-result v14
+    move-result v16
 
     invoke-static {}, Lcom/android/server/ConnectivityService;->getCallingPid()I
 
-    move-result v15
+    move-result v17
 
-    invoke-virtual {v13, v14, v15, v12}, Lmiui/net/FirewallManager;->onStartUsingNetworkFeature(III)V
+    move/from16 v0, v16
+    
+    move/from16 v1, v17
+
+    invoke-virtual {v15, v0, v1, v14}, Lmiui/net/FirewallManager;->onStartUsingNetworkFeature(III)V
 
     if-ltz v10, :cond_8
 

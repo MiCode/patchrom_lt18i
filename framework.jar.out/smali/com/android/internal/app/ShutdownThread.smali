@@ -618,8 +618,10 @@
     new-instance v3, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v3, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    
+    invoke-static {}, Lcom/android/internal/app/ShutdownThread;->getTitleResourceId()I
 
-    const v4, 0x104014a
+    move-result v4
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 

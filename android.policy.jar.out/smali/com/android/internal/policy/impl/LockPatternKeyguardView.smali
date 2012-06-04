@@ -955,7 +955,7 @@
 
     if-eqz v0, :cond_1
 
-    const v0, 0x10202ad
+    const v0, 0x102029f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -990,7 +990,7 @@
     .parameter "view"
 
     .prologue
-    const v0, 0x10202ac
+    const v0, 0x102029e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1341,7 +1341,7 @@
     .local v0, count:I
     iget-object v3, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mContext:Landroid/content/Context;
 
-    const v4, 0x1040323
+    const v4, 0x10402fc
 
     const/4 v5, 0x3
 
@@ -1506,7 +1506,7 @@
     .local v1, timeoutInSeconds:I
     iget-object v2, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mContext:Landroid/content/Context;
 
-    const v3, 0x1040324
+    const v3, 0x10402fd
 
     const/4 v4, 0x2
 
@@ -1624,7 +1624,7 @@
     const/16 v2, 0x1e
 
     .local v2, timeoutInSeconds:I
-    const v1, 0x1040320
+    const v1, 0x10402f9
 
     .local v1, messageId:I
     invoke-direct {p0}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->getUnlockMode()Lcom/android/internal/policy/impl/LockPatternKeyguardView$UnlockMode;
@@ -1645,7 +1645,7 @@
 
     if-ne v3, v4, :cond_1
 
-    const v1, 0x1040322
+    const v1, 0x10402fb
 
     :cond_0
     :goto_0
@@ -1778,7 +1778,7 @@
     .prologue
     iget-object v1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;->mContext:Landroid/content/Context;
 
-    const v2, 0x1040325
+    const v2, 0x10402fe
 
     const/4 v3, 0x1
 
