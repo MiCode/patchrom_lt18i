@@ -1,9 +1,6 @@
-.class Lcom/android/internal/policy/impl/LockPatternKeyguardView$6;
+.class synthetic Lcom/android/internal/policy/impl/LockPatternKeyguardView$6;
 .super Ljava/lang/Object;
 .source "LockPatternKeyguardView.java"
-
-# interfaces
-.implements Landroid/content/ServiceConnection;
 
 
 # annotations

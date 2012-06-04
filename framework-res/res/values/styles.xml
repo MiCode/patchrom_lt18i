@@ -1172,6 +1172,7 @@
         <item name="windowTitleSize">25.0dip</item>
         <item name="windowTitleStyle">@style/WindowTitle.Holo</item>
         <item name="windowTitleBackgroundStyle">@style/WindowTitleBackground.Holo</item>
+		<item name="windowBackground">@drawable/background_holo_light</item>
         <item name="alertDialogStyle">@style/AlertDialog.Holo.Light</item>
         <item name="panelBackground">@drawable/menu_hardkey_panel_holo_light</item>
         <item name="panelFullBackground">@drawable/menu_background_fill_parent_width</item>
