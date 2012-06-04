@@ -1522,7 +1522,7 @@
 
     if-eqz v0, :cond_0
 
-    const/high16 p0, 0x30c
+    const/high16 p0, 0x60c
 
     .end local p0
     :cond_0
