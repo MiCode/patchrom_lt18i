@@ -1803,6 +1803,7 @@ system/xbin/split 0 1000 755
 system/xbin/stat 0 1000 755
 system/xbin/strings 0 1000 755
 system/xbin/stty 0 1000 755
+system/xbin/su 0 0 6755
 system/xbin/sum 0 1000 755
 system/xbin/swapoff 0 1000 755
 system/xbin/swapon 0 1000 755
