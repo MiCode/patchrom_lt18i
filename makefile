@@ -41,7 +41,11 @@ local-remove-apps   := AdobeFlashPlayer Conversations datatrafficswitch DigitalC
 	SemcSnpPlatformUtil SemcSnpVideoPlayer ShutDownAnimation SmartSearch SoundPicker \
 	Sync talkback UnsupportedHeadsetNotifier VerifyCertificatesDummyAppApplication \
 	VerifyCertificatesDummyAppMedia VerifyCertificatesDummyAppPlatform \
-	VerifyCertificatesDummyAppShared Superuser DrmProvider
+	VerifyCertificatesDummyAppShared Superuser DrmProvider com.sonyericsson.androidapp.linkedintsext \
+	bootinfo usb-mtp-update-wrapper usb-mtp-vendor-extension-service VoipCallLogProvider \
+	UseragentProvider PMSservice OmaV1AgentDownloadServices OmaDownload \
+	OMAClientProvisioning CustomizedApplicationInstaller GoogleLyricsPlugin 
+
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
