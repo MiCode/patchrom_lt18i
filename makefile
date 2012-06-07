@@ -44,7 +44,7 @@ local-remove-apps   := AdobeFlashPlayer Conversations datatrafficswitch DigitalC
 	VerifyCertificatesDummyAppShared Superuser DrmProvider com.sonyericsson.androidapp.linkedintsext \
 	bootinfo usb-mtp-update-wrapper usb-mtp-vendor-extension-service VoipCallLogProvider \
 	UseragentProvider PMSservice OmaV1AgentDownloadServices OmaDownload \
-	OMAClientProvisioning CustomizedApplicationInstaller GoogleLyricsPlugin 
+	OMAClientProvisioning CustomizedApplicationInstaller GoogleLyricsPlugin GMS_Map 
 
 
 # To include the local targets before and after zip the final ZIP file, 
