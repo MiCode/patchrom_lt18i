@@ -67,7 +67,8 @@ local-zip-misc:
 	@echo Replace build.prop
 	cp other/build.prop $(ZIP_DIR)/system/build.prop
 	cp other/Lt18iSettings.apk $(ZIP_DIR)/system/app/Lt18iSettings.apk
-	
+	rm $(ZIP_DIR)/system/bin/su
+
 	@echo update bootanimation
 	rm $(ZIP_DIR)/system/bin/bootanimation
 	cp other/bootanimation $(ZIP_DIR)/system/bin/bootanimation
