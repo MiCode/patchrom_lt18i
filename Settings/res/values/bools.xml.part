@@ -2,4 +2,5 @@
 
 <resources>
     <bool name="has_camera_key">true</bool>
+    <bool name="has_led">true</bool>
 </resources>
