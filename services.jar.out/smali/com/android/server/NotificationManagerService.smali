@@ -1818,6 +1818,8 @@
 
     if-eqz v4, :cond_1
 
+    goto :cond_3
+
     iget-boolean v4, p0, Lcom/android/server/NotificationManagerService;->mInCall:Z
 
     if-nez v4, :cond_1
