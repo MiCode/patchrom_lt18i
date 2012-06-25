@@ -69,6 +69,7 @@ local-zip-misc:
 	cp other/Lt18iSettings.apk $(ZIP_DIR)/system/app/Lt18iSettings.apk
 	rm $(ZIP_DIR)/system/bin/su
 	cp other/handle_device_name.sh $(ZIP_DIR)/system/bin/
+	cp other/Generic.kl $(ZIP_DIR)/system/usr/keylayout/
 
 	@echo update bootanimation
 	rm $(ZIP_DIR)/system/bin/bootanimation
