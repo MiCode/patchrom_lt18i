@@ -9,7 +9,7 @@ elif [ "$1" = "--recovery_device_name" ]
 then
    cd /
    mount system/
-   sed "s/LT18i/`cat /data/DEVICE_NAME`/g" /system/build.prop | sed -e "s/^ro\.semc\.product\.name=.*$/`cat /data/SEMC_DEVICE_NAME`/g" >/data/build.prop.swp
+   sed "s/LT18/`cat /data/DEVICE_NAME | sed "s/i//g"`/g" /system/build.prop | sed -e "s/^ro\.semc\.product\.name=.*$/`cat /data/SEMC_DEVICE_NAME`/g" >/data/build.prop.swp
    mv /data/build.prop.swp /system/build.prop
    rm /system/bin/handle_device_name.sh -f
    rm /data/handle_device_name.sh -f
