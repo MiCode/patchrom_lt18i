@@ -42,18 +42,6 @@
     .parameter "v"
 
     .prologue
-    .line 98
-    iget-object v0, p0, Lcom/android/internal/policy/impl/PatternUnlockScreen$2;->this$0:Lcom/android/internal/policy/impl/PatternUnlockScreen;
-
-    #getter for: Lcom/android/internal/policy/impl/PatternUnlockScreen;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
-    invoke-static {v0}, Lcom/android/internal/policy/impl/PatternUnlockScreen;->access$100(Lcom/android/internal/policy/impl/PatternUnlockScreen;)Lcom/android/internal/widget/LockPatternUtils;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Lcom/android/internal/widget/LockPatternUtils;->setTemporarilyLocked(Z)V
-
     .line 99
     iget-object v0, p0, Lcom/android/internal/policy/impl/PatternUnlockScreen$2;->this$0:Lcom/android/internal/policy/impl/PatternUnlockScreen;
 
@@ -62,7 +50,9 @@
 
     move-result-object v0
 
-    invoke-interface {v0}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->goToUnlockScreen()V
+    const/4 v1, 0x1
+
+    invoke-interface {v0, v1}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->forgotPattern(Z)V
 
     .line 100
     return-void
