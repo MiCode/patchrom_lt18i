@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings version="1001">
+   <setting key="min-fota-battery-level" runtime="false">35</setting>
+   <setting key="enable-option-menu-force-update" runtime="false">true</setting>
+   <setting key="enable-menu-in-settings" runtime="false">true</setting>
+</settings>

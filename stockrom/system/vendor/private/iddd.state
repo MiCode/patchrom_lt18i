@@ -1,0 +1,16 @@
+config-checksum: d08cc36d153dfa698988af0c8995bd3005aaa0c8
+last-flush: 1335358156586
+shutdown-time: 1335358156587
+device_id: 34274f31-71a0-4763-ab7a-6c354efe762f
+report-max-size: 102400
+output-dir-max-size: 1048576
+product: 1253-8238
+sw_version: 4.1.A.0.562
+variant: GENERIC
+build_type: user
+cdf_id: 1255-1753_R10D
+serial_num: unknown
+device_imei: 
+expire-counters: 2592000
+expire-sdata: 2592000
+data-collection: 0

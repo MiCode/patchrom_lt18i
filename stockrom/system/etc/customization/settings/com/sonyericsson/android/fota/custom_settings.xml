@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings version="1001">
+   <setting key="enable-cost-warning" runtime="false">true</setting>
+   <setting key="enable-roaming" runtime="false">false</setting>
+</settings>

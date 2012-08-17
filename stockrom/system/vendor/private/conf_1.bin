@@ -1,0 +1,28 @@
+
+Ø
+.
+)com.sonyericsson.idd.probe.android.common*?
+0com.sonyericsson.idd.probe.android.devicemonitorSystemCrash>
+0com.sonyericsson.idd.probe.android.devicemonitor
+ModemCrashD
+0com.sonyericsson.idd.probe.android.devicemonitorApplicationCrash=
+0com.sonyericsson.idd.probe.android.devicemonitor	LogECrashC
+0com.sonyericsson.idd.probe.android.devicemonitorThirdPartyCrashA
+0com.sonyericsson.idd.probe.android.devicemonitorJavaHangCrash@
+0com.sonyericsson.idd.probe.android.devicemonitorUnknownCrash 
+idd.system_logging
+LogMessage7
+)com.sonyericsson.idd.probe.android.memory
+FlashUsage6
+*com.sonyericsson.idd.probe.android.networkOperator5
+*com.sonyericsson.idd.probe.android.networkRoaming2
+*com.sonyericsson.idd.probe.android.networkType2
+*com.sonyericsson.idd.probe.android.networkCellD
+:com.sonyericsson.idd.probe.android.devicemonitor.powerstatScreenF
+:com.sonyericsson.idd.probe.android.devicemonitor.powerstatScreenOnG
+:com.sonyericsson.idd.probe.android.devicemonitor.powerstat	ScreenOffI
+:com.sonyericsson.idd.probe.android.devicemonitor.powerstatUserPresentJ
+:com.sonyericsson.idd.probe.android.devicemonitor.powerstatBootCompleteF
+:com.sonyericsson.idd.probe.android.devicemonitor.powerstatShutDown4
+-com.sonyericsson.idd.probe.android.usage.appsCnt6
+1com.sonyericsson.idd.probe.android.usage.packages*

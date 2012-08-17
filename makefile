@@ -3,7 +3,7 @@
 #
 
 # The original zip file, MUST be specified by each product
-local-zip-file     := LT18i_4.1.B.0.431.zip
+local-zip-file     := stockrom.zip
 
 # The output zip file of MIUI rom, the default is porting_miui.zip if not specified
 #local-out-zip-file := MIUI_lt18i.zip
