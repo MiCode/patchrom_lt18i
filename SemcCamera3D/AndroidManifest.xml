@@ -34,6 +34,7 @@
         <activity android:theme="@style/BootTheme" android:label="@string/cam_3d_strings_album_application_name_txt" android:icon="@drawable/cam_3d_application_3d_album_icn" android:name=".viewer.Browser" android:process=":Browser" android:taskAffinity=".viewer.Browser" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

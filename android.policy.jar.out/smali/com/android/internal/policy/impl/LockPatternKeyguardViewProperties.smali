@@ -7,24 +7,34 @@
 
 
 # instance fields
+.field private final mBackupQuestionUtils:Lcom/android/internal/widget/BackupQuestionUtils;
+
 .field private final mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
 .field private final mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/internal/widget/LockPatternUtils;Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;)V
+.method public constructor <init>(Lcom/android/internal/widget/LockPatternUtils;Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;Lcom/android/internal/widget/BackupQuestionUtils;)V
     .locals 0
     .parameter "lockPatternUtils"
     .parameter "updateMonitor"
+    .parameter "backupQuestionUtils"
 
     .prologue
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 48
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
+    .line 49
+    iput-object p3, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mBackupQuestionUtils:Lcom/android/internal/widget/BackupQuestionUtils;
+
+    .line 50
     iput-object p1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
+    .line 51
     iput-object p2, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
+    .line 52
     return-void
 .end method
 
@@ -72,7 +82,7 @@
 
 # virtual methods
 .method public createKeyguardView(Landroid/content/Context;Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;Lcom/android/internal/policy/impl/KeyguardWindowController;)Lcom/android/internal/policy/impl/KeyguardViewBase;
-    .locals 2
+    .locals 6
     .parameter "context"
     .parameter "updateMonitor"
     .parameter "controller"
@@ -81,9 +91,17 @@
     .line 57
     new-instance v0, Lcom/android/internal/policy/impl/LockPatternKeyguardView;
 
-    iget-object v1, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v3, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
-    invoke-direct {v0, p1, p2, v1, p3}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;-><init>(Landroid/content/Context;Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;Lcom/android/internal/widget/LockPatternUtils;Lcom/android/internal/policy/impl/KeyguardWindowController;)V
+    iget-object v5, p0, Lcom/android/internal/policy/impl/LockPatternKeyguardViewProperties;->mBackupQuestionUtils:Lcom/android/internal/widget/BackupQuestionUtils;
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v4, p3
+
+    invoke-direct/range {v0 .. v5}, Lcom/android/internal/policy/impl/LockPatternKeyguardView;-><init>(Landroid/content/Context;Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;Lcom/android/internal/widget/LockPatternUtils;Lcom/android/internal/policy/impl/KeyguardWindowController;Lcom/android/internal/widget/BackupQuestionUtils;)V
 
     return-object v0
 .end method

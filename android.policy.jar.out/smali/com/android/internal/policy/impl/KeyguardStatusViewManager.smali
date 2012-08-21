@@ -1496,15 +1496,15 @@
 
     .line 566
     :pswitch_2
-    #invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
+    invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
-    #move-result-object v3
+    move-result-object v3
 
-    #invoke-virtual {v3}, Landroid/telephony/TelephonyManager;->isIccInvalidCard()Z
+    invoke-virtual {v3}, Landroid/telephony/TelephonyManager;->isIccInvalidCard()Z
 
-    #move-result v3
+    move-result v3
 
-    #if-eqz v3, :cond_2
+    if-eqz v3, :cond_2
 
     .line 567
     invoke-direct {p0}, Lcom/android/internal/policy/impl/KeyguardStatusViewManager;->getContext()Landroid/content/Context;
