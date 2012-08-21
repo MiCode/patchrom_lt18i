@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="emailAddressTypes">
-        <item>主要信箱</item>
+        <item>住家</item>
         <item>公司信箱</item>
         <item>其他信箱</item>
         <item>自訂</item>

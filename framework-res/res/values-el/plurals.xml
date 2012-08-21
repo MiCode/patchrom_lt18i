@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <plurals name="num_seconds_ago">
-        <item quantity="other">πριν από %d δευτερόλεπτα</item>
-        <item quantity="one">πριν από 1 δευτερόλεπτο</item>
+        <item quantity="other">πριν %d δευτ.</item>
+        <item quantity="one">πριν 1 δευτ.</item>
     </plurals>
     <plurals name="num_minutes_ago">
         <item quantity="other">πριν από %d λεπτά</item>
@@ -36,8 +36,8 @@
         <item quantity="one">αύριο</item>
     </plurals>
     <plurals name="abbrev_num_seconds_ago">
-        <item quantity="other">πριν από %d δευτερόλεπτα</item>
-        <item quantity="one">πριν από 1 δευτερόλεπτο</item>
+        <item quantity="other">πριν %d δευτ.</item>
+        <item quantity="one">πριν 1 δευτ.</item>
     </plurals>
     <plurals name="abbrev_num_minutes_ago">
         <item quantity="other">πριν από %d λεπτά</item>

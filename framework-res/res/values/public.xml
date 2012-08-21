@@ -4203,6 +4203,51 @@
     <public type="string" name="lockscreen_strings_sim_puk_wrong_nbr_digits_header_txt" id="0x01040518" />
     <public type="string" name="seport_strings_accessory_not_supported_txt" id="0x01040519" />
     <public type="string" name="add_region_in_locale_picker_dummy_string" id="0x0104051a" />
+    <public type="string" name="global_action_screenshot_txt" id="0x0104051b" />
+    <public type="string" name="BaICMmi" id="0x0104051c" />
+    <public type="string" name="BaOCMmi" id="0x0104051d" />
+    <public type="string" name="BaOICMmi" id="0x0104051e" />
+    <public type="string" name="BaOICxHMmi" id="0x0104051f" />
+    <public type="string" name="BaICrMmi" id="0x01040520" />
+    <public type="string" name="BaAllMmi" id="0x01040521" />
+    <public type="string" name="BaMOMmi" id="0x01040522" />
+    <public type="string" name="BaMTMmi" id="0x01040523" />
+    <public type="string" name="policylab_passwordRecovery" id="0x01040524" />
+    <public type="string" name="policydesc_passwordRecovery" id="0x01040525" />
+    <public type="string" name="usb_storage_connect_notification_title" id="0x01040526" />
+    <public type="string" name="usb_storage_connect_notification_message" id="0x01040527" />
+    <public type="string" name="usb_storage_checking_notification_title" id="0x01040528" />
+    <public type="string" name="usb_storage_nofs_notification_title" id="0x01040529" />
+    <public type="string" name="usb_storage_nofs_notification_message" id="0x0104052a" />
+    <public type="string" name="usb_storage_unmountable_notification_title" id="0x0104052b" />
+    <public type="string" name="usb_storage_unmountable_notification_message" id="0x0104052c" />
+    <public type="string" name="usb_storage_badremoval_notification_title" id="0x0104052d" />
+    <public type="string" name="usb_storage_badremoval_notification_message" id="0x0104052e" />
+    <public type="string" name="usb_storage_safe_unmount_notification_title" id="0x0104052f" />
+    <public type="string" name="usb_storage_safe_unmount_notification_message" id="0x01040530" />
+    <public type="string" name="usb_storage_nomedia_notification_title" id="0x01040531" />
+    <public type="string" name="usb_storage_nomedia_notification_message" id="0x01040532" />
+    <public type="string" name="usb_storage_format_title" id="0x01040533" />
+    <public type="string" name="usb_storage_format_message" id="0x01040534" />
+    <public type="string" name="usb_storage_progress_erasing" id="0x01040535" />
+    <public type="string" name="usb_storage_checking" id="0x01040536" />
+    <public type="string" name="usb_storage_progress_unmounting" id="0x01040537" />
+    <public type="string" name="usb_storage_format_error" id="0x01040538" />
+    <public type="string" name="usb_storage_bad_removal" id="0x01040539" />
+    <public type="string" name="usb_storage_removed" id="0x0104053a" />
+    <public type="string" name="usb_storage_shared" id="0x0104053b" />
+    <public type="string" name="internal_storage_strings_checking_notification_title_txt" id="0x0104053c" />
+    <public type="string" name="internal_storage_strings_unmountable_notification_title_txt" id="0x0104053d" />
+    <public type="string" name="internal_storage_strings_unmountable_notification_message_txt" id="0x0104053e" />
+    <public type="string" name="internal_storage_strings_nofs_notification_title_txt" id="0x0104053f" />
+    <public type="string" name="internal_storage_strings_nofs_notification_message_txt" id="0x01040540" />
+    <public type="string" name="internal_storage_factory_reset_unmount" id="0x01040541" />
+    <public type="string" name="internal_storage_factory_reset_erase" id="0x01040542" />
+    <public type="string" name="internal_storage_factory_reset_error" id="0x01040543" />
+    <public type="string" name="internal_storage_factory_reset_checking" id="0x01040544" />
+    <public type="string" name="internal_storage_factory_reset_shared" id="0x01040545" />
+    <public type="string" name="internal_storage_format_progress" id="0x01040546" />
+    <public type="string" name="internal_storage_erase_data_desc" id="0x01040547" />
     <public type="dimen" name="app_icon_size" id="0x01050000" />
     <public type="dimen" name="thumbnail_height" id="0x01050001" />
     <public type="dimen" name="thumbnail_width" id="0x01050002" />

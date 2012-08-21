@@ -70,28 +70,28 @@
     .parameter "nativePtr"
 
     .prologue
-    .line 555
+    .line 560
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 557
+    .line 562
     iput-object p1, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebView:Landroid/webkit/WebView;
 
-    .line 561
+    .line 566
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0, p0}, Landroid/webkit/WebView;->setHTML5VideoViewProxy(Landroid/webkit/HTML5VideoViewProxy;)V
 
-    .line 563
+    .line 568
     iput p2, p0, Landroid/webkit/HTML5VideoViewProxy;->mNativePointer:I
 
-    .line 565
+    .line 570
     invoke-direct {p0}, Landroid/webkit/HTML5VideoViewProxy;->createWebCoreHandler()V
 
-    .line 566
+    .line 571
     return-void
 .end method
 
@@ -217,14 +217,14 @@
     .locals 1
 
     .prologue
-    .line 569
+    .line 574
     new-instance v0, Landroid/webkit/HTML5VideoViewProxy$1;
 
     invoke-direct {v0, p0}, Landroid/webkit/HTML5VideoViewProxy$1;-><init>(Landroid/webkit/HTML5VideoViewProxy;)V
 
     iput-object v0, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
 
-    .line 602
+    .line 607
     return-void
 .end method
 
@@ -233,18 +233,18 @@
     .parameter "poster"
 
     .prologue
-    .line 605
+    .line 610
     if-nez p1, :cond_0
 
-    .line 613
+    .line 618
     :goto_0
     return-void
 
-    .line 609
+    .line 614
     :cond_0
     iput-object p1, p0, Landroid/webkit/HTML5VideoViewProxy;->mPoster:Landroid/graphics/Bitmap;
 
-    .line 610
+    .line 615
     iget-object v1, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
 
     const/16 v2, 0xca
@@ -253,11 +253,11 @@
 
     move-result-object v0
 
-    .line 611
+    .line 616
     .local v0, msg:Landroid/os/Message;
     iput-object p1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 612
+    .line 617
     iget-object v1, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
@@ -271,7 +271,7 @@
     .parameter "nativePtr"
 
     .prologue
-    .line 717
+    .line 722
     new-instance v0, Landroid/webkit/HTML5VideoViewProxy;
 
     invoke-virtual {p0}, Landroid/webkit/WebViewCore;->getWebView()Landroid/webkit/WebView;
@@ -308,7 +308,7 @@
     .locals 3
 
     .prologue
-    .line 616
+    .line 621
     iget-object v1, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
 
     const/16 v2, 0x12c
@@ -317,7 +317,7 @@
 
     move-result-object v0
 
-    .line 617
+    .line 622
     .local v0, msg:Landroid/os/Message;
     invoke-static {}, Landroid/webkit/HTML5VideoViewProxy$VideoPlayer;->getCurrentPosition()I
 
@@ -325,12 +325,12 @@
 
     iput v1, v0, Landroid/os/Message;->arg1:I
 
-    .line 618
+    .line 623
     iget-object v1, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 619
+    .line 624
     return-void
 .end method
 
@@ -340,33 +340,10 @@
     .locals 3
 
     .prologue
-    .line 313
-    iget-object v1, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
-
-    const/16 v2, 0xc9
-
-    invoke-static {v1, v2}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
-
-    move-result-object v0
-
-    .line 314
-    .local v0, msg:Landroid/os/Message;
-    iget-object v1, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
-
-    invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-
-    .line 315
-    return-void
-.end method
-
-.method public dispatchOnPaused()V
-    .locals 3
-
-    .prologue
     .line 318
     iget-object v1, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
 
-    const/16 v2, 0xcb
+    const/16 v2, 0xc9
 
     invoke-static {v1, v2}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
 
@@ -382,14 +359,14 @@
     return-void
 .end method
 
-.method public dispatchOnStopFullScreen()V
+.method public dispatchOnPaused()V
     .locals 3
 
     .prologue
     .line 323
     iget-object v1, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
 
-    const/16 v2, 0xcc
+    const/16 v2, 0xcb
 
     invoke-static {v1, v2}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
 
@@ -405,18 +382,41 @@
     return-void
 .end method
 
+.method public dispatchOnStopFullScreen()V
+    .locals 3
+
+    .prologue
+    .line 328
+    iget-object v1, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
+
+    const/16 v2, 0xcc
+
+    invoke-static {v1, v2}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
+
+    move-result-object v0
+
+    .line 329
+    .local v0, msg:Landroid/os/Message;
+    iget-object v1, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
+
+    invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+
+    .line 330
+    return-void
+.end method
+
 .method public enterFullScreenVideo(ILjava/lang/String;)V
     .locals 1
     .parameter "layerId"
     .parameter "url"
 
     .prologue
-    .line 707
+    .line 712
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebView:Landroid/webkit/WebView;
 
     invoke-static {p1, p2, p0, v0}, Landroid/webkit/HTML5VideoViewProxy$VideoPlayer;->enterFullScreenVideo(ILjava/lang/String;Landroid/webkit/HTML5VideoViewProxy;Landroid/webkit/WebView;)V
 
-    .line 708
+    .line 713
     return-void
 .end method
 
@@ -424,7 +424,7 @@
     .locals 1
 
     .prologue
-    .line 622
+    .line 627
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getContext()Landroid/content/Context;
@@ -438,7 +438,7 @@
     .locals 1
 
     .prologue
-    .line 721
+    .line 726
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebView:Landroid/webkit/WebView;
 
     return-object v0
@@ -451,23 +451,23 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 343
+    .line 348
     iget v4, p1, Landroid/os/Message;->what:I
 
     sparse-switch v4, :sswitch_data_0
 
-    .line 397
+    .line 402
     :cond_0
     :goto_0
     return-void
 
-    .line 345
+    .line 350
     :sswitch_0
     iget-object v2, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v2, Ljava/lang/String;
 
-    .line 346
+    .line 351
     .local v2, url:Ljava/lang/String;
     iget-object v4, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebView:Landroid/webkit/WebView;
 
@@ -475,22 +475,22 @@
 
     move-result-object v0
 
-    .line 347
+    .line 352
     .local v0, client:Landroid/webkit/WebChromeClient;
     iget v3, p1, Landroid/os/Message;->arg1:I
 
-    .line 348
+    .line 353
     .local v3, videoLayerID:I
     if-eqz v0, :cond_0
 
-    .line 349
+    .line 354
     iget v4, p0, Landroid/webkit/HTML5VideoViewProxy;->mSeekPosition:I
 
     invoke-static {v2, v4, p0, v0, v3}, Landroid/webkit/HTML5VideoViewProxy$VideoPlayer;->play(Ljava/lang/String;ILandroid/webkit/HTML5VideoViewProxy;Landroid/webkit/WebChromeClient;I)V
 
     goto :goto_0
 
-    .line 354
+    .line 359
     .end local v0           #client:Landroid/webkit/WebChromeClient;
     .end local v2           #url:Ljava/lang/String;
     .end local v3           #videoLayerID:I
@@ -499,7 +499,7 @@
 
     check-cast v1, Ljava/lang/Integer;
 
-    .line 355
+    .line 360
     .local v1, time:Ljava/lang/Integer;
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
@@ -507,36 +507,36 @@
 
     iput v4, p0, Landroid/webkit/HTML5VideoViewProxy;->mSeekPosition:I
 
-    .line 356
+    .line 361
     iget v4, p0, Landroid/webkit/HTML5VideoViewProxy;->mSeekPosition:I
 
     invoke-static {v4, p0}, Landroid/webkit/HTML5VideoViewProxy$VideoPlayer;->seek(ILandroid/webkit/HTML5VideoViewProxy;)V
 
     goto :goto_0
 
-    .line 360
+    .line 365
     .end local v1           #time:Ljava/lang/Integer;
     :sswitch_2
     invoke-static {p0}, Landroid/webkit/HTML5VideoViewProxy$VideoPlayer;->pause(Landroid/webkit/HTML5VideoViewProxy;)V
 
     goto :goto_0
 
-    .line 364
+    .line 369
     :sswitch_3
     iget v4, p1, Landroid/os/Message;->arg1:I
 
     if-ne v4, v5, :cond_1
 
-    .line 365
+    .line 370
     invoke-static {v5}, Landroid/webkit/HTML5VideoViewProxy$VideoPlayer;->access$102(Z)Z
 
-    .line 366
+    .line 371
     :cond_1
     invoke-static {}, Landroid/webkit/HTML5VideoViewProxy$VideoPlayer;->end()V
 
     goto :goto_0
 
-    .line 369
+    .line 374
     :sswitch_4
     iget-object v4, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebView:Landroid/webkit/WebView;
 
@@ -544,16 +544,16 @@
 
     move-result-object v0
 
-    .line 370
+    .line 375
     .restart local v0       #client:Landroid/webkit/WebChromeClient;
     if-eqz v0, :cond_0
 
-    .line 371
+    .line 376
     invoke-virtual {v0}, Landroid/webkit/WebChromeClient;->onHideCustomView()V
 
     goto :goto_0
 
-    .line 376
+    .line 381
     .end local v0           #client:Landroid/webkit/WebChromeClient;
     :sswitch_5
     iget-object v4, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebView:Landroid/webkit/WebView;
@@ -562,11 +562,11 @@
 
     move-result-object v0
 
-    .line 377
+    .line 382
     .restart local v0       #client:Landroid/webkit/WebChromeClient;
     if-eqz v0, :cond_0
 
-    .line 378
+    .line 383
     invoke-virtual {v0}, Landroid/webkit/WebChromeClient;->getDefaultVideoPoster()Landroid/graphics/Bitmap;
 
     move-result-object v4
@@ -575,7 +575,7 @@
 
     goto :goto_0
 
-    .line 383
+    .line 388
     .end local v0           #client:Landroid/webkit/WebChromeClient;
     :sswitch_6
     invoke-static {p0}, Landroid/webkit/HTML5VideoViewProxy$VideoPlayer;->isPlaying(Landroid/webkit/HTML5VideoViewProxy;)Z
@@ -584,19 +584,19 @@
 
     if-eqz v4, :cond_0
 
-    .line 384
+    .line 389
     invoke-direct {p0}, Landroid/webkit/HTML5VideoViewProxy;->sendTimeupdate()V
 
     goto :goto_0
 
-    .line 389
+    .line 394
     :sswitch_7
     #calls: Landroid/webkit/HTML5VideoViewProxy$VideoPlayer;->setPlayerBuffering(Z)V
     invoke-static {v5}, Landroid/webkit/HTML5VideoViewProxy$VideoPlayer;->access$200(Z)V
 
     goto :goto_0
 
-    .line 393
+    .line 398
     :sswitch_8
     const/4 v4, 0x0
 
@@ -605,7 +605,7 @@
 
     goto :goto_0
 
-    .line 343
+    .line 348
     nop
 
     :sswitch_data_0
@@ -627,37 +627,37 @@
     .parameter "url"
 
     .prologue
-    .line 679
+    .line 684
     if-nez p1, :cond_0
 
-    .line 680
+    .line 685
     const/16 v1, 0x68
 
     invoke-virtual {p0, v1}, Landroid/webkit/HTML5VideoViewProxy;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v0
 
-    .line 681
+    .line 686
     .local v0, message:Landroid/os/Message;
     invoke-virtual {p0, v0}, Landroid/webkit/HTML5VideoViewProxy;->sendMessage(Landroid/os/Message;)Z
 
-    .line 691
+    .line 696
     .end local v0           #message:Landroid/os/Message;
     :goto_0
     return-void
 
-    .line 685
+    .line 690
     :cond_0
     iget-object v1, p0, Landroid/webkit/HTML5VideoViewProxy;->mPosterDownloader:Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;
 
     if-eqz v1, :cond_1
 
-    .line 686
+    .line 691
     iget-object v1, p0, Landroid/webkit/HTML5VideoViewProxy;->mPosterDownloader:Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;
 
     invoke-virtual {v1}, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->cancelAndReleaseQueue()V
 
-    .line 689
+    .line 694
     :cond_1
     new-instance v1, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;
 
@@ -665,7 +665,7 @@
 
     iput-object v1, p0, Landroid/webkit/HTML5VideoViewProxy;->mPosterDownloader:Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;
 
-    .line 690
+    .line 695
     iget-object v1, p0, Landroid/webkit/HTML5VideoViewProxy;->mPosterDownloader:Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;
 
     invoke-virtual {v1}, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->start()V
@@ -678,7 +678,7 @@
     .parameter "mp"
 
     .prologue
-    .line 303
+    .line 308
     const/16 v0, 0xc9
 
     const/4 v1, 0x1
@@ -691,7 +691,7 @@
 
     invoke-virtual {p0, v0}, Landroid/webkit/HTML5VideoViewProxy;->sendMessage(Landroid/os/Message;)Z
 
-    .line 304
+    .line 309
     return-void
 .end method
 
@@ -702,7 +702,7 @@
     .parameter "extra"
 
     .prologue
-    .line 308
+    .line 313
     const/16 v0, 0x67
 
     invoke-virtual {p0, v0}, Landroid/webkit/HTML5VideoViewProxy;->obtainMessage(I)Landroid/os/Message;
@@ -711,7 +711,7 @@
 
     invoke-virtual {p0, v0}, Landroid/webkit/HTML5VideoViewProxy;->sendMessage(Landroid/os/Message;)Z
 
-    .line 309
+    .line 314
     const/4 v0, 0x0
 
     return v0
@@ -722,12 +722,12 @@
     .parameter "surfaceTexture"
 
     .prologue
-    .line 336
+    .line 341
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->invalidate()V
 
-    .line 337
+    .line 342
     return-void
 .end method
 
@@ -738,12 +738,12 @@
     .parameter "extra"
 
     .prologue
-    .line 736
+    .line 741
     const/16 v0, 0x2bd
 
     if-ne p2, v0, :cond_1
 
-    .line 737
+    .line 742
     const/16 v0, 0x69
 
     invoke-virtual {p0, v0, p2, p3}, Landroid/webkit/HTML5VideoViewProxy;->obtainMessage(III)Landroid/os/Message;
@@ -752,20 +752,20 @@
 
     invoke-virtual {p0, v0}, Landroid/webkit/HTML5VideoViewProxy;->sendMessage(Landroid/os/Message;)Z
 
-    .line 741
+    .line 746
     :cond_0
     :goto_0
     const/4 v0, 0x0
 
     return v0
 
-    .line 738
+    .line 743
     :cond_1
     const/16 v0, 0x2be
 
     if-ne p2, v0, :cond_0
 
-    .line 739
+    .line 744
     const/16 v0, 0x6a
 
     invoke-virtual {p0, v0, p2, p3}, Landroid/webkit/HTML5VideoViewProxy;->obtainMessage(III)Landroid/os/Message;
@@ -778,85 +778,105 @@
 .end method
 
 .method public onPrepared(Landroid/media/MediaPlayer;)V
-    .locals 5
+    .locals 6
     .parameter "mp"
 
     .prologue
-    .line 287
+    .line 288
+    :try_start_0
     invoke-static {}, Landroid/webkit/HTML5VideoViewProxy$VideoPlayer;->onPrepared()V
 
-    .line 288
-    iget-object v2, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
-
-    const/16 v3, 0xc8
-
-    invoke-static {v2, v3}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
-
-    move-result-object v1
-
     .line 289
-    .local v1, msg:Landroid/os/Message;
-    new-instance v0, Ljava/util/HashMap;
+    iget-object v3, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    const/16 v4, 0xc8
+
+    invoke-static {v3, v4}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
+
+    move-result-object v2
 
     .line 290
-    .local v0, map:Ljava/util/Map;,"Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
-    const-string v2, "dur"
+    .local v2, msg:Landroid/os/Message;
+    new-instance v1, Ljava/util/HashMap;
 
-    new-instance v3, Ljava/lang/Integer;
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+
+    .line 291
+    .local v1, map:Ljava/util/Map;,"Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    const-string v3, "dur"
+
+    new-instance v4, Ljava/lang/Integer;
 
     invoke-virtual {p1}, Landroid/media/MediaPlayer;->getDuration()I
 
-    move-result v4
+    move-result v5
 
-    invoke-direct {v3, v4}, Ljava/lang/Integer;-><init>(I)V
+    invoke-direct {v4, v5}, Ljava/lang/Integer;-><init>(I)V
 
-    invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 291
-    const-string/jumbo v2, "width"
+    .line 292
+    const-string/jumbo v3, "width"
 
-    new-instance v3, Ljava/lang/Integer;
+    new-instance v4, Ljava/lang/Integer;
 
     invoke-virtual {p1}, Landroid/media/MediaPlayer;->getVideoWidth()I
 
-    move-result v4
+    move-result v5
 
-    invoke-direct {v3, v4}, Ljava/lang/Integer;-><init>(I)V
+    invoke-direct {v4, v5}, Ljava/lang/Integer;-><init>(I)V
 
-    invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 292
-    const-string v2, "height"
+    .line 293
+    const-string v3, "height"
 
-    new-instance v3, Ljava/lang/Integer;
+    new-instance v4, Ljava/lang/Integer;
 
     invoke-virtual {p1}, Landroid/media/MediaPlayer;->getVideoHeight()I
 
-    move-result v4
+    move-result v5
 
-    invoke-direct {v3, v4}, Ljava/lang/Integer;-><init>(I)V
+    invoke-direct {v4, v5}, Ljava/lang/Integer;-><init>(I)V
 
-    invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 293
-    iput-object v0, v1, Landroid/os/Message;->obj:Ljava/lang/Object;
+    invoke-interface {v1, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 294
-    iget-object v2, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
-
-    invoke-virtual {v2, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    iput-object v1, v2, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 295
+    iget-object v3, p0, Landroid/webkit/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
+
+    invoke-virtual {v3, v2}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    :try_end_0
+    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 300
+    .end local v1           #map:Ljava/util/Map;,"Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    .end local v2           #msg:Landroid/os/Message;
+    :goto_0
     return-void
+
+    .line 297
+    :catch_0
+    move-exception v0
+
+    .line 298
+    .local v0, e:Ljava/lang/IllegalStateException;
+    const-string v3, "HTML5VideoViewProxy"
+
+    const-string v4, "IllegalStateException in onPrepared, do nothing"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
 .end method
 
 .method public onTimeupdate()V
     .locals 1
 
     .prologue
-    .line 328
+    .line 333
     const/16 v0, 0x12c
 
     invoke-virtual {p0, v0}, Landroid/webkit/HTML5VideoViewProxy;->obtainMessage(I)Landroid/os/Message;
@@ -865,7 +885,7 @@
 
     invoke-virtual {p0, v0}, Landroid/webkit/HTML5VideoViewProxy;->sendMessage(Landroid/os/Message;)Z
 
-    .line 329
+    .line 334
     return-void
 .end method
 
@@ -873,18 +893,18 @@
     .locals 2
 
     .prologue
-    .line 658
+    .line 663
     const/16 v1, 0x66
 
     invoke-virtual {p0, v1}, Landroid/webkit/HTML5VideoViewProxy;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v0
 
-    .line 659
+    .line 664
     .local v0, message:Landroid/os/Message;
     invoke-virtual {p0, v0}, Landroid/webkit/HTML5VideoViewProxy;->sendMessage(Landroid/os/Message;)Z
 
-    .line 660
+    .line 665
     return-void
 .end method
 
@@ -892,10 +912,10 @@
     .locals 0
 
     .prologue
-    .line 699
+    .line 704
     invoke-static {}, Landroid/webkit/HTML5VideoViewProxy$VideoPlayer;->pauseAndDispatch()V
 
-    .line 700
+    .line 705
     return-void
 .end method
 
@@ -903,10 +923,10 @@
     .locals 0
 
     .prologue
-    .line 703
+    .line 708
     invoke-static {}, Landroid/webkit/HTML5VideoViewProxy$VideoPlayer;->pauseReleaseAndDispatch()V
 
-    .line 704
+    .line 709
     return-void
 .end method
 
@@ -917,21 +937,21 @@
     .parameter "videoLayerID"
 
     .prologue
-    .line 631
+    .line 636
     if-nez p1, :cond_0
 
-    .line 642
+    .line 647
     :goto_0
     return-void
 
-    .line 635
+    .line 640
     :cond_0
     if-lez p2, :cond_1
 
-    .line 636
+    .line 641
     invoke-virtual {p0, p2}, Landroid/webkit/HTML5VideoViewProxy;->seek(I)V
 
-    .line 638
+    .line 643
     :cond_1
     const/16 v1, 0x64
 
@@ -939,14 +959,14 @@
 
     move-result-object v0
 
-    .line 639
+    .line 644
     .local v0, message:Landroid/os/Message;
     iput p3, v0, Landroid/os/Message;->arg1:I
 
-    .line 640
+    .line 645
     iput-object p1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 641
+    .line 646
     invoke-virtual {p0, v0}, Landroid/webkit/HTML5VideoViewProxy;->sendMessage(Landroid/os/Message;)Z
 
     goto :goto_0
@@ -957,14 +977,14 @@
     .parameter "time"
 
     .prologue
-    .line 649
+    .line 654
     const/16 v1, 0x65
 
     invoke-virtual {p0, v1}, Landroid/webkit/HTML5VideoViewProxy;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v0
 
-    .line 650
+    .line 655
     .local v0, message:Landroid/os/Message;
     new-instance v1, Ljava/lang/Integer;
 
@@ -972,10 +992,10 @@
 
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 651
+    .line 656
     invoke-virtual {p0, v0}, Landroid/webkit/HTML5VideoViewProxy;->sendMessage(Landroid/os/Message;)Z
 
-    .line 652
+    .line 657
     return-void
 .end method
 
@@ -984,10 +1004,10 @@
     .parameter "layer"
 
     .prologue
-    .line 695
+    .line 700
     invoke-static {p1}, Landroid/webkit/HTML5VideoViewProxy$VideoPlayer;->setBaseLayer(I)V
 
-    .line 696
+    .line 701
     return-void
 .end method
 
@@ -995,22 +1015,22 @@
     .locals 1
 
     .prologue
-    .line 668
+    .line 673
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy;->mPosterDownloader:Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;
 
     if-eqz v0, :cond_0
 
-    .line 669
+    .line 674
     iget-object v0, p0, Landroid/webkit/HTML5VideoViewProxy;->mPosterDownloader:Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;
 
     invoke-virtual {v0}, Landroid/webkit/HTML5VideoViewProxy$PosterDownloader;->cancelAndReleaseQueue()V
 
-    .line 671
+    .line 676
     :cond_0
     const/4 v0, 0x0
 
     iput v0, p0, Landroid/webkit/HTML5VideoViewProxy;->mNativePointer:I
 
-    .line 672
+    .line 677
     return-void
 .end method

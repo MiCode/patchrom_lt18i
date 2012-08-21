@@ -22,6 +22,7 @@
     <setting name="parental_control_last_update" />
     <setting name="parental_control_redirect_url" />
     <setting name="tts_default_country" />
+    <setting name="spell_checker_enabled" />
     <setting name="tts_default_pitch" />
     <setting name="tts_default_rate" />
     <setting name="tts_default_variant" />

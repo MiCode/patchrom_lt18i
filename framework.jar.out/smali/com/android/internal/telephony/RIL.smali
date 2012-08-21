@@ -4750,53 +4750,6 @@
 
     invoke-direct {v0, v14, v1}, Lcom/android/internal/telephony/RIL;->unsljLogRet(ILjava/lang/Object;)V
 
-    .line 2989
-    const/16 v20, 0x0
-
-    const/16 v21, 0x0
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v20
-
-    move-object/from16 v2, v21
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/internal/telephony/RIL;->setRadioPower(ZLandroid/os/Message;)V
-
-    .line 2990
-    move-object/from16 v0, p0
-
-    iget v0, v0, Lcom/android/internal/telephony/BaseCommands;->mPreferredNetworkType:I
-
-    move/from16 v20, v0
-
-    const/16 v21, 0x0
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v20
-
-    move-object/from16 v2, v21
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/internal/telephony/RIL;->setPreferredNetworkType(ILandroid/os/Message;)V
-
-    .line 2991
-    move-object/from16 v0, p0
-
-    iget v0, v0, Lcom/android/internal/telephony/BaseCommands;->mCdmaSubscription:I
-
-    move/from16 v20, v0
-
-    const/16 v21, 0x0
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v20
-
-    move-object/from16 v2, v21
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/internal/telephony/RIL;->setCdmaSubscriptionSource(ILandroid/os/Message;)V
-
     .line 2992
     check-cast v16, [I
 
@@ -4815,8 +4768,6 @@
     goto/16 :goto_0
 
     .line 2613
-    nop
-
     :pswitch_data_0
     .packed-switch 0x3e8
         :pswitch_1

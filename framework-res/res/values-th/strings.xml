@@ -222,14 +222,14 @@
     <string name="badPuk">PUK ที่คุณพิมพ์ไม่ถูกต้อง</string>
     <string name="mismatchPin">PIN ที่คุณป้อนไม่ตรงกัน</string>
     <string name="invalidPin">พิมพ์ PIN ที่มีตัวเลข 4 ถึง 8 ตัว</string>
-    <string name="invalidPuk">พิมพ์ PUK ซึ่งเป็นตัวเลขอย่างน้อย 8 หลัก</string>
+    <string name="invalidPuk">พิมพ์ PUK ที่มีตัวเลข 8 ตัว</string>
     <string name="needPuk">SIM การ์ดถูกล็อคด้วย PUK ให้พิมพ์รหัส PUK เพื่อปลดล็อค</string>
     <string name="needPuk2">พิมพ์ PUK2 เพื่อปลดล็อค SIM การ์ด</string>
     <string name="ClipMmi">ID ผู้โทรเข้า</string>
     <string name="ClirMmi">ID ผู้โทรออก</string>
     <string name="CfMmi">การโอนสาย</string>
     <string name="CwMmi">สายเรียกซ้อน</string>
-    <string name="BaMmi">จำกัดการโทร</string>
+    <string name="BaMmi">ระงับการโทร</string>
     <string name="PwdMmi">การเปลี่ยนรหัสผ่าน</string>
     <string name="PinMmi">การเปลี่ยน PIN</string>
     <string name="CnipMmi">เบอร์โทรที่มีอยู่</string>
@@ -352,8 +352,8 @@
     <string name="permgrouplab_developmentTools">เครื่องมือพัฒนา</string>
     <string name="permgroupdesc_developmentTools">"คุณสมบัติที่จำเป็นต้องใช้สำหรับผู้พัฒนา
 แอปพลิเคชันเท่านั้น"</string>
-    <string name="permgrouplab_storage">หน่วยความจำ</string>
-    <string name="permgroupdesc_storage">เข้าถึงการ์ด SD</string>
+    <string name="permgrouplab_storage">ที่เก็บข้อมูล</string>
+    <string name="permgroupdesc_storage">เข้าสู่การ์ด SD</string>
     <string name="permlab_statusBar">เลิกใช้หรือปรับเปลี่ยนแถบสถานะ</string>
     <string name="permdesc_statusBar">"อนุญาตให้แอปพลิเคชันเลิกใช้แถบสถานะ
 หรือเพิ่มและลบไอคอนของระบบ"</string>
@@ -519,17 +519,17 @@
     <string name="permdesc_clearAppUserData">อนุญาตให้แอปพลิเคชันลบข้อมูลผู้ใช้</string>
     <string name="permlab_deleteCacheFiles">ลบความจำแคชของแอปพลิเคชันอื่นๆ</string>
     <string name="permdesc_deleteCacheFiles">อนุญาตให้แอปพลิเคชันลบไฟล์ความจำแคช</string>
-    <string name="permlab_getPackageSize">คำนวณพื้นที่เก็บแอปพลิเคชัน</string>
+    <string name="permlab_getPackageSize">คำนวณที่เก็บข้อมูลแอปพลิเคชัน</string>
     <string name="permdesc_getPackageSize">อนุญาตให้แอปพลิเคชันดึงขนาดของรหัส ข้อมูล และความจำแคช</string>
     <string name="permlab_installPackages">ติดตั้งแอปพลิเคชันโดยตรง</string>
     <string name="permdesc_installPackages">"อนุญาตให้แอปพลิเคชันติดตั้งแพคเกจของ Android ชนิดใหม่หรือที่อัปเดตแล้ว แอปพลิเคชันที่เป็นอันตรายสามารถใช้
 ตัวเลือกนี้ในการเพิ่มแอปพลิเคชันใหม่ๆ ด้วยการอนุญาตที่ให้อำนาจอย่าง
 ไร้กฎเกณฑ์"</string>
     <string name="permlab_clearAppCache">ลบข้อมูลความจำแคชของแอปพลิเคชันทั้งหมด</string>
-    <string name="permdesc_clearAppCache">"อนุญาตให้แอปพลิเคชันเพิ่มพื้นที่ว่างของ
-โทรศัพท์โดยการลบไฟล์ในไดเรกทอรีแคชของ
-แอปพลิเคชัน ปกติแล้วการเข้าถึงจะจำกัดไว้
-อย่างเข้มงวดที่กระบวนการของระบบ"</string>
+    <string name="permdesc_clearAppCache">"อนุญาตให้แอปพลิเคชันเพิ่มพื้นที่ว่างของที่เก็บ
+ข้อมูลในโทรศัพท์โดยการลบไฟล์ในไดเรกทอรี
+แคชของแอปพลิเคชัน ปกติแล้วการเข้าถึง
+จะจำกัดไว้อย่างเข้มงวดที่กระบวนการของระบบ"</string>
     <string name="permlab_movePackage">ย้ายทรัพยากรแอปพลิเคชัน</string>
     <string name="permdesc_movePackage">อนุญาตให้แอปพลิเคชันย้ายทรัพยากรแอปพลิเคชันจากภายในไปยังสื่อภายนอกและในทางกลับกัน</string>
     <string name="permlab_readLogs">อ่านข้อมูลบันทึกที่สำคัญ</string>
@@ -646,9 +646,12 @@
     <string name="permlab_reboot">บังคับโทรศัพท์ให้รีบูต</string>
     <string name="permdesc_reboot">อนุญาตให้แอปพลิเคชันนี้บังคับโทรศัพท์ให้รีบูต</string>
     <string name="permlab_mount_unmount_filesystems">ต่อเชื่อมและยกเลิกต่อเชื่อมระบบไฟล์</string>
-    <string name="permdesc_mount_unmount_filesystems">อนุญาตให้แอปพลิเคชันนี้ต่อเชื่อมและยกเลิกต่อเชื่อมระบบไฟล์สำหรับหน่วยความจำแบบถอดออกได้</string>
-    <string name="permlab_mount_format_filesystems">ฟอร์แมตหน่วยความจำภายนอก</string>
-    <string name="permdesc_mount_format_filesystems">อนุญาตให้แอปพลิเคชันนี้ฟอร์แมตหน่วยความจำแบบถอดออกได้</string>
+    <string name="permdesc_mount_unmount_filesystems">"อนุญาตให้แอปพลิเคชันนี้ต่อเชื่อมและยกเลิก
+ต่อเชื่อมระบบไฟล์สำหรับที่เก็บข้อมูลแบบ
+ถอดออกได้"</string>
+    <string name="permlab_mount_format_filesystems">ฟอร์แมตที่เก็บข้อมูลภายนอก</string>
+    <string name="permdesc_mount_format_filesystems">"อนุญาตให้แอปพลิเคชันนี้ฟอร์แมตที่เก็บข้อมูล
+แบบถอดออกได้"</string>
     <string name="permlab_asec_access">รับข้อมูลเกี่ยวกับที่เก็บข้อมูลภายใน</string>
     <string name="permdesc_asec_access">อนุญาตให้แอปพลิเคชันรับข้อมูลจากที่เก็บข้อมูลภายใน</string>
     <string name="permlab_asec_create">สร้างที่เก็บข้อมูลภายใน</string>
@@ -658,8 +661,8 @@
     <string name="permlab_asec_mount_unmount">ต่อเชื่อม / ยกเลิกต่อเชื่อมที่เก็บข้อมูลภายใน</string>
     <string name="permdesc_asec_mount_unmount">อนุญาตให้แอปพลิเคชันต่อเชื่อม/ยกเลิกต่อเชื่อมที่เก็บข้อมูลภายใน</string>
     <string name="permlab_asec_rename">เปลี่ยนชื่อที่เก็บข้อมูลภายใน</string>
-    <string name="permdesc_asec_rename">"อนุญาตให้แอปพลิเคชันเปลี่ยนชื่อที่เก็บข้อมูล
-ภายใน"</string>
+    <string name="permdesc_asec_rename">"อนุญาตให้แอปพลิเคชันเปลี่ยนชื่อที่เก็บ
+ข้อมูลภายใน"</string>
     <string name="permlab_vibrate">ควบคุมระบบสั่น</string>
     <string name="permdesc_vibrate">อนุญาตให้แอปพลิเคชันควบคุมระบบสั่น</string>
     <string name="permlab_flashlight">ควบคุมแสงแฟลช</string>
@@ -809,8 +812,8 @@
     <string name="permlab_writeDictionary">เขียนลงในพจนานุกรมที่ผู้ใช้กำหนดเอง</string>
     <string name="permdesc_writeDictionary">อนุญาตให้แอปพลิเคชันเขียนคำใหม่ๆ ลงในพจนานุกรมผู้ใช้</string>
     <string name="permlab_sdcardWrite">ปรับเปลี่ยน/ลบเนื้อหาในการ์ด SD</string>
-    <string name="permdesc_sdcardWrite">อนุญาตให้แอปพลิเคชันเขียนลงในการ์ด SD</string>
-    <string name="permlab_mediaStorageWrite">ปรับ/ลบเนื้อหาที่เก็บสื่อภายใน</string>
+    <string name="permdesc_sdcardWrite">อนุญาตให้แอปพลิเคชันเขียนลงการ์ด SD</string>
+    <string name="permlab_mediaStorageWrite">ปรับ/ลบเนื้อหาที่เก็บข้อมูลสื่อภายใน</string>
     <string name="permdesc_mediaStorageWrite">"อนุญาตให้แอปพลิเคชันปรับเปลี่ยนเนื้อหาของ
 ที่เก็บข้อมูลสื่อภายใน"</string>
     <string name="permlab_cache_filesystem">เข้าสู่ระบบไฟล์ความจำแคช</string>
@@ -851,7 +854,7 @@
 ผลบังคับได้"</string>
     <string name="policylab_expirePassword">ตั้งค่ารหัสล็อคหน้าจอหมดอายุ</string>
     <string name="policydesc_expirePassword">ควบคุมว่าจะต้องเปลี่ยนรหัสผ่านล็อคหน้าจอบ่อยครั้งเพียงใด</string>
-    <string name="policylab_encryptedStorage">ตั้งค่าการเข้ารหัสลับที่เก็บ</string>
+    <string name="policylab_encryptedStorage">ตั้งค่าการเข้ารหัสลับที่เก็บข้อมูล</string>
     <string name="policydesc_encryptedStorage">กำหนดให้เข้ารหัสลับแอปพลิเคชันที่จัดเก็บไว้</string>
     <string name="policylab_disableCamera">ปิดใช้กล้อง</string>
     <string name="policydesc_disableCamera">ป้องกันการใช้กล้องของอุปกรณ์ทั้งหมด</string>
@@ -1136,8 +1139,8 @@
     <string name="report">รายงาน</string>
     <string name="wait">รอ</string>
     <string name="launch_warning_title">แอปพลิเคชันถูกเปลี่ยนเส้นทาง</string>
-    <string name="launch_warning_replace">%1$s กำลังทำงานในขณะนี้</string>
-    <string name="launch_warning_original">%1$s เปิดใช้อยู่แต่เดิมแล้ว</string>
+    <string name="launch_warning_replace">%1$s กำลังทำงาน</string>
+    <string name="launch_warning_original">%1$s เริ่มในตอนต้นแล้ว</string>
     <string name="screen_compat_mode_scale">สเกล</string>
     <string name="screen_compat_mode_show">แสดงทุกครั้ง</string>
     <string name="screen_compat_mode_hint">เปิดใช้โหมดนี้ใหม่ด้วยการตั้งค่า > แอปพลิเคชัน > จัดการแอปพลิเคชัน</string>
@@ -1207,24 +1210,29 @@
     <string name="no_permissions">ไม่ต้องขออนุญาต</string>
     <string name="perms_hide"><b>ซ่อน</b></string>
     <string name="perms_show_all"><b>แสดงทั้งหมด</b></string>
-    <string name="usb_storage_activity_title">ที่เก็บข้อมูลขนาดใหญ่แบบ USB</string>
+    <string name="usb_storage_activity_title">ที่เก็บข้อมูล USB ขนาดใหญ่</string>
     <string name="usb_storage_title">เชื่อมต่อ USB แล้ว</string>
-    <string name="usb_storage_message">"คุณได้เชื่อมต่อกับคอมพิวเตอร์ของคุณแล้วผ่าน USB สัมผัสปุ่มข้างล่างหากคุณต้องการคัดลอก
-ไฟล์ระหว่างคอมพิวเตอร์ของคุณกับการ์ด SD สำหรับแอนดรอยด์ของคุณ"</string>
-    <string name="usb_storage_button_mount">เปิดหน่วยความจำแบบ USB</string>
-    <string name="usb_storage_error_message">"มีปัญหาเกิดขึ้นในการใช้การ์ด SD ของคุณ
-เป็นที่เก็บข้อมูลขนาดใหญ่แบบ USB"</string>
+    <string name="usb_storage_message">"คุณเชื่อมต่อโทรศัพท์กับคอมพิวเตอร์ของ
+คุณผ่าน USB แล้ว เลือกปุ่มด้านล่างหากคุณ
+ต้องการคัดลอกไฟล์ระหว่างคอมพิวเตอร์ของคุณกับการ์ด SD ของแอนดรอยด์"</string>
+    <string name="usb_storage_button_mount">เปิดที่เก็บข้อมูล USB</string>
+    <string name="usb_storage_error_message">"มีปัญหาในการใช้การ์ด SD สำหรับที่เก็บ
+ข้อมูล USB ขนาดใหญ่"</string>
     <string name="usb_storage_notification_title">เชื่อมต่อ USB แล้ว</string>
     <string name="usb_storage_notification_message">เลือกเพื่อคัดลอกไฟล์ไปยัง/มาจากคอมพิวเตอร์ของคุณ</string>
-    <string name="usb_storage_stop_notification_title">ปิดหน่วยความจำแบบ USB</string>
-    <string name="usb_storage_stop_notification_message">เลือกเพื่อปิดหน่วยความจำแบบ USB</string>
-    <string name="usb_storage_stop_title">หน่วยความจำแบบ USB ใช้งานอยู่</string>
-    <string name="usb_storage_stop_message">ก่อนปิดที่เก็บข้อมูล USB ต้องแน่ใจว่าคุณได้เลิกต่อเชื่อม (“เตรียมถอด”) การ์ด SD สำหรับแอนดรอยด์ของคุณจากคอมพิวเตอร์ของคุณแล้ว</string>
-    <string name="usb_storage_stop_button_mount">ปิดหน่วยความจำแบบ USB</string>
-    <string name="usb_storage_stop_error_message">"เกิดปัญหาขณะปิดหน่วยความจำแบบ USB ตรวจสอบให้แน่ใจว่าคุณได้
-ยกเลิกต่อเชื่อมโฮสต์ USB แล้ว แล้วจึงลองใหม่"</string>
-    <string name="dlg_confirm_kill_storage_users_title">เปิดหน่วยความจำแบบ USB</string>
-    <string name="dlg_confirm_kill_storage_users_text">หากคุณเปิดหน่วยความจำแบบ USB บางแอปพลิเคชันที่คุณใช้อยู่จะหยุดทำงานและอาจไม่พร้อมใช้งานจนกว่าคุณจะปิดหน่วยความจำแบบ USB</string>
+    <string name="usb_storage_stop_notification_title">ปิดที่เก็บข้อมูล USB</string>
+    <string name="usb_storage_stop_notification_message">เลือกเพื่อปิดที่เก็บข้อมูล USB</string>
+    <string name="usb_storage_stop_title">ที่เก็บข้อมูล USB ใช้งานอยู่</string>
+    <string name="usb_storage_stop_message">"ก่อนปิดที่เก็บข้อมูล USB ต้องแน่ใจว่าได้เลิก
+ต่อเชื่อม (“นำออก”) การ์ด SD ของแอนดรอยด์จากคอมพิวเตอร์ของคุณ
+แล้ว"</string>
+    <string name="usb_storage_stop_button_mount">ปิดที่เก็บข้อมูล USB</string>
+    <string name="usb_storage_stop_error_message">"เกิดปัญหาขณะปิดที่เก็บข้อมูล USB ตรวจสอบให้แน่ใจว่าคุณได้ยกเลิกต่อเชื่อม
+โฮสต์ USB แล้ว แล้วจึงลองใหม่"</string>
+    <string name="dlg_confirm_kill_storage_users_title">เปิดที่เก็บข้อมูล USB</string>
+    <string name="dlg_confirm_kill_storage_users_text">"หากคุณเปิดที่เก็บข้อมูล USB บางแอปพลิเคชัน
+ที่คุณใช้อยู่จะหยุดทำงานและอาจไม่พร้อม
+ใช้งานจนกว่าคุณจะปิดที่เก็บข้อมูล USB"</string>
     <string name="dlg_error_title">การทำงานของ USB ไม่สำเร็จ</string>
     <string name="dlg_ok">ตกลง</string>
     <string name="usb_mtp_notification_title">เชื่อมต่อเป็นอุปกรณ์สื่อแล้ว</string>
@@ -1233,7 +1241,7 @@
     <string name="usb_accessory_notification_title">เชื่อมต่อกับอุปกรณ์เสริม USB แล้ว</string>
     <string name="usb_notification_message">สัมผัสสำหรับตัวเลือก USB อื่นๆ</string>
     <string name="extmedia_format_title">ฟอร์แมตการ์ด SD</string>
-    <string name="extmedia_format_message">แน่ใจว่าคุณต้องการฟอร์แมตการ์ด SD นี้? ข้อมูลทั้งหมดบนการ์ดของคุณจะสูญหาย</string>
+    <string name="extmedia_format_message">แน่ใจหรือไม่ว่าต้องการฟอร์แมตการ์ด SD? ข้อมูลทั้งหมดในการ์ดของคุณจะหายไป</string>
     <string name="extmedia_format_button_format">ฟอร์แมต</string>
     <string name="adb_active_notification_title">USB ถูกเชื่อมต่อ</string>
     <string name="adb_active_notification_message">เลือกยุติการเชื่อมต่อ USB</string>
@@ -1248,14 +1256,14 @@
     <string name="ext_media_nofs_notification_message">"การ์ด SD ว่างเปล่าหรือมีระบบไฟล์
 ที่ไม่ได้รับการสนับสนุน"</string>
     <string name="ext_media_unmountable_notification_title">การ์ด SD เสียหาย</string>
-    <string name="ext_media_unmountable_notification_message">การ์ด SD เสียหาย คุณอาจจำเป็นต้องฟอร์แมตใหม่</string>
-    <string name="ext_media_badremoval_notification_title">มีการนำการ์ด SD ออกโดยไม่คาดคิด</string>
+    <string name="ext_media_unmountable_notification_message">การ์ด SD เสียหาย คุณอาจต้องฟอร์แมตใหม่</string>
+    <string name="ext_media_badremoval_notification_title">การ์ด SD ถูกถอดออกโดยไม่คาดคิด</string>
     <string name="ext_media_badremoval_notification_message">"เลิกต่อเชื่อมการ์ด SD ก่อนการนำออก
 เพื่อหลีกเลี่ยงข้อมูลสูญหาย"</string>
-    <string name="ext_media_safe_unmount_notification_title">นำการ์ด SD ออกได้อย่างปลอดภัย</string>
-    <string name="ext_media_safe_unmount_notification_message">คุณสามารถนำการ์ด SD ออกได้อย่างปลอดภัย</string>
-    <string name="ext_media_nomedia_notification_title">นำการ์ด SD ออกแล้ว</string>
-    <string name="ext_media_nomedia_notification_message">นำการ์ด SD ออกแล้ว ใส่การ์ดใหม่</string>
+    <string name="ext_media_safe_unmount_notification_title">การ์ด SD ถอดออกได้อย่างปลอดภัย</string>
+    <string name="ext_media_safe_unmount_notification_message">คุณสามารถถอดการ์ด SD ออกอย่างปลอดภัย</string>
+    <string name="ext_media_nomedia_notification_title">การ์ด SD ถูกถอดออก</string>
+    <string name="ext_media_nomedia_notification_message">การ์ด SD ถูกถอดออก เสียบการ์ดใหม่</string>
     <string name="activity_list_empty">ไม่พบกิจกรรมที่ตรงกัน</string>
     <string name="permlab_pkgUsageStats">อัปเดตสถิติการใช้ส่วนประกอบ</string>
     <string name="permdesc_pkgUsageStats">"อนุญาตให้ปรับเปลี่ยนสถิติเกี่ยวกับการ
@@ -1307,13 +1315,13 @@
     <string name="no_matches">ไม่มีรายการที่ตรงกัน</string>
     <string name="find_on_page">ค้นหาบนหน้า</string>
     <string name="action_mode_done">เสร็จสิ้น</string>
-    <string name="progress_unmounting">กำลังเลิกต่อเชื่อมการ์ด SD...</string>
-    <string name="progress_erasing">กำลังลบการ์ด SD...</string>
-    <string name="format_error">ไม่สามารถลบการ์ด SD ได้</string>
+    <string name="progress_unmounting">กำลังยกเลิกต่อเชื่อมการ์ด SD...</string>
+    <string name="progress_erasing">กำลังล้างการ์ด SD...</string>
+    <string name="format_error">ฟอร์แมตการ์ด SD ไม่สำเร็จ</string>
     <string name="media_bad_removal">การ์ด SD ถูกถอดออกก่อนที่จะถูกยกเลิกต่อเชื่อม</string>
-    <string name="media_checking">กำลังตรวจสอบการ์ด SD ในขณะนี้</string>
+    <string name="media_checking">การ์ด SD กำลังถูกตรวจสอบในขณะนี้</string>
     <string name="media_removed">การ์ด SD ถูกถอดออก</string>
-    <string name="media_shared">ขณะนี้การ์ด SD อยู่ระหว่างการใช้งานโดยคอมพิวเตอร์</string>
+    <string name="media_shared">การ์ด SD กำลังใช้งานโดยคอมพิวเตอร์ในขณะนี้</string>
     <string name="media_unknown_state">สื่อภายนอกในสถานะที่ไม่รู้จัก</string>
     <string name="share">แชร์</string>
     <string name="find">ค้นหา</string>
@@ -1383,7 +1391,7 @@
     <string name="action_menu_overflow_description">ตัวเลือกเพิ่มเติม</string>
     <string name="storage_internal">ที่เก็บข้อมูลภายใน</string>
     <string name="storage_sd_card">การ์ด SD</string>
-    <string name="storage_usb">ที่เก็บข้อมูล USB</string>
+    <string name="storage_usb">ที่เก็บข้อมูล USB ภายนอก</string>
     <string name="extract_edit_menu_button">แก้ไข...</string>
     <string name="data_usage_warning_title">คำเตือนการใช้ข้อมูล</string>
     <string name="data_usage_warning_body">สัมผัสพื่อดูการใช้และการตั้งค่า</string>
@@ -1435,4 +1443,50 @@
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">ป้อน PIN ใหม่ซ้ำ</string>
     <string name="lockscreen_strings_sim_puk_wrong_nbr_digits_header_txt">PUK ต้องเป็นตัวเลข 8 ตัว</string>
     <string name="seport_strings_accessory_not_supported_txt">ไม่สนับสนุนอุปกรณ์เสริม</string>
+    <string name="global_action_screenshot_txt">จับภาพหน้าจอ</string>
+    <string name="BaICMmi">การบล็อกการโทรเข้า</string>
+    <string name="BaOCMmi">การบล็อกการโทรออก</string>
+    <string name="BaOICMmi">"การบล็อกการโทรออกทางไกล
+ต่างประเทศ"</string>
+    <string name="BaOICxHMmi">"การบล็อกการโทรออกทางไกล
+ต่างประเทศ (ยกเว้นประเทศบ้านเกิด)"</string>
+    <string name="BaICrMmi">"การบล็อกการโทรเข้าเมื่อทำการ
+โรมมิ่ง"</string>
+    <string name="BaAllMmi">การบล็อกการโทรทั้งหมด</string>
+    <string name="BaMOMmi">การบล็อกการโทรออกทั้งหมด</string>
+    <string name="BaMTMmi">การบล็อกการโทรเข้าทั้งหมด</string>
+    <string name="policylab_passwordRecovery">การกู้คืนรหัสผ่าน</string>
+    <string name="policydesc_passwordRecovery">ใช้รหัสผ่านการกู้คืนเพื่อปลดล็อคโทรศัพท์ของคุณเมื่อลืมรหัสผ่าน</string>
+    <string name="usb_storage_connect_notification_title">มีการเชื่อมต่อที่เก็บข้อมูล USB</string>
+    <string name="usb_storage_connect_notification_message">มีการเชื่อมต่อที่เก็บข้อมูล USB</string>
+    <string name="usb_storage_checking_notification_title">กำลังเตรียมที่เก็บข้อมูล USB</string>
+    <string name="usb_storage_nofs_notification_title">ที่เก็บข้อมูล USB ว่าง</string>
+    <string name="usb_storage_nofs_notification_message">ที่เก็บข้อมูล USB ว่างหรือไม่รองรับระบบไฟล์</string>
+    <string name="usb_storage_unmountable_notification_title">ที่เก็บข้อมูล USB เสียหาย</string>
+    <string name="usb_storage_unmountable_notification_message">ที่เก็บข้อมูล USB เสียหาย คุณต้องฟอร์แมตใหม่</string>
+    <string name="usb_storage_badremoval_notification_title">นำที่เก็บข้อมูล USB ออกแล้วโดยไม่คาดคิด</string>
+    <string name="usb_storage_badremoval_notification_message">เลิกต่อเชื่อมที่เก็บ USB ก่อนเพื่อหลีกเลี่ยงข้อมูลหาย</string>
+    <string name="usb_storage_safe_unmount_notification_title">ปลอดภัยสำหรับการดึงที่เก็บข้อมูล USB</string>
+    <string name="usb_storage_safe_unmount_notification_message">คุณสามารถดึงที่เก็บข้อมูล USB ออกอย่างปลอดภัย</string>
+    <string name="usb_storage_nomedia_notification_title">ที่เก็บข้อมูล USB ถูกดึงออก</string>
+    <string name="usb_storage_nomedia_notification_message">ดึงที่เก็บข้อมูล USB ออกอย่างปลอดภัย</string>
+    <string name="usb_storage_format_title">ฟอร์แมตที่เก็บข้อมูล USB</string>
+    <string name="usb_storage_format_message">แน่ใจหรือไม่ว่าต้องการฟอร์แมตที่เก็บข้อมูล USB? ข้อมูลทั้งหมดในที่จัดเก็บจะสูญหาย</string>
+    <string name="usb_storage_progress_erasing">กำลังลบที่เก็บข้อมูล USB</string>
+    <string name="usb_storage_checking">กำลังตรวจสอบที่เก็บข้อมูล USB อยู่ในขณะนี้</string>
+    <string name="usb_storage_progress_unmounting">กำลังเลิกต่อเชื่อมที่เก็บข้อมูล USB</string>
+    <string name="usb_storage_format_error">ไม่สามารถล้างที่เก็บข้อมูล USB</string>
+    <string name="usb_storage_bad_removal">ดึงที่เก็บข้อมูล USB ออกก่อนที่จะเลิกต่อเชื่อม</string>
+    <string name="usb_storage_removed">ที่เก็บข้อมูล USB ถูกดึงออก</string>
+    <string name="usb_storage_shared">ที่เก็บข้อมูล USB อยู่ในสถานะผิดพลาด</string>
+    <string name="internal_storage_strings_checking_notification_title_txt">กำลังเตรียมที่เก็บข้อมูลภายใน</string>
+    <string name="internal_storage_strings_unmountable_notification_title_txt">ที่เก็บข้อมูลภายในเสียหาย</string>
+    <string name="internal_storage_strings_unmountable_notification_message_txt">ที่เก็บข้อมูลภายในเสียหาย โปรดฟอร์แมตอุปกรณ์นี้</string>
+    <string name="internal_storage_strings_nofs_notification_title_txt">ที่เก็บข้อมูลภายในว่างเปล่า</string>
+    <string name="internal_storage_strings_nofs_notification_message_txt">ที่เก็บข้อมูลภายในว่างเปล่าหรือไม่รองรับระบบไฟล์</string>
+    <string name="internal_storage_factory_reset_unmount">กำลังเลิกต่อเชื่อมที่เก็บข้อมูลภายใน</string>
+    <string name="internal_storage_factory_reset_erase">กำลังลบที่เก็บข้อมูลภายใน</string>
+    <string name="internal_storage_factory_reset_error">ไม่สามารถลบที่เก็บข้อมูลภายในได้</string>
+    <string name="internal_storage_erase_data_desc">"แน่ใจหรือไม่ว่าต้องการฟอร์แมต
+ที่เก็บข้อมูลภายใน? ข้อมูลทั้งหมดในนั้นจะสูญหาย"</string>
 </resources>

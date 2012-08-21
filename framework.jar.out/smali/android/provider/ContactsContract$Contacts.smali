@@ -471,6 +471,8 @@
 
     .line 1970
     .local v9, fd:Landroid/content/res/AssetFileDescriptor;
+    if-eqz v9, :cond_0
+
     invoke-virtual {v9}, Landroid/content/res/AssetFileDescriptor;->createInputStream()Ljava/io/FileInputStream;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0

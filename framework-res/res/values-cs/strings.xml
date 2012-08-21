@@ -169,20 +169,20 @@
     <string name="unregistered_sim">Neregistrovaná karta SIM</string>
     <string name="lockscreen_strings_sim_puk_attempts_remaining_txt">Počet zbývajících pokusů:</string>
     <string name="lockscreen_strings_backup_selection_header_txt">Odemknout obrazovku</string>
-    <string name="lockscreen_strings_backup_selection_sub_header_txt">Vyberte, jak lze odemknout obrazovku, pokud zapomenete gesto.</string>
+    <string name="lockscreen_strings_backup_selection_sub_header_txt">Vyberte, jak lze odemknout obrazovku, pokud zapomenete vzor.</string>
     <string name="lockscreen_strings_backup_selection_security_question_txt">Zodpovědět otázku</string>
     <string name="lockscreen_strings_backup_selection_security_question_summary_txt">Odemknout pomocí bezp. otázky</string>
     <string name="lockscreen_strings_backup_selection_google_account_txt">Zadat informace o účtu Google</string>
     <string name="lockscreen_strings_backup_selection_google_account_summary_txt">Odemknout pomocí informací o účtu Google</string>
     <string name="lockscreen_strings_backup_selection_next_txt">Další</string>
     <string name="lockscreen_strings_howtounlock_txt">Odemkněte stisknutím %icon</string>
-    <string name="lockscreen_strings_timeout_dialog_header_txt">Nesprávné gesto</string>
+    <string name="lockscreen_strings_timeout_dialog_header_txt">Nesprávný vzor</string>
     <string name="lockscreen_strings_timeout_dialog_message_txt">Chcete-li přístroj odemknout s použitím bezpečnostní otázky, ťukněte na možnost Další. V opačném případě zopakujte pokus za 30 sekund.</string>
     <string name="lockscreen_strings_timeout_dialog_try_again_label_txt">Znovu</string>
     <string name="lockscreen_strings_timeout_dialog_next_label_txt">Další</string>
     <string name="lockscreen_strings_timeout_dialog_near_lockout_message_txt">Zbývá ještě 5 pokusů.</string>
-    <string name="lockscreen_strings_locked_out_header_txt">Nesprávné gesto</string>
-    <string name="lockscreen_strings_locked_out_message_txt">Provedli jste 20 neúspěšných pokusů o ověření bezpečnostním gestem. Odemkněte přístroj pomocí bezpečnostní otázky.</string>
+    <string name="lockscreen_strings_locked_out_header_txt">Nesprávný vzor</string>
+    <string name="lockscreen_strings_locked_out_message_txt">Provedli jste 20 neúspěšných pokusů o ověření vzorem. Odemkněte přístroj pomocí bezpečnostní otázky.</string>
     <string name="lockscreen_strings_locked_out_wrong_answer_title_txt">Nesprávná odpověď</string>
     <string name="lockscreen_strings_locked_out_wrong_answer_message_txt">Stiskněte tlačítko OK a zopakujte akci.</string>
     <string name="lockscreen_strings_backup_question_header_txt">Bezpečnostní otázka</string>
@@ -194,7 +194,7 @@
     <string name="lockscreen_strings_backup_question_emergency_button_txt">Tísňové volání</string>
     <string name="lockscreen_strings_backup_question_answer_hint_txt">Odpovědět</string>
     <string name="lockscreen_strings_backup_new_pattern_question_title_txt">Obrazovka odemčena</string>
-    <string name="lockscreen_strings_backup_new_pattern_question_message_txt">Zaznamenat nové bezpečnostní heslo?</string>
+    <string name="lockscreen_strings_backup_new_pattern_question_message_txt">Zaznamenat nový bezpečnostní vzor?</string>
     <string name="lockscreen_strings_backup_new_pattern_question_yes_txt">Ano</string>
     <string name="lockscreen_strings_backup_new_pattern_question_no_txt">Ne</string>
     <string name="byteShort">B</string>
@@ -219,7 +219,7 @@
     <string name="badPuk">Kód PUK byl zadán nesprávně.</string>
     <string name="mismatchPin">Zadané kódy PIN se neshodují.</string>
     <string name="invalidPin">Zadejte kód PIN o délce 4-8 číslic.</string>
-    <string name="invalidPuk">Zadejte osmimístný nebo delší kód PUK.</string>
+    <string name="invalidPuk">Zadejte 8místný kód PUK</string>
     <string name="needPuk">Karta SIM je blokována pomocí kódu PUK. Odblokujete ji zadáním kódu PUK.</string>
     <string name="needPuk2">Chcete-li odblokovat kartu SIM, zadejte kód PUK2.</string>
     <string name="ClipMmi">Příchozí identifikace volajícího</string>
@@ -630,7 +630,7 @@
     <string name="permdesc_readDictionary">Umožní aplikaci číst soukromá slova, jména a fráze, která uživatel mohl uložit do svého slovníku.</string>
     <string name="permlab_writeDictionary">zápis do slovníku definovaného uživatelem</string>
     <string name="permdesc_writeDictionary">Umožní aplikaci zapisovat nová slova do uživatelského slovníku.</string>
-    <string name="permlab_sdcardWrite">upravit/odstranit obsah karty SD</string>
+    <string name="permlab_sdcardWrite">změna/smazání obsahu karty SD</string>
     <string name="permdesc_sdcardWrite">Umožní aplikaci zápis na kartu SD.</string>
     <string name="permlab_mediaStorageWrite">upravit/odstranit obsah int. úlož.</string>
     <string name="permdesc_mediaStorageWrite">Povoluje aplikaci upravovat obsah interního úložiště médií.</string>
@@ -748,7 +748,7 @@
     <string name="lockscreen_screen_locked">Obrazovka uzamčena.</string>
     <string name="lockscreen_instructions_when_pattern_enabled">Chcete-li odemknout telefon nebo provést tísňové volání, stiskněte Menu.</string>
     <string name="lockscreen_instructions_when_pattern_disabled">Telefon odemknete stisknutím tlačítka Menu.</string>
-    <string name="lockscreen_pattern_instructions">Odblokujte pomocí gesta</string>
+    <string name="lockscreen_pattern_instructions">Odblokujte pomocí vzoru</string>
     <string name="lockscreen_emergency_call">Tísňové volání</string>
     <string name="lockscreen_return_to_call">Zavolat zpět</string>
     <string name="lockscreen_pattern_correct">Správně!</string>
@@ -771,11 +771,11 @@ Další kartu SIM obdržíte u svého poskytovatele bezdrátových služeb."</st
     <string name="lockscreen_transport_stop_description">Tlačítko Zastavit</string>
     <string name="emergency_calls_only">Pouze tísňová volání</string>
     <string name="lockscreen_network_locked_message">Síť je blokována</string>
-    <string name="lockscreen_sim_puk_locked_message">Karta SIM je uzamčena pomocí kódu PUK.</string>
+    <string name="lockscreen_sim_puk_locked_message">Karta SIM je zamčena kódem PUK.</string>
     <string name="lockscreen_sim_puk_locked_instructions">Další informace naleznete v uživatelské příručce, nebo kontaktujte podporu zákazníků.</string>
     <string name="lockscreen_sim_locked_message">Karta SIM je zablokována.</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">Odblokování karty SIM...</string>
-    <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"%dkrát jste nakreslili nesprávné bezpečnostní gesto. 
+    <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"%dkrát jste nakreslili nesprávný vzor pro odemknutí. 
 
 Opakujte prosím akci za %d s."</string>
     <string name="lockscreen_too_many_failed_password_attempts_dialog_message" formatted="false">"Vícekrát (%d) jste nesprávně zadali heslo. 
@@ -784,15 +784,15 @@ Opakujte akci za %d s."</string>
     <string name="lockscreen_too_many_failed_pin_attempts_dialog_message" formatted="false">"Vícekrát (%d) jste nesprávně zadali kód PIN. 
 
 Opakujte akci za %d s."</string>
-    <string name="lockscreen_failed_attempts_almost_glogin" formatted="false">"%dkrát jste nesprávně nakreslili své bezpečnostní gesto. Po dalších neúspěšných pokusech (%d) budete požádáni o odemčení telefonu pomocí přihlášení do účtu Google.
+    <string name="lockscreen_failed_attempts_almost_glogin" formatted="false">"%dkrát jste nesprávně nakreslili svůj vzor pro odemknutí. Po dalších neúspěšných pokusech (%d) budete požádáni o odemčení telefonu pomocí přihlášení do účtu Google.
 
 Akci opakujte za několik sekund (%d)."</string>
     <string name="lockscreen_failed_attempts_almost_at_wipe" formatted="false">Telefon jste se pokusili nesprávným způsobem odemknout %dkrát. Po %d dalších neúspěšných pokusech se v telefonu obnoví výchozí nastavení z výroby a veškerá data uživatele budou ztracena.</string>
     <string name="lockscreen_failed_attempts_now_wiping">Telefon jste se pokusili nesprávným způsobem odemknout %dkrát. V telefonu se nyní obnoví výchozí nastavení z výroby.</string>
     <string name="lockscreen_too_many_failed_attempts_countdown">Sekundy zbývající do dalšího pokusu: %d.</string>
-    <string name="lockscreen_forgot_pattern_button_text">Zapomněli jste gesto?</string>
+    <string name="lockscreen_forgot_pattern_button_text">Zapomněli jste vzor?</string>
     <string name="lockscreen_glogin_forgot_pattern">Odemčení účtu</string>
-    <string name="lockscreen_glogin_too_many_attempts">Gesta: Příliš mnoho pokusů</string>
+    <string name="lockscreen_glogin_too_many_attempts">Vzory: Příliš mnoho pokusů</string>
     <string name="lockscreen_glogin_instructions">Chcete-li telefon odemknout, přihlaste se pomocí svého účtu Google</string>
     <string name="lockscreen_glogin_username_hint">Uživatelské jméno (e-mail)</string>
     <string name="lockscreen_glogin_password_hint">Heslo</string>
@@ -804,10 +804,10 @@ Přejděte na stránku "<b>google.com/accounts/recovery</b></string>
     <string name="lockscreen_unlock_label">Odemknout</string>
     <string name="lockscreen_sound_on_label">Zapnout zvuk</string>
     <string name="lockscreen_sound_off_label">Vypnout zvuk</string>
-    <string name="lockscreen_access_pattern_start">Bezpečnostní gesto zahájeno</string>
-    <string name="lockscreen_access_pattern_cleared">Bezpečnostní gesto vymazáno</string>
+    <string name="lockscreen_access_pattern_start">Vzor zahájen</string>
+    <string name="lockscreen_access_pattern_cleared">Vzor vymazán</string>
     <string name="lockscreen_access_pattern_cell_added">Buňka přidána</string>
-    <string name="lockscreen_access_pattern_detected">Bezpečnostní gesto dokončeno</string>
+    <string name="lockscreen_access_pattern_detected">Vzor dokončen</string>
     <string name="password_keyboard_label_symbol_key">\?123</string>
     <string name="password_keyboard_label_alpha_key">ABC</string>
     <string name="password_keyboard_label_alt_key">Alt</string>
@@ -913,7 +913,7 @@ Vyberte OK, chcete-li pokračovat, nebo Zrušit, chcete-li na stránce zůstat."
     <string name="capital_on">|</string>
     <string name="capital_off">〇</string>
     <string name="whichApplication">Dokončit pomocí aplikace</string>
-    <string name="alwaysUse">Použít jako výchozí pro tuto akci.</string>
+    <string name="alwaysUse">Použít jako výchozí nastavení pro tuto činnost.</string>
     <string name="clearDefaultHintMsg">Vymažte výchozí hodnoty v nabídce Nastavení > Aplikace.</string>
     <string name="chooseActivity">Vyberte akci</string>
     <string name="chooseUsbActivity">Vybrat aplikaci pro zařízení USB</string>
@@ -936,7 +936,7 @@ Chcete jej ukončit?"</string>
     <string name="report">Nahlásit</string>
     <string name="wait">Počkat</string>
     <string name="launch_warning_title">Aplikace přesměrována</string>
-    <string name="launch_warning_replace">Nyní je spuštěna aplikace %1$s.</string>
+    <string name="launch_warning_replace">Je spuštěna aplikace %1$s.</string>
     <string name="launch_warning_original">Původně byla spuštěna aplikace %1$s.</string>
     <string name="screen_compat_mode_scale">Měřítko</string>
     <string name="screen_compat_mode_show">Vždy zobrazovat</string>
@@ -1007,7 +1007,7 @@ Chcete jej ukončit?"</string>
     <string name="perms_show_all"><b>Zobrazit vše</b></string>
     <string name="usb_storage_activity_title">Úložiště USB</string>
     <string name="usb_storage_title">USB připojeno</string>
-    <string name="usb_storage_message">Připojili jste se k počítači pomocí rozhraní USB. Chcete-li kopírovat soubory z počítače na kartu SD v zařízení Android či obráceně, dotkněte se tlačítka níže.</string>
+    <string name="usb_storage_message">Připojili jste telefon k počítači pomocí rozhraní USB. Chcete-li kopírovat soubory z počítače na kartu SD v zařízení Android či obráceně, vyberte následující tlačítko.</string>
     <string name="usb_storage_button_mount">Zapnout úložiště USB</string>
     <string name="usb_storage_error_message">Problém s použitím karty SD jako velkokapacitního úložiště USB.</string>
     <string name="usb_storage_notification_title">USB připojeno</string>
@@ -1040,14 +1040,14 @@ Chcete jej ukončit?"</string>
     <string name="ext_media_checking_notification_title">Příprava karty SD</string>
     <string name="ext_media_checking_notification_message">Kontrola chyb.</string>
     <string name="ext_media_nofs_notification_title">Prázdná karta SD</string>
-    <string name="ext_media_nofs_notification_message">Karta SD je prázdná nebo obsahuje nepodporovaný systém souborů.</string>
+    <string name="ext_media_nofs_notification_message">Karta SD je prázdná nebo obsahuje nepodporovaný systém souborů</string>
     <string name="ext_media_unmountable_notification_title">Poškozená karta SD</string>
     <string name="ext_media_unmountable_notification_message">Karta SD je poškozená. Bude pravděpodobně nutné ji přeformátovat.</string>
-    <string name="ext_media_badremoval_notification_title">Karta SD neočekávaně odebrána</string>
+    <string name="ext_media_badremoval_notification_title">Karta SD byla neočekávaně odebrána</string>
     <string name="ext_media_badremoval_notification_message">Chcete-li zabránit ztrátě dat, kartu SD před odebráním odpojte.</string>
     <string name="ext_media_safe_unmount_notification_title">Kartu SD je možné bezpečně odebrat</string>
-    <string name="ext_media_safe_unmount_notification_message">Kartu SD lze bezpečně odebrat.</string>
-    <string name="ext_media_nomedia_notification_title">Karta SD byla odebrána</string>
+    <string name="ext_media_safe_unmount_notification_message">Kartu SD lze bezpečně odebrat</string>
+    <string name="ext_media_nomedia_notification_title">Karta SD byla odstraněna</string>
     <string name="ext_media_nomedia_notification_message">Karta SD byla odebrána. Vložte novou kartu.</string>
     <string name="activity_list_empty">Nebyly nalezeny žádné odpovídající aktivity.</string>
     <string name="permlab_pkgUsageStats">aktualizovat statistiku použití součástí</string>
@@ -1104,7 +1104,7 @@ pro účet %s"</string>
     <string name="action_mode_done">Hotovo</string>
     <string name="progress_unmounting">Odpojování karty SD...</string>
     <string name="progress_erasing">Mazání karty SD...</string>
-    <string name="format_error">Kartu SD nelze smazat.</string>
+    <string name="format_error">Smazání karty SD se nezdařilo.</string>
     <string name="media_bad_removal">Karta SD nebyla před odebráním odpojena.</string>
     <string name="media_checking">Probíhá kontrola karty SD.</string>
     <string name="media_removed">Karta SD byla odebrána.</string>
@@ -1178,7 +1178,7 @@ pro účet %s"</string>
     <string name="action_menu_overflow_description">Další možnosti</string>
     <string name="storage_internal">Interní úložiště</string>
     <string name="storage_sd_card">Karta SD</string>
-    <string name="storage_usb">Úložiště USB</string>
+    <string name="storage_usb">Externí úložiště USB</string>
     <string name="extract_edit_menu_button">Upravit...</string>
     <string name="data_usage_warning_title">Varování pro využití dat</string>
     <string name="data_usage_warning_body">Dotykem zobraz. využití a nast.</string>
@@ -1230,4 +1230,46 @@ pro účet %s"</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Zopakujte nový kód PIN.</string>
     <string name="lockscreen_strings_sim_puk_wrong_nbr_digits_header_txt">Kód PUK musí mít délku 8 číslic.</string>
     <string name="seport_strings_accessory_not_supported_txt">Nepodporované příslušenství</string>
+    <string name="global_action_screenshot_txt">Vytvořit snímek obrazovky</string>
+    <string name="BaICMmi">Blokování příchozích hovorů</string>
+    <string name="BaOCMmi">Blokování odchozích hovorů</string>
+    <string name="BaOICMmi">Blokování odchozích mezinárodních hovorů</string>
+    <string name="BaOICxHMmi">Blokování odchozích mezinárodních hovorů (mimo domovskou zemi)</string>
+    <string name="BaICrMmi">Blokování příchozích hovorů během roamingu</string>
+    <string name="BaAllMmi">Blokování všech hovorů</string>
+    <string name="BaMOMmi">Blokování všech odchozích hovorů</string>
+    <string name="BaMTMmi">Blokování všech příchozích hovorů</string>
+    <string name="policylab_passwordRecovery">Obnovení hesla</string>
+    <string name="policydesc_passwordRecovery">Použití hesla pro obnovení, které odemkne telefon při zapomenutí hesla</string>
+    <string name="usb_storage_connect_notification_title">Úložiště USB připojeno</string>
+    <string name="usb_storage_connect_notification_message">Úložiště USB připojeno</string>
+    <string name="usb_storage_checking_notification_title">Příprava úložiště USB</string>
+    <string name="usb_storage_nofs_notification_title">Prázdné úložiště USB</string>
+    <string name="usb_storage_nofs_notification_message">Úložiště USB je prázdné nebo není podporováno</string>
+    <string name="usb_storage_unmountable_notification_title">Poškozené úložiště USB</string>
+    <string name="usb_storage_unmountable_notification_message">Úložiště USB je poškozeno, vyžaduje formátování.</string>
+    <string name="usb_storage_badremoval_notification_title">Úložiště USB nečekaně odebráno</string>
+    <string name="usb_storage_badremoval_notification_message">Odpojení úložiště USB může zabránit ztrátě dat.</string>
+    <string name="usb_storage_safe_unmount_notification_title">Bezpečné odebrání úložiště USB</string>
+    <string name="usb_storage_safe_unmount_notification_message">Můžete bezpečně odebrat úložiště USB.</string>
+    <string name="usb_storage_nomedia_notification_title">Úložiště USB odebráno</string>
+    <string name="usb_storage_nomedia_notification_message">Úložiště USB již bylo bezpečně odebráno</string>
+    <string name="usb_storage_format_title">Formátovat úlož. USB</string>
+    <string name="usb_storage_format_message">Opravdu chcete formátovat úložiště USB? Všechna data budou ztracena.</string>
+    <string name="usb_storage_progress_erasing">Vymazávání úložiště USB</string>
+    <string name="usb_storage_checking">Probíhá kontrola úložiště USB</string>
+    <string name="usb_storage_progress_unmounting">Odpojování úložiště USB</string>
+    <string name="usb_storage_format_error">Nelze vymazat úložiště USB</string>
+    <string name="usb_storage_bad_removal">Úložiště USB bylo odebráno bez předchozího odpojení</string>
+    <string name="usb_storage_removed">Úložiště USB odebráno</string>
+    <string name="usb_storage_shared">Úložiště USB v chybovém stavu</string>
+    <string name="internal_storage_strings_checking_notification_title_txt">Příprava vnitřního úložiště</string>
+    <string name="internal_storage_strings_unmountable_notification_title_txt">Poškozené vnitřní úložiště</string>
+    <string name="internal_storage_strings_unmountable_notification_message_txt">Vnitřní úložiště je poškozeno. Formátujte je.</string>
+    <string name="internal_storage_strings_nofs_notification_title_txt">Prázdné vnitřní úložiště</string>
+    <string name="internal_storage_strings_nofs_notification_message_txt">Vnitřní úložiště je prázdné či není podporováno</string>
+    <string name="internal_storage_factory_reset_unmount">Odpojení vnitřního úložiště</string>
+    <string name="internal_storage_factory_reset_erase">Vymazání vnitřního úložiště</string>
+    <string name="internal_storage_factory_reset_error">Nelze vymazat vnitřní úložiště</string>
+    <string name="internal_storage_erase_data_desc">Opravdu chcete formátovat vnitřní úložiště? Veškerá data budou ztracena.</string>
 </resources>

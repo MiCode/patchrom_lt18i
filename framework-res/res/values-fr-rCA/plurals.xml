@@ -9,14 +9,14 @@
         <item quantity="one">Il y a 1 minute</item>
     </plurals>
     <plurals name="num_hours_ago">
-        <item quantity="other">Il y a %d  heures</item>
+        <item quantity="other">Il y a %d heures</item>
         <item quantity="one">Il y a 1 heure</item>
     </plurals>
     <plurals name="last_num_days">
         <item quantity="other">Derniers %d jours</item>
     </plurals>
     <plurals name="num_days_ago">
-        <item quantity="other">Il y a %d  jours</item>
+        <item quantity="other">Il y a %d jours</item>
         <item quantity="one">hier</item>
     </plurals>
     <plurals name="in_num_seconds">
@@ -44,11 +44,11 @@
         <item quantity="one">Il y a 1 min</item>
     </plurals>
     <plurals name="abbrev_num_hours_ago">
-        <item quantity="other">Il y a %d  heures</item>
+        <item quantity="other">Il y a %d heures</item>
         <item quantity="one">Il y a 1 heure</item>
     </plurals>
     <plurals name="abbrev_num_days_ago">
-        <item quantity="other">Il y a %d  jours</item>
+        <item quantity="other">Il y a %d jours</item>
         <item quantity="one">hier</item>
     </plurals>
     <plurals name="abbrev_in_num_seconds">

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <plurals name="num_seconds_ago">
-        <item quantity="other">%d (na) segundo ang nakalipas</item>
-        <item quantity="one">1 segundo ang nakalipas</item>
+        <item quantity="other">%d segundo nklipas</item>
+        <item quantity="one">1 segundo nkalipas</item>
     </plurals>
     <plurals name="num_minutes_ago">
-        <item quantity="other">%d (na) minuto ang nakalipas</item>
-        <item quantity="one">1 minuto ang nakalipas</item>
+        <item quantity="other">%d minuto nkalipas</item>
+        <item quantity="one">1 minuto nakalipas</item>
     </plurals>
     <plurals name="num_hours_ago">
-        <item quantity="other">%d (na) oras ang nakalipas</item>
-        <item quantity="one">1 oras ang nakalipas</item>
+        <item quantity="other">%d oras nakalipas</item>
+        <item quantity="one">1 oras nakalipas</item>
     </plurals>
     <plurals name="last_num_days">
         <item quantity="other">Huling %d (na) araw</item>
     </plurals>
     <plurals name="num_days_ago">
-        <item quantity="other">%d (na) araw ang nakalipas</item>
+        <item quantity="other">%d araw nakalipas</item>
         <item quantity="one">kahapon</item>
     </plurals>
     <plurals name="in_num_seconds">
@@ -36,19 +36,19 @@
         <item quantity="one">bukas</item>
     </plurals>
     <plurals name="abbrev_num_seconds_ago">
-        <item quantity="other">%d (na) seg na nakalipas</item>
+        <item quantity="other">%d seg nakalipas</item>
         <item quantity="one">1 seg na nakalipas</item>
     </plurals>
     <plurals name="abbrev_num_minutes_ago">
-        <item quantity="other">%d (na) min na nakalipas</item>
+        <item quantity="other">%d min nakalipas</item>
         <item quantity="one">1 min na nakalipas</item>
     </plurals>
     <plurals name="abbrev_num_hours_ago">
-        <item quantity="other">%d (na) araw na nakalipas</item>
+        <item quantity="other">%d oras nakalipas</item>
         <item quantity="one">1 oras na nakalipas</item>
     </plurals>
     <plurals name="abbrev_num_days_ago">
-        <item quantity="other">%d (na) araw na nakalipas</item>
+        <item quantity="other">%d araw nakalipas</item>
         <item quantity="one">kahapon</item>
     </plurals>
     <plurals name="abbrev_in_num_seconds">

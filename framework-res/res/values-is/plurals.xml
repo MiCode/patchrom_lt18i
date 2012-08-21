@@ -9,7 +9,7 @@
         <item quantity="one">fyrir 1 mínútu</item>
     </plurals>
     <plurals name="num_hours_ago">
-        <item quantity="other">fyrir %d klukkustundum</item>
+        <item quantity="other">fyrir %d klst.</item>
         <item quantity="one">fyrir 1 klukkustund</item>
     </plurals>
     <plurals name="last_num_days">
@@ -44,7 +44,7 @@
         <item quantity="one">fyrir 1 mínútu</item>
     </plurals>
     <plurals name="abbrev_num_hours_ago">
-        <item quantity="other">fyrir %d klukkustundum</item>
+        <item quantity="other">fyrir %d klst.</item>
         <item quantity="one">fyrir 1 klukkustund</item>
     </plurals>
     <plurals name="abbrev_num_days_ago">

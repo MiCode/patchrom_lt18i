@@ -161,7 +161,7 @@
     <string name="full_wday_month_day_no_year">EEEE d MMMM</string>
     <string name="abbrev_wday_month_day_no_year">EEE d MMMM</string>
     <string name="abbrev_wday_month_day_year">EEE d MMM yyyy</string>
-    <string name="mmcc_imsi_unknown_in_hlr">SIM-kort tillhandahålls inte MM #2</string>
+    <string name="mmcc_imsi_unknown_in_hlr">SIM tillhandahålls inte MM #2</string>
     <string name="mmcc_illegal_ms">SIM-kort tillåts inte MM #3</string>
     <string name="mmcc_illegal_me">Telefon tillåts inte MM #6</string>
     <string name="mmcc_authentication_reject">SIM-kort tillåts inte</string>
@@ -219,7 +219,7 @@
     <string name="badPuk">PUK-koden som du angav är fel.</string>
     <string name="mismatchPin">PIN-koderna som du angav matchar inte.</string>
     <string name="invalidPin">Ange PIN-kod med 4 till 8 siffror.</string>
-    <string name="invalidPuk">Ange en PUK-kod med minst 8 siffror.</string>
+    <string name="invalidPuk">Ange en PUK-kod med 8 siffror</string>
     <string name="needPuk">Ditt SIM-kort är PUK-låst. Ange PUK-koden om du vill låsa upp det.</string>
     <string name="needPuk2">Ange PUK2-koden för att häva spärren av SIM-kortet.</string>
     <string name="ClipMmi">Nummerpresentatör för inkommande samtal</string>
@@ -790,7 +790,7 @@ Försök igen om %d sekunder."</string>
     <string name="lockscreen_failed_attempts_almost_at_wipe" formatted="false">Du har försökt låsa upp mobilen på fel sätt %d gånger. Efter %d misslyckade försök till kommer mobilen att återställas till standardinställningarna. Du förlorar då allt privat innehåll.</string>
     <string name="lockscreen_failed_attempts_now_wiping">Du har försökt låsa upp mobilen på fel sätt %d gånger. Mobilen återställs nu till standardinställningarna.</string>
     <string name="lockscreen_too_many_failed_attempts_countdown">Försök igen om %d sekunder.</string>
-    <string name="lockscreen_forgot_pattern_button_text">Glömt ditt grafiska lösenord?</string>
+    <string name="lockscreen_forgot_pattern_button_text">Glömt grafiskt lösen?</string>
     <string name="lockscreen_glogin_forgot_pattern">Lås upp konto</string>
     <string name="lockscreen_glogin_too_many_attempts">För många försök med grafiskt lösenord!</string>
     <string name="lockscreen_glogin_instructions">Logga in med ditt Google-konto om du vill låsa upp</string>
@@ -913,7 +913,7 @@ Tryck på OK om du vill fortsätta eller på Avbryt om du vill vara kvar på den
     <string name="capital_on">PÅ</string>
     <string name="capital_off">AV</string>
     <string name="whichApplication">Slutför åtgärd med</string>
-    <string name="alwaysUse">Använd alltid för denna åtgärd.</string>
+    <string name="alwaysUse">Använd som standard för denna åtgärd.</string>
     <string name="clearDefaultHintMsg">Rensa standardinställning i Inställningar > Appar.</string>
     <string name="chooseActivity">Välj en åtgärd</string>
     <string name="chooseUsbActivity">Välj ett program för USB-enheten</string>
@@ -928,7 +928,7 @@ Vill du stänga det?"</string>
     <string name="anr_activity_process">"Aktiviteten %1$s svarar inte.
  
 Vill du stänga den?"</string>
-    <string name="anr_application_process">%1$s svarar inte. Vill du stänga det?</string>
+    <string name="anr_application_process">Applikationen %1$s svarar inte. Vill du stänga den?</string>
     <string name="anr_process">"Processen %1$s svarar inte.
 
 Vill du stänga den?"</string>
@@ -936,7 +936,7 @@ Vill du stänga den?"</string>
     <string name="report">Rapportera</string>
     <string name="wait">Vänta</string>
     <string name="launch_warning_title">Programmet omdirigerades</string>
-    <string name="launch_warning_replace">%1$s körs nu.</string>
+    <string name="launch_warning_replace">%1$s körs.</string>
     <string name="launch_warning_original">%1$s startades först.</string>
     <string name="screen_compat_mode_scale">Anpassning</string>
     <string name="screen_compat_mode_show">Visa alltid</string>
@@ -1007,7 +1007,7 @@ Vill du stänga den?"</string>
     <string name="perms_show_all"><b>Visa alla</b></string>
     <string name="usb_storage_activity_title">USB-masslagring</string>
     <string name="usb_storage_title">USB-ansluten</string>
-    <string name="usb_storage_message">Du har anslutit mobilen till datorn via USB. Rör vid knappen nedan om du vill kopiera filer mellan datorn och Android-telefonens SD-kort.</string>
+    <string name="usb_storage_message">Du har anslutit telefonen till datorn via USB. Välj knappen nedan om du vill kopiera filer mellan datorn och SD-kortet i din Android.</string>
     <string name="usb_storage_button_mount">Aktivera USB-lagring</string>
     <string name="usb_storage_error_message">Det gick inte att använda ditt SD-kort för USB-masslagring.</string>
     <string name="usb_storage_notification_title">USB-ansluten</string>
@@ -1015,7 +1015,7 @@ Vill du stänga den?"</string>
     <string name="usb_storage_stop_notification_title">Inaktivera USB-lagring</string>
     <string name="usb_storage_stop_notification_message">Välj om USB-lagring ska inaktiveras.</string>
     <string name="usb_storage_stop_title">USB-lagret används</string>
-    <string name="usb_storage_stop_message">Kontrollera att du har kopplat från (“matat ut”) Android-telefonens SD-kort från datorn innan du inaktiverar USB-lagringsenheten.</string>
+    <string name="usb_storage_stop_message">Kontrollera att du har kopplat från (\"matat ut\") Android-telefonens SD-kort från datorn, innan du inaktiverar USB-minnet.</string>
     <string name="usb_storage_stop_button_mount">Inaktivera USB-lagring</string>
     <string name="usb_storage_stop_error_message">Ett problem uppstod när USB-lagringsplatsen skulle inaktiveras. Kontrollera att USB-värden har demonterats och försök igen.</string>
     <string name="dlg_confirm_kill_storage_users_title">Aktivera USB-lagring</string>
@@ -1027,8 +1027,8 @@ Vill du stänga den?"</string>
     <string name="usb_cd_installer_notification_title">Ansluten som installationsprogram</string>
     <string name="usb_accessory_notification_title">Ansluten till ett USB-tillbehör</string>
     <string name="usb_notification_message">Rör här för andra USB-alternativ</string>
-    <string name="extmedia_format_title">Formatera SD-kortet</string>
-    <string name="extmedia_format_message">Vill du formatera SD-kortet? Alla data på kortet kommer att försvinna.</string>
+    <string name="extmedia_format_title">Formatera SD-kort</string>
+    <string name="extmedia_format_message">Vill du formatera SD-kortet? Alla data på ditt kort kommer att gå förlorade.</string>
     <string name="extmedia_format_button_format">Format</string>
     <string name="adb_active_notification_title">USB-felsökning ansluten</string>
     <string name="adb_active_notification_message">Välj att inaktivera USB-felsökning.</string>
@@ -1040,14 +1040,14 @@ Vill du stänga den?"</string>
     <string name="ext_media_checking_notification_title">Förbereder SD-kort</string>
     <string name="ext_media_checking_notification_message">Söker efter fel.</string>
     <string name="ext_media_nofs_notification_title">Tomt SD-kort</string>
-    <string name="ext_media_nofs_notification_message">SD-kortet är tomt eller så har det ett filsystem som inte stöds.</string>
+    <string name="ext_media_nofs_notification_message">SD-kortet är tomt eller så har det ett filsystem som inte stöds</string>
     <string name="ext_media_unmountable_notification_title">Skadat SD-kort</string>
     <string name="ext_media_unmountable_notification_message">SD-kortet är skadat. Du måste eventuellt formatera om det.</string>
     <string name="ext_media_badremoval_notification_title">SD-kort togs oväntat bort</string>
     <string name="ext_media_badremoval_notification_message">Koppla från SD-kortet innan du tar bort det så undviker du dataförlust.</string>
     <string name="ext_media_safe_unmount_notification_title">Säkert att ta bort SD-kort</string>
-    <string name="ext_media_safe_unmount_notification_message">Det är nu säkert att ta bort SD-kortet.</string>
-    <string name="ext_media_nomedia_notification_title">SD-kortet har tagits bort</string>
+    <string name="ext_media_safe_unmount_notification_message">Det är nu säkert att ta bort SD-kortet</string>
+    <string name="ext_media_nomedia_notification_title">Borttaget SD-kort</string>
     <string name="ext_media_nomedia_notification_message">SD-kortet har tagits bort. Sätt i ett nytt.</string>
     <string name="activity_list_empty">Inga matchande aktiviteter hittades</string>
     <string name="permlab_pkgUsageStats">uppdatera statistik över användning av komponenter</string>
@@ -1102,9 +1102,9 @@ för kontot %s"</string>
     <string name="no_matches">Inga träffar</string>
     <string name="find_on_page">Hitta på sidan</string>
     <string name="action_mode_done">Klar</string>
-    <string name="progress_unmounting">Kopplar från SD-kortet...</string>
-    <string name="progress_erasing">Raderar SD-kortet...</string>
-    <string name="format_error">Det gick inte att radera informationen på SD-kortet.</string>
+    <string name="progress_unmounting">Demonterar SD-kort...</string>
+    <string name="progress_erasing">Raderar SD-kort...</string>
+    <string name="format_error">Det gick inte att radera SD-kortet.</string>
     <string name="media_bad_removal">SD-kortet demonterades inte innan det togs bort.</string>
     <string name="media_checking">SD-kortet kontrolleras.</string>
     <string name="media_removed">SD-kortet har tagits bort.</string>
@@ -1178,7 +1178,7 @@ för kontot %s"</string>
     <string name="action_menu_overflow_description">Fler alternativ</string>
     <string name="storage_internal">Internlagring</string>
     <string name="storage_sd_card">SD-kort</string>
-    <string name="storage_usb">USB-lagringsenhet</string>
+    <string name="storage_usb">Extern USB-lagringsenhet</string>
     <string name="extract_edit_menu_button">Redigera...</string>
     <string name="data_usage_warning_title">Varning angående dataanvändning</string>
     <string name="data_usage_warning_body">Rör för att visa anv. och inställn.</string>
@@ -1230,4 +1230,46 @@ för kontot %s"</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Upprepa PIN-koden</string>
     <string name="lockscreen_strings_sim_puk_wrong_nbr_digits_header_txt">PUK-koder består av åtta siffror</string>
     <string name="seport_strings_accessory_not_supported_txt">Tillbehöret stöds inte</string>
+    <string name="global_action_screenshot_txt">Spara skärmbild</string>
+    <string name="BaICMmi">Blockering av inkommande samtal</string>
+    <string name="BaOCMmi">Blockering av utgående samtal</string>
+    <string name="BaOICMmi">Blockering av utgående utlandssamtal</string>
+    <string name="BaOICxHMmi">Blockering av utgående utlandssamtal (förutom till hemlandet)</string>
+    <string name="BaICrMmi">Blockering av inkommande samtal vid roaming</string>
+    <string name="BaAllMmi">All samtalsblockering</string>
+    <string name="BaMOMmi">Blockering av alla utgående samtal</string>
+    <string name="BaMTMmi">Blockering av alla inkommande samtal</string>
+    <string name="policylab_passwordRecovery">Återställning av lösenord</string>
+    <string name="policydesc_passwordRecovery">Använd återställningslösenordet för att låsa upp telefonen om du har glömt bort lösenordet</string>
+    <string name="usb_storage_connect_notification_title">USB-minnet är anslutet</string>
+    <string name="usb_storage_connect_notification_message">USB-minnet är anslutet</string>
+    <string name="usb_storage_checking_notification_title">Förbereder USB-minne</string>
+    <string name="usb_storage_nofs_notification_title">Tomt USB-minne</string>
+    <string name="usb_storage_nofs_notification_message">USB-minnet är tomt eller filsystemet stöds inte</string>
+    <string name="usb_storage_unmountable_notification_title">Skadat USB-minne</string>
+    <string name="usb_storage_unmountable_notification_message">USB-minnet skadat. Det behöver formateras om.</string>
+    <string name="usb_storage_badremoval_notification_title">USB-minnet togs oväntat bort</string>
+    <string name="usb_storage_badremoval_notification_message">Koppla först från USB-min. och undvik dataförlust</string>
+    <string name="usb_storage_safe_unmount_notification_title">Säkert att ta bort USB-minnet</string>
+    <string name="usb_storage_safe_unmount_notification_message">Du kan nu ta bort USB-minnet</string>
+    <string name="usb_storage_nomedia_notification_title">USB-minnet är borttaget</string>
+    <string name="usb_storage_nomedia_notification_message">USB-minnet är redan säkert borttaget</string>
+    <string name="usb_storage_format_title">Formatera USB-minne</string>
+    <string name="usb_storage_format_message">Vill du formatera USB-minnet? Alla data kommer att förloras.</string>
+    <string name="usb_storage_progress_erasing">Raderar USB-minnet</string>
+    <string name="usb_storage_checking">USB-minnet kontrolleras nu</string>
+    <string name="usb_storage_progress_unmounting">Kopplar från USB-minnet</string>
+    <string name="usb_storage_format_error">Det gick inte att rensa USB-minnet</string>
+    <string name="usb_storage_bad_removal">USB-minnet togs bort innan det kopplades från</string>
+    <string name="usb_storage_removed">USB-minnet är borttaget</string>
+    <string name="usb_storage_shared">USB-minnet är i feltillstånd</string>
+    <string name="internal_storage_strings_checking_notification_title_txt">Förbereder internminne</string>
+    <string name="internal_storage_strings_unmountable_notification_title_txt">Internmminnet skadat</string>
+    <string name="internal_storage_strings_unmountable_notification_message_txt">Internminnet är skadat. Formatera det.</string>
+    <string name="internal_storage_strings_nofs_notification_title_txt">Tomt internminne</string>
+    <string name="internal_storage_strings_nofs_notification_message_txt">Internminnet är tomt eller filsystemet stöds inte</string>
+    <string name="internal_storage_factory_reset_unmount">Kopplar från det interna minnet</string>
+    <string name="internal_storage_factory_reset_erase">Rensar det interna minnet</string>
+    <string name="internal_storage_factory_reset_error">Det gick inte att rensa den interna masslagringen</string>
+    <string name="internal_storage_erase_data_desc">Vill du formatera det interna minnet? Alla data på det kommer att förloras.</string>
 </resources>

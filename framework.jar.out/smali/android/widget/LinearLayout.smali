@@ -714,9 +714,7 @@
 
     iget v7, v4, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
-    sub-int/2addr v6, v7
-
-    add-int/lit8 v3, v6, -0x1
+    sub-int v3, v6, v7
 
     .line 342
     .local v3, left:I

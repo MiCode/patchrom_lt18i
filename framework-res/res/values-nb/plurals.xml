@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <plurals name="num_seconds_ago">
-        <item quantity="other">for %d sekunder siden</item>
+        <item quantity="other">for %d sek siden</item>
         <item quantity="one">for et sekund siden</item>
     </plurals>
     <plurals name="num_minutes_ago">
-        <item quantity="other">for %d minutter siden</item>
+        <item quantity="other">for %d min siden</item>
         <item quantity="one">for et minutt siden</item>
     </plurals>
     <plurals name="num_hours_ago">

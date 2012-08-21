@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <plurals name="num_seconds_ago">
-        <item quantity="other">%d sekonda më parë</item>
+        <item quantity="other">%d sekond. më parë</item>
         <item quantity="one">1 sekondë më parë</item>
     </plurals>
     <plurals name="num_minutes_ago">
@@ -36,7 +36,7 @@
         <item quantity="one">nesër</item>
     </plurals>
     <plurals name="abbrev_num_seconds_ago">
-        <item quantity="other">%d sekonda më parë</item>
+        <item quantity="other">%d sekond. më parë</item>
         <item quantity="one">1 sekondë më parë</item>
     </plurals>
     <plurals name="abbrev_num_minutes_ago">

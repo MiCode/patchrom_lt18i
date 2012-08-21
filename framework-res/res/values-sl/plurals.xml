@@ -9,7 +9,7 @@
         <item quantity="one">pred 1 minuto</item>
     </plurals>
     <plurals name="num_hours_ago">
-        <item quantity="other">pred toliko urami: %d</item>
+        <item quantity="other">pred toliko h: %d</item>
         <item quantity="one">pred 1uro</item>
     </plurals>
     <plurals name="last_num_days">
@@ -44,7 +44,7 @@
         <item quantity="one">pred 1 min.</item>
     </plurals>
     <plurals name="abbrev_num_hours_ago">
-        <item quantity="other">pred toliko urami: %d</item>
+        <item quantity="other">pred toliko h: %d</item>
         <item quantity="one">pred 1 uro</item>
     </plurals>
     <plurals name="abbrev_num_days_ago">

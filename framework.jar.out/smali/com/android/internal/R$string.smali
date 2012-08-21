@@ -15,7 +15,23 @@
 
 
 # static fields
+.field public static final BaAllMmi:I = 0x1040521
+
+.field public static final BaICMmi:I = 0x104051c
+
+.field public static final BaICrMmi:I = 0x1040520
+
+.field public static final BaMOMmi:I = 0x1040522
+
+.field public static final BaMTMmi:I = 0x1040523
+
 .field public static final BaMmi:I = 0x10400fc
+
+.field public static final BaOCMmi:I = 0x104051d
+
+.field public static final BaOICMmi:I = 0x104051e
+
+.field public static final BaOICxHMmi:I = 0x104051f
 
 .field public static final CLIRDefaultOffNextCallOff:I = 0x1040108
 
@@ -685,6 +701,8 @@
 
 .field public static final global_action_power_off:I = 0x1040155
 
+.field public static final global_action_screenshot_txt:I = 0x104051b
+
 .field public static final global_action_silent_mode_off_status:I = 0x1040158
 
 .field public static final global_action_silent_mode_on_status:I = 0x1040157
@@ -822,6 +840,30 @@
 .field public static final inputMethod:I = 0x10403c0
 
 .field public static final input_method_binding_label:I = 0x1040465
+
+.field public static final internal_storage_erase_data_desc:I = 0x1040547
+
+.field public static final internal_storage_factory_reset_checking:I = 0x1040544
+
+.field public static final internal_storage_factory_reset_erase:I = 0x1040542
+
+.field public static final internal_storage_factory_reset_error:I = 0x1040543
+
+.field public static final internal_storage_factory_reset_shared:I = 0x1040545
+
+.field public static final internal_storage_factory_reset_unmount:I = 0x1040541
+
+.field public static final internal_storage_format_progress:I = 0x1040546
+
+.field public static final internal_storage_strings_checking_notification_title_txt:I = 0x104053c
+
+.field public static final internal_storage_strings_nofs_notification_message_txt:I = 0x1040540
+
+.field public static final internal_storage_strings_nofs_notification_title_txt:I = 0x104053f
+
+.field public static final internal_storage_strings_unmountable_notification_message_txt:I = 0x104053e
+
+.field public static final internal_storage_strings_unmountable_notification_title_txt:I = 0x104053d
 
 .field public static final invalidPin:I = 0x10400f4
 
@@ -2087,6 +2129,8 @@
 
 .field public static final policydesc_limitPassword:I = 0x10402a1
 
+.field public static final policydesc_passwordRecovery:I = 0x1040525
+
 .field public static final policydesc_resetPassword:I = 0x10402a5
 
 .field public static final policydesc_setGlobalProxy:I = 0x10402ab
@@ -2104,6 +2148,8 @@
 .field public static final policylab_forceLock:I = 0x10402a6
 
 .field public static final policylab_limitPassword:I = 0x10402a0
+
+.field public static final policylab_passwordRecovery:I = 0x1040524
 
 .field public static final policylab_resetPassword:I = 0x10402a4
 
@@ -2511,15 +2557,55 @@
 
 .field public static final usb_storage_activity_title:I = 0x1040421
 
+.field public static final usb_storage_bad_removal:I = 0x1040539
+
+.field public static final usb_storage_badremoval_notification_message:I = 0x104052e
+
+.field public static final usb_storage_badremoval_notification_title:I = 0x104052d
+
 .field public static final usb_storage_button_mount:I = 0x1040424
+
+.field public static final usb_storage_checking:I = 0x1040536
+
+.field public static final usb_storage_checking_notification_title:I = 0x1040528
+
+.field public static final usb_storage_connect_notification_message:I = 0x1040527
+
+.field public static final usb_storage_connect_notification_title:I = 0x1040526
 
 .field public static final usb_storage_error_message:I = 0x1040425
 
+.field public static final usb_storage_format_error:I = 0x1040538
+
+.field public static final usb_storage_format_message:I = 0x1040534
+
+.field public static final usb_storage_format_title:I = 0x1040533
+
 .field public static final usb_storage_message:I = 0x1040423
+
+.field public static final usb_storage_nofs_notification_message:I = 0x104052a
+
+.field public static final usb_storage_nofs_notification_title:I = 0x1040529
+
+.field public static final usb_storage_nomedia_notification_message:I = 0x1040532
+
+.field public static final usb_storage_nomedia_notification_title:I = 0x1040531
 
 .field public static final usb_storage_notification_message:I = 0x1040427
 
 .field public static final usb_storage_notification_title:I = 0x1040426
+
+.field public static final usb_storage_progress_erasing:I = 0x1040535
+
+.field public static final usb_storage_progress_unmounting:I = 0x1040537
+
+.field public static final usb_storage_removed:I = 0x104053a
+
+.field public static final usb_storage_safe_unmount_notification_message:I = 0x1040530
+
+.field public static final usb_storage_safe_unmount_notification_title:I = 0x104052f
+
+.field public static final usb_storage_shared:I = 0x104053b
 
 .field public static final usb_storage_stop_button_mount:I = 0x104042c
 
@@ -2534,6 +2620,10 @@
 .field public static final usb_storage_stop_title:I = 0x104042a
 
 .field public static final usb_storage_title:I = 0x1040422
+
+.field public static final usb_storage_unmountable_notification_message:I = 0x104052c
+
+.field public static final usb_storage_unmountable_notification_title:I = 0x104052b
 
 .field public static final validity_period:I = 0x10404e4
 

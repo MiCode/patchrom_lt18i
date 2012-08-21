@@ -165,12 +165,12 @@
     <string name="mmcc_authentication_reject">Tarjeta SIM no permitida</string>
     <string name="carrier_invalid_sim_card">Tarjeta SIM no válida</string>
     <string name="unregistered_sim">Tarjeta SIM no registrada</string>
-    <string name="lockscreen_strings_sim_puk_attempts_remaining_txt">Intentos que quedan:</string>
+    <string name="lockscreen_strings_sim_puk_attempts_remaining_txt">Intentos restantes:</string>
     <string name="lockscreen_strings_backup_selection_header_txt">Desbloquear pantalla</string>
     <string name="lockscreen_strings_backup_selection_sub_header_txt">Seleccione el modo de desbloqueo de la pantalla si ha olvidado su patrón</string>
     <string name="lockscreen_strings_backup_selection_security_question_txt">Responder a la pregunta</string>
     <string name="lockscreen_strings_backup_selection_security_question_summary_txt">Desbl. pantalla con preg. segur.</string>
-    <string name="lockscreen_strings_backup_selection_google_account_txt">Introducir los datos de la cuenta de Google</string>
+    <string name="lockscreen_strings_backup_selection_google_account_txt">Introducir datos cuenta Google</string>
     <string name="lockscreen_strings_backup_selection_google_account_summary_txt">Desbl. pantalla con datos de cuenta Google</string>
     <string name="lockscreen_strings_backup_selection_next_txt">Siguiente</string>
     <string name="lockscreen_strings_howtounlock_txt">Pulse %icon para desbloquear</string>
@@ -203,7 +203,7 @@
     <string name="petabyteShort">PB</string>
     <string name="fileSizeSuffix">%1$s %2$s</string>
     <string name="mmiError">Se ha producido un problema de conexión o el código MMI no es válido.</string>
-    <string name="mmiFdnError">La operación solo es válida para números de marcación fija.</string>
+    <string name="mmiFdnError">La operación sólo es válida para números de marcación fija.</string>
     <string name="serviceEnabled">El servicio se ha habilitado.</string>
     <string name="serviceEnabledFor">Se ha habilitado el servicio para:</string>
     <string name="serviceDisabled">El servicio se ha inhabilitado.</string>
@@ -215,14 +215,13 @@
     <string name="badPuk">El código PUK no es correcto.</string>
     <string name="mismatchPin">Los códigos PIN introducidos no coinciden.</string>
     <string name="invalidPin">Escriba un PIN de 4 a 8 núm.</string>
-    <string name="invalidPuk">Escribe un código PUK que tenga como mínimo 8 números.</string>
+    <string name="invalidPuk">Introduce un código PUK con una longitud de 8 dígitos</string>
     <string name="needPuk">La tarjeta SIM está bloqueada con el código PUK. Introduce el código PUK para desbloquearla.</string>
     <string name="needPuk2">Introduce el código PUK2 para desbloquear la tarjeta SIM.</string>
     <string name="ClipMmi">ID de emisor de llamada entrante</string>
     <string name="ClirMmi">ID de emisor de llamada saliente</string>
     <string name="CfMmi">Desvío de llamada</string>
     <string name="CwMmi">Llamada en espera</string>
-    <string name="BaMmi">Bloqueo de llamada</string>
     <string name="PwdMmi">Cambio de contraseña</string>
     <string name="PinMmi">Cambio de PIN</string>
     <string name="CnipMmi">Número de llamada entrante presente</string>
@@ -305,7 +304,7 @@
     <string name="silent_mode_vibrate">Vibración para timbre</string>
     <string name="silent_mode_ring">Timbre activado</string>
     <string name="shutdown_progress">Apagando...</string>
-    <string name="shutdown_confirm">El teléfono se cerrará.</string>
+    <string name="shutdown_confirm">El teléfono se apagará.</string>
     <string name="shutdown_confirm_question">¿Te gustaría cerrar?</string>
     <string name="recent_tasks_title">Reciente</string>
     <string name="no_recent_tasks">No hay aplicaciones recientes</string>
@@ -339,9 +338,9 @@
     <string name="permgrouplab_systemTools">Herramientas del sistema</string>
     <string name="permgroupdesc_systemTools">Acceso de nivel inferior y control del sistema</string>
     <string name="permgrouplab_developmentTools">Herramientas de desarrollo</string>
-    <string name="permgroupdesc_developmentTools">Funciones necesarias solo para desarrolladores de aplicaciones</string>
+    <string name="permgroupdesc_developmentTools">Funciones necesarias sólo para desarrolladores de aplicaciones</string>
     <string name="permgrouplab_storage">Almacenamiento</string>
-    <string name="permgroupdesc_storage">Accede a la tarjeta SD.</string>
+    <string name="permgroupdesc_storage">Acceder a la tarjeta SD</string>
     <string name="permlab_statusBar">inhabilitar o modificar la barra de estado</string>
     <string name="permdesc_statusBar">Permite que las aplicaciones inhabiliten la barra de estado, o añadan y eliminen iconos del sistema.</string>
     <string name="permlab_statusBarService">barra de estado</string>
@@ -355,7 +354,7 @@
     <string name="permlab_receiveMms">recibir MMS</string>
     <string name="permdesc_receiveMms">Permite que la aplicación reciba y procese mensajes MMS. Las aplicaciones malintencionadas pueden controlar los mensajes o eliminarlos sin mostrarlos al usuario.</string>
     <string name="permlab_receiveEmergencyBroadcast">recibir transmisiones de emergencia</string>
-    <string name="permdesc_receiveEmergencyBroadcast">Permite que la aplicación reciba y procese mensajes de difusión de emergencia. Este permiso solo está disponible para las aplicaciones del sistema.</string>
+    <string name="permdesc_receiveEmergencyBroadcast">Permite que la aplicación reciba y procese mensajes de difusión de emergencia. Este permiso sólo está disponible para las aplicaciones del sistema.</string>
     <string name="permlab_sendSms">enviar mensajes SMS</string>
     <string name="permdesc_sendSms">Permite que la aplicación envíe mensajes SMS. Es posible que tengas que pagar si las aplicaciones malintencionadas envían mensajes sin tu confirmación.</string>
     <string name="permlab_sendSmsNoConfirmation">enviar mensajes SMS sin confirmación</string>
@@ -393,7 +392,7 @@
     <string name="permlab_stopAppSwitches">evitar cambios de aplicación</string>
     <string name="permdesc_stopAppSwitches">Evita que el usuario cambie a otra aplicación.</string>
     <string name="permlab_runSetActivityWatcher">supervisar y controlar la ejecución de todas las aplicaciones</string>
-    <string name="permdesc_runSetActivityWatcher">Permite que una aplicación supervise y controle cómo el sistema inicia actividades. Las aplicaciones malintencionadas pueden comprometer completamente el sistema. Este permiso solo se necesita para el desarrollo, nunca para el uso normal.</string>
+    <string name="permdesc_runSetActivityWatcher">Permite que una aplicación supervise y controle cómo el sistema inicia actividades. Las aplicaciones malintencionadas pueden comprometer completamente el sistema. Este permiso sólo se necesita para el desarrollo, nunca para el uso normal.</string>
     <string name="permlab_broadcastPackageRemoved">enviar emisión eliminada de paquete</string>
     <string name="permdesc_broadcastPackageRemoved">Permite que una aplicación emita una notificación de que se ha eliminado un paquete de aplicación. Las aplicaciones malintencionadas pueden utilizar este permiso para interrumpir la ejecución de cualquier otra aplicación.</string>
     <string name="permlab_broadcastSmsReceived">enviar una emisión recibida mediante SMS</string>
@@ -561,7 +560,7 @@
     <string name="permlab_devicePower">encender o apagar teléfono</string>
     <string name="permdesc_devicePower">Permite que la aplicación active o desactive el teléfono.</string>
     <string name="permlab_factoryTest">ejecutar en modo de prueba de fábrica</string>
-    <string name="permdesc_factoryTest">Ejecutar como prueba de fabricante de bajo nivel, permitiendo un acceso completo al hardware del teléfono. Solo disponible cuando un teléfono se está ejecutando en modo de prueba de fabricante.</string>
+    <string name="permdesc_factoryTest">Ejecutar como prueba de fabricante de bajo nivel, permitiendo un acceso completo al hardware del teléfono. Sólo disponible cuando un teléfono se está ejecutando en modo de prueba de fabricante.</string>
     <string name="permlab_setWallpaper">establecer fondo de pantalla</string>
     <string name="permdesc_setWallpaper">Permite que la aplicación establezca el fondo de pantalla del sistema.</string>
     <string name="permlab_setWallpaperHints">establecer el tamaño del fondo de pantalla</string>
@@ -627,7 +626,7 @@
     <string name="permlab_writeDictionary">escribir en el diccionario definido por el usuario</string>
     <string name="permdesc_writeDictionary">Permite a una aplicación escribir palabras nuevas en el diccionario de usuario.</string>
     <string name="permlab_sdcardWrite">modificar/eliminar contenido de la tarjeta SD</string>
-    <string name="permdesc_sdcardWrite">Permite a una aplicación escribir en la tarjeta SD.</string>
+    <string name="permdesc_sdcardWrite">Permite que una aplicación escriba en la tarjeta SD.</string>
     <string name="permlab_mediaStorageWrite">modificar/eliminar contenido de almacenamiento multimedia interno</string>
     <string name="permdesc_mediaStorageWrite">Permite a una aplicación modificar el contenido del almacenamiento multimedia interno.</string>
     <string name="permlab_cache_filesystem">acceder al sistema de archivos almacenado en caché</string>
@@ -653,7 +652,7 @@
     <string name="policylab_wipeData">Borrar todos los datos</string>
     <string name="policydesc_wipeData">Borrar los datos del teléfono sin advertencia, realizando un restablecimiento de datos predeterminado de fábrica</string>
     <string name="policylab_setGlobalProxy">Establecer el proxy global del dispositivo</string>
-    <string name="policydesc_setGlobalProxy">Establecer el proxy global del dispositivo que se va a usar mientras está habilitada la política. Solo el primer administrador del dispositivo establece el proxy global efectivo.</string>
+    <string name="policydesc_setGlobalProxy">Establecer el proxy global del dispositivo que se va a usar mientras está habilitada la política. Sólo el primer administrador del dispositivo establece el proxy global efectivo.</string>
     <string name="policylab_expirePassword">Establecer caducidad de contraseña de la pantalla de bloqueo</string>
     <string name="policydesc_expirePassword">Controlar la frecuencia de cambio de contraseña de la pantalla de bloqueo</string>
     <string name="policylab_encryptedStorage">Establecer cifrado de almacenamiento</string>
@@ -764,11 +763,11 @@
     <string name="lockscreen_transport_pause_description">Botón Pausa</string>
     <string name="lockscreen_transport_play_description">Botón Reproducir</string>
     <string name="lockscreen_transport_stop_description">Botón Detener</string>
-    <string name="emergency_calls_only">Solo llamadas de emergencia</string>
+    <string name="emergency_calls_only">Sólo llamadas emergencia</string>
     <string name="lockscreen_network_locked_message">Bloqueada para la red</string>
-    <string name="lockscreen_sim_puk_locked_message">La tarjeta SIM está bloqueada por código PUK.</string>
+    <string name="lockscreen_sim_puk_locked_message">La tarjeta SIM está bloq. por código PUK.</string>
     <string name="lockscreen_sim_puk_locked_instructions">Consulta la guía del usuario o ponte en contacto con el servicio de atención al cliente.</string>
-    <string name="lockscreen_sim_locked_message">La tarjeta SIM está bloqueada.</string>
+    <string name="lockscreen_sim_locked_message">SIM bloqueada</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">Desbloqueando tarjeta SIM...</string>
     <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"Has realizado %d intentos fallidos de creación de un patrón de desbloqueo. 
 
@@ -779,7 +778,7 @@ Inténtalo de nuevo dentro de %d segundos."</string>
     <string name="lockscreen_failed_attempts_almost_at_wipe" formatted="false">Has intentado desbloquear incorrectamente el teléfono %d veces. Tras %d intentos infructuosos más, el teléfono se restablecerá a los valores predeterminados de fábrica y todos los datos del usuario se perderán.</string>
     <string name="lockscreen_failed_attempts_now_wiping">Has intentando desbloquear incorrectamente el teléfono %d veces. El teléfono se restablecerá a los valores predeterminados de fábrica.</string>
     <string name="lockscreen_too_many_failed_attempts_countdown">Espera %d segundos y vuelve a intentarlo.</string>
-    <string name="lockscreen_forgot_pattern_button_text">¿Has olvidado el patrón?</string>
+    <string name="lockscreen_forgot_pattern_button_text">¿Olvidaste el patrón?</string>
     <string name="lockscreen_glogin_forgot_pattern">Desbloqueo de cuenta</string>
     <string name="lockscreen_glogin_too_many_attempts">Se han realizado demasiados intentos incorrectos de creación del patrón.</string>
     <string name="lockscreen_glogin_instructions">Para desbloquear el teléfono, accede a tu cuenta de Google.</string>
@@ -802,7 +801,7 @@ Visita "<b>google.com/accounts/recovery</b></string>
     <string name="hour_ampm" formatted="false">%-l %P</string>
     <string name="hour_cap_ampm" formatted="false">%-l %p</string>
     <string name="factorytest_failed">Fallo en la prueba de fábrica</string>
-    <string name="factorytest_not_system">La acción FACTORY_TEST solo es compatible con los paquetes instalados en /system/app.</string>
+    <string name="factorytest_not_system">La acción FACTORY_TEST sólo es compatible con los paquetes instalados en /system/app.</string>
     <string name="factorytest_no_action">No se ha encontrado ningún paquete que proporcione la acción FACTORY_TEST.</string>
     <string name="factorytest_reboot">Reiniciar</string>
     <string name="js_dialog_title">La página \"%s\" dice:</string>
@@ -834,7 +833,7 @@ Selecciona \"Aceptar\" para continuar o \"Cancelar\" para permanecer en la pági
     <string name="permlab_readHistoryBookmarks">leer información de favoritos y del historial del navegador</string>
     <string name="permdesc_readHistoryBookmarks">Permite que la aplicación lea todas las URL que ha visitado el navegador y todos sus favoritos.</string>
     <string name="permlab_writeHistoryBookmarks">escribir en favoritos y en el historial del navegador</string>
-    <string name="permdesc_writeHistoryBookmarks">Permite a una aplicación modificar el historial del navegador o los marcadores almacenados en el teléfono. Las aplicaciones malintencionadas pueden utilizarlo para borrar o modificar los datos del navegador.</string>
+    <string name="permdesc_writeHistoryBookmarks">Permite a una aplicación modificar el historial del navegador o los favoritos almacenados en el teléfono. Las aplicaciones malintencionadas pueden utilizarlo para borrar o modificar los datos del navegador.</string>
     <string name="permlab_setAlarm">establecer alarma en un reloj</string>
     <string name="permdesc_setAlarm">Permite a la aplicación establecer una alarma en una aplicación de reloj instalada. Es posible que algunas aplicaciones de reloj no incluyan esta función.</string>
     <string name="permlab_addVoicemail">añadir buzón de voz</string>
@@ -900,7 +899,7 @@ Selecciona \"Aceptar\" para continuar o \"Cancelar\" para permanecer en la pági
     <string name="capital_on">SÍ</string>
     <string name="capital_off">NO</string>
     <string name="whichApplication">Completar acción usando</string>
-    <string name="alwaysUse">Usar modo predet. para esta acción</string>
+    <string name="alwaysUse">Usar siempre para esta acción</string>
     <string name="clearDefaultHintMsg">Borrar valores predeterminados en Ajustes > Aplicaciones.</string>
     <string name="chooseActivity">Seleccionar una acción</string>
     <string name="chooseUsbActivity">Seleccionar una aplicación para el dispositivo USB</string>
@@ -916,7 +915,7 @@ Selecciona \"Aceptar\" para continuar o \"Cancelar\" para permanecer en la pági
     <string name="wait">Esperar</string>
     <string name="launch_warning_title">Aplicación redireccionada</string>
     <string name="launch_warning_replace">%1$s se está ejecutando.</string>
-    <string name="launch_warning_original">%1$s se inició originalmente.</string>
+    <string name="launch_warning_original">%1$s se inició originalm.</string>
     <string name="screen_compat_mode_scale">Escalar</string>
     <string name="screen_compat_mode_show">Mostrar siempre</string>
     <string name="screen_compat_mode_hint">Rehabilitarlo con Ajustes > Aplicaciones > Gestionar aplicaciones.</string>
@@ -986,15 +985,15 @@ Selecciona \"Aceptar\" para continuar o \"Cancelar\" para permanecer en la pági
     <string name="perms_show_all"><b>Mostrar todos</b></string>
     <string name="usb_storage_activity_title">Almacenamiento USB masivo</string>
     <string name="usb_storage_title">Conectado por USB</string>
-    <string name="usb_storage_message">Te has conectado con tu ordenador a través de USB. Toca el botón siguiente si quieres copiar los archivos entre tu ordenador y la tarjeta SD de tu Android.</string>
+    <string name="usb_storage_message">Has conectado el móvil al equipo mediante USB. Selecciona el botón situado debajo si deseas copiar archivos entre el equipo y la tarjeta SD de tu Android.</string>
     <string name="usb_storage_button_mount">Activar almacenamiento USB</string>
-    <string name="usb_storage_error_message">Se ha producido un problema al usar la tarjeta SD como almacenamiento masivo USB.</string>
+    <string name="usb_storage_error_message">Se ha producido un problema al utilizar la tarjeta SD para el almacenamiento masivo USB.</string>
     <string name="usb_storage_notification_title">Conectado por USB</string>
     <string name="usb_storage_notification_message">Para copiar archivos al/desde el equipo</string>
     <string name="usb_storage_stop_notification_title">Desactivar almacenamiento USB</string>
     <string name="usb_storage_stop_notification_message">Seleccionar para desactivar USB.</string>
     <string name="usb_storage_stop_title">El almacenamiento USB está en uso.</string>
-    <string name="usb_storage_stop_message">Antes de desactivar el almacenamiento USB, asegúrate de que has desmontado (“ejected”) la tarjeta SD de tu Android del ordenador.</string>
+    <string name="usb_storage_stop_message">Antes de desactivar el almacenamiento USB, asegúrate de haber desmontado (“expulsado”) la tarjeta SD de tu Android desde el equipo.</string>
     <string name="usb_storage_stop_button_mount">Desactivar almacenamiento USB</string>
     <string name="usb_storage_stop_error_message">Se ha producido un problema al desactivar el almacenamiento USB. Asegúrate de haber desactivado el host USB y, a continuación, vuelve a intentarlo.</string>
     <string name="dlg_confirm_kill_storage_users_title">Activar almacenamiento USB</string>
@@ -1007,7 +1006,7 @@ Selecciona \"Aceptar\" para continuar o \"Cancelar\" para permanecer en la pági
     <string name="usb_accessory_notification_title">Conectado a un accesorio USB</string>
     <string name="usb_notification_message">Tocar para otras opciones USB</string>
     <string name="extmedia_format_title">Formatear tarjeta SD</string>
-    <string name="extmedia_format_message">¿Estás seguro de que quieres formatear la tarjeta SD? Todos los datos de tu tarjeta se perderán.</string>
+    <string name="extmedia_format_message">¿Estás seguro de que quieres formatear la tarjeta SD? Se perderán todos los datos de la tarjeta.</string>
     <string name="extmedia_format_button_format">Formato</string>
     <string name="adb_active_notification_title">Dispositivo depurac. USB conect.</string>
     <string name="adb_active_notification_message">Seleccionar para inhabilitar la depuración USB</string>
@@ -1021,13 +1020,13 @@ Selecciona \"Aceptar\" para continuar o \"Cancelar\" para permanecer en la pági
     <string name="ext_media_nofs_notification_title">Tarjeta SD vacía</string>
     <string name="ext_media_nofs_notification_message">Tarjeta SD vacía o tiene un sistema de archivos no admitido.</string>
     <string name="ext_media_unmountable_notification_title">Tarjeta SD dañada</string>
-    <string name="ext_media_unmountable_notification_message">Tarjeta SD dañada. Es posible que tengas que reformatearla.</string>
-    <string name="ext_media_badremoval_notification_title">La tarjeta SD se extrajo inesperadamente.</string>
+    <string name="ext_media_unmountable_notification_message">La tarjeta SD está dañada. Es posible que tengas que volver a formatearla.</string>
+    <string name="ext_media_badremoval_notification_title">La tarjeta SD se ha extraído inesperadamente.</string>
     <string name="ext_media_badremoval_notification_message">Desmonta la tarjeta SD antes de extraerla para evitar la pérdida de datos.</string>
-    <string name="ext_media_safe_unmount_notification_title">La tarjeta SD se puede extraer con seguridad.</string>
+    <string name="ext_media_safe_unmount_notification_title">Es seguro extraer la tarjeta SD.</string>
     <string name="ext_media_safe_unmount_notification_message">Puedes extraer con seguridad la tarjeta SD.</string>
     <string name="ext_media_nomedia_notification_title">Tarjeta SD extraída</string>
-    <string name="ext_media_nomedia_notification_message">Tarjeta SD extraída. Inserta una nueva.</string>
+    <string name="ext_media_nomedia_notification_message">La tarjeta SD se ha extraído. Inserta una nueva.</string>
     <string name="activity_list_empty">No se ha encontrado ninguna actividad coincidente.</string>
     <string name="permlab_pkgUsageStats">actualizar estadísticas de uso de componentes</string>
     <string name="permdesc_pkgUsageStats">Permite la modificación de estadísticas recopiladas sobre el uso de componentes. No está destinado al uso por parte de aplicaciones normales.</string>
@@ -1081,13 +1080,13 @@ para la cuenta %s"</string>
     <string name="no_matches">Sin coincidencias</string>
     <string name="find_on_page">Buscar en página</string>
     <string name="action_mode_done">Listo</string>
-    <string name="progress_unmounting">Desmontando tarjeta SD...</string>
+    <string name="progress_unmounting">Desactivando tarjeta SD...</string>
     <string name="progress_erasing">Borrando tarjeta SD...</string>
-    <string name="format_error">No se pudo borrar la tarjeta SD.</string>
+    <string name="format_error">Error al borrar la tarjeta SD</string>
     <string name="media_bad_removal">La tarjeta SD se ha extraído antes de desactivarla.</string>
-    <string name="media_checking">La tarjeta SD se está comprobando.</string>
+    <string name="media_checking">Se está comprobando la tarjeta SD.</string>
     <string name="media_removed">La tarjeta SD se ha extraído.</string>
-    <string name="media_shared">Un ordenador está usando la tarjeta SD.</string>
+    <string name="media_shared">Un equipo está utilizando actualmente la tarjeta SD.</string>
     <string name="media_unknown_state">Estado de medio externo desconocido</string>
     <string name="share">Compartir</string>
     <string name="find">Buscar</string>
@@ -1157,7 +1156,7 @@ para la cuenta %s"</string>
     <string name="action_menu_overflow_description">Más opciones</string>
     <string name="storage_internal">Almacenamiento interno</string>
     <string name="storage_sd_card">Tarjeta SD</string>
-    <string name="storage_usb">Almacenamiento USB</string>
+    <string name="storage_usb">Almacenamiento USB externo</string>
     <string name="extract_edit_menu_button">Editar...</string>
     <string name="data_usage_warning_title">Advertencia de uso de datos</string>
     <string name="data_usage_warning_body">Toca para ver el uso y los ajustes</string>
@@ -1209,4 +1208,46 @@ para la cuenta %s"</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Repetir nuevo PIN</string>
     <string name="lockscreen_strings_sim_puk_wrong_nbr_digits_header_txt">El código PUK debe tener 8 dígitos</string>
     <string name="seport_strings_accessory_not_supported_txt">Accesorio no compatible</string>
+    <string name="global_action_screenshot_txt">Hacer una instantánea</string>
+    <string name="BaICMmi">Bloqueo de llamadas entrantes</string>
+    <string name="BaOCMmi">Bloqueo de llamadas salientes</string>
+    <string name="BaOICMmi">Bloqueo de llamadas internacionales salientes</string>
+    <string name="BaOICxHMmi">Bloqueo de llamadas internacionales salientes (excepto país de residencia)</string>
+    <string name="BaICrMmi">Bloqueo de llamadas entrantes en itinerancia</string>
+    <string name="BaAllMmi">Todo el bloqueo de llamadas</string>
+    <string name="BaMOMmi">Todo el bloqueo de llamadas salientes</string>
+    <string name="BaMTMmi">Todo el bloqueo de llamadas entrantes</string>
+    <string name="policylab_passwordRecovery">Recuperación de contraseña</string>
+    <string name="policydesc_passwordRecovery">Utilice la contraseña de recuperación para desbloquear el teléfono cuando se olvide de la contraseña.</string>
+    <string name="usb_storage_connect_notification_title">Almacenamiento USB conectado</string>
+    <string name="usb_storage_connect_notification_message">Almacenamiento USB conectado</string>
+    <string name="usb_storage_checking_notification_title">Preparando almacenamiento USB</string>
+    <string name="usb_storage_nofs_notification_title">" Almacenamiento USB vacío"</string>
+    <string name="usb_storage_nofs_notification_message">Almacen. USB vacío o sistema arch. no admitido.</string>
+    <string name="usb_storage_unmountable_notification_title">Almacenamiento USB dañado</string>
+    <string name="usb_storage_unmountable_notification_message">Almacen. USB dañado. Tiene que reformatearlo.</string>
+    <string name="usb_storage_badremoval_notification_title">Almacen. USB extraído inesperad.</string>
+    <string name="usb_storage_badremoval_notification_message">Desm. primero almacen. USB evita pérdida datos</string>
+    <string name="usb_storage_safe_unmount_notification_title">Es seguro extraer almacen. USB</string>
+    <string name="usb_storage_safe_unmount_notification_message">Puede extraer con seguridad el almacenam. USB.</string>
+    <string name="usb_storage_nomedia_notification_title">Almacenamiento USB extraído</string>
+    <string name="usb_storage_nomedia_notification_message">El almacenam. USB se ha extraído con seguridad.</string>
+    <string name="usb_storage_format_title">Formatear almac. USB</string>
+    <string name="usb_storage_format_message">¿Seguro que desea formatear el almacenamiento USB? Todos los datos se perderán.</string>
+    <string name="usb_storage_progress_erasing">Borrando almacenamiento USB</string>
+    <string name="usb_storage_checking">El almacenamiento USB se está comprobando.</string>
+    <string name="usb_storage_progress_unmounting">Desmontaje del almacen. USB</string>
+    <string name="usb_storage_format_error">No se pudo borrar el almacenamiento USB.</string>
+    <string name="usb_storage_bad_removal">Almacenamiento USB extraído antes de ser desmontado</string>
+    <string name="usb_storage_removed">Almacenamiento USB extraído</string>
+    <string name="usb_storage_shared">Almacenamiento USB en estado de error</string>
+    <string name="internal_storage_strings_checking_notification_title_txt">Preparando almacenam. interno</string>
+    <string name="internal_storage_strings_unmountable_notification_title_txt">Almacenamiento interno dañado</string>
+    <string name="internal_storage_strings_unmountable_notification_message_txt">Almacenamiento interno dañado. Formatéelo.</string>
+    <string name="internal_storage_strings_nofs_notification_title_txt">Almacenamiento interno vacío</string>
+    <string name="internal_storage_strings_nofs_notification_message_txt">Almac. interno vacío o sist. archivos no admitido</string>
+    <string name="internal_storage_factory_reset_unmount">Desmontando el almacenamiento interno</string>
+    <string name="internal_storage_factory_reset_erase">Borrando almacenamiento interno</string>
+    <string name="internal_storage_factory_reset_error">No se pudo borrar el almacenamiento interno.</string>
+    <string name="internal_storage_erase_data_desc">¿Está seguro de querer formatear el almacenamiento interno? Todos los datos se perderán.</string>
 </resources>

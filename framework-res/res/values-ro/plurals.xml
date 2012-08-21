@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <plurals name="num_seconds_ago">
-        <item quantity="other">acum %d (de) secunde</item>
+        <item quantity="other">acum %d (de) sec.</item>
         <item quantity="one">acum 1 secundă</item>
     </plurals>
     <plurals name="num_minutes_ago">
-        <item quantity="other">acum %d (de) minute</item>
+        <item quantity="other">acum %d (de) min.</item>
         <item quantity="one">acum 1 minut</item>
     </plurals>
     <plurals name="num_hours_ago">

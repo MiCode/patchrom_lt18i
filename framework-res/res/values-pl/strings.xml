@@ -172,7 +172,7 @@
     <string name="lockscreen_strings_backup_selection_sub_header_txt">Wybierz sposób odblokowywania ekranu w przypadku zapomnienia wzoru</string>
     <string name="lockscreen_strings_backup_selection_security_question_txt">Odpowiedz na pytanie</string>
     <string name="lockscreen_strings_backup_selection_security_question_summary_txt">Odbl., używając pytania zabezp.</string>
-    <string name="lockscreen_strings_backup_selection_google_account_txt">Wprowadź szczegóły konta Google</string>
+    <string name="lockscreen_strings_backup_selection_google_account_txt">Podaj szczegóły konta Google</string>
     <string name="lockscreen_strings_backup_selection_google_account_summary_txt">Odblokuj, podając szczegóły konta Google</string>
     <string name="lockscreen_strings_backup_selection_next_txt">Dalej</string>
     <string name="lockscreen_strings_howtounlock_txt">Naciśnij %icon, by odblokować</string>
@@ -194,7 +194,7 @@
     <string name="lockscreen_strings_backup_question_emergency_button_txt">Połącz. alarm.</string>
     <string name="lockscreen_strings_backup_question_answer_hint_txt">Odpowiedź</string>
     <string name="lockscreen_strings_backup_new_pattern_question_title_txt">Ekran odblokowany</string>
-    <string name="lockscreen_strings_backup_new_pattern_question_message_txt">Zapisać nowy wzór odblokowywania?</string>
+    <string name="lockscreen_strings_backup_new_pattern_question_message_txt">Zapisać nowy wzór odblokowania?</string>
     <string name="lockscreen_strings_backup_new_pattern_question_yes_txt">Tak</string>
     <string name="lockscreen_strings_backup_new_pattern_question_no_txt">Nie</string>
     <string name="byteShort">B</string>
@@ -219,7 +219,7 @@
     <string name="badPuk">Wpisany kod PUK jest błędny.</string>
     <string name="mismatchPin">Wprowadzone kody PIN nie są identyczne.</string>
     <string name="invalidPin">Wpisz kod PIN, od 4 do 8 cyfr.</string>
-    <string name="invalidPuk">Wpisz kod PUK składający się z co najmniej 8 cyfr.</string>
+    <string name="invalidPuk">Wprowadź 8-cyfrowy kod PUK</string>
     <string name="needPuk">Karta SIM jest zablokowana kodem PUK. Wprowadź kod PUK, aby odblokować kartę.</string>
     <string name="needPuk2">Wprowadź kod PUK2, aby odblokować kartę SIM.</string>
     <string name="ClipMmi">Identyfikator rozmówcy przy połączeniach przychodzących</string>
@@ -631,7 +631,7 @@
     <string name="permlab_writeDictionary">zapisywanie w słowniku zdefiniowanym przez użytkownika</string>
     <string name="permdesc_writeDictionary">Zezwala aplikacjom na zapisywanie nowych słów w słowniku użytkownika.</string>
     <string name="permlab_sdcardWrite">modyfikowanie/usuwanie zawartości karty SD</string>
-    <string name="permdesc_sdcardWrite">Zezwala aplikacji na zapis na karcie SD.</string>
+    <string name="permdesc_sdcardWrite">Umożliwia aplikacji zapis na karcie SD.</string>
     <string name="permlab_mediaStorageWrite">modyfikowanie/usuwanie zawartości pamięci wewnętrznej</string>
     <string name="permdesc_mediaStorageWrite">Zezwala aplikacji na modyfikowanie zawartości pamięci wewnętrznej.</string>
     <string name="permlab_cache_filesystem">dostęp do systemu plików pamięci podręcznej</string>
@@ -771,7 +771,7 @@
     <string name="lockscreen_transport_stop_description">Przycisk zatrzymania</string>
     <string name="emergency_calls_only">Tylko połączenia alarmowe</string>
     <string name="lockscreen_network_locked_message">Sieć zablokowana</string>
-    <string name="lockscreen_sim_puk_locked_message">Karta SIM jest zablokowana kodem PUK.</string>
+    <string name="lockscreen_sim_puk_locked_message">Karta SIM została zablok. kodem PUK.</string>
     <string name="lockscreen_sim_puk_locked_instructions">Zapoznaj się z instrukcją obsługi lub skontaktuj się z działem obsługi klienta.</string>
     <string name="lockscreen_sim_locked_message">Karta SIM jest zablokowana.</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">Odblokowywanie karty SIM...</string>
@@ -786,10 +786,10 @@ Spróbuj ponownie za %d sek."</string>
 Spróbuj ponownie za %d sek."</string>
     <string name="lockscreen_failed_attempts_almost_glogin" formatted="false">"Wzór odblokowania został narysowany nieprawidłowo %d razy. Po kolejnych %d nieudanych próbach telefon trzeba będzie odblokować przez zalogowanie na koncie Google.
 
-Spróbuj ponownie za %d sek."</string>
+ Spróbuj ponownie za %d sek."</string>
     <string name="lockscreen_failed_attempts_almost_at_wipe" formatted="false">Próbowano %d razy nieprawidłowo odblokować telefon. Po kolejnych %d nieudanych próbach telefon zostanie zresetowany do ustawień fabrycznych, a wszystkie dane użytkownika zostaną utracone.</string>
     <string name="lockscreen_failed_attempts_now_wiping">Próbowano %d razy nieprawidłowo odblokować telefon. Telefon zostanie teraz zresetowany do ustawień fabrycznych.</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown">Spróbuj ponownie za %d sek.</string>
+    <string name="lockscreen_too_many_failed_attempts_countdown">Spróbuj ponownie za %d sekund.</string>
     <string name="lockscreen_forgot_pattern_button_text">Zapomniałeś wzoru?</string>
     <string name="lockscreen_glogin_forgot_pattern">Odblokowanie konta</string>
     <string name="lockscreen_glogin_too_many_attempts">Zbyt wiele prób narysowania wzoru!</string>
@@ -936,8 +936,8 @@ Czy chcesz go zakończyć?"</string>
     <string name="report">Zgłoś</string>
     <string name="wait">Czekaj</string>
     <string name="launch_warning_title">Aplikacja przekierowana</string>
-    <string name="launch_warning_replace">Aplikacja %1$s jest uruchomiona.</string>
-    <string name="launch_warning_original">Aplikacja %1$s została pierwotnie uruchomiona.</string>
+    <string name="launch_warning_replace">Aplikacja %1$s działa.</string>
+    <string name="launch_warning_original">"Uruchomiono pierw.:  %1$s."</string>
     <string name="screen_compat_mode_scale">Skala</string>
     <string name="screen_compat_mode_show">Zawsze pokazuj</string>
     <string name="screen_compat_mode_hint">Aby włączyć ponownie, skorzystaj z opcji Ustawienia > Aplikacje > Zarządzaj aplikacjami.</string>
@@ -1007,7 +1007,7 @@ Czy chcesz go zakończyć?"</string>
     <string name="perms_show_all"><b>Pokaż wszystko</b></string>
     <string name="usb_storage_activity_title">Pamięć masowa USB</string>
     <string name="usb_storage_title">Połączenie przez USB</string>
-    <string name="usb_storage_message">Nawiązano połączenie z komputerem za pośrednictwem USB. Dotknij poniższego przycisku, aby skopiować pliki między komputerem a kartą SD systemu Android.</string>
+    <string name="usb_storage_message">Telefon został połączony z komputerem za pośrednictwem USB. Wybierz poniższy przycisk, aby skopiować pliki między komputerem a kartą SD systemu Android.</string>
     <string name="usb_storage_button_mount">Włącz nośnik USB</string>
     <string name="usb_storage_error_message">Wystąpił problem z użyciem karty SD jako nośnika pamięci masowej USB.</string>
     <string name="usb_storage_notification_title">Połączenie przez USB</string>
@@ -1015,7 +1015,7 @@ Czy chcesz go zakończyć?"</string>
     <string name="usb_storage_stop_notification_title">Wyłącz nośnik USB</string>
     <string name="usb_storage_stop_notification_message">Wybierz, aby wyłączyć nośnik USB.</string>
     <string name="usb_storage_stop_title">Nośnik USB w użyciu</string>
-    <string name="usb_storage_stop_message">Przed wyłączeniem nośnika USB upewnij się, że karta SD systemu Android została odłączona od komputera („wyjęta”).</string>
+    <string name="usb_storage_stop_message">Przed wyłączeniem pamięci USB upewnij się, że karta SD systemu Android została odłączona od komputera („wyjęta”).</string>
     <string name="usb_storage_stop_button_mount">Wyłącz nośnik USB</string>
     <string name="usb_storage_stop_error_message">Wystąpił problem podczas wyłączania nośnika USB. Upewnij się, że host USB został odłączony, a następnie spróbuj ponownie.</string>
     <string name="dlg_confirm_kill_storage_users_title">Włącz nośnik USB</string>
@@ -1104,7 +1104,7 @@ dotyczące konta %s"</string>
     <string name="action_mode_done">Gotowe</string>
     <string name="progress_unmounting">Odłączanie karty SD...</string>
     <string name="progress_erasing">Czyszczenie karty SD...</string>
-    <string name="format_error">Nie można wymazać karty SD.</string>
+    <string name="format_error">Nie można wyczyścić karty SD.</string>
     <string name="media_bad_removal">Karta SD została wyjęta przed jej odłączeniem.</string>
     <string name="media_checking">Karta SD jest obecnie sprawdzana.</string>
     <string name="media_removed">Karta SD została wyjęta.</string>
@@ -1178,7 +1178,7 @@ dotyczące konta %s"</string>
     <string name="action_menu_overflow_description">Więcej opcji</string>
     <string name="storage_internal">Pamięć wewnętrzna</string>
     <string name="storage_sd_card">Karta SD</string>
-    <string name="storage_usb">Nośnik USB</string>
+    <string name="storage_usb">Zewnętrzna pamięć USB</string>
     <string name="extract_edit_menu_button">Edytuj...</string>
     <string name="data_usage_warning_title">Ostrzeżenie o transmisji danych</string>
     <string name="data_usage_warning_body">Dotknij, aby zobaczyć wykorzystanie i ustawienia</string>
@@ -1197,12 +1197,12 @@ dotyczące konta %s"</string>
     <string name="ssl_certificate">Certyfikat zabezpieczeń</string>
     <string name="ssl_certificate_is_valid">Certyfikat jest ważny.</string>
     <string name="issued_to">Wystawiono dla:</string>
-    <string name="common_name">Nazwa (CN):</string>
+    <string name="common_name">Nazwa pospolita (CN):</string>
     <string name="org_name">Organizacja:</string>
     <string name="org_unit">Jednostka organizacyjna:</string>
     <string name="issued_by">Wystawca:</string>
     <string name="validity_period">Ważność:</string>
-    <string name="issued_on">Wystawiony:</string>
+    <string name="issued_on">Data wystawienia:</string>
     <string name="expires_on">Wygasa:</string>
     <string name="serial_number">Numer seryjny:</string>
     <string name="fingerprints">Odciski cyfrowe:</string>
@@ -1230,4 +1230,46 @@ dotyczące konta %s"</string>
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Powtórz nowy kod PIN</string>
     <string name="lockscreen_strings_sim_puk_wrong_nbr_digits_header_txt">Kod PUK musi składać się z 8 cyfr</string>
     <string name="seport_strings_accessory_not_supported_txt">Akcesorium nie jest obsługiwane</string>
+    <string name="global_action_screenshot_txt">Zrób zrzut ekranu</string>
+    <string name="BaICMmi">Blokowanie połączeń przychodzących</string>
+    <string name="BaOCMmi">Blokowanie połączeń wychodzących</string>
+    <string name="BaOICMmi">Blokowanie międzynarodowych połączeń wychodzących</string>
+    <string name="BaOICxHMmi">Blokowanie międzynarodowych połączeń wychodzących (z wyjątkiem własnego kraju)</string>
+    <string name="BaICrMmi">Blokowanie połączeń przychodzących w roamingu</string>
+    <string name="BaAllMmi">Blokowanie wszystkich połączeń</string>
+    <string name="BaMOMmi">Blokowanie wszystkich połączeń wychodzących</string>
+    <string name="BaMTMmi">Blokowanie wszystkich połączeń przychodzących</string>
+    <string name="policylab_passwordRecovery">Odzyskiwanie hasła</string>
+    <string name="policydesc_passwordRecovery">Użyj hasła odzyskiwania do odblokowania telefonu, gdy zapomnisz hasła</string>
+    <string name="usb_storage_connect_notification_title">Podłączono pamięć USB</string>
+    <string name="usb_storage_connect_notification_message">Podłączono pamięć USB</string>
+    <string name="usb_storage_checking_notification_title">Przygotowywanie pamięci USB</string>
+    <string name="usb_storage_nofs_notification_title">Pusta pamięć USB</string>
+    <string name="usb_storage_nofs_notification_message">Pusta pamięć USB lub nieobsług. system plików</string>
+    <string name="usb_storage_unmountable_notification_title">Uszkodzona pamięć USB</string>
+    <string name="usb_storage_unmountable_notification_message">Pamięć USB uszkodzona. Sformatuj ją ponownie.</string>
+    <string name="usb_storage_badremoval_notification_title">Nieoczekiwanie wyjęto pamięć USB</string>
+    <string name="usb_storage_badremoval_notification_message">Wcześ. odł. pam. USB pozwala unikn. utraty dan.</string>
+    <string name="usb_storage_safe_unmount_notification_title">Można bezpiecznie wyjąć pamięć USB</string>
+    <string name="usb_storage_safe_unmount_notification_message">Możesz bezpiecznie wyjąć pamięć USB</string>
+    <string name="usb_storage_nomedia_notification_title">Wyjęto pamięć USB</string>
+    <string name="usb_storage_nomedia_notification_message">Pamięć USB została już bezpiecznie wyjęta</string>
+    <string name="usb_storage_format_title">Formatuj pamięć USB</string>
+    <string name="usb_storage_format_message">Czy na pewno sformatować pamięć USB? Wszystkie dane w pamięci zostaną utracone.</string>
+    <string name="usb_storage_progress_erasing">Czyszczenie pamięci USB</string>
+    <string name="usb_storage_checking">Trwa sprawdzanie pamięci USB</string>
+    <string name="usb_storage_progress_unmounting">Odłączanie pamięci USB</string>
+    <string name="usb_storage_format_error">Nie można wyczyścić pamięci USB</string>
+    <string name="usb_storage_bad_removal">Pamięć USB została wyjęta przed odłączeniem</string>
+    <string name="usb_storage_removed">Wyjęto pamięć USB</string>
+    <string name="usb_storage_shared">Pamięć USB ma stan błędu</string>
+    <string name="internal_storage_strings_checking_notification_title_txt">Przygotowywanie pamięci wewn.</string>
+    <string name="internal_storage_strings_unmountable_notification_title_txt">Uszkodzona pamięć wewnętrzna</string>
+    <string name="internal_storage_strings_unmountable_notification_message_txt">Pamięć wewnętrzna uszkodzona. Sformatuj ją.</string>
+    <string name="internal_storage_strings_nofs_notification_title_txt">Pusta pamięć wewnętrzna</string>
+    <string name="internal_storage_strings_nofs_notification_message_txt">Pusta pamięć wewn. lub nieobsł. system plików</string>
+    <string name="internal_storage_factory_reset_unmount">Odłączanie pamięci wewnętrznej</string>
+    <string name="internal_storage_factory_reset_erase">Czyszczenie pamięci wewnętrznej</string>
+    <string name="internal_storage_factory_reset_error">Nie można wyczyścić pamięci wewnętrznej</string>
+    <string name="internal_storage_erase_data_desc">Czy na pewno chcesz sformatować pamięć wewnętrzną? Wszystkie zapisane w niej dane zostaną utracone.</string>
 </resources>

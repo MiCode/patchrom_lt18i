@@ -977,6 +977,8 @@
 
     .line 2038
     .local v1, defaultIME:Ljava/lang/String;
+    if-eqz v1, :cond_0
+
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="emailAddressTypes">
-        <item>家庭</item>
+        <item>住宅</item>
         <item>单位</item>
         <item>其他</item>
         <item>自定义</item>

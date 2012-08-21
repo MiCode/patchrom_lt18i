@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <plurals name="num_seconds_ago">
-        <item quantity="other">för %d sekunder sedan</item>
+        <item quantity="other">för %d sek. sedan</item>
         <item quantity="one">för 1 sekund sedan</item>
     </plurals>
     <plurals name="num_minutes_ago">
-        <item quantity="other">för %d minuter sedan</item>
+        <item quantity="other">för %d min. sedan</item>
         <item quantity="one">för 1 minut sedan</item>
     </plurals>
     <plurals name="num_hours_ago">
@@ -36,11 +36,11 @@
         <item quantity="one">imorgon</item>
     </plurals>
     <plurals name="abbrev_num_seconds_ago">
-        <item quantity="other">för %d sekunder sedan</item>
+        <item quantity="other">för %d sek. sedan</item>
         <item quantity="one">för 1 sek sedan</item>
     </plurals>
     <plurals name="abbrev_num_minutes_ago">
-        <item quantity="other">för %d minuter sedan</item>
+        <item quantity="other">för %d min. sedan</item>
         <item quantity="one">för 1 minut sedan</item>
     </plurals>
     <plurals name="abbrev_num_hours_ago">

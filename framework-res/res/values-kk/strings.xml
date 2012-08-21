@@ -167,20 +167,20 @@
     <string name="unregistered_sim">Тіркелмеген SIM картасы</string>
     <string name="lockscreen_strings_sim_puk_attempts_remaining_txt">Қалған әрекет саны:</string>
     <string name="lockscreen_strings_backup_selection_header_txt">Экран құлпын ашу</string>
-    <string name="lockscreen_strings_backup_selection_sub_header_txt">Үлгіні ұмытқан болсаңыз, экранның құлпын ашу әдісін таңдаңыз</string>
+    <string name="lockscreen_strings_backup_selection_sub_header_txt">Өрнекті ұмытқан болсаңыз, экранның құлпын ашу әдісін таңдаңыз</string>
     <string name="lockscreen_strings_backup_selection_security_question_txt">Сұраққа жауап беріңіз</string>
     <string name="lockscreen_strings_backup_selection_security_question_summary_txt">Қау-дік сұрағы арқ. құлп. ашу</string>
-    <string name="lockscreen_strings_backup_selection_google_account_txt">Google есеп. жаз-ның дер-рін енг-у</string>
+    <string name="lockscreen_strings_backup_selection_google_account_txt">Google тіркел-ң мәлім-н енг-у</string>
     <string name="lockscreen_strings_backup_selection_google_account_summary_txt">Google ес. жаз. дер. арқ. экр. құлпын ашу</string>
     <string name="lockscreen_strings_backup_selection_next_txt">Келесі</string>
     <string name="lockscreen_strings_howtounlock_txt">Құл. ашу үшін %icon басыңыз</string>
-    <string name="lockscreen_strings_timeout_dialog_header_txt">Қате үлгі</string>
+    <string name="lockscreen_strings_timeout_dialog_header_txt">Қате өрнек</string>
     <string name="lockscreen_strings_timeout_dialog_message_txt">Қауіпсіздік сұрағы apқылы құлыпты ашу үшін \"Келесі\" түймесін түртіңіз немесе 30 секундтан кейін қайталап көріңіз.</string>
     <string name="lockscreen_strings_timeout_dialog_try_again_label_txt">Қайт көр.</string>
     <string name="lockscreen_strings_timeout_dialog_next_label_txt">Келесі</string>
     <string name="lockscreen_strings_timeout_dialog_near_lockout_message_txt">Қалған 5 әрекетіңіз бар</string>
-    <string name="lockscreen_strings_locked_out_header_txt">Қате үлгі</string>
-    <string name="lockscreen_strings_locked_out_message_txt">Үлгіні 20 рет қате сыздыңыз. Қауіпсіздік сұрағы арқылы құлыпты ашыңыз.</string>
+    <string name="lockscreen_strings_locked_out_header_txt">Қате өрнек</string>
+    <string name="lockscreen_strings_locked_out_message_txt">Өрнекті 20 рет қате сыздыңыз. Қауіпсіздік сұрағы арқылы құлыпты ашыңыз.</string>
     <string name="lockscreen_strings_locked_out_wrong_answer_title_txt">Қате жауап</string>
     <string name="lockscreen_strings_locked_out_wrong_answer_message_txt">\"ОК\" түймесін басып, әрекетті қайталаңыз</string>
     <string name="lockscreen_strings_backup_question_header_txt">Қауіпсіздік сұрағы</string>
@@ -192,7 +192,7 @@
     <string name="lockscreen_strings_backup_question_emergency_button_txt">Жедел қоң-у</string>
     <string name="lockscreen_strings_backup_question_answer_hint_txt">Жауап</string>
     <string name="lockscreen_strings_backup_new_pattern_question_title_txt">Экран құлпы ашылды</string>
-    <string name="lockscreen_strings_backup_new_pattern_question_message_txt">Жаңа құлыпты ашу үлгісін жазу керек пе?</string>
+    <string name="lockscreen_strings_backup_new_pattern_question_message_txt">Жаңа құлыпты ашу өрнегін жазу керек пе?</string>
     <string name="lockscreen_strings_backup_new_pattern_question_yes_txt">Иә</string>
     <string name="lockscreen_strings_backup_new_pattern_question_no_txt">Жоқ</string>
     <string name="byteShort">Б</string>
@@ -215,14 +215,13 @@
     <string name="badPuk">Терілген PUK коды дұрыс емес.</string>
     <string name="mismatchPin">Енгізілген PIN кодтары сәйкес келмейді.</string>
     <string name="invalidPin">4-8 саннан тұр. PIN код-н тер-з.</string>
-    <string name="invalidPuk">8 немесе одан көп саннан тұратын PUK кодын теріңіз.</string>
+    <string name="invalidPuk">8 саннан тұратын PUK кодын теріңіз</string>
     <string name="needPuk">SIM картасы PUK кодымен құлыпталған. PUK кодын енгізіп, құлпын ашыңыз.</string>
     <string name="needPuk2">SIM картасының құлпын ашу үшін PUK2 кодын енгізіңіз.</string>
-    <string name="ClipMmi">Келген қоңырау соғушының идентификаторы</string>
-    <string name="ClirMmi">Сыртқа шығатын қоңырау соғушының идентификаторы</string>
-    <string name="CfMmi">Қоңырау бағытын өзгерту</string>
+    <string name="ClipMmi">Келген шалушының идентификаторы</string>
+    <string name="ClirMmi">Сыртқа шығатын шалушының идентификаторы</string>
+    <string name="CfMmi">Қоңырауды басқа нөмірге бағыттау</string>
     <string name="CwMmi">Қоңырау күту</string>
-    <string name="BaMmi">Қоңырауға тыйым салу</string>
     <string name="PwdMmi">Кілтсөзді өзгерту</string>
     <string name="PinMmi">PIN кодын өзгерту</string>
     <string name="CnipMmi">Нөмірге қоңырау соғу: жеткізу</string>
@@ -231,12 +230,12 @@
     <string name="RuacMmi">Қалаусыз және жағымсыз қоңырауларды қабылдамау</string>
     <string name="CndMmi">Нөмірге қоңырау соғу: жеткізу</string>
     <string name="DndMmi">Мазаламаңыз</string>
-    <string name="CLIRDefaultOnNextCallOn">Қоңырау соғушы идентификаторының әдепкі мәндерін шектелген етіп орнату. Келесі қоңырау: Шектелген</string>
-    <string name="CLIRDefaultOnNextCallOff">Қоңырау соғушы идентификаторының әдепкі мәндерін шектелген етіп орнату. Келесі қоңырау: Шектелмеген</string>
-    <string name="CLIRDefaultOffNextCallOn">Қоңырау соғушы идентификаторының әдепкі мәндерін шектелмеген етіп орнату. Келесі қоңырау: Шектелген</string>
-    <string name="CLIRDefaultOffNextCallOff">Қоңырау соғушы идентификаторының әдепкі мәндерін шектелмеген етіп орнату. Келесі қоңырау: Шектелмеген</string>
+    <string name="CLIRDefaultOnNextCallOn">Шалушы идентификаторының әдепкі мәндерін шектелген етіп орнату. Келесі қоңырау: Шектелген</string>
+    <string name="CLIRDefaultOnNextCallOff">Шалушы идентификаторының әдепкі мәндерін шектелген етіп орнату. Келесі қоңырау: Шектелмеген</string>
+    <string name="CLIRDefaultOffNextCallOn">Шалушы идентификаторының әдепкі мәндерін шектелмеген етіп орнату. Келесі қоңырау: Шектелген</string>
+    <string name="CLIRDefaultOffNextCallOff">Шалушы идентификаторының әдепкі мәндерін шектелмеген етіп орнату. Келесі қоңырау: Шектелмеген</string>
     <string name="serviceNotProvisioned">Қызмет қарастырылмаған.</string>
-    <string name="CLIRPermanent">Қоңырау соғушы идентификаторының параметрін өзгерту мүмкін емес.</string>
+    <string name="CLIRPermanent">Шалушы идентификаторының параметрін өзгерту мүмкін емес.</string>
     <string name="RestrictedChangedTitle">Шектелген қатынас өзгертілді</string>
     <string name="RestrictedOnData">Деректер қызметтері бұғатталған.</string>
     <string name="RestrictedOnEmergency">Төтенше жағдайлар қызметі бұғатталған.</string>
@@ -274,7 +273,7 @@
     <string name="cfTemplateRegistered">{0}: бағыты өзгертілмеді</string>
     <string name="cfTemplateRegisteredTime">{0}: бағыты өзгертілмеді</string>
     <string name="fcComplete">Мүмкіндіктер коды толық.</string>
-    <string name="fcError">Қосылым қатесі не опцияның коды дұрыс емес.</string>
+    <string name="fcError">Қосылым қатесі не опцияның коды жарамсыз.</string>
     <string name="httpErrorOk">ОК</string>
     <string name="httpError">Желілік қате орын алды.</string>
     <string name="httpErrorLookup">URL мекенжайын табу мүмкін болмады.</string>
@@ -341,7 +340,7 @@
     <string name="permgrouplab_developmentTools">Бағдарлама жасақтау құралдары</string>
     <string name="permgroupdesc_developmentTools">Мүмкіндіктер тек бағдарлама жасақтаушылар үшін ғана қажет.</string>
     <string name="permgrouplab_storage">Сақтау құралы</string>
-    <string name="permgroupdesc_storage">SD картасына қол жеткізу.</string>
+    <string name="permgroupdesc_storage">SD картасына кіріңіз.</string>
     <string name="permlab_statusBar">күй тақтасын өшіру не өзгерту</string>
     <string name="permdesc_statusBar">Бағдарламаға күй тақтасын өшіруге не жүйе белгілерін қосуға не жоюға мүмкіндік береді.</string>
     <string name="permlab_statusBarService">күй жолағы</string>
@@ -407,7 +406,7 @@
     <string name="permlab_batteryStats">батарея статистикасын өзгерту</string>
     <string name="permdesc_batteryStats">Жиналған батарея статистикасын өзгертуге мүмкіндік береді. Әдеттегі бағдарламалардың пайдалануына арналмаған.</string>
     <string name="permlab_backup">жүйе сақтық көшірмесін басқару және қалпына келтіру</string>
-    <string name="permdesc_backup">Бағдарламаның жүйенің сақтық көшірмесін басқаруына және механизмді қалпына келтіруіне мүмкіндік береді. Әдеттегі бағдарламалардың пайдалануына арналмаған.</string>
+    <string name="permdesc_backup">Бағдарламаның жүйенің қосалқы көшірмесін басқаруына және механизмді қалпына келтіруіне мүмкіндік береді. Әдеттегі бағдарламалардың пайдалануына арналмаған.</string>
     <string name="permlab_confirm_full_backup">толық қосалқы көшірме немесе қалпына келтіру әрекетін растау</string>
     <string name="permdesc_confirm_full_backup">Бағдарламаға толық қосалқы көшірмені растау пайдаланушы интерфейсін іске қосуға мүмкіндік береді. Ешбір бағдарлама пайдаланбауы керек.</string>
     <string name="permlab_internalSystemWindow">авторизацияланбаған терезелерді бейнелеу</string>
@@ -494,9 +493,9 @@
     <string name="permdesc_writeCalendar">Бағдарламаға күнтізбе иесі ретінде оқиға шақыруларын жіберуге және сіз, құрылғыда өзгерте алатын оқиғаларды, соның ішінде, достарыңыздың немесе әріптестеріңіздің оқиғаларын қосуға, жоюға, өзгертуге мүмкіндік береді. Осы рұқсаты бар зиянды бағдарлама күнтізбе оқиғаларынан келген болып көрінуі мүмкін спам хаттарды жіберуі, оқиғаларды иесінің білуінсіз өзгертуі немесе жалған оқиғаларды қосуы мүмкін.</string>
     <string name="permlab_accessMockLocation">тексеруге арналған жалған орналасу көздері</string>
     <string name="permdesc_accessMockLocation">Тексеру үшін жалған орын көздерін жасау. Зиянды бағдарламалар оны GPS (Ғаламдық орнын анықтау жүйесі) немесе желі провайдерлері сияқты дәл орын көздері берген орыннан және/немесе күйден басым болу үшін пайдалануы мүмкін.</string>
-    <string name="permlab_accessLocationExtraCommands">қосымша орналасу жеткізуші командасына кіру</string>
-    <string name="permdesc_accessLocationExtraCommands">Қосымша орын жеткізушісінің командаларына өту. Зиянды бағдарламар оны GPS (Ғаламдық орнын анықтау жүйесі) не орын көздердің әрекетіне араласу үшін пайдалануы мүмкін.</string>
-    <string name="permlab_installLocationProvider">орналасу жеткізушіні орнату үшін рұқсат</string>
+    <string name="permlab_accessLocationExtraCommands">қосымша орналасу провайдері командасына кіру</string>
+    <string name="permdesc_accessLocationExtraCommands">Қосымша орын провайдерінің командаларына өту. Зиянды бағдарламар оны GPS (Ғаламдық орнын анықтау жүйесі) не орын көздердің әрекетіне араласу үшін пайдалануы мүмкін.</string>
+    <string name="permlab_installLocationProvider">орналасу провайдерін орнату үшін рұқсат</string>
     <string name="permdesc_installLocationProvider">Тексеру үшін жалған орын жасау. Зиянды бағдарламалар оны GPS (Ғаламдық орын анықтау жүйесі) не желі провайдерлері сияқты дәл орын көздері берген орыннан және/немесе күйден басым болу үшін немесе орныңызды бақылау және сыртқы көзге есеп беру үшін пайдалануы мүмкін.</string>
     <string name="permlab_accessFineLocation">дәл GPS (Жаһандық орналасу жүйесі) орналасу</string>
     <string name="permdesc_accessFineLocation">Қол жетімді жерде, телефонда GPS сияқты дәл орынды анықтау көздеріне қол жеткізу. Зиянды бағдарламалар мұны қайда екеніңізді анықтау үшін пайдаланып, қосымша батарея қуатын тұтынуы мүмкін.</string>
@@ -517,18 +516,18 @@
     <string name="permlab_reboot">телефонды мәжбүрлеп қайта іске қосу</string>
     <string name="permdesc_reboot">Бағдарламаға телефонды мәжбүрлеп қайта іске қосуға мүмкіндік береді.</string>
     <string name="permlab_mount_unmount_filesystems">файл жүйелерін қосу және ажырату</string>
-    <string name="permdesc_mount_unmount_filesystems">Бағдарламаға алынбалы сақтау құрылғылары үшін файл жүйелерін қосуға және жоюға мүмкіндік береді.</string>
+    <string name="permdesc_mount_unmount_filesystems">Бағдарламаға алынбалы сақтау құрылғылары үшін файл жүйелерін қосуға және ажыратуға мүмкіндік береді.</string>
     <string name="permlab_mount_format_filesystems">сыртқы сақтау құрылғыларын пішімдеу</string>
     <string name="permdesc_mount_format_filesystems">Бағдарламаға алынбалы сақтау құрылғысын пішімдеуге мүмкіндік береді.</string>
-    <string name="permlab_asec_access">ішкі қоймадағы ақпаратты алу</string>
+    <string name="permlab_asec_access">ішкі жадтағы ақпаратты алу</string>
     <string name="permdesc_asec_access">Қолданбаның ішкі қоймадағы ақпаратты алуына мүмкіндік береді.</string>
-    <string name="permlab_asec_create">ішкі қойманы жасау</string>
+    <string name="permlab_asec_create">ішкі жадты жасау</string>
     <string name="permdesc_asec_create">Қолданбаның ішкі қойманы жасауына мүмкіндік береді.</string>
-    <string name="permlab_asec_destroy">ішкі қойманы жою</string>
+    <string name="permlab_asec_destroy">ішкі жадты жою</string>
     <string name="permdesc_asec_destroy">Қолданбаның ішкі қойманы жоюына мүмкіндік береді.</string>
-    <string name="permlab_asec_mount_unmount">ішкі қойманы орнату / ажырату</string>
-    <string name="permdesc_asec_mount_unmount">Қолданбаның ішкі қойманы орнатуына / ажыратуына мүмкіндік береді.</string>
-    <string name="permlab_asec_rename">ішкі қойманың атын өзгерту</string>
+    <string name="permlab_asec_mount_unmount">ішкі жадты қосу / ажырату</string>
+    <string name="permdesc_asec_mount_unmount">Қолданбаның ішкі қойманы қосуына / ажыратуына мүмкіндік береді.</string>
+    <string name="permlab_asec_rename">ішкі жадтың атын өзгерту</string>
     <string name="permdesc_asec_rename">Қолданбаның ішкі қойманы қайта атауына мүмкіндік береді.</string>
     <string name="permlab_vibrate">дірілдеткішті басқару</string>
     <string name="permdesc_vibrate">Бағдарламаға дірілді басқаруға мүмкіндік береді.</string>
@@ -605,7 +604,7 @@
     <string name="permlab_changeWimaxState">WiMAX күйін өзгерту</string>
     <string name="permdesc_changeWimaxState">Қолданбаға WiMAX желісінен қосылуға немесе одан ажырауға мүмкіндік береді.</string>
     <string name="permlab_bluetoothAdmin">bluetooth құрылғысын басқару</string>
-    <string name="permdesc_bluetoothAdmin">Бағдарламаға жергілікті Bluetooth телефонын конфигурациялауға, әрі қашықтағы құрылғыларды табуға және олармен жұптасуға мүмкіндік береді.</string>
+    <string name="permdesc_bluetoothAdmin">Бағдарламаға жергілікті Bluetooth телефонын конфигурациялауға, әрі қашықтағы құрылғыларды табуға және олармен жұптауға мүмкіндік береді.</string>
     <string name="permlab_bluetooth">Bluetooth қосылымдарды жасау</string>
     <string name="permdesc_bluetooth">Бағдарламаға жергілікті Bluetooth телефонының конфигурациясын көруге, әрі жұптастырылған құрылғылар көмегімен қосылымдарды қабылдауға мүмкіндік береді.</string>
     <string name="permlab_nfc">Near Field Communication басқару</string>
@@ -627,7 +626,7 @@
     <string name="permlab_writeDictionary">пайдаланушымен анықталатын сөздікке жазу</string>
     <string name="permdesc_writeDictionary">Бағдарламаға пайдаланушының сөздігіне жаңа сөздерді жазуға мүмкіндік береді.</string>
     <string name="permlab_sdcardWrite">SD картасының мазмұнын өзгерту/жою</string>
-    <string name="permdesc_sdcardWrite">Бағдарламаған SD картасына жазуға мүмкіндік береді.</string>
+    <string name="permdesc_sdcardWrite">Қолданбаның SD картасына жазуына мүмкіндік береді.</string>
     <string name="permlab_mediaStorageWrite">ішкі медиа жад мазмұнын өзгерту/жою</string>
     <string name="permdesc_mediaStorageWrite">Бағдарламаға ішкі медиа жадтың мазмұнын өзгертуге мүмкіндік береді.</string>
     <string name="permlab_cache_filesystem">кэш файлдық жүйесіне қатынасу</string>
@@ -744,7 +743,7 @@
     <string name="lockscreen_screen_locked">Экран құлыпталған.</string>
     <string name="lockscreen_instructions_when_pattern_enabled">Құлпын ашу үшін \"Мәзір\" пернесін басыңыз не төтенше қызметке соғылған қоңырауды қойыңыз.</string>
     <string name="lockscreen_instructions_when_pattern_disabled">Құлпын ашу үшін \"Мәзір\" пернесін басыңыз.</string>
-    <string name="lockscreen_pattern_instructions">Құлпын ашу үшін үлгіні салыңыз</string>
+    <string name="lockscreen_pattern_instructions">Құлпын ашу өрнегін салыңыз</string>
     <string name="lockscreen_emergency_call">Жедел қоңырау</string>
     <string name="lockscreen_return_to_call">Қоңырауға оралу</string>
     <string name="lockscreen_pattern_correct">Дұрыс!</string>
@@ -767,11 +766,11 @@
     <string name="lockscreen_transport_stop_description">Тоқтату түймесі</string>
     <string name="emergency_calls_only">Тек жедел қоңыраулар</string>
     <string name="lockscreen_network_locked_message">Желі құлыптаулы</string>
-    <string name="lockscreen_sim_puk_locked_message">SIM картасы PUK кодымен құлыпталған.</string>
+    <string name="lockscreen_sim_puk_locked_message">SIM картасы PUK кодымен құлыпталғ.</string>
     <string name="lockscreen_sim_puk_locked_instructions">Пайдаланушы нұсқаулығын қараңыз немесе тұтынушыларға қолдау көрсету қызметіне хабарласыңыз.</string>
     <string name="lockscreen_sim_locked_message">SIM картасы құлыпталған.</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">SIM картасының құлпы ашылуда…</string>
-    <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"Сіз құлпын ашу үлгісін %d рет қате салдыңыз.
+    <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"Сіз құлпын ашу өрнегін %d рет қате салдыңыз.
 
 Әрекетті %d секундтан кейін қайталаңыз."</string>
     <string name="lockscreen_too_many_failed_password_attempts_dialog_message" formatted="false">"Кілтсөз %d рет дұрыс емес енгізілді. 
@@ -780,7 +779,7 @@
     <string name="lockscreen_too_many_failed_pin_attempts_dialog_message" formatted="false">"PIN коды %d рет дұрыс емес енгізілді. 
 
 Әрекетті %d секундтан кейін қайталаңыз."</string>
-    <string name="lockscreen_failed_attempts_almost_glogin" formatted="false">"Құдыпты ашу үлгісі %d рет дұрыс емес салынды. Тағы %d сәтсіз әрекеттен кейін сізден Google логинін пайдаланып телефон құлпын ашу сұралады.
+    <string name="lockscreen_failed_attempts_almost_glogin" formatted="false">"Құдыпты ашу өрнегі %d рет дұрыс емес салынды. Тағы %d сәтсіз әрекеттен кейін сізден Google логинін пайдаланып телефон құлпын ашу сұралады.
 
 Әрекетті %d секундтан кейін қайталаңыз."</string>
     <string name="lockscreen_failed_attempts_almost_at_wipe" formatted="false">Телефон құлпын ашудың %d рет дұрыс емес әрекеті жасалды. Тағы %d сәтсіз әрекеттен кейін телефонның зауыттық параметрлері қалпына келтіріледі және бүкіл пайдаланушы деректері жоғалады.</string>
@@ -788,22 +787,22 @@
     <string name="lockscreen_too_many_failed_attempts_countdown">Әрекетті %d секундтан кейін қайталаңыз.</string>
     <string name="lockscreen_forgot_pattern_button_text">Үлгіні ұмытып қалдыңыз ба?</string>
     <string name="lockscreen_glogin_forgot_pattern">Есептік жазбаның құлпын ашу</string>
-    <string name="lockscreen_glogin_too_many_attempts">Үлгі әрекеттері тым көп!</string>
+    <string name="lockscreen_glogin_too_many_attempts">Өрнек әрекеттері тым көп!</string>
     <string name="lockscreen_glogin_instructions">Құлпын ашу үшін Google есептік жазбасымен кіріңіз</string>
     <string name="lockscreen_glogin_username_hint">Пайдаланушы аты (электрондық пошта)</string>
     <string name="lockscreen_glogin_password_hint">Кілтсөз</string>
     <string name="lockscreen_glogin_submit_button">Кіру</string>
-    <string name="lockscreen_glogin_invalid_input">Пайдаланушы аты мен кілтсөз дұрыс емес.</string>
+    <string name="lockscreen_glogin_invalid_input">Пайдаланушы аты мен кілтсөз жарамсыз.</string>
     <string name="lockscreen_glogin_account_recovery_hint">"Пайдаланушы атын немесе кілтсөзді ұмыттыңыз ба?
 Мына бетке кіріңіз: "<b>google.com/accounts/recovery</b></string>
     <string name="lockscreen_glogin_checking_password">Тексеруде...</string>
     <string name="lockscreen_unlock_label">Құлыпты ашу</string>
     <string name="lockscreen_sound_on_label">Дыбыс қосулы</string>
     <string name="lockscreen_sound_off_label">Дыбыс өшірулі</string>
-    <string name="lockscreen_access_pattern_start">Үлгі басталды</string>
-    <string name="lockscreen_access_pattern_cleared">Үлгі өшірілді</string>
+    <string name="lockscreen_access_pattern_start">Өрнек басталды</string>
+    <string name="lockscreen_access_pattern_cleared">Өрнек өшірілді</string>
     <string name="lockscreen_access_pattern_cell_added">Ұяшық қосылды</string>
-    <string name="lockscreen_access_pattern_detected">Үлгі аяқталды</string>
+    <string name="lockscreen_access_pattern_detected">Өрнек аяқталды</string>
     <string name="password_keyboard_label_alpha_key">ABC</string>
     <string name="password_keyboard_label_alt_key">ALT</string>
     <string name="hour_ampm" formatted="false">%-l%P</string>
@@ -899,15 +898,15 @@
     <string name="textSelectionCABTitle">Мәтінді бөлектеу</string>
     <string name="addToDictionary">сөздікке қосу</string>
     <string name="deleteText">жою</string>
-    <string name="inputMethod">Енгізу әдісі</string>
+    <string name="inputMethod">Еңгізу әдісі</string>
     <string name="editTextMenuTitle">Мәтін әрекеттері</string>
     <string name="low_internal_storage_view_title">Бос орын жеткілікті емес</string>
     <string name="low_internal_storage_view_text">Телефон жадының бос орны бітіп жатыр.</string>
     <string name="loading">Жүктеу...</string>
     <string name="capital_on">|</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_off">ӨШІ.</string>
     <string name="whichApplication">Әрекетті аяқтау</string>
-    <string name="alwaysUse">Әрекет үшін әдепкі мәні бой. пай.</string>
+    <string name="alwaysUse">Осы әрекет үшін әдепкі мәні бойынша пайдаланыңыз.</string>
     <string name="clearDefaultHintMsg">Әдепкі Параметрлер > Қолданбаларды тазалау</string>
     <string name="chooseActivity">Әрекетті таңдаңыз</string>
     <string name="chooseUsbActivity">USB құрылғысы үшін бағдарлама таңдау</string>
@@ -928,8 +927,8 @@
     <string name="report">Есеп</string>
     <string name="wait">Күту</string>
     <string name="launch_warning_title">Қолданба қайта бағытталды</string>
-    <string name="launch_warning_replace">%1$s қазір іске қосылған.</string>
-    <string name="launch_warning_original">%1$s басында іске қосылған.</string>
+    <string name="launch_warning_replace">%1$s қазір орындалуда.</string>
+    <string name="launch_warning_original">%1$s бас-да іске қос-ды.</string>
     <string name="screen_compat_mode_scale">Масштаб</string>
     <string name="screen_compat_mode_show">Әрқашан көрсету</string>
     <string name="screen_compat_mode_hint">Мұны Параметрлер > Бағдарламалар > Бағдарламаларды басқару тармағында қайта қосыңыз.</string>
@@ -999,18 +998,18 @@
     <string name="perms_show_all"><b>Бәрін көрсету</b></string>
     <string name="usb_storage_activity_title">USB массалық қойма</string>
     <string name="usb_storage_title">USB қосылған</string>
-    <string name="usb_storage_message">Сіз компьютеріңізге USB арқылы қосылдыңыз. Компьютер мен Android SD картасының арасында файлдарды көшіру керек болса, төмендегі түймені түртіңіз.</string>
-    <string name="usb_storage_button_mount">USB қойманы қосу</string>
-    <string name="usb_storage_error_message">SD картасын USB жинақтауыш жады үшін пайдалануда мәселе бар.</string>
+    <string name="usb_storage_message">"Телефоныңызды компьютерге  USB арқылы қостыңыз. Компьютер мен  Android SD картаның арасында файлдарды көшіргіңіз келсе, төмендегі түймені таңдаңыз."</string>
+    <string name="usb_storage_button_mount">USB жадын қосу</string>
+    <string name="usb_storage_error_message">SD картасын USB сыйымды жад ретінде пайдалануда қате пайда болды.</string>
     <string name="usb_storage_notification_title">USB қосылған</string>
     <string name="usb_storage_notification_message">Компьютерден/компьютерге файлдарды көшіру үшін таңдаңыз.</string>
-    <string name="usb_storage_stop_notification_title">USB сақтау құрылғысын өшіру</string>
-    <string name="usb_storage_stop_notification_message">USB сақтау құрылғысын өшіру үшін таңдаңыз.</string>
-    <string name="usb_storage_stop_title">USB қоймасы пайдаланылуда</string>
-    <string name="usb_storage_stop_message">USB қоймасын өшіру алдында компьютерден (“ejected”) Android SD картасын ажыратқаныңызға көз жеткізіңіз.</string>
-    <string name="usb_storage_stop_button_mount">USB қойманы өшіру</string>
-    <string name="usb_storage_stop_error_message">USB қойманы өшіру кезінде мәселе болды. USB құрылғысын мәзір арқылы ажыратқаныңызға көз жеткізіңіз де, әрекетті қайталаңыз.</string>
-    <string name="dlg_confirm_kill_storage_users_title">USB қойманы қосу</string>
+    <string name="usb_storage_stop_notification_title">USB жадын өшіру</string>
+    <string name="usb_storage_stop_notification_message">USB жадын өшіру үшін таңдаңыз.</string>
+    <string name="usb_storage_stop_title">USB жады пайдаланылуда</string>
+    <string name="usb_storage_stop_message">USB жадын өшірмес бұрын, (“ejected”) Android SD картасын компьютерден ажыратқаныңызды тексеріңіз.</string>
+    <string name="usb_storage_stop_button_mount">USB жадын өшіру</string>
+    <string name="usb_storage_stop_error_message">USB жадын өшіру кезінде мәселе болды. USB жадын мәзір арқылы ажыратқаныңызға көз жеткізіңіз де, әрекетті қайталаңыз.</string>
+    <string name="dlg_confirm_kill_storage_users_title">USB жадын қосу</string>
     <string name="dlg_confirm_kill_storage_users_text">USB қойманы қоссаңыз, сіз пайдаланып жатқан кейбір қолданбалар өшеді және USB қойманы өшіргенше қол жетімсіз болуы мүмкін.</string>
     <string name="dlg_error_title">USB пайдалану сәтсіз</string>
     <string name="dlg_ok">OK</string>
@@ -1020,7 +1019,7 @@
     <string name="usb_accessory_notification_title">USB керек-жарағына қосылу орындалды</string>
     <string name="usb_notification_message">Басқа USB опциялары үшін түртіңіз</string>
     <string name="extmedia_format_title">SD картасын пішімдеу</string>
-    <string name="extmedia_format_message">SD картасын пішімдеу керек пе? Картадағы бүкіл деректер жойылады.</string>
+    <string name="extmedia_format_message">SD картасы пішімделсін бе? Картадағы барлық деректер жоғалады.</string>
     <string name="extmedia_format_button_format">Пішімі</string>
     <string name="adb_active_notification_title">USB арқылы жөндеу қосылған</string>
     <string name="adb_active_notification_message">USB арқылы жөндеудің ажыратылуын таңд.</string>
@@ -1029,18 +1028,18 @@
     <string name="fast_scroll_alphabet">" АӘБВГҒДЕЁЖЗИЙКҚЛМНҢОӨПРСТУҰҮФХҺЦЧШЩЪЫІЬЭЮЯABCDEFGHIJKLMNOPQRSTUVWXYZ"</string>
     <string name="fast_scroll_numeric_alphabet">" 0123456789АӘБВГҒДЕЁЖЗИЙКҚЛМНҢОӨПРСТУҰҮФХҺЦЧШЩЪЫІЬЭЮЯABCDEFGHIJKLMNOPQRSTUVWXYZ"</string>
     <string name="candidates_style"><u>үміткерлер</u></string>
-    <string name="ext_media_checking_notification_title">SD картасын дайындау</string>
+    <string name="ext_media_checking_notification_title">SD картасы дайындалуда</string>
     <string name="ext_media_checking_notification_message">Қателер тексерілуде.</string>
     <string name="ext_media_nofs_notification_title">SD картасы бос</string>
-    <string name="ext_media_nofs_notification_message">SD картасы бос немесе файлдық жүйесіне қолдау көрсетілмейді.</string>
+    <string name="ext_media_nofs_notification_message">SD картасы бос немесе оның файлдық жүйесіне қолдау көрсетілмейді</string>
     <string name="ext_media_unmountable_notification_title">SD картасы зақымдалған</string>
-    <string name="ext_media_unmountable_notification_message">SD картасы зақымдалған. Оны қайта пішімдеу керек болуы мүмкін.</string>
-    <string name="ext_media_badremoval_notification_title">SD картасы күтпеген жерде алынды</string>
+    <string name="ext_media_unmountable_notification_message">SD картасы зақымдалған. Оны қайта пішімдеу қажет болуы мүмкін.</string>
+    <string name="ext_media_badremoval_notification_title">SD картасы абайсызда алынды</string>
     <string name="ext_media_badremoval_notification_message">Деректерді жоғалтуды болдырмау үшін алу алдында SD картасын ажыратыңыз.</string>
-    <string name="ext_media_safe_unmount_notification_title">SD картасын қауіпсіз алуға болады</string>
-    <string name="ext_media_safe_unmount_notification_message">SD картасын қауіпсіз алуға болады.</string>
+    <string name="ext_media_safe_unmount_notification_title">SD картасын қауіпсіз түрде алуға болады</string>
+    <string name="ext_media_safe_unmount_notification_message">SD картасын қауіпсіз түрде алуға болады</string>
     <string name="ext_media_nomedia_notification_title">SD картасы алынды</string>
-    <string name="ext_media_nomedia_notification_message">SD картасы алынды. Жаңасын салыңыз.</string>
+    <string name="ext_media_nomedia_notification_message">SD картасы алынған. Жаңасын салыңыз.</string>
     <string name="activity_list_empty">Сәйкес келетін әрекеттер табылмады</string>
     <string name="permlab_pkgUsageStats">құрамдастарды пайдалану статистикасын жаңарту</string>
     <string name="permdesc_pkgUsageStats">Құрамдастардың жиналған пайдалану статистикасын өзгертуге мүмкіндік береді. Қалыпты бағдарламалармен пайдалану мүмкін емес.</string>
@@ -1091,13 +1090,13 @@
     <string name="no_matches">Сәйкестіктер жоқ</string>
     <string name="find_on_page">Бетте табу</string>
     <string name="action_mode_done">Дайын</string>
-    <string name="progress_unmounting">SD картасын ажырату...</string>
-    <string name="progress_erasing">SD картасын өшіру...</string>
-    <string name="format_error">SD картасын өшіру мүмкін болмады.</string>
+    <string name="progress_unmounting">SD карта ажыратылуда...</string>
+    <string name="progress_erasing">SD карта өшірілуде...</string>
+    <string name="format_error">SD карта өшірілмеді.</string>
     <string name="media_bad_removal">SD карта ажырату алдында алынған.</string>
-    <string name="media_checking">SD картасы қазіргі уақытта тексерілуде.</string>
+    <string name="media_checking">SD карта қазіргі уақытта тексерілуде.</string>
     <string name="media_removed">SD карта алынды.</string>
-    <string name="media_shared">SD картасын қазіргі уақытта компьютер пайдалануда.</string>
+    <string name="media_shared">SD картаны қазір компьютер пайдалануда.</string>
     <string name="media_unknown_state">Сыртқы ақпарат тасушы белгісіз күйде.</string>
     <string name="share">Ортақтастыру</string>
     <string name="find">Табу</string>
@@ -1165,9 +1164,9 @@
     <string name="action_bar_home_description">Үйге өту</string>
     <string name="action_bar_up_description">Жоғары жылжу</string>
     <string name="action_menu_overflow_description">Қосымша опциялар</string>
-    <string name="storage_internal">Ішкі қойма</string>
+    <string name="storage_internal">Ішкі жад</string>
     <string name="storage_sd_card">SD картасы</string>
-    <string name="storage_usb">USB қоймасы</string>
+    <string name="storage_usb">Сыртқы USB жады</string>
     <string name="extract_edit_menu_button">Өңдеу...</string>
     <string name="data_usage_warning_title">Деректерді пайдалану туралы ескерту</string>
     <string name="data_usage_warning_body">Пайдалану және параметрлерді көру үшін түртіңіз</string>
@@ -1219,4 +1218,46 @@
     <string name="lockscreen_strings_sim_puk_retype_new_pin_header_txt">Жаңа PIN кодын қайталаңыз</string>
     <string name="lockscreen_strings_sim_puk_wrong_nbr_digits_header_txt">PUK коды 8 таңба болуы керек</string>
     <string name="seport_strings_accessory_not_supported_txt">Керек-жарақ қолданылмайды</string>
+    <string name="global_action_screenshot_txt">Скриншот түсіру</string>
+    <string name="BaICMmi">Кіріс қоңырауға тыйым салу</string>
+    <string name="BaOCMmi">Шығыс қоңырауға тыйым салу</string>
+    <string name="BaOICMmi">Шығыс халықаралық қоңырауға тыйым салу</string>
+    <string name="BaOICxHMmi">Шығыс халықаралық қоңырауға тыйым салу (еліңізден басқасы)</string>
+    <string name="BaICrMmi">Роуминг кезінде кіріс қоңырауға тыйым салу</string>
+    <string name="BaAllMmi">Қоңыраулардың барлығына тыйым салу</string>
+    <string name="BaMOMmi">Шығыс қоңыраулардың барлығына тыйым салу</string>
+    <string name="BaMTMmi">Кіріс қоңыраулардың барлығына тыйым салу</string>
+    <string name="policylab_passwordRecovery">Кілтсөзді қалпына келтіру</string>
+    <string name="policydesc_passwordRecovery">Кілтсөзді ұмытқан кезде телефон құлпын ашу үшін қалпына келтіру кілтсөзін пайдаланыңыз</string>
+    <string name="usb_storage_connect_notification_title">USB жады қосылды</string>
+    <string name="usb_storage_connect_notification_message">USB жады қосылды</string>
+    <string name="usb_storage_checking_notification_title">USB жады дайындалуда</string>
+    <string name="usb_storage_nofs_notification_title">USB жады бос</string>
+    <string name="usb_storage_nofs_notification_message">USB жады бос не файл жүйесіне қолдау жоқ</string>
+    <string name="usb_storage_unmountable_notification_title">Зақымдалған USB жады</string>
+    <string name="usb_storage_unmountable_notification_message">USB жады зақымдалған. Қайтадан жою керек.</string>
+    <string name="usb_storage_badremoval_notification_title">USB жады күтпеген жерден алынды</string>
+    <string name="usb_storage_badremoval_notification_message">Дер. жой-н бол-мау үшін алд-н USB жад. алы-з</string>
+    <string name="usb_storage_safe_unmount_notification_title">USB жадын жою үшін сақтау</string>
+    <string name="usb_storage_safe_unmount_notification_message">USB жадын қауіпсіз түрде алуыңызға болады</string>
+    <string name="usb_storage_nomedia_notification_title">USB жады жойылды</string>
+    <string name="usb_storage_nomedia_notification_message">USB жады қауіпсіз түрде жойылды</string>
+    <string name="usb_storage_format_title">USB жадын жою</string>
+    <string name="usb_storage_format_message">USB жадын жойғыңыз келеді ме? Ішіндегі барлық деректер жойылады.</string>
+    <string name="usb_storage_progress_erasing">USB жады өшірілуде</string>
+    <string name="usb_storage_checking">USB жады тексерілуде</string>
+    <string name="usb_storage_progress_unmounting">USB жады алынуда</string>
+    <string name="usb_storage_format_error">USB жады тазартылмады</string>
+    <string name="usb_storage_bad_removal">USB жады салынбастан бұрын алынып тасталды</string>
+    <string name="usb_storage_removed">USB жады алынды</string>
+    <string name="usb_storage_shared">USB жадында қате бар</string>
+    <string name="internal_storage_strings_checking_notification_title_txt">Ішкі сыйымды жадты дайындау</string>
+    <string name="internal_storage_strings_unmountable_notification_title_txt">Зақымдалған ішкі сыйымды жад</string>
+    <string name="internal_storage_strings_unmountable_notification_message_txt">Ішкі сыйымды жад зақымдалды. Оны пішім-з.</string>
+    <string name="internal_storage_strings_nofs_notification_title_txt">Ішкі жадты босатыңыз</string>
+    <string name="internal_storage_strings_nofs_notification_message_txt">Ішкі жад бос н/е файл. жү-ге қол. көрсетілмейді</string>
+    <string name="internal_storage_factory_reset_unmount">Ішкі сыйымды жадты ажырату</string>
+    <string name="internal_storage_factory_reset_erase">Ішкі сыйымды жадты тазалау</string>
+    <string name="internal_storage_factory_reset_error">Ішкі сақтау орнын тазалау мүмкін болмады</string>
+    <string name="internal_storage_erase_data_desc">Ішкі сыйымды жадты пішімдегіңіз келе ме? Ондағы барлық деректер жоғалады.</string>
 </resources>
