@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<settings version="1001">
-   <setting key="mms-max-size" runtime="false">300</setting>
-   <setting key="character-conversion" runtime="true">true</setting>
-   <setting key="character-conversion-visibility" runtime="false">true</setting>
-</settings>
