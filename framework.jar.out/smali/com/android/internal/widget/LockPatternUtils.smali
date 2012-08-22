@@ -593,7 +593,7 @@
     return-object v0
 .end method
 
-.method private static patternToHash(Ljava/util/List;)[B
+.method protected static patternToHash(Ljava/util/List;)[B
     .locals 9
     .parameter
     .annotation system Ldalvik/annotation/Signature;
@@ -4054,3 +4054,31 @@
 
     goto :goto_0
 .end method
+
+.method public getPowerButtonInstantlyLocks()Z
+    .locals 2
+
+    .prologue
+    const-string v0, "lockscreen.power_button_instantly_locks"
+
+    const/4 v1, 0x1
+
+    invoke-direct {p0, v0, v1}, Lcom/android/internal/widget/LockPatternUtils;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public setPowerButtonInstantlyLocks(Z)V
+    .locals 1
+    .parameter "enabled"
+
+    .prologue
+    const-string v0, "lockscreen.power_button_instantly_locks"
+
+    invoke-direct {p0, v0, p1}, Lcom/android/internal/widget/LockPatternUtils;->setBoolean(Ljava/lang/String;Z)V
+
+    return-void
+.end method
+

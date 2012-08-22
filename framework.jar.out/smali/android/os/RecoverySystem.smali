@@ -57,7 +57,7 @@
 
     sget-object v1, Landroid/os/RecoverySystem;->RECOVERY_DIR:Ljava/io/File;
 
-    const-string v2, "command"
+    const-string v2, "extendedcommand"
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -187,6 +187,91 @@
 
     throw v2
 .end method
+
+
+.method private static bootCommandEx(Landroid/content/Context;Ljava/lang/String;)V
+    .locals 5
+    .parameter "context"
+    .parameter "arg"
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    sget-object v2, Landroid/os/RecoverySystem;->RECOVERY_DIR:Ljava/io/File;
+
+    invoke-virtual {v2}, Ljava/io/File;->mkdirs()Z
+
+    #sget-object v2, Landroid/os/RecoverySystem;->COMMAND_FILE:Ljava/io/File;
+
+
+    new-instance v4, Ljava/io/File;
+
+    sget-object v1, Landroid/os/RecoverySystem;->RECOVERY_DIR:Ljava/io/File;
+
+    const-string v2, "command"
+
+    invoke-direct {v4, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-virtual {v4}, Ljava/io/File;->delete()Z
+
+    sget-object v2, Landroid/os/RecoverySystem;->LOG_FILE:Ljava/io/File;
+
+    invoke-virtual {v2}, Ljava/io/File;->delete()Z
+
+    new-instance v0, Ljava/io/FileWriter;
+
+    #sget-object v2, Landroid/os/RecoverySystem;->COMMAND_FILE:Ljava/io/File;
+    move-object v2, v4
+
+    invoke-direct {v0, v2}, Ljava/io/FileWriter;-><init>(Ljava/io/File;)V
+
+    .local v0, command:Ljava/io/FileWriter;
+    :try_start_0
+    invoke-virtual {v0, p1}, Ljava/io/FileWriter;->write(Ljava/lang/String;)V
+
+    const-string v2, "\n"
+
+    invoke-virtual {v0, v2}, Ljava/io/FileWriter;->write(Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-virtual {v0}, Ljava/io/FileWriter;->close()V
+
+    const-string v2, "power"
+
+    invoke-virtual {p0, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/os/PowerManager;
+
+    .local v1, pm:Landroid/os/PowerManager;
+    #const-string v2, "reocvery"
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Landroid/os/PowerManager;->reboot(Ljava/lang/String;)V
+
+    new-instance v2, Ljava/io/IOException;
+
+    const-string v3, "Reboot failed (no permissions?)"
+
+    invoke-direct {v2, v3}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw v2
+
+    .end local v1           #pm:Landroid/os/PowerManager;
+    :catchall_0
+    move-exception v2
+
+    invoke-virtual {v0}, Ljava/io/FileWriter;->close()V
+
+    throw v2
+.end method
+
 
 .method private static getTrustedCerts(Ljava/io/File;)Ljava/util/HashSet;
     .locals 6
@@ -518,13 +603,19 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "--update_package="
+    const-string v3, "install_zip(\""
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "\")"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -550,12 +641,10 @@
     .end annotation
 
     .prologue
-    .line 364
     const-string v0, "--wipe_cache"
 
-    invoke-static {p0, v0}, Landroid/os/RecoverySystem;->bootCommand(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Landroid/os/RecoverySystem;->bootCommandEx(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 365
     return-void
 .end method
 
@@ -602,15 +691,12 @@
 
     invoke-virtual/range {v0 .. v7}, Landroid/content/Context;->sendOrderedBroadcast(Landroid/content/Intent;Ljava/lang/String;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
 
-    .line 354
     invoke-virtual {v8}, Landroid/os/ConditionVariable;->block()V
 
-    .line 356
     const-string v0, "--wipe_data"
 
-    invoke-static {p0, v0}, Landroid/os/RecoverySystem;->bootCommand(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Landroid/os/RecoverySystem;->bootCommandEx(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 357
     return-void
 .end method
 

@@ -319,9 +319,9 @@
     <string name="global_action_toggle_silent_mode">静音模式</string>
     <string name="global_action_silent_mode_on_status">声音已关闭</string>
     <string name="global_action_silent_mode_off_status">声音已开启</string>
-    <string name="global_actions_toggle_airplane_mode">关闭无线电</string>
-    <string name="global_actions_airplane_mode_on_status">已开启“关闭无线电“</string>
-    <string name="global_actions_airplane_mode_off_status">已关闭“关闭无线电“</string>
+    <string name="global_actions_toggle_airplane_mode">飞行模式</string>
+    <string name="global_actions_airplane_mode_on_status">已开启“飞行模式“</string>
+    <string name="global_actions_airplane_mode_off_status">已关闭“飞行模式“</string>
     <string name="safeMode">安全模式</string>
     <string name="android_system_label">Android 系统</string>
     <string name="permgrouplab_costMoney">需要您付费的服务</string>

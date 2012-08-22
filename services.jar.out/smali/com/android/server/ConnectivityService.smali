@@ -357,25 +357,23 @@
 
     iput-object v2, v0, Lcom/android/server/ConnectivityService;->mPolicyListener:Landroid/net/INetworkPolicyListener;
 
-    .line 333
     const-string v2, "ConnectivityService starting up"
 
     move-object/from16 v0, p0
 
     invoke-direct {v0, v2}, Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
 
-    .line 335
+    invoke-static/range {p1 .. p1}, Lcom/miui/server/FirewallService;->setupService(Landroid/content/Context;)V
+
     new-instance v13, Landroid/os/HandlerThread;
 
     const-string v2, "ConnectivityServiceThread"
 
     invoke-direct {v13, v2}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    .line 336
     .local v13, handlerThread:Landroid/os/HandlerThread;
     invoke-virtual {v13}, Landroid/os/HandlerThread;->start()V
 
-    .line 337
     new-instance v2, Lcom/android/server/ConnectivityService$MyHandler;
 
     invoke-virtual {v13}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
@@ -7553,16 +7551,19 @@
 
     move-result v8
 
-    .line 1158
     .local v8, usedNetworkType:I
+    invoke-static {}, Lmiui/net/FirewallManager;->getInstance()Lmiui/net/FirewallManager;
+
+    move-result-object v10
+
+    invoke-virtual {v10, v7, v5, v8}, Lmiui/net/FirewallManager;->onStopUsingNetworkFeature(III)V
+
     iget-object v10, p0, Lcom/android/server/ConnectivityService;->mNetTrackers:[Landroid/net/NetworkStateTracker;
 
     aget-object v6, v10, v8
 
-    .line 1159
     if-nez v6, :cond_4
 
-    .line 1161
     new-instance v10, Ljava/lang/StringBuilder;
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
@@ -11516,16 +11517,31 @@
 
     invoke-interface {v15, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1028
     :cond_7
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1030
+    invoke-static {}, Lmiui/net/FirewallManager;->getInstance()Lmiui/net/FirewallManager;
+
+    move-result-object v15
+
+    invoke-static {}, Lcom/android/server/ConnectivityService;->getCallingUid()I
+
+    move-result v16
+
+    invoke-static {}, Lcom/android/server/ConnectivityService;->getCallingPid()I
+
+    move-result v17
+
+    move/from16 v0, v16
+    
+    move/from16 v1, v17
+
+    invoke-virtual {v15, v0, v1, v14}, Lmiui/net/FirewallManager;->onStartUsingNetworkFeature(III)V
+
     if-ltz v10, :cond_8
 
-    .line 1031
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/android/server/ConnectivityService;->mHandler:Landroid/os/Handler;
