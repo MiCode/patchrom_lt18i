@@ -9231,35 +9231,35 @@
 
     iput-boolean v2, v0, Lcom/android/server/am/ProcessRecord;->foregroundActivities:Z
 
-    .line 13814
     const/4 v2, 0x0
 
     move-object/from16 v0, p1
 
     iput-boolean v2, v0, Lcom/android/server/am/ProcessRecord;->keeping:Z
 
-    .line 13815
     const/4 v2, 0x0
 
     move-object/from16 v0, p1
 
     iput-boolean v2, v0, Lcom/android/server/am/ProcessRecord;->systemNoUi:Z
 
-    .line 13821
-    move-object/from16 v0, p1
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, p3
+    move-object/from16 v1, p1
 
-    if-ne v0, v1, :cond_15
+    move-object/from16 v2, p3
 
-    .line 13823
+    invoke-direct {v0, v1, v2}, Lcom/android/server/am/ActivityManagerService;->isTopAppOrMiuiHome(Lcom/android/server/am/ProcessRecord;Lcom/android/server/am/ProcessRecord;)Z
+
+    move-result v2
+    
+    if-eqz v2, :cond_15
+
     const/4 v10, 0x0
 
-    .line 13824
     .local v10, adj:I
     const/16 v27, 0x0
 
-    .line 13825
     .local v27, schedGroup:I
     const-string v2, "top-activity"
 
@@ -73037,6 +73037,47 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw v0
+.end method
+
+.method private isTopAppOrMiuiHome(Lcom/android/server/am/ProcessRecord;Lcom/android/server/am/ProcessRecord;)Z
+    .locals 3
+    .parameter "app"
+    .parameter "TOP_APP"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->NEW_METHOD:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    const/4 v0, 0x1
+
+    if-eq p1, p2, :cond_0
+
+    iget-object v1, p0, Lcom/android/server/am/ActivityManagerService;->mHomeProcess:Lcom/android/server/am/ProcessRecord;
+
+    if-ne p1, v1, :cond_1
+
+    iget-object v1, p0, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "keep_launcher_in_memory"
+
+    invoke-static {v1, v2, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    :cond_0
+    :goto_0
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method
 
 .method public willActivityBeVisible(Landroid/os/IBinder;)Z
