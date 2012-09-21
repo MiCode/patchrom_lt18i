@@ -1,6 +1,9 @@
 #
 # Makefile for lt18i 
 #
+local-out-zip-file := MIUI_lt18i.zip
+
+local-previous-target-dir := ~/workspace/ota_base/lt26i
 
 # The original zip file, MUST be specified by each product
 local-zip-file     := stockrom.zip
@@ -9,7 +12,7 @@ local-zip-file     := stockrom.zip
 #local-out-zip-file := MIUI_lt18i.zip
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := SemcCamera3D CustomizedSettings
+local-modified-apps := SemcCamera3D CustomizedSettings MediaProvider
 
 local-modified-jars := #HTCExtension
 
