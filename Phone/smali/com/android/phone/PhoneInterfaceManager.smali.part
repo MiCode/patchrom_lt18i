@@ -8,3 +8,33 @@
 
     return-void
 .end method
+
+.method public isIccInvalidCard()Z
+    .locals 1
+
+    .prologue
+    iget-object v0, p0, Lcom/android/phone/PhoneInterfaceManager;->mPhone:Lcom/android/internal/telephony/Phone;
+
+    invoke-interface {v0}, Lcom/android/internal/telephony/Phone;->getIccCard()Lcom/android/internal/telephony/IccCard;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/internal/telephony/IccCard;->isIccInvalidCard()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public isModemPowerSave()Z
+    .locals 1
+
+    .prologue
+    iget-object v0, p0, Lcom/android/phone/PhoneInterfaceManager;->mPhone:Lcom/android/internal/telephony/Phone;
+
+    invoke-interface {v0}, Lcom/android/internal/telephony/Phone;->isModemPowerSave()Z
+
+    move-result v0
+
+    return v0
+.end method
