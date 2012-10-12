@@ -479,11 +479,13 @@
     </string-array>
     <string-array name="special_locale_codes">
         <item>zh_CN</item>
+        <item>zh_HK</item>
         <item>zh_TW</item>
     </string-array>
     <string-array name="special_locale_names">
-        <item>简体中文</item>
-        <item>繁體中文</item>
+        <item>中文 (简体)</item>
+        <item>中文(香港地區)</item>
+        <item>中文 (繁體)</item>
     </string-array>
     <array name="lockscreen_targets_when_silent">
         <item>@drawable/ic_lockscreen_unlock</item>

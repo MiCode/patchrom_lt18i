@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emailAddressTypes">
+        <item>Ev</item>
+        <item>İş</item>
+        <item>Diğer</item>
+        <item>Özel</item>
+    </string-array>
+    <string-array name="imProtocols">
+        <item>AIM</item>
+        <item>Windows Live</item>
+        <item>Yahoo</item>
+        <item>Skype</item>
+        <item>QQ</item>
+        <item>Google Talk</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+    </string-array>
+    <string-array name="organizationTypes">
+        <item>İş</item>
+        <item>Diğer</item>
+        <item>Özel</item>
+    </string-array>
+    <string-array name="phoneTypes">
+        <item>Ev</item>
+        <item>Cep telefonu</item>
+        <item>İş</item>
+        <item>İş Faks</item>
+        <item>Ev Faks</item>
+        <item>Çağrı cihazı</item>
+        <item>Diğer</item>
+        <item>Özel</item>
+    </string-array>
+    <string-array name="postalAddressTypes">
+        <item>Ev</item>
+        <item>İş</item>
+        <item>Diğer</item>
+        <item>Özel</item>
+    </string-array>
+    <integer-array name="config_sms_enabled_single_shift_tables">
+        <item>1</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </integer-array>
+    <integer-array name="config_sms_enabled_locking_shift_tables">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </integer-array>
+    <string-array name="imAddressTypes">
+        <item>Ev</item>
+        <item>İş</item>
+        <item>Diğer</item>
+        <item>Özel</item>
+    </string-array>
+</resources>
