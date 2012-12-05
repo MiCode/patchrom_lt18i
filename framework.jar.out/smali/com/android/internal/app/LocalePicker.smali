@@ -726,14 +726,8 @@
 
     move-result-object v13
 
-############################################################################################
-#hook:
-#    just keep zh_CN, zh_TW and en_US locales if the it is supported, abandon others
-############################################################################################
-    invoke-static {v13}, Lcom/android/internal/app/LocalePicker;->keepLocales([Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object v13
-
+    .line 192
+    .local v13, locales:[Ljava/lang/String;
     const v20, 0x107000b
 
     move-object/from16 v0, v16
@@ -1241,135 +1235,6 @@
     goto :goto_1
 .end method
 
-############################################################################################
-#usage: 
-#    just keep zh_CN, zh_TW and en_US locales if the it is supported, abandon others
-#
-#source:
-#    static String[] keepLocales(String[] locales){
-#        String[] keep = new String[3];
-
-#        for( int i = 0; i < keep.length; i++){
-#            keep[i] = "en";
-#        }
-#
-#        for(int i = 0; i < locales.length; i++){
-#            Log.i("locale", locales[i]);
-#            if( "zh_CN".equalsIgnoreCase(locales[i])){
-#                keep[0] = "zh_CN";
-#            } else if ("zh_TW".equalsIgnoreCase(locales[i])){
-#                keep[1] = "zh_TW";
-#            } else if ("en_US".equalsIgnoreCase(locales[i])){
-#                keep[2] = "en_US";
-#            }
-#        }
-#        return keep;
-#    }
-############################################################################################
-.method static keepLocales([Ljava/lang/String;)[Ljava/lang/String;
-    .locals 4
-    .parameter "locales"
-
-    .prologue
-    const/4 v2, 0x3
-
-    new-array v1, v2, [Ljava/lang/String;
-
-    .local v1, keep:[Ljava/lang/String;
-    const/4 v0, 0x0
-
-    .local v0, i:I
-    :goto_0
-    array-length v2, v1
-
-    if-ge v0, v2, :cond_0
-
-    const-string v2, "en"
-
-    aput-object v2, v1, v0
-
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_1
-    array-length v2, p0
-
-    if-ge v0, v2, :cond_4
-
-    const-string v2, "locale"
-
-    aget-object v3, p0, v0
-
-    invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    const-string v2, "zh_CN"
-
-    aget-object v3, p0, v0
-
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    const/4 v2, 0x0
-
-    const-string v3, "zh_CN"
-
-    aput-object v3, v1, v2
-
-    :cond_1
-    :goto_2
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_1
-
-    :cond_2
-    const-string v2, "zh_TW"
-
-    aget-object v3, p0, v0
-
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_3
-
-    const/4 v2, 0x1
-
-    const-string v3, "zh_TW"
-
-    aput-object v3, v1, v2
-
-    goto :goto_2
-
-    :cond_3
-    const-string v2, "en_US"
-
-    aget-object v3, p0, v0
-
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    const/4 v2, 0x2
-
-    const-string v3, "en_US"
-
-    aput-object v3, v1, v2
-
-    goto :goto_2
-
-    :cond_4
-    return-object v1
-.end method
-
 .method private isDefaultLocale(Ljava/util/Locale;)Z
     .locals 5
     .parameter "locale"
@@ -1760,14 +1625,6 @@
     move-result-object v2
 
     invoke-virtual {v2}, Landroid/content/res/AssetManager;->getLocales()[Ljava/lang/String;
-
-    move-result-object v2
-
-############################################################################################
-#hook:
-#    just keep zh_CN, zh_TW and en_US locales if the it is supported, abandon others
-############################################################################################
-    invoke-static {v2}, Lcom/android/internal/app/LocalePicker;->keepLocales([Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v2
 
