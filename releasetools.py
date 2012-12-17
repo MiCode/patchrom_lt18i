@@ -43,6 +43,9 @@ run_program("/data/handle_device_name.sh", "--recovery_device_name");
     edify.AppendExtra(extraCommand)
     return
 
+def WriteRawImage(info, *args):
+    return True
+
 def PerpareFileToOutZip(info, isfullota):
     if isfullota == "false":
         info.output_zip.writestr("full_build.prop/build.prop", info.target_zip.read("SYSTEM/build.prop"))

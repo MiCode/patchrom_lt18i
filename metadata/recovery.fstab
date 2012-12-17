@@ -9,3 +9,7 @@
 #/data yaffs2 /dev/block/mtdblock3
 #/cache yaffs2 /dev/block/mtdblock2
 #/system/vendor yaffs2 /dev/block/mtdblock1
+
+
+#disguise the boot for cheating compiler to complete compile
+/boot     vfat    disguised_boot
